@@ -1,0 +1,47 @@
+{
+  "schema_version": "E3_EREV_HIGH_DENSITY_V1",
+  "purpose": "Resolve the finite-query coverage floor on higher-dimensional E3 manifolds and compare Single with Multi for STSP, DR, and YY",
+  "source_release": "../E3",
+  "source_1024_diagnostic": "../E3_Erev_gpu_pilot/formal_results_1024",
+  "n": 12000,
+  "sigma": 0.015,
+  "repeat_indices": [0],
+  "methods": ["STSP", "DR", "YY"],
+  "geometries": {
+    "sphere2_r3": {
+      "intrinsic_dimension": 2,
+      "query_count_stages": [4096, 16384]
+    },
+    "clifford_torus_r4": {
+      "intrinsic_dimension": 2,
+      "query_count_stages": [4096, 16384]
+    },
+    "sphere3_r4": {
+      "intrinsic_dimension": 3,
+      "query_count_stages": [8192, 32768]
+    },
+    "sphere2_r10": {
+      "intrinsic_dimension": 2,
+      "query_count_stages": [4096, 16384]
+    }
+  },
+  "reference_count": 262144,
+  "scale_grid": "unchanged full 28-point E3 grid",
+  "reliability": {
+    "maximum_query_failure_rate": 0.01,
+    "minimum_consecutive_common_reliable_scales": 3
+  },
+  "adaptive_rule": {
+    "description": "Run stage 1 first. Stage 2 is mandatory only for method/geometry pairs that do not meet the frozen separation rule at stage 1.",
+    "separation_rule": "There must be at least three consecutive scales at which Single and Multi are both reliable, their ordering is identical across the interval, and delta_query is at most one half of the median absolute Single-Multi E_rev gap on that interval.",
+    "no_posthoc_grid_changes": true,
+    "retain_all_failures": true
+  },
+  "execution": {
+    "DR_YY": "Reuse the audited 1024-query packets and evaluate only the complementary points needed by the current stage.",
+    "STSP": "No reusable per-query E3 packet exists. Stage 1 recomputes the frozen repeat-0 observation and full stage-1 query grid; stage 2 evaluates only the complementary points.",
+    "gpu_policy": "DR and YY start only after the E7 DR/YY production run releases its assigned GPU; do not interfere with other GPU tasks.",
+    "cpu_policy": "STSP starts only after an isolated benchmark confirms that its CPU allocation does not slow active formal GPU jobs."
+  },
+  "evidence_class": "predeclared repeat-0 high-density reverse-coverage diagnostic"
+}

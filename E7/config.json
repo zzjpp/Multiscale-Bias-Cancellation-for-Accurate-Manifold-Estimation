@@ -1,0 +1,52 @@
+{
+  "schema_version": "E7_FIGURE_RELEASE_V1",
+  "experiment": "Complex-Geometry Stress Test",
+  "geometry": "corrugated_torus_r3",
+  "n": 12000,
+  "sigma": 0.015,
+  "query_count": 512,
+  "repetitions": 20,
+  "reliability": {
+    "maximum_aggregate_query_failure_rate": 0.01,
+    "minimum_complete_repetitions": 18
+  },
+  "style": {
+    "colors": {"Single": "#3B6EA8", "Multi": "#D55E00"},
+    "markers": {"Single": "o", "Multi": "s"},
+    "font_size": 9,
+    "axes_label_size": 10,
+    "legend_font_size": 9,
+    "figure_size": [8.2, 3.15],
+    "band_alpha": 0.11,
+    "png_dpi": 400
+  },
+  "figures": {
+    "stsp": {
+      "input_csv": "data/e7_stsp_aggregated.csv",
+      "output_stem": "e7_stsp_maximum_average_errors",
+      "scale_column": "h2",
+      "estimator_column": "method",
+      "x_label": "Bandwidth $h_2$",
+      "metric_columns": {"maximum": "E_inf", "average": "E_avg"},
+      "scale_grid": [0.06, 0.075, 0.09, 0.11, 0.135, 0.165, 0.2, 0.245, 0.3, 0.37, 0.45, 0.55, 0.67, 0.82, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 4.0, 5.0]
+    },
+    "dr": {
+      "input_csv": "data/e7_dr_aggregated.csv",
+      "output_stem": "e7_dr_maximum_average_errors",
+      "scale_column": "scale",
+      "estimator_column": "estimator",
+      "x_label": "Bandwidth $h_2$",
+      "metric_columns": {"maximum": "E_infty", "average": "E_avg"},
+      "scale_grid": [0.06, 0.075, 0.09, 0.11, 0.135, 0.165, 0.2, 0.245, 0.3, 0.37, 0.45, 0.55, 0.67, 0.82, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 4.0, 5.0]
+    },
+    "yy": {
+      "input_csv": "data/e7_yy_aggregated.csv",
+      "output_stem": "e7_yy_maximum_average_errors",
+      "scale_column": "scale",
+      "estimator_column": "estimator",
+      "x_label": "Radius $r_1$",
+      "metric_columns": {"maximum": "E_infty", "average": "E_avg"},
+      "scale_grid": [0.06, 0.075, 0.09, 0.11, 0.135, 0.165, 0.2, 0.245, 0.3, 0.37, 0.45, 0.55, 0.67, 0.82, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 4.0, 5.0]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "E3_EREV_GPU_PILOT_V1",
+  "purpose": "High-density reverse-coverage diagnostic for the E3 DR and YY GPU implementations",
+  "source_release": "../E3",
+  "n": 12000,
+  "sigma": 0.015,
+  "original_query_count": 256,
+  "added_query_count": 768,
+  "combined_query_count": 1024,
+  "reference_count": 65536,
+  "repeat_indices": [0],
+  "methods": ["DR", "YY"],
+  "geometries": [
+    "circle_r2",
+    "sphere2_r3",
+    "clifford_torus_r4",
+    "sphere3_r4",
+    "sphere2_r10"
+  ],
+  "scale_grid": "unchanged full 28-point E3 grid",
+  "reliability": {
+    "maximum_query_failure_rate": 0.01,
+    "formal_minimum_complete_repeats": 18,
+    "pilot_is_not_formal_evidence": true
+  },
+  "gpu": {
+    "backend": "CuPy",
+    "visible_device": 0,
+    "required_gate": "existing E3 CPU/GPU equivalence gate must PASS"
+  },
+  "execution": "evaluate only the 768 new query points and merge them with the immutable 256-query formal packets",
+  "metric": {
+    "E_reverse": "max over 65536 deterministic reference points of distance to nearest successful fitted query point",
+    "E_reverse_mean": "mean over the same reference grid",
+    "delta_query": "same reverse distance with exact query points replacing fitted points"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "evidence_class": "1024-query repeat-0 density diagnostic",
+  "scientific_scope": "Existing 256-query fits were preserved; only 768 complementary query fits were added. This is a query-density diagnostic, not a replacement for the 20-repeat formal DR/YY experiment.",
+  "row_count": 560,
+  "packet_count": 10,
+  "method_count": 2,
+  "geometry_count": 5,
+  "scale_count_per_method_geometry_estimator": 28,
+  "original_query_count": 256,
+  "added_query_count": 768,
+  "combined_query_count": 1024,
+  "max_query_grid_mismatch": 1.5700924586837752e-16,
+  "cpu_gpu_equivalence_gate": {
+    "passed": 902,
+    "total": 902,
+    "status": "PASS"
+  },
+  "failures": [],
+  "group_summaries": [
+    {
+      "method": "DR",
+      "geometry": "circle_r2",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 13,
+      "min_E_reverse_reliable": 0.004480904366185611
+    },
+    {
+      "method": "DR",
+      "geometry": "circle_r2",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 13,
+      "min_E_reverse_reliable": 0.0040324447783201085
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r3",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 12,
+      "min_E_reverse_reliable": 0.1845400712145383
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r3",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 9,
+      "min_E_reverse_reliable": 0.1854842446380989
+    },
+    {
+      "method": "DR",
+      "geometry": "clifford_torus_r4",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 11,
+      "min_E_reverse_reliable": 0.09821464462422799
+    },
+    {
+      "method": "DR",
+      "geometry": "clifford_torus_r4",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 7,
+      "min_E_reverse_reliable": 0.09872393738445832
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere3_r4",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 9,
+      "min_E_reverse_reliable": 0.3865414029283698
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere3_r4",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 6,
+      "min_E_reverse_reliable": 0.39275148405652616
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r10",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 12,
+      "min_E_reverse_reliable": 0.16932838020384647
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r10",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 8,
+      "min_E_reverse_reliable": 0.170260114381352
+    },
+    {
+      "method": "YY",
+      "geometry": "circle_r2",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 28,
+      "min_E_reverse_reliable": 0.004265249881915287
+    },
+    {
+      "method": "YY",
+      "geometry": "circle_r2",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 28,
+      "min_E_reverse_reliable": 0.00412184817154313
+    },
+    {
+      "method": "YY",
+      "geometry": "sphere2_r3",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 24,
+      "min_E_reverse_reliable": 0.18635636076121914
+    },
+    {
+      "method": "YY",
+      "geometry": "sphere2_r3",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 19,
+      "min_E_reverse_reliable": 0.1873943512473661
+    },
+    {
+      "method": "YY",
+      "geometry": "clifford_torus_r4",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 23,
+      "min_E_reverse_reliable": 0.12048022600341213
+    },
+    {
+      "method": "YY",
+      "geometry": "clifford_torus_r4",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 18,
+      "min_E_reverse_reliable": 0.12984224405270578
+    },
+    {
+      "method": "YY",
+      "geometry": "sphere3_r4",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 20,
+      "min_E_reverse_reliable": 0.37258811274105474
+    },
+    {
+      "method": "YY",
+      "geometry": "sphere3_r4",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 15,
+      "min_E_reverse_reliable": 0.3720854196556487
+    },
+    {
+      "method": "YY",
+      "geometry": "sphere2_r10",
+      "estimator": "Single",
+      "scale_count": 28,
+      "reliable_scale_count": 23,
+      "min_E_reverse_reliable": 0.16629484868179933
+    },
+    {
+      "method": "YY",
+      "geometry": "sphere2_r10",
+      "estimator": "Multi",
+      "scale_count": 28,
+      "reliable_scale_count": 19,
+      "min_E_reverse_reliable": 0.17064631461657612
+    }
+  ]
+}

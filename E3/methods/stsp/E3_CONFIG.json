@@ -1,0 +1,63 @@
+{
+  "schema_version": "E3_GITHUB_RELEASE_V1",
+  "experiment_id": 3,
+  "experiment_name": "E3_BANDWIDTH_ROBUSTNESS_N12000",
+  "base_seed": 20260911,
+  "query_seed": 20260912,
+  "n": 12000,
+  "sigma": 0.015,
+  "N_q": 256,
+  "repeats": 20,
+  "kernel": "(1-t)_+^6",
+  "kernel_power": 6,
+  "bandwidths_h2": [
+    0.06, 0.075, 0.09, 0.11, 0.135, 0.165, 0.2, 0.245,
+    0.3, 0.37, 0.45, 0.55, 0.67, 0.82, 1.0, 1.2, 1.4,
+    1.6, 1.8, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 4.0, 5.0
+  ],
+  "h1_ratio": 0.5,
+  "geometries": [
+    {"id": 1, "key": "circle_r2", "label": "S^1 subset R^2", "d": 1, "D": 2},
+    {"id": 2, "key": "sphere2_r3", "label": "S^2 subset R^3", "d": 2, "D": 3},
+    {"id": 3, "key": "clifford_torus_r4", "label": "Clifford torus subset R^4", "d": 2, "D": 4},
+    {"id": 4, "key": "sphere3_r4", "label": "S^3 subset R^4", "d": 3, "D": 4},
+    {"id": 5, "key": "sphere2_r10", "label": "S^2 subset R^10", "d": 2, "D": 10}
+  ],
+  "matching": {
+    "max_newton_iterations": 50,
+    "max_backtracks": 20,
+    "search_radius_factor": 4.0,
+    "projected_residual_tolerance": 1e-11,
+    "full_residual_tolerance": 1e-10,
+    "normalized_mass_min": 1e-10,
+    "minimum_support": 2,
+    "normalized_eigengap_min": 1e-6,
+    "transversality_max": 0.9,
+    "jacobian_condition_max": 1e12,
+    "armijo_factor": 0.5
+  },
+  "quadrature": {
+    "absolute_tolerance": 2e-13,
+    "relative_tolerance": 2e-13,
+    "coefficient_subinterval_limit": 200,
+    "small_lambda_rescale_threshold": 0.1
+  },
+  "validation": {
+    "weight_residual_tolerance": 1e-10,
+    "query_grid_tolerance": 5e-14,
+    "jacobian_fd_step": 1e-6,
+    "jacobian_fd_atol": 2e-7,
+    "query_failure_rate_max": 0.01,
+    "complete_repeats_min": 18,
+    "useful_bandwidth_factor": 1.5
+  },
+  "production": {
+    "parent_key": "geometry_x_repeat",
+    "parent_count": 100,
+    "main_cell_count": 2800,
+    "default_result_root": "results/stsp",
+    "required_gates": []
+  },
+  "seed_scheme": "SeedSequence([base_seed, experiment_id, geometry_id, repeat, stream_id]); PCG64DXSM; zero-based repeat; clean=0; noise=1",
+  "timing_policy": "Single and Multi construct independent spatial indices and independently solve reference and target branches; evaluation and serialization excluded"
+}

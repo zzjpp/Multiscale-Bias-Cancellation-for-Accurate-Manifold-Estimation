@@ -1,0 +1,6 @@
+Licensing notice for the simulation_experiments collection
+
+This top-level file does not replace the license shipped with each experiment.
+The license in E1/LICENSE, E2/LICENSE, ..., E6/LICENSE governs the files in
+that experiment directory. See LICENSES.md for the current summary.
+

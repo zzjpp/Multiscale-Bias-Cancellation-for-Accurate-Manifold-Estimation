@@ -1,0 +1,24 @@
+{
+  "sample_sizes": [2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000],
+  "sample_labels": ["2k", "5k", "10k", "20k", "50k", "100k", "200k", "500k"],
+  "main_geometries": ["circle_r2", "clifford_torus_r4", "sphere2_r10"],
+  "appendix_geometries": ["sphere2_r3", "sphere3_r4"],
+  "geometry_labels": {
+    "circle_r2": "$S^1 \\subset \\mathbb{R}^2$",
+    "sphere2_r3": "$S^2 \\subset \\mathbb{R}^3$",
+    "clifford_torus_r4": "Clifford torus $\\subset \\mathbb{R}^4$",
+    "sphere3_r4": "$S^3 \\subset \\mathbb{R}^4$",
+    "sphere2_r10": "$S^2 \\subset \\mathbb{R}^{10}$"
+  },
+  "methods": ["STSP", "DR", "YY"],
+  "estimators": ["Single", "Multi"],
+  "metrics": ["E_avg", "E_infty"],
+  "colors": {"Single": "#0072B2", "Multi": "#D55E00"},
+  "markers": {"Single": "o", "Multi": "s"},
+  "quartile_band_alpha": 0.11,
+  "input_sha256": {
+    "stsp_formal_summary.csv": "f126e127aa2cc054b8b4dde88be888feb7aa085fdeeab86f662b314b45fa4834",
+    "dr_yy_formal_summary.csv": "d3f0fd7cc476f495276643ca1f79464bb4355e1ed15521a7cf3ee5ba64c48ac3"
+  }
+}
+

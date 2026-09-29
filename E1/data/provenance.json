@@ -1,0 +1,265 @@
+{
+  "schema": "E1_SIMULATION_RELEASE_DATA_V1",
+  "status": "PASS",
+  "description": "Audited population maximum errors used by the six E1 figures.",
+  "rows": 115,
+  "methods": [
+    "STSP",
+    "DR",
+    "Yao--Yau"
+  ],
+  "geometries": [
+    "circle_r2",
+    "sphere2_r3",
+    "clifford_torus_r4",
+    "sphere3_r4",
+    "sphere2_r10"
+  ],
+  "main_geometries": [
+    "circle_r2",
+    "clifford_torus_r4",
+    "sphere2_r10"
+  ],
+  "appendix_geometries": [
+    "sphere2_r3",
+    "sphere3_r4"
+  ],
+  "protocol": {
+    "STSP": {
+      "sigma": 0.05,
+      "h2": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.125,
+        1.25
+      ],
+      "h1_rule": "h1=h2/2"
+    },
+    "DR": {
+      "sigma": 0.05,
+      "h2": [
+        0.15,
+        0.2,
+        0.25,
+        0.3,
+        0.35,
+        0.4,
+        0.45
+      ],
+      "h1_rule": "h1=h2/2"
+    },
+    "Yao--Yau": {
+      "sigma": 0.05,
+      "r1": [
+        0.4,
+        0.425,
+        0.45,
+        0.475,
+        0.5,
+        0.55,
+        0.6,
+        0.65
+      ],
+      "relative_radii": [
+        0.4,
+        1.0,
+        1.6
+      ],
+      "common_start": true
+    }
+  },
+  "source_sha256": {
+    "STSP_formal_audit": "51702f6eafc5faf1b9d91d0293ec3a3977416d4a861356d67848212b6ee9a695",
+    "DR_formal_audit": "9f56b3fa69739c2c7941d154797dff2b164e33777e1eb4f683fda8c705d156f2",
+    "YY_summary": "7fbd9d6f73ee4022c1bed3ac2a538fdd34ad1942ae0afad85592f56de1c2cfa6",
+    "YY_coarse_packet": "e750197d7331e849d6a383c153e453331fa05efa3e0f7f1cd0455b67e0501f66",
+    "YY_fine_packet": "7407315af00949db731a97a887ec4ea5ec225f3c5fae04546e1ea6e0b027c8b1"
+  },
+  "data_sha256": "06e45cf474ea69420bd812a17a96b2fb0cf2b1448b9c4567a5b254017bfe38ed",
+  "expected_slopes": [
+    {
+      "method": "STSP",
+      "geometry": "circle_r2",
+      "output": "single",
+      "slope": 1.9708332530729318
+    },
+    {
+      "method": "STSP",
+      "geometry": "circle_r2",
+      "output": "multi",
+      "slope": 3.7023115984333264
+    },
+    {
+      "method": "STSP",
+      "geometry": "sphere2_r3",
+      "output": "single",
+      "slope": 1.9877274041399444
+    },
+    {
+      "method": "STSP",
+      "geometry": "sphere2_r3",
+      "output": "multi",
+      "slope": 3.738802711699474
+    },
+    {
+      "method": "STSP",
+      "geometry": "clifford_torus_r4",
+      "output": "single",
+      "slope": 2.047485901841505
+    },
+    {
+      "method": "STSP",
+      "geometry": "clifford_torus_r4",
+      "output": "multi",
+      "slope": 3.8743903295202586
+    },
+    {
+      "method": "STSP",
+      "geometry": "sphere3_r4",
+      "output": "single",
+      "slope": 2.003779588803183
+    },
+    {
+      "method": "STSP",
+      "geometry": "sphere3_r4",
+      "output": "multi",
+      "slope": 3.772347838621939
+    },
+    {
+      "method": "STSP",
+      "geometry": "sphere2_r10",
+      "output": "single",
+      "slope": 2.0342942670002633
+    },
+    {
+      "method": "STSP",
+      "geometry": "sphere2_r10",
+      "output": "multi",
+      "slope": 3.857131953584783
+    },
+    {
+      "method": "DR",
+      "geometry": "circle_r2",
+      "output": "single",
+      "slope": 2.0860805961240434
+    },
+    {
+      "method": "DR",
+      "geometry": "circle_r2",
+      "output": "multi",
+      "slope": 4.063153466001403
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r3",
+      "output": "single",
+      "slope": 2.1719384809232185
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r3",
+      "output": "multi",
+      "slope": 4.236186702460952
+    },
+    {
+      "method": "DR",
+      "geometry": "clifford_torus_r4",
+      "output": "single",
+      "slope": 2.497579888106399
+    },
+    {
+      "method": "DR",
+      "geometry": "clifford_torus_r4",
+      "output": "multi",
+      "slope": 4.851475980530572
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere3_r4",
+      "output": "single",
+      "slope": 2.2931248132297952
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere3_r4",
+      "output": "multi",
+      "slope": 4.469022844973133
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r10",
+      "output": "single",
+      "slope": 2.1719384809232185
+    },
+    {
+      "method": "DR",
+      "geometry": "sphere2_r10",
+      "output": "multi",
+      "slope": 4.236186702460952
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "circle_r2",
+      "output": "single",
+      "slope": 1.8039706683420407
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "circle_r2",
+      "output": "multi",
+      "slope": 3.9194276686203517
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "sphere2_r3",
+      "output": "single",
+      "slope": 1.7936531378040321
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "sphere2_r3",
+      "output": "multi",
+      "slope": 3.970309965090356
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "clifford_torus_r4",
+      "output": "single",
+      "slope": 1.8325736404852453
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "clifford_torus_r4",
+      "output": "multi",
+      "slope": 4.816869428301676
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "sphere3_r4",
+      "output": "single",
+      "slope": 1.7833680395533456
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "sphere3_r4",
+      "output": "multi",
+      "slope": 4.007572834751144
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "sphere2_r10",
+      "output": "single",
+      "slope": 1.9098266398794905
+    },
+    {
+      "method": "Yao--Yau",
+      "geometry": "sphere2_r10",
+      "output": "multi",
+      "slope": 4.060699367077013
+    }
+  ]
+}

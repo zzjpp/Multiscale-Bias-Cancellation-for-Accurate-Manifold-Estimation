@@ -1,0 +1,134 @@
+{
+  "schema_version": "E3_MATCHED_OBSERVATIONS_V1",
+  "numpy": "2.4.4",
+  "source_config_hash": "0ee5d67d2cc9525246d62e3c97816a09523b718cf2c4ef9b034c12a8909f9b8c",
+  "n": 12000,
+  "sigma": 0.015,
+  "records": [
+    {
+      "geometry": "circle_r2",
+      "repeat": 0,
+      "shape": [
+        12000,
+        2
+      ],
+      "observed_sha256": "c5bb0a741ce591b0d606773ac77dc2e1c9d4a5c2edfa8610eaf9001fc1a4b391",
+      "clean_seed": [
+        20260911,
+        203,
+        1,
+        0,
+        0
+      ],
+      "noise_seed": [
+        20260911,
+        203,
+        1,
+        0,
+        1
+      ],
+      "base_packet": "e2_e3_dr_yy_reproduction\\e3_merge_staging_20260924\\packets\\e3_dr_circle_r2_r00.json.gz",
+      "file": "circle_r2_r00_observed.npy"
+    },
+    {
+      "geometry": "sphere2_r3",
+      "repeat": 0,
+      "shape": [
+        12000,
+        3
+      ],
+      "observed_sha256": "2eb20466d906444576c8c4b424e21052a7d94457a1aeeed3dcd04c07f6a77c7e",
+      "clean_seed": [
+        20260911,
+        203,
+        2,
+        0,
+        0
+      ],
+      "noise_seed": [
+        20260911,
+        203,
+        2,
+        0,
+        1
+      ],
+      "base_packet": "e2_e3_dr_yy_reproduction\\e3_merge_staging_20260924\\packets\\e3_dr_sphere2_r3_r00.json.gz",
+      "file": "sphere2_r3_r00_observed.npy"
+    },
+    {
+      "geometry": "clifford_torus_r4",
+      "repeat": 0,
+      "shape": [
+        12000,
+        4
+      ],
+      "observed_sha256": "b0f4740ca5b2413fbb0ac93f4ac4213dfe23cbcc2f04f9c6e9af00987e84a406",
+      "clean_seed": [
+        20260911,
+        203,
+        3,
+        0,
+        0
+      ],
+      "noise_seed": [
+        20260911,
+        203,
+        3,
+        0,
+        1
+      ],
+      "base_packet": "e2_e3_dr_yy_reproduction\\e3_merge_staging_20260924\\packets\\e3_dr_clifford_torus_r4_r00.json.gz",
+      "file": "clifford_torus_r4_r00_observed.npy"
+    },
+    {
+      "geometry": "sphere3_r4",
+      "repeat": 0,
+      "shape": [
+        12000,
+        4
+      ],
+      "observed_sha256": "df01932092cb74054d3a9fb5825aebb8532c6d683916eaf9004ea4be24a04e8f",
+      "clean_seed": [
+        20260911,
+        203,
+        4,
+        0,
+        0
+      ],
+      "noise_seed": [
+        20260911,
+        203,
+        4,
+        0,
+        1
+      ],
+      "base_packet": "e2_e3_dr_yy_reproduction\\server_download_20260924\\e3_dr_remaining\\packets\\e3_dr_sphere3_r4_r00.json.gz",
+      "file": "sphere3_r4_r00_observed.npy"
+    },
+    {
+      "geometry": "sphere2_r10",
+      "repeat": 0,
+      "shape": [
+        12000,
+        10
+      ],
+      "observed_sha256": "202da9a7496fe6cd0b45ed7dbf77643a3960fe80a28fe96735f3332f39611527",
+      "clean_seed": [
+        20260911,
+        203,
+        5,
+        0,
+        0
+      ],
+      "noise_seed": [
+        20260911,
+        203,
+        5,
+        0,
+        1
+      ],
+      "base_packet": "e2_e3_dr_yy_reproduction\\e3_merge_staging_20260924\\packets\\e3_dr_sphere2_r10_r00.json.gz",
+      "file": "sphere2_r10_r00_observed.npy"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "E3_DR_YY_GITHUB_RELEASE_V1",
+  "experiment_id": 203,
+  "base_seed": 20260911,
+  "query_seed": 20260912,
+  "n": 12000,
+  "sigma": 0.015,
+  "N_q": 256,
+  "repeats": 20,
+  "geometries": [
+    {"id": 1, "key": "circle_r2", "label": "S^1 subset R^2", "d": 1, "D": 2},
+    {"id": 2, "key": "sphere2_r3", "label": "S^2 subset R^3", "d": 2, "D": 3},
+    {"id": 3, "key": "clifford_torus_r4", "label": "Clifford torus subset R^4", "d": 2, "D": 4},
+    {"id": 4, "key": "sphere3_r4", "label": "S^3 subset R^4", "d": 3, "D": 4},
+    {"id": 5, "key": "sphere2_r10", "label": "S^2 subset R^10", "d": 2, "D": 10}
+  ],
+  "dr": {
+    "bandwidths_h2": [
+      0.06, 0.075, 0.09, 0.11, 0.135, 0.165, 0.2, 0.245,
+      0.3, 0.37, 0.45, 0.55, 0.67, 0.82, 1.0, 1.2, 1.4,
+      1.6, 1.8, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 4.0, 5.0
+    ],
+    "h1_ratio": 0.5,
+    "gaussian_truncation_factor": null,
+    "tube_multiplier": 4.0,
+    "normal_negativity_margin": 1e-8,
+    "scaled_eigengap_min": 1e-6
+  },
+  "yy": {
+    "kernel_power": 6,
+    "c0": 24.0,
+    "C2": 12.0,
+    "central_kappas": [
+      4.0, 5.0, 6.0, 7.333333333333333, 9.0, 11.0,
+      13.333333333333334, 16.333333333333332, 20.0,
+      24.666666666666668, 30.0, 36.666666666666664,
+      44.666666666666664, 54.666666666666664, 66.66666666666667,
+      80.0, 93.33333333333333, 106.66666666666667, 120.0,
+      133.33333333333334, 150.0, 166.66666666666666,
+      183.33333333333334, 200.0, 216.66666666666666,
+      233.33333333333334, 266.6666666666667, 333.3333333333333
+    ],
+    "relative_radii": [0.4, 1.0, 1.6],
+    "minimum_effective_count": 8.0,
+    "minimum_signal_over_sigma": 0.1
+  },
+  "solver": {
+    "max_iterations": 30,
+    "max_backtracks": 16,
+    "projected_residual_tolerance": 1e-10,
+    "jacobian_condition_max": 1e12
+  },
+  "validation": {
+    "weight_residual_tolerance": 1e-10,
+    "query_failure_rate_max": 0.01,
+    "complete_repeats_min": 18
+  },
+  "production": {
+    "parent_count": 100,
+    "required_gates": ["unit", "cpu_gpu_equivalence", "common_start"]
+  },
+  "seed_scheme": "SeedSequence([base_seed, experiment_id, geometry_id, repeat, stream_id]); PCG64DXSM"
+}

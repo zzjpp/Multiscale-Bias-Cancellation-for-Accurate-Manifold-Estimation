@@ -1,0 +1,45 @@
+name: simulation-experiments
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - run: python validate_release.py
+      - run: python -m pytest -q tests
+
+  experiment-smoke:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        experiment: [E1, E2, E3, E4, E5, E6]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned experiment environment
+        working-directory: ${{ matrix.experiment }}
+        run: python -m pip install -r requirements.txt
+      - name: Run experiment smoke contract
+        working-directory: ${{ matrix.experiment }}
+        shell: bash
+        run: |
+          case "${{ matrix.experiment }}" in
+            E1) python -m pytest -q && python reproduce.py ;;
+            E2) python -m pytest -q ;;
+            E3) python reproduce.py --mode smoke ;;
+            E4) python -m pytest -q ;;
+            E5) python reproduce.py --mode smoke ;;
+            E6) python -m pytest -q && python plot_figures.py ;;
+          esac
+
