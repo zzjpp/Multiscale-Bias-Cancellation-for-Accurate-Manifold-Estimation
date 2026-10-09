@@ -1,5 +1,6 @@
 {
-  "schema": "E5_POPULATION_FIGURE_RELEASE_V1",
+  "schema": "E5_POPULATION_PAPER_FIGURE_22_V1",
+  "paper_figure": 22,
   "formal_evidence": true,
   "geometry": {"name": "nonconstant_curve_R4", "d": 1, "D": 4, "q": 3, "m": 2},
   "kernel": {"p": 6, "longitudinal_profile": "exact_Eq_58_C3_plateau"},

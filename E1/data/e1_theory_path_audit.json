@@ -1,0 +1,697 @@
+{
+  "checks": {
+    "all_six_manifold_cells_and_metrics_valid": true,
+    "both_fresh_package_audits_PASS": true,
+    "global_resolution_ratio_strictly_below_1e_minus3": true,
+    "global_root_correction_ratio_strictly_below_1e_minus3": true,
+    "global_smallest_error_includes_average_and_maximum": true,
+    "packet_grid_and_provenance": true
+  },
+  "errors": [],
+  "expected_packet_count": 168,
+  "formal_publication_permitted": false,
+  "global_budget_methods": [
+    "STSP",
+    "DR"
+  ],
+  "numerical_diagnostic_caveat": "Two-resolution differences and final Newton corrections, not rigorous error bounds; no new population fits recomputed by this audit.",
+  "numerical_maxima": {
+    "minimum_production_multi_E_infinity": 7.156008674513714e-09,
+    "minimum_production_multi_error_including_average": 7.156008674513714e-09,
+    "production_reference_point_difference": 5.468307682453946e-12,
+    "resolution_difference_over_minimum_multi_error": 0.0007641561003034341,
+    "root_position_uncertainty": 5.138122031086409e-12,
+    "root_uncertainty_over_minimum_multi_error": 0.0007180150646527228
+  },
+  "package_audits": [
+    {
+      "audited_queries": 140,
+      "base_audit": {
+        "checks": {
+          "all_declared_cells_and_queries_resolved": true,
+          "all_declared_packets_present": true,
+          "cpu_gpu_equivalence_gate": true,
+          "formal_backend_is_float64_NVIDIA_L40": true,
+          "packet_config_and_source_hashes": true,
+          "resolution_error_below_fraction_of_minimum_multi_error": true,
+          "root_uncertainty_below_fraction_of_minimum_multi_error": true,
+          "weight_constraints": true
+        },
+        "config_sha256": "c55aa337fe37b0e69e0386436000bbacc285f13fc27f473ea88a86053c754191",
+        "errors": [],
+        "expected_packet_count": 140,
+        "gpu_equivalence_gate": {
+          "cases": [
+            {
+              "classification_match": true,
+              "geometry": "circle_r2",
+              "max_fitted_point_difference": 1.1102230292678406e-16,
+              "max_metric_difference": 1.1102230246251565e-16,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "circle_r2",
+              "max_fitted_point_difference": 2.220446049250313e-16,
+              "max_metric_difference": 2.220446049250313e-16,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r3",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r3",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "clifford_torus_r4",
+              "max_fitted_point_difference": 1.570092600654772e-16,
+              "max_metric_difference": 0.0,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "clifford_torus_r4",
+              "max_fitted_point_difference": 2.719479946185767e-16,
+              "max_metric_difference": 1.5701957963021318e-16,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere3_r4",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere3_r4",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r10",
+              "max_fitted_point_difference": 2.220446049250313e-16,
+              "max_metric_difference": 2.220446049250313e-16,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r10",
+              "max_fitted_point_difference": 4.577566798522237e-16,
+              "max_metric_difference": 4.440892098500626e-16,
+              "method": "STSP",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "circle_r2",
+              "max_fitted_point_difference": 1.1102236255975345e-16,
+              "max_metric_difference": 1.1102230246251565e-16,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "circle_r2",
+              "max_fitted_point_difference": 2.482534153247273e-16,
+              "max_metric_difference": 2.220446049250313e-16,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r3",
+              "max_fitted_point_difference": 1.1102230246251565e-16,
+              "max_metric_difference": 1.1102230246251565e-16,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r3",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "clifford_torus_r4",
+              "max_fitted_point_difference": 2.482536468002708e-16,
+              "max_metric_difference": 7.850470761742306e-17,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "clifford_torus_r4",
+              "max_fitted_point_difference": 1.5701027826940297e-16,
+              "max_metric_difference": 1.5699247457590104e-16,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere3_r4",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere3_r4",
+              "max_fitted_point_difference": 2.220446049250313e-16,
+              "max_metric_difference": 2.220446049250313e-16,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r10",
+              "max_fitted_point_difference": 1.1102230246251565e-16,
+              "max_metric_difference": 1.1102230246251565e-16,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "sphere2_r10",
+              "max_fitted_point_difference": 0.0,
+              "max_metric_difference": 0.0,
+              "method": "DR",
+              "query_ids": [
+                0
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            }
+          ],
+          "checks": {
+            "fitted_points_within_tolerance": true,
+            "metrics_within_tolerance": true,
+            "success_failure_classification_identical": true
+          },
+          "config_sha256": "c55aa337fe37b0e69e0386436000bbacc285f13fc27f473ea88a86053c754191",
+          "gpu": {
+            "cuda_runtime_version": 12090,
+            "cupy_version": "14.2.0",
+            "device_index": 0,
+            "device_name": "NVIDIA L40",
+            "float_precision": "float64"
+          },
+          "max_fitted_point_difference": 4.577566798522237e-16,
+          "max_metric_difference": 4.440892098500626e-16,
+          "schema_version": "E1_THEORY_PATH_GPU_GATE_V1",
+          "source_sha256": "4460f773adfa43137210d3525918025a50648c1df832d55021f7c1dabf6286f5",
+          "status": "PASS",
+          "threshold": 1e-10
+        },
+        "numerical_maxima": {
+          "minimum_production_multi_E_infinity": 7.156008674513714e-09,
+          "production_reference_point_difference": 8.149037000748649e-14,
+          "resolution_difference_over_minimum_multi_error": 1.1387684631757962e-05,
+          "root_position_uncertainty": 3.4850581852015286e-14,
+          "root_uncertainty_over_minimum_multi_error": 4.870114534116821e-06,
+          "weight_constraint_residual": 2.220446049250313e-16
+        },
+        "packet_count": 140,
+        "population_integration": {
+          "DR": "the same deterministic manifold quadratures; Gaussian measurement noise and Gaussian kernel convolution integrated analytically for the ridge residual; matching PCA uses the STSP compact-polynomial noncentral-chi moment integration at h1",
+          "STSP": "periodic trapezoid on circle/torus and Gauss-Jacobi latitude with exact signed-axis first/second angular moments on spheres; Gaussian noise reduced analytically to noncentral-chi radial moments and integrated by Gauss-Legendre quadrature",
+          "monte_carlo": false
+        },
+        "schema_version": "E1_THEORY_PATH_AUDIT_V1",
+        "source_sha256": "4460f773adfa43137210d3525918025a50648c1df832d55021f7c1dabf6286f5",
+        "status": "PASS"
+      },
+      "checks": {
+        "base_population_audit": true,
+        "normal_guided_protocol_all_queries": true,
+        "point_resolution_error_below_1e_minus3_of_smallest_fourth_error": true,
+        "root_correction_below_1e_minus3_of_smallest_fourth_error": true
+      },
+      "config_sha256": "c55aa337fe37b0e69e0386436000bbacc285f13fc27f473ea88a86053c754191",
+      "errors": [],
+      "minimum_multi_error_including_average": 7.156008674513714e-09,
+      "normal_guided_algorithm": "z+E*sum(w_k*t_k), t1=0, fixed radius-h1 PCA",
+      "schema_version": "E1_PCA_FIBER_RELEASE_AUDIT_V1",
+      "source_sha256": "4460f773adfa43137210d3525918025a50648c1df832d55021f7c1dabf6286f5",
+      "status": "PASS"
+    },
+    {
+      "audited_queries": 3584,
+      "base_audit": {
+        "checks": {
+          "all_declared_cells_and_queries_resolved": true,
+          "all_declared_packets_present": true,
+          "cpu_gpu_equivalence_gate": true,
+          "formal_backend_is_float64_NVIDIA_L40": true,
+          "packet_config_and_source_hashes": true,
+          "resolution_error_below_fraction_of_minimum_multi_error": true,
+          "root_uncertainty_below_fraction_of_minimum_multi_error": true,
+          "weight_constraints": true
+        },
+        "config_sha256": "33b0edf225e7333a4999a9a75021d92cb9adfdda4b65d9d2a7629554df47d4d2",
+        "errors": [],
+        "expected_packet_count": 28,
+        "gpu_equivalence_gate": {
+          "cases": [
+            {
+              "classification_match": true,
+              "geometry": "corrugated_torus_r3",
+              "max_fitted_point_difference": 6.473657052351724e-16,
+              "max_metric_difference": 4.0708895782942266e-16,
+              "method": "STSP",
+              "query_ids": [
+                0,
+                8,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "corrugated_torus_r3",
+              "max_fitted_point_difference": 5.095246433059111e-16,
+              "max_metric_difference": 1.7320129705455933e-16,
+              "method": "STSP",
+              "query_ids": [
+                0,
+                8,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "corrugated_torus_r3",
+              "max_fitted_point_difference": 6.306597093256058e-16,
+              "max_metric_difference": 5.859028540111666e-16,
+              "method": "DR",
+              "query_ids": [
+                0,
+                8,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120
+              ],
+              "resolution": "production",
+              "sigma": 0.008
+            },
+            {
+              "classification_match": true,
+              "geometry": "corrugated_torus_r3",
+              "max_fitted_point_difference": 1.4456898839738348e-15,
+              "max_metric_difference": 4.566659550508945e-16,
+              "method": "DR",
+              "query_ids": [
+                0,
+                8,
+                16,
+                24,
+                32,
+                40,
+                48,
+                56,
+                64,
+                72,
+                80,
+                88,
+                96,
+                104,
+                112,
+                120
+              ],
+              "resolution": "reference",
+              "sigma": 0.008
+            }
+          ],
+          "checks": {
+            "fitted_points_within_tolerance": true,
+            "metrics_within_tolerance": true,
+            "success_failure_classification_identical": true
+          },
+          "config_sha256": "33b0edf225e7333a4999a9a75021d92cb9adfdda4b65d9d2a7629554df47d4d2",
+          "gpu": {
+            "cuda_runtime_version": 12090,
+            "cupy_version": "14.2.0",
+            "device_index": 0,
+            "device_name": "NVIDIA L40",
+            "float_precision": "float64"
+          },
+          "max_fitted_point_difference": 1.4456898839738348e-15,
+          "max_metric_difference": 5.859028540111666e-16,
+          "schema_version": "E1_THEORY_PATH_GPU_GATE_V1",
+          "source_sha256": "a2ec8472baaa2144433f387b8ead20841066c18d86568913e60e0244fbf92c25",
+          "status": "PASS",
+          "threshold": 1e-10
+        },
+        "numerical_maxima": {
+          "minimum_production_multi_E_infinity": 1.3112918871452735e-06,
+          "production_reference_point_difference": 5.468307682453946e-12,
+          "resolution_difference_over_minimum_multi_error": 4.170168164739154e-06,
+          "root_position_uncertainty": 5.138122031086409e-12,
+          "root_uncertainty_over_minimum_multi_error": 3.918366369422352e-06,
+          "weight_constraint_residual": 1.1102230246251565e-16
+        },
+        "packet_count": 28,
+        "population_integration": {
+          "DR": "the same deterministic manifold quadratures; Gaussian measurement noise and Gaussian kernel convolution integrated analytically for the ridge residual; matching PCA uses the STSP compact-polynomial noncentral-chi moment integration at h1",
+          "STSP": "periodic trapezoid on circle/torus and Gauss-Jacobi latitude with exact signed-axis first/second angular moments on spheres; Gaussian noise reduced analytically to noncentral-chi radial moments and integrated by Gauss-Legendre quadrature",
+          "monte_carlo": false
+        },
+        "schema_version": "E1_THEORY_PATH_AUDIT_V1",
+        "source_sha256": "a2ec8472baaa2144433f387b8ead20841066c18d86568913e60e0244fbf92c25",
+        "status": "PASS"
+      },
+      "checks": {
+        "base_population_audit": true,
+        "normal_guided_protocol_all_queries": true,
+        "point_resolution_error_below_1e_minus3_of_smallest_fourth_error": true,
+        "root_correction_below_1e_minus3_of_smallest_fourth_error": true
+      },
+      "config_sha256": "33b0edf225e7333a4999a9a75021d92cb9adfdda4b65d9d2a7629554df47d4d2",
+      "errors": [],
+      "minimum_multi_error_including_average": 1.1558407955959345e-07,
+      "normal_guided_algorithm": "z+E*sum(w_k*t_k), t1=0, fixed radius-h1 PCA",
+      "schema_version": "E1_PCA_FIBER_RELEASE_AUDIT_V1",
+      "source_sha256": "a2ec8472baaa2144433f387b8ead20841066c18d86568913e60e0244fbf92c25",
+      "status": "PASS"
+    }
+  ],
+  "packet_count": 168,
+  "packet_sha256": {
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.008000_production.json": "85981dcd2b46ae258e2891ab4e50e2967a0689450922ab572d2f16cb367c9952",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.008000_reference.json": "93e6e24398f9528189b2c6458a5381ae33c2944fbf241f350265912d071c3da0",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.010000_production.json": "32768b4a4bb5775b08328a076295471dc1b33d0dfc4080d7c6c70734fbf6273f",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.010000_reference.json": "78bc07a7528bb0c0dc6e8b8c930db5235d77103fdb0636cce54cd7e99acb63ab",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.012500_production.json": "488047eb3afca6e51ec6731cc5b37ac30e4d05107b94bb586ee55b473f91c691",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.012500_reference.json": "92e0595cf96081f8ae74bd7138ff65f93835bc52819c4d189320009ad3047d89",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.016000_production.json": "b0a690a6f0b32d6e1b2e6be7c7646998ee9476819897a243a60f9f25a3d72094",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.016000_reference.json": "1a043a07c49b0a435419061f39acab0072fa894f4dbc4dcb827e6d8d5979e641",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.020000_production.json": "a86cab7294e38a22916ec5ccfa9162501d028dbdf7442069e0e4e3911646bf4f",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.020000_reference.json": "ad988570821d0e62cf86b6ddc30d6e7112186082457fa1938d88bf870fd8d119",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.025000_production.json": "2aa19b14e8b3a63cd7afb3ef7af4869a078df85d590bf800b655d619e6372c2e",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.025000_reference.json": "584544e49fa5efd749dbbc3a1252ba9efa56281f25986412430ae956ab6c4727",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.030000_production.json": "11a043c297a758981400d69246d6add5d030cbbe952297905cd9f8ce939c8499",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_circle_r2_sigma_0.030000_reference.json": "91ff4b20dbe2b24203ea7fe01f316ad9afa6fd90f57dc97e0ca33e6105ade59e",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.008000_production.json": "c6eee2d4d915c6415ef412d12638de529331af8fc7942d64c41c61128848ff6e",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.008000_reference.json": "324577a9090c1e66ccc1a1b261cf73651f90272fe55d8a1dd6dfe5c91f1e23dc",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.010000_production.json": "3485ee8fb7d2cbdcd43f79579661ffd908254139cb7882717970a03c0f8179fd",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.010000_reference.json": "2372c53352e82a8b2a31373467fea5867d89553b751c96bf31fe84f9b087c3df",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.012500_production.json": "c903b088ebd4cbf3125f48f28aef8300cee82091b9657be8a28d91adf30cdcf3",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.012500_reference.json": "37df86b03607112d85111f8a26a55e71b54889948d161fcd5fa995d4b575942d",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.016000_production.json": "d550cfdc43011781643b93d77b36ec966df93bd78d73f6943cbc8a95c25e4878",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.016000_reference.json": "b419fc7a33dba9e9fe9077c6ae7e5796b0603702e515a15cd7bbe8175d88b180",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.020000_production.json": "7e415cbdecdea244e3f597272ce1617f24845057afd917585690698ca7dd0658",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.020000_reference.json": "cb2fedf9c485784a6a4680863b216df7715a6d47c45af9adad3a98bc85f48ecc",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.025000_production.json": "81f92bb7bda58bc0f1212f2f233cd50763a95d0eb16c61ccbe8e32049fa4960f",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.025000_reference.json": "018b1c7bd07b740c8dc70caebaf10a5c1b3f8483d8cbf0e39b44010d1dd3b615",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.030000_production.json": "77c7e90a4b29924a1d24828e161b9f398aa13cecd4960bbf2b61eed9cacf4c83",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_clifford_torus_r4_sigma_0.030000_reference.json": "e58b917aafcbcf055eebf4f5fd06e70f402b0338dbccc83b77822ef806910daa",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.008000_production.json": "9c91cc85fcc873f55a3ddcffcec0e5b9ccd5e3ccafd52be9e8134e8cd674aaa7",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.008000_reference.json": "696b4efc2ef79ee9d4f68a62ca7ddb7b306b2d89548147cc6a86b5b0e71dd916",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.010000_production.json": "64c130dd3e185e6c75bd1bcd524154a23e0ecd0de34976c6cf8144d7d93c4ab9",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.010000_reference.json": "86523a632e15548453691767f3e0e41e7be9e3e5b7a4c41301de557ad676426a",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.012500_production.json": "6d6c5fdd73535360809d997eb1a63efdea75b7fbd94d441d59df8fc73c54d785",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.012500_reference.json": "b4120e3b9570758c40a5f009d30cb6efbf93c014f22921597b703bf1feb81b18",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.016000_production.json": "9debef1472b6ee258bfedf88365496d678759abbe7dac5f3a78d38e77de771cd",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.016000_reference.json": "8b6ab34e19bf1ef11d8b9491e0601ff9c16c7d08d9fa0d1f2b945c80d61b5faa",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.020000_production.json": "351e3e581f90c5d7e978285b44c4a8a1cb676d1941edf0a9ac6dce113159fc77",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.020000_reference.json": "3b8468f8cd7fb16775c004c3023612c0b91dfeb8a9c38eca3e4382867a2ce6e0",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.025000_production.json": "5085ef88247325eb44b8effa23b94af21146ccff8bb72d12b46d3f9ea03d9d96",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.025000_reference.json": "76cda4813ad742aa54d85f456b96c821548109b624fdb653b1cc0267b3e9f870",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.030000_production.json": "918fe3952b274a01eec0607060d93e05de5e2dcc22d061082e6c430189044237",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r10_sigma_0.030000_reference.json": "f1dffd504652eac9b96cd1dada00367e4e035ad5a921eb680bca2aada18f29c0",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.008000_production.json": "e86fc13ab0bc6957c8f9c467efc099e461c82af09673173b791ee27d1dee09e2",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.008000_reference.json": "c665ae92389d2ac0da86bb3d3d909942f6204ea4d0039812b4aca3ef59f117e8",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.010000_production.json": "ec7cd131c3062767639a732e5f715746e64ab76da84a5400cef653d4cca81724",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.010000_reference.json": "997bce5e3010db730f30f42f2f79768ada9b58fb02f9196b15bdc7321242ad3b",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.012500_production.json": "26489366c58dcf0ad0c3c9cb94d95bb3b46467990078ab5f9df0773093dfe383",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.012500_reference.json": "8d000045e1bc2aaec6569faac4e85b3d3827e7a9c9d307abbdb698eecb214525",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.016000_production.json": "f47098c29cae8047a6c84b87a37e25976305b30c43c84f919c1ee033979c12ef",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.016000_reference.json": "5ab1c27197966b394a13210ec2931f230c4d23b03202e179c4d50f2b8f1da3bb",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.020000_production.json": "bc7ae0d33273d7cf4c315f303418d635598d6fa175c03022d635dcf340897a79",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.020000_reference.json": "b3960e3704bd9643436661836c05ae15a8baadaeb9c9c9e545710c6a20158831",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.025000_production.json": "88709ffa21bc92982ce5be99f3aab124369d9688b07c773c4107f7c4e8e54d84",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.025000_reference.json": "b98309ce0c97761f12b84d21ed39fde41cce41158553e67cfb97dc0aefcfaa56",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.030000_production.json": "c7340e92d061eac52dde2836cc81962013a629b53375134bbc39fe61517936d9",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere2_r3_sigma_0.030000_reference.json": "fe0664fae2dc0af899fad263b0a2b0f6ed47d81452b3797c488bc0f13d56fd55",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.008000_production.json": "6a785634aee5b8a46daf97a29792a9148bbcb9f8e4ae2c82018bfdc537f5b850",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.008000_reference.json": "d87b09165428d4bcdda95199856efc09c850092fc912339c17573b9d32b10ae4",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.010000_production.json": "9cc508695ec2e052b9c10746881d0931c96a3ae4310931e97976079e7f43df10",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.010000_reference.json": "7149a69eb5e322fae7a0907ddd401c3cc63381822f17a62419731d462c8c929b",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.012500_production.json": "11028d625e616b61806d48ef1e5bf0ac3b9c29b01699a8b79419bceace3c574c",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.012500_reference.json": "092113f1c983d7d07d21339ff19859f40276cb37573c7360fdd83962cd35ef49",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.016000_production.json": "f92f0b0fabac55eddd537fa7ccb688fa2d49e94e62ef12d9b4213af056e90f24",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.016000_reference.json": "6811360f608cf04762eee027c6c34eaaa12c28d5991172e49b2742820ad07887",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.020000_production.json": "e93417e6b2c1c51d13c54ba721a22ec0e13ed3c9158f089f4a9dd7b531fff85f",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.020000_reference.json": "8b28f1dfa2c97b3bf8b2e22341d211510490443a9176fca5306b4e9d0ce7d63e",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.025000_production.json": "ba69ebaab5c6410b1b5342bbebdf9fb5ca848199f309a75f920c30ac572c02c0",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.025000_reference.json": "f0356eda5bbefb2519d0c00c9214d1fac34b30e21bbccea91912b7102f3c32f2",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.030000_production.json": "d08dc3e4797fadcee12c3d4560257a4d4e029d3436eeab3e50d456484b7b58f7",
+    "project/E1/theory_path_population_all_e1/results/packets/dr_sphere3_r4_sigma_0.030000_reference.json": "dae85b73cb0050c7cbc3c8dc2e1beca3464bf8171e7fcf24ca8306480856d99d",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.008000_production.json": "e4d50eac4a2e401fa03b387782de4cfd72a798dc948ea3495de02375c7d69729",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.008000_reference.json": "7bbc493411c40852c030a1e9f7baa6752eb3046b74bfc119c87fa493397c05fe",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.010000_production.json": "d3885e6a7c111b9b951f99bb82f2fd9ad1a73c4da286b82b93bb394b8375843d",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.010000_reference.json": "d1bf0c92dacfe448151c946bae609664594f4717858beb466340c3b69f76bf49",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.012500_production.json": "be60b5666cab69d51c648e74fda5145277e4b01660f48c1da604988ac4fb5ffc",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.012500_reference.json": "03dbde353523efdc94f0bb384c7ab3880f5d18f5f5c7bed6b106ca2ca784e295",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.016000_production.json": "0c2fc4eb1c34abd187184c3170ce1c4f8104b79d8d4c781563d89743f569517a",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.016000_reference.json": "296f0c47b5bc356084897dc2ef2f8d8f97622ad98609718b0230e80fc274e71c",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.020000_production.json": "f8cb7a66afe23c6a761566be3cbad8edbc60183df20a142ceb3eee192b5ef483",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.020000_reference.json": "3813bdbe6afe9a3845b9e0fd9bcb737da86f1d8d352ecb4f0d723b2492296030",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.025000_production.json": "502151d9d1e11d7b4011b3396bffefd788da49d53f64ac221b323c2303014d7f",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.025000_reference.json": "b680b2fd0da2bd6a3341e7444108b534c526df409ec46bc7e2f80706e2036fd6",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.030000_production.json": "dd26063f96775c042c5b4f1f70bd45a4188188982ef62d5ac4d86c51bef61082",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_circle_r2_sigma_0.030000_reference.json": "71e1516f68efe0deaae5067eb3e9074a29c9b8317b60eecb63cf62c4a1b48b18",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.008000_production.json": "1cc29b5ee13c4e634df4c9c330102e66f80fd2f11f4a6bfba5a7db818916c59c",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.008000_reference.json": "8ac53f9101eb1ff6795b31cc1b68b4829769b8f214c424906c249207034b8001",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.010000_production.json": "b958f8138e03c6fa90fea07612e6ec67575d36395b212354abdb9a0644093295",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.010000_reference.json": "d6f5f216ce16e83a60bf51265088b70a2f149581ca5cf7b0eedbf2797e2887c9",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.012500_production.json": "a732b1c145e643337623c5736c99da1de7a4cf80c69e76348f98787b1a3774da",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.012500_reference.json": "6002235361cb88e42c69855deb8123e770adfafdb2e16305cd4e3caf49232447",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.016000_production.json": "dccd20f48947f1f3d08729797f9255fea99d1c9b7e38682e1511e3c0c1d7d356",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.016000_reference.json": "338023d1a4b6e31d4ad3bb0650a152767a96b8cbcbf7ee2ea9c152b79d60de76",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.020000_production.json": "1bf7ce8f5b2bd05df9597869089db3b0b15459bace2c31b46fd653c6c7d1bc41",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.020000_reference.json": "d14768b4f16664916bbea7d84939a863fe1e7f638dfa00feea9996eece4517d3",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.025000_production.json": "0f7c89f17a381733fd2b2f2c559e805ea735d17de53cec5b987be5d5e092c824",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.025000_reference.json": "0b3f025f86e1b06ad729389998a07e678e811d04a320918a04827379aa68e1bc",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.030000_production.json": "1314c81e4bfd58fe7c1b64cb543b15dd74f6a4410b7c12d997fb5333721715a7",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_clifford_torus_r4_sigma_0.030000_reference.json": "9b1e25aa06c3ae6c882fe20729f8e5b2e5092f86fd9d01c68830a6c0e9ebfc67",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.008000_production.json": "41e84d287e5072aaeadde1c0118c8ab988e8dd1dc55178944db623e8f65b0a8d",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.008000_reference.json": "6754c1fe437d78209ab6a335ebe779ff10e4590646727d0903ee4d8ae92be633",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.010000_production.json": "f40e008036c479581835552445638224cb30acdb2afe76653bcef8145235ca4c",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.010000_reference.json": "976694a363135d6f37763e1aaac9bcbe8fb424b3d26c48b81363ee27969f126d",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.012500_production.json": "230d14becbde4051d9a88d30f7a641cdd17262cd739456a9df729492ba8a5e15",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.012500_reference.json": "3cb515cafb731080cc1bf36dc79348157deee017ae8ec58fe28b12bfb8f1f4c0",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.016000_production.json": "80e85ec5ec0e358e712b505093496d08499bc26d514adf7ce8516c6b57915284",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.016000_reference.json": "543d53d4c8d2185ccd162b2b957a0bc2c5309c6cfbf594ffcd5b1c7ba026157a",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.020000_production.json": "663a6effd5c346a82211d2c893c796a788dea72e7d21c3fa86c7cc0e9cf96d88",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.020000_reference.json": "5a32b3cc0e829dff8eb5fb7f031a360e8c74eb05788da642df86972f9e042baf",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.025000_production.json": "2277d0a26464c2aaf836d949eff23614ee1abfd69a56784946e69cd6415b52af",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.025000_reference.json": "d5d03570dacd9815a8596d63bd9f6c9a626e2d02431823004b4f8284e8608d85",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.030000_production.json": "7171b1414993705a72aa7c72313d88666aec4e2e0560216adde9db9c17666fb4",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r10_sigma_0.030000_reference.json": "c3eb61dc4cef785d4fae472cf8f93de9b961fc8fe77044c00eb03da5125193a4",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.008000_production.json": "70f75f3ed53e3fe47a809dcb326542cc0d430445e30e302339d75085b2dbcd9c",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.008000_reference.json": "402b8cc8d0ab5ce61d62b30142f36dd737b9eedfa94484f8b2d335c8436df92d",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.010000_production.json": "7b05a857db7a507337ee897fb9521f2fa636c9628e5f13b36b17c9bd61a19dbb",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.010000_reference.json": "1915f5f4666546fbbd36e9ceff75f7bdc7529e455039acfb931ae9c512faed54",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.012500_production.json": "b62dec4ff85087c546ac0572858ed62a0154930f919c2f55b826f46101388c27",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.012500_reference.json": "e54993eee9560e9255c0353c867212225ca5379ebaa6140236c3c1ee92bd4662",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.016000_production.json": "f37bdec55507983fdc0859caf763a361e1aa79a959248fb88325660e8c407891",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.016000_reference.json": "cb3fa19bd783d14e7b4b65a882343885b7537ddcfb6863c0a3c94aa4d52c027b",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.020000_production.json": "5523a24191cc2cff30191ec41e47318ac74ebd1555ef6d7f26b0e73edaf5e734",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.020000_reference.json": "a7e5cb7295240a4493b98e0d6e1a8a02012caf37acbfdf722673b9d832d702c4",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.025000_production.json": "7b4c9c946e3c6912871654793552c4bf7598b28f684d98acd209c28b293a3ec0",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.025000_reference.json": "1431a331f9e1701bbb8a53b51cb9c7d138bf39e4610e1c2eeb77d6bdfb81e694",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.030000_production.json": "c2988b6bdf152c7638abc15e887119729bf6d5c172fb53c9e6f7ffa955d2789f",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere2_r3_sigma_0.030000_reference.json": "4bc182cde1ac4ea47f67473a997757b106c16cf59aa1dfbbc4d8a77510af48d9",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.008000_production.json": "06b085a5412cb7258510640a91c3af04298b1b734d3530acf4db64352af48f4c",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.008000_reference.json": "194d557a3e529082a5cf2e915841a66c2233b0cd2c39153dc1ea609f14e146d3",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.010000_production.json": "7b52a8b1fe22f14730a49c572eb04e7702d95e800da80423521582567af4c369",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.010000_reference.json": "27ab0aefaa2ee02405808785fc21133f5931073357e34bce727a8c8714be7f50",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.012500_production.json": "297af5fc8d671d25d7d4e678e9ee3aeb9941344855e4bf37265f38e59169739e",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.012500_reference.json": "1bb7bd6a9cf81298c759375d6c2ffcdb582ea9bd8b546fd09093f12d7316f034",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.016000_production.json": "696bada2f777fe98b4487a259429755ad69b8c1aa23605b2de16e1d1f7d7a52a",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.016000_reference.json": "6b451ffa966b3baf2b7501076ea1cdad767d7a0b70d6808390077c5d66c77320",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.020000_production.json": "2a52315829785ab72786c4fbe24a22cb486ec73eecac097fe8edb73250bcd590",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.020000_reference.json": "048ced4b07eaca6b75255a73e9cd6983beb564a91f9a73c94d7bab20fd8f6d32",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.025000_production.json": "c3565fe66e9903a5bfc021a213bfe026379901d5f7053a0980f3c8c314bb4bd9",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.025000_reference.json": "ec6bdd7a95c718f8bcc893c1b9766e88576fb0f455a1ed2ffc853f35d4d7896e",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.030000_production.json": "a1573c15b70af834927f7532b4d8b74a9926746b2b463f4c8f6968cebfcafc23",
+    "project/E1/theory_path_population_all_e1/results/packets/stsp_sphere3_r4_sigma_0.030000_reference.json": "5c2112930c8ddd613d28e255cf1c9012f108497c5e4cd14978c78aeb6877454b",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.008000_production.json": "f577869e6fa4ea8602a81723c4fba4a7f9813e44d95feff7523481e090476d77",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.008000_reference.json": "e15a6de5ff8b8fdd87f0e57b22a723ae13f7706801207fbd53619cac48154dae",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.010000_production.json": "a8c9dc83e8e22f970416d98d9d6a4a82ade07800f07872fc9dd1141bd5189b58",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.010000_reference.json": "de7ad9ba34a16606c07c1bfea796d8c05f849fadef204bea301b30b84c6a3841",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.012500_production.json": "c7d0cd7a290b0e3d3e013227b9debb4a80b418cad41af61ed70b1e19e8a892a8",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.012500_reference.json": "ea714c942ae4b353b5158623786c944b1add9108f0a49fac8a8c44bee866d7b1",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.016000_production.json": "58a6ddac853785d4a15c92df7f3efac2338999cdc41687233f0e03a182df77b1",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.016000_reference.json": "891e52e278ae52b2c301def4c11e3c8595dac472ca518848c5da305b4c09ce30",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.020000_production.json": "026b8c2b9274609cc3087cc8aa53b45c6870b4a60623f79f2f5e1d386b4a7c48",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.020000_reference.json": "4d1700037e482feab4bb17f2f7028a29c9ed2e205a2801c8319027e38d8610a0",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.025000_production.json": "346eae590574185b5abf018537c1d5e8005d3a98e03ee9967793b4fbca98f457",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.025000_reference.json": "9dbb655ca7f1e4a02149a215fdc93b3ca895f1df79ea70f1445b9596fcc81512",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.030000_production.json": "846cfa2b1c3b48481820a01ec4f9ca7b8dce987acf1b02f2d4457babcb81eea6",
+    "project/E1/theory_path_population_six_manifolds/results/packets/dr_corrugated_torus_r3_sigma_0.030000_reference.json": "4dfd0efa47e036e7f373310ee93a84c45d2766d71ed4e22c8f2e4a3f1636619d",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.008000_production.json": "3511d11cff6e80e76b75d006f3fea1f465389379db71d084720b318c619d5734",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.008000_reference.json": "ad56b59dd181b4c66eb0ebbbefc094f2eb0ce4e36ca6f5770e5047f106f78cfd",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.010000_production.json": "6b8f188272a88f958ec41829b3caffde38f5d0ce036596e5524877dbcf8f0a0b",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.010000_reference.json": "46bb953b936c9fddf45e941c0495880b094928f0cccc8d47b666c16ccb98affc",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.012500_production.json": "918ae18bfddfd5ac4f7842f4ced0dab651dd27518be0efaa6dcad2c28b677be9",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.012500_reference.json": "317718251ffac5b1baa0fa4bad725274637f686bd1551fa6e71f4460056aa4d8",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.016000_production.json": "d422eafc9fe81b21d6be4e01b5e59b9e69aeb1151f44c5b08e89da0c01a13ce1",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.016000_reference.json": "ab0229beffcd4c899e6c5a2c18578c7771767de635174ecc7ef04085142dcd13",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.020000_production.json": "8df1eb42c0a253af06c4a1f84975f8b6b9459c323f95b505f272f5b23c8072f5",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.020000_reference.json": "0f949d196709998eebb5dab56911a485a38af1794f096f97ebef1c745a0d9321",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.025000_production.json": "789f466987447675ceef7c66aa2d304be7e31dbd60ca43eedaaec75c06fe90a6",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.025000_reference.json": "30ff2c0f77207455c2ac66dda9df28f6b21dc6d593c3d52ff7a10afd47f7210e",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.030000_production.json": "a797acb960ae797c0246f33dc837f9916a073d4d806a826c9ed13b7b032ca54c",
+    "project/E1/theory_path_population_six_manifolds/results/packets/stsp_corrugated_torus_r3_sigma_0.030000_reference.json": "c96a82b9700726748ff35ce39c71a5145faa61ba70cc0b7e83f58efc6de26f7d"
+  },
+  "root_correction_resolutions": [
+    "production",
+    "reference"
+  ],
+  "schema_version": "E1_PCA_GLOBAL_RELEASE_AUDIT_V1",
+  "status": "PASS",
+  "summary_row_count": 84,
+  "unchanged_YY": "Not relabelled or rerun; original frozen YY provenance and its separate 1e-2 metric-convergence gate must be reverified at publication."
+}

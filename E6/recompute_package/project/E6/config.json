@@ -1,0 +1,71 @@
+{
+  "experiment": "E6_noise_level_misspecification",
+  "true_sigma": 0.05,
+  "deltas": [
+    -0.3,
+    -0.2,
+    -0.1,
+    -0.05,
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "query_count": 256,
+  "query_phase": 0.37,
+  "dr": {
+    "h1": 0.15,
+    "h2": 0.3
+  },
+  "stsp": {
+    "h1": 0.15,
+    "h2": 0.3,
+    "kernel_power": 6
+  },
+  "yy": {
+    "circle_radii": [
+      0.2,
+      0.5
+    ],
+    "curve_radii": [
+      0.2,
+      0.5,
+      0.8
+    ],
+    "kernel_power": 6,
+    "first_stage_radius_over_sigma": 3.0,
+    "longitudinal_radius_constant": 12.0
+  },
+  "population_resolution": {
+    "coarse": {
+      "dr_latent_count": 2048,
+      "stsp_latent_count": 1024,
+      "stsp_radial_order": 64
+    },
+    "fine": {
+      "dr_latent_count": 4096,
+      "stsp_latent_count": 2048,
+      "stsp_radial_order": 96
+    },
+    "yy_coarse": {
+      "latent_count": 1024,
+      "radial_order": 64,
+      "longitudinal_order": 64,
+      "workers": 8
+    },
+    "yy_fine": {
+      "latent_count": 2048,
+      "radial_order": 96,
+      "longitudinal_order": 96,
+      "workers": 8
+    }
+  },
+  "gates": {
+    "weight_constraint_tolerance": 1E-12,
+    "delta_zero_tolerance": 1E-12,
+    "fit_digest_invariance": true,
+    "fine_coarse_delta_abs_tolerance": 5E-05,
+    "fine_coarse_delta_rel_tolerance": 0.08
+  }
+}

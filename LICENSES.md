@@ -1,17 +1,12 @@
-# Licenses
+# Existing license boundaries
 
-Each experiment remains under its own checked-in license:
+- E1: its original `E1/LICENSE` reserves all rights. The preparation work does
+  not grant an additional redistribution license.
+- E2–E6: the existing MIT notice is retained. E4/E5 notices were copied from
+  their own directories; E2/E3/E6 previously declared MIT and use the same
+  pre-existing project MIT notice retained in E5. No new copyright holder or
+  license was selected during cleanup.
 
-| Directory | License status |
-|---|---|
-| `E1/` | All rights reserved; no reuse permission is granted without explicit permission from the copyright holders. |
-| `E2/` | MIT License. |
-| `E3/` | MIT License. |
-| `E4/` | MIT License. |
-| `E5/` | MIT License. |
-| `E6/` | MIT License. |
-| `E7/` | MIT License. |
-
-The per-directory `LICENSE` file is authoritative. Publishing this collection
-on GitHub does not by itself broaden the rights granted by those files.
-
+There is intentionally no root license that silently relicenses E1. Local
+GitHub preparation is not public upload authorization. Owners should confirm
+the desired public licensing before distributing the complete repository.

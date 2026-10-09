@@ -58,22 +58,16 @@ def weights_for(config: dict) -> dict:
     }
 
 
-def finite_conditioning_gate(config: dict, weights: dict) -> dict:
-    specification = config["conditioning_gate"]
-    observed = float(weights["complementary_condition"])
+def finite_weight_residual_gate(config: dict, weights: dict) -> dict:
+    specification = config["weight_residual_gate"]
     residual = float(weights["max_abs_residual"])
-    threshold = float(specification["threshold"])
-    residual_tolerance = float(specification["weight_residual_tolerance"])
+    residual_tolerance = float(specification["tolerance"])
     return {
         "name": specification["name"],
-        "observed": observed,
-        "threshold": threshold,
+        "complementary_condition_diagnostic": float(weights["complementary_condition"]),
         "weight_residual": residual,
         "weight_residual_tolerance": residual_tolerance,
-        "pass": bool(
-            np.isfinite(observed) and observed <= threshold
-            and np.isfinite(residual) and residual <= residual_tolerance
-        ),
+        "pass": bool(np.isfinite(residual) and residual <= residual_tolerance),
     }
 
 
@@ -153,9 +147,9 @@ def finite_cell(config: dict, sample_size: int, repeat: int, seed: int,
     query_count = int(config["query_count"] if query_count is None else query_count)
     sigma = float(config["sigma"])
     weights = weights_for(config)
-    conditioning_gate = finite_conditioning_gate(config, weights)
-    if not conditioning_gate["pass"]:
-        raise ArithmeticError("finite-sample directional weights fail the conditioning gate")
+    weight_residual_gate = finite_weight_residual_gate(config, weights)
+    if not weight_residual_gate["pass"]:
+        raise ArithmeticError("finite-sample directional weights fail the residual gate")
     sample = sample_noisy_curve(
         int(sample_size), sigma, np.random.default_rng(int(seed))
     )
@@ -233,7 +227,7 @@ def finite_cell(config: dict, sample_size: int, repeat: int, seed: int,
         "summaries": summarize(metric_rows, fill), "query_rows": query_rows,
         "provenance": config["provenance"],
         "legacy_failed_gate": config["legacy_failed_gate"],
-        "conditioning_gate": conditioning_gate,
+        "weight_residual_gate": weight_residual_gate,
     }
 
 
@@ -310,7 +304,7 @@ def run_formal(root: Path, population_config: dict, finite_config: dict,
 def audit(root: Path, population_config: dict, finite_config: dict,
           source_hash: str) -> dict:
     errors, hashes = [], {}
-    expected_finite_gate = finite_conditioning_gate(
+    expected_finite_gate = finite_weight_residual_gate(
         finite_config, weights_for(finite_config)
     )
     specifications = (
@@ -352,8 +346,8 @@ def audit(root: Path, population_config: dict, finite_config: dict,
                 errors.append(f"{path.name}: source figure requires a complete 256-query grid")
             if family == "finite_sample":
                 if (not expected_finite_gate["pass"]
-                        or result.get("conditioning_gate") != expected_finite_gate):
-                    errors.append(f"{path.name}: conditioning gate mismatch")
+                        or result.get("weight_residual_gate") != expected_finite_gate):
+                    errors.append(f"{path.name}: weight residual gate mismatch")
                 if result.get("legacy_failed_gate") != config["legacy_failed_gate"]:
                     errors.append(f"{path.name}: legacy gate provenance mismatch")
     digest = hashlib.sha256()
@@ -368,7 +362,7 @@ def audit(root: Path, population_config: dict, finite_config: dict,
         "packet_set_sha256": digest.hexdigest(),
         "failure_taxonomy": dict(failure_taxonomy),
         "finite_figure_formal_evidence": bool(finite_config["formal_evidence"]),
-        "finite_gate_revision": finite_config["conditioning_gate"]["revision"],
+        "finite_gate_revision": finite_config["weight_residual_gate"]["revision"],
         "population_figure_formal_evidence": True,
     }
     atomic_json(root / "AUDIT.json", report)

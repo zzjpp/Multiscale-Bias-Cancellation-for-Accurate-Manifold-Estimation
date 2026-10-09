@@ -1,97 +1,40 @@
-# E4: estimated-normal-fiber versus nearest-neighbour correspondence
-
-This self-contained folder reproduces the two-panel E4 figure for the
-nonconstant-curvature closed space curve
-
-```text
-gamma(theta) = (1.5 cos(theta), sin(theta), 0.3 sin(2 theta)) in R^3.
-```
-
-It contains only the finite-sample `N_q = M_match = 32` experiment used to
-produce the reference figure. It does not contain the historical E4 sweeps,
-the later 256/2000-query diagnostics, server launchers, or unrelated results.
-
-## Scientific protocol
-
-- `h1 = 0.12`, `h2 = 0.24`, `sigma = 0.06`;
-- `n = 200,000` synthetic observations;
-- `N_q = M_match = 32`;
-- ten held-out repeats, indexed 10--19;
-- fixed `PCG64DXSM` seed lineage with master seed `20260911`;
-- methods: true-normal Oracle, estimated-normal-fiber (ENF), and discrete
-  nearest neighbour (NN);
-- bars: median across repeats; error bars: interquartile range.
-
-All data are generated synthetically. No external dataset or network access is
-required.
-
-## Environment
-
-The reference output was generated with Python 3.12.9. Install the pinned
-dependencies in a fresh environment:
+# E4 — fixed-query correspondence vs candidate density
 
 ```bash
-python -m venv .venv
-python -m pip install -r requirements.txt
+python E4/reproduce.py --output ./new_figures/E4
+python E4/reproduce.py --mode verify
+python E4/smoke.py
 ```
 
-## One-command reproduction
+The figure uses the actual rerun with the exact archived ENF h1 fitted
+coordinates shared by Oracle, ENF and every NN density. Ten original n200000
+parents (repeats10–19), 32 query arrays and source-bound frozen inputs are
+included. sigma=.06,h1=.12,h2=.24 on
+gamma(theta)=(1.5cos(theta),sin(theta),.3sin(2theta)).
 
-From this directory, run:
+M_match=32/36/40/44/48/52/56/60/64/80/96/112/128/256/512. NN uses the
+original nested balanced arclength candidate refinement and Euclidean matching.
+ENF uses PCA at the fixed h1 coordinate; Oracle uses the true geometric chart.
+The h1 reference construction/branch selection also uses the controlled true
+chart. These controlled geometric choices are explicitly retained.
+
+An explicit fresh GPU rerun is available:
 
 ```bash
-python run.py
+python E4/reproduce.py --mode recompute
 ```
 
-The command creates `outputs/` containing:
+It verifies original source/input hashes and the archived actual fixed-query
+CPU/GPU gate, refuses an existing `fitting/outputs/packets`, and writes new
+full-density packets/tables/figures under `fitting/outputs`. To independently
+run a new gate, use a fresh copy of `fitting` without the old gate file and
+run `fixed_queries.py gate` before `fixed_queries.py run`; never relabel the
+bundled gate as newly tested. Use the original Linux GPU environment, not
+figure-only requirements. Actual four-query CPU smoke is not a new GPU gate.
 
-- `e4_enf_vs_nn_equal_density.png`;
-- `e4_enf_vs_nn_equal_density.svg`;
-- `summary.csv`;
-- `AUDIT.json`;
-- the ten compact repeat packets.
-
-Expected runtime is about one minute on a modern desktop CPU. The program
-forces no external data download and records the deterministic seed lineage in
-every packet.
-
-## Smoke test
-
-```bash
-python -m pytest -q
-```
-
-The smoke test runs the real estimator on a small synthetic instance and
-checks that the figure, summary, and audit are produced. The smoke result is a
-functionality check, not evidence for the paper.
-
-## Reference result
-
-The checked-in target is `reference/e4_enf_vs_nn_equal_density.png`. The
-reference median errors are:
-
-| Method | E_avg | E_infty |
-|---|---:|---:|
-| Oracle | 0.0100548 | 0.0227381 |
-| ENF | 0.0100516 | 0.0227160 |
-| NN | 0.0209652 | 0.0418692 |
-
-Floating-point results should agree within numerical tolerance on the pinned
-environment; image files are not expected to be byte-identical across
-operating systems because font rendering can differ.
-
-## Layout
-
-```text
-E4/
-  config.json             frozen experiment and solver parameters
-  run.py                  single end-to-end entrypoint
-  requirements.txt        pinned Python dependencies
-  src/e4/                 numerical estimator implementation
-  tests/test_smoke.py     small real-pipeline smoke test
-  reference/              target figure and reference summary
-```
-
-The 32-point experiment is a sparse equal-density correspondence example. It
-must not be interpreted as uniform dominance over arbitrarily dense NN
-candidate sets.
+Reported complete matching cost includes original fine reference construction
+and matching/coarse candidate fitting. The additional frozen-coordinate
+residual consistency check was added **after** the original reference
+stopwatch and is excluded from recorded times. Timing values remain unchanged.
+Discrete NN approaching ENF/Oracle as candidates become dense is not a
+claim that continuous nearest projection is inherently inaccurate.

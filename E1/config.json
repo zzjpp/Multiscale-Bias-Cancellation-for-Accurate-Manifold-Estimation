@@ -1,24 +1,106 @@
 {
-  "schema": "E1_SIMULATION_CONFIG_V1",
-  "seed": 20260926,
-  "data_sha256": "06e45cf474ea69420bd812a17a96b2fb0cf2b1448b9c4567a5b254017bfe38ed",
+  "data_sha256": {
+    "e1_theory_path_audit.json": "ee2eccc46d9a17b0194c5a7fd3176c0da3832a9f17ceedcc6e6ff56b83b7b8e1",
+    "e1_theory_path_errors.csv": "c5888bc9f685f98c664b35998a89151aa623d1357a0a860e9359988360d268c9",
+    "e1_theory_path_gpu_gate.json": "a2718de91ae4ab041e4f8cc2de95e52d3307e0bea6dcc86daf39e378fffcc7b8",
+    "e1_theory_path_numerical_convergence.csv": "22d8b0c227ac0e7d58727acf38163f0ef1a0f4063aa4f914ae2fa847d7eaabba",
+    "e1_theory_path_slopes.csv": "918f46f13d6a40ecb4336842657ed2f8ace3c589b3e1920faab9e99a2bc58abc",
+    "yy_theory_path_audit.json": "ea8fcfe15451e75cf5fb367ed154f7ed0d67b31ff8fb5d72884326396edecc2b",
+    "yy_theory_path_errors.csv": "939cd0efcb17c285f85a73af5f04a3e62f4829772737ec74aeea16098baceaed",
+    "yy_theory_path_gpu_gate.json": "7f7166dff82bc5ef1eda8d96fdfa87bec0b49ee6cefbe59be2538239a1a85dcb",
+    "yy_theory_path_numerical_convergence.csv": "4dcefab1fa501919a85f5edc1ccb2b418067228f8e2e3555ceca739f739c63c3",
+    "yy_theory_path_slopes.csv": "d9ae0ef80298641cfc9fe69cfd11e088159ff86d85c4431183dad88cbf191642"
+  },
+  "matching_protocol": {
+    "ambient_space_pca_not_rkhs": true,
+    "basis": "orthonormal and frozen for all target-scale local solves",
+    "centered_covariance": "sum_i K_i (Y_i-mu)(Y_i-mu)^T / sum_i K_i",
+    "dr_density_residual": "unchanged Gaussian KDE gradient/Hessian residual",
+    "e4_nn_candidate_or_oracle_changed": false,
+    "eigenspace": "top d eigenvectors tangent; bottom D-d eigenvectors normal",
+    "evaluation_center": "fitted fine-scale reference z",
+    "failure_policy": "preserve failures and original gates; no larger-radius or true-normal fallback",
+    "gpu_equivalence_and_formal_release_audits": "required; local tests are not substitutes",
+    "initial_reference_coordinate": "t1=0",
+    "kernel": "K(t)=(1-t)_+^6",
+    "local_algorithm_and_scope_tests": 19,
+    "local_original_package_tests": 55,
+    "output": "z+E sum_k w_k t_k",
+    "population_analogue": "same compact-kernel weighted covariance integrated against the observation population; no Monte Carlo approximation",
+    "radial_argument": "squared Euclidean distance divided by h1 squared",
+    "radius": "h1",
+    "scope": "normal-guided root directions and cross-scale correspondence for STSP and DR in E1/E2/E3",
+    "weighted_mean": "sum_i K_i Y_i / sum_i K_i",
+    "yy_changed": false
+  },
   "protocol": {
-    "STSP": {
-      "sigma": 0.05,
-      "h2": [0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.125, 1.25],
-      "h1_rule": "h1=h2/2"
-    },
     "DR": {
-      "sigma": 0.05,
-      "h2": [0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45],
-      "h1_rule": "h1=h2/2"
+      "h1_rule": "h1=3*sigma",
+      "h2_rule": "h2=6*sigma",
+      "sigma": [
+        0.03,
+        0.025,
+        0.02,
+        0.016,
+        0.0125,
+        0.01,
+        0.008
+      ],
+      "single_scale": "h2",
+      "target_orders": {
+        "Multi": 4,
+        "Single": 2
+      }
+    },
+    "STSP": {
+      "h1_rule": "h1=3*sigma",
+      "h2_rule": "h2=6*sigma",
+      "sigma": [
+        0.03,
+        0.025,
+        0.02,
+        0.016,
+        0.0125,
+        0.01,
+        0.008
+      ],
+      "single_scale": "h2",
+      "target_orders": {
+        "Multi": 4,
+        "Single": 2
+      }
     },
     "Yao--Yau": {
-      "sigma": 0.05,
-      "r1": [0.4, 0.425, 0.45, 0.475, 0.5, 0.55, 0.6, 0.65],
-      "relative_radii": [0.4, 1.0, 1.6],
-      "common_start": true
+      "common_start": true,
+      "kappas": [
+        1.25,
+        5.0,
+        8.0
+      ],
+      "r0_rule": "r0=3*sigma",
+      "r2_rule": "r2=12*sigma*sqrt(log(1/sigma))",
+      "sigma": [
+        0.03,
+        0.025,
+        0.02,
+        0.016,
+        0.0125,
+        0.01,
+        0.008
+      ],
+      "single_kappa": 5.0,
+      "target_orders": {
+        "Multi": 4,
+        "Single": 2
+      }
     }
-  }
+  },
+  "schema": "E1_PCA_MATCHING_RELEASE_CONFIG_V1_SIX_MANIFOLDS",
+  "seed": 20260926,
+  "slope_windows": [
+    "smallest_3",
+    "smallest_4",
+    "smallest_5",
+    "all_7"
+  ]
 }
-

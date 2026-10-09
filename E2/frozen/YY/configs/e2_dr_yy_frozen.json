@@ -1,0 +1,53 @@
+{
+  "schema_version": "E2_YY_TUNED_R1_0P2_V1",
+  "experiment_id": 202,
+  "base_seed": 20260911,
+  "query_seed": 20260912,
+  "n_values": [2000, 5000, 10000, 20000, 50000, 100000, 200000, 500000],
+  "maximum_n": 500000,
+  "sigma": 0.005,
+  "N_q": 144,
+  "repeats": 20,
+  "geometries": [
+    {"id": 1, "key": "circle_r2", "label": "S^1 subset R^2", "d": 1, "D": 2},
+    {"id": 2, "key": "sphere2_r3", "label": "S^2 subset R^3", "d": 2, "D": 3},
+    {"id": 3, "key": "clifford_torus_r4", "label": "Clifford torus subset R^4", "d": 2, "D": 4},
+    {"id": 4, "key": "sphere3_r4", "label": "S^3 subset R^4", "d": 3, "D": 4},
+    {"id": 5, "key": "sphere2_r10", "label": "S^2 subset R^10", "d": 2, "D": 10}
+  ],
+  "dr": {
+    "h1": 0.1,
+    "h2": 0.2,
+    "gaussian_truncation_factor": 8.0,
+    "relative_omitted_weight_bound_max": 1e-6,
+    "tube_multiplier": 4.0,
+    "normal_negativity_margin": 1e-8,
+    "scaled_eigengap_min": 1e-6
+  },
+  "yy": {
+    "kernel_power": 6,
+    "c0": 32.0,
+    "C2": 12.0,
+    "central_kappa": 40.0,
+    "candidate_central_kappas": [40.0],
+    "relative_radii": [0.8, 1.0, 1.6],
+    "minimum_effective_count": 8.0,
+    "minimum_signal_over_sigma": 0.1
+  },
+  "solver": {
+    "max_iterations": 30,
+    "max_backtracks": 16,
+    "projected_residual_tolerance": 1e-10,
+    "jacobian_condition_max": 1e12
+  },
+  "validation": {
+    "weight_residual_tolerance": 1e-10,
+    "query_failure_rate_max": 0.01,
+    "complete_repeats_min": 18
+  },
+  "production": {
+    "parent_count": 100,
+    "required_gates": ["coefficient_residual", "cpu_gpu_equivalence", "five_geometry_tail_success", "formal_audit"]
+  },
+  "seed_scheme": "SeedSequence([base_seed, experiment_id, geometry_id, repeat, stream_id]); PCG64DXSM; all n use prefixes"
+}

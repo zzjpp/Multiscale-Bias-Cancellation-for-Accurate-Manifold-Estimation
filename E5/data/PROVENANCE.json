@@ -1,0 +1,28 @@
+{
+  "schema": "E5_PAPER_RELEASE_PROVENANCE_V1",
+  "paper_pdf": {
+    "file": "manifold_fitting (49).pdf",
+    "sha256": "aeaf0aff597628ad0b7c6a65cfce0f46f2350a8913e553fc5eee9717eb5e2024"
+  },
+  "paper_figures": {
+    "6": {
+      "title": "Finite-sample errors for directional YY ablation",
+      "evidence_class": "paper-used held-out result",
+      "source": "e5_directional_ordering_validation_20260927",
+      "selection_disclosed": true,
+      "original_conditioning_gate_passed": false
+    },
+    "22": {
+      "title": "Population directional ablation",
+      "evidence_class": "formal population calculation",
+      "source": "e56_theory_reconstruction_v2/server_results_20260923/formal_analysis",
+      "formal_analysis_sha256": "c6800118f5ef437318113070d6bc9c5cfa725b4f577a57c896f471fa289b6562"
+    }
+  },
+  "reference_files": {
+    "figure_e5_finite_sample_dual_metrics.png": "199e5c303cd0a72c9d2260b21445994c7cf159ff37175bd861c2bb26d17ef7a0",
+    "figure_e5_finite_sample_dual_metrics.svg": "3ff0fcf24c3036e0435fbfdd3d161ad7e8322c438392a3ee3eb5654f1d57e86b",
+    "figure_e5_population_directional_ablation.pdf": "9ee51b05b8f1765f5b10933f5ff105cea4349882ab07cb3111c37d504c958643",
+    "figure_e5_population_directional_ablation.png": "1c196973b906e39e7c79e226ade6c5acc7442aca5ebd246086306f9a7c84605f"
+  }
+}

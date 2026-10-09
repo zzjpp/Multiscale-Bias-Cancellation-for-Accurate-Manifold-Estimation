@@ -1,92 +1,54 @@
-# E3: bandwidth robustness at fixed sample size
-
-This directory is the self-contained release for simulation experiment E3. It
-reproduces the bandwidth/radius sweeps for three estimators:
-
-- smooth-kernel STSP, plotted against bandwidth `h`;
-- directional regression (DR), plotted against bandwidth `h`;
-- Yao--Yau (YY), plotted against transverse radius `r1`.
-
-The release has exactly one sample-size design: `n=12000`. The shared noise
-level is `sigma=0.015`; all methods use the same five manifolds, 20 repeats,
-256 evaluation points, seed lineage, and 28-point plotting range from `0.06`
-through `5.0`. STSP and DR use `h1=h/2`. YY fixes `c0=24`, `C2=12`, and varies
-`r1=kappa*sigma`. Failed query-scale combinations are retained; the plotting
-code displays points failing the preregistered reliability rule as open markers.
-
-No external data is needed. Samples, Gaussian noise, and query grids are all
-generated deterministically by the checked-in code. See
-`data/GENERATED_DATA.md`.
-
-## Layout
-
-```text
-config/e3_n12000.json       human-readable common contract
-data/GENERATED_DATA.md      generated-data statement
-methods/stsp/               STSP implementation and tests
-methods/dr_yy/              DR/YY CPU code and CuPy-equivalent GPU backend
-scripts/plot_results.py     matched five-manifold figures
-reproduce.py                single public entry point
-```
-
-No raw formal packets are committed because they are generated artifacts. They
-are written below `results/`, which is ignored by Git.
-
-## Environment
-
-Python 3.12 was used for the audited run. Create an isolated environment and
-install the pinned CPU dependencies:
+# E3 — bandwidth and reverse coverage
 
 ```bash
-python -m venv .venv
-python -m pip install -r requirements.txt
+python E3/reproduce.py --output ./new_figures/E3
+python E3/reproduce.py --verify-only
+python E3/run_fits.py --method YY --smoke
 ```
 
-For the formal DR/YY run on a CUDA 13 host, install the GPU lock file instead:
+Default is the author-selected **0.4/1/1.6 YY radius** version, not the 0.8
+diagnostic. It draws all 12 original-format 3×2 PNG/PDF pairs from the selected
+6720-row table: three methods × forward/reverse × average/maximum. No green
+background or small footer. Green YY1.6 curve, all 28 scales, NaN gaps,
+independent baselines, failures and hollow unreliable points are retained.
+
+Panel keys: circle_r2/sphere2_r3/clifford_torus_r4/sphere3_r4/sphere2_r10/
+corrugated_torus_r3. n=12000/24000/24000/60000/24000/36000; sigma=.015.
+Main20 repeats, 256 queries (corrugated512). Reverse repetition0 with
+1024/8192/8192/16384/8192/1024 queries; **all262144 reference points**.
+The complete fitted cloud is evaluated against all references; no shard-error
+pooling. Original query and reference NPY arrays are bundled and checksummed.
+
+Full new-run commands in the strict original Linux GPU environment:
 
 ```bash
-python -m pip install -r requirements-gpu-cu13.txt
+python E3/run_fits.py --method DR --phase main --geometry sphere3_r4 --repeat 0 --output ./new_raw/DR_main_sphere3_r4_00.json.gz
+python E3/run_fits.py --method DR --phase rev --geometry sphere3_r4 --output ./new_raw/DR_rev_sphere3_r4_00.json.gz
 ```
 
-## Reproduce the reported results
-
-Run a fast CPU smoke test for all three methods:
+Repeat all methods/geometries and main repeats0–19 (360 main +18 full-cloud
+reverse tasks). A same-parent CPU/GPU gate uses original scales .06/.82/5
+and selected queries, original status/reason/point tolerances, plus YY
+common-start center/axis checks. There is no CPU fallback. Optional
+`--data-file` accepts explicitly supplied observations and records their SHA;
+it does **not** pretend those are the historical platform-specific parent.
 
 ```bash
-python reproduce.py --mode smoke
+python E3/evaluate_fits.py --input ./new_raw --output ./new_summary.csv
+python E3/reproduce.py --table ./new_summary.csv --output ./new_figures/E3_rerun
 ```
 
-To reproduce the reported E3 results, run the complete experiment (STSP on
-CPU; DR and YY on the first visible CUDA device), audit every parent packet,
-and render all six publication figures with this exact command:
+STSP/DR inter-manifold matching uses original compact centered h1-PCA; DR's
+internal Gaussian fit and exact nonorthogonal-basis failure are unchanged.
+YY original data axis/known-geometry controlled initialization remains, with
+distinct main-V2/reverse-V1/corrugated libraries. Sampling streams/platform
+differences and adaptive n selection are disclosed rather than made artificially
+paired. Small-n support, spectral, geometric and numerical failures can remain;
+the selected DR S3 results at n60000 are not repaired or cropped.
 
-```bash
-python reproduce.py --mode formal --workers 4 --gpu-workers 4
-```
-
-The formal run is resumable: completed immutable parent packets are skipped.
-To rebuild figures after a completed run:
-
-```bash
-python reproduce.py --mode plot
-```
-
-The output figures are separated by method and metric:
-`e3_{stsp,dr,yy}_{average_error,max_error}.{png,pdf}`. No runtime panel is
-created.
-
-## Reproducibility contract
-
-- Randomness uses the checked-in PCG64DXSM seed lineage.
-- The same noisy sample is reused across all scales within a parent repeat.
-- YY uses a common first-stage start across its entire radius grid.
-- CPU/GPU numerical and success/failure equivalence is checked before formal
-  DR/YY production.
-- Reliability requires query failure rate at most `0.01` and at least 18
-  complete repeats; failed values are never removed from the declared grid.
-- Method implementations under `methods/` are preserved from the audited
-  sources; release work changes packaging and the explicit E3 grid only.
-
-## License
-
-MIT; see `LICENSE`.
+Main reliability: >=18/20 complete AND total failure<=1%; reverse<=1%.
+Partial finite repeat quantiles remain displayed even if unreliable. Private
+historical raw/queue histories are not shipped; new-run files never overwrite
+the selected paper table. Legacy `e7_config.json` inside the geometry-only
+package is retained byte-identically as a historical seed/config source;
+there is **no independent E7 experiment or launcher**.

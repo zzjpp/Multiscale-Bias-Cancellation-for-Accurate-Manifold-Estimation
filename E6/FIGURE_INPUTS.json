@@ -1,0 +1,17 @@
+{
+  "all_studies_complete": false,
+  "files": {
+    "data/AUDIT.json": "632dc9728414d14060a39d429a41e15c7135b9d0f5a8f8acf37c7b5ed79d808e",
+    "data/TABLE_PREPARATION.json": "7b164d7af9178e104ddfdec1387cd27f09f5bd9c1f0493d338279d1dfad8c56d",
+    "data/config.json": "cc682740d943810a0585c303b80918960244d99815659ad68859b96b58e15fd6",
+    "data/per_delta_query_outputs.csv": "96eb9ed266537819e13c24e35ea24534449a7ce8a89fe13662fba810ad6f14e4",
+    "data/previous_audit.json": "a5a2a297df63d6bc5ce615fdca83618ae5c461188b1de58ffe5ea0133c5a82d1",
+    "data/previous_results.json": "51ab641ffb3bd3eb5195a7ce4983552a69a95d7fea7c55a9cc7952b8c3c89b1c",
+    "data/validated_summary_with_previous.csv": "4998bf307b86724eaf1ded913d8536a3870b0c1059def80f81f876d20608dd0b",
+    "original_plotting.py": "29f91d521d85d6e52ffe7824379c25b12c7f066a334fe94d473acd86192ff39c",
+    "reproduce_figures.py": "bca607b6b1a9678c77c428cb7bdab1711fbbbb9c1e36d7d98d5a84e4da6f8820",
+    "results/e6_results.json": "0fb3a2dbc6d8600bb86cf0e7ce810d5fc1507bfb19e77dd5b0eb40a7ab996151"
+  },
+  "formal_publication_permitted": false,
+  "schema": "E6_PCA_FIGURE_INPUTS_V1"
+}

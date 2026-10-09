@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Single entry point for the two-figure E5 release."""
+"""Single entry point for the paper-final E5 release."""
 from __future__ import annotations
 
 import argparse
@@ -9,7 +9,6 @@ import os
 from pathlib import Path
 import subprocess
 import sys
-
 
 ROOT = Path(__file__).resolve().parent
 for variable in ("OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS"):
@@ -27,7 +26,7 @@ def load(name: str) -> dict:
 def source_hash() -> str:
     digest = hashlib.sha256()
     paths = sorted((ROOT / "src").rglob("*.py"))
-    paths += sorted((ROOT / "scripts").glob("*.py"))
+    paths += [ROOT / "scripts" / "plot_from_raw_packets.py"]
     paths.append(Path(__file__))
     for path in paths:
         digest.update(path.relative_to(ROOT).as_posix().encode("utf-8"))
@@ -37,8 +36,7 @@ def source_hash() -> str:
 
 def run_command(command: list[str]) -> None:
     print("+", " ".join(command), flush=True)
-    environment = os.environ.copy()
-    completed = subprocess.run(command, cwd=ROOT, env=environment, check=False)
+    completed = subprocess.run(command, cwd=ROOT, env=os.environ.copy(), check=False)
     if completed.returncode:
         raise SystemExit(completed.returncode)
 
@@ -59,16 +57,9 @@ def smoke(population: dict, finite: dict) -> None:
             and finite_result["retained_count"] > 0
             and set(population_result["summaries"]) == set(finite_result["summaries"])
         ) else "FAIL",
-        "population": {
-            "retained": population_result["retained_count"],
-            "failed": population_result["failure_count"],
-        },
-        "finite_sample": {
-            "retained": finite_result["retained_count"],
-            "failed": finite_result["failure_count"],
-            "evidence_class": "smoke_only",
-            "full_paper_protocol_audit_required": bool(finite["formal_evidence"]),
-        },
+        "population_retained": population_result["retained_count"],
+        "finite_retained": finite_result["retained_count"],
+        "evidence_class": "smoke_only",
     }
     print(json.dumps(report, indent=2))
     if report["status"] != "PASS":
@@ -76,22 +67,31 @@ def smoke(population: dict, finite: dict) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Reproduce exactly the two released E5 figures.")
-    parser.add_argument("--mode", choices=("smoke", "formal", "plot"), default="smoke")
+    parser = argparse.ArgumentParser(description="Reproduce the paper-final E5 release.")
+    parser.add_argument(
+        "--mode", choices=("paper", "smoke", "raw", "raw-plot"), default="paper",
+        help="paper publishes the checked-in paper figures; raw reruns the expensive estimators",
+    )
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--skip-tests", action="store_true")
     args = parser.parse_args()
     if not 1 <= args.workers <= 48:
         raise ValueError("workers must be in [1,48]")
+
     population = load("population.json")
     finite = load("finite_sample.json")
-    if not args.skip_tests and args.mode != "plot":
+    if not args.skip_tests:
         run_command([sys.executable, "-m", "pytest", "-q", "tests"])
+
+    if args.mode == "paper":
+        run_command([sys.executable, "scripts/publish_paper_figures.py"])
+        return
     if args.mode == "smoke":
         smoke(population, finite)
         return
-    results = ROOT / "results"
-    if args.mode == "formal":
+
+    results = ROOT / "results" / "raw"
+    if args.mode == "raw":
         run_report = run_formal(results, population, finite, source_hash(), args.workers)
         print(json.dumps(run_report, indent=2))
         if run_report["status"] != "PASS":
@@ -100,7 +100,7 @@ def main() -> None:
         print(json.dumps(audit_report, indent=2))
         if audit_report["status"] != "PASS":
             raise SystemExit(1)
-    run_command([sys.executable, "scripts/plot_two_figures.py", "--results", str(results)])
+    run_command([sys.executable, "scripts/plot_from_raw_packets.py", "--results", str(results)])
 
 
 if __name__ == "__main__":

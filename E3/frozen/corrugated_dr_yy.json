@@ -1,0 +1,50 @@
+{
+  "schema_version": "E7_DR_YY_COMPLEX_GEOMETRY_V1",
+  "experiment": "Complex-Geometry Stress Test for DR and Yao-Yau",
+  "geometry": "corrugated_torus_r3",
+  "n": 12000,
+  "sigma": 0.015,
+  "query_count": 512,
+  "repeats": 20,
+  "scale_grid": [
+    0.06, 0.075, 0.09, 0.11, 0.135, 0.165, 0.2, 0.245,
+    0.3, 0.37, 0.45, 0.55, 0.67, 0.82, 1.0, 1.2, 1.4,
+    1.6, 1.8, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 4.0, 5.0
+  ],
+  "dr": {
+    "h1_ratio": 0.5,
+    "gaussian_truncation_factor": null,
+    "tube_multiplier": 4.0,
+    "normal_negativity_margin": 1e-8,
+    "scaled_eigengap_min": 1e-6,
+    "relative_omitted_weight_bound_max": 0.0
+  },
+  "yy": {
+    "kernel_power": 6,
+    "c0": 24.0,
+    "C2": 12.0,
+    "relative_radii": [0.4, 1.0, 1.6],
+    "minimum_effective_count": 8.0,
+    "minimum_signal_over_sigma": 0.1,
+    "preliminary_graph": "x + sigma * n(x)"
+  },
+  "solver": {
+    "max_iterations": 30,
+    "max_backtracks": 16,
+    "projected_residual_tolerance": 1e-10,
+    "jacobian_condition_max": 1e12
+  },
+  "validation": {
+    "weight_residual_tolerance": 1e-10,
+    "query_failure_rate_max": 0.01,
+    "complete_repeats_min": 18,
+    "cpu_gpu_rtol": 2e-7,
+    "cpu_gpu_atol": 2e-8
+  },
+  "data_contract": {
+    "source": "E7/data_for_repeat and E7/e7_query_points.npz",
+    "same_observations_as_stsp_e7": true,
+    "same_queries_as_stsp_e7": true,
+    "failed_queries_are_never_interpolated": true
+  }
+}

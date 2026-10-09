@@ -1,265 +1,170 @@
 {
-  "schema": "E1_SIMULATION_RELEASE_DATA_V1",
-  "status": "PASS",
-  "description": "Audited population maximum errors used by the six E1 figures.",
-  "rows": 115,
-  "methods": [
-    "STSP",
-    "DR",
-    "Yao--Yau"
-  ],
+  "controlled_geometry_disclosure": "Original deterministic geometry-based query locations and latent manifold quadrature are retained. These are controlled branch-following experiments, not blind branch acquisition from data.",
+  "data_sha256": {
+    "e1_theory_path_audit.json": "ee2eccc46d9a17b0194c5a7fd3176c0da3832a9f17ceedcc6e6ff56b83b7b8e1",
+    "e1_theory_path_errors.csv": "c5888bc9f685f98c664b35998a89151aa623d1357a0a860e9359988360d268c9",
+    "e1_theory_path_gpu_gate.json": "a2718de91ae4ab041e4f8cc2de95e52d3307e0bea6dcc86daf39e378fffcc7b8",
+    "e1_theory_path_numerical_convergence.csv": "22d8b0c227ac0e7d58727acf38163f0ef1a0f4063aa4f914ae2fa847d7eaabba",
+    "e1_theory_path_slopes.csv": "918f46f13d6a40ecb4336842657ed2f8ace3c589b3e1920faab9e99a2bc58abc",
+    "yy_theory_path_audit.json": "ea8fcfe15451e75cf5fb367ed154f7ed0d67b31ff8fb5d72884326396edecc2b",
+    "yy_theory_path_errors.csv": "939cd0efcb17c285f85a73af5f04a3e62f4829772737ec74aeea16098baceaed",
+    "yy_theory_path_gpu_gate.json": "7f7166dff82bc5ef1eda8d96fdfa87bec0b49ee6cefbe59be2538239a1a85dcb",
+    "yy_theory_path_numerical_convergence.csv": "4dcefab1fa501919a85f5edc1ccb2b418067228f8e2e3555ceca739f739c63c3",
+    "yy_theory_path_slopes.csv": "d9ae0ef80298641cfc9fe69cfd11e088159ff86d85c4431183dad88cbf191642"
+  },
+  "description": "Six-manifold joint sigma-path population results; STSP/DR rerun with compact centered h1 PCA normal-guided roots and correspondence; YY unchanged.",
+  "formal_execution": {
+    "STSP_DR": {
+      "backend": "NVIDIA L40, float64",
+      "cpu_gpu_gate_cases": 24,
+      "cpu_gpu_max_fitted_point_difference": 1.4456898839738348e-15,
+      "packet_count": 168
+    },
+    "YY_unchanged": {
+      "cpu_gpu_gate_cases": 6,
+      "cpu_gpu_max_coordinate_difference": 1.0602995377272918e-17,
+      "packet_count": 84
+    }
+  },
+  "formal_publication_permitted": false,
   "geometries": [
     "circle_r2",
     "sphere2_r3",
     "clifford_torus_r4",
     "sphere3_r4",
-    "sphere2_r10"
+    "sphere2_r10",
+    "corrugated_torus_r3"
   ],
-  "main_geometries": [
-    "circle_r2",
-    "clifford_torus_r4",
-    "sphere2_r10"
+  "matching_protocol": {
+    "ambient_space_pca_not_rkhs": true,
+    "basis": "orthonormal and frozen for all target-scale local solves",
+    "centered_covariance": "sum_i K_i (Y_i-mu)(Y_i-mu)^T / sum_i K_i",
+    "dr_density_residual": "unchanged Gaussian KDE gradient/Hessian residual",
+    "e4_nn_candidate_or_oracle_changed": false,
+    "eigenspace": "top d eigenvectors tangent; bottom D-d eigenvectors normal",
+    "evaluation_center": "fitted fine-scale reference z",
+    "failure_policy": "preserve failures and original gates; no larger-radius or true-normal fallback",
+    "gpu_equivalence_and_formal_release_audits": "required; local tests are not substitutes",
+    "initial_reference_coordinate": "t1=0",
+    "kernel": "K(t)=(1-t)_+^6",
+    "local_algorithm_and_scope_tests": 19,
+    "local_original_package_tests": 55,
+    "output": "z+E sum_k w_k t_k",
+    "population_analogue": "same compact-kernel weighted covariance integrated against the observation population; no Monte Carlo approximation",
+    "radial_argument": "squared Euclidean distance divided by h1 squared",
+    "radius": "h1",
+    "scope": "normal-guided root directions and cross-scale correspondence for STSP and DR in E1/E2/E3",
+    "weighted_mean": "sum_i K_i Y_i / sum_i K_i",
+    "yy_changed": false
+  },
+  "methods": [
+    "STSP",
+    "DR",
+    "Yao--Yau"
   ],
-  "appendix_geometries": [
-    "sphere2_r3",
-    "sphere3_r4"
-  ],
+  "numerical_diagnostic_caveat": "Two-resolution differences and final Newton corrections, not rigorous error bounds; no new population fits recomputed by this audit.",
+  "numerical_maxima": {
+    "minimum_production_multi_E_infinity": 7.156008674513714e-09,
+    "minimum_production_multi_error_including_average": 7.156008674513714e-09,
+    "production_reference_point_difference": 5.468307682453946e-12,
+    "resolution_difference_over_minimum_multi_error": 0.0007641561003034341,
+    "root_position_uncertainty": 5.138122031086409e-12,
+    "root_uncertainty_over_minimum_multi_error": 0.0007180150646527228
+  },
+  "plotting_source_sha256": {
+    "reproduce.py": "741fdf8a8aacfdf66f0c7b6eb035a8549059518fd3e07444dd5ec92daefee092",
+    "src/e1_simulation/plot_sigma_path.py": "a820833e8e138080af6673fe1bfe23c4f7e5833df998b3c799194d284380d349"
+  },
+  "population_integration": {
+    "DR": "The same deterministic manifold quadratures, with Gaussian measurement noise and Gaussian-kernel convolution integrated analytically.",
+    "STSP": "Periodic trapezoid quadrature on the circle and Clifford torus; Gauss--Jacobi latitude quadrature with exact signed-axis first/second angular moments on spheres; Gaussian noise reduced analytically to noncentral-chi radial moments and integrated by Gauss--Legendre quadrature.",
+    "Yao--Yau": "Periodic trapezoid and Gauss--Jacobi manifold quadratures; Gaussian noise reduced analytically to noncentral-chi transverse and one-dimensional longitudinal moments; nonhomogeneous preliminary points integrated with deterministic symmetry-reduced query quadratures.",
+    "matching_PCA": "Compact kernel K(||Y-z||^2/h1^2)=(1-||Y-z||^2/h1^2)_+^6; population-weighted mean and centered covariance in ambient coordinates, complete D-d normal eigenspace, frozen at the fine-scale fitted point. DR's Gaussian residual is unchanged.",
+    "monte_carlo": false
+  },
   "protocol": {
-    "STSP": {
-      "sigma": 0.05,
-      "h2": [
-        0.5,
-        0.6,
-        0.7,
-        0.8,
-        0.9,
-        1.0,
-        1.125,
-        1.25
-      ],
-      "h1_rule": "h1=h2/2"
-    },
     "DR": {
-      "sigma": 0.05,
-      "h2": [
-        0.15,
-        0.2,
-        0.25,
-        0.3,
-        0.35,
-        0.4,
-        0.45
+      "h1_rule": "h1=3*sigma",
+      "h2_rule": "h2=6*sigma",
+      "sigma": [
+        0.03,
+        0.025,
+        0.02,
+        0.016,
+        0.0125,
+        0.01,
+        0.008
       ],
-      "h1_rule": "h1=h2/2"
+      "single_scale": "h2"
+    },
+    "STSP": {
+      "h1_rule": "h1=3*sigma",
+      "h2_rule": "h2=6*sigma",
+      "sigma": [
+        0.03,
+        0.025,
+        0.02,
+        0.016,
+        0.0125,
+        0.01,
+        0.008
+      ],
+      "single_scale": "h2"
     },
     "Yao--Yau": {
-      "sigma": 0.05,
-      "r1": [
-        0.4,
-        0.425,
-        0.45,
-        0.475,
-        0.5,
-        0.55,
-        0.6,
-        0.65
+      "common_start": true,
+      "kappas": [
+        1.25,
+        5.0,
+        8.0
       ],
-      "relative_radii": [
-        0.4,
-        1.0,
-        1.6
+      "r0_rule": "r0=3*sigma",
+      "r2_rule": "r2=12*sigma*sqrt(log(1/sigma))",
+      "sigma": [
+        0.03,
+        0.025,
+        0.02,
+        0.016,
+        0.0125,
+        0.01,
+        0.008
       ],
-      "common_start": true
+      "single_kappa": 5.0
     }
   },
-  "source_sha256": {
-    "STSP_formal_audit": "51702f6eafc5faf1b9d91d0293ec3a3977416d4a861356d67848212b6ee9a695",
-    "DR_formal_audit": "9f56b3fa69739c2c7941d154797dff2b164e33777e1eb4f683fda8c705d156f2",
-    "YY_summary": "7fbd9d6f73ee4022c1bed3ac2a538fdd34ad1942ae0afad85592f56de1c2cfa6",
-    "YY_coarse_packet": "e750197d7331e849d6a383c153e453331fa05efa3e0f7f1cd0455b67e0501f66",
-    "YY_fine_packet": "7407315af00949db731a97a887ec4ea5ec225f3c5fae04546e1ea6e0b027c8b1"
-  },
-  "data_sha256": "06e45cf474ea69420bd812a17a96b2fb0cf2b1448b9c4567a5b254017bfe38ed",
-  "expected_slopes": [
-    {
-      "method": "STSP",
-      "geometry": "circle_r2",
-      "output": "single",
-      "slope": 1.9708332530729318
+  "revision_stage_only": false,
+  "publication_status": "E1_FORMAL_OTHER_STUDIES_PENDING",
+  "schema": "E1_PCA_MATCHING_RELEASE_DATA_V1_SIX_MANIFOLDS",
+  "status": "PASS",
+  "stsp_dr_packages": {
+    "theory_path_population_all_e1": {
+      "config_sha256": "c55aa337fe37b0e69e0386436000bbacc285f13fc27f473ea88a86053c754191",
+      "source_sha256": "4460f773adfa43137210d3525918025a50648c1df832d55021f7c1dabf6286f5"
     },
-    {
-      "method": "STSP",
-      "geometry": "circle_r2",
-      "output": "multi",
-      "slope": 3.7023115984333264
-    },
-    {
-      "method": "STSP",
-      "geometry": "sphere2_r3",
-      "output": "single",
-      "slope": 1.9877274041399444
-    },
-    {
-      "method": "STSP",
-      "geometry": "sphere2_r3",
-      "output": "multi",
-      "slope": 3.738802711699474
-    },
-    {
-      "method": "STSP",
-      "geometry": "clifford_torus_r4",
-      "output": "single",
-      "slope": 2.047485901841505
-    },
-    {
-      "method": "STSP",
-      "geometry": "clifford_torus_r4",
-      "output": "multi",
-      "slope": 3.8743903295202586
-    },
-    {
-      "method": "STSP",
-      "geometry": "sphere3_r4",
-      "output": "single",
-      "slope": 2.003779588803183
-    },
-    {
-      "method": "STSP",
-      "geometry": "sphere3_r4",
-      "output": "multi",
-      "slope": 3.772347838621939
-    },
-    {
-      "method": "STSP",
-      "geometry": "sphere2_r10",
-      "output": "single",
-      "slope": 2.0342942670002633
-    },
-    {
-      "method": "STSP",
-      "geometry": "sphere2_r10",
-      "output": "multi",
-      "slope": 3.857131953584783
-    },
-    {
-      "method": "DR",
-      "geometry": "circle_r2",
-      "output": "single",
-      "slope": 2.0860805961240434
-    },
-    {
-      "method": "DR",
-      "geometry": "circle_r2",
-      "output": "multi",
-      "slope": 4.063153466001403
-    },
-    {
-      "method": "DR",
-      "geometry": "sphere2_r3",
-      "output": "single",
-      "slope": 2.1719384809232185
-    },
-    {
-      "method": "DR",
-      "geometry": "sphere2_r3",
-      "output": "multi",
-      "slope": 4.236186702460952
-    },
-    {
-      "method": "DR",
-      "geometry": "clifford_torus_r4",
-      "output": "single",
-      "slope": 2.497579888106399
-    },
-    {
-      "method": "DR",
-      "geometry": "clifford_torus_r4",
-      "output": "multi",
-      "slope": 4.851475980530572
-    },
-    {
-      "method": "DR",
-      "geometry": "sphere3_r4",
-      "output": "single",
-      "slope": 2.2931248132297952
-    },
-    {
-      "method": "DR",
-      "geometry": "sphere3_r4",
-      "output": "multi",
-      "slope": 4.469022844973133
-    },
-    {
-      "method": "DR",
-      "geometry": "sphere2_r10",
-      "output": "single",
-      "slope": 2.1719384809232185
-    },
-    {
-      "method": "DR",
-      "geometry": "sphere2_r10",
-      "output": "multi",
-      "slope": 4.236186702460952
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "circle_r2",
-      "output": "single",
-      "slope": 1.8039706683420407
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "circle_r2",
-      "output": "multi",
-      "slope": 3.9194276686203517
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "sphere2_r3",
-      "output": "single",
-      "slope": 1.7936531378040321
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "sphere2_r3",
-      "output": "multi",
-      "slope": 3.970309965090356
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "clifford_torus_r4",
-      "output": "single",
-      "slope": 1.8325736404852453
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "clifford_torus_r4",
-      "output": "multi",
-      "slope": 4.816869428301676
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "sphere3_r4",
-      "output": "single",
-      "slope": 1.7833680395533456
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "sphere3_r4",
-      "output": "multi",
-      "slope": 4.007572834751144
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "sphere2_r10",
-      "output": "single",
-      "slope": 1.9098266398794905
-    },
-    {
-      "method": "Yao--Yau",
-      "geometry": "sphere2_r10",
-      "output": "multi",
-      "slope": 4.060699367077013
+    "theory_path_population_six_manifolds": {
+      "config_sha256": "33b0edf225e7333a4999a9a75021d92cb9adfdda4b65d9d2a7629554df47d4d2",
+      "source_sha256": "a2ec8472baaa2144433f387b8ead20841066c18d86568913e60e0244fbf92c25"
     }
-  ]
+  },
+  "yy_numerical_gate": "Original 1e-2 metric-convergence fraction; not relabelled as the STSP/DR compact-PCA 1e-3 global point-error gate.",
+  "yy_numerical_maxima": {
+    "metric_difference_over_minimum_multi_error": 0.001997383432507063,
+    "minimum_production_multi_E_infinity": 2.3845222241192232e-08,
+    "production_reference_metric_difference": 4.7628051849006304e-11,
+    "weight_constraint_residual": 1.1102230246251565e-15
+  },
+  "yy_original_source_and_config": {
+    "base_config_sha256": "56cd4bce55a74922838b5a992cb83c766388174c38990f72c99dcbf72aa38edf",
+    "base_source_sha256": "e46f20414dcd2a2137e1f9b19d386e162906bb4bc007e9f986c788fe02bc17fe",
+    "corrugated_config_sha256": "632bd9a850f7b5690bdb2e167e59a4254443b1ad137e5893ee23aa1e454b7a07",
+    "corrugated_source_sha256": "5003f7646c674b1d0667e7df8b4379225f7d5203f34aad7c6d6dacff1f353225"
+  },
+  "yy_raw_packet_receipt_count": 84,
+  "yy_unchanged_evidence_sha256": {
+    "yy_theory_path_audit.json": "ea8fcfe15451e75cf5fb367ed154f7ed0d67b31ff8fb5d72884326396edecc2b",
+    "yy_theory_path_errors.csv": "939cd0efcb17c285f85a73af5f04a3e62f4829772737ec74aeea16098baceaed",
+    "yy_theory_path_gpu_gate.json": "7f7166dff82bc5ef1eda8d96fdfa87bec0b49ee6cefbe59be2538239a1a85dcb",
+    "yy_theory_path_numerical_convergence.csv": "4dcefab1fa501919a85f5edc1ccb2b418067228f8e2e3555ceca739f739c63c3",
+    "yy_theory_path_slopes.csv": "d9ae0ef80298641cfc9fe69cfd11e088159ff86d85c4431183dad88cbf191642"
+  }
 }

@@ -1,0 +1,65 @@
+{
+  "audited_query_records": 2048,
+  "complete_query_packet_count": 8,
+  "errors": [],
+  "expected_query_packet_count": 8,
+  "failure_taxonomy": {
+    "DR/circle_R2/coarse": {},
+    "DR/circle_R2/fine": {},
+    "DR/variable_curve_R3/coarse": {},
+    "DR/variable_curve_R3/fine": {},
+    "STSP/circle_R2/coarse": {},
+    "STSP/circle_R2/fine": {},
+    "STSP/variable_curve_R3/coarse": {},
+    "STSP/variable_curve_R3/fine": {}
+  },
+  "formal_publication_permitted": false,
+  "limitations": [
+    "Consistency audit, not independent reproduction of population fits.",
+    "Query generator, count and phase are source/config pinned; input coordinates are not embedded in E6 fit packets.",
+    "Initial/fine root traces and PCA covariance spectra are not stored; their computation is source-enforced.",
+    "Recorded coarse residual is checked, not independently reevaluated by this auditor.",
+    "E6 is deterministic CPU quadrature; no method-level runtime fields are recorded.",
+    "Plots, archive and formal publication remain separate required steps."
+  ],
+  "original_numerical_gates": {
+    "checks": {
+      "all_256_queries_resolved": true,
+      "exact_zero_at_correct_sigma": true,
+      "fine_coarse_resolution": true,
+      "frozen_fit_digest_invariant_across_delta": true,
+      "weight_constraints": true
+    },
+    "maxima": {
+      "delta_zero": 2.6645352591003757e-15,
+      "fine_coarse_abs_difference": 1.7996293940735625e-10,
+      "fine_coarse_relative_difference": 2.0055152643345626e-07,
+      "weight_constraint_residual": 5.773159728050814e-15
+    },
+    "status": "PASS"
+  },
+  "preserved_failed_query_rows": 0,
+  "recomputed_delta_query_rows": 18432,
+  "schema": "E6_PCA_EXTERNAL_RELEASE_AUDIT_V1",
+  "sha256_receipts": {
+    "config": "cc682740d943810a0585c303b80918960244d99815659ad68859b96b58e15fd6",
+    "launcher": "25dabf5ff07440d20eb1bd9a1d48d1b8368c24eeb87b81e3ab965f861d4c0ddb",
+    "previous_audit": "a5a2a297df63d6bc5ce615fdca83618ae5c461188b1de58ffe5ea0133c5a82d1",
+    "previous_results": "51ab641ffb3bd3eb5195a7ce4983552a69a95d7fea7c55a9cc7952b8c3c89b1c",
+    "project/E6/results/checkpoint_blocks/dr_circle_R2.json": "043467c02896ddbe9d1007a076f01e88259bf09f8004c619cb7f93e2cc569c36",
+    "project/E6/results/checkpoint_blocks/dr_circle_R2_coarse_queries.json": "63d13591787a5eb61398d7975ab209d85cc0bfdad8339b2f669a265921a22b1d",
+    "project/E6/results/checkpoint_blocks/dr_circle_R2_fine_queries.json": "7ace002fbb4dd914a2062f1e4064de7b70cf219d837d0cf4ba8df3db85345470",
+    "project/E6/results/checkpoint_blocks/dr_variable_curve_R3.json": "f797b7397c3ef30350c38f6ebdc688ffec0831dca52e1ed9e17e432facadaa29",
+    "project/E6/results/checkpoint_blocks/dr_variable_curve_R3_coarse_queries.json": "3e6ff478622650d65b9e8970b44b54edf1b5db5b46fa9963c7df8930afc0d7ba",
+    "project/E6/results/checkpoint_blocks/dr_variable_curve_R3_fine_queries.json": "c98b3a7015d59e6036365bc7cd9baeb1936311e21d0995eaeb88a4c07f0080a8",
+    "project/E6/results/checkpoint_blocks/stsp_circle_R2.json": "d7652094d96f11ed9bb1776df271132efb2d05914b4181a13d2ace460487dbeb",
+    "project/E6/results/checkpoint_blocks/stsp_circle_R2_coarse_queries.json": "23518f15effb3282355df3c165cb7ab22a66977ac747934a432d0a27b00abf7b",
+    "project/E6/results/checkpoint_blocks/stsp_circle_R2_fine_queries.json": "df2a63fe15133a42b26e57218903a350b6d66b5443d47a1c24d845cd145c989a",
+    "project/E6/results/checkpoint_blocks/stsp_variable_curve_R3.json": "98c4bc62c7d0cd1f94bce57f9a599a6a9678f370f53e3ece03650b479e039d0b",
+    "project/E6/results/checkpoint_blocks/stsp_variable_curve_R3_coarse_queries.json": "b7c493c0f1f170685c7317c57556e10b1096feabef6cb141d483c1da31220324",
+    "project/E6/results/checkpoint_blocks/stsp_variable_curve_R3_fine_queries.json": "1f7b60fc7eb2ca8ca51930a2c294b279bb98c1ef6afbec4557ad053d51a845df",
+    "project/E6/results/e6_results.json": "0fb3a2dbc6d8600bb86cf0e7ce810d5fc1507bfb19e77dd5b0eb40a7ab996151"
+  },
+  "status": "PASS",
+  "unchanged_YY": "Old PASS output copied exactly with its old result/audit hashes; not recomputed."
+}

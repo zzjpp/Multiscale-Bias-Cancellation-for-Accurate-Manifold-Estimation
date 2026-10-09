@@ -1,7 +1,0 @@
-__pycache__/
-*.py[cod]
-.pytest_cache/
-*.log
-results/checkpoint_blocks/
-.DS_Store
-Thumbs.db

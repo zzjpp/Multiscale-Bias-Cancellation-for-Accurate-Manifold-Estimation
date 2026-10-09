@@ -1,121 +1,94 @@
-# Simulation experiments (E1--E7)
+# Manifold-fitting simulation experiments (paper 62)
 
-This repository contains the seven simulation releases E1--E7 for the
-manifold-fitting paper, plus separate query-density and reverse-coverage
-diagnostics. Each E1--E7 release has a frozen configuration, pinned
-dependencies, a documented entrypoint, and a functional test. The auxiliary
-diagnostic directories are additional working artifacts and have different
-provenance and release checks.
+This release contains only experiments **E1–E6** of `manifold_fitting (62).pdf`.
+The former standalone E7 experiment is not distributed. Corrugated torus is
+still the sixth geometry in E1–E3. Results are not filtered to remove failures.
+No server accounts, authentication files, remote schedulers or private research
+archives are required by the public entry points.
 
-[`RELEASE_AUDIT.md`](RELEASE_AUDIT.md) records the earlier E1--E6 release audit;
-it does not certify the subsequently added E7 and auxiliary directories.
+## Start here
 
-## Scope and evidence
-
-| Experiment | Question | Released output | Primary command |
-|---|---|---|---|
-| `E1` | Population error and empirical scale slopes for STSP, DR, and YY | Six main/appendix figures | `cd E1 && python reproduce.py` |
-| `E2` | Finite-sample error versus sample size on five manifolds | Six main/appendix figures | `cd E2 && python reproduce.py` |
-| `E3` | Robustness over bandwidth `h` or YY radius `r1` at `n=12000` | Six method/metric figures | `cd E3 && python reproduce.py --mode formal --workers 4 --gpu-workers 4` |
-| `E4` | Oracle/ENF/NN finite-sample correspondence comparison | One two-panel figure | `cd E4 && python run.py` |
-| `E5` | Scalar versus directional extrapolation | Two figures | `cd E5 && python reproduce.py --mode formal --workers 4` |
-| `E6` | Sensitivity to noise-level misspecification | Three figures | see `E6/README.md` |
-| `E7` | Corrugated-torus stress test | Three two-panel figures | `cd E7 && python reproduce.py` |
-
-The supplementary reverse-coverage figures and query-density checks use
-`E3_Erev_gpu_pilot/`, `E3_Erev_high_density/`, and
-`E7_query_density_extension/`. Their READMEs specify which runs are repeat-0
-diagnostics and which inputs come from audited production packets. They are not
-additional 20-repeat E3 or E7 releases.
-
-Important evidence qualifications are retained in the experiment READMEs:
-
-- E1 and E2 redraw audited aggregate outputs; they do not rerun the expensive
-  population/Monte-Carlo jobs.
-- E3 formal DR/YY production requires a CUDA 13 environment. The CPU smoke
-  path exercises all three method contracts without claiming formal evidence.
-- E4 is the registered 32-query equal-density correspondence example.
-- E5 now runs the paper's finite-sample protocol with explicit `c0=3` and a
-  revised complementary-weight condition-number limit of 256. The original
-  limit of 50 failed and remains in the provenance record. The revision was
-  made after seeing that failure; a passing full audit is evidence for the
-  disclosed revised protocol, not for the original gate.
-- E6 ships audited population summaries for quick plotting and a separate full
-  CPU recomputation path.
-- E7 redraws audited aggregate outputs; its raw numerical production is not
-  included in the E7 plotting release.
-
-No failed or unreliable cells have been silently removed. Refer to each
-experiment README before interpreting its figures.
-
-## Environments
-
-The pinned environments are not numerically identical across E1--E7. In
-particular, E3 and E6 freeze different NumPy/SciPy/Matplotlib versions. Use one
-virtual environment per experiment rather than forcing a single merged lock:
+Use Python 3.12.9 in a separate environment for **saved-result figure replay**:
 
 ```bash
-cd E2                         # replace with E1, ..., E7
-python -m venv .venv
 python -m pip install -r requirements.txt
-python -m pytest -q
-```
-
-For E3 GPU production, additionally install
-`E3/requirements-gpu-cu13.txt` in its E3 environment.
-
-The top-level `requirements.txt` contains only the pinned test dependency for
-the repository-contract check; it is not a substitute for the seven experiment
-lock files.
-
-## Fast repository check
-
-`validate_release.py` is an older whole-tree static audit. It currently fails:
-its directory contract predates E7, and the auxiliary directories contain
-server scripts, path references, and generated logs that violate its original
-E1--E6 public-release rules. Do not interpret its failure as a numerical
-failure of an E1--E7 experiment or its earlier E1--E6 PASS record as a clean
-audit of this enlarged directory. To inspect the current findings, run:
-
-```bash
 python validate_release.py
+python -m pytest -q tests
+python reproduce_all.py --output ./paper_figures
 ```
 
-The top-level test wraps the same older check and currently has the same
-scope limitation:
+The last command uses the bundled numerical tables (and E5 selected exports),
+not new fits. Output must be a fresh directory. It produces the paper figure
+set, including all **12 E3 figures** with six panels each, without green
+backgrounds or small footer text. YY's green `Single(1.6r1)` curve is retained.
+See [docs/FIGURE_MAP.md](docs/FIGURE_MAP.md) for figure numbers.
+The existing `E3/paper_figures/` include paths are retained with the exact
+selected 24 PNG/PDF bytes; they are not replaced by the diagnostic 0.8 version.
+
+Small **actual CPU computations**, separate from paper reproduction:
 
 ```bash
-python -m pip install -r requirements.txt
-python -m pytest -q tests
+python smoke_all.py
 ```
 
-The included per-experiment tests remain useful for their documented scopes.
-Full E3 GPU production and the expensive E5 numerical run are manual jobs; a
-smoke result alone does not establish the values reported in the paper.
+Smoke tests use explicitly reduced sample/query/quadrature budgets; they do
+not verify full-grid accuracy, GPU equivalence or identical scientific reruns.
 
-## Directory map
+## Numerical reruns
 
-```text
-simulation_experiments/
-├── E1/ ... E7/              experiment releases
-├── E3_Erev_gpu_pilot/       1024-query repeat-0 diagnostic
-├── E3_Erev_high_density/    higher-density repeat-0 diagnostic
-├── E7_query_density_extension/  E7 repeat-0 query-density diagnostic
-├── .github/workflows/       earlier E1--E6 CI checks
-├── tests/                   top-level repository contract
-├── validate_release.py      standard-library public-release audit
-├── requirements.txt         top-level test-only lock
-├── LICENSE                  collection licensing notice
-└── LICENSES.md              per-experiment license summary
-```
+Each `E*/README.md` documents the original computation and a local entry point.
+E2/E3 production GPU runs require **Linux Python 3.12.7, NumPy 2.1.3, SciPy
+1.18.1, CuPy 14.2.0, CUDA runtime 12.9, NVIDIA L40**, float64 and one CPU
+thread per worker. No untested CPU, true-normal, basis-repair or enlarged-radius
+fallback is enabled. Use `requirements-gpu.txt` in that separate environment.
+E6's CPU fitting environment has its own original lock. Figure requirements
+must not be substituted for fitting requirements.
 
-## Reproducibility boundary
+Rerun outputs are fresh files/directories. Public E2/E3 runners perform new
+same-input CPU/GPU gates, preserve every estimator outcome, and write an
+explicit new-run schema; they do **not** fabricate the historical queue,
+archival receipts or pre-existing scientific PASS records. Frozen solvers and
+registered coordinates are supplied. Full historical E2/E3 raw packets and
+private composite execution histories are not included: saved-table replay is
+complete, but this is **not** a closed offline replay of every historical fit.
 
-Per-experiment checks cover only their stated numerical and plotting contracts.
-E1, E2, and E7 primarily regenerate figures from bundled summaries. E3 and E5
-require substantial computation for a complete rerun. The auxiliary reverse-
-coverage outputs are repeat-0 diagnostics. Numerical gates, data hashes,
-formal-versus-smoke distinctions, and tolerances are specified inside each
-experiment; cross-platform raster/PDF byte identity is not a scientific
-requirement.
+## Important experimental details
 
+- E3 sample sizes, in panel order: **12,000 / 24,000 / 24,000 / 60,000 /
+  24,000 / 36,000**. Reverse query counts: **1,024 / 8,192 / 8,192 /
+  16,384 / 8,192 / 1,024**. All reverse evaluations use **262,144 reference
+  points**, including corrugated torus. This deliberately corrects the older
+  65,536 statement on paper page 110; see [errata](docs/PAPER_ERRATA.md).
+- E3's selected YY radii are **(0.4, 1, 1.6) r1**, not the later 0.8 diagnostic
+  copy. DR's S3 failures at n=60,000 remain in the data and plots.
+- STSP/DR **inter-manifold matching** uses the original centered compact
+  h1-PCA. This does not change DR's internal Gaussian fitting operator.
+- Original known-geometry query generation, controlled branch/initialization
+  and evaluation are disclosed per experiment. Oracle in E4 uses true
+  geometry by design. These are not blind real-data experiments.
+- E4 uses the exact archived **ENF h1 fitted coordinates for all three methods**
+  at every NN candidate count. Candidate density and full matching cost are
+  reported; discrete NN is not identified with continuous nearest projection.
+- Reliability is unchanged: E2/E3 main at least 18/20 complete repeats and
+  overall query failure rate <=1%; E3 reverse failure rate <=1%. Partial finite
+  repeat statistics, NaN gaps, hollow unreliable points and all failure classes
+  are retained. Finite summaries are not evidence of all-query success.
+- Method-specific sampling streams, original platform differences, YY
+  main-V2/reverse-V1/corrugated source versions and adaptive sample-budget
+  selection are preserved. Cross-method samples are not asserted to be paired.
+
+## Scope and provenance
+
+[docs/PROVENANCE.md](docs/PROVENANCE.md) distinguishes byte-identical numerical
+modules, mechanical extraction, relative-path interfaces and presentation-only
+changes. `SOURCE_MANIFEST.json` binds all distributed source, configurations,
+inputs and tables; `validate_release.py` verifies it without network access.
+The paper itself and private archival paths are not distributed.
+See [docs/RELEASE_QA.md](docs/RELEASE_QA.md) for actual local acceptance checks
+and the distinction between saved-figure replay and full scientific reruns.
+
+This local preparation does not upload anything to GitHub, select a new
+license, claim artifact badges, or independently re-fit all reported results.
+Existing notices are preserved: E1 is **all rights reserved**, while E2–E6
+retain their existing MIT notices. There is no blanket root license overriding
+E1; read [LICENSES.md](LICENSES.md) before redistribution.

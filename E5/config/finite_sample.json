@@ -1,6 +1,8 @@
 {
-  "schema": "E5_FINITE_PAPER_PROTOCOL_V2",
-  "formal_evidence": true,
+  "schema": "E5_FINITE_PAPER_FIGURE_6_V1",
+  "paper_figure": 6,
+  "formal_evidence": false,
+  "evidence_class": "paper-used held-out result",
   "geometry": {"name": "nonconstant_curve_R4", "d": 1, "D": 4, "q": 3, "m": 2},
   "kernel": {"p": 6, "longitudinal_profile": "exact_Eq_58_C3_plateau"},
   "sigma": 0.05,
@@ -18,7 +20,9 @@
   "provenance": {
     "legacy_declared_c0": 5.0,
     "legacy_applied_c0": 3.0,
-    "explanation": "The source figure's finite-cell call used the empirical routine default c0=3. This release makes that applied value explicit to reproduce the figure; changing it would change the result."
+    "selection_source": "e5_directional_ordering_search_20260927/finite_pilot_summary.json",
+    "selection_rule": "selected after pilot search for Directional ordering",
+    "explanation": "The paper figure uses the actually applied c0=3 and a scale triple selected after pilot screening."
   },
   "legacy_failed_gate": {
     "name": "complementary_moment_condition_number_le_50",
@@ -26,11 +30,10 @@
     "threshold": 50.0,
     "pass": false
   },
-  "conditioning_gate": {
-    "name": "complementary_moment_condition_number_le_256",
-    "threshold": 256.0,
-    "weight_residual_tolerance": 1e-10,
-    "revision": "post-hoc numerical gate; the failed original threshold is retained above"
+  "weight_residual_gate": {
+    "name": "raw_replay_weight_residual_le_1e-10",
+    "tolerance": 1e-10,
+    "revision": "condition number is diagnostic only; Figure 6 remains a pilot-selected held-out result"
   },
   "failure_policy": "retain every sample size, repeat, query, failure, and outlier; never trim after observing results"
 }

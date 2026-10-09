@@ -1,0 +1,50 @@
+{
+  "schema_version": "E4_NN_DENSITY_V3_DENSE_32_64",
+  "experiment": "NN candidate density and accuracy-cost comparison",
+  "base_config": "config.json",
+  "master_seed": 20260911,
+  "experiment_id": 4,
+  "heldout_repeats": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "sample_size": 200000,
+  "sigma": 0.06,
+  "h1": 0.12,
+  "h2": 0.24,
+  "query_count": 32,
+  "candidate_counts": [32, 36, 40, 44, 48, 52, 56, 60, 64, 80, 96, 112, 128, 256, 512],
+  "base_candidate_count": 32,
+  "max_candidate_count": 512,
+  "base_candidate_offset_numerator": 0.74,
+  "candidate_design": "nested subsets of the 512-point periodic arclength grid; deterministic balanced dyadic insertion preserves the released C32, C128, and C512 sets while adding low-density checkpoints",
+  "candidate_initialization": "true curve location and true two-dimensional normal basis, as in the released E4 candidate builder; true geometry is used only for initialization",
+  "timing": {
+    "method_order": "cyclic rotation of candidate_counts by heldout-repeat index",
+    "warmup_excluded": true,
+    "gpu_synchronize_at_boundaries": true,
+    "threads": 1,
+    "dtype": "float64",
+    "concurrent_benchmark_jobs": 1,
+    "report": "median and interquartile range over the ten held-out repeats",
+    "nn_full": ["shared", "candidate_fit", "index_search", "combine"],
+    "nn_precomputed": ["index_search", "combine"],
+    "enf_full": ["shared", "normal_estimation", "intersection", "combine"],
+    "excluded": ["truth_distance", "oracle_diagnostics", "plotting", "file_io"]
+  },
+  "reliability": {
+    "primary_requires_all_queries": true,
+    "retain_partial_results": true,
+    "retain_candidate_failures": true,
+    "do_not_require_fitting_error_monotonicity": true,
+    "require_nn_reference_distance_nonincreasing": true,
+    "monotonicity_absolute_tolerance": 1e-12
+  },
+  "gpu_equivalence": {
+    "repeat": 10,
+    "sample_size": 100000,
+    "query_count": 4,
+    "candidate_count": 32,
+    "point_absolute_tolerance": 2e-8,
+    "metric_absolute_tolerance": 2e-8,
+    "status_exact": true
+  },
+  "optional_continuous_nn": false
+}
