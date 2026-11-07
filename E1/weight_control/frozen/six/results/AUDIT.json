@@ -1,0 +1,163 @@
+{
+  "checks": {
+    "all_declared_cells_and_queries_resolved": true,
+    "all_declared_packets_present": true,
+    "cpu_gpu_equivalence_gate": true,
+    "formal_backend_is_float64_NVIDIA_L40": true,
+    "packet_config_and_source_hashes": true,
+    "resolution_error_below_fraction_of_minimum_multi_error": true,
+    "root_uncertainty_below_fraction_of_minimum_multi_error": true,
+    "weight_constraints": true
+  },
+  "config_sha256": "33b0edf225e7333a4999a9a75021d92cb9adfdda4b65d9d2a7629554df47d4d2",
+  "errors": [],
+  "expected_packet_count": 28,
+  "gpu_equivalence_gate": {
+    "cases": [
+      {
+        "classification_match": true,
+        "geometry": "corrugated_torus_r3",
+        "max_fitted_point_difference": 6.473657052351724e-16,
+        "max_metric_difference": 4.0708895782942266e-16,
+        "method": "STSP",
+        "query_ids": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "resolution": "production",
+        "sigma": 0.008
+      },
+      {
+        "classification_match": true,
+        "geometry": "corrugated_torus_r3",
+        "max_fitted_point_difference": 5.095246433059111e-16,
+        "max_metric_difference": 1.7320129705455933e-16,
+        "method": "STSP",
+        "query_ids": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "resolution": "reference",
+        "sigma": 0.008
+      },
+      {
+        "classification_match": true,
+        "geometry": "corrugated_torus_r3",
+        "max_fitted_point_difference": 6.306597093256058e-16,
+        "max_metric_difference": 5.859028540111666e-16,
+        "method": "DR",
+        "query_ids": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "resolution": "production",
+        "sigma": 0.008
+      },
+      {
+        "classification_match": true,
+        "geometry": "corrugated_torus_r3",
+        "max_fitted_point_difference": 1.4456898839738348e-15,
+        "max_metric_difference": 4.566659550508945e-16,
+        "method": "DR",
+        "query_ids": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64,
+          72,
+          80,
+          88,
+          96,
+          104,
+          112,
+          120
+        ],
+        "resolution": "reference",
+        "sigma": 0.008
+      }
+    ],
+    "checks": {
+      "fitted_points_within_tolerance": true,
+      "metrics_within_tolerance": true,
+      "success_failure_classification_identical": true
+    },
+    "config_sha256": "33b0edf225e7333a4999a9a75021d92cb9adfdda4b65d9d2a7629554df47d4d2",
+    "gpu": {
+      "cuda_runtime_version": 12090,
+      "cupy_version": "14.2.0",
+      "device_index": 0,
+      "device_name": "NVIDIA L40",
+      "float_precision": "float64"
+    },
+    "max_fitted_point_difference": 1.4456898839738348e-15,
+    "max_metric_difference": 5.859028540111666e-16,
+    "schema_version": "E1_THEORY_PATH_GPU_GATE_V1",
+    "source_sha256": "a2ec8472baaa2144433f387b8ead20841066c18d86568913e60e0244fbf92c25",
+    "status": "PASS",
+    "threshold": 1e-10
+  },
+  "numerical_maxima": {
+    "minimum_production_multi_E_infinity": 1.3112918871452735e-06,
+    "production_reference_point_difference": 5.468307682453946e-12,
+    "resolution_difference_over_minimum_multi_error": 4.170168164739154e-06,
+    "root_position_uncertainty": 5.138122031086409e-12,
+    "root_uncertainty_over_minimum_multi_error": 3.918366369422352e-06,
+    "weight_constraint_residual": 1.1102230246251565e-16
+  },
+  "packet_count": 28,
+  "population_integration": {
+    "DR": "the same deterministic manifold quadratures; Gaussian measurement noise and Gaussian kernel convolution integrated analytically for the ridge residual; matching PCA uses the STSP compact-polynomial noncentral-chi moment integration at h1",
+    "STSP": "periodic trapezoid on circle/torus and Gauss-Jacobi latitude with exact signed-axis first/second angular moments on spheres; Gaussian noise reduced analytically to noncentral-chi radial moments and integrated by Gauss-Legendre quadrature",
+    "monte_carlo": false
+  },
+  "schema_version": "E1_THEORY_PATH_AUDIT_V1",
+  "source_sha256": "a2ec8472baaa2144433f387b8ead20841066c18d86568913e60e0244fbf92c25",
+  "status": "PASS"
+}

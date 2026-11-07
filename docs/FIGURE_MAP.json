@@ -1,0 +1,257 @@
+{
+  "schema": "MAIN_SUPPLEMENT_FIGURES_20261107_V1",
+  "figures": [
+    {
+      "figure": "Figure 1",
+      "experiment": "schematic",
+      "files": [
+        "illustrations/Figure1/figure1_clear.png",
+        "illustrations/Figure1/figure1_clear.pdf"
+      ],
+      "replay": "python illustrations/Figure1/draw_figure1.py"
+    },
+    {
+      "figure": "Figure 2",
+      "experiment": "E1 controlled weights",
+      "files": [
+        "E1/weight_control/outputs/e1_stsp_population_infinity_with_ms_stsp.png",
+        "E1/weight_control/outputs/e1_stsp_population_infinity_with_ms_stsp.pdf"
+      ],
+      "replay": "python E1/weight_control/render_and_report.py --output NEW --figure-only"
+    },
+    {
+      "figure": "Figure 3",
+      "experiment": "schematic",
+      "files": [
+        "illustrations/Figure3/yy_normal_decomposition.png",
+        "illustrations/Figure3/yy_normal_decomposition.pdf"
+      ],
+      "replay": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ"
+    },
+    {
+      "figure": "Figure 4",
+      "experiment": "E1 normalized",
+      "files": [
+        "E1/figures/E1_circle_normalized_E_infinity_STSP_DR_YY_clear.png",
+        "E1/figures/E1_circle_normalized_E_infinity_STSP_DR_YY_clear.pdf"
+      ],
+      "replay": "python E1/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure 5",
+      "experiment": "E2",
+      "files": [
+        "E2/figures/E2_STSP_E_infty.png",
+        "E2/figures/E2_STSP_E_infty.pdf"
+      ],
+      "replay": "python E2/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure 6",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_stsp_all_single_scales_max_error.png",
+        "E3/paper_figures/figure_e3_stsp_all_single_scales_max_error.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure 7",
+      "experiment": "E4",
+      "files": [
+        "E4/correspondence/figures/e4_nn_density_accuracy.png",
+        "E4/correspondence/figures/e4_nn_density_accuracy.pdf"
+      ],
+      "replay": "python E4/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure 8",
+      "experiment": "E5",
+      "files": [
+        "E5/paper_figures/figure_e5_finite_sample_dual_metrics.png",
+        "E5/paper_figures/figure_e5_finite_sample_dual_metrics.svg"
+      ],
+      "replay": "Selected-export replay; see E5/README.md"
+    },
+    {
+      "figure": "Figure S1",
+      "experiment": "E1",
+      "files": [
+        "E1/figures/E1_STSP_average_sigma.png",
+        "E1/figures/E1_STSP_average_sigma.pdf"
+      ],
+      "replay": "python E1/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S2",
+      "experiment": "E1",
+      "files": [
+        "E1/figures/E1_DR_infinity_sigma.png",
+        "E1/figures/E1_DR_infinity_sigma.pdf",
+        "E1/figures/E1_DR_average_sigma.png",
+        "E1/figures/E1_DR_average_sigma.pdf"
+      ],
+      "replay": "python E1/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S3",
+      "experiment": "E1",
+      "files": [
+        "E1/figures/E1_YY_infinity_sigma.png",
+        "E1/figures/E1_YY_infinity_sigma.pdf",
+        "E1/figures/E1_YY_average_sigma.png",
+        "E1/figures/E1_YY_average_sigma.pdf"
+      ],
+      "replay": "python E1/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S4",
+      "experiment": "E2",
+      "files": [
+        "E2/figures/E2_STSP_E_avg.png",
+        "E2/figures/E2_STSP_E_avg.pdf"
+      ],
+      "replay": "python E2/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S5",
+      "experiment": "E2",
+      "files": [
+        "E2/figures/E2_DR_E_infty.png",
+        "E2/figures/E2_DR_E_infty.pdf",
+        "E2/figures/E2_DR_E_avg.png",
+        "E2/figures/E2_DR_E_avg.pdf"
+      ],
+      "replay": "python E2/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S6",
+      "experiment": "E2",
+      "files": [
+        "E2/figures/E2_YY_E_infty.png",
+        "E2/figures/E2_YY_E_infty.pdf",
+        "E2/figures/E2_YY_E_avg.png",
+        "E2/figures/E2_YY_E_avg.pdf"
+      ],
+      "replay": "python E2/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S7",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_stsp_all_single_scales_average_error.png",
+        "E3/paper_figures/figure_e3_stsp_all_single_scales_average_error.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S8",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_dr_all_single_scales_average_error.png",
+        "E3/paper_figures/figure_e3_dr_all_single_scales_average_error.pdf",
+        "E3/paper_figures/figure_e3_dr_all_single_scales_max_error.png",
+        "E3/paper_figures/figure_e3_dr_all_single_scales_max_error.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S9",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_yy_all_single_scales_average_error.png",
+        "E3/paper_figures/figure_e3_yy_all_single_scales_average_error.pdf",
+        "E3/paper_figures/figure_e3_yy_all_single_scales_max_error.png",
+        "E3/paper_figures/figure_e3_yy_all_single_scales_max_error.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S10",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_stsp_E_reverse_mean.png",
+        "E3/paper_figures/figure_e3_stsp_E_reverse_mean.pdf",
+        "E3/paper_figures/figure_e3_stsp_E_reverse.png",
+        "E3/paper_figures/figure_e3_stsp_E_reverse.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S11",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_dr_E_reverse_mean.png",
+        "E3/paper_figures/figure_e3_dr_E_reverse_mean.pdf",
+        "E3/paper_figures/figure_e3_dr_E_reverse.png",
+        "E3/paper_figures/figure_e3_dr_E_reverse.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S12",
+      "experiment": "E3",
+      "files": [
+        "E3/paper_figures/figure_e3_yy_E_reverse_mean.png",
+        "E3/paper_figures/figure_e3_yy_E_reverse_mean.pdf",
+        "E3/paper_figures/figure_e3_yy_E_reverse.png",
+        "E3/paper_figures/figure_e3_yy_E_reverse.pdf"
+      ],
+      "replay": "python E3/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S13",
+      "experiment": "E4 deterministic counterexample",
+      "files": [
+        "E4/correspondence/counterexample/P1_oscillatory_CP_nonuniqueness.png",
+        "E4/correspondence/counterexample/P1_oscillatory_CP_nonuniqueness.pdf"
+      ],
+      "replay": "python E4/correspondence/replay_counterexample.py --output NEW"
+    },
+    {
+      "figure": "Figure S14",
+      "experiment": "E5",
+      "files": [
+        "E5/paper_figures/figure_e5_population_directional_ablation.png",
+        "E5/paper_figures/figure_e5_population_directional_ablation.pdf"
+      ],
+      "replay": "Selected-export replay; see E5/README.md"
+    },
+    {
+      "figure": "Figure S15",
+      "experiment": "nonuniform E1",
+      "files": [
+        "nonuniform/E1/outputs/nonuniform/e1_stsp_nonuniform_density_infinity.png",
+        "nonuniform/E1/outputs/nonuniform/e1_stsp_nonuniform_density_infinity.pdf"
+      ],
+      "replay": "python nonuniform/E1/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S16",
+      "experiment": "nonuniform E1",
+      "files": [
+        "nonuniform/E1/outputs/nonuniform_average/e1_stsp_nonuniform_density_average.png",
+        "nonuniform/E1/outputs/nonuniform_average/e1_stsp_nonuniform_density_average.pdf"
+      ],
+      "replay": "python nonuniform/E1/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S17",
+      "experiment": "nonuniform E2",
+      "files": [
+        "nonuniform/E2/figures/E2_nonuniform_STSP_E_avg.png",
+        "nonuniform/E2/figures/E2_nonuniform_STSP_E_avg.pdf"
+      ],
+      "replay": "python nonuniform/E2/reproduce.py --output NEW"
+    },
+    {
+      "figure": "Figure S18",
+      "experiment": "nonuniform E2",
+      "files": [
+        "nonuniform/E2/figures/E2_nonuniform_STSP_E_infty.png",
+        "nonuniform/E2/figures/E2_nonuniform_STSP_E_infty.pdf"
+      ],
+      "replay": "python nonuniform/E2/reproduce.py --output NEW"
+    }
+  ]
+}

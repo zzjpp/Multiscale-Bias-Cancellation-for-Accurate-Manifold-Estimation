@@ -9,9 +9,7 @@ python E1/smoke.py --method DR
 python E1/smoke.py --method YY
 ```
 
-Default replay validates the original saved tables/provenance and draws six
-raw-error figures plus the normalized circle triptych. `--all-diagnostics`
-also draws the original scaled-error/slope-window diagnostics. No fit occurs.
+Default replay validates the original saved tables/provenance and draws the five raw-error panels selected for S1-S3 plus the normalized circle triptych (Figure 4). Figure 2 is drawn separately by `weight_control/render_and_report.py --output NEW --figure-only`. `--all-diagnostics` additionally draws the unselected legacy two-curve STSP maximum figure. No fit occurs. Noise axes decrease from 0.03 to 0.008.
 
 Original numerical packages remain separate to avoid mixing similarly named
 modules. Full CPU population runs (expensive), writing their own fresh results:

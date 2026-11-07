@@ -1,0 +1,292 @@
+{
+  "files": [
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\config.json",
+      "copy": "frozen/E4/fitting/original/config.json",
+      "sha256": "9c7c54389b6e3f85001378e805942e7c1adb8481c15422cec17941258937d32d",
+      "size": 1634
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\data_hashes_n200000.json",
+      "copy": "frozen/E4/fitting/original/data_hashes_n200000.json",
+      "sha256": "ed0942691463687ca234df274c44059d55cece048b2145fca702a591b91b7dbf",
+      "size": 2663
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\density_scan_config.json",
+      "copy": "frozen/E4/fitting/original/density_scan_config.json",
+      "sha256": "375acc2fc43275797961b7f6a4f6103a7ebdb97ff63c64370b5293801f5837f2",
+      "size": 2101
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\requirements-gpu-compute.txt",
+      "copy": "frozen/E4/fitting/original/requirements-gpu-compute.txt",
+      "sha256": "db4c74b1e14126e1a3c468c8ed3cabca3d441250806f8f77c5236f2fcee7a85b",
+      "size": 53
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\requirements-gpu-cu13.txt",
+      "copy": "frozen/E4/fitting/original/requirements-gpu-cu13.txt",
+      "sha256": "5c7e0949e035655472c4aeaf6f127880d67b1ab7b5d7d22f7fb69b7d78fc14e1",
+      "size": 46
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\requirements.txt",
+      "copy": "frozen/E4/fitting/original/requirements.txt",
+      "sha256": "6f39695f3f50af68983ca8ad975d5af692534e575cd16da2b242a902e41f87a1",
+      "size": 62
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\run_density_scan.py",
+      "copy": "frozen/E4/fitting/original/run_density_scan.py",
+      "sha256": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36",
+      "size": 35810
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\coefficients.py",
+      "copy": "frozen/E4/fitting/original/src/e4/coefficients.py",
+      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8",
+      "size": 1907
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\config.py",
+      "copy": "frozen/E4/fitting/original/src/e4/config.py",
+      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301",
+      "size": 230
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\experiment.py",
+      "copy": "frozen/E4/fitting/original/src/e4/experiment.py",
+      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f",
+      "size": 2552
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\geometry.py",
+      "copy": "frozen/E4/fitting/original/src/e4/geometry.py",
+      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e",
+      "size": 5525
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\gpu_operator.py",
+      "copy": "frozen/E4/fitting/original/src/e4/gpu_operator.py",
+      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d",
+      "size": 6378
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\operator.py",
+      "copy": "frozen/E4/fitting/original/src/e4/operator.py",
+      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1",
+      "size": 6293
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\pipeline.py",
+      "copy": "frozen/E4/fitting/original/src/e4/pipeline.py",
+      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6",
+      "size": 16272
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\solver.py",
+      "copy": "frozen/E4/fitting/original/src/e4/solver.py",
+      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165",
+      "size": 4924
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\original\\src\\e4\\__init__.py",
+      "copy": "frozen/E4/fitting/original/src/e4/__init__.py",
+      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250",
+      "size": 106
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_10.npz",
+      "copy": "frozen/E4/fitting/data/repeat_10.npz",
+      "sha256": "ff6a830f082de70aab02c1a64b2c8c9f07ef07e5f4a94b2cf932de511ea2ed97",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_11.npz",
+      "copy": "frozen/E4/fitting/data/repeat_11.npz",
+      "sha256": "f305d39c83e84e083cc9c7be54dd18a5929baef9c4649ab6ea8b189c0a6bfeed",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_12.npz",
+      "copy": "frozen/E4/fitting/data/repeat_12.npz",
+      "sha256": "cb4d013197f76452db5f82456070748633b6167d33f3e92f39b4a86ad3aa55ac",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_13.npz",
+      "copy": "frozen/E4/fitting/data/repeat_13.npz",
+      "sha256": "2c3baba3b65fcff16a59eaa88d3c5acc6d40983464ec080cd8c5e237d78157ee",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_14.npz",
+      "copy": "frozen/E4/fitting/data/repeat_14.npz",
+      "sha256": "cc08c75930d9f31bbf10e0ff3e531ab0ad29aee8c2e4d9114611725294c175f5",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_15.npz",
+      "copy": "frozen/E4/fitting/data/repeat_15.npz",
+      "sha256": "c7f882a548cc4271d55270547c62d2d019889643e0530e6c9d7dabad9f0572ba",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_16.npz",
+      "copy": "frozen/E4/fitting/data/repeat_16.npz",
+      "sha256": "3afea9a55638dde585439e3d184a81ed296ac0f4a6acb338060eead7ab490103",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_17.npz",
+      "copy": "frozen/E4/fitting/data/repeat_17.npz",
+      "sha256": "5d15747512ffa4f5b384491ed830d886de4f357071f2ff1829cff8e772d108b1",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_18.npz",
+      "copy": "frozen/E4/fitting/data/repeat_18.npz",
+      "sha256": "e359f99e074062c0ac12bb717eb671cc962f09b1d6b8f077d3d3784f131cbe15",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\data\\repeat_19.npz",
+      "copy": "frozen/E4/fitting/data/repeat_19.npz",
+      "sha256": "73be87a76b679d7a83fca04db6e375ed9ae13781fa2615ec9985f271712b4187",
+      "size": 9600524
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_10.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_10.npy",
+      "sha256": "7409e4f19817f971b926be05101eb37b31d9cb026ddd2bd0490a246f04d96fcc",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_11.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_11.npy",
+      "sha256": "f3a031e953a99d332bb23af875354eae3ce35b4e14e24be576c1eca2db518680",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_12.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_12.npy",
+      "sha256": "3ef49ccb3187678dc3132fca10c6a3653b634d91d9df28cf125da93d8d6243ea",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_13.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_13.npy",
+      "sha256": "58ab6fc02df53c7a60d94ffa21d1b7d8ce56b2b7d5a1e3acc293b83ae445dcc8",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_14.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_14.npy",
+      "sha256": "7d51d969d603967d3e24e2749560911a7e1c9e2bd68d59b86781493209501e40",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_15.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_15.npy",
+      "sha256": "6cb7edf8a1efa9534c912849f1ba4ba4fa7b0181a2093983be9a79a7513ee895",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_16.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_16.npy",
+      "sha256": "c50b22aafd7834b5ceab28172f2d916bccdf95218f5302d1112301e7e48f87e4",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_17.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_17.npy",
+      "sha256": "d461b750ece2417b807e12e402a33ae97d4fb99b76179d6e81e7e4c3d2e7ac00",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_18.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_18.npy",
+      "sha256": "078757d192cca5cbf07efc31e87f97f6ad2af700ef188a23e4d15f59d820d18b",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\queries\\repeat_19.npy",
+      "copy": "frozen/E4/fitting/queries/repeat_19.npy",
+      "sha256": "78c644f1b899db70c33c43ad068bb3b9d742a94148b58247057aa5319cf20093",
+      "size": 896
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\FROZEN_INPUTS.json",
+      "copy": "frozen/E4/fitting/FROZEN_INPUTS.json",
+      "sha256": "b24276832a5990560905ee9d6c1f56858655cbf03f505b4c5c114dba36215f08",
+      "size": 12717
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\CPU_GPU_FIXED_QUERY_GATE.json",
+      "copy": "frozen/E4/fitting/CPU_GPU_FIXED_QUERY_GATE.json",
+      "sha256": "30a2c33acf77f336f536ef1e8dd05fb2ab0e8ad8781735df134a61c58e9343ab",
+      "size": 2031
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E4\\fitting\\fixed_queries.py",
+      "copy": "frozen/E4/fitting/fixed_queries.py",
+      "sha256": "b12e13e0572869bbfe3cbaccff93e0c986db6812f1c03ec7597cf12c51cc70ef",
+      "size": 9796
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\config.json",
+      "copy": "frozen/population_engine/config.json",
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05",
+      "size": 3234
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\coefficients.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/coefficients.py",
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "size": 2125
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\experiment.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/experiment.py",
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "size": 22091
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\geometry.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/geometry.py",
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f",
+      "size": 4223
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\gpu_experiment.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/gpu_experiment.py",
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e",
+      "size": 3382
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\gpu_population.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/gpu_population.py",
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "size": 10056
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\plotting.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/plotting.py",
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53",
+      "size": 6954
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\population.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/population.py",
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "size": 11641
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\__init__.py",
+      "copy": "frozen/population_engine/src/e1_theory_path/__init__.py",
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "size": 55
+    }
+  ]
+}

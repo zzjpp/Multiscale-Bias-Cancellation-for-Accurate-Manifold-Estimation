@@ -1,0 +1,47 @@
+{
+  "schema": "E1_SHARED_STSP_WEIGHT_CONTROL_V1",
+  "geometry_order": [
+    "circle_r2",
+    "sphere2_r3",
+    "clifford_torus_r4",
+    "sphere3_r4",
+    "sphere2_r10",
+    "corrugated_torus_r3"
+  ],
+  "sigma_grid": [
+    0.008,
+    0.01,
+    0.0125,
+    0.016,
+    0.02,
+    0.025,
+    0.03
+  ],
+  "h1_over_sigma": 3,
+  "h2_over_sigma": 6,
+  "kernel_power": 6,
+  "naive_weights": [
+    1.3333333333333333,
+    -0.3333333333333333
+  ],
+  "main_fits": "Exact preserved production/refined STSP points and compact h1-PCA ENF fibers; no main refits",
+  "single_definition": "ENF-matched Z_h2, shared with both extrapolations; original independent Single retained separately",
+  "precision_gates": {
+    "resolution_fraction_of_minimum_proposed_error": 0.001,
+    "correction_fraction_of_minimum_proposed_error": 0.1,
+    "weight_constraints_max": 1e-11,
+    "coefficient_formula_agreement_relative": 1e-11
+  },
+  "strict_circle_check": {
+    "sigma": 0.008,
+    "latent_count": 32768,
+    "radial_order": 320,
+    "projected_residual_tolerance": 1e-13,
+    "full_residual_tolerance": 1e-11,
+    "coordinate_correction_tolerance": 1e-13
+  },
+  "monte_carlo": false,
+  "preserve_all_queries_and_failures": true,
+  "claims_are_predictions_not_acceptance_criteria": true,
+  "original_outputs_not_overwritten": true
+}

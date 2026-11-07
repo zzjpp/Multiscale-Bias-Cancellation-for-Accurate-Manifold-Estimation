@@ -1,0 +1,60 @@
+{
+  "schema_version": "E4_RELEASE_V1",
+  "experiment": "estimated-normal-fiber versus nearest-neighbour correspondence",
+  "master_seed": 20260911,
+  "experiment_id": 4,
+  "heldout_repeats": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "geometry": {
+    "name": "nonconstant-curvature closed space curve",
+    "formula": "gamma(theta)=(1.5*cos(theta), sin(theta), 0.3*sin(2*theta))",
+    "intrinsic_dimension": 1,
+    "ambient_dimension": 3
+  },
+  "h1": 0.12,
+  "h2": 0.24,
+  "sigma": 0.06,
+  "sample_size": 200000,
+  "query_count": 32,
+  "nn_candidate_count": 32,
+  "nn_phase": 0.37,
+  "matching": {
+    "max_newton_iterations": 30,
+    "max_backtracks": 16,
+    "search_radius_factor": 4.0,
+    "projected_residual_tolerance": 1e-11,
+    "full_residual_tolerance": 1e-9,
+    "normalized_mass_min": 1e-12,
+    "minimum_support": 3,
+    "normalized_eigengap_min": 1e-8,
+    "transversality_max": 0.98,
+    "jacobian_condition_max": 1e12,
+    "armijo_factor": 0.25
+  },
+  "quadrature": {
+    "absolute_tolerance": 2e-13,
+    "relative_tolerance": 2e-13,
+    "small_lambda_rescale_threshold": 0.1
+  },
+  "failure_taxonomy": [
+    "insufficient_mass",
+    "low_support",
+    "eigengap_failure",
+    "normal_transversality_failure",
+    "jacobian_condition_failure",
+    "newton_no_descent",
+    "newton_max_iter",
+    "search_radius_exceeded",
+    "reference_branch_failure",
+    "target_branch_failure",
+    "candidate_branch_failure",
+    "candidate_library_incomplete",
+    "residual_failure",
+    "nonfinite",
+    "other"
+  ],
+  "aggregation": {
+    "center": "median",
+    "uncertainty": "IQR",
+    "representative_repeat": 10
+  }
+}

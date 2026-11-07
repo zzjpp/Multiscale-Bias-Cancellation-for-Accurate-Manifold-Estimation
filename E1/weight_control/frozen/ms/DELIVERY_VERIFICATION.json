@@ -1,0 +1,33 @@
+{
+  "status": "ALL_ACTUAL_DELIVERABLE_CHECKS_COMPLETE",
+  "observed_utc": "2026-10-29T08:14:54.656302+00:00",
+  "completed_cells": 84,
+  "resolution_pairs": 42,
+  "producer_audit_sha256": "3bd292f9c0cd73473c829886f0bb89b81c940132bd176c2528ba6a0369e4587b",
+  "producer_audit_consumed_without_reintegration": true,
+  "downloaded_bound_archive_members": 223,
+  "original_files_verified_unchanged": 77,
+  "frozen_members_verified_unchanged": 11,
+  "all42_ms_errors_between_multi_and_single": true,
+  "exports": {
+    "e1_stsp_population_infinity_with_ms_stsp.png": {
+      "sha256": "2208c7669b5f7455c2f01316d4060ad8c7b32e3f485e193fe6c952815939af0f",
+      "bytes": 292235,
+      "cold_replay_identical": true
+    },
+    "e1_stsp_population_infinity_with_ms_stsp.pdf": {
+      "sha256": "52b3f985ff17cf4add438403775ddbcc409f92a7a55a406e9c305c9125b5aa8e",
+      "bytes": 34082,
+      "cold_replay_identical": true
+    }
+  },
+  "visual_receipt_sha256": "8d9ae132fcff4f5ed787f6c8cdbc5f72d74dd8cf69e3fc1dac7e5c423b04e546",
+  "table_sha256": "268d49ff30840256d16d8d6a9f0f252c6a06a33b44d5df4a5fb2546e6e3f42f9",
+  "report_sha256": "e29942c28218c20df5d3d2602398eafb76e0383b76278cfcf9e5f10ca011142d",
+  "plotting_replay_entry": "D:\\stsp外推\\ms_stsp_comparison_20261029\\DELIVERY_README.md",
+  "original_package_modified": false,
+  "official_figures_overwritten": false,
+  "github_uploaded": false,
+  "remaining_scientific_or_figure_work": false,
+  "heartbeat_cleanup": "delete native ms-stsp-e1 on delivery"
+}

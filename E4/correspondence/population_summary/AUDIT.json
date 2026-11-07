@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "cells": 14,
+  "query_resolution_workflows": 448,
+  "pilot_queries_adopted": 4,
+  "minimum_maximum_match_error": 2.4567034578667137e-09,
+  "precision_budget": 2.4567034578667136e-12,
+  "precision_failures": [],
+  "maximum_point_difference": 4.577566798522237e-16,
+  "maximum_match_metric_difference": 5.957548000997998e-17,
+  "no_Monte_Carlo": true,
+  "packet_sha256": {
+    "sigma_0.0080_production.json": "33772988227c1171c2b387265387f026cc6c5966af61df05900b2335e9040eef",
+    "sigma_0.0080_reference.json": "37f4b8b736af8975ffca93d775cad3e94dcffadc2e72c4d7f795538bcda5f93c",
+    "sigma_0.0100_production.json": "1824f4da839c1801d8767bc5cfa683a2c1a05ca95b2b3acfd16de0eff45aa81a",
+    "sigma_0.0100_reference.json": "7c460a852691bb0500129108646340fdaae647010997c990515ef4bd0c476cc2",
+    "sigma_0.0125_production.json": "488718201a0e9454fcd31fc538790d918ac8be56245fba8d02eafa6177b1d2c7",
+    "sigma_0.0125_reference.json": "1f9c0c659e9a9a63f822c3989941c58a5372679b84663297c5923acc97a69152",
+    "sigma_0.0160_production.json": "240c7154c0e7064c7a8c89eaa3cc1776cd887405eda58101e1d76fe427713093",
+    "sigma_0.0160_reference.json": "5b97795addba14f018642603a9c64b5fa5ddbaca6f9bd4288730e0c2fddec6c4",
+    "sigma_0.0200_production.json": "034ae87ff73406cec7ef41018571c845e8ca59ed4ca466c0a3e56975b01e6d34",
+    "sigma_0.0200_reference.json": "ef627597364d1e65ab2bdc92f17c8eccc14b26d5d175a173a7b5a75ab87de124",
+    "sigma_0.0250_production.json": "64955dc791075aed6d2a9db7c7ef07bce1a0b928d4c46c73907f42732f1b0d75",
+    "sigma_0.0250_reference.json": "82cf3a68a77e53a350ce3296d34b30b104443d35d010a22c927e42016d0f6fee",
+    "sigma_0.0300_production.json": "eb995d8fc2412c24f12a288f4e5d702c7dc2977120b2222f917e993df0dc7b1f",
+    "sigma_0.0300_reference.json": "745fb37b6d5df19d8e7a4e00315e0eb805b5546caff569336e4a04df88994d7a"
+  },
+  "source_sha256": "b1b7692ff35c5a22bfa0b0fc70c159e887feee29d5b6c1b12dab7e19c5ac316d",
+  "finite_range_not_asymptotic_proof": true
+}

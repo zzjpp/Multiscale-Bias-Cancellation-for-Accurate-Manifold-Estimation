@@ -1,0 +1,381 @@
+{
+  "schema": "CURRENT_MAIN_SUPPLEMENT_RESULT_CONSISTENCY_V2",
+  "status": "MATCH_WITH_DOCUMENTED_RAW_DATA_GAP",
+  "matched_claims": 41,
+  "claims": [
+    {
+      "claim": "E1 STSP circle_r2 Single slope",
+      "observed": 2.001415472556209,
+      "paper": 2.001,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E1 STSP circle_r2 Multi slope",
+      "observed": 4.004123078351708,
+      "paper": 4.004,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E1 STSP clifford_torus_r4 Single slope",
+      "observed": 2.00264332369472,
+      "paper": 2.003,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E1 STSP clifford_torus_r4 Multi slope",
+      "observed": 4.007814542555005,
+      "paper": 4.008,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E1 STSP sphere2_r10 Single slope",
+      "observed": 2.0016663598627242,
+      "paper": 2.002,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E1 STSP sphere2_r10 Multi slope",
+      "observed": 4.004998793816231,
+      "paper": 4.005,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E2 complete table rows",
+      "observed": 768,
+      "paper": 768,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E2 six geometries",
+      "observed": [
+        "circle_r2",
+        "clifford_torus_r4",
+        "corrugated_torus_r3",
+        "sphere2_r10",
+        "sphere2_r3",
+        "sphere3_r4"
+      ],
+      "paper": [
+        "circle_r2",
+        "clifford_torus_r4",
+        "corrugated_torus_r3",
+        "sphere2_r10",
+        "sphere2_r3",
+        "sphere3_r4"
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E2 circle n500000 Single_h2 E_avg",
+      "observed": 0.0013434089708813776,
+      "paper": "1.343e-03",
+      "status": "MATCH"
+    },
+    {
+      "claim": "E2 circle n500000 Multi E_avg",
+      "observed": 5.2427554455377015e-05,
+      "paper": "5.243e-05",
+      "status": "MATCH"
+    },
+    {
+      "claim": "E2 circle improvement factor",
+      "observed": 25.624101387845613,
+      "paper": 25.6,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 complete table rows",
+      "observed": 6720,
+      "paper": 6720,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 circle_r2 n/reverse queries/reference/scales",
+      "observed": [
+        12000,
+        1024,
+        262144,
+        28
+      ],
+      "paper": [
+        12000,
+        1024,
+        262144,
+        28
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 sphere2_r3 n/reverse queries/reference/scales",
+      "observed": [
+        24000,
+        8192,
+        262144,
+        28
+      ],
+      "paper": [
+        24000,
+        8192,
+        262144,
+        28
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 clifford_torus_r4 n/reverse queries/reference/scales",
+      "observed": [
+        24000,
+        8192,
+        262144,
+        28
+      ],
+      "paper": [
+        24000,
+        8192,
+        262144,
+        28
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 sphere3_r4 n/reverse queries/reference/scales",
+      "observed": [
+        60000,
+        16384,
+        262144,
+        28
+      ],
+      "paper": [
+        60000,
+        16384,
+        262144,
+        28
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 sphere2_r10 n/reverse queries/reference/scales",
+      "observed": [
+        24000,
+        8192,
+        262144,
+        28
+      ],
+      "paper": [
+        24000,
+        8192,
+        262144,
+        28
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E3 corrugated_torus_r3 n/reverse queries/reference/scales",
+      "observed": [
+        36000,
+        1024,
+        262144,
+        28
+      ],
+      "paper": [
+        36000,
+        1024,
+        262144,
+        28
+      ],
+      "status": "MATCH"
+    },
+    {
+      "claim": "E4 CP complete repeats",
+      "observed": 10,
+      "paper": 10,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E4 CP total median seconds",
+      "observed": 25.562183799986087,
+      "paper": 25.6,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Figure2 naive circle_r2",
+      "observed": 1.9998491917969277,
+      "paper": 2.0,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Figure2 naive sphere2_r3",
+      "observed": 1.9998865609329153,
+      "paper": 2.0,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Figure2 naive clifford_torus_r4",
+      "observed": 1.9998901653617005,
+      "paper": 2.0,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Figure2 naive sphere3_r4",
+      "observed": 1.999956645255418,
+      "paper": 2.0,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Figure2 naive sphere2_r10",
+      "observed": 1.9999553867905453,
+      "paper": 2.0,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Figure2 naive corrugated_torus_r3",
+      "observed": 1.9995898090853328,
+      "paper": 2.0,
+      "status": "MATCH"
+    },
+    {
+      "claim": "S13 nonunique CP pair",
+      "observed": 2,
+      "paper": 2,
+      "status": "MATCH"
+    },
+    {
+      "claim": "S17/S18 complete nonuniform table",
+      "observed": 768,
+      "paper": 768,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E5 population packets",
+      "observed": 7,
+      "paper": 7,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Single geometric_max slope",
+      "observed": 2.000747386817611,
+      "paper": 2.001,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Single axial_normal_max slope",
+      "observed": 1.9954317757958513,
+      "paper": 1.995,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Single complementary_normal_max slope",
+      "observed": 2.0131297773636048,
+      "paper": 2.013,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Scalar-A geometric_max slope",
+      "observed": 2.037694094065461,
+      "paper": 2.038,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Scalar-A axial_normal_max slope",
+      "observed": 3.9926330480533108,
+      "paper": 3.993,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Scalar-A complementary_normal_max slope",
+      "observed": 2.0376893293889595,
+      "paper": 2.038,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Scalar-C geometric_max slope",
+      "observed": 1.9924502314443593,
+      "paper": 1.992,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Scalar-C axial_normal_max slope",
+      "observed": 1.9924450279342985,
+      "paper": 1.992,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Scalar-C complementary_normal_max slope",
+      "observed": 4.005362108505181,
+      "paper": 4.005,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Directional geometric_max slope",
+      "observed": 4.002295946613986,
+      "paper": 4.002,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Directional axial_normal_max slope",
+      "observed": 3.9926347347889903,
+      "paper": 3.993,
+      "status": "MATCH"
+    },
+    {
+      "claim": "Table2 Directional complementary_normal_max slope",
+      "observed": 4.005362104972045,
+      "paper": 4.005,
+      "status": "MATCH"
+    }
+  ],
+  "E3_protocol": [
+    {
+      "geometry": "circle_r2",
+      "n": 12000,
+      "reverse_queries": 1024,
+      "reverse_references": 262144,
+      "scales": 28
+    },
+    {
+      "geometry": "sphere2_r3",
+      "n": 24000,
+      "reverse_queries": 8192,
+      "reverse_references": 262144,
+      "scales": 28
+    },
+    {
+      "geometry": "clifford_torus_r4",
+      "n": 24000,
+      "reverse_queries": 8192,
+      "reverse_references": 262144,
+      "scales": 28
+    },
+    {
+      "geometry": "sphere3_r4",
+      "n": 60000,
+      "reverse_queries": 16384,
+      "reverse_references": 262144,
+      "scales": 28
+    },
+    {
+      "geometry": "sphere2_r10",
+      "n": 24000,
+      "reverse_queries": 8192,
+      "reverse_references": 262144,
+      "scales": 28
+    },
+    {
+      "geometry": "corrugated_torus_r3",
+      "n": 36000,
+      "reverse_queries": 1024,
+      "reverse_references": 262144,
+      "scales": 28
+    }
+  ],
+  "unresolved": [
+    {
+      "experiment": "E5 finite / Figure8",
+      "status": "MISSING_LOCAL_RAW_PACKETS",
+      "expected": 60,
+      "interpretation": "Selected exports match; historical median/IQR raw-data verification incomplete"
+    }
+  ],
+  "manuscript_note": "Local CP scope and raw-data limitations are explicitly disclosed",
+  "evidence": "archived-result consistency; not an independent full fitting rerun"
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "E4_FIXED_QUERY_ACTUAL_CPU_GPU_GATE_V1",
+  "status": "PASS",
+  "sample_size": 200000,
+  "selected_query_ids": [
+    0,
+    8,
+    16,
+    24
+  ],
+  "checks": [
+    {
+      "branch": "reference",
+      "finite_masks_equal": true,
+      "max_difference": 0.0
+    },
+    {
+      "branch": "Oracle",
+      "finite_masks_equal": true,
+      "max_difference": 6.661338147750939e-15
+    },
+    {
+      "branch": "ENF",
+      "finite_masks_equal": true,
+      "max_difference": 1.2434497875801753e-14
+    },
+    {
+      "branch": "NN",
+      "finite_masks_equal": true,
+      "max_difference": 9.325873406851315e-15
+    }
+  ],
+  "effective_AST_sha256": "8cf22bab2fb65c32263815091c46516974918b1d7724b819669038cd2cfbdc08",
+  "device": {
+    "backend": "cupy",
+    "cupy": "14.2.0",
+    "device_id_visible": 0,
+    "pci_bus_id": "0000:41:00.0",
+    "name": "NVIDIA L40",
+    "compute_capability": "8.9",
+    "total_global_memory": 47667740672,
+    "dtype": "float64"
+  },
+  "frozen_h1_checks": [
+    {
+      "regenerated_point_difference": 1.9539925233402755e-14,
+      "frozen_h1_full_residual": 5.174337743613307e-15
+    },
+    {
+      "regenerated_point_difference": 1.2212453270876722e-14,
+      "frozen_h1_full_residual": 1.9609266254834514e-14
+    },
+    {
+      "regenerated_point_difference": 1.4654943925052066e-14,
+      "frozen_h1_full_residual": 2.2885080315588093e-14
+    },
+    {
+      "regenerated_point_difference": 1.5432100042289676e-14,
+      "frozen_h1_full_residual": 1.3529188180134147e-14
+    },
+    {
+      "regenerated_point_difference": 2.4424906541753444e-15,
+      "frozen_h1_full_residual": 2.8056718287477604e-15
+    },
+    {
+      "regenerated_point_difference": 1.3322676295501878e-15,
+      "frozen_h1_full_residual": 1.9581699097947034e-14
+    },
+    {
+      "regenerated_point_difference": 0.0,
+      "frozen_h1_full_residual": 2.3309000834372504e-14
+    },
+    {
+      "regenerated_point_difference": 1.3877787807814457e-17,
+      "frozen_h1_full_residual": 1.3678516154326276e-14
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "created_utc": "2026-10-29T12:44:13.043347+00:00",
+  "frozen_members": {
+    "frozen/e1_theory_path/__init__.py": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\__init__.py",
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "frozen/e1_theory_path/geometry.py": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\geometry.py",
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "frozen/e1_theory_path/population.py": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\population.py",
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "frozen/e1_theory_path/gpu_population.py": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\gpu_population.py",
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "frozen/e1_theory_path/coefficients.py": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\coefficients.py",
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "frozen/e1_theory_path/experiment.py": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\experiment.py",
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "fast_gpu.py": {
+      "source": "D:\\stsp\u5916\u63a8\\ms_stsp_comparison_20261029\\fast_gpu.py",
+      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b"
+    },
+    "requirements.txt": {
+      "source": "D:\\stsp\u5916\u63a8\\ms_stsp_comparison_20261029\\requirements.txt",
+      "sha256": "66ac8d17dc68f4c07f8ad019fd31ac7210697d0c8471a3d6fa04f15f7cf311bd"
+    },
+    "frozen/original_five_config.json": {
+      "source": "D:\\stsp\u5916\u63a8\\ms_stsp_comparison_20261029\\frozen\\original_five_config.json",
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "frozen/original_corrugated_config.json": {
+      "source": "D:\\stsp\u5916\u63a8\\ms_stsp_comparison_20261029\\frozen\\original_corrugated_config.json",
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    "frozen/ORIGINAL_E1_LICENSE": {
+      "source": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1\\LICENSE",
+      "sha256": "f7a87c9c0957670b5afc40caa8f7d9a8c4041e9590640eecbe44c7473ccc87e5"
+    }
+  },
+  "protected_original_root": "D:\\stsp\u5916\u63a8\\simulation_experiments\\E1",
+  "protected_original_members": {
+    "circle_triptych.py": {
+      "size": 2686,
+      "sha256": "d2c380daefaaff09496ce497903a9e9cfecd54d1b2511983dedfa297a8db73a4"
+    },
+    "config.json": {
+      "size": 3715,
+      "sha256": "7191282cc60b63217245eb6cfd715cd625dc93cc7267121bccbc40e9b757042e"
+    },
+    "LICENSE": {
+      "size": 304,
+      "sha256": "f7a87c9c0957670b5afc40caa8f7d9a8c4041e9590640eecbe44c7473ccc87e5"
+    },
+    "README.md": {
+      "size": 1936,
+      "sha256": "f699baeb757253ac317f628f7da6fdbdb40128f1e2bcfa45a394398aaa3bb1f6"
+    },
+    "reproduce.py": {
+      "size": 2004,
+      "sha256": "97413316cdb4f5e5b842d938a632191ceb75d64020a7504e02ac1a4b0bda383a"
+    },
+    "requirements.txt": {
+      "size": 47,
+      "sha256": "8ced97ad816d94c306b8e583cdc431a89817176596fc71b31b0fa1d9ffa54d4f"
+    },
+    "smoke.py": {
+      "size": 1790,
+      "sha256": "5ff6b3deb6a0b5edcdf39bb32e87f80ab9071053167357c9ea2743940c07ff71"
+    },
+    "data/circle_normalized_values.csv": {
+      "size": 2315,
+      "sha256": "ec1c97c4250b5c3a30ad8fb979f618a8676d6530200c3f41c1c96ecf998b429b"
+    },
+    "data/e1_theory_path_audit.json": {
+      "size": 50695,
+      "sha256": "ee2eccc46d9a17b0194c5a7fd3176c0da3832a9f17ceedcc6e6ff56b83b7b8e1"
+    },
+    "data/e1_theory_path_errors.csv": {
+      "size": 14424,
+      "sha256": "c5888bc9f685f98c664b35998a89151aa623d1357a0a860e9359988360d268c9"
+    },
+    "data/e1_theory_path_gpu_gate.json": {
+      "size": 20426,
+      "sha256": "a2718de91ae4ab041e4f8cc2de95e52d3307e0bea6dcc86daf39e378fffcc7b8"
+    },
+    "data/e1_theory_path_numerical_convergence.csv": {
+      "size": 13035,
+      "sha256": "22d8b0c227ac0e7d58727acf38163f0ef1a0f4063aa4f914ae2fa847d7eaabba"
+    },
+    "data/e1_theory_path_slopes.csv": {
+      "size": 10299,
+      "sha256": "918f46f13d6a40ecb4336842657ed2f8ace3c589b3e1920faab9e99a2bc58abc"
+    },
+    "data/provenance.json": {
+      "size": 8416,
+      "sha256": "a3d68854e4e188e9edee7d7cab9c4c253f4c290d2bfd2fac1577a4fde5611834"
+    },
+    "data/yy_theory_path_audit.json": {
+      "size": 5145,
+      "sha256": "ea8fcfe15451e75cf5fb367ed154f7ed0d67b31ff8fb5d72884326396edecc2b"
+    },
+    "data/yy_theory_path_errors.csv": {
+      "size": 8494,
+      "sha256": "939cd0efcb17c285f85a73af5f04a3e62f4829772737ec74aeea16098baceaed"
+    },
+    "data/yy_theory_path_gpu_gate.json": {
+      "size": 2485,
+      "sha256": "7f7166dff82bc5ef1eda8d96fdfa87bec0b49ee6cefbe59be2538239a1a85dcb"
+    },
+    "data/yy_theory_path_numerical_convergence.csv": {
+      "size": 5295,
+      "sha256": "4dcefab1fa501919a85f5edc1ccb2b418067228f8e2e3555ceca739f739c63c3"
+    },
+    "data/yy_theory_path_slopes.csv": {
+      "size": 5174,
+      "sha256": "d9ae0ef80298641cfc9fe69cfd11e088159ff86d85c4431183dad88cbf191642"
+    },
+    "theory_path_population_all_e1/config.json": {
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "theory_path_population_all_e1/run_experiment.py": {
+      "size": 1173,
+      "sha256": "bace1799e45fb7f461fe584cb91e941c09d86050d5c6de3c922fdcacc9100c87"
+    },
+    "theory_path_population_all_e1/run_experiment_gpu.py": {
+      "size": 868,
+      "sha256": "cffac8ee00b50c9c95f965f4482c17a4a651e67889416a59811dd09a1a90639b"
+    },
+    "theory_path_population_all_e1/run_gpu_gate.py": {
+      "size": 4163,
+      "sha256": "a8f30cb3117af6a301ff69013ed3f75c1729f42cc58140bf88904b5bafe541ff"
+    },
+    "theory_path_population_six_manifolds/config.json": {
+      "size": 2313,
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    "theory_path_population_six_manifolds/run_experiment.py": {
+      "size": 1173,
+      "sha256": "bace1799e45fb7f461fe584cb91e941c09d86050d5c6de3c922fdcacc9100c87"
+    },
+    "theory_path_population_six_manifolds/run_experiment_gpu.py": {
+      "size": 868,
+      "sha256": "cffac8ee00b50c9c95f965f4482c17a4a651e67889416a59811dd09a1a90639b"
+    },
+    "theory_path_population_six_manifolds/run_gpu_gate.py": {
+      "size": 4163,
+      "sha256": "a8f30cb3117af6a301ff69013ed3f75c1729f42cc58140bf88904b5bafe541ff"
+    },
+    "theory_path_population_yy_all_e1/aggregate_results.py": {
+      "size": 366,
+      "sha256": "9cabe3832ba75fd32bfd5311cdd524046b3b74affb8e22de6dd5f0d18f6975f7"
+    },
+    "theory_path_population_yy_all_e1/config.json": {
+      "size": 3360,
+      "sha256": "54e0c79ee22b4eb38820158f24e581161981b63ffce1f7652acd3ca13bfc3914"
+    },
+    "theory_path_population_yy_all_e1/plot_results.py": {
+      "size": 290,
+      "sha256": "7b117e819267fbd0cd0c6f56e09b4c978dab4c1e4f8a5ab0076f8c5eacff13ff"
+    },
+    "theory_path_population_yy_all_e1/run_experiment_gpu.py": {
+      "size": 596,
+      "sha256": "d57e1e6c2b851603f9f513cea0124f9e4a322f8bab0e8caaeb2c031ac056ee2a"
+    },
+    "theory_path_population_yy_all_e1/run_gpu_gate.py": {
+      "size": 3608,
+      "sha256": "92db306f5f1fb583a66d61d257e88e34bb83a438e8a916c9d3ef489a627fe1ac"
+    },
+    "theory_path_population_yy_six_manifolds/aggregate_results.py": {
+      "size": 366,
+      "sha256": "9cabe3832ba75fd32bfd5311cdd524046b3b74affb8e22de6dd5f0d18f6975f7"
+    },
+    "theory_path_population_yy_six_manifolds/config.json": {
+      "size": 2085,
+      "sha256": "d000da55e95f0bd341322417e237caed492052c93d5270f4cb0a2eac0e0949e2"
+    },
+    "theory_path_population_yy_six_manifolds/plot_results.py": {
+      "size": 290,
+      "sha256": "7b117e819267fbd0cd0c6f56e09b4c978dab4c1e4f8a5ab0076f8c5eacff13ff"
+    },
+    "theory_path_population_yy_six_manifolds/run_experiment_gpu.py": {
+      "size": 596,
+      "sha256": "d57e1e6c2b851603f9f513cea0124f9e4a322f8bab0e8caaeb2c031ac056ee2a"
+    },
+    "theory_path_population_yy_six_manifolds/run_gpu_gate.py": {
+      "size": 3608,
+      "sha256": "92db306f5f1fb583a66d61d257e88e34bb83a438e8a916c9d3ef489a627fe1ac"
+    },
+    "src/e1_simulation/plot_sigma_path.py": {
+      "size": 30283,
+      "sha256": "a820833e8e138080af6673fe1bfe23c4f7e5833df998b3c799194d284380d349"
+    },
+    "src/e1_simulation/__init__.py": {
+      "size": 95,
+      "sha256": "55e823b3a4ec922a8508c02f50b5eeb207b97ba6a7489d20c8a252d45a0f93b5"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/geometry.py": {
+      "size": 4223,
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/plotting.py": {
+      "size": 6954,
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "theory_path_population_all_e1/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/plotting.py": {
+      "size": 6723,
+      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "theory_path_population_six_manifolds/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/aggregate.py": {
+      "size": 9622,
+      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/coefficients.py": {
+      "size": 2137,
+      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/experiment.py": {
+      "size": 6772,
+      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/geometry.py": {
+      "size": 5578,
+      "sha256": "f4765ddd458f86b5fcec999f625d5c96a0168e90fed0655d7a5d0b433269a92c"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/gpu_moments.py": {
+      "size": 5466,
+      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/gpu_population.py": {
+      "size": 6204,
+      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/gpu_runner.py": {
+      "size": 2463,
+      "sha256": "4b3bfc9aff446ad5693f525fb5e320ab2eacc0875e2b10eed7e1d8c2383f56f9"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/moments.py": {
+      "size": 2489,
+      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/plotting.py": {
+      "size": 6148,
+      "sha256": "511653f6c250a9ffcede717d3cfd3eb3edbe3c673e1266b22598e3e0b3b3b706"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/population.py": {
+      "size": 5345,
+      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367"
+    },
+    "theory_path_population_yy_all_e1/src/e1_yy_path/__init__.py": {
+      "size": 77,
+      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/aggregate.py": {
+      "size": 9622,
+      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/coefficients.py": {
+      "size": 2137,
+      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/experiment.py": {
+      "size": 6772,
+      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/geometry.py": {
+      "size": 12029,
+      "sha256": "added7d04709d052e90706c41d160f84b32b98ff7b567ec48179fb1a0be12157"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_moments.py": {
+      "size": 5466,
+      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_population.py": {
+      "size": 6204,
+      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_runner.py": {
+      "size": 2491,
+      "sha256": "189cf889c566455b89cc32f68f463c32238b24be43de87729cc1b235f7b55702"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/moments.py": {
+      "size": 2489,
+      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/plotting.py": {
+      "size": 5932,
+      "sha256": "87349611766f1f5b2880f3cae1ed0582b4cbfaa995ba5cd5196d4efb588e6837"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/population.py": {
+      "size": 5345,
+      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367"
+    },
+    "theory_path_population_yy_six_manifolds/src/e1_yy_path/__init__.py": {
+      "size": 77,
+      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b"
+    }
+  }
+}

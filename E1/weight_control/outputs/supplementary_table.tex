@@ -1,0 +1,34 @@
+% Requires booktabs. Two panels of one supplementary table.
+\begin{table}[t]
+\centering\small
+\caption{Controlled STSP weight comparison. Panel A reports full-grid log--log slopes of $E_\infty$ against $\sigma$. Panel B checks the unit-circle Naive constant and the normalized Proposed error. All values are actual measurements from shared population fits; finite-range slopes are not asymptotic proofs.}
+\label{tab:e1-weight-control}
+\begin{tabular}{lrrrr}
+\toprule
+Geometry & Single & Naive $h^2$ & Proposed & MS-STSP\\
+\midrule
+$S^1\subset\mathbb{R}^2$ & 2.00142 & 1.99985 & 4.00412 & 1.94115\\
+$S^2\subset\mathbb{R}^3$ & 2.00183 & 1.99989 & 4.00545 & 1.97880\\
+Clifford torus & 2.00264 & 1.99989 & 4.00781 & 1.96447\\
+$S^3\subset\mathbb{R}^4$ & 2.00221 & 1.99996 & 4.00669 & 1.98686\\
+$S^2\subset\mathbb{R}^{10}$ & 2.00167 & 1.99996 & 4.00500 & 2.07779\\
+Corrugated torus & 2.00675 & 1.99959 & 3.81725 & 2.40315\\
+\bottomrule
+\end{tabular}
+\par\medskip
+\begin{tabular}{rrrrr}
+\toprule
+$\sigma$ & $E_{\infty,\mathrm{naive}}/\sigma^2$ & $\Gamma_{1,2}$ & Relative difference (\%) & $E_{\infty,\mathrm{prop}}/\sigma^4$\\
+\midrule
+0.008 & 0.476369353 & 0.476376835 & 0.001571 & 1.747072\\
+0.01 & 0.476365132 & 0.476376835 & 0.002457 & 1.747503\\
+0.0125 & 0.476358521 & 0.476376835 & 0.003844 & 1.748176\\
+0.016 & 0.476346745 & 0.476376835 & 0.006316 & 1.749371\\
+0.02 & 0.476329630 & 0.476376835 & 0.009909 & 1.751099\\
+0.025 & 0.476302612 & 0.476376835 & 0.015581 & 1.753806\\
+0.03 & 0.476269133 & 0.476376835 & 0.022609 & 1.757127\\
+\bottomrule
+\end{tabular}
+\par\smallskip\raggedright\footnotesize
+The corrugated-torus Proposed slope is 3.81725 over all seven levels and 3.91030 over the four smallest levels. The latter is a sensitivity diagnostic, not a replacement for the full-grid result. The Naive unit-circle error approaches the nonzero theoretical constant $\Gamma_{1,2}=0.476376834958\ldots$ as noise decreases.
+\end{table}

@@ -1,40 +1,10 @@
-# Local release acceptance (2026-10-09)
+# Actual release checks, 2026-11-07
 
-This is engineering evidence for the selected E1–E6 release, not a new
-scientific audit, a full independent fit reproduction or an artifact badge.
+- 41 archived-result/protocol checks match the supplied manuscript.
+- All 48 root test cases reached PASS: 39 in the initial run; the remaining 9 passed after fixing the local temporary-directory environment and explicitly versioning the public documentation contract.
+- Five original nonuniform sampling tests passed. One actual reduced nonuniform E1 CPU query succeeded, with zero failures; this is not a production precision gate.
+- Full saved-result replay generated 33 logical paper plots. All 66 paper PNG/vector exports match the current selected source files byte-for-byte in the recorded environment. Two additional counterexample branch-switch exports are diagnostic, not paper figures.
+- The complete original CPU smoke entrypoint passed all 11 method/experiment commands, including E5 population and finite smoke.
+- The six static reproducibility essentials are OK. Source/data checksum validation and credential-literal/size scans passed.
 
-- **44 actual local tests passed**, zero failures/errors/skips. These include
-  reduced CPU fitting, corrugated dependencies, original YY reverse libraries,
-  complete saved tables, changed-source and incomplete-run rejection, plus
-  explicitly synthetic aggregation fixtures. Synthetic fixtures are not
-  experimental outputs or CPU/GPU equivalence evidence.
-- E5's original eight tests and its reduced population/finite computations
-  also ran successfully. E4's actual CPU test evaluated four fixed h1 queries
-  from an original 200,000-point parent, with the same input coordinates for
-  all correspondences. E6's test reused fixed fits across changed weights.
-- Original-to-release checks found all **358 originally selected source/data
-  members unchanged in the research tree**, nine extracted-function records
-  preserved, and exact original-versus-extracted CPU-cell output agreement on
-  the same reduced data for STSP, DR and YY. This is scoped interface evidence,
-  not a claim that all historical estimators were independently rerun.
-- **31 logical figures / 62 exports** were produced: 31 PNG, 30 PDF and one
-  retained E5 SVG. All PNGs and all 30 PDF pages were actually viewed; the
-  unchanged SVG was byte-bound and its corresponding PNG viewed. E3 includes
-  all 12 six-panel figures with full curves, NaN gaps and unreliable markers,
-  without background shading or footer text.
-- A separate source copy cold-started the saved-figure commands: all **62
-  exports were byte-identical**. This establishes local saved-output replay,
-  not cross-platform bit-exact numerical fitting. Later new-run metadata and
-  tests did not change the renderer, registered inputs or these export bytes.
-- `repro_check.py` reports all six essentials OK. The bounded release audit
-  scanned all 263 Python sources without truncation: zero SAFE and identity
-  findings, **123 consciously retained behavior-risk warnings**. These identify
-  frozen numerical literals, explicit environment/thread controls and required
-  large coordinate arrays. They are not automatically removed to get a clean
-  heuristic score. The separate plaintext privacy check had no findings.
-
-GPU production interfaces are supplied and source-bound, but the new public
-entrypoints were **not run on a new GPU here**. Their original CPU/GPU gate
-requirements and numerical locks must be satisfied when new runs are requested.
-Historical raw packets and composite deployment histories are not distributed.
-Licensing remains mixed; see `LICENSES.md`. Nothing was uploaded publicly.
+The original engineering failure and temporary-directory errors were retained locally; they are not relabeled as numerical failures or hidden behind a full-grid scientific PASS. No new production GPU run or artifact badge is claimed. Missing E5 finite raw packets remain explicitly disclosed.

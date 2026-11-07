@@ -1,0 +1,691 @@
+{
+  "files": [
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\config.json",
+      "copy": "frozen/five/config.json",
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\AUDIT.json",
+      "copy": "frozen/five/results/AUDIT.json",
+      "size": 9300,
+      "sha256": "7c66fb7773ab9ef7d3d7d38a55b7e73eee0a7b43ac871ee0715caa09fc4bfd45"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\PCA_FIBER_RELEASE_AUDIT.json",
+      "copy": "frozen/five/results/PCA_FIBER_RELEASE_AUDIT.json",
+      "size": 10603,
+      "sha256": "5b9b0a0d14dad4bb8aadeaed673b5d6e8d329420c13c9a10c20da0eebac33399"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\gpu_equivalence_gate.json",
+      "copy": "frozen/five/results/gpu_equivalence_gate.json",
+      "size": 6735,
+      "sha256": "e3deefd7ad2ce33397da480104448c0cdd9fa61fe62dd3109d4a6fb5811e7ba5"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\coefficients.py",
+      "copy": "frozen/five/src/e1_theory_path/coefficients.py",
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\experiment.py",
+      "copy": "frozen/five/src/e1_theory_path/experiment.py",
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\geometry.py",
+      "copy": "frozen/five/src/e1_theory_path/geometry.py",
+      "size": 4223,
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\gpu_experiment.py",
+      "copy": "frozen/five/src/e1_theory_path/gpu_experiment.py",
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\gpu_population.py",
+      "copy": "frozen/five/src/e1_theory_path/gpu_population.py",
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\plotting.py",
+      "copy": "frozen/five/src/e1_theory_path/plotting.py",
+      "size": 6954,
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\population.py",
+      "copy": "frozen/five/src/e1_theory_path/population.py",
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\src\\e1_theory_path\\__init__.py",
+      "copy": "frozen/five/src/e1_theory_path/__init__.py",
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.008000_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.008000_production.json",
+      "size": 9551,
+      "sha256": "e4d50eac4a2e401fa03b387782de4cfd72a798dc948ea3495de02375c7d69729"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.008000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.008000_reference.json",
+      "size": 9561,
+      "sha256": "7bbc493411c40852c030a1e9f7baa6752eb3046b74bfc119c87fa493397c05fe"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.010000_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.010000_production.json",
+      "size": 9543,
+      "sha256": "d3885e6a7c111b9b951f99bb82f2fd9ad1a73c4da286b82b93bb394b8375843d"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.010000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.010000_reference.json",
+      "size": 9541,
+      "sha256": "d1bf0c92dacfe448151c946bae609664594f4717858beb466340c3b69f76bf49"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.012500_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.012500_production.json",
+      "size": 9635,
+      "sha256": "be60b5666cab69d51c648e74fda5145277e4b01660f48c1da604988ac4fb5ffc"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.012500_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.012500_reference.json",
+      "size": 9644,
+      "sha256": "03dbde353523efdc94f0bb384c7ab3880f5d18f5f5c7bed6b106ca2ca784e295"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.016000_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.016000_production.json",
+      "size": 9575,
+      "sha256": "0c2fc4eb1c34abd187184c3170ce1c4f8104b79d8d4c781563d89743f569517a"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.016000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.016000_reference.json",
+      "size": 9582,
+      "sha256": "296f0c47b5bc356084897dc2ef2f8d8f97622ad98609718b0230e80fc274e71c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.020000_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.020000_production.json",
+      "size": 9527,
+      "sha256": "f8cb7a66afe23c6a761566be3cbad8edbc60183df20a142ceb3eee192b5ef483"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.020000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.020000_reference.json",
+      "size": 9520,
+      "sha256": "3813bdbe6afe9a3845b9e0fd9bcb737da86f1d8d352ecb4f0d723b2492296030"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.025000_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.025000_production.json",
+      "size": 9622,
+      "sha256": "502151d9d1e11d7b4011b3396bffefd788da49d53f64ac221b323c2303014d7f"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.025000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.025000_reference.json",
+      "size": 9624,
+      "sha256": "b680b2fd0da2bd6a3341e7444108b534c526df409ec46bc7e2f80706e2036fd6"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.030000_production.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.030000_production.json",
+      "size": 9535,
+      "sha256": "dd26063f96775c042c5b4f1f70bd45a4188188982ef62d5ac4d86c51bef61082"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_circle_r2_sigma_0.030000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_circle_r2_sigma_0.030000_reference.json",
+      "size": 9533,
+      "sha256": "71e1516f68efe0deaae5067eb3e9074a29c9b8317b60eecb63cf62c4a1b48b18"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.008000_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.008000_production.json",
+      "size": 12162,
+      "sha256": "1cc29b5ee13c4e634df4c9c330102e66f80fd2f11f4a6bfba5a7db818916c59c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.008000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.008000_reference.json",
+      "size": 12040,
+      "sha256": "8ac53f9101eb1ff6795b31cc1b68b4829769b8f214c424906c249207034b8001"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.010000_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.010000_production.json",
+      "size": 12156,
+      "sha256": "b958f8138e03c6fa90fea07612e6ec67575d36395b212354abdb9a0644093295"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.010000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.010000_reference.json",
+      "size": 12039,
+      "sha256": "d6f5f216ce16e83a60bf51265088b70a2f149581ca5cf7b0eedbf2797e2887c9"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.012500_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.012500_production.json",
+      "size": 12130,
+      "sha256": "a732b1c145e643337623c5736c99da1de7a4cf80c69e76348f98787b1a3774da"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.012500_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.012500_reference.json",
+      "size": 12227,
+      "sha256": "6002235361cb88e42c69855deb8123e770adfafdb2e16305cd4e3caf49232447"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.016000_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.016000_production.json",
+      "size": 12137,
+      "sha256": "dccd20f48947f1f3d08729797f9255fea99d1c9b7e38682e1511e3c0c1d7d356"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.016000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.016000_reference.json",
+      "size": 11952,
+      "sha256": "338023d1a4b6e31d4ad3bb0650a152767a96b8cbcbf7ee2ea9c152b79d60de76"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.020000_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.020000_production.json",
+      "size": 12062,
+      "sha256": "1bf7ce8f5b2bd05df9597869089db3b0b15459bace2c31b46fd653c6c7d1bc41"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.020000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.020000_reference.json",
+      "size": 11766,
+      "sha256": "d14768b4f16664916bbea7d84939a863fe1e7f638dfa00feea9996eece4517d3"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.025000_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.025000_production.json",
+      "size": 12021,
+      "sha256": "0f7c89f17a381733fd2b2f2c559e805ea735d17de53cec5b987be5d5e092c824"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.025000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.025000_reference.json",
+      "size": 12217,
+      "sha256": "0b3f025f86e1b06ad729389998a07e678e811d04a320918a04827379aa68e1bc"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.030000_production.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.030000_production.json",
+      "size": 12121,
+      "sha256": "1314c81e4bfd58fe7c1b64cb543b15dd74f6a4410b7c12d997fb5333721715a7"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_clifford_torus_r4_sigma_0.030000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_clifford_torus_r4_sigma_0.030000_reference.json",
+      "size": 12012,
+      "sha256": "9b1e25aa06c3ae6c882fe20729f8e5b2e5092f86fd9d01c68830a6c0e9ebfc67"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.008000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.008000_production.json",
+      "size": 19424,
+      "sha256": "41e84d287e5072aaeadde1c0118c8ab988e8dd1dc55178944db623e8f65b0a8d"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.008000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.008000_reference.json",
+      "size": 19414,
+      "sha256": "6754c1fe437d78209ab6a335ebe779ff10e4590646727d0903ee4d8ae92be633"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.010000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.010000_production.json",
+      "size": 19413,
+      "sha256": "f40e008036c479581835552445638224cb30acdb2afe76653bcef8145235ca4c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.010000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.010000_reference.json",
+      "size": 19436,
+      "sha256": "976694a363135d6f37763e1aaac9bcbe8fb424b3d26c48b81363ee27969f126d"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.012500_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.012500_production.json",
+      "size": 19526,
+      "sha256": "230d14becbde4051d9a88d30f7a641cdd17262cd739456a9df729492ba8a5e15"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.012500_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.012500_reference.json",
+      "size": 19517,
+      "sha256": "3cb515cafb731080cc1bf36dc79348157deee017ae8ec58fe28b12bfb8f1f4c0"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.016000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.016000_production.json",
+      "size": 19427,
+      "sha256": "80e85ec5ec0e358e712b505093496d08499bc26d514adf7ce8516c6b57915284"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.016000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.016000_reference.json",
+      "size": 19426,
+      "sha256": "543d53d4c8d2185ccd162b2b957a0bc2c5309c6cfbf594ffcd5b1c7ba026157a"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.020000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.020000_production.json",
+      "size": 19402,
+      "sha256": "663a6effd5c346a82211d2c893c796a788dea72e7d21c3fa86c7cc0e9cf96d88"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.020000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.020000_reference.json",
+      "size": 19421,
+      "sha256": "5a32b3cc0e829dff8eb5fb7f031a360e8c74eb05788da642df86972f9e042baf"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.025000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.025000_production.json",
+      "size": 19511,
+      "sha256": "2277d0a26464c2aaf836d949eff23614ee1abfd69a56784946e69cd6415b52af"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.025000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.025000_reference.json",
+      "size": 19501,
+      "sha256": "d5d03570dacd9815a8596d63bd9f6c9a626e2d02431823004b4f8284e8608d85"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.030000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.030000_production.json",
+      "size": 19395,
+      "sha256": "7171b1414993705a72aa7c72313d88666aec4e2e0560216adde9db9c17666fb4"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r10_sigma_0.030000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r10_sigma_0.030000_reference.json",
+      "size": 19382,
+      "sha256": "c3eb61dc4cef785d4fae472cf8f93de9b961fc8fe77044c00eb03da5125193a4"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.008000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.008000_production.json",
+      "size": 9986,
+      "sha256": "70f75f3ed53e3fe47a809dcb326542cc0d430445e30e302339d75085b2dbcd9c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.008000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.008000_reference.json",
+      "size": 9975,
+      "sha256": "402b8cc8d0ab5ce61d62b30142f36dd737b9eedfa94484f8b2d335c8436df92d"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.010000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.010000_production.json",
+      "size": 10018,
+      "sha256": "7b05a857db7a507337ee897fb9521f2fa636c9628e5f13b36b17c9bd61a19dbb"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.010000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.010000_reference.json",
+      "size": 10005,
+      "sha256": "1915f5f4666546fbbd36e9ceff75f7bdc7529e455039acfb931ae9c512faed54"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.012500_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.012500_production.json",
+      "size": 10068,
+      "sha256": "b62dec4ff85087c546ac0572858ed62a0154930f919c2f55b826f46101388c27"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.012500_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.012500_reference.json",
+      "size": 10068,
+      "sha256": "e54993eee9560e9255c0353c867212225ca5379ebaa6140236c3c1ee92bd4662"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.016000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.016000_production.json",
+      "size": 9982,
+      "sha256": "f37bdec55507983fdc0859caf763a361e1aa79a959248fb88325660e8c407891"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.016000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.016000_reference.json",
+      "size": 9966,
+      "sha256": "cb3fa19bd783d14e7b4b65a882343885b7537ddcfb6863c0a3c94aa4d52c027b"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.020000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.020000_production.json",
+      "size": 9969,
+      "sha256": "5523a24191cc2cff30191ec41e47318ac74ebd1555ef6d7f26b0e73edaf5e734"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.020000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.020000_reference.json",
+      "size": 10000,
+      "sha256": "a7e5cb7295240a4493b98e0d6e1a8a02012caf37acbfdf722673b9d832d702c4"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.025000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.025000_production.json",
+      "size": 10050,
+      "sha256": "7b4c9c946e3c6912871654793552c4bf7598b28f684d98acd209c28b293a3ec0"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.025000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.025000_reference.json",
+      "size": 10061,
+      "sha256": "1431a331f9e1701bbb8a53b51cb9c7d138bf39e4610e1c2eeb77d6bdfb81e694"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.030000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.030000_production.json",
+      "size": 9961,
+      "sha256": "c2988b6bdf152c7638abc15e887119729bf6d5c172fb53c9e6f7ffa955d2789f"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere2_r3_sigma_0.030000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere2_r3_sigma_0.030000_reference.json",
+      "size": 9966,
+      "sha256": "4bc182cde1ac4ea47f67473a997757b106c16cf59aa1dfbbc4d8a77510af48d9"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.008000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.008000_production.json",
+      "size": 10395,
+      "sha256": "06b085a5412cb7258510640a91c3af04298b1b734d3530acf4db64352af48f4c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.008000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.008000_reference.json",
+      "size": 10415,
+      "sha256": "194d557a3e529082a5cf2e915841a66c2233b0cd2c39153dc1ea609f14e146d3"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.010000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.010000_production.json",
+      "size": 10366,
+      "sha256": "7b52a8b1fe22f14730a49c572eb04e7702d95e800da80423521582567af4c369"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.010000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.010000_reference.json",
+      "size": 10377,
+      "sha256": "27ab0aefaa2ee02405808785fc21133f5931073357e34bce727a8c8714be7f50"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.012500_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.012500_production.json",
+      "size": 10463,
+      "sha256": "297af5fc8d671d25d7d4e678e9ee3aeb9941344855e4bf37265f38e59169739e"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.012500_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.012500_reference.json",
+      "size": 10480,
+      "sha256": "1bb7bd6a9cf81298c759375d6c2ffcdb582ea9bd8b546fd09093f12d7316f034"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.016000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.016000_production.json",
+      "size": 10391,
+      "sha256": "696bada2f777fe98b4487a259429755ad69b8c1aa23605b2de16e1d1f7d7a52a"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.016000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.016000_reference.json",
+      "size": 10383,
+      "sha256": "6b451ffa966b3baf2b7501076ea1cdad767d7a0b70d6808390077c5d66c77320"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.020000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.020000_production.json",
+      "size": 10368,
+      "sha256": "2a52315829785ab72786c4fbe24a22cb486ec73eecac097fe8edb73250bcd590"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.020000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.020000_reference.json",
+      "size": 10357,
+      "sha256": "048ced4b07eaca6b75255a73e9cd6983beb564a91f9a73c94d7bab20fd8f6d32"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.025000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.025000_production.json",
+      "size": 10454,
+      "sha256": "c3565fe66e9903a5bfc021a213bfe026379901d5f7053a0980f3c8c314bb4bd9"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.025000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.025000_reference.json",
+      "size": 10458,
+      "sha256": "ec6bdd7a95c718f8bcc893c1b9766e88576fb0f455a1ed2ffc853f35d4d7896e"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.030000_production.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.030000_production.json",
+      "size": 10348,
+      "sha256": "a1573c15b70af834927f7532b4d8b74a9926746b2b463f4c8f6968cebfcafc23"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_all_e1\\results\\packets\\stsp_sphere3_r4_sigma_0.030000_reference.json",
+      "copy": "frozen/five/results/packets/stsp_sphere3_r4_sigma_0.030000_reference.json",
+      "size": 10346,
+      "sha256": "5c2112930c8ddd613d28e255cf1c9012f108497c5e4cd14978c78aeb6877454b"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\config.json",
+      "copy": "frozen/six/config.json",
+      "size": 2313,
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\AUDIT.json",
+      "copy": "frozen/six/results/AUDIT.json",
+      "size": 4901,
+      "sha256": "34e515a371e923e08e19c80bf2a7ed0ade33966d2d41ba5bdd41befd00672ef2"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\PCA_FIBER_RELEASE_AUDIT.json",
+      "copy": "frozen/six/results/PCA_FIBER_RELEASE_AUDIT.json",
+      "size": 5942,
+      "sha256": "10b4a76ad1287fea225a8c2bf287c3feb3dd6d8d2cd4130f9381a908cf0c8312"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\gpu_equivalence_gate.json",
+      "copy": "frozen/six/results/gpu_equivalence_gate.json",
+      "size": 2734,
+      "sha256": "e9a9eae5bc2139575f49a609ebae5cb030c75d2c82ce6a190a3c1baf57da335c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\coefficients.py",
+      "copy": "frozen/six/src/e1_theory_path/coefficients.py",
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\experiment.py",
+      "copy": "frozen/six/src/e1_theory_path/experiment.py",
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\geometry.py",
+      "copy": "frozen/six/src/e1_theory_path/geometry.py",
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\gpu_experiment.py",
+      "copy": "frozen/six/src/e1_theory_path/gpu_experiment.py",
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\gpu_population.py",
+      "copy": "frozen/six/src/e1_theory_path/gpu_population.py",
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\plotting.py",
+      "copy": "frozen/six/src/e1_theory_path/plotting.py",
+      "size": 6723,
+      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\population.py",
+      "copy": "frozen/six/src/e1_theory_path/population.py",
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\src\\e1_theory_path\\__init__.py",
+      "copy": "frozen/six/src/e1_theory_path/__init__.py",
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.008000_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.008000_production.json",
+      "size": 1060789,
+      "sha256": "3511d11cff6e80e76b75d006f3fea1f465389379db71d084720b318c619d5734"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.008000_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.008000_reference.json",
+      "size": 1059204,
+      "sha256": "ad56b59dd181b4c66eb0ebbbefc094f2eb0ce4e36ca6f5770e5047f106f78cfd"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.010000_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.010000_production.json",
+      "size": 1061316,
+      "sha256": "6b8f188272a88f958ec41829b3caffde38f5d0ce036596e5524877dbcf8f0a0b"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.010000_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.010000_reference.json",
+      "size": 1064801,
+      "sha256": "46bb953b936c9fddf45e941c0495880b094928f0cccc8d47b666c16ccb98affc"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.012500_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.012500_production.json",
+      "size": 1073047,
+      "sha256": "918ae18bfddfd5ac4f7842f4ced0dab651dd27518be0efaa6dcad2c28b677be9"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.012500_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.012500_reference.json",
+      "size": 1076204,
+      "sha256": "317718251ffac5b1baa0fa4bad725274637f686bd1551fa6e71f4460056aa4d8"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.016000_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.016000_production.json",
+      "size": 1069397,
+      "sha256": "d422eafc9fe81b21d6be4e01b5e59b9e69aeb1151f44c5b08e89da0c01a13ce1"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.016000_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.016000_reference.json",
+      "size": 1071438,
+      "sha256": "ab0229beffcd4c899e6c5a2c18578c7771767de635174ecc7ef04085142dcd13"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.020000_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.020000_production.json",
+      "size": 1069745,
+      "sha256": "8df1eb42c0a253af06c4a1f84975f8b6b9459c323f95b505f272f5b23c8072f5"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.020000_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.020000_reference.json",
+      "size": 1077822,
+      "sha256": "0f949d196709998eebb5dab56911a485a38af1794f096f97ebef1c745a0d9321"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.025000_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.025000_production.json",
+      "size": 1076929,
+      "sha256": "789f466987447675ceef7c66aa2d304be7e31dbd60ca43eedaaec75c06fe90a6"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.025000_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.025000_reference.json",
+      "size": 1085540,
+      "sha256": "30ff2c0f77207455c2ac66dda9df28f6b21dc6d593c3d52ff7a10afd47f7210e"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.030000_production.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.030000_production.json",
+      "size": 1069503,
+      "sha256": "a797acb960ae797c0246f33dc837f9916a073d4d806a826c9ed13b7b032ca54c"
+    },
+    {
+      "source": "D:\\stsp外推\\paper_data\\E1\\theory_path_population_six_manifolds\\results\\packets\\stsp_corrugated_torus_r3_sigma_0.030000_reference.json",
+      "copy": "frozen/six/results/packets/stsp_corrugated_torus_r3_sigma_0.030000_reference.json",
+      "size": 1078640,
+      "sha256": "c96a82b9700726748ff35ce39c71a5145faa61ba70cc0b7e83f58efc6de26f7d"
+    },
+    {
+      "source": "D:\\stsp外推\\ms_stsp_comparison_20261029\\outputs\\comparison\\COMPARISON_VALUES.csv",
+      "copy": "frozen/ms/COMPARISON_VALUES.csv",
+      "size": 11321,
+      "sha256": "268d49ff30840256d16d8d6a9f0f252c6a06a33b44d5df4a5fb2546e6e3f42f9"
+    },
+    {
+      "source": "D:\\stsp外推\\ms_stsp_comparison_20261029\\outputs\\comparison\\PLOT_MANIFEST.json",
+      "copy": "frozen/ms/PLOT_MANIFEST.json",
+      "size": 1669,
+      "sha256": "895210b0e2cade7d708083ca4d4a8da37eb3ba1271e55442b43a640ae0a88b06"
+    },
+    {
+      "source": "D:\\stsp外推\\ms_stsp_comparison_20261029\\outputs\\comparison\\NUMERICAL_SUMMARY.json",
+      "copy": "frozen/ms/NUMERICAL_SUMMARY.json",
+      "size": 1901,
+      "sha256": "fcb2c483d8daa2344e1031f5cdcbb07c45647253a785b0aff78fcffddc9452db"
+    },
+    {
+      "source": "D:\\stsp外推\\ms_stsp_comparison_20261029\\outputs\\comparison\\DELIVERY_VERIFICATION.json",
+      "copy": "frozen/ms/DELIVERY_VERIFICATION.json",
+      "size": 1532,
+      "sha256": "e06ebea0c1e9a137cf9190420bd8887dfecae50465c612cc95677a75af1a674f"
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\data\\e1_theory_path_errors.csv",
+      "copy": "frozen/selected/e1_theory_path_errors.csv",
+      "size": 14424,
+      "sha256": "c5888bc9f685f98c664b35998a89151aa623d1357a0a860e9359988360d268c9"
+    },
+    {
+      "source": "D:\\stsp外推\\simulation_experiments\\E1\\data\\provenance.json",
+      "copy": "frozen/selected/provenance.json",
+      "size": 8416,
+      "sha256": "a3d68854e4e188e9edee7d7cab9c4c253f4c290d2bfd2fac1577a4fde5611834"
+    }
+  ],
+  "count": 114,
+  "packet_count": 84,
+  "binding": "Original paper_data LOCAL_DATA_MANIFEST SHA and sizes checked before copying"
+}

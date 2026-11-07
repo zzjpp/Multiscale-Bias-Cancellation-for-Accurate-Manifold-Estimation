@@ -1,0 +1,2585 @@
+{
+  "metadata": {
+    "e5_config_sha256": "0e65bb142fb9b0bcb6379b09385b57b1398adba8a827912124fa48aacdc51cb4",
+    "e6_config_sha256": "c144f6fc1567df2a6b604a7de47dd0426cc16487bd10d500a69d68d8fb9ba8a9",
+    "packet_revision": "V3_HASH_SEMANTICS",
+    "source_tree_sha256": "ad7b9267aaa0da7b23f7f92123644836cadc675216f8810cbaf1f8f069b53ef9",
+    "task": {
+      "kind": "e5_population",
+      "sigma": 0.016,
+      "task_id": "e5_population_03"
+    },
+    "task_manifest_sha256": "6222513a99f5a39b9644d029a088edfca5ffc4ba6da8766d14b814c9271ef2e6"
+  },
+  "result": {
+    "failure_count": 0,
+    "failures": [],
+    "formal_evidence": true,
+    "kappas": [
+      1.25,
+      5.0,
+      8.0
+    ],
+    "numerical": {
+      "latent_count": 4096,
+      "longitudinal_order": 160,
+      "radial_order": 160
+    },
+    "query_count": 64,
+    "query_rows": [
+      {
+        "axis_digest": "f2164c28c2e5f828357340329a68b0f259ab29af2fe10c87ab77bea2625ead22",
+        "first_mass": 0.0006271986452282202,
+        "first_signal_over_sigma": 0.38297321607248824,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.3379182883834148e-07,
+            "complementary_normal": 4.1685587517330125e-07,
+            "geometric": 4.77940845790204e-07,
+            "tangential": 1.5491516999289042e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.3379146443418337e-07,
+            "complementary_normal": 4.818833435833518e-05,
+            "geometric": 4.818890147529765e-05,
+            "tangential": 1.8409524330263615e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 9.882369126881086e-05,
+            "complementary_normal": 4.168558750354758e-07,
+            "geometric": 9.882457044181793e-05,
+            "tangential": 1.5367870910090691e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002563915035599147,
+            "complementary_normal": 0.00021537907958074626,
+            "geometric": 0.00033485034119483105,
+            "tangential": 2.3538061542067543e-07
+          }
+        },
+        "query_index": 0,
+        "second_masses": [
+          0.00015525558466524233,
+          0.004205437569818085,
+          0.008627961177261625
+        ],
+        "status": "success",
+        "theta": 0.041522932164957546
+      },
+      {
+        "axis_digest": "0fc4ac3780accc0e3c6abcf154070f17add4acc2173b2356cd5fe911bf628a46",
+        "first_mass": 0.0006315924598343641,
+        "first_signal_over_sigma": 0.3795665218790168,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.2929567888947408e-07,
+            "complementary_normal": 4.1009651851590307e-07,
+            "geometric": 4.698465611323592e-07,
+            "tangential": 5.009937459649011e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.2929163223013102e-07,
+            "complementary_normal": 4.933292498310681e-05,
+            "geometric": 4.933345769170947e-05,
+            "tangential": 5.991713341638747e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010119617645997746,
+            "complementary_normal": 4.100965184393891e-07,
+            "geometric": 0.00010119700731500825,
+            "tangential": 4.968133113984643e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002624945010450087,
+            "complementary_normal": 0.00022028710221734646,
+            "geometric": 0.00034268027409257925,
+            "tangential": 7.718956148574993e-07
+          }
+        },
+        "query_index": 1,
+        "second_masses": [
+          0.00015525649979754582,
+          0.004205495912190747,
+          0.008628185602837131
+        ],
+        "status": "success",
+        "theta": 0.15381630480191238
+      },
+      {
+        "axis_digest": "ffe8612fcf08103b56d097e59098f9261a930aae5ce260a204d8fa1a13be60e4",
+        "first_mass": 0.0006405023484536579,
+        "first_signal_over_sigma": 0.3726263213753292,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.1481532154315885e-07,
+            "complementary_normal": 3.8934631845654527e-07,
+            "geometric": 4.4467557400321456e-07,
+            "tangential": 6.153228464889452e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.1480850272531253e-07,
+            "complementary_normal": 5.137875877280412e-05,
+            "geometric": 5.137920758396666e-05,
+            "tangential": 7.446712498246844e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010531006990338395,
+            "complementary_normal": 3.8934631858192303e-07,
+            "geometric": 0.0001053107894824359,
+            "tangential": 6.097598301880968e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002730426598804209,
+            "complementary_normal": 0.00022904869163414788,
+            "geometric": 0.0003563924758729366,
+            "tangential": 9.728973416791729e-07
+          }
+        },
+        "query_index": 2,
+        "second_masses": [
+          0.00015525814835009555,
+          0.004205600898051718,
+          0.008628588137808254
+        ],
+        "status": "success",
+        "theta": 0.2662572146681866
+      },
+      {
+        "axis_digest": "b4c10303a587946208d5982ae71c504205a05996511835395f390a2a1a503e0c",
+        "first_mass": 0.0006527862106375093,
+        "first_signal_over_sigma": 0.3629795004826749,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.8778015341668992e-07,
+            "complementary_normal": 3.519932301729361e-07,
+            "geometric": 3.989494894227123e-07,
+            "tangential": 4.087019813566705e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.8777676855795998e-07,
+            "complementary_normal": 5.335986288190409e-05,
+            "geometric": 5.336019317160761e-05,
+            "tangential": 5.006967687586879e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010928890458996526,
+            "complementary_normal": 3.5199323001941456e-07,
+            "geometric": 0.00010928947136131524,
+            "tangential": 4.046739634477976e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002831774396737564,
+            "complementary_normal": 0.0002375142741452139,
+            "geometric": 0.00036959774426385366,
+            "tangential": 6.64157994745753e-07
+          }
+        },
+        "query_index": 3,
+        "second_masses": [
+          0.0001552597960133541,
+          0.0042057056091892005,
+          0.00862898808655479
+        ],
+        "status": "success",
+        "theta": 0.37863929805110025
+      },
+      {
+        "axis_digest": "52ce9725b0bf97efed339b4866428060e0785d5b626a07ce10bbb9b085a51283",
+        "first_mass": 0.0006668135009992332,
+        "first_signal_over_sigma": 0.3518347699982113,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.5648553801543922e-07,
+            "complementary_normal": 3.098919333868433e-07,
+            "geometric": 3.4716096547657504e-07,
+            "tangential": 7.221119059245952e-08
+          },
+          "Scalar-A": {
+            "axial_normal": 1.564853883824913e-07,
+            "complementary_normal": 5.40458113978261e-05,
+            "geometric": 5.404603793907903e-05,
+            "tangential": 9.28839687830963e-08
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00011075282345964972,
+            "complementary_normal": 3.0989193339229934e-07,
+            "geometric": 0.00011075325700313319,
+            "tangential": 7.14083939347694e-08
+          },
+          "Single": {
+            "axial_normal": 0.0002867965621000485,
+            "complementary_normal": 0.0002404527653693835,
+            "geometric": 0.0003742590017603566,
+            "tangential": 1.2739082435111475e-07
+          }
+        },
+        "query_index": 4,
+        "second_masses": [
+          0.00015526039442521233,
+          0.0042057433016505765,
+          0.00862913028771311
+        ],
+        "status": "success",
+        "theta": 0.4903418038488425
+      },
+      {
+        "axis_digest": "c4890f55f82a7cc85ba2630a3d62bc133e3bd68485d31a0bd40cfd2b0bf2afd7",
+        "first_mass": 0.000680752997786831,
+        "first_signal_over_sigma": 0.3406003168743904,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.356303482628894e-07,
+            "complementary_normal": 2.775191750064771e-07,
+            "geometric": 3.088893292630311e-07,
+            "tangential": 6.478978448041507e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.356197819353422e-07,
+            "complementary_normal": 5.250973821356154e-05,
+            "geometric": 5.2509913068379e-05,
+            "tangential": 8.115123836489069e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010788944399395156,
+            "complementary_normal": 2.77519175041812e-07,
+            "geometric": 0.00010788980074530379,
+            "tangential": 6.409215459685716e-07
+          },
+          "Single": {
+            "axial_normal": 0.000279295918287451,
+            "complementary_normal": 0.0002339120915158879,
+            "geometric": 0.0003643090391459232,
+            "tangential": 1.0979310856175579e-06
+          }
+        },
+        "query_index": 5,
+        "second_masses": [
+          0.00015525913877771709,
+          0.004205662934013072,
+          0.008628820766060365
+        ],
+        "status": "success",
+        "theta": 0.6003783787886933
+      },
+      {
+        "axis_digest": "ec5dd53f41661d2bc7a0260f1a314962afc95621f637c8c2a37587a1cfcd02b0",
+        "first_mass": 0.0006929783360986782,
+        "first_signal_over_sigma": 0.3305945880782606,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.2846189146604547e-07,
+            "complementary_normal": 2.5527419457332336e-07,
+            "geometric": 2.857756495473093e-07,
+            "tangential": 1.1152643580001135e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.2843209756599629e-07,
+            "complementary_normal": 4.869777706491012e-05,
+            "geometric": 4.8697945666572866e-05,
+            "tangential": 1.3806001231081535e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010052726850033362,
+            "complementary_normal": 2.5527419451307195e-07,
+            "geometric": 0.00010052759213696004,
+            "tangential": 1.1039620069643004e-06
+          },
+          "Single": {
+            "axial_normal": 0.0002602490808798138,
+            "complementary_normal": 0.00021755884489234323,
+            "geometric": 0.0003392070662606664,
+            "tangential": 1.8458468131335522e-06
+          }
+        },
+        "query_index": 6,
+        "second_masses": [
+          0.00015525611188220426,
+          0.004205469874583818,
+          0.008628079913841366
+        ],
+        "status": "success",
+        "theta": 0.7076509351586266
+      },
+      {
+        "axis_digest": "424eb5a3a283ee40f2d9bf21af19d7150d3a4234789b896bf247b0f583c104f6",
+        "first_mass": 0.0007023801831572141,
+        "first_signal_over_sigma": 0.32278763714028497,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.241855837968218e-07,
+            "complementary_normal": 2.3431816162817773e-07,
+            "geometric": 2.6519335683507894e-07,
+            "tangential": 1.3684249660870649e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.2414602180474443e-07,
+            "complementary_normal": 4.3399330291468853e-05,
+            "geometric": 4.3399506876189115e-05,
+            "tangential": 1.6592130684633974e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 9.0119630929233e-05,
+            "complementary_normal": 2.3431816164351951e-07,
+            "geometric": 9.011993490438784e-05,
+            "tangential": 1.3561472059773554e-06
+          },
+          "Single": {
+            "axial_normal": 0.00023335281780936747,
+            "complementary_normal": 0.00019462217518190905,
+            "geometric": 0.000303860703654363,
+            "tangential": 2.1685587967931294e-06
+          }
+        },
+        "query_index": 7,
+        "second_masses": [
+          0.0001552522074165141,
+          0.004205220930645767,
+          0.008627123623258539
+        ],
+        "status": "success",
+        "theta": 0.8112837419627106
+      },
+      {
+        "axis_digest": "e5a161543a175dee8c1398195989176d03e31e28dd636822b0e2616bb8a07d09",
+        "first_mass": 0.0007084328626928323,
+        "first_signal_over_sigma": 0.31770134856267684,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.1378948634572436e-07,
+            "complementary_normal": 2.0688855485056567e-07,
+            "geometric": 2.361171588835501e-07,
+            "tangential": 1.417208418384838e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.137542444709467e-07,
+            "complementary_normal": 3.765715984665508e-05,
+            "geometric": 3.765733079158819e-05,
+            "tangential": 1.6749829399986911e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 7.867149412266411e-05,
+            "complementary_normal": 2.068885548525881e-07,
+            "geometric": 7.867176554993301e-05,
+            "tangential": 1.4064372244088174e-06
+          },
+          "Single": {
+            "axial_normal": 0.0002037378042127816,
+            "complementary_normal": 0.00016952409720971226,
+            "geometric": 0.0002650424708552346,
+            "tangential": 2.1259495245989865e-06
+          }
+        },
+        "query_index": 8,
+        "second_masses": [
+          0.00015524840596104587,
+          0.004204978484318703,
+          0.008626190394887427
+        ],
+        "status": "success",
+        "theta": 0.9108359658340864
+      },
+      {
+        "axis_digest": "3ea4106f88de15119686725800defeab0f0a71957dc4215d498e945b808fde76",
+        "first_mass": 0.0007110688779767408,
+        "first_signal_over_sigma": 0.31546320188633314,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 9.73301646614415e-08,
+            "complementary_normal": 1.7350964003734035e-07,
+            "geometric": 1.9894473861146317e-07,
+            "tangential": 1.3279345128982635e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 9.730535685663236e-08,
+            "complementary_normal": 3.225312322923406e-05,
+            "geometric": 3.225326938802427e-05,
+            "tangential": 1.529562011160005e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 6.77504261649229e-05,
+            "complementary_normal": 1.7350964001128533e-07,
+            "geometric": 6.775064788396117e-05,
+            "tangential": 1.3195866790877686e-06
+          },
+          "Single": {
+            "axial_normal": 0.0001754522594633067,
+            "complementary_normal": 0.00014569646988534183,
+            "geometric": 0.0002280591065547325,
+            "tangential": 1.882114943490807e-06
+          }
+        },
+        "query_index": 9,
+        "second_masses": [
+          0.0001552452604441404,
+          0.00420477782430447,
+          0.008625416530143332
+        ],
+        "status": "success",
+        "theta": 1.0063102738689134
+      },
+      {
+        "axis_digest": "3692a17de16a1c6ec9fd0c975540f676d2169e0d4c1eccfab9e332407bd0415b",
+        "first_mass": 0.0007105045667409901,
+        "first_signal_over_sigma": 0.31592469395792633,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 7.902441444936539e-08,
+            "complementary_normal": 1.397565854039051e-07,
+            "geometric": 1.6055185227830825e-07,
+            "tangential": 1.1666353339447318e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 7.900926259910014e-08,
+            "complementary_normal": 2.7583204575861144e-05,
+            "geometric": 2.7583317338837892e-05,
+            "tangential": 1.31322871774905e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 5.8201144637427185e-05,
+            "complementary_normal": 1.3975658540715757e-07,
+            "geometric": 5.8201312127566225e-05,
+            "tangential": 1.1606115156326433e-06
+          },
+          "Single": {
+            "axial_normal": 0.00015069932091519333,
+            "complementary_normal": 0.0001249581168721101,
+            "geometric": 0.00019576724952440717,
+            "tangential": 1.5695167081714007e-06
+          }
+        },
+        "query_index": 10,
+        "second_masses": [
+          0.00015524289608047668,
+          0.004204626969725903,
+          0.008624833914865867
+        ],
+        "status": "success",
+        "theta": 1.0980322045532267
+      },
+      {
+        "axis_digest": "aa6b9358f147f52b55603d9c88fa20f984faadb3604470e846d09c44f2e563f6",
+        "first_mass": 0.0007071054699992741,
+        "first_signal_over_sigma": 0.31877311782535667,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 6.232475069048358e-08,
+            "complementary_normal": 1.1017738877265411e-07,
+            "geometric": 1.265839503988297e-07,
+            "tangential": 9.763593497974975e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 6.231633252386999e-08,
+            "complementary_normal": 2.3767417585050307e-05,
+            "geometric": 2.3767499049870308e-05,
+            "tangential": 1.0782337230330683e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 5.032202291165629e-05,
+            "complementary_normal": 1.1017738883229224e-07,
+            "geometric": 5.0322143339546514e-05,
+            "tangential": 9.721959144118996e-07
+          },
+          "Single": {
+            "axial_normal": 0.00013026734930830515,
+            "complementary_normal": 0.00010792014057774211,
+            "geometric": 0.00016916364529567587,
+            "tangential": 1.2564340148398292e-06
+          }
+        },
+        "query_index": 11,
+        "second_masses": [
+          0.00015524121666655912,
+          0.004204519822854475,
+          0.0086244197352925
+        ],
+        "status": "success",
+        "theta": 1.1865089111978435
+      },
+      {
+        "axis_digest": "2a2f55efdf2e2ceb207f74899ae9ad15607c7d237a616e6045bc023dfbcf6ee9",
+        "first_mass": 0.000701308472791494,
+        "first_signal_over_sigma": 0.32361086156022884,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 4.8804311478104115e-08,
+            "complementary_normal": 8.659784179717464e-08,
+            "geometric": 9.940359808708921e-08,
+            "tangential": 7.770531903768896e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 4.8800018164127416e-08,
+            "complementary_normal": 2.079064894197122e-05,
+            "geometric": 2.0790706090178696e-05,
+            "tangential": 8.453133369573002e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 4.4127055564770436e-05,
+            "complementary_normal": 8.659784178417996e-08,
+            "geometric": 4.412714043395692e-05,
+            "tangential": 7.742746826522002e-07
+          },
+          "Single": {
+            "axial_normal": 0.00011420064183884224,
+            "complementary_normal": 9.457595891327656e-05,
+            "geometric": 0.00014827811211875762,
+            "tangential": 9.648015407165273e-07
+          }
+        },
+        "query_index": 12,
+        "second_masses": [
+          0.0001552400687324211,
+          0.0042044465899724465,
+          0.008624136504164197
+        ],
+        "status": "success",
+        "theta": 1.2723242214791324
+      },
+      {
+        "axis_digest": "7e5303cf905d1c83f457e8fbe6f8e8cec3373719752777eea0cc721f124a0580",
+        "first_mass": 0.000693585872210646,
+        "first_signal_over_sigma": 0.3300032397024558,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.880311148893602e-08,
+            "complementary_normal": 6.910010418322001e-08,
+            "geometric": 7.924971189127562e-08,
+            "tangential": 5.73750289798801e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.8801179247017583e-08,
+            "complementary_normal": 1.8596363821193634e-05,
+            "geometric": 1.8596404241248757e-05,
+            "tangential": 6.171467509219321e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.953134378747517e-05,
+            "complementary_normal": 6.910010421640667e-08,
+            "geometric": 3.953140412976312e-05,
+            "tangential": 5.719884131736054e-07
+          },
+          "Single": {
+            "axial_normal": 0.000102281748052288,
+            "complementary_normal": 8.471387678414014e-05,
+            "geometric": 0.00013280812052190557,
+            "tangential": 6.931963049032233e-07
+          }
+        },
+        "query_index": 13,
+        "second_masses": [
+          0.00015523931534549824,
+          0.00420439853112436,
+          0.008623950578862765
+        ],
+        "status": "success",
+        "theta": 1.356078195022402
+      },
+      {
+        "axis_digest": "d853afa7d4b14e944d0db55d73bc26cefbfaca7ea2afd4c0a8550b6076861c80",
+        "first_mass": 0.0006844327231544128,
+        "first_signal_over_sigma": 0.3375038953306098,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.217730560592494e-08,
+            "complementary_normal": 5.727054334945392e-08,
+            "geometric": 6.56909241236889e-08,
+            "tangential": 3.641396746756147e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.217663980892401e-08,
+            "complementary_normal": 1.7132324812911242e-05,
+            "geometric": 1.7132355007163357e-05,
+            "tangential": 3.88624808162933e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.644666940336948e-05,
+            "complementary_normal": 5.727054333774987e-08,
+            "geometric": 3.644671438064453e-05,
+            "tangential": 3.631477313155373e-07
+          },
+          "Single": {
+            "axial_normal": 9.428214226896987e-05,
+            "complementary_normal": 7.8126159469876e-05,
+            "geometric": 0.00012244516787181554,
+            "tangential": 4.315540830967548e-07
+          }
+        },
+        "query_index": 14,
+        "second_masses": [
+          0.0001552388566600409,
+          0.004204369280301474,
+          0.008623837393388435
+        ],
+        "status": "success",
+        "theta": 1.4383597907526802
+      },
+      {
+        "axis_digest": "8c0ae1363c4ca3a92e76c8de71d8b45a19716c3f885dbffb3598fc01bd7b6ed4",
+        "first_mass": 0.0006743642516880397,
+        "first_signal_over_sigma": 0.3456663672319679,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.8718871312611408e-08,
+            "complementary_normal": 5.093146243504508e-08,
+            "geometric": 5.8470401790250425e-08,
+            "tangential": 1.4453046286654003e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.8718777590105116e-08,
+            "complementary_normal": 1.6365563094336783e-05,
+            "geometric": 1.6365588289367812e-05,
+            "tangential": 1.535162317895921e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.481532526763475e-05,
+            "complementary_normal": 5.0931462412175546e-08,
+            "geometric": 3.481536251867217e-05,
+            "tangential": 1.4416691952639262e-07
+          },
+          "Single": {
+            "axial_normal": 9.005174651419082e-05,
+            "complementary_normal": 7.468090898188077e-05,
+            "geometric": 0.00011698955173569325,
+            "tangential": 1.6927766337472548e-07
+          }
+        },
+        "query_index": 15,
+        "second_masses": [
+          0.00015523862997889935,
+          0.004204354821563955,
+          0.00862378142024769
+        ],
+        "status": "success",
+        "theta": 1.5197395877486022
+      },
+      {
+        "axis_digest": "d6dc380f7420c62ec304effab7d089590ca6861ce11258c3998e12763165768a",
+        "first_mass": 0.0006639161034450403,
+        "first_signal_over_sigma": 0.35404780709841194,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.830328747646696e-08,
+            "complementary_normal": 5.02084691998177e-08,
+            "geometric": 5.763650419586252e-08,
+            "tangential": 8.718489524381935e-08
+          },
+          "Scalar-A": {
+            "axial_normal": 2.8303255481777822e-08,
+            "complementary_normal": 1.6281705821869368e-05,
+            "geometric": 1.6281730421126813e-05,
+            "tangential": 9.242550418634846e-08
+          },
+          "Scalar-C": {
+            "axial_normal": 3.4610678884701265e-05,
+            "complementary_normal": 5.0208469196430344e-08,
+            "geometric": 3.461071530147688e-05,
+            "tangential": 8.697297143499625e-08
+          },
+          "Single": {
+            "axial_normal": 8.952115195187748e-05,
+            "complementary_normal": 7.43213937064981e-05,
+            "geometric": 0.00011635164893032352,
+            "tangential": 1.0162237790647947e-07
+          }
+        },
+        "query_index": 16,
+        "second_masses": [
+          0.00015523860381058943,
+          0.004204353148407336,
+          0.008623774895271464
+        ],
+        "status": "success",
+        "theta": 1.6007732421614176
+      },
+      {
+        "axis_digest": "69650bc8ac0b2899d968f9c36f33a296ffff181ee8167fcd9521cd9b409079a2",
+        "first_mass": 0.0006536443820853983,
+        "first_signal_over_sigma": 0.3622084575277857,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.0909999324296794e-08,
+            "complementary_normal": 5.513751305854196e-08,
+            "geometric": 6.32105691558982e-08,
+            "tangential": 3.312286402578549e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.090954062527078e-08,
+            "complementary_normal": 1.6880346972154182e-05,
+            "geometric": 1.6880375253896483e-05,
+            "tangential": 3.513966873797529e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.582832722818693e-05,
+            "complementary_normal": 5.5137513011329384e-08,
+            "geometric": 3.5828369639470735e-05,
+            "tangential": 3.3041308688319276e-07
+          },
+          "Single": {
+            "axial_normal": 9.267888350632218e-05,
+            "complementary_normal": 7.704547162085629e-05,
+            "geometric": 0.00012052128500027052,
+            "tangential": 3.8679341126070184e-07
+          }
+        },
+        "query_index": 17,
+        "second_masses": [
+          0.00015523877445603924,
+          0.004204364023788587,
+          0.008623816890197082
+        ],
+        "status": "success",
+        "theta": 1.6820100192116718
+      },
+      {
+        "axis_digest": "8fcd72fe630fcb8d2fe2d4322b94d9b5dc1a24838250d93929770edf57385ddb",
+        "first_mass": 0.0006441244558916586,
+        "first_signal_over_sigma": 0.36970915916147906,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.66209209892327e-08,
+            "complementary_normal": 6.558091083896316e-08,
+            "geometric": 7.511297062811026e-08,
+            "tangential": 5.875946271427338e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.66194150789814e-08,
+            "complementary_normal": 1.8174440328655796e-05,
+            "geometric": 1.8174477161216578e-05,
+            "tangential": 6.254538311461424e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.848474322834476e-05,
+            "complementary_normal": 6.558091080670642e-08,
+            "geometric": 3.848479905409314e-05,
+            "tangential": 5.860623764853111e-07
+          },
+          "Single": {
+            "axial_normal": 9.956789728735067e-05,
+            "complementary_normal": 8.290192729162746e-05,
+            "geometric": 0.00012956270949800573,
+            "tangential": 6.919067666980934e-07
+          }
+        },
+        "query_index": 18,
+        "second_masses": [
+          0.0001552391653478317,
+          0.004204388947273237,
+          0.008623913188800349
+        ],
+        "status": "success",
+        "theta": 1.7640029771870744
+      },
+      {
+        "axis_digest": "4148bc17e56f28c9e9d20bfdc1b7ddb996946025d22ea67af87ba9a2a309726e",
+        "first_mass": 0.0006359475150540295,
+        "first_signal_over_sigma": 0.37610904021621755,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 4.56115524438378e-08,
+            "complementary_normal": 8.161688604667827e-08,
+            "geometric": 9.34973854220874e-08,
+            "tangential": 8.56632315956254e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 4.560805198941394e-08,
+            "complementary_normal": 2.0194727253926727e-05,
+            "geometric": 2.0194778613095605e-05,
+            "tangential": 9.173291576678221e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 4.262565453763086e-05,
+            "complementary_normal": 8.161688605978281e-08,
+            "geometric": 4.262573255346672e-05,
+            "tangential": 8.541714102213851e-07
+          },
+          "Single": {
+            "axial_normal": 0.00011030717087602394,
+            "complementary_normal": 9.2008689255384e-05,
+            "geometric": 0.00014364285841637957,
+            "tangential": 1.023859856074373e-06
+          }
+        },
+        "query_index": 19,
+        "second_masses": [
+          0.00015523983034944968,
+          0.004204431348979937,
+          0.008624077013131318
+        ],
+        "status": "success",
+        "theta": 1.8473182012562568
+      },
+      {
+        "axis_digest": "569abf448a82e25d37df478541c74feecc1ba241159214beed832054b8393564",
+        "first_mass": 0.0006297123190365675,
+        "first_signal_over_sigma": 0.380966381974769,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 5.804773514834957e-08,
+            "complementary_normal": 1.0362894097776948e-07,
+            "geometric": 1.1877952893420455e-07,
+            "tangential": 1.1358781324783403e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 5.8040710333747045e-08,
+            "complementary_normal": 2.2992558816161116e-05,
+            "geometric": 2.2992631784859857e-05,
+            "tangential": 1.2273104518047438e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 4.8330319299492784e-05,
+            "complementary_normal": 1.0362894093532818e-07,
+            "geometric": 4.83304301570475e-05,
+            "tangential": 1.1321604568017955e-06
+          },
+          "Single": {
+            "axial_normal": 0.00012510220980328863,
+            "complementary_normal": 0.00010456279600541141,
+            "geometric": 0.00016304582496273304,
+            "tangential": 1.3877665270896928e-06
+          }
+        },
+        "query_index": 20,
+        "second_masses": [
+          0.00015524085830859413,
+          0.004204496910097148,
+          0.008624330266240994
+        ],
+        "status": "success",
+        "theta": 1.9325400078111585
+      },
+      {
+        "axis_digest": "58592a6298124229eb6a68a7f14c6ddff06219fd1afead2e0bed9dd40f2f5426",
+        "first_mass": 0.0006260069104206494,
+        "first_signal_over_sigma": 0.38384722864057125,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 7.374880333480496e-08,
+            "complementary_normal": 1.317286226341509e-07,
+            "geometric": 1.5096852861434912e-07,
+            "tangential": 1.4127330227886342e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 7.373591954521419e-08,
+            "complementary_normal": 2.6629906038658618e-05,
+            "geometric": 2.6630007595436515e-05,
+            "tangential": 1.5453552291809923e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 5.568919907946224e-05,
+            "complementary_normal": 1.3172862266024578e-07,
+            "geometric": 5.5689354445595306e-05,
+            "tangential": 1.407315830003284e-06
+          },
+          "Single": {
+            "axial_normal": 0.0001441856537949215,
+            "complementary_normal": 0.00012079226872226173,
+            "geometric": 0.0001880964501936289,
+            "tangential": 1.7781287122613596e-06
+          }
+        },
+        "query_index": 21,
+        "second_masses": [
+          0.00015524237612781681,
+          0.004204593742703874,
+          0.008624704156401458
+        ],
+        "status": "success",
+        "theta": 2.020267184356654
+      },
+      {
+        "axis_digest": "16e22217482fd856c354b0b11bfa99cfdde61d991da4ea26f337557823102a84",
+        "first_mass": 0.0006253710809120894,
+        "first_signal_over_sigma": 0.38434883516401536,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 9.15166628994033e-08,
+            "complementary_normal": 1.6459791933378744e-07,
+            "geometric": 1.8832984902443568e-07,
+            "tangential": 1.6531928137907243e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 9.149501634281466e-08,
+            "complementary_normal": 3.1141906752377724e-05,
+            "geometric": 3.114204028967642e-05,
+            "tangential": 1.8379533191687705e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 6.4727911315351e-05,
+            "complementary_normal": 1.6459791928801465e-07,
+            "geometric": 6.472811991023102e-05,
+            "tangential": 1.6455985718987076e-06
+          },
+          "Single": {
+            "axial_normal": 0.00016761743872827225,
+            "complementary_normal": 0.0001407881742140968,
+            "geometric": 0.00021889932623819796,
+            "tangential": 2.162278204102403e-06
+          }
+        },
+        "query_index": 22,
+        "second_masses": [
+          0.00015524453622751494,
+          0.004204731583128188,
+          0.008625235961614179
+        ],
+        "status": "success",
+        "theta": 2.1110920040964807
+      },
+      {
+        "axis_digest": "fbe70e4136d50ff91f0dd488847b8aecdd93cdcaf1c3b6946185ff419d0bce41",
+        "first_mass": 0.0006282258667538414,
+        "first_signal_over_sigma": 0.38214815195787966,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.0837501351982114e-07,
+            "complementary_normal": 1.9828753212601662e-07,
+            "geometric": 2.2597271652201683e-07,
+            "tangential": 1.7923566262000582e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.0834293371802807e-07,
+            "complementary_normal": 3.645377495577471e-05,
+            "geometric": 3.6453934716714583e-05,
+            "tangential": 2.033810694272066e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 7.524756434056064e-05,
+            "complementary_normal": 1.9828753210757255e-07,
+            "geometric": 7.524782466391461e-05,
+            "tangential": 1.7823447802943197e-06
+          },
+          "Single": {
+            "axial_normal": 0.0001948685573804398,
+            "complementary_normal": 0.00016414671351114461,
+            "geometric": 0.0002547899074174914,
+            "tangential": 2.4580426831370236e-06
+          }
+        },
+        "query_index": 23,
+        "second_masses": [
+          0.0001552474609174244,
+          0.004204918197008786,
+          0.008625955003756526
+        ],
+        "status": "success",
+        "theta": 2.2055497447847987
+      },
+      {
+        "axis_digest": "63822df3abc222f94df26cbc7ccc42b66e21458f36eb49b912f7cd761738ddbd",
+        "first_mass": 0.0006347566347629271,
+        "first_signal_over_sigma": 0.3770857949286157,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.2000630458392052e-07,
+            "complementary_normal": 2.2697181697251712e-07,
+            "geometric": 2.567458178984556e-07,
+            "tangential": 1.7390550445162748e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.199675754854574e-07,
+            "complementary_normal": 4.224439547329443e-05,
+            "geometric": 4.22445644038632e-05,
+            "tangential": 2.022145859023376e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 8.657661008088266e-05,
+            "complementary_normal": 2.269718169810631e-07,
+            "geometric": 8.657690658986995e-05,
+            "tangential": 1.7271942456029385e-06
+          },
+          "Single": {
+            "axial_normal": 0.00022418253193763653,
+            "complementary_normal": 0.00018940571124333963,
+            "geometric": 0.00029348309879424176,
+            "tangential": 2.520125964158117e-06
+          }
+        },
+        "query_index": 24,
+        "second_masses": [
+          0.00015525110336307179,
+          0.004205150558163817,
+          0.008626848677958677
+        ],
+        "status": "success",
+        "theta": 2.304025792375418
+      },
+      {
+        "axis_digest": "85314f30d89966c95c145d741e941eba45cd437eead2e97f9bd73c8aaf112306",
+        "first_mass": 0.0006447550962966371,
+        "first_signal_over_sigma": 0.36928404125876585,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.2467805608662584e-07,
+            "complementary_normal": 2.4824897249342644e-07,
+            "geometric": 2.7779977012452467e-07,
+            "tangential": 1.4196181151225e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.2464497725495145e-07,
+            "complementary_normal": 4.7810999598844925e-05,
+            "geometric": 4.7811160954945234e-05,
+            "tangential": 1.6956148382266268e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 9.734537438821516e-05,
+            "complementary_normal": 2.4824897250027925e-07,
+            "geometric": 9.73456901749505e-05,
+            "tangential": 1.4079360835714366e-06
+          },
+          "Single": {
+            "axial_normal": 0.00025201348385792306,
+            "complementary_normal": 0.00021352245883600986,
+            "geometric": 0.00033030687968126977,
+            "tangential": 2.1816837228217154e-06
+          }
+        },
+        "query_index": 25,
+        "second_masses": [
+          0.00015525503944968937,
+          0.0042054015492455745,
+          0.0086278119911781
+        ],
+        "status": "success",
+        "theta": 2.406620819669428
+      },
+      {
+        "axis_digest": "dc4c753220d13c542431bffc27d9f5255d1df794b8585aa09d73ea4c630bbd0e",
+        "first_mass": 0.0006574771340616409,
+        "first_signal_over_sigma": 0.35926242844230605,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.291796173400168e-07,
+            "complementary_normal": 2.683852538627894e-07,
+            "geometric": 2.97856074017823e-07,
+            "tangential": 8.581339952800738e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.2916445335692368e-07,
+            "complementary_normal": 5.2117681195646334e-05,
+            "geometric": 5.211784078181928e-05,
+            "tangential": 1.0522926820101934e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010561250402608563,
+            "complementary_normal": 2.6838525391499153e-07,
+            "geometric": 0.0001056128447414724,
+            "tangential": 8.498754463194465e-07
+          },
+          "Single": {
+            "axial_normal": 0.00027338344266536463,
+            "complementary_normal": 0.00023213614457115046,
+            "geometric": 0.0003586442464578421,
+            "tangential": 1.393948199595408e-06
+          }
+        },
+        "query_index": 26,
+        "second_masses": [
+          0.00015525837934449212,
+          0.004205614471394171,
+          0.008628628022480418
+        ],
+        "status": "success",
+        "theta": 2.5130157969284954
+      },
+      {
+        "axis_digest": "161b72a87409da0e81b6d40217c2324293ded3c9e1a50ead4f8e9f7c47d18d53",
+        "first_mass": 0.0006716322600028471,
+        "first_signal_over_sigma": 0.3479704728254239,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.456340425859667e-07,
+            "complementary_normal": 2.9725704565392646e-07,
+            "geometric": 3.3101516980897365e-07,
+            "tangential": 2.1971026089637528e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.4563280563215855e-07,
+            "complementary_normal": 5.423420406255878e-05,
+            "geometric": 5.423439955923949e-05,
+            "tangential": 2.768956355798156e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010968440359304786,
+            "complementary_normal": 2.9725704569804015e-07,
+            "geometric": 0.00010968480637201395,
+            "tangential": 2.1733456803427103e-07
+          },
+          "Single": {
+            "axial_normal": 0.00028398200639371705,
+            "complementary_normal": 0.00024139076229559494,
+            "geometric": 0.00037271340197577823,
+            "tangential": 3.761191311954032e-07
+          }
+        },
+        "query_index": 27,
+        "second_masses": [
+          0.0001552601389114715,
+          0.004205726750525358,
+          0.008629059115797073
+        ],
+        "status": "success",
+        "theta": 2.6224359535029587
+      },
+      {
+        "axis_digest": "23c4ee5183e0db80a0103cb6265c8ba9a883baa2dc129a4e609d3fcc3e188d07",
+        "first_mass": 0.0006855906529726431,
+        "first_signal_over_sigma": 0.3366672248658851,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.755126379057876e-07,
+            "complementary_normal": 3.3811759793761616e-07,
+            "geometric": 3.8095698973392014e-07,
+            "tangential": 2.736516884511135e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.7551075249037627e-07,
+            "complementary_normal": 5.3979689692143206e-05,
+            "geometric": 5.397997496979614e-05,
+            "tangential": 3.4200327936857464e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010926903363756786,
+            "complementary_normal": 3.381175979617563e-07,
+            "geometric": 0.00010926955673362764,
+            "tangential": 2.706327849319809e-07
+          },
+          "Single": {
+            "axial_normal": 0.00028306303148471366,
+            "complementary_normal": 0.00024053545523356365,
+            "geometric": 0.0003714592641459235,
+            "tangential": 4.643766721254243e-07
+          }
+        },
+        "query_index": 28,
+        "second_masses": [
+          0.0001552599819487503,
+          0.004205717038998303,
+          0.00862902453954565
+        ],
+        "status": "success",
+        "theta": 2.7338105563604214
+      },
+      {
+        "axis_digest": "73fc433b2fb8aaa212a9af0a1914848cd3733879baae5534e9b2ad373ebe6799",
+        "first_mass": 0.0006977333460276243,
+        "first_signal_over_sigma": 0.32667880368014013,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.0547184557954767e-07,
+            "complementary_normal": 3.792622123858451e-07,
+            "geometric": 4.313451296365691e-07,
+            "tangential": 4.890867240047368e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.054653773412239e-07,
+            "complementary_normal": 5.2122449155379786e-05,
+            "geometric": 5.212285396295322e-05,
+            "tangential": 6.151344888146811e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.0001058241428750291,
+            "complementary_normal": 3.792622123888289e-07,
+            "geometric": 0.00010582482239340637,
+            "tangential": 4.836457536552116e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002743219864296402,
+            "complementary_normal": 0.0002327607521513981,
+            "geometric": 0.0003597639777431253,
+            "tangential": 8.38241421896115e-07
+          }
+        },
+        "query_index": 29,
+        "second_masses": [
+          0.00015525852389464926,
+          0.004205624388193885,
+          0.008628672375858898
+        ],
+        "status": "success",
+        "theta": 2.846093033239819
+      },
+      {
+        "axis_digest": "1faf767c24c90ebbd7616144bc489907ced0d45db95b7e293243dae9205b930a",
+        "first_mass": 0.0007067512890404568,
+        "first_signal_over_sigma": 0.31915584382021106,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.241183970992618e-07,
+            "complementary_normal": 4.054242406375258e-07,
+            "geometric": 4.632471973399276e-07,
+            "tangential": 4.3278309643298153e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.2411328316758966e-07,
+            "complementary_normal": 4.989512566966582e-05,
+            "geometric": 4.989562887036844e-05,
+            "tangential": 5.432282485678182e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010168262438051611,
+            "complementary_normal": 4.054242406578985e-07,
+            "geometric": 0.00010168343254888527,
+            "tangential": 4.280644498182092e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002637239383368708,
+            "complementary_normal": 0.00022328054559491331,
+            "geometric": 0.000345549587583715,
+            "tangential": 7.378278748637117e-07
+          }
+        },
+        "query_index": 30,
+        "second_masses": [
+          0.00015525681333639334,
+          0.004205515497993412,
+          0.008628256752203113
+        ],
+        "status": "success",
+        "theta": 2.958554096274186
+      },
+      {
+        "axis_digest": "f4b2f2091533adcd1cdcdf5131278089b49beb57dfa6cc310a8af5a572eae1d0",
+        "first_mass": 0.0007117747708819632,
+        "first_signal_over_sigma": 0.31492299575602656,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.3162426312562019e-07,
+            "complementary_normal": 4.155867477959966e-07,
+            "geometric": 4.7577532851395856e-07,
+            "tangential": 1.9402914444403385e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.3162324109759014e-07,
+            "complementary_normal": 4.836768148867337e-05,
+            "geometric": 4.8368236061152466e-05,
+            "tangential": 2.4285100586652707e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 9.889904558677038e-05,
+            "complementary_normal": 4.1558674770972767e-07,
+            "geometric": 9.889991874367932e-05,
+            "tangential": 1.9195424289727003e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002565749241156987,
+            "complementary_normal": 0.00021672217459775802,
+            "geometric": 0.00033585591048451144,
+            "tangential": 3.286625168512936e-07
+          }
+        },
+        "query_index": 31,
+        "second_masses": [
+          0.00015525568789421542,
+          0.004205443796707086,
+          0.008627982740495609
+        ],
+        "status": "success",
+        "theta": 3.070886223329783
+      },
+      {
+        "axis_digest": "cad6f0cc7c00854f59b67e62f70439a68ae6f9c0223211d14ddb58e34b71b58f",
+        "first_mass": 0.0007123664778807885,
+        "first_signal_over_sigma": 0.3144223830743406,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.3279630684832633e-07,
+            "complementary_normal": 4.166122271411553e-07,
+            "geometric": 4.772419459967088e-07,
+            "tangential": 1.158305577402329e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.3279594266980651e-07,
+            "complementary_normal": 4.8136864214101535e-05,
+            "geometric": 4.813742711786227e-05,
+            "tangential": 1.449398626067737e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 9.863958985664042e-05,
+            "complementary_normal": 4.1661222705449514e-07,
+            "geometric": 9.864046964527924e-05,
+            "tangential": 1.1459379137381051e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002559109984601075,
+            "complementary_normal": 0.000215716301531707,
+            "geometric": 0.00033469980858264934,
+            "tangential": 1.960659489002576e-07
+          }
+        },
+        "query_index": 32,
+        "second_masses": [
+          0.00015525556177092243,
+          0.004205435774856714,
+          0.008627952801514824
+        ],
+        "status": "success",
+        "theta": 3.1831155857547415
+      },
+      {
+        "axis_digest": "cdd715c8a224d34f56deb38649b0409d6e44f76038af065f63eaf32bad39a22a",
+        "first_mass": 0.0007084776581157828,
+        "first_signal_over_sigma": 0.3177048436111564,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.2843863821263185e-07,
+            "complementary_normal": 4.098239708866192e-07,
+            "geometric": 4.691907651116798e-07,
+            "tangential": 3.8460416264814056e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.2843459110604563e-07,
+            "complementary_normal": 4.9271421645944264e-05,
+            "geometric": 4.927195108921715e-05,
+            "tangential": 4.825881017808926e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010103900998144715,
+            "complementary_normal": 4.098239707457878e-07,
+            "geometric": 0.00010103984106356087,
+            "tangential": 3.804216265434486e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002620842602130204,
+            "complementary_normal": 0.00022056883158223372,
+            "geometric": 0.00034254746934034617,
+            "tangential": 6.548500960184245e-07
+          }
+        },
+        "query_index": 33,
+        "second_masses": [
+          0.00015525648019943986,
+          0.004205494329653613,
+          0.008628178236579083
+        ],
+        "status": "success",
+        "theta": 3.295408958391684
+      },
+      {
+        "axis_digest": "05645eaf5cf39f44b3f8bf709526ce17da6a35f24d7a1fbc0905db786254a578",
+        "first_mass": 0.000700440917790038,
+        "first_signal_over_sigma": 0.32443015260086344,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.1415563534034128e-07,
+            "complementary_normal": 3.890417868164956e-07,
+            "geometric": 4.440903870126453e-07,
+            "tangential": 4.99441332871418e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.14148814597027e-07,
+            "complementary_normal": 5.131419492993389e-05,
+            "geometric": 5.1314641615075946e-05,
+            "tangential": 6.286065579337737e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010518976508071438,
+            "complementary_normal": 3.890417869817714e-07,
+            "geometric": 0.00010519048440877205,
+            "tangential": 4.93875182471831e-07
+          },
+          "Single": {
+            "axial_normal": 0.00027272861947499183,
+            "complementary_normal": 0.00022925799122629762,
+            "geometric": 0.0003562865786353983,
+            "tangential": 8.563685413797253e-07
+          }
+        },
+        "query_index": 34,
+        "second_masses": [
+          0.0001552581331762975,
+          0.004205599624063575,
+          0.008628582227192443
+        ],
+        "status": "success",
+        "theta": 3.4078498682579403
+      },
+      {
+        "axis_digest": "4f00c5f20d9fe092e62a78c21f1b9f8989657fc50e43adc91d6690df55d85d76",
+        "first_mass": 0.0006890089250906822,
+        "first_signal_over_sigma": 0.3338711171196427,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.8739129053871444e-07,
+            "complementary_normal": 3.5174997728017095e-07,
+            "geometric": 3.985518795317698e-07,
+            "tangential": 3.598969603761509e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.8738790482624663e-07,
+            "complementary_normal": 5.331086267504453e-05,
+            "geometric": 5.331119192010785e-05,
+            "tangential": 4.5181839652927683e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010921707044039325,
+            "complementary_normal": 3.5174997737260056e-07,
+            "geometric": 0.0001092176368165641,
+            "tangential": 3.558672384041413e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002829899532455171,
+            "complementary_normal": 0.00023763540304941463,
+            "geometric": 0.00036953199895327333,
+            "tangential": 6.15082283663633e-07
+          }
+        },
+        "query_index": 35,
+        "second_masses": [
+          0.00015525978688656083,
+          0.004205704811863422,
+          0.008628984399793331
+        ],
+        "status": "success",
+        "theta": 3.520231951640866
+      },
+      {
+        "axis_digest": "8edcc131bfed99981e9f3db395328661e02729608c7c3492b419925229601d79",
+        "first_mass": 0.0006753806647041865,
+        "first_signal_over_sigma": 0.3449527283004021,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.5640158771837847e-07,
+            "complementary_normal": 3.098305108000836e-07,
+            "geometric": 3.470682985442642e-07,
+            "tangential": 6.994461345926744e-08
+          },
+          "Scalar-A": {
+            "axial_normal": 1.5640143803349848e-07,
+            "complementary_normal": 5.403301447907294e-05,
+            "geometric": 5.4033240831138935e-05,
+            "tangential": 9.061394317852854e-08
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00011073666399217188,
+            "complementary_normal": 3.098305107521677e-07,
+            "geometric": 0.00011073709742717191,
+            "tangential": 6.914171197700736e-08
+          },
+          "Single": {
+            "axial_normal": 0.0002867544043892085,
+            "complementary_normal": 0.00024047936491733063,
+            "geometric": 0.0003742437886998436,
+            "tangential": 1.2511152344155203e-07
+          }
+        },
+        "query_index": 36,
+        "second_masses": [
+          0.00015526039239246788,
+          0.0042057431185956815,
+          0.008629129443455952
+        ],
+        "status": "success",
+        "theta": 3.6319344574386014
+      },
+      {
+        "axis_digest": "2f94183dbe8b744a2e603e8fa45b806e2a3dc59ea809e270e42d78376295985e",
+        "first_mass": 0.0006611160610719833,
+        "first_signal_over_sigma": 0.35637478831769775,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.357881595328138e-07,
+            "complementary_normal": 2.7763641402105105e-07,
+            "geometric": 3.0906400049951533e-07,
+            "tangential": 6.942603825556055e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.3577759629616716e-07,
+            "complementary_normal": 5.253709450673526e-05,
+            "geometric": 5.2537269645089957e-05,
+            "tangential": 8.579308351049398e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010792203139971958,
+            "complementary_normal": 2.776364139542262e-07,
+            "geometric": 0.00010792238831888731,
+            "tangential": 6.87286385694111e-07
+          },
+          "Single": {
+            "axial_normal": 0.00027938087559480166,
+            "complementary_normal": 0.00023385898301500645,
+            "geometric": 0.0003643400842803648,
+            "tangential": 1.1445173784266386e-06
+          }
+        },
+        "query_index": 37,
+        "second_masses": [
+          0.00015525914273108418,
+          0.004205663294674962,
+          0.00862882242763242
+        ],
+        "status": "success",
+        "theta": 3.7419710323784545
+      },
+      {
+        "axis_digest": "18fb736a016a8bf5801b8b9b9a12fa530000925556e31ed6709275ea21f2e72a",
+        "first_mass": 0.000647877038431885,
+        "first_signal_over_sigma": 0.36683514511815296,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.2872453740288066e-07,
+            "complementary_normal": 2.5544913360253107e-07,
+            "geometric": 2.860502449479672e-07,
+            "tangential": 1.300477182352413e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.286947683417824e-07,
+            "complementary_normal": 4.874582532933753e-05,
+            "geometric": 4.874599424050812e-05,
+            "tangential": 1.5659833046751074e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010058702418644365,
+            "complementary_normal": 2.5544913362682736e-07,
+            "geometric": 0.00010058734790022725,
+            "tangential": 1.289184733516961e-06
+          },
+          "Single": {
+            "axial_normal": 0.00026040473275029945,
+            "complementary_normal": 0.00021746054824577603,
+            "geometric": 0.000339263486571615,
+            "tangential": 2.031789537633311e-06
+          }
+        },
+        "query_index": 38,
+        "second_masses": [
+          0.0001552561186908009,
+          0.004205470489257932,
+          0.008628082747952407
+        ],
+        "status": "success",
+        "theta": 3.8492435887483887
+      },
+      {
+        "axis_digest": "6f7f3f858fe5a7029bde44b628d77c607b9f42234709550399e8f72a39e5527b",
+        "first_mass": 0.0006370717306795333,
+        "first_signal_over_sigma": 0.3752849353163988,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.244310384374125e-07,
+            "complementary_normal": 2.3443852960722967e-07,
+            "geometric": 2.6541516037856975e-07,
+            "tangential": 1.6936339492113366e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.2439153268274616e-07,
+            "complementary_normal": 4.344088544425161e-05,
+            "geometric": 4.344106214108627e-05,
+            "tangential": 1.9846279973965896e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 9.018275599934352e-05,
+            "complementary_normal": 2.3443852965252023e-07,
+            "geometric": 9.018305972567218e-05,
+            "tangential": 1.681373711137251e-06
+          },
+          "Single": {
+            "axial_normal": 0.00023351708494145833,
+            "complementary_normal": 0.00019451476257704317,
+            "geometric": 0.00030391811385843806,
+            "tangential": 2.4947350159924152e-06
+          }
+        },
+        "query_index": 39,
+        "second_masses": [
+          0.00015525221406223656,
+          0.004205221506710593,
+          0.008627126287758672
+        ],
+        "status": "success",
+        "theta": 3.9528763955524715
+      },
+      {
+        "axis_digest": "129558b4cbf18931a9d5320f8cd543966d17838489ddb8782fe6fa2f79d480fb",
+        "first_mass": 0.0006295947922424198,
+        "first_signal_over_sigma": 0.38108947107236885,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.1396500009012427e-07,
+            "complementary_normal": 2.069320000985878e-07,
+            "geometric": 2.362403736632287e-07,
+            "tangential": 1.8120609770829059e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.1392982562386371e-07,
+            "complementary_normal": 3.76758746293899e-05,
+            "geometric": 3.767604556253848e-05,
+            "tangential": 2.069993987649741e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 7.872371812988944e-05,
+            "complementary_normal": 2.0693200008664963e-07,
+            "geometric": 7.872398910110573e-05,
+            "tangential": 1.8013098391165263e-06
+          },
+          "Single": {
+            "axial_normal": 0.00020387356434087132,
+            "complementary_normal": 0.0001694292924457401,
+            "geometric": 0.00026508623862403274,
+            "tangential": 2.521642098280308e-06
+          }
+        },
+        "query_index": 40,
+        "second_masses": [
+          0.0001552484110457905,
+          0.004204978891119389,
+          0.008626192288600386
+        ],
+        "status": "success",
+        "theta": 4.05242861942386
+      },
+      {
+        "axis_digest": "82ea3e68a5cb638889efd8b03dae5ae9444ee59425b120aef59103e23d67ca7d",
+        "first_mass": 0.0006257841991932163,
+        "first_signal_over_sigma": 0.3840318363286024,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 9.743840693080303e-08,
+            "complementary_normal": 1.735093361674274e-07,
+            "geometric": 1.989978734678952e-07,
+            "tangential": 1.7126381904946905e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 9.741365320707903e-08,
+            "complementary_normal": 3.224753399371848e-05,
+            "geometric": 3.2247680152822496e-05,
+            "tangential": 1.9143599245170058e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 6.778834192571713e-05,
+            "complementary_normal": 1.7350933614874338e-07,
+            "geometric": 6.77885632114548e-05,
+            "tangential": 1.7043077836042217e-06
+          },
+          "Single": {
+            "axial_normal": 0.00017555072633879115,
+            "complementary_normal": 0.0001456204382323252,
+            "geometric": 0.00022808631846402025,
+            "tangential": 2.2673940942348277e-06
+          }
+        },
+        "query_index": 41,
+        "second_masses": [
+          0.0001552452639181801,
+          0.004204778068753765,
+          0.008625417680929927
+        ],
+        "status": "success",
+        "theta": 4.14790292745868
+      },
+      {
+        "axis_digest": "77c118b5105e0972554dda76397e91e326d7f60fa2690f27b9087423f2a58efc",
+        "first_mass": 0.0006255414094150203,
+        "first_signal_over_sigma": 0.3842100418764853,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 7.908719942377606e-08,
+            "complementary_normal": 1.3974266453618645e-07,
+            "geometric": 1.6057091561534016e-07,
+            "tangential": 1.4887732927878255e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 7.907208055916328e-08,
+            "complementary_normal": 2.756053621397526e-05,
+            "geometric": 2.7560649033543314e-05,
+            "tangential": 1.6354169375771792e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 5.822728207442273e-05,
+            "complementary_normal": 1.397426645024313e-07,
+            "geometric": 5.822744926202397e-05,
+            "tangential": 1.4827619613528909e-06
+          },
+          "Single": {
+            "axial_normal": 0.00015076713887893133,
+            "complementary_normal": 0.00012489866721753764,
+            "geometric": 0.00019578152820861263,
+            "tangential": 1.892001613656235e-06
+          }
+        },
+        "query_index": 42,
+        "second_masses": [
+          0.00015524289838339552,
+          0.0042046271060822895,
+          0.008624834568004076
+        ],
+        "status": "success",
+        "theta": 4.23962485814298
+      },
+      {
+        "axis_digest": "f22b2e30447ee5ed1015bd33575163b939a7a53b65308316b2f0e8d765b856b9",
+        "first_mass": 0.0006284935913835982,
+        "first_signal_over_sigma": 0.3819141078065358,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 6.236148820417805e-08,
+            "complementary_normal": 1.101629242978411e-07,
+            "geometric": 1.2658959522450657e-07,
+            "tangential": 1.2147284417855902e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 6.235308630042147e-08,
+            "complementary_normal": 2.3736892415934205e-05,
+            "geometric": 2.373697396979666e-05,
+            "tangential": 1.3166304363104493e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 5.0340231671819846e-05,
+            "complementary_normal": 1.1016292424565931e-07,
+            "geometric": 5.034035192204068e-05,
+            "tangential": 1.2105727093646764e-06
+          },
+          "Single": {
+            "axial_normal": 0.00013031455892042427,
+            "complementary_normal": 0.00010787322339873616,
+            "geometric": 0.00016917008122868497,
+            "tangential": 1.4949999277666577e-06
+          }
+        },
+        "query_index": 43,
+        "second_masses": [
+          0.00015524121821857526,
+          0.004204519899261508,
+          0.008624420109341027
+        ],
+        "status": "success",
+        "theta": 4.3281015647875964
+      },
+      {
+        "axis_digest": "249bffa46c8c5d8787d698c9361c3bda91587db66bcb3896d16b4389054566a6",
+        "first_mass": 0.0006341233555106241,
+        "first_signal_over_sigma": 0.3775320199443839,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 4.882686770862772e-08,
+            "complementary_normal": 8.658619111567633e-08,
+            "geometric": 9.940458833516475e-08,
+            "tangential": 9.321473873068454e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 4.882258096837019e-08,
+            "complementary_normal": 2.075997313874825e-05,
+            "geometric": 2.07600303751611e-05,
+            "tangential": 1.0004241881871615e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 4.4140291428529333e-05,
+            "complementary_normal": 8.65861911184141e-08,
+            "geometric": 4.414037620384074e-05,
+            "tangential": 9.293729896144556e-07
+          },
+          "Single": {
+            "axial_normal": 0.00011423493687610221,
+            "complementary_normal": 9.453868973371872e-05,
+            "geometric": 0.00014828076263973677,
+            "tangential": 1.1200031725412586e-06
+          }
+        },
+        "query_index": 44,
+        "second_masses": [
+          0.00015524006980422526,
+          0.004204446635749255,
+          0.008624136732639528
+        ],
+        "status": "success",
+        "theta": 4.413916875068877
+      },
+      {
+        "axis_digest": "b0443c5c07f75c7916783a5f26d3b5fde52bd24f7b983bf84c4893d9feffaea7",
+        "first_mass": 0.0006418504311119118,
+        "first_signal_over_sigma": 0.37149277327441194,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.881747055209242e-08,
+            "complementary_normal": 6.90915560099055e-08,
+            "geometric": 7.924931273828763e-08,
+            "tangential": 6.583112569498454e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.8815540285709666e-08,
+            "complementary_normal": 1.857081019728562e-05,
+            "geometric": 1.8570850685785516e-05,
+            "tangential": 7.017177763580249e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.9541170819938394e-05,
+            "complementary_normal": 6.909155597190959e-08,
+            "geometric": 3.954123111622779e-05,
+            "tangential": 6.56551206228409e-07
+          },
+          "Single": {
+            "axial_normal": 0.00010230719824624998,
+            "complementary_normal": 8.468517521395201e-05,
+            "geometric": 0.00013280941863789156,
+            "tangential": 7.778115549128858e-07
+          }
+        },
+        "query_index": 45,
+        "second_masses": [
+          0.00015523931608208216,
+          0.004204398560680901,
+          0.008623950727740694
+        ],
+        "status": "success",
+        "theta": 4.4976708486121515
+      },
+      {
+        "axis_digest": "b41282b6ea37dcbf92963a70167feca5a77274563e4bcca1382672248cadf98c",
+        "first_mass": 0.0006510763619064303,
+        "first_signal_over_sigma": 0.36423746465509826,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.218603579840599e-08,
+            "complementary_normal": 5.7264956091020496e-08,
+            "geometric": 6.569033516837649e-08,
+            "tangential": 3.974467616703555e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.218537034416135e-08,
+            "complementary_normal": 1.7115086410083473e-05,
+            "geometric": 1.7115116647259243e-05,
+            "tangential": 4.219367171939848e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.645343628500184e-05,
+            "complementary_normal": 5.726495605276343e-08,
+            "geometric": 3.645348124149251e-05,
+            "tangential": 3.964554000180251e-07
+          },
+          "Single": {
+            "axial_normal": 9.429966127459731e-05,
+            "complementary_normal": 7.81065373002693e-05,
+            "geometric": 0.0001224461403020817,
+            "tangential": 4.6488286685454426e-07
+          }
+        },
+        "query_index": 46,
+        "second_masses": [
+          0.00015523885712437346,
+          0.004204369299134804,
+          0.008623837488079211
+        ],
+        "status": "success",
+        "theta": 4.579952444342431
+      },
+      {
+        "axis_digest": "1161cb1bbddc3a9c4287bb4be8af1a33587499f5fc0e804549727f5866be7ba2",
+        "first_mass": 0.0006612067421791621,
+        "first_signal_over_sigma": 0.35620762065054135,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.872254514269617e-08,
+            "complementary_normal": 5.092903599567049e-08,
+            "geometric": 5.847009318012684e-08,
+            "tangential": 1.4957394730933985e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.8722451347364766e-08,
+            "complementary_normal": 1.6358502869361642e-05,
+            "geometric": 1.6358528081483762e-05,
+            "tangential": 1.5856063958590127e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.481839654739812e-05,
+            "complementary_normal": 5.092903594969401e-08,
+            "geometric": 3.48184337913769e-05,
+            "tangential": 1.492104749523973e-07
+          },
+          "Single": {
+            "axial_normal": 9.005969636878428e-05,
+            "complementary_normal": 7.467229371469634e-05,
+            "geometric": 0.00011699017205421083,
+            "tangential": 1.743247481072524e-07
+          }
+        },
+        "query_index": 47,
+        "second_masses": [
+          0.00015523863017423368,
+          0.00420435482992353,
+          0.008623781461934306
+        ],
+        "status": "success",
+        "theta": 4.661332241338349
+      },
+      {
+        "axis_digest": "6ed3c9c4c2bdcdd1d166388169bfa92658dbce46eabb1f43cf8b16e4fd558727",
+        "first_mass": 0.0006716614419100164,
+        "first_signal_over_sigma": 0.34784283850781594,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.830068651913454e-08,
+            "complementary_normal": 5.0210189921306224e-08,
+            "geometric": 5.76367260117157e-08,
+            "tangential": 8.544269153431562e-08
+          },
+          "Scalar-A": {
+            "axial_normal": 2.830065447017491e-08,
+            "complementary_normal": 1.6286046827380718e-05,
+            "geometric": 1.6286071415602425e-05,
+            "tangential": 9.0682886084264e-08
+          },
+          "Scalar-C": {
+            "axial_normal": 3.460848311820171e-05,
+            "complementary_normal": 5.021018994544302e-08,
+            "geometric": 3.460851953980101e-05,
+            "tangential": 8.523074827454998e-08
+          },
+          "Single": {
+            "axial_normal": 8.951546845020156e-05,
+            "complementary_normal": 7.432728423450987e-05,
+            "geometric": 0.00011635103898585842,
+            "tangential": 9.987872485423505e-08
+          }
+        },
+        "query_index": 48,
+        "second_masses": [
+          0.0001552386036772007,
+          0.004204353142282331,
+          0.008623774865032734
+        ],
+        "status": "success",
+        "theta": 4.7423658957511705
+      },
+      {
+        "axis_digest": "95d0736c20374e636630a96f02db34e448cafaae7b6a9a443963f8f2435abfad",
+        "first_mass": 0.0006818789730483402,
+        "first_signal_over_sigma": 0.3395826063985784,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.089728844112117e-08,
+            "complementary_normal": 5.514569511249982e-08,
+            "geometric": 6.321148959734378e-08,
+            "tangential": 3.0759767387227083e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.0896829704524495e-08,
+            "complementary_normal": 1.6897050447705594e-05,
+            "geometric": 1.6897078680434876e-05,
+            "tangential": 3.277582849852011e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.581820689657683e-05,
+            "complementary_normal": 5.514569512982386e-08,
+            "geometric": 3.581824933446305e-05,
+            "tangential": 3.0678192152812603e-07
+          },
+          "Single": {
+            "axial_normal": 9.26526844175692e-05,
+            "complementary_normal": 7.707136048119152e-05,
+            "geometric": 0.00012051769384569985,
+            "tangential": 3.6313832134035304e-07
+          }
+        },
+        "query_index": 49,
+        "second_masses": [
+          0.00015523877384580637,
+          0.004204363993661456,
+          0.008623816742876829
+        ],
+        "status": "success",
+        "theta": 4.823602672801416
+      },
+      {
+        "axis_digest": "c59ddd8ebe0076c200054f903a35c4dc6329987726a461fa8d7a56e2260f79f7",
+        "first_mass": 0.0006913181388835865,
+        "first_signal_over_sigma": 0.33186896894496154,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 3.658995309529616e-08,
+            "complementary_normal": 6.559959985746362e-08,
+            "geometric": 7.511418279444462e-08,
+            "tangential": 5.184401764207339e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 3.658844712990316e-08,
+            "complementary_normal": 1.8204129393065544e-05,
+            "geometric": 1.820416611551922e-05,
+            "tangential": 5.562702532073774e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 3.8462715682921975e-05,
+            "complementary_normal": 6.559959988000686e-08,
+            "geometric": 3.846277158397257e-05,
+            "tangential": 5.169075461863406e-07
+          },
+          "Single": {
+            "axial_normal": 9.951085634222424e-05,
+            "complementary_normal": 8.295572148853613e-05,
+            "geometric": 0.00012955331812126002,
+            "tangential": 6.226625668085563e-07
+          }
+        },
+        "query_index": 50,
+        "second_masses": [
+          0.00015523916397759718,
+          0.004204388874853792,
+          0.008623912837617782
+        ],
+        "status": "success",
+        "theta": 4.905595630776832
+      },
+      {
+        "axis_digest": "5d878c36f3697586fbc46fe2cf4e7d7dce8282a0c5b24beb53a9f46bc5b7e843",
+        "first_mass": 0.0006994582667813522,
+        "first_signal_over_sigma": 0.32514774144551134,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 4.554742215221887e-08,
+            "complementary_normal": 8.165099931179225e-08,
+            "geometric": 9.349585842391639e-08,
+            "tangential": 7.215620418857444e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 4.554392248390966e-08,
+            "complementary_normal": 2.023712110526465e-05,
+            "geometric": 2.0237172250686658e-05,
+            "tangential": 7.821821321114939e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 4.258627206775227e-05,
+            "complementary_normal": 8.165099934011833e-08,
+            "geometric": 4.258635025668389e-05,
+            "tangential": 7.191008609264707e-07
+          },
+          "Single": {
+            "axial_normal": 0.00011020514387975547,
+            "complementary_normal": 9.210074988943576e-05,
+            "geometric": 0.00014362354199147644,
+            "tangential": 8.885609273548573e-07
+          }
+        },
+        "query_index": 51,
+        "second_masses": [
+          0.00015523982773583492,
+          0.004204431202008257,
+          0.008624076305477872
+        ],
+        "status": "success",
+        "theta": 4.9889108548460115
+      },
+      {
+        "axis_digest": "cccece75c387c971862f056492390364ffd1e9c2dd03dd85e96868e49d207d76",
+        "first_mass": 0.0007057988571739899,
+        "first_signal_over_sigma": 0.3198661452912666,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 5.7925963263409436e-08,
+            "complementary_normal": 1.0367991024080634e-07,
+            "geometric": 1.1876444407569935e-07,
+            "tangential": 9.201271135517194e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 5.791894303787478e-08,
+            "complementary_normal": 2.3045497754701938e-05,
+            "geometric": 2.3045570340978703e-05,
+            "tangential": 1.0113933669132193e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 4.826690615663726e-05,
+            "complementary_normal": 1.036799102207835e-07,
+            "geometric": 4.826701735324226e-05,
+            "tangential": 9.164099581255484e-07
+          },
+          "Single": {
+            "axial_normal": 0.00012493783228756372,
+            "complementary_normal": 0.0001047050912448149,
+            "geometric": 0.00016301109762632764,
+            "tangential": 1.1715316010580487e-06
+          }
+        },
+        "query_index": 52,
+        "second_masses": [
+          0.00015524085369909794,
+          0.004204496635928327,
+          0.008624328954131167
+        ],
+        "status": "success",
+        "theta": 5.074132661400898
+      },
+      {
+        "axis_digest": "6e14c39fd55f55273dfc4bd49732dfc643d9ccb072f112dd5700755e707eb3d5",
+        "first_mass": 0.0007098609810480478,
+        "first_signal_over_sigma": 0.3164637108503651,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 7.35337449170728e-08,
+            "complementary_normal": 1.31783829195631e-07,
+            "geometric": 1.509115673439721e-07,
+            "tangential": 1.111953614542783e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 7.352087553839408e-08,
+            "complementary_normal": 2.668822664513882e-05,
+            "geometric": 2.668832757042392e-05,
+            "tangential": 1.244262827510923e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 5.5594912486774214e-05,
+            "complementary_normal": 1.3178382915270146e-07,
+            "geometric": 5.559506841287016e-05,
+            "tangential": 1.1065388903209132e-06
+          },
+          "Single": {
+            "axial_normal": 0.00014394107280358287,
+            "complementary_normal": 0.00012099588428448846,
+            "geometric": 0.0001880399856414792,
+            "tangential": 1.4764493907429222e-06
+          }
+        },
+        "query_index": 53,
+        "second_masses": [
+          0.00015524236847958638,
+          0.004204593263955836,
+          0.008624701877242246
+        ],
+        "status": "success",
+        "theta": 5.161859837946397
+      },
+      {
+        "axis_digest": "adfee08dd3ffc13f0fffe484f5b461624f630b32ef0737979a5fdb1bbe91a935",
+        "first_mass": 0.0007111963813922752,
+        "first_signal_over_sigma": 0.3153511371487935,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 9.116577875290853e-08,
+            "complementary_normal": 1.6461413555516247e-07,
+            "geometric": 1.8817339769360316e-07,
+            "tangential": 1.2819734746351022e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 9.114416629050132e-08,
+            "complementary_normal": 3.1196832579842476e-05,
+            "geometric": 3.119696516826038e-05,
+            "tangential": 1.4662162633015118e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 6.459831985702586e-05,
+            "complementary_normal": 1.6461413558859897e-07,
+            "geometric": 6.459852918784612e-05,
+            "tangential": 1.2743851246652079e-06
+          },
+          "Single": {
+            "axial_normal": 0.00016728099319550545,
+            "complementary_normal": 0.00014105811938074645,
+            "geometric": 0.00021881572892087152,
+            "tangential": 1.7895813152923495e-06
+          }
+        },
+        "query_index": 54,
+        "second_masses": [
+          0.0001552445243696809,
+          0.0042047308053006095,
+          0.008625232275806709
+        ],
+        "status": "success",
+        "theta": 5.252684657686203
+      },
+      {
+        "axis_digest": "ba3e3f68d6ccca33cdbe62ee796c9b2384c101e286b3a965dd286582640ae853",
+        "first_mass": 0.0007094158367213634,
+        "first_signal_over_sigma": 0.31686912386294597,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.0785814396555315e-07,
+            "complementary_normal": 1.9818316011368696e-07,
+            "geometric": 2.2563309715029687e-07,
+            "tangential": 1.394447831755168e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.0782612443683624e-07,
+            "complementary_normal": 3.6494187781943864e-05,
+            "geometric": 3.6494346270620745e-05,
+            "tangential": 1.6351719345957548e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 7.508546873232492e-05,
+            "complementary_normal": 1.9818316010432613e-07,
+            "geometric": 7.508572971558206e-05,
+            "tangential": 1.3844461064352479e-06
+          },
+          "Single": {
+            "axial_normal": 0.00019444732622978428,
+            "complementary_normal": 0.0001644731873208555,
+            "geometric": 0.0002546786035796557,
+            "tangential": 2.0580559923563653e-06
+          }
+        },
+        "query_index": 55,
+        "second_masses": [
+          0.00015524744414977229,
+          0.004204917049062574,
+          0.008625949586705556
+        ],
+        "status": "success",
+        "theta": 5.347142398374512
+      },
+      {
+        "axis_digest": "1c4ce229e3ee30056aa571e0544a25ac72bdc942a3c051d10b077806702fbd7d",
+        "first_mass": 0.0007042543704364928,
+        "first_signal_over_sigma": 0.32121781668553284,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.1934837815408396e-07,
+            "complementary_normal": 2.2667218151084584e-07,
+            "geometric": 2.5617329332420846e-07,
+            "tangential": 1.388817098789948e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.193097228541656e-07,
+            "complementary_normal": 4.22616426574983e-05,
+            "geometric": 4.2261810102570814e-05,
+            "tangential": 1.6710898609756926e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 8.639867791211687e-05,
+            "complementary_normal": 2.266721814425428e-07,
+            "geometric": 8.639897461602792e-05,
+            "tangential": 1.3769690742417324e-06
+          },
+          "Single": {
+            "axial_normal": 0.00022371968620666326,
+            "complementary_normal": 0.00018975333059881278,
+            "geometric": 0.0002933544326219583,
+            "tangential": 2.167557703816192e-06
+          }
+        },
+        "query_index": 56,
+        "second_masses": [
+          0.00015525108271772126,
+          0.004205149089891479,
+          0.008626841774874923
+        ],
+        "status": "success",
+        "theta": 5.445618445965128
+      },
+      {
+        "axis_digest": "d16d3043bd72fb840eabf156014ecc935e10daed314fdca6b8cd351cecca63f6",
+        "first_mass": 0.0006956907973609862,
+        "first_signal_over_sigma": 0.32835250853631937,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.2401067012937076e-07,
+            "complementary_normal": 2.478114636779843e-07,
+            "geometric": 2.7710927639365104e-07,
+            "tangential": 1.1951213273040153e-06
+          },
+          "Scalar-A": {
+            "axial_normal": 1.239776430486497e-07,
+            "complementary_normal": 4.7806510159701074e-05,
+            "geometric": 4.780667007223282e-05,
+            "tangential": 1.4704835530768605e-06
+          },
+          "Scalar-C": {
+            "axial_normal": 9.718636941264608e-05,
+            "complementary_normal": 2.478114637319635e-07,
+            "geometric": 9.718668482263301e-05,
+            "tangential": 1.1834498638560396e-06
+          },
+          "Single": {
+            "axial_normal": 0.0002515994701486467,
+            "complementary_normal": 0.00021382523987276643,
+            "geometric": 0.000330187106370762,
+            "tangential": 1.955373769323126e-06
+          }
+        },
+        "query_index": 57,
+        "second_masses": [
+          0.00015525501914986998,
+          0.004205400058770577,
+          0.008627805005375518
+        ],
+        "status": "success",
+        "theta": 5.548213473259141
+      },
+      {
+        "axis_digest": "32ee112b878408cb3cf2a9abff3e55d7c96bafc6bc92198018946efcb361e424",
+        "first_mass": 0.0006841165229567481,
+        "first_signal_over_sigma": 0.3378623351566441,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.2874049682406522e-07,
+            "complementary_normal": 2.680530938126897e-07,
+            "geometric": 2.9736637531476036e-07,
+            "tangential": 7.817441508208602e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.2872534574919023e-07,
+            "complementary_normal": 5.210635258643188e-05,
+            "geometric": 5.2106511186258374e-05,
+            "tangential": 9.756590772668752e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010551813044029668,
+            "complementary_normal": 2.6805309373226344e-07,
+            "geometric": 0.00010551847066764047,
+            "tangential": 7.73489711761511e-07
+          },
+          "Single": {
+            "axial_normal": 0.000273137497342795,
+            "complementary_normal": 0.00023231251170801259,
+            "geometric": 0.0003585710457032517,
+            "tangential": 1.316858522702397e-06
+          }
+        },
+        "query_index": 58,
+        "second_masses": [
+          0.0001552583664806203,
+          0.004205613504131816,
+          0.008628623499079328
+        ],
+        "status": "success",
+        "theta": 5.654608450518207
+      },
+      {
+        "axis_digest": "125144af331f3236a07de0756dfd702564ff7a317b0428b003fda7a17bb2aaf5",
+        "first_mass": 0.000670486105155516,
+        "first_signal_over_sigma": 0.34889112649322035,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.4565532300077816e-07,
+            "complementary_normal": 2.972733567493661e-07,
+            "geometric": 3.3103918063489e-07,
+            "tangential": 2.2061942582985875e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.456540859809928e-07,
+            "complementary_normal": 5.423494417043867e-05,
+            "geometric": 5.423513972128162e-05,
+            "tangential": 2.778078571747084e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010968863005252518,
+            "complementary_normal": 2.972733566302517e-07,
+            "geometric": 0.0001096890328599409,
+            "tangential": 2.1824368517505064e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002839930291120686,
+            "complementary_normal": 0.00024138294614988156,
+            "geometric": 0.0003727167385712752,
+            "tangential": 3.7703708320389195e-07
+          }
+        },
+        "query_index": 59,
+        "second_masses": [
+          0.00015526013950440323,
+          0.004205726795761406,
+          0.00862905932710226
+        ],
+        "status": "success",
+        "theta": 5.764028607092671
+      },
+      {
+        "axis_digest": "addaa1bba4ed446d42df12a17c5ca5d3d84355d6a5e10d004c9e251ddb8a4994",
+        "first_mass": 0.0006563121970977931,
+        "first_signal_over_sigma": 0.3601917041113019,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 1.7606009356840034e-07,
+            "complementary_normal": 3.384909013737383e-07,
+            "geometric": 3.8154067437195384e-07,
+            "tangential": 3.0327718906979696e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 1.7605820649322089e-07,
+            "complementary_normal": 5.4000006085522275e-05,
+            "geometric": 5.4000293028585525e-05,
+            "tangential": 3.7171980225208084e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010937224906949088,
+            "complementary_normal": 3.3849090137267003e-07,
+            "geometric": 0.00010937277281918867,
+            "tangential": 3.002569122891865e-07
+          },
+          "Single": {
+            "axial_normal": 0.000283332363633532,
+            "complementary_normal": 0.00024034507581528056,
+            "geometric": 0.0003715413619501601,
+            "tangential": 4.942703495873836e-07
+          }
+        },
+        "query_index": 60,
+        "second_masses": [
+          0.000155259996340045,
+          0.0042057181433213615,
+          0.008629029697270165
+        ],
+        "status": "success",
+        "theta": 5.87540320995014
+      },
+      {
+        "axis_digest": "41c3a86a89784ddfdc4f2de2fd587eeb9c3797823dfd016088eb1606fb0e10e6",
+        "first_mass": 0.0006434108965492633,
+        "first_signal_over_sigma": 0.37035073007206915,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.064036354760074e-07,
+            "complementary_normal": 3.7974687921394893e-07,
+            "geometric": 4.3221559751377266e-07,
+            "tangential": 5.913613116590522e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.0639715930741032e-07,
+            "complementary_normal": 5.215630328617892e-05,
+            "geometric": 5.2156711452230625e-05,
+            "tangential": 7.1769203577201e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010599575910001076,
+            "complementary_normal": 3.7974687919497174e-07,
+            "geometric": 0.00010599643920789689,
+            "tangential": 5.859170191704409e-07
+          },
+          "Single": {
+            "axial_normal": 0.00027476991938129826,
+            "complementary_normal": 0.00023244343478324466,
+            "geometric": 0.0003599006232185342,
+            "tangential": 9.413596281693582e-07
+          }
+        },
+        "query_index": 61,
+        "second_masses": [
+          0.00015525854710393342,
+          0.004205626169449012,
+          0.008628680698595381
+        ],
+        "status": "success",
+        "theta": 5.987685686829551
+      },
+      {
+        "axis_digest": "a107c92804cd267e84b2395c87cd2cedf8f99136bb2bef2bfc3f925afd9bab91",
+        "first_mass": 0.0006334986481177012,
+        "first_signal_over_sigma": 0.37808540014678377,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.2521129353833665e-07,
+            "complementary_normal": 4.0581641572019324e-07,
+            "geometric": 4.6411986372376364e-07,
+            "tangential": 5.572737358854187e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.252061735163112e-07,
+            "complementary_normal": 4.9934538683048126e-05,
+            "geometric": 4.993504634236859e-05,
+            "tangential": 6.680159281357877e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 0.00010188363268337886,
+            "complementary_normal": 4.0581641578992147e-07,
+            "geometric": 0.00010188444076968777,
+            "tangential": 5.525528910410226e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002642485988172974,
+            "complementary_normal": 0.00022290777498025336,
+            "geometric": 0.0003457097016726532,
+            "tangential": 8.632228626825084e-07
+          }
+        },
+        "query_index": 62,
+        "second_masses": [
+          0.00015525683949055278,
+          0.004205517504550972,
+          0.008628266130766159
+        ],
+        "status": "success",
+        "theta": 6.1001467498639625
+      },
+      {
+        "axis_digest": "f9d3064bd70a814509be9b32e353b926e13fcdccc4d228b7f31192ef51c1c262",
+        "first_mass": 0.0006278610402696536,
+        "first_signal_over_sigma": 0.38246025546414514,
+        "metrics": {
+          "Directional": {
+            "axial_normal": 2.3271061272584804e-07,
+            "complementary_normal": 4.1586815186741515e-07,
+            "geometric": 4.765507140005027e-07,
+            "tangential": 2.584975845860738e-07
+          },
+          "Scalar-A": {
+            "axial_normal": 2.3270958996689167e-07,
+            "complementary_normal": 4.84112382796248e-05,
+            "geometric": 4.841179754882675e-05,
+            "tangential": 3.0745170851039883e-07
+          },
+          "Scalar-C": {
+            "axial_normal": 9.91000111131613e-05,
+            "complementary_normal": 4.158681518411645e-07,
+            "geometric": 9.91008836686367e-05,
+            "tangential": 2.5642242427419554e-07
+          },
+          "Single": {
+            "axial_normal": 0.0002570994424179818,
+            "complementary_normal": 0.00021635009775313117,
+            "geometric": 0.0003360170948506731,
+            "tangential": 3.93545535482874e-07
+          }
+        },
+        "query_index": 63,
+        "second_masses": [
+          0.00015525571324281862,
+          0.004205445751799564,
+          0.008627991875693327
+        ],
+        "status": "success",
+        "theta": 6.21247887691956
+      }
+    ],
+    "retained_count": 64,
+    "retained_fill_distance": 0.06506498495588327,
+    "schema": "E5_FORMAL_POPULATION_CELL_V2",
+    "sigma": 0.016,
+    "single_kappa": 5.0,
+    "summaries": {
+      "Directional": {
+        "axial_normal_max": 2.3379182883834148e-07,
+        "axial_normal_mean": 1.1687921237672219e-07,
+        "complementary_normal_max": 4.1685587517330125e-07,
+        "complementary_normal_mean": 2.1779639667813151e-07,
+        "finite_cloud_hausdorff_upper": 0.06506498495588327,
+        "geometric_max": 4.77940845790204e-07,
+        "geometric_mean": 2.472286741389156e-07,
+        "retained_count": 64,
+        "tangential_max": 1.8120609770829059e-06,
+        "tangential_mean": 7.849412237153392e-07
+      },
+      "Scalar-A": {
+        "axial_normal_max": 2.3379146443418337e-07,
+        "axial_normal_mean": 1.1686774757870012e-07,
+        "complementary_normal_max": 5.423494417043867e-05,
+        "complementary_normal_mean": 3.7021186541926895e-05,
+        "finite_cloud_hausdorff_upper": 0.06506498495588327,
+        "geometric_max": 5.423513972128162e-05,
+        "geometric_mean": 3.7021384366321875e-05,
+        "retained_count": 64,
+        "tangential_max": 2.069993987649741e-06,
+        "tangential_mean": 9.061665773523399e-07
+      },
+      "Scalar-C": {
+        "axial_normal_max": 0.00011075282345964972,
+        "axial_normal_mean": 7.637379925075786e-05,
+        "complementary_normal_max": 4.168558750354758e-07,
+        "complementary_normal_mean": 2.177963966673898e-07,
+        "finite_cloud_hausdorff_upper": 0.06506498495588327,
+        "geometric_max": 0.00011075325700313319,
+        "geometric_mean": 7.637413083983466e-05,
+        "retained_count": 64,
+        "tangential_max": 1.8013098391165263e-06,
+        "tangential_mean": 7.798568842138223e-07
+      },
+      "Single": {
+        "axial_normal_max": 0.0002867965621000485,
+        "axial_normal_mean": 0.00019781933748969294,
+        "complementary_normal_max": 0.00024139076229559494,
+        "complementary_normal_mean": 0.0001661190078979658,
+        "finite_cloud_hausdorff_upper": 0.06506498495588327,
+        "geometric_max": 0.0003742590017603566,
+        "geometric_mean": 0.0002583198054843792,
+        "retained_count": 64,
+        "tangential_max": 2.521642098280308e-06,
+        "tangential_mean": 1.1190461345064588e-06
+      }
+    },
+    "weight_l1": 7.609954100197415,
+    "weight_max_abs_residual": 6.217248937900877e-15
+  }
+}

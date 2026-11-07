@@ -1,0 +1,26 @@
+{
+  "input_csv_sha256": "d6e626c93ad4a36697e7af1192f6b36d72d18eb8e6b320376ca27e6c835b14d1",
+  "renderer_sha256": "619d3dd28b681f3945ea5cc52b7ad8a681ee4f90f7096fffdae4bad1cfdb6837",
+  "method_order": [
+    "single",
+    "naive",
+    "proposed",
+    "ms_stsp"
+  ],
+  "log_x": true,
+  "log_y": true,
+  "bars": false,
+  "slope_boxes": false,
+  "main_title": false,
+  "subtitle": false,
+  "query_sets_retained": true,
+  "exports": {
+    "e1_stsp_population_infinity_with_ms_stsp.pdf": "c32df97175e34f8318f1b2209afaf6253973e434e6dfac11da2924a06050ec25",
+    "e1_stsp_population_infinity_with_ms_stsp.png": "e5175f654e797f27a8551f45a0e6309034dcb75243f66da27291cf93fdc377bb",
+    "figure_caption.tex": "458ba17a552e824a3d89b42a11bf5cbee1b3663fb0d5ae34c5d3bdef642e2dc9",
+    "section_5_1_1_discussion.tex": "23cdcc32fd5f8df52b4c7e103a6c360fd9f809f429509fbd87aca48e9f5445e9",
+    "supplementary_table.pdf": "3db1f548de9e3747ebd1a8929efc991616e3f9a65bc0f18c0efe111637b7a6d5",
+    "supplementary_table.tex": "c69ef569604829a2f43ee8ff910061c32d9c53df66dd90d6e07bc01c4566a92f"
+  },
+  "x_direction": "descending"
+}

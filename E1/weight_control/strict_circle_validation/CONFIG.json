@@ -1,0 +1,120 @@
+{
+  "audit_gates": {
+    "all_declared_cells_and_queries_resolved": true,
+    "cpu_gpu_fitted_point_max": 1e-10,
+    "reference_point_difference_fraction_of_min_multi_error": 0.25,
+    "required_backend": "gpu_cupy",
+    "root_position_uncertainty_fraction_of_min_multi_error": 0.1,
+    "weight_constraint_max": 1e-11
+  },
+  "bandwidth_path": {
+    "a1": 3.0,
+    "a2": 6.0,
+    "provenance": "ratios fixed by the existing E6 formal STSP/DR design",
+    "rule": "h1=a1*sigma, h2=a2*sigma"
+  },
+  "coefficient_quadrature": {
+    "absolute_tolerance": 2e-13,
+    "limit": 300,
+    "relative_tolerance": 2e-13
+  },
+  "experiment": "joint small-noise/small-bandwidth population order check on every E1 manifold",
+  "failure_policy": "retain every declared cell and query; never crop sigma points or fitting windows",
+  "geometries": {
+    "circle_r2": {
+      "homogeneous_canonical_query": true,
+      "integration_resolution": {
+        "production": 8192,
+        "reference": 32768
+      },
+      "label": "S^1 subset R^2",
+      "latent_rule": "periodic trapezoid",
+      "query_count": 1,
+      "query_phase": 0.0
+    },
+    "clifford_torus_r4": {
+      "homogeneous_canonical_query": true,
+      "integration_resolution": {
+        "production": 512,
+        "reference": 768
+      },
+      "label": "Clifford torus subset R^4",
+      "latent_rule": "tensor periodic trapezoid",
+      "query_count": 1
+    },
+    "sphere2_r10": {
+      "homogeneous_canonical_query": true,
+      "integration_resolution": {
+        "production": 768,
+        "reference": 1024
+      },
+      "label": "S^2 subset R^10",
+      "latent_rule": "Gauss-Jacobi latitude x signed-axis exact moment rule",
+      "query_count": 1
+    },
+    "sphere2_r3": {
+      "homogeneous_canonical_query": true,
+      "integration_resolution": {
+        "production": 768,
+        "reference": 1024
+      },
+      "label": "S^2 subset R^3",
+      "latent_rule": "Gauss-Jacobi latitude x signed-axis exact moment rule",
+      "query_count": 1
+    },
+    "sphere3_r4": {
+      "homogeneous_canonical_query": true,
+      "integration_resolution": {
+        "production": 768,
+        "reference": 1024
+      },
+      "label": "S^3 subset R^4",
+      "latent_rule": "Gauss-Jacobi latitude x signed-axis exact moment rule",
+      "query_count": 1
+    }
+  },
+  "kernel_power": 6,
+  "methods": [
+    "STSP",
+    "DR"
+  ],
+  "population_integration": {
+    "stsp_noncentral_radius_padding": 12.0,
+    "tail_bound_description": "latent nodes with distance/h beyond h/sigma+12 are omitted; the corresponding Gaussian displacement tail is bounded at the exp(-72) scale before dimension-polynomial factors"
+  },
+  "production_locked": true,
+  "resolutions": {
+    "production": {
+      "stsp_radial_order": 160
+    },
+    "reference": {
+      "stsp_radial_order": 320
+    }
+  },
+  "schema_version": "E1_THEORY_PATH_ALL_E1_MANIFOLDS_V1",
+  "sigma_grid": [
+    0.03,
+    0.025,
+    0.02,
+    0.016,
+    0.0125,
+    0.01,
+    0.008
+  ],
+  "slope_windows": {
+    "all_7": 7,
+    "smallest_3": 3,
+    "smallest_4": 4,
+    "smallest_5": 5
+  },
+  "solver": {
+    "coordinate_correction_tolerance": 1e-13,
+    "dr_normal_eigenvalue_max": -1e-08,
+    "full_residual_tolerance": 1e-11,
+    "max_backtracks": 16,
+    "max_iterations": 24,
+    "normalized_eigengap_min": 1e-07,
+    "projected_residual_tolerance": 1e-13,
+    "search_radius_factor": 4.0
+  }
+}

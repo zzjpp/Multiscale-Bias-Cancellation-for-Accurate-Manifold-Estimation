@@ -1,0 +1,8 @@
+{
+  "source_values_sha256": "45a7fe070148e09669db372b8f381ab91563c9743a4aa5ee207c17e9a3782a5e",
+  "renderer_sha256": "987f8848e52b7ba3bc7e922b9e3c188c01bddc57c67f46d0a2622743ad5ea617",
+  "exports": {
+    "P1_population_correspondence_scaling.png": "ec96e3654388f7822d024029697511d42ce6e9ac211bf5e94c1122f9a4cedffe",
+    "P1_population_correspondence_scaling.pdf": "b6ffb99f2eb30635e88cc2325f49a49c74b6b240c14ceec64bac35b6bf830cf0"
+  }
+}

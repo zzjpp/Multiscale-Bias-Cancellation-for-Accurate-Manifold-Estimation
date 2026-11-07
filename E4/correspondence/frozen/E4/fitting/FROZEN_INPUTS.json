@@ -1,0 +1,300 @@
+{
+  "schema": "E4_SHARED_FIXED_H1_QUERY_INPUTS_V1",
+  "repeats": {
+    "10": {
+      "old_packet_sha256": "c28441395abc3bb975ef86fc8806ba2aceb6062316aec9e9d9e7c708f6f351f4",
+      "query_file_sha256": "7409e4f19817f971b926be05101eb37b31d9cb026ddd2bd0490a246f04d96fcc",
+      "query_coordinate_sha256": "bb7fe581029162b64fbaea809b9feabbd412a2bb98dd9390ce363255cc1d64cc",
+      "data_file_sha256": "ff6a830f082de70aab02c1a64b2c8c9f07ef07e5f4a94b2cf932de511ea2ed97",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 10,
+        "clean": [
+          20260911,
+          4,
+          10,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          10,
+          1
+        ],
+        "theta_sha256": "22ba647fa650382be3e255efc20d754b18e3f908842e2b99b7ca4686e84f9166",
+        "clean_sha256": "2bfe0b22a6d94be1e2e0ad56a91e4aa74595cce0ab4a271697853c0e7fcd3677",
+        "standard_noise_sha256": "becb9ea6a812b6a7b72a1df2a4895dc403ab84bfa1ee6672aeb32071c0b7fdbe"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "11": {
+      "old_packet_sha256": "592fd06ff702be2da49dc69f9f1b9dc285bd1d5f05e920408e04f6327ffa94e6",
+      "query_file_sha256": "f3a031e953a99d332bb23af875354eae3ce35b4e14e24be576c1eca2db518680",
+      "query_coordinate_sha256": "49098c6704c1cd7eb213b0beb939c9bbe1faa48872e4988ce12eaae82d0bf130",
+      "data_file_sha256": "f305d39c83e84e083cc9c7be54dd18a5929baef9c4649ab6ea8b189c0a6bfeed",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 11,
+        "clean": [
+          20260911,
+          4,
+          11,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          11,
+          1
+        ],
+        "theta_sha256": "eb6e116148d72d09f7cdcac3a4d306d6bf2ab3b7b9f1ebe553ef93f4fcb9d211",
+        "clean_sha256": "9af2eb62598676431a5e68a058770f958e4fec10266a686f253aca74327ea29b",
+        "standard_noise_sha256": "e6627562a7b0634e77dcf8cdc9da156fcb1739bb2e0fe2ee3094e915f85d6d28"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "12": {
+      "old_packet_sha256": "3f391da9cf0aae5b505516634c6d567bf3bf03c05a574de1a251e2e5a630142c",
+      "query_file_sha256": "3ef49ccb3187678dc3132fca10c6a3653b634d91d9df28cf125da93d8d6243ea",
+      "query_coordinate_sha256": "b3817119e75c7b2e93698f48fcf985406322cf2f03b296abc6d86d5529053c72",
+      "data_file_sha256": "cb4d013197f76452db5f82456070748633b6167d33f3e92f39b4a86ad3aa55ac",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 12,
+        "clean": [
+          20260911,
+          4,
+          12,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          12,
+          1
+        ],
+        "theta_sha256": "215f5e0c6b2b010660626b8e5b5100d18f861296a06a26302c6bf12a1fdb0119",
+        "clean_sha256": "9b0e0d010c5e3d57e4677537cb30e26f4d6a3bd400720127881b5361b67d5140",
+        "standard_noise_sha256": "cc000fe1054c4ee919e09fe74fa449ad6cf148587f8dc1b78586d4fc845c4802"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "13": {
+      "old_packet_sha256": "da39163d85d6199537102162b2b69366dea5bab522b2ddb73b792ab77a954d09",
+      "query_file_sha256": "58ab6fc02df53c7a60d94ffa21d1b7d8ce56b2b7d5a1e3acc293b83ae445dcc8",
+      "query_coordinate_sha256": "fc0b6122dcdd6f82bd7090d39a43ca9a4dc56356ba6d9847dd7333e19549d451",
+      "data_file_sha256": "2c3baba3b65fcff16a59eaa88d3c5acc6d40983464ec080cd8c5e237d78157ee",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 13,
+        "clean": [
+          20260911,
+          4,
+          13,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          13,
+          1
+        ],
+        "theta_sha256": "59edca1af2dae90a9938c58131c55d8d0c018b5daeced61b5097b961f55782d2",
+        "clean_sha256": "bbf224504a7f20a2af10266dc2a8c3c383e818e7a6ccaea1c57f7a95a338eb3e",
+        "standard_noise_sha256": "75edd23f44a6bc9173da5f7f2261afc275d7aab07514fce7c0274ceba7a74ef7"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "14": {
+      "old_packet_sha256": "559fc9464e7213a4d38cb8c2a81968b77fc45f819a3094930fef0849de45dc57",
+      "query_file_sha256": "7d51d969d603967d3e24e2749560911a7e1c9e2bd68d59b86781493209501e40",
+      "query_coordinate_sha256": "e4e987347350baee68d802a33744ae45646b76950536cce1e597d71fdc6a8d80",
+      "data_file_sha256": "cc08c75930d9f31bbf10e0ff3e531ab0ad29aee8c2e4d9114611725294c175f5",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 14,
+        "clean": [
+          20260911,
+          4,
+          14,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          14,
+          1
+        ],
+        "theta_sha256": "1a9f7ba08006245f8f7b2230720989721549fdc063c8d73c613c477d5abb22a1",
+        "clean_sha256": "35350a24fb6b426b1a061d7ae05a38835fcffac4e0166224cbd6cbc3d91dafa0",
+        "standard_noise_sha256": "a493a8251543f7ce4544f61eea43d414cf88d325c77c8ad6e4a5aa4376655328"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "15": {
+      "old_packet_sha256": "217ae6cb6860ed467b19828d71e3cd7c233f8b67bd136e2ae67562b9a4720694",
+      "query_file_sha256": "6cb7edf8a1efa9534c912849f1ba4ba4fa7b0181a2093983be9a79a7513ee895",
+      "query_coordinate_sha256": "b6f20ba76a614ee6ddd1831a54be10a84f56ae76900ebeb18040f32b09510c8d",
+      "data_file_sha256": "c7f882a548cc4271d55270547c62d2d019889643e0530e6c9d7dabad9f0572ba",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 15,
+        "clean": [
+          20260911,
+          4,
+          15,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          15,
+          1
+        ],
+        "theta_sha256": "a9b7aa9ef703b58f2d5f57f4a0edac07dfa087fa1ac7d01d1ad7dd9306c0e521",
+        "clean_sha256": "8243c8fc8ad6ced07d4c8dc0336dae69981f22bd2a78e6aeb4d2a2fa7dd64e2b",
+        "standard_noise_sha256": "be0e59e5816fdcd536409e106c99faa3814efe8e72d75f868f03f2a5702f4efc"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "16": {
+      "old_packet_sha256": "4c3eb6bc08501db4fbbfffb03fa055c63f27a45d05d7836977016d64389383d2",
+      "query_file_sha256": "c50b22aafd7834b5ceab28172f2d916bccdf95218f5302d1112301e7e48f87e4",
+      "query_coordinate_sha256": "1687708e6329483b3459857f00ffe0e86623fbf266b9ca86a0ba805cd60aeaf1",
+      "data_file_sha256": "3afea9a55638dde585439e3d184a81ed296ac0f4a6acb338060eead7ab490103",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 16,
+        "clean": [
+          20260911,
+          4,
+          16,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          16,
+          1
+        ],
+        "theta_sha256": "85ea15f7ca6395301b10d5df7f21015e97128127aa3e94784a95b1d801d2d56a",
+        "clean_sha256": "13d0482441c20e58a56057026afdd7fefe6a1991416d29349c4cfae4947416be",
+        "standard_noise_sha256": "5f4cd4e61dff713673995d1c2b0a362c24d29d5d10fc9450be3b9f4f90de669d"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "17": {
+      "old_packet_sha256": "893b254dfa241ad252b288557c2900014578bba967eab16e01fd27740db78143",
+      "query_file_sha256": "d461b750ece2417b807e12e402a33ae97d4fb99b76179d6e81e7e4c3d2e7ac00",
+      "query_coordinate_sha256": "55a3b0ab3af1d803409b61d4aacd46902d824bf3b6802382c933d273f02374c3",
+      "data_file_sha256": "5d15747512ffa4f5b384491ed830d886de4f357071f2ff1829cff8e772d108b1",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 17,
+        "clean": [
+          20260911,
+          4,
+          17,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          17,
+          1
+        ],
+        "theta_sha256": "84045352ce771f16d29cd015b3d1eb840157c3c9b8b901d860e54446a33e7f28",
+        "clean_sha256": "26b3a2ef9ab1b7c2e2cd0edcf7b86bb8847b1b0e6850de80fb232344d42754c3",
+        "standard_noise_sha256": "78e4dca4aa9b101b468aaa6a609e6a41de7844bb86d8c8adf166b16200f40e94"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "18": {
+      "old_packet_sha256": "544b0e9bb7778d16e2ba2c8b0679554b165e65fbafb0492363214c4102352842",
+      "query_file_sha256": "078757d192cca5cbf07efc31e87f97f6ad2af700ef188a23e4d15f59d820d18b",
+      "query_coordinate_sha256": "0b2b6d63886932c2dd7b4f58ee2d7f04fd63354b0352a5e86a3530b25e1e6d48",
+      "data_file_sha256": "e359f99e074062c0ac12bb717eb671cc962f09b1d6b8f077d3d3784f131cbe15",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 18,
+        "clean": [
+          20260911,
+          4,
+          18,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          18,
+          1
+        ],
+        "theta_sha256": "c5d9fb8e7c657761b23bac0e213b737160de756d26553e8e2608a53cf879b907",
+        "clean_sha256": "4a53ead25efc762558c5eb3fb8dfe0953d914fd4633987406ef294d730ff6a68",
+        "standard_noise_sha256": "97213bb631f1b9ecc656b89a64f4a05e929b0c4629e4cacfd70b3c3e00c4ff08"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    },
+    "19": {
+      "old_packet_sha256": "5eccfbad736a0b2287848a71f2771066cf034f5ca9990583db8a2b5bfad91ef8",
+      "query_file_sha256": "78c644f1b899db70c33c43ad068bb3b9d742a94148b58247057aa5319cf20093",
+      "query_coordinate_sha256": "b62f74bcd919d47caa2caf70764d93dcf14dd97464f58d66bb59db554a5ebb65",
+      "data_file_sha256": "73be87a76b679d7a83fca04db6e375ed9ae13781fa2615ec9985f271712b4187",
+      "seed_lineage": {
+        "algorithm": "PCG64DXSM",
+        "experiment_id": 4,
+        "repeat": 19,
+        "clean": [
+          20260911,
+          4,
+          19,
+          0
+        ],
+        "noise": [
+          20260911,
+          4,
+          19,
+          1
+        ],
+        "theta_sha256": "91f795cb15e99adfa1a57a7a4feea78c7dd5e70eedf78ef2d5e922e6d5f4ae81",
+        "clean_sha256": "506c7d14bc1e9c9d6b2665ecf90d1750117311927d9c3f4f36be1069c438a55b",
+        "standard_noise_sha256": "b834bcaad30a70eaaa56f8225d671095d836d62de40d4ebf7e750b67dbea6e81"
+      },
+      "query_source": "actual saved ENF reference inputs on empirical h1 fit"
+    }
+  },
+  "original_sources": {
+    "run_density_scan.py": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36",
+    "config.json": "9c7c54389b6e3f85001378e805942e7c1adb8481c15422cec17941258937d32d",
+    "density_scan_config.json": "375acc2fc43275797961b7f6a4f6103a7ebdb97ff63c64370b5293801f5837f2",
+    "data_hashes_n200000.json": "ed0942691463687ca234df274c44059d55cece048b2145fca702a591b91b7dbf",
+    "requirements.txt": "6f39695f3f50af68983ca8ad975d5af692534e575cd16da2b242a902e41f87a1",
+    "requirements-gpu-cu13.txt": "5c7e0949e035655472c4aeaf6f127880d67b1ab7b5d7d22f7fb69b7d78fc14e1",
+    "requirements-gpu-compute.txt": "db4c74b1e14126e1a3c468c8ed3cabca3d441250806f8f77c5236f2fcee7a85b",
+    "src/e4/coefficients.py": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8",
+    "src/e4/config.py": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301",
+    "src/e4/experiment.py": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f",
+    "src/e4/geometry.py": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e",
+    "src/e4/gpu_operator.py": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d",
+    "src/e4/operator.py": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1",
+    "src/e4/pipeline.py": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6",
+    "src/e4/solver.py": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165",
+    "src/e4/__init__.py": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250"
+  },
+  "all_query_counts": 32,
+  "query_source": "ENF actual h1 references",
+  "sample_size": 200000,
+  "sigma": 0.06,
+  "h1": 0.12,
+  "h2": 0.24,
+  "no_query_point_selection": true
+}

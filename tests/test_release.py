@@ -14,7 +14,7 @@ def invoke(entry,*args):
     return subprocess.run([sys.executable,'-X','utf8','-B',str(ROOT/entry),*args],cwd=ROOT,
                           env=ENV,capture_output=True,text=True,encoding='utf-8',timeout=180)
 
-@pytest.mark.parametrize('exp',['E1','E2','E3','E4','E5','E6'])
+@pytest.mark.parametrize('exp',['E1','E2','E3','E4','E5'])
 def test_documented_entrypoint(exp):
     result=invoke(exp+'/reproduce.py','--help')
     assert result.returncode==0,(result.stdout,result.stderr)
@@ -29,7 +29,7 @@ def test_actual_cpu_smoke(exp,method):
     assert result.returncode==0,(result.stdout,result.stderr)
     assert 'smoke' in result.stdout.lower()
 
-@pytest.mark.parametrize('exp',['E4','E6'])
+@pytest.mark.parametrize('exp',['E4'])
 def test_actual_controlled_pipeline(exp):
     result=invoke(exp+'/smoke.py')
     assert result.returncode==0,(result.stdout,result.stderr)
@@ -72,7 +72,7 @@ def test_distribution_manifest():
 
 def test_changed_member_rejected(tmp_path):
     member=tmp_path/'fake.py';member.write_text('changed',encoding='utf-8')
-    (tmp_path/'SOURCE_MANIFEST.json').write_text(json.dumps(dict(schema='PAPER62_PUBLIC_SOURCE_AND_DATA_V1',
+    (tmp_path/'SOURCE_MANIFEST.json').write_text(json.dumps(dict(schema='PAPER71_PUBLIC_SOURCE_AND_DATA_V1',
         files={'fake.py':{'sha256':'0'*64,'size':7}})),encoding='utf-8')
     spec=importlib.util.spec_from_file_location('release_validation_negative',ROOT/'validate_release.py')
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)

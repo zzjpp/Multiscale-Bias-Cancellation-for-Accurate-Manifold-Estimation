@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "geometry_residuals": {
+    "P0_idempotent": 0.0,
+    "S0_idempotent": 0.0,
+    "normal_projector_split": 0.0,
+    "normal_subspaces_orthogonal": 0.0,
+    "nu0_spans_P0": 0.0,
+    "translated_nu0_guide_parallel_to_true_axis": 0.0,
+    "translated_nu0_guide_stays_in_normal_plane": 0.0,
+    "P0H_component_in_RanP0": 0.0,
+    "P0H_component_parallel_to_field": 0.0,
+    "S0H_component_in_RanS0": 0.0,
+    "S0H_component_parallel_to_field": 0.0,
+    "b_perp_component_in_RanS0": 0.0,
+    "S0H_bperp_collinear_in_R3": 0.0,
+    "S0H_bperp_collinear_in_display": 0.0,
+    "P0H_perpendicular_to_S0H_in_R3": 0.0,
+    "full_displacement_normal": 0.0,
+    "nonzero_closing_gap_is_remainder": 1.8061962157693974e-16,
+    "leading_components_plus_remainder_close_to_full": 0.0,
+    "normal_graph_orthogonality_max": 4.440892098500626e-16,
+    "TikZ_projected_curve_formula_max": 1.6011864169946884e-15,
+    "fitted_position_at_zero_is_x_plus_u": 0.0
+  },
+  "S0_rank": 1,
+  "position_x_plus_u_in_R3": [
+    0.0,
+    2.0999999999999996,
+    1.1199999999999999
+  ],
+  "projected_full_displacement": [
+    0.147,
+    2.8279999999999994
+  ],
+  "leading_sum_in_R3": [
+    0.0,
+    2.05,
+    1.1099999999999999
+  ],
+  "nonzero_schematic_remainder_R3": [
+    0.0,
+    0.05,
+    0.01
+  ],
+  "remainder_interpretation": "Nonzero schematic O(sigma^4) remainder, not separately drawn; no asymptotic rate is tested by the drawing.",
+  "projected_remainder_norm": 0.056872664787224456,
+  "nu0_direction_guide_translation_R3": [
+    0.0,
+    0.0,
+    -0.2
+  ],
+  "curve_model": "p(t)=(t,a*t^2,b*t^2), q(t)=p(t)+Q(t)U, Q(t) the true normal projector.",
+  "PDF": {
+    "pages": 1,
+    "raster_images": 0,
+    "fonts": [
+      {
+        "name": "/PNNNWO+CMMI10",
+        "embedded": true
+      },
+      {
+        "name": "/DLKYMN+CMR7",
+        "embedded": true
+      },
+      {
+        "name": "/UGKTDD+CMSY7",
+        "embedded": true
+      },
+      {
+        "name": "/KIKRDE+CMR10",
+        "embedded": true
+      },
+      {
+        "name": "/YKSMYB+CMMI7",
+        "embedded": true
+      },
+      {
+        "name": "/UWGXIM+CMSY10",
+        "embedded": true
+      },
+      {
+        "name": "/POWUVC+CMR5",
+        "embedded": true
+      }
+    ],
+    "width_cm": 11.80309777777778,
+    "height_cm": 8.093145555555555
+  },
+  "source_sha256": "af409ce7104f58681160f76938ee7972869aa7564c24389387d1bedcd1bc58e0",
+  "PDF_sha256": "3084accd69bb5756a8d159643fda79cff55c8cbebb06b854260f338851181679",
+  "refinement_checks": {
+    "full_displacement_change_norm": 4.965068306494546e-16,
+    "closing_gap_ratio_to_previous": 0.5,
+    "gray_nu0_marker_parallel_shift_verified": true,
+    "plane_fill_percent_black": 1.5,
+    "plane_outline_width_pt": 0.35,
+    "higher_order_remainder_not_separately_drawn": true
+  },
+  "visual_review": {
+    "status": "PASS",
+    "views": [
+      "yy_normal_decomposition.png",
+      "preview.png",
+      "print_preview.png"
+    ],
+    "checks": [
+      "translated gray direction guide separated from blue component",
+      "orange tip close to fitted point",
+      "teal and orange components remain strictly collinear",
+      "lightened plane does not dominate",
+      "correct math glyphs and readable unclipped labels",
+      "remainder and translated-guide conventions explained in caption"
+    ]
+  }
+}

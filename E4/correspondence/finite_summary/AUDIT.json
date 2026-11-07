@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "finite_packets": 10,
+  "query_count_per_repeat": 32,
+  "primary_method_configurations": 18,
+  "per_query_rows": 5760,
+  "all_query_failure_counts": 0,
+  "CP_points_checked": 320,
+  "CP_nearest_of_ENF_and_NN512_check": true,
+  "minimum_CP_distance_to_any_NN512_candidate": 0.0010426276024140884,
+  "CP_is_not_discrete_NN": true,
+  "packet_sha256": {
+    "repeat_10.json": "3d4b59059f32ef3775a67b9810ac9387843cdb64ff67db87a321b41cf2c1cd55",
+    "repeat_11.json": "4b8560b1faf50bd05950283883f386961867e58afb420c1f2f7dc02711724aa5",
+    "repeat_12.json": "018c8d9603fdc991c3940f9abea5ff848e721469515c520d68ac36773ad42cbf",
+    "repeat_13.json": "85b22742f8646bc8328bb4009600ff3a84e61bf51fb26d09ff54a0058bee1def",
+    "repeat_14.json": "aca7e68091226866e4bfd5dbdf8c03224be4608e7f0c4729cfb0c852f0ebb4e5",
+    "repeat_15.json": "c6143f356c9ef12db84795cb60c1f2d8e052fae9c172e54d77ee9c5351bf3292",
+    "repeat_16.json": "b4a8290df850049736d7b2c0870b737453417ca4f35e9739cc6590496f7138a7",
+    "repeat_17.json": "2335a96cd0f5d8491e77a0165d7930a5350fb73eb4f8cbfab34ffa28fba81fff",
+    "repeat_18.json": "d95b9ed364741626c6c345594ccb3fe666a36012252d8a9801001f1bf01d3dba",
+    "repeat_19.json": "4abf44edea56790a86cf3f340356eaf6c62d1f6c8c9a3a4bf5fd15e56c5ccf89"
+  },
+  "summary_sha256": "f4eb0cf259b0cbb21c44de4f16028e0e2c65322ce37b3257e4e9fb0e1c025d9c",
+  "source_sha256": "b1b7692ff35c5a22bfa0b0fc70c159e887feee29d5b6c1b12dab7e19c5ac316d",
+  "timing": "Fresh serial CPU single thread, all representation construction charged. NN exact nested fits reused and cumulative actual generation through M charged. No original GPU times pooled.",
+  "CP_scope": "Continuous local fitted-sheet optimization with multi-start/resolution checks; not a formal mathematical global certificate over arbitrary spurious empirical components."
+}

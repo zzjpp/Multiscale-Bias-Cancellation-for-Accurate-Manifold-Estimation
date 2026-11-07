@@ -1,0 +1,116 @@
+{
+  "scope": "Source-level call-path verification tied to the ten actual saved finite STSP runs; no new fitting, timing or scientific audit.",
+  "date": "2026-11-04",
+  "status": "VERIFIED_SOURCE_AND_SAVED_RUNS",
+  "empirical_target_chart": "z(s)=y1+s*T+B*u(s), with B and T from target h2 empirical PCA at y1; solve B^T R_h2(z)=0 at every objective/derivative evaluation.",
+  "optimization_parameter": "Estimated ambient tangent displacement s, not true curve parameter theta.",
+  "runtime_target": "continuous_cp.py:continuous_cp",
+  "legacy_geometry_assisted_target": "frozen/.../pipeline.py:continuous_nn",
+  "legacy_geometry_assisted_function_called_by_this_driver": false,
+  "finite_operator": "Empirical observations only: KDTree support, K6 weighted centered covariance/eigenspaces, empirical residual and derivatives.",
+  "root_solver": "Zero initial normal coordinate at each y1+s*T; Newton/backtracking on empirical residual; no true-coordinate initializer inside CP.",
+  "reference_query_construction": "Geometry-assisted common benchmark design. Exact archived y1 coordinates reused; validation reconstructs h1 roots with true gamma/normal_basis.",
+  "original_NN_library": "Geometry-assisted branch initializers retained from original E4.",
+  "global_scope": "Numerically checked local fitted sheet, not a formal global closest-point certificate over arbitrary additional components.",
+  "continuity_scope": "Local implicit-function construction with numerical Jacobian/transversality checks. No globally reconstructed atlas or uniform-curvature certificate.",
+  "measured_cost": "perf_counter elapsed wall-clock CPU-backend seconds for 32 queries per original parent; ten-parent summary, not cost per query or a universal CP lower bound.",
+  "included_cost": [
+    "Observation-array construction, both STSP indices and weights",
+    "True-chart common reference reconstruction/validation",
+    "CP h2 PCA, implicit chart solves, derivatives, scalar optimization and four normal multistart checks",
+    "Extrapolation combination"
+  ],
+  "excluded_cost": [
+    "Archived file I/O",
+    "True-curve arclength/query-grid generation at finite_experiment.py:52, outside the timers",
+    "True-curve projection for Oracle/evaluation and truth metrics",
+    "Diagnostics packet writing and plotting"
+  ],
+  "terminology": "Empirical local-chart continuous CP benchmark with geometry-assisted common reference queries. The CP target search itself does not use the true parametrization; the full benchmark is not an entirely data-driven end-to-end reconstruction.",
+  "timing_summary": [
+    {
+      "method": "CP",
+      "shared_seconds_median": "0.9022915999958059",
+      "correspondence_seconds_median": "24.615334399990388",
+      "total_seconds_median": "25.562183799986087",
+      "total_seconds_q1": "23.614923449989874",
+      "total_seconds_q3": "27.255738525007473"
+    },
+    {
+      "method": "ENF",
+      "shared_seconds_median": "0.9022915999958059",
+      "correspondence_seconds_median": "1.282984649995342",
+      "total_seconds_median": "2.2762540499970783",
+      "total_seconds_q1": "2.1255772999902547",
+      "total_seconds_q3": "2.512581324990606"
+    }
+  ],
+  "raw_packets": [
+    {
+      "repeat": 10,
+      "sha256": "3d4b59059f32ef3775a67b9810ac9387843cdb64ff67db87a321b41cf2c1cd55",
+      "source_bound": true
+    },
+    {
+      "repeat": 11,
+      "sha256": "4b8560b1faf50bd05950283883f386961867e58afb420c1f2f7dc02711724aa5",
+      "source_bound": true
+    },
+    {
+      "repeat": 12,
+      "sha256": "018c8d9603fdc991c3940f9abea5ff848e721469515c520d68ac36773ad42cbf",
+      "source_bound": true
+    },
+    {
+      "repeat": 13,
+      "sha256": "85b22742f8646bc8328bb4009600ff3a84e61bf51fb26d09ff54a0058bee1def",
+      "source_bound": true
+    },
+    {
+      "repeat": 14,
+      "sha256": "aca7e68091226866e4bfd5dbdf8c03224be4608e7f0c4729cfb0c852f0ebb4e5",
+      "source_bound": true
+    },
+    {
+      "repeat": 15,
+      "sha256": "c6143f356c9ef12db84795cb60c1f2d8e052fae9c172e54d77ee9c5351bf3292",
+      "source_bound": true
+    },
+    {
+      "repeat": 16,
+      "sha256": "b4a8290df850049736d7b2c0870b737453417ca4f35e9739cc6590496f7138a7",
+      "source_bound": true
+    },
+    {
+      "repeat": 17,
+      "sha256": "2335a96cd0f5d8491e77a0165d7930a5350fb73eb4f8cbfab34ffa28fba81fff",
+      "source_bound": true
+    },
+    {
+      "repeat": 18,
+      "sha256": "d95b9ed364741626c6c345594ccb3fe666a36012252d8a9801001f1bf01d3dba",
+      "source_bound": true
+    },
+    {
+      "repeat": 19,
+      "sha256": "4abf44edea56790a86cf3f340356eaf6c62d1f6c8c9a3a4bf5fd15e56c5ccf89",
+      "source_bound": true
+    }
+  ],
+  "actual_CP_queries": 320,
+  "chart_evaluations_range": [
+    11,
+    12
+  ],
+  "actual_scalar_grid_nodes": [
+    9
+  ],
+  "source_sha256": {
+    "continuous_cp.py": "ea18b32bc1a14283582920d133cd8d9e2f7e53c5f7f9972ce2e5e07e72fda655",
+    "finite_experiment.py": "abf3b522d6f62b4e336d33de42aba628cf03ac098bf897359b4e1042468e8550",
+    "frozen/E4/fitting/original/src/e4/operator.py": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1",
+    "frozen/E4/fitting/original/src/e4/solver.py": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165",
+    "frozen/E4/fitting/original/src/e4/pipeline.py": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6",
+    "frozen/E4/fitting/original/config.json": "9c7c54389b6e3f85001378e805942e7c1adb8481c15422cec17941258937d32d"
+  }
+}

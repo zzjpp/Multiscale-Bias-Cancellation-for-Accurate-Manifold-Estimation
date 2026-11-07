@@ -1,0 +1,15 @@
+{
+  "python": "3.12.9",
+  "OS": "Windows-11-10.0.26200-SP0",
+  "CPU_identifier": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+  "packages": {
+    "numpy": "2.4.4",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.1",
+    "mpmath": "1.3.0"
+  },
+  "finite_backend": "Actual local NumPy/SciPy CPU float64",
+  "thread_control": "Scientific drivers set OPENBLAS_NUM_THREADS=MKL_NUM_THREADS=OMP_NUM_THREADS=1 before NumPy import.",
+  "remote": "Authorized key-only read-only probe timed out; no remote job, mutation or credential inspection.",
+  "CPU_marketing_name": "Not collected; Windows CIM read was unavailable. CPU identifier above is the actual platform identifier."
+}

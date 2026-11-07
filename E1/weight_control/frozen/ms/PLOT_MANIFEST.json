@@ -1,0 +1,51 @@
+{
+  "fields": [
+    "single_E_infinity",
+    "multi_E_infinity",
+    "ms_stsp_E_infinity"
+  ],
+  "slopes_all_seven": [
+    {
+      "geometry": "circle_r2",
+      "single_E_infinity": 2.001415472556209,
+      "multi_E_infinity": 4.004123078351708,
+      "ms_stsp_E_infinity": 1.941151769446664
+    },
+    {
+      "geometry": "sphere2_r3",
+      "single_E_infinity": 2.001826136808174,
+      "multi_E_infinity": 4.005450203576707,
+      "ms_stsp_E_infinity": 1.9787967462845046
+    },
+    {
+      "geometry": "clifford_torus_r4",
+      "single_E_infinity": 2.00264332369472,
+      "multi_E_infinity": 4.007814542555005,
+      "ms_stsp_E_infinity": 1.9644664967062504
+    },
+    {
+      "geometry": "sphere3_r4",
+      "single_E_infinity": 2.002205327844083,
+      "multi_E_infinity": 4.006686071097573,
+      "ms_stsp_E_infinity": 1.9868634614833436
+    },
+    {
+      "geometry": "sphere2_r10",
+      "single_E_infinity": 2.0016663598627242,
+      "multi_E_infinity": 4.004998793816231,
+      "ms_stsp_E_infinity": 2.0777902983827254
+    },
+    {
+      "geometry": "corrugated_torus_r3",
+      "single_E_infinity": 2.006754219859714,
+      "multi_E_infinity": 3.8172497379725945,
+      "ms_stsp_E_infinity": 2.4031502978811448
+    }
+  ],
+  "original_table_sha256": "c5888bc9f685f98c664b35998a89151aa623d1357a0a860e9359988360d268c9",
+  "outputs": {
+    "e1_stsp_population_infinity_with_ms_stsp.png": "2208c7669b5f7455c2f01316d4060ad8c7b32e3f485e193fe6c952815939af0f",
+    "e1_stsp_population_infinity_with_ms_stsp.pdf": "52b3f985ff17cf4add438403775ddbcc409f92a7a55a406e9c305c9125b5aa8e"
+  },
+  "scope": "stored measured values; no refitting or slope-window selection"
+}

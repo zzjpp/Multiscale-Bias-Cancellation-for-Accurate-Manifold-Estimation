@@ -1,0 +1,354 @@
+{
+  "backend": "gpu_cupy",
+  "config_sha256": "c55aa337fe37b0e69e0386436000bbacc285f13fc27f473ea88a86053c754191",
+  "failure_count": 0,
+  "failures": [],
+  "geometry": "circle_r2",
+  "gpu": {
+    "cuda_runtime_version": 12090,
+    "cupy_version": "14.2.0",
+    "device_index": 0,
+    "device_name": "NVIDIA L40",
+    "float_precision": "float64"
+  },
+  "h1": 0.024,
+  "h2": 0.048,
+  "method": "STSP",
+  "metrics": {
+    "multi_E_average": 7.156008452469109e-09,
+    "multi_E_infinity": 7.156008452469109e-09,
+    "multi_distances": [
+      7.156008452469109e-09
+    ],
+    "single_E_average": 0.0001042515031649538,
+    "single_E_infinity": 0.0001042515031649538,
+    "single_distances": [
+      0.0001042515031649538
+    ]
+  },
+  "multi_points": [
+    [
+      1.0000000071560085,
+      0.0
+    ]
+  ],
+  "normal_space_policy": "PCA_initial_and_fine_reference_fibers; unchanged_estimator_operator",
+  "partition": {
+    "count": 1,
+    "declared_loads": [
+      1294142976
+    ],
+    "index": 0
+  },
+  "query_count": 1,
+  "query_ids": [
+    0
+  ],
+  "query_rows": [
+    {
+      "failure": "",
+      "fits": [
+        {
+          "coordinate": [
+            -4.892860472971064e-05
+          ],
+          "fiber_basis": [
+            [
+              1.0
+            ],
+            [
+              0.0
+            ]
+          ],
+          "fiber_origin": [
+            1.0,
+            0.0
+          ],
+          "final": {
+            "coordinate_correction": 5.757621284174775e-17,
+            "dr_normal_max": null,
+            "full_residual": 2.1649899088941648e-17,
+            "iteration": 2,
+            "normalized_eigengap": 0.02209791344273171,
+            "projected_residual": 2.1649899088941648e-17
+          },
+          "function_evaluations": 11,
+          "iterations": 2,
+          "normal_space_source": "PCA",
+          "point": [
+            0.9999510713952703,
+            0.0
+          ],
+          "status": "success",
+          "trace": [
+            {
+              "coordinate_correction": 4.892861335298146e-05,
+              "dr_normal_max": null,
+              "full_residual": 1.8398215596270348e-05,
+              "iteration": 0,
+              "normalized_eigengap": 0.022096914132393168,
+              "projected_residual": 1.8398215596270348e-05
+            },
+            {
+              "coordinate_correction": 8.623270817239285e-12,
+              "dr_normal_max": null,
+              "full_residual": 3.242536009702103e-12,
+              "iteration": 1,
+              "normalized_eigengap": 0.022097913442909987,
+              "projected_residual": 3.242536009702103e-12
+            },
+            {
+              "coordinate_correction": 5.757621284174775e-17,
+              "dr_normal_max": null,
+              "full_residual": 2.1649899088941648e-17,
+              "iteration": 2,
+              "normalized_eigengap": 0.02209791344273171,
+              "projected_residual": 2.1649899088941648e-17
+            }
+          ]
+        },
+        {
+          "coordinate": [
+            -5.5322898435252216e-05
+          ],
+          "fiber_basis": [
+            [
+              1.0
+            ],
+            [
+              0.0
+            ]
+          ],
+          "fiber_origin": [
+            0.9999510713952703,
+            0.0
+          ],
+          "final": {
+            "coordinate_correction": 4.734398808893782e-17,
+            "dr_normal_max": null,
+            "full_residual": 3.417951204271493e-17,
+            "iteration": 2,
+            "normalized_eigengap": 0.04526954640253064,
+            "projected_residual": 3.417951204271493e-17
+          },
+          "function_evaluations": 11,
+          "iterations": 2,
+          "normal_space_source": "PCA",
+          "point": [
+            0.999895748496835,
+            0.0
+          ],
+          "status": "success",
+          "trace": [
+            {
+              "coordinate_correction": 5.5322927641619915e-05,
+              "dr_normal_max": null,
+              "full_residual": 3.993979286444164e-05,
+              "iteration": 0,
+              "normalized_eigengap": 0.045267237317048854,
+              "projected_residual": 3.993979286444164e-05
+            },
+            {
+              "coordinate_correction": 2.9206367698784395e-11,
+              "dr_normal_max": null,
+              "full_residual": 2.1085240976402558e-11,
+              "iteration": 1,
+              "normalized_eigengap": 0.04526954640373255,
+              "projected_residual": 2.1085240976402558e-11
+            },
+            {
+              "coordinate_correction": 4.734398808893782e-17,
+              "dr_normal_max": null,
+              "full_residual": 3.417951204271493e-17,
+              "iteration": 2,
+              "normalized_eigengap": 0.04526954640253064,
+              "projected_residual": 3.417951204271493e-17
+            }
+          ]
+        }
+      ],
+      "multi_failure": "",
+      "multi_point": [
+        1.0000000071560085,
+        0.0
+      ],
+      "normal_basis": [
+        [
+          1.0
+        ],
+        [
+          0.0
+        ]
+      ],
+      "normal_guided": {
+        "pca_radius": 0.024,
+        "reference_basis": [
+          [
+            1.0
+          ],
+          [
+            0.0
+          ]
+        ],
+        "reference_point": [
+          0.9999510713952703,
+          0.0
+        ],
+        "t1": [
+          0.0
+        ],
+        "t2": [
+          -5.5322898435252216e-05
+        ],
+        "target_projected_residual": 3.417951204271493e-17
+      },
+      "normal_space_source": "PCA",
+      "parameter": [
+        1.0,
+        0.0
+      ],
+      "pca_diagnostics": {
+        "initial": {
+          "dimension": 1,
+          "kernel": "polynomial",
+          "normalized_eigengap": 0.022096914132393168,
+          "pca_radius": 0.024,
+          "source": "centered_weighted_population_covariance"
+        },
+        "reference": {
+          "dimension": 1,
+          "kernel": "polynomial",
+          "normalized_eigengap": 0.02209791344273171,
+          "pca_radius": 0.024,
+          "source": "centered_weighted_population_covariance"
+        },
+        "single": {
+          "dimension": 1,
+          "kernel": "polynomial",
+          "normalized_eigengap": 0.04526514107299498,
+          "pca_radius": 0.048,
+          "source": "centered_weighted_population_covariance"
+        }
+      },
+      "query_id": 0,
+      "single_failure": "",
+      "single_fit": {
+        "coordinate": [
+          -0.0001042515031649971
+        ],
+        "fiber_basis": [
+          [
+            1.0
+          ],
+          [
+            0.0
+          ]
+        ],
+        "fiber_origin": [
+          1.0,
+          0.0
+        ],
+        "final": {
+          "coordinate_correction": 4.734398803418613e-17,
+          "dr_normal_max": null,
+          "full_residual": 3.417951204271493e-17,
+          "iteration": 2,
+          "normalized_eigengap": 0.04526954640253064,
+          "projected_residual": 3.417951204271493e-17
+        },
+        "function_evaluations": 11,
+        "iterations": 2,
+        "normal_space_source": "PCA",
+        "point": [
+          0.999895748496835,
+          0.0
+        ],
+        "status": "success",
+        "trace": [
+          {
+            "coordinate_correction": 0.00010425168044913718,
+            "dr_normal_max": null,
+            "full_residual": 7.526324411450114e-05,
+            "iteration": 0,
+            "normalized_eigengap": 0.04526514107299498,
+            "projected_residual": 7.526324411450114e-05
+          },
+          {
+            "coordinate_correction": 1.772841400806148e-10,
+            "dr_normal_max": null,
+            "full_residual": 1.2798848693288562e-10,
+            "iteration": 1,
+            "normalized_eigengap": 0.04526954640982625,
+            "projected_residual": 1.2798848693288562e-10
+          },
+          {
+            "coordinate_correction": 4.734398803418613e-17,
+            "dr_normal_max": null,
+            "full_residual": 3.417951204271493e-17,
+            "iteration": 2,
+            "normalized_eigengap": 0.04526954640253064,
+            "projected_residual": 3.417951204271493e-17
+          }
+        ]
+      },
+      "single_point": [
+        0.999895748496835,
+        0.0
+      ],
+      "truth": [
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "resolution": "reference",
+  "resolution_settings": {
+    "actual_latent_node_count": 16384,
+    "dr_latent_count": 16384,
+    "latent_rule": "periodic trapezoid",
+    "stsp_latent_count": 16384,
+    "stsp_radial_order": 224
+  },
+  "schema_version": "E1_THEORY_PATH_CELL_V2_PCA_FIBERS",
+  "sigma": 0.008,
+  "single_failure_count": 0,
+  "single_points": [
+    [
+      0.999895748496835,
+      0.0
+    ]
+  ],
+  "single_success_count": 1,
+  "source_sha256": "4460f773adfa43137210d3525918025a50648c1df832d55021f7c1dabf6286f5",
+  "success_count": 1,
+  "successful_query_ids": [
+    0
+  ],
+  "weights": {
+    "coefficients": [
+      {
+        "a_lambda": 0.041782237746043116,
+        "c_lambda": 0.0024554384893578536,
+        "lambda": 0.3333333333333333,
+        "quadrature_error": 2.904958382201565e-15,
+        "value": 4.8925045739131866e-05
+      },
+      {
+        "a_lambda": 0.02005593776949362,
+        "c_lambda": 0.0012576018438668556,
+        "lambda": 0.16666666666666666,
+        "quadrature_error": 1.0723283587517752e-14,
+        "value": 0.00010423583064454214
+      }
+    ],
+    "constraint_residual": [
+      0.0,
+      -1.3552527156068805e-20
+    ],
+    "sum_abs_weights": 2.769096056864896,
+    "weights": [
+      1.884548028432448,
+      -0.8845480284324481
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+# E4 local continuous CP and ENF
+
+Current Figure 7 uses `figures/e4_nn_density_accuracy.png/.pdf`: three panels in one row, with no failure-rate panel. Figure S13 uses `counterexample/P1_oscillatory_CP_nonuniqueness.png/.pdf`. The source also retains extra finite/population and branch-switch diagnostics, which are not included as main-paper figures.
+
+From the repository root: `python E4/reproduce.py --output NEW` and `python E4/correspondence/replay_counterexample.py --output NEW`. Both replay stored measurements without refitting. All exact common query arrays, ten finite packets, summaries, counterexample stationary-root values, local numerical source and frozen dependencies are distributed. The top-level PUBLICATION_QA.json records current release checks. Historical source paths in SOURCE_BINDING.json are labels; the local `copy` members supply the actual inputs.
+
+Fresh scientific entrypoints are finite_experiment.py, population_experiment.py and counterexample.py. Use their original fresh-directory protocol described by PLAN.json; do not overwrite selected measurements. continuous_cp.py takes the empirical residual operator and a common reference point, constructs its target-scale-PCA implicit local chart and continuously optimizes distance. It does not receive true-curve coordinates or the NN library. Common query/branch initializers remain geometry assisted. See CP_IMPLEMENTATION_AUDIT_20261104.md for the checked implementation scope.
+
+The actual total CP batch median is 25.5621838 seconds over ten 32-query repetitions; its correspondence-stage median is 24.6153344 seconds. These are implementation-specific serial CPU measurements including the stated construction/search cost, not general complexity bounds. All 320 queries were accepted. The continuous search is not a formal global certificate over every possible empirical residual component.
+
+The artificial oscillatory graph has N=15625, amplitude .00000256 and two global CP minimizers near +/-0.00019034756. It illustrates nonuniqueness of global CP and continuity of the local outward ENF intersection, not failure of fourth-order positional accuracy. It is not an empirical STSP fit. Full results are in finite_summary/, population_summary/ and counterexample/; manuscript/ contains the original analysis text.

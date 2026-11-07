@@ -1,0 +1,17 @@
+{
+  "status": "ACTUAL_ALL_PHASES",
+  "finite_audit_sha256": "6d40c90421f587932b623a863a3a8c436b4da251bbf482be1f09784f49c88c6c",
+  "population_audit_sha256": "f9a1bb2c43870c46246865a497584b3a9dbddab9dff9ec629d0ab8e914a01f13",
+  "counter_sha256": "84579a682707ddd606930a236b3e3cdd6c6ffd4cca43712eb52a630eb80f4b33",
+  "generator_sha256": "6e99e6cb69575782f244503dab68fa57786701f7ebdc6a6725d00ca4aae7d63b",
+  "outputs": {
+    "FINITE_SELECTED_TABLE.csv": "05023b966cecf3f719fb1103c88b449c21e4820f40bd889356b6e53d7a32e2f4",
+    "implementation_details.tex": "a808d52b82d4fc126ef3f4922448a623ad6c5212cf2bff5cd3d527e5434c1047",
+    "P1_SUMMARY_TABLE.pdf": "1ceed384763cfed3cfeb60fc0ceb149d87549e02da25e4bcd4af5cc27504ec16",
+    "P1_SUMMARY_TABLE.png": "432a34c7a525932be9bf5a79cfe473ff93a4c61963b6f1512549fd0428a7e3ff",
+    "POPULATION_ORDER_TABLE.csv": "29bac322025418ac7a404839c4367a9e80d952280fb1c68e8439999f286226d3",
+    "REPORT.md": "9621734861d37a0899aa9950d501db0f9c1cf6c5aa6db69e5d7ec1adfbff2bcd",
+    "section_5_4_discussion.tex": "b2afd2e6adb7d33aa131a907bddd596bfef4c7ae4e8dcef1c161abf16af4bdae",
+    "supplementary_counterexample.tex": "467747fe99677cbbecff0a71ffd1442595dfc6330097881fa395cf3f60551f67"
+  }
+}

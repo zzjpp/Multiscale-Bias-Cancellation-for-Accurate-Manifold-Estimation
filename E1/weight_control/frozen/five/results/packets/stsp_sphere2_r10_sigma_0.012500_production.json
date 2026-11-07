@@ -1,0 +1,963 @@
+{
+  "backend": "gpu_cupy",
+  "config_sha256": "c55aa337fe37b0e69e0386436000bbacc285f13fc27f473ea88a86053c754191",
+  "failure_count": 0,
+  "failures": [],
+  "geometry": "sphere2_r10",
+  "gpu": {
+    "cuda_runtime_version": 12090,
+    "cupy_version": "14.2.0",
+    "device_index": 0,
+    "device_name": "NVIDIA L40",
+    "float_precision": "float64"
+  },
+  "h1": 0.037500000000000006,
+  "h2": 0.07500000000000001,
+  "method": "STSP",
+  "metrics": {
+    "multi_E_average": 9.16045936882881e-08,
+    "multi_E_infinity": 9.16045936882881e-08,
+    "multi_distances": [
+      9.16045936882881e-08
+    ],
+    "single_E_average": 0.00044307061417570015,
+    "single_E_infinity": 0.00044307061417570015,
+    "single_distances": [
+      0.00044307061417570015
+    ]
+  },
+  "multi_points": [
+    [
+      1.0000000916045937,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "normal_space_policy": "PCA_initial_and_fine_reference_fibers; unchanged_estimator_operator",
+  "partition": {
+    "count": 1,
+    "declared_loads": [
+      1294142976
+    ],
+    "index": 0
+  },
+  "query_count": 1,
+  "query_ids": [
+    0
+  ],
+  "query_rows": [
+    {
+      "failure": "",
+      "fits": [
+        {
+          "coordinate": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.0002165203516104995
+          ],
+          "fiber_basis": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "fiber_origin": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final": {
+            "coordinate_correction": 5.4139391695080095e-17,
+            "dr_normal_max": null,
+            "full_residual": 1.6148448928952403e-17,
+            "iteration": 2,
+            "normalized_eigengap": 0.01277394202182155,
+            "projected_residual": 1.6148448928952403e-17
+          },
+          "function_evaluations": 53,
+          "iterations": 2,
+          "normal_space_source": "PCA",
+          "point": [
+            0.9997834796483895,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "success",
+          "trace": [
+            {
+              "coordinate_correction": 0.00021652050740937468,
+              "dr_normal_max": null,
+              "full_residual": 6.458279450845681e-05,
+              "iteration": 0,
+              "normalized_eigengap": 0.012771492300943614,
+              "projected_residual": 6.458279450845681e-05
+            },
+            {
+              "coordinate_correction": 1.5579887518562046e-10,
+              "dr_normal_max": null,
+              "full_residual": 4.6470972435017045e-11,
+              "iteration": 1,
+              "normalized_eigengap": 0.012773942023646165,
+              "projected_residual": 4.6470972435017045e-11
+            },
+            {
+              "coordinate_correction": 5.4139391695080095e-17,
+              "dr_normal_max": null,
+              "full_residual": 1.6148448928952403e-17,
+              "iteration": 2,
+              "normalized_eigengap": 0.01277394202182155,
+              "projected_residual": 1.6148448928952403e-17
+            }
+          ]
+        },
+        {
+          "coordinate": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -0.00022655026256515078
+          ],
+          "fiber_basis": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "fiber_origin": [
+            0.9997834796483895,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final": {
+            "coordinate_correction": 3.8798582610613644e-17,
+            "dr_normal_max": null,
+            "full_residual": 2.6169268586036855e-17,
+            "iteration": 2,
+            "normalized_eigengap": 0.034370805241807516,
+            "projected_residual": 2.6169268586036855e-17
+          },
+          "function_evaluations": 53,
+          "iterations": 2,
+          "normal_space_source": "PCA",
+          "point": [
+            0.9995569293858244,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "status": "success",
+          "trace": [
+            {
+              "coordinate_correction": 0.00022655082911303173,
+              "dr_normal_max": null,
+              "full_residual": 0.00015280582542589308,
+              "iteration": 0,
+              "normalized_eigengap": 0.03436412211925257,
+              "projected_residual": 0.00015280582542589308
+            },
+            {
+              "coordinate_correction": 5.665478809643051e-10,
+              "dr_normal_max": null,
+              "full_residual": 3.821310642334993e-10,
+              "iteration": 1,
+              "normalized_eigengap": 0.03437080525815037,
+              "projected_residual": 3.821310642334993e-10
+            },
+            {
+              "coordinate_correction": 3.8798582610613644e-17,
+              "dr_normal_max": null,
+              "full_residual": 2.6169268586036855e-17,
+              "iteration": 2,
+              "normalized_eigengap": 0.034370805241807516,
+              "projected_residual": 2.6169268586036855e-17
+            }
+          ]
+        }
+      ],
+      "multi_failure": "",
+      "multi_point": [
+        1.0000000916045937,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "normal_basis": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "normal_guided": {
+        "pca_radius": 0.037500000000000006,
+        "reference_basis": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "reference_point": [
+          0.9997834796483895,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "t1": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "t2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.00022655026256515078
+        ],
+        "target_projected_residual": 2.6169268586036855e-17
+      },
+      "normal_space_source": "PCA",
+      "parameter": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pca_diagnostics": {
+        "initial": {
+          "dimension": 8,
+          "kernel": "polynomial",
+          "normalized_eigengap": 0.012771492300943614,
+          "pca_radius": 0.037500000000000006,
+          "source": "centered_weighted_population_covariance"
+        },
+        "reference": {
+          "dimension": 8,
+          "kernel": "polynomial",
+          "normalized_eigengap": 0.01277394202182155,
+          "pca_radius": 0.037500000000000006,
+          "source": "centered_weighted_population_covariance"
+        },
+        "single": {
+          "dimension": 8,
+          "kernel": "polynomial",
+          "normalized_eigengap": 0.03435745844452643,
+          "pca_radius": 0.07500000000000001,
+          "source": "centered_weighted_population_covariance"
+        }
+      },
+      "query_id": 0,
+      "single_failure": "",
+      "single_fit": {
+        "coordinate": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.00044307061417566334
+        ],
+        "fiber_basis": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "fiber_origin": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final": {
+          "coordinate_correction": 7.216345347542526e-17,
+          "dr_normal_max": null,
+          "full_residual": 4.867355117188904e-17,
+          "iteration": 2,
+          "normalized_eigengap": 0.03437080524180752,
+          "projected_residual": 4.867355117188904e-17
+        },
+        "function_evaluations": 53,
+        "iterations": 2,
+        "normal_space_source": "PCA",
+        "point": [
+          0.9995569293858243,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "status": "success",
+        "trace": [
+          {
+            "coordinate_correction": 0.00044307546196090965,
+            "dr_normal_max": null,
+            "full_residual": 0.0002988454228938895,
+            "iteration": 0,
+            "normalized_eigengap": 0.03435745844452643,
+            "projected_residual": 0.0002988454228938895
+          },
+          {
+            "coordinate_correction": 4.847785246337878e-09,
+            "dr_normal_max": null,
+            "full_residual": 3.269784245163837e-09,
+            "iteration": 1,
+            "normalized_eigengap": 0.034370805381648516,
+            "projected_residual": 3.269784245163837e-09
+          },
+          {
+            "coordinate_correction": 7.216345347542526e-17,
+            "dr_normal_max": null,
+            "full_residual": 4.867355117188904e-17,
+            "iteration": 2,
+            "normalized_eigengap": 0.03437080524180752,
+            "projected_residual": 4.867355117188904e-17
+          }
+        ]
+      },
+      "single_point": [
+        0.9995569293858243,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "truth": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "resolution": "production",
+  "resolution_settings": {
+    "actual_latent_node_count": 3072,
+    "dr_latent_count": 768,
+    "latent_rule": "Gauss-Jacobi latitude x signed-axis exact moment rule",
+    "stsp_latent_count": 768,
+    "stsp_radial_order": 160
+  },
+  "schema_version": "E1_THEORY_PATH_CELL_V2_PCA_FIBERS",
+  "sigma": 0.0125,
+  "single_failure_count": 0,
+  "single_points": [
+    [
+      0.9995569293858243,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "single_success_count": 1,
+  "source_sha256": "4460f773adfa43137210d3525918025a50648c1df832d55021f7c1dabf6286f5",
+  "success_count": 1,
+  "successful_query_ids": [
+    0
+  ],
+  "weights": {
+    "coefficients": [
+      {
+        "a_lambda": 0.03314891446373768,
+        "c_lambda": 0.0014196253671548307,
+        "lambda": 0.3333333333333333,
+        "quadrature_error": 6.452416474558028e-18,
+        "value": 0.00021647363642541995
+      },
+      {
+        "a_lambda": 0.018743849629931395,
+        "c_lambda": 0.0009551173765306363,
+        "lambda": 0.16666666666666666,
+        "quadrature_error": 7.354779646309744e-15,
+        "value": 0.00044287923300481556
+      }
+    ],
+    "constraint_residual": [
+      -1.1102230246251565e-16,
+      0.0
+    ],
+    "sum_abs_weights": 2.9122640049183346,
+    "weights": [
+      1.9561320024591673,
+      -0.9561320024591674
+    ]
+  }
+}

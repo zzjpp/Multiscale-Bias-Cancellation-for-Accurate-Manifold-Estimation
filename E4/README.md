@@ -1,40 +1,7 @@
-# E4 — fixed-query correspondence vs candidate density
+# E4: ENF, local continuous CP, discrete NN and Oracle
 
-```bash
-python E4/reproduce.py --output ./new_figures/E4
-python E4/reproduce.py --mode verify
-python E4/smoke.py
-```
+Current Figure 7 is reproduced by `python E4/reproduce.py --output NEW`. The underlying actual measurements and solver are in `correspondence/`. The three panels are final maximum geometric error, direct discrepancy from Oracle and full measured CPU cost. All methods share the same 32 archived h1 fitted reference coordinates and ten n=200000 parent samples.
 
-The figure uses the actual rerun with the exact archived ENF h1 fitted
-coordinates shared by Oracle, ENF and every NN density. Ten original n200000
-parents (repeats10–19), 32 query arrays and source-bound frozen inputs are
-included. sigma=.06,h1=.12,h2=.24 on
-gamma(theta)=(1.5cos(theta),sin(theta),.3sin(2theta)).
+`python E4/reproduce.py --mode verify` checks the original common-coordinate asset contract. Fresh actual calculations: `python E4/correspondence/finite_experiment.py --help`. Full provenance and geometric scope: `correspondence/CP_IMPLEMENTATION_AUDIT_20261104.md`. Figure S13 is replayed with `python E4/correspondence/replay_counterexample.py --output NEW`.
 
-M_match=32/36/40/44/48/52/56/60/64/80/96/112/128/256/512. NN uses the
-original nested balanced arclength candidate refinement and Euclidean matching.
-ENF uses PCA at the fixed h1 coordinate; Oracle uses the true geometric chart.
-The h1 reference construction/branch selection also uses the controlled true
-chart. These controlled geometric choices are explicitly retained.
-
-An explicit fresh GPU rerun is available:
-
-```bash
-python E4/reproduce.py --mode recompute
-```
-
-It verifies original source/input hashes and the archived actual fixed-query
-CPU/GPU gate, refuses an existing `fitting/outputs/packets`, and writes new
-full-density packets/tables/figures under `fitting/outputs`. To independently
-run a new gate, use a fresh copy of `fitting` without the old gate file and
-run `fixed_queries.py gate` before `fixed_queries.py run`; never relabel the
-bundled gate as newly tested. Use the original Linux GPU environment, not
-figure-only requirements. Actual four-query CPU smoke is not a new GPU gate.
-
-Reported complete matching cost includes original fine reference construction
-and matching/coarse candidate fitting. The additional frozen-coordinate
-residual consistency check was added **after** the original reference
-stopwatch and is excluded from recorded times. Timing values remain unchanged.
-Discrete NN approaching ENF/Oracle as candidates become dense is not a
-claim that continuous nearest projection is inherently inaccurate.
+CP builds an empirical target-PCA local chart, solves the true empirical STSP residual at every scalar search location, and optimizes continuous distance on the checked local sheet. The search itself does not receive true manifold coordinates, but common-query construction and validation are geometry assisted. Its roughly 25.6-second total includes the reported common setup and local representation/search for 32 queries; it is implementation-specific. The artificial oscillatory graph illustrates global CP nonuniqueness while local ENF remains unique, not failure of fourth-order localization.

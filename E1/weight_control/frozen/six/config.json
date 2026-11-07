@@ -1,0 +1,67 @@
+{
+  "schema_version": "E1_THEORY_PATH_CORRUGATED_EXTENSION_V1",
+  "experiment": "joint small-noise/small-bandwidth population order check on the frozen E7 corrugated torus",
+  "methods": ["STSP", "DR"],
+  "sigma_grid": [0.03, 0.025, 0.02, 0.016, 0.0125, 0.01, 0.008],
+  "bandwidth_path": {
+    "a1": 3.0,
+    "a2": 6.0,
+    "rule": "h1=a1*sigma, h2=a2*sigma",
+    "provenance": "ratios fixed by the existing E6 formal STSP/DR design"
+  },
+  "geometries": {
+    "corrugated_torus_r3": {
+      "label": "Corrugated torus subset R^3",
+      "query_count": 128,
+      "query_phase": 0.0,
+      "homogeneous_canonical_query": false,
+      "symmetry_reduction": "rotational symmetry fixes u=0; v uses 128 equal-area mid-quantiles",
+      "latent_rule": "tensor midpoint rule in u and equal-area v quantiles",
+      "integration_resolution": {"production": 2560, "reference": 3840}
+    }
+  },
+  "kernel_power": 6,
+  "population_integration": {
+    "stsp_noncentral_radius_padding": 12.0,
+    "tail_bound_description": "latent nodes with distance/h beyond h/sigma+12 are omitted; the corresponding Gaussian displacement tail is bounded at the exp(-72) scale before dimension-polynomial factors"
+  },
+  "resolutions": {
+    "production": {
+      "stsp_radial_order": 160
+    },
+    "reference": {
+      "stsp_radial_order": 224
+    }
+  },
+  "solver": {
+    "search_radius_factor": 4.0,
+    "max_iterations": 24,
+    "max_backtracks": 16,
+    "projected_residual_tolerance": 2e-12,
+    "full_residual_tolerance": 2e-10,
+    "coordinate_correction_tolerance": 2e-11,
+    "normalized_eigengap_min": 1e-7,
+    "dr_normal_eigenvalue_max": -1e-8
+  },
+  "coefficient_quadrature": {
+    "absolute_tolerance": 2e-13,
+    "relative_tolerance": 2e-13,
+    "limit": 300
+  },
+  "slope_windows": {
+    "all_7": 7,
+    "smallest_5": 5,
+    "smallest_4": 4,
+    "smallest_3": 3
+  },
+  "audit_gates": {
+    "required_backend": "gpu_cupy",
+    "cpu_gpu_fitted_point_max": 1e-10,
+    "weight_constraint_max": 1e-11,
+    "reference_point_difference_fraction_of_min_multi_error": 0.25,
+    "root_position_uncertainty_fraction_of_min_multi_error": 0.1,
+    "all_declared_cells_and_queries_resolved": true
+  },
+  "failure_policy": "retain every declared cell and query; never crop sigma points or fitting windows",
+  "production_locked": true
+}

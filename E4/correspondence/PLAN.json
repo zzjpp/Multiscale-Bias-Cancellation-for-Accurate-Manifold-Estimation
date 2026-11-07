@@ -1,0 +1,105 @@
+{
+  "schema": "P1_ENF_VS_CONTINUOUS_CP_V1",
+  "priority": [
+    "oscillatory_counterexample",
+    "finite_STSP_CP",
+    "population_scaling"
+  ],
+  "counterexample": {
+    "h1": "0.1",
+    "h2": "0.2",
+    "N": 15625,
+    "a": "0.00000256",
+    "reference_radius": "1.01",
+    "target_mean_radius": "1.04",
+    "arithmetic_digits": 80,
+    "global_exclusion": "Radial minimum lower bound plus exact angular distance lower bound; symmetry proves nonuniqueness if0 and pi are excluded"
+  },
+  "finite": {
+    "reuse_original_E4": true,
+    "n": 200000,
+    "sigma": 0.06,
+    "h1": 0.12,
+    "h2": 0.24,
+    "N_q": 32,
+    "repeats": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "candidate_counts": [
+      32,
+      36,
+      40,
+      44,
+      48,
+      52,
+      56,
+      60,
+      64,
+      80,
+      96,
+      112,
+      128,
+      256,
+      512
+    ],
+    "CP": "Continuous optimization constrained by the actual empirical STSP residual; candidate-only NN is not CP",
+    "timing": "Include target representation construction and search; do not compare new CPU times to old GPU times",
+    "truth": "Evaluation and explicitly disclosed common branch/reference construction only; not input to CP optimization",
+    "backend": "CPU float64, one thread, same backend for all new timing",
+    "CP_chart_initial_nodes": 9,
+    "CP_chart_refinement_nodes": [
+      41,
+      81
+    ],
+    "CP_chart_geometry_source": "h2 empirical PCA only",
+    "NN_build": "Exact original nested positions, incremental reuse, charge cumulative actual generation of all M plus lookup"
+  },
+  "population": {
+    "curve": "(1.5cos(t),sin(t),.3sin(2t))",
+    "h1_over_sigma": 3,
+    "h2_over_sigma": 6,
+    "sigma_grid": [
+      0.008,
+      0.01,
+      0.0125,
+      0.016,
+      0.02,
+      0.025,
+      0.03
+    ],
+    "monte_carlo": false,
+    "resolution_gate_required": true,
+    "resolutions": {
+      "production": {
+        "latent_count": 8192,
+        "radial_order": 160
+      },
+      "reference": {
+        "latent_count": 16384,
+        "radial_order": 224
+      }
+    },
+    "query_count": 32,
+    "normal_starts": false,
+    "controls": {
+      "projected_residual_tolerance": 1e-13,
+      "full_residual_tolerance": 1e-11
+    },
+    "analytic_derivative": "Gaussian moment identity, six actual directional finite-difference checks passed; unchanged E1 residual at operator checks",
+    "radial": "Exact half-integer Bessel closed forms for x>=2; scipy ive below2; original quadrature unchanged;16 radial cases gate passed",
+    "implementation": "Batched exact half-integer moments sharing exponent factors; exact-center memoization; same GL nodes/weights, strict solver and inputs; derivative/old-engine numerical gates retained. Pilot03 source matches main."
+  },
+  "preserve_original_code_and_figures": true,
+  "success_is_not_ENF_error_smaller_than_CP": true,
+  "finite_results_do_not_establish_asymptotic_order": true,
+  "CP_nonuniqueness_does_not_disprove_fourth_order_position_accuracy": true
+}

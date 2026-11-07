@@ -1,0 +1,414 @@
+{
+  "schema": "E2_NONUNIFORM_FROZEN_PRODUCER_SOURCE_V1",
+  "members": {
+    "parent.py": {
+      "size": 6510,
+      "sha256": "2194dd34fe27eed2fb6a38d4bd346c752422fef44483a9da1d1362ebd6657f54"
+    },
+    "sampling.py": {
+      "size": 2411,
+      "sha256": "f6d83751e4fa42dddb5e18e9d150b6073da7fbbbe916a8052263b28e90299378"
+    },
+    "native.py": {
+      "size": 1707,
+      "sha256": "f00e7b875154c690c79d418bebfa924f1815311c05d59e5c66a01328b615fe6f"
+    },
+    "common.py": {
+      "size": 927,
+      "sha256": "46c03c381d464e7fecf93ccd383dd6f1a22389c593d15c1cc375c45010c57773"
+    },
+    "run_queue.py": {
+      "size": 8172,
+      "sha256": "0de8ccdc7cd68a0e27d2a5a86b4aa26c3ddf1655d7e9bf6274017fbb570abfc0"
+    },
+    "aggregate.py": {
+      "size": 4230,
+      "sha256": "19c33ab4552dc49717a39603e7aa398ffcb658eddb697ae85bb22177d271c151"
+    },
+    "PLAN.json": {
+      "size": 2155,
+      "sha256": "e373aaeb8fc8fce23a01ff9ca089223a748a3b34af9f343ce375077953d467eb"
+    },
+    "SOURCE_BINDING.json": {
+      "size": 14617,
+      "sha256": "214212469258cf5e693649ee919876aa894e8a7b7089018cc073fad952a53585"
+    },
+    "README.md": {
+      "size": 6238,
+      "sha256": "9b5dab4219bde8c0898537dcbc28d7ad12e023bcb79164e77b08d6422abe5226"
+    },
+    "requirements.txt": {
+      "size": 228,
+      "sha256": "66ac8d17dc68f4c07f8ad019fd31ac7210697d0c8471a3d6fa04f15f7cf311bd"
+    },
+    "tests/test_sampling.py": {
+      "size": 3131,
+      "sha256": "ee2858a67c442a6d92fcb4657890900656d466370f809dfbf2b23e958aec7e90"
+    },
+    "frozen/E1_DENSITY_DEFINITIONS.json": {
+      "size": 6317,
+      "sha256": "1437cfdfbdaa3b7e9b43b746a3ee448fc26e6a5c849fad7387cd0b3033969fc5"
+    },
+    "frozen/ORIGINAL_RELEASE_SOURCE_MANIFEST.json": {
+      "size": 64751,
+      "sha256": "bdd6e72faee98b2fb3d230a9da4bdaf7997bb4d603aed9456c9f99f2ce85fb88"
+    },
+    "frozen/E2/dr_rejected_basis_failure_adapter.py": {
+      "size": 2705,
+      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f"
+    },
+    "frozen/E2/evaluate_fits.py": {
+      "size": 4162,
+      "sha256": "bf14831068c155efcb2c9f5978a6705c453a2c383f2b8ae6240b53050072a260"
+    },
+    "frozen/E2/LICENSE": {
+      "size": 1072,
+      "sha256": "6c17757723550b044454f2a985d73abebe3e303f86c8cbd2f6ea0d4579e9e22d"
+    },
+    "frozen/E2/README.md": {
+      "size": 2193,
+      "sha256": "6e1e47d7235a8e37a32801d762f0c0a14692652cb6e43bac9f234375327f383b"
+    },
+    "frozen/E2/reproduce.py": {
+      "size": 4830,
+      "sha256": "cd762866b5045af28622d8b384ed6100cfead21838ca8c98598d11774f055a68"
+    },
+    "frozen/E2/run_fits.py": {
+      "size": 8370,
+      "sha256": "94c886f5da19d7c9634a45aabaa4fb07a0e5fdb57303e908b829db5b5f863686"
+    },
+    "frozen/E2/corrugated/corrugated_geometry.py": {
+      "size": 4258,
+      "sha256": "eb5848ac783bfdc7f691840bd3dab7bbdc284887bde845d9cc6b7385e3b471c9"
+    },
+    "frozen/E2/corrugated/run_extension.py": {
+      "size": 5226,
+      "sha256": "b369a8b8bda0af1f52ec07af3c8ca3eb6b6efd6fed3a21355a7e03cc9255a75e"
+    },
+    "frozen/E2/data/summary.csv": {
+      "size": 124292,
+      "sha256": "d99e138fd713ca1e73134270d39b1efc17e10b47088497c5e3c655a476aacd68"
+    },
+    "frozen/E2/plotting/style.py": {
+      "size": 2925,
+      "sha256": "2622c266f5e9b76f9eda0569d6cb5415f2749a3638b4005ef25d9e31c2ec414c"
+    },
+    "frozen/E2/corrugated/frozen/corrugated_e1_geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "frozen/E2/corrugated/frozen/STSP/E2FS_CONFIG.json": {
+      "size": 2148,
+      "sha256": "ac0e75e8f7310cce222eba1950f6091344cb349b4be9a72af7f8222949d2e702"
+    },
+    "frozen/E2/corrugated/frozen/DR/configs/e2_dr_yy_frozen.json": {
+      "size": 1766,
+      "sha256": "995faf44576192025ef6bff4c6149810d50b476f1c1cdc3b70621fbb55e72aba"
+    },
+    "frozen/E2/corrugated/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 23268,
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/dr.py": {
+      "size": 13702,
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/runner.py": {
+      "size": 10705,
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "frozen/E2/corrugated/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/config.py": {
+      "size": 1403,
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/geometry.py": {
+      "size": 4759,
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/runner.py": {
+      "size": 7301,
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "frozen/E2/corrugated/frozen/STSP/src/e2fs/__init__.py": {
+      "size": 64,
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+    },
+    "frozen/E2/corrugated/frozen/YY/configs/e2_dr_yy_frozen.json": {
+      "size": 1750,
+      "sha256": "cc451a19bf08219ce52455f0e700f314f8bc9677712d4d5c6163ae9af9117d6d"
+    },
+    "frozen/E2/corrugated/frozen/YY/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "frozen/E2/corrugated/frozen/YY/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "frozen/E2/frozen/STSP/E2FS_CONFIG.json": {
+      "size": 2148,
+      "sha256": "ac0e75e8f7310cce222eba1950f6091344cb349b4be9a72af7f8222949d2e702"
+    },
+    "frozen/E2/frozen/DR/configs/e2_dr_yy_frozen.json": {
+      "size": 1766,
+      "sha256": "995faf44576192025ef6bff4c6149810d50b476f1c1cdc3b70621fbb55e72aba"
+    },
+    "frozen/E2/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 23268,
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+    },
+    "frozen/E2/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "frozen/E2/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "frozen/E2/frozen/DR/src/dryy/dr.py": {
+      "size": 13702,
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+    },
+    "frozen/E2/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "frozen/E2/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "frozen/E2/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "frozen/E2/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "frozen/E2/frozen/DR/src/dryy/runner.py": {
+      "size": 10705,
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+    },
+    "frozen/E2/frozen/DR/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "frozen/E2/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "frozen/E2/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/config.py": {
+      "size": 1403,
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/geometry.py": {
+      "size": 4759,
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/runner.py": {
+      "size": 7301,
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "frozen/E2/frozen/STSP/src/e2fs/__init__.py": {
+      "size": 64,
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+    },
+    "frozen/E2/frozen/YY/configs/e2_dr_yy_frozen.json": {
+      "size": 1750,
+      "sha256": "cc451a19bf08219ce52455f0e700f314f8bc9677712d4d5c6163ae9af9117d6d"
+    },
+    "frozen/E2/frozen/YY/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "frozen/E2/frozen/YY/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "frozen/E2/frozen/YY/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "frozen/E2/frozen/YY/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "frozen/E2/frozen/YY/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "frozen/E2/frozen/YY/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "frozen/E2/frozen/YY/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "frozen/E2/frozen/YY/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "frozen/E2/frozen/YY/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "frozen/E2/frozen/YY/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "frozen/E2/frozen/YY/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "frozen/E2/frozen/YY/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    }
+  },
+  "note": "Exact isolated new-density producer; public release manifest retained separately, not relabeled"
+}

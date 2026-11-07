@@ -1,0 +1,7 @@
+numpy==2.4.4
+scipy==1.18.0
+matplotlib==3.11.1
+pytest==9.1.1
+paramiko==5.0.0
+# GPU production uses the pre-existing server CuPy environment; record its
+# actual installed versions separately. Do not install Windows pins into it.

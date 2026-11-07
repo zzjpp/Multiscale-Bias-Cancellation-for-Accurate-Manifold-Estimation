@@ -1,0 +1,5007 @@
+{
+  "schema": "P1_POPULATION_CURVE_CELL_V1",
+  "sigma": 0.02,
+  "resolution": "production",
+  "settings": {
+    "latent_count": 8192,
+    "radial_order": 160
+  },
+  "controls": {
+    "max_newton_iterations": 30,
+    "max_backtracks": 16,
+    "search_radius_factor": 4.0,
+    "projected_residual_tolerance": 1e-13,
+    "full_residual_tolerance": 1e-11,
+    "normalized_mass_min": 1e-12,
+    "minimum_support": 3,
+    "normalized_eigengap_min": 1e-08,
+    "transversality_max": 0.98,
+    "jacobian_condition_max": 1000000000000.0,
+    "armijo_factor": 0.25
+  },
+  "pilot": false,
+  "N_q_nominal": 32,
+  "query_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "rows": [
+    {
+      "query_id": 0,
+      "success": true,
+      "theta": 0.08305546420696051,
+      "true_base": [
+        1.494829315796689,
+        0.08296000812922542,
+        0.049604420876119125
+      ],
+      "reference": [
+        1.4944970428628284,
+        0.08294387008282028,
+        0.04956172377664169
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.4941212098155239,
+          0.0829256048877253,
+          0.0495134485543307
+        ],
+        "ENF": [
+          1.4941212118460265,
+          0.08292558862970068,
+          0.04951343891424823
+        ],
+        "CP": [
+          1.4941212142914326,
+          0.08292556904958172,
+          0.049513427304353014
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.4948297617517878,
+          0.0829600399632026,
+          0.04960446104641292
+        ],
+        "ENF": [
+          1.4948297599542169,
+          0.08296005435616757,
+          0.049604469580621265
+        ],
+        "CP": [
+          1.4948297577893386,
+          0.08296007169012869,
+          0.04960447985867282
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 4.4889086066805037e-07
+        },
+        "ENF": {
+          "E_match": 1.900993149926489e-08,
+          "E_base": 1.9025041338300717e-08,
+          "extrapolated_distance": 4.4888945969027006e-07
+        },
+        "CP": {
+          "E_match": 4.190427002094926e-08,
+          "E_base": 4.193757717830199e-08,
+          "extrapolated_distance": 4.4888777382633116e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.952575694357513e-17,
+        "full_residual": 1.9525756943923874e-17,
+        "normalized_mass": 0.03149984790319533,
+        "support_count": 590,
+        "effective_support": 86.63527059567963,
+        "eigengap": 0.020621412027398634,
+        "normal_space_discrepancy": 0.00028245021165786415,
+        "jacobian_condition": 1.0003706163571502
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.559530393576633e-17,
+        "full_residual": 3.5595304041002723e-17,
+        "normalized_mass": 0.059165569850972925,
+        "support_count": 709,
+        "effective_support": 127.58214806022714,
+        "eigengap": 0.04404419197374116,
+        "normal_space_discrepancy": 0.0005748572049902856,
+        "jacobian_condition": 1.0007703164768749
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 8.712546754513008e-17,
+        "full_residual": 8.712546756274537e-17,
+        "normalized_mass": 0.059165569850827306,
+        "support_count": 709,
+        "effective_support": 127.582148059712,
+        "eigengap": 0.0440441919739227,
+        "normal_space_discrepancy": 0.0002924032688539906,
+        "jacobian_condition": 1.0007705592357783
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.4941212142914326,
+          0.08292556904958172,
+          0.049513427304353014
+        ],
+        "seconds": 1.5885083000030136,
+        "chart_origin": [
+          1.4944970428628284,
+          0.08294387008282028,
+          0.04956172377664169
+        ],
+        "chart_normal_basis": [
+          [
+            -0.08443416604171362,
+            0.9906880792619492
+          ],
+          [
+            -0.5160271544947305,
+            0.04822260228714742
+          ],
+          [
+            0.8524006378628021,
+            0.1273252144585869
+          ]
+        ],
+        "chart_tangent": [
+          -0.1068082450614646,
+          0.855213748984853,
+          0.5071503153249172
+        ],
+        "domain": [
+          -0.00037936076883199197,
+          0.00037936076883199197
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -3.2762417908154e-09,
+        "candidate_stationary_s": [
+          -3.2762417908154e-09
+        ],
+        "objective": 1.4391459213048596e-07,
+        "normalized_stationarity": 1.069972017662451e-17,
+        "projected_residual": 4.868751449644529e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 4.868751449644564e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 3.2762417908154e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 1,
+      "success": true,
+      "theta": 0.3078690209997762,
+      "true_base": [
+        1.4294722209528128,
+        0.30302854249447475,
+        0.17326835346066824
+      ],
+      "reference": [
+        1.4291554452027657,
+        0.30295765992786444,
+        0.1731122957842911
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.4287972320023152,
+          0.30287745915225833,
+          0.17293591380595724
+        ],
+        "ENF": [
+          1.4287972483997784,
+          0.3028774247710237,
+          0.17293589615955968
+        ],
+        "CP": [
+          1.4287972680859227,
+          0.30287738349427085,
+          0.17293587497399066
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.429472565527653,
+          0.3030286603711324,
+          0.17326844388325324
+        ],
+        "ENF": [
+          1.4294725510112454,
+          0.3030286908082807,
+          0.17326845950532224
+        ],
+        "CP": [
+          1.4294725335834217,
+          0.3030287273499192,
+          0.1732684782605622
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 7.850462293418876e-17,
+          "extrapolated_distance": 3.752372194056695e-07
+        },
+        "ENF": {
+          "E_match": 4.198025060018789e-08,
+          "E_base": 4.201873897926654e-08,
+          "extrapolated_distance": 3.7523303223004567e-07
+        },
+        "CP": {
+          "E_match": 9.238008132160695e-08,
+          "E_base": 9.246477743925397e-08,
+          "extrapolated_distance": 3.752280108497396e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.110288076287682e-17,
+        "full_residual": 2.1102880907075803e-17,
+        "normalized_mass": 0.031500775571558164,
+        "support_count": 590,
+        "effective_support": 86.63961414336268,
+        "eigengap": 0.020620277900976782,
+        "normal_space_discrepancy": 0.0002394413352935755,
+        "jacobian_condition": 1.000427302422388
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.771867583950303e-17,
+        "full_residual": 4.771867655568809e-17,
+        "normalized_mass": 0.059169344631041364,
+        "support_count": 710,
+        "effective_support": 127.59549564719919,
+        "eigengap": 0.044039461604995195,
+        "normal_space_discrepancy": 0.00048706536646223817,
+        "jacobian_condition": 1.0008876099524628
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 9.276955155896314e-17,
+        "full_residual": 9.276955174454278e-17,
+        "normalized_mass": 0.05916934463033676,
+        "support_count": 710,
+        "effective_support": 127.59549564470915,
+        "eigengap": 0.04403946160588418,
+        "normal_space_discrepancy": 0.000247602573119427,
+        "jacobian_condition": 1.0008877271547274
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.4287972680859227,
+          0.30287738349427085,
+          0.17293587497399066
+        ],
+        "seconds": 1.5686024999886286,
+        "chart_origin": [
+          1.4291554452027657,
+          0.30295765992786444,
+          0.1731122957842911
+        ],
+        "chart_normal_basis": [
+          [
+            -0.2718746349215581,
+            0.8795000863983413
+          ],
+          [
+            -0.5389191866592534,
+            0.19711884916797395
+          ],
+          [
+            0.7972767983183748,
+            0.43315558097293894
+          ]
+        ],
+        "chart_tangent": [
+          -0.39059413834769763,
+          0.8189690284456568,
+          0.42038785607483653
+        ],
+        "domain": [
+          -0.0004072584634195667,
+          0.0004072584634195667
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -7.196707289864492e-09,
+        "candidate_stationary_s": [
+          -7.196707289864492e-09
+        ],
+        "objective": 1.658594551275739e-07,
+        "normalized_stationarity": 5.884507286029088e-17,
+        "projected_residual": 7.010207735392773e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 7.010207735393039e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 7.196707289864492e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 2,
+      "success": true,
+      "theta": 0.5313090579451759,
+      "true_base": [
+        1.2932168384997154,
+        0.5066623721839058,
+        0.2620897244569747
+      ],
+      "reference": [
+        1.2929672050266252,
+        0.5065220786956827,
+        0.26185418371688285
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.2926850015525304,
+          0.5063634264581932,
+          0.26158807254546085
+        ],
+        "ENF": [
+          1.2926849860987137,
+          0.5063634439985794,
+          0.2615880784812764
+        ],
+        "CP": [
+          1.2926849673631056,
+          0.5063634652638616,
+          0.2615880856776281
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.2932170351760353,
+          0.5066625309432087,
+          0.26208976761225955
+        ],
+        "ENF": [
+          1.293217048857048,
+          0.5066625154149897,
+          0.26208976235737846
+        ],
+        "CP": [
+          1.2932170654433774,
+          0.506662496589181,
+          0.26208975598656525
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.5641464405116234e-07
+        },
+        "ENF": {
+          "E_match": 2.4118861957742027e-08,
+          "E_base": 2.414230007593526e-08,
+          "extrapolated_distance": 2.564095983565106e-07
+        },
+        "CP": {
+          "E_match": 5.335963346547019e-08,
+          "E_base": 5.341148702855903e-08,
+          "extrapolated_distance": 2.564034830825415e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.939801232593738e-18,
+        "full_residual": 4.939801262223867e-18,
+        "normalized_mass": 0.03150118959322089,
+        "support_count": 590,
+        "effective_support": 86.64155010032208,
+        "eigengap": 0.020619763970766748,
+        "normal_space_discrepancy": 0.00012579535636489232,
+        "jacobian_condition": 1.0004526743951674
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.1866617787884785e-16,
+        "full_residual": 1.1866618068736245e-16,
+        "normalized_mass": 0.059171006104248684,
+        "support_count": 710,
+        "effective_support": 127.60135260920062,
+        "eigengap": 0.044037312868684696,
+        "normal_space_discrepancy": 0.0002561961832346799,
+        "jacobian_condition": 1.0009395350734296
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0375130075491597e-16,
+        "full_residual": 1.037513015723557e-16,
+        "normalized_mass": 0.05917100610401187,
+        "support_count": 710,
+        "effective_support": 127.6013526083613,
+        "eigengap": 0.044037312868975505,
+        "normal_space_discrepancy": 0.0001303874172352506,
+        "jacobian_condition": 1.0009395648869281
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.2926849673631056,
+          0.5063634652638616,
+          0.2615880856776281
+        ],
+        "seconds": 1.598088500002632,
+        "chart_origin": [
+          1.2929672050266252,
+          0.5065220786956827,
+          0.26185418371688285
+        ],
+        "chart_normal_basis": [
+          [
+            -0.36850011810002303,
+            0.6735335430836464
+          ],
+          [
+            -0.5725403776020836,
+            0.3785897842902045
+          ],
+          [
+            0.7323968725872146,
+            0.6348404063796552
+          ]
+        ],
+        "chart_tangent": [
+          -0.6407497399932821,
+          0.7272326252626181,
+          0.24611476886237768
+        ],
+        "domain": [
+          -0.0004190757531154105,
+          0.0004190757531154105
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 4.189665413075028e-09,
+        "candidate_stationary_s": [
+          4.189665413075028e-09
+        ],
+        "objective": 1.7562448595832572e-07,
+        "normalized_stationarity": 6.396792816113986e-17,
+        "projected_residual": 3.749470547085991e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 3.7494705470860046e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 4.189665413075028e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 3,
+      "success": true,
+      "theta": 0.7464531350601841,
+      "true_base": [
+        1.1011529130213717,
+        0.6790392762800321,
+        0.2990904308526726
+      ],
+      "reference": [
+        1.101012409340927,
+        0.6788590704595463,
+        0.29885863439315496
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.1008535534022796,
+          0.6786553171938985,
+          0.2985967088358097
+        ],
+        "ENF": [
+          1.1008534774141854,
+          0.6786553720087523,
+          0.29859671235533347
+        ],
+        "CP": [
+          1.100853385779285,
+          0.6786554381105919,
+          0.2985967165995578
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.1011530419217777,
+          0.6790394499143453,
+          0.29909051283241167
+        ],
+        "ENF": [
+          1.1011531091928024,
+          0.6790394013876461,
+          0.2990905097166345
+        ],
+        "CP": [
+          1.1011531903156906,
+          0.6790393428687617,
+          0.29909050595929165
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.3126795493370376e-07
+        },
+        "ENF": {
+          "E_match": 9.37616430671186e-08,
+          "E_base": 9.383183105701437e-08,
+          "extrapolated_distance": 2.3122442372966195e-07
+        },
+        "CP": {
+          "E_match": 2.0682985967469049e-07,
+          "E_base": 2.069846881434878e-07,
+          "extrapolated_distance": 2.3117195005377138e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.8146613072944697e-17,
+        "full_residual": 3.814661336876324e-17,
+        "normalized_mass": 0.031499489910882875,
+        "support_count": 590,
+        "effective_support": 86.6335889553921,
+        "eigengap": 0.020621835049912815,
+        "normal_space_discrepancy": 0.0002552584575497416,
+        "jacobian_condition": 1.0003490612215937
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.376891587047175e-17,
+        "full_residual": 3.376892041947003e-17,
+        "normalized_mass": 0.05916406761455583,
+        "support_count": 709,
+        "effective_support": 127.57679865535394,
+        "eigengap": 0.044045946617593416,
+        "normal_space_discrepancy": 0.0005196203181894679,
+        "jacobian_condition": 1.0007249889479488
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.6448556327718164e-17,
+        "full_residual": 3.644855656827918e-17,
+        "normalized_mass": 0.05916406761100778,
+        "support_count": 709,
+        "effective_support": 127.57679864279984,
+        "eigengap": 0.04404594662200639,
+        "normal_space_discrepancy": 0.00026426092796379684,
+        "jacobian_condition": 1.0007247787081284
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.100853385779285,
+          0.6786554381105919,
+          0.2985967165995578
+        ],
+        "seconds": 1.9016850000043632,
+        "chart_origin": [
+          1.101012409340927,
+          0.6788590704595463,
+          0.29885863439315496
+        ],
+        "chart_normal_basis": [
+          [
+            -0.39535818364332387,
+            0.43225904746528987
+          ],
+          [
+            -0.5931097970009019,
+            0.5535987598830849
+          ],
+          [
+            0.7013648660489065,
+            0.7118149541420935
+          ]
+        ],
+        "chart_tangent": [
+          -0.8104591430236641,
+          0.5845931762836946,
+          0.03750727571936826
+        ],
+        "domain": [
+          -0.0003679069968430576,
+          0.0003679069968430576
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 1.6194919343711016e-08,
+        "candidate_stationary_s": [
+          1.6194919343711016e-08
+        ],
+        "objective": 1.3535555730079966e-07,
+        "normalized_stationarity": 2.8458443527594046e-16,
+        "projected_residual": 2.050330147316444e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.050330147319442e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.6194919343711016e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 4,
+      "success": true,
+      "theta": 0.9466248713848658,
+      "true_base": [
+        0.876637729622155,
+        0.8114476202723989,
+        0.28453823981715853
+      ],
+      "reference": [
+        0.876581434360749,
+        0.8112746622048433,
+        0.28436699427003165
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.876517775385418,
+          0.8110791049123647,
+          0.2841734245028572
+        ],
+        "ENF": [
+          0.8765177058804469,
+          0.811079138316989,
+          0.28417341368240534
+        ],
+        "CP": [
+          0.8765176219322501,
+          0.8110791786631333,
+          0.2841734006134448
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.876637790617061,
+          0.8114477858977919,
+          0.28453835843912845
+        ],
+        "ENF": [
+          0.8766378521486824,
+          0.8114477563252209,
+          0.2845383680182986
+        ],
+        "CP": [
+          0.8766379264666567,
+          0.811447720607435,
+          0.284538379588037
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.1265775582210073e-07
+        },
+        "ENF": {
+          "E_match": 7.787099660191431e-08,
+          "E_base": 7.790531663373785e-08,
+          "extrapolated_distance": 2.126175377979291e-07
+        },
+        "CP": {
+          "E_match": 1.7192368834447295e-07,
+          "E_base": 1.719994603679614e-07,
+          "extrapolated_distance": 2.125689745745622e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.350208362538194e-17,
+        "full_residual": 1.3502084067421498e-17,
+        "normalized_mass": 0.03149713959913145,
+        "support_count": 588,
+        "effective_support": 86.62258033085477,
+        "eigengap": 0.020624691547340694,
+        "normal_space_discrepancy": 0.00027965894590998235,
+        "jacobian_condition": 1.0002057836341594
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 9.400798975055136e-18,
+        "full_residual": 9.40079932565113e-18,
+        "normalized_mass": 0.059154458843593875,
+        "support_count": 707,
+        "effective_support": 127.5427928369524,
+        "eigengap": 0.04405784123270722,
+        "normal_space_discrepancy": 0.0005692729377467722,
+        "jacobian_condition": 1.0004278451016513
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0894919682336597e-17,
+        "full_residual": 1.0894919682548097e-17,
+        "normalized_mass": 0.05915445884113178,
+        "support_count": 707,
+        "effective_support": 127.54279282823695,
+        "eigengap": 0.04405784123573993,
+        "normal_space_discrepancy": 0.00028955041285326234,
+        "jacobian_condition": 1.0004276053241743
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.8765176219322501,
+          0.8110791786631333,
+          0.2841734006134448
+        ],
+        "seconds": 1.8201236999884713,
+        "chart_origin": [
+          0.876581434360749,
+          0.8112746622048433,
+          0.28436699427003165
+        ],
+        "chart_normal_basis": [
+          [
+            0.390237231737763,
+            0.22589359760195954
+          ],
+          [
+            0.5804389839189635,
+            0.6921679086648065
+          ],
+          [
+            -0.7147065753949441,
+            0.6854747761785495
+          ]
+        ],
+        "chart_tangent": [
+          -0.8925732381872603,
+          0.4289454186277198,
+          -0.13899223830919016
+        ],
+        "domain": [
+          -0.00028242582343774783,
+          0.00028242582343774783
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 1.3511959594545789e-08,
+        "candidate_stationary_s": [
+          1.3511959594545789e-08
+        ],
+        "objective": 7.976434498109e-08,
+        "normalized_stationarity": 2.2158381874080444e-16,
+        "projected_residual": 2.0847715952462322e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.0847715952471012e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.3511959594545789e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 5,
+      "success": true,
+      "theta": 1.1311166017172063,
+      "true_base": [
+        0.6384745109350765,
+        0.9048880345437993,
+        0.23109917812254185
+      ],
+      "reference": [
+        0.638458370851304,
+        0.9047394478775737,
+        0.2309911283670542
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.638440123664304,
+          0.9045714691220291,
+          0.23086897933427544
+        ],
+        "ENF": [
+          0.6384400850993718,
+          0.9045714812264679,
+          0.23086896848099658
+        ],
+        "CP": [
+          0.6384400384758934,
+          0.9045714958602548,
+          0.2308689553598106
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.6384745247894125,
+          0.9048881567399646,
+          0.2310992649206786
+        ],
+        "ENF": [
+          0.6384745589303202,
+          0.9048881460241016,
+          0.23109927452891
+        ],
+        "CP": [
+          0.638474600205328,
+          0.904888133069048,
+          0.23109928614488268
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 1.505249546758723e-07
+        },
+        "ENF": {
+          "E_match": 4.185170366360054e-08,
+          "E_base": 4.186175404192967e-08,
+          "extrapolated_distance": 1.5050860468577083e-07
+        },
+        "CP": {
+          "E_match": 9.244875869648292e-08,
+          "E_base": 9.247095946115122e-08,
+          "extrapolated_distance": 1.5048884099096832e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 7.039049877968638e-18,
+        "full_residual": 7.039050030865772e-18,
+        "normalized_mass": 0.0314956033185419,
+        "support_count": 588,
+        "effective_support": 86.61538358596844,
+        "eigengap": 0.020626551493308585,
+        "normal_space_discrepancy": 0.00021615469988912677,
+        "jacobian_condition": 1.0001121619083355
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.7002826576744016e-17,
+        "full_residual": 1.700282666425365e-17,
+        "normalized_mass": 0.059148160899646626,
+        "support_count": 706,
+        "effective_support": 127.52049607775105,
+        "eigengap": 0.04406557568139149,
+        "normal_space_discrepancy": 0.00043998084943993107,
+        "jacobian_condition": 1.0002332077161227
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.677830148253678e-17,
+        "full_residual": 4.677830150742119e-17,
+        "normalized_mass": 0.059148160898932926,
+        "support_count": 706,
+        "effective_support": 127.52049607522406,
+        "eigengap": 0.044065575682265594,
+        "normal_space_discrepancy": 0.0002238023843462863,
+        "jacobian_condition": 1.0002330976708484
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.6384400384758934,
+          0.9045714958602548,
+          0.2308689553598106
+        ],
+        "seconds": 1.5830936999991536,
+        "chart_origin": [
+          0.638458370851304,
+          0.9047394478775737,
+          0.2309911283670542
+        ],
+        "chart_normal_basis": [
+          [
+            0.3784053785628963,
+            0.0878260489455383
+          ],
+          [
+            0.5172973632482175,
+            0.8054601862379834
+          ],
+          [
+            -0.7676019850489659,
+            0.5861061964457372
+          ]
+        ],
+        "chart_tangent": [
+          -0.9214640278390073,
+          0.28920118665371114,
+          -0.2593582831466892
+        ],
+        "domain": [
+          -0.00020849508456403807,
+          0.00020849508456403807
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 7.2831817636295805e-09,
+        "candidate_stationary_s": [
+          7.2831817636295805e-09
+        ],
+        "objective": 4.347019980862593e-08,
+        "normalized_stationarity": 1.7909664624066046e-17,
+        "projected_residual": 2.048090343813657e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.0480903438136598e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 7.2831817636295805e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 6,
+      "success": true,
+      "theta": 1.3035217119646745,
+      "true_base": [
+        0.39615570364395314,
+        0.9644942620577813,
+        0.15283596121842227
+      ],
+      "reference": [
+        0.39615339916111947,
+        0.964365937981536,
+        0.15277677674446827
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.39615079743900594,
+          0.9642208909235056,
+          0.15270987082505386
+        ],
+        "ENF": [
+          0.3961507798839057,
+          0.9642208941308121,
+          0.15270986456631458
+        ],
+        "CP": [
+          0.396150758654776,
+          0.9642208980093615,
+          0.15270985699771128
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.3961557024234249,
+          0.9644943457847903,
+          0.15283600746760997
+        ],
+        "ENF": [
+          0.39615571796466986,
+          0.9644943429454139,
+          0.15283601300837016
+        ],
+        "CP": [
+          0.3961557367584734,
+          0.9644943395117972,
+          0.15283601970873165
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 9.565923419668392e-08
+        },
+        "ENF": {
+          "E_match": 1.8911376939390423e-08,
+          "E_base": 1.8914043984966625e-08,
+          "extrapolated_distance": 9.565457858640485e-08
+        },
+        "CP": {
+          "E_match": 4.1780632457320424e-08,
+          "E_base": 4.178652459979755e-08,
+          "extrapolated_distance": 9.564894922678623e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.7729185381632318e-17,
+        "full_residual": 1.7729185398461057e-17,
+        "normalized_mass": 0.031494843057580296,
+        "support_count": 588,
+        "effective_support": 86.61182197595664,
+        "eigengap": 0.020627470337402923,
+        "normal_space_discrepancy": 0.00015536593595302816,
+        "jacobian_condition": 1.0000658391840918
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.9262756891726234e-17,
+        "full_residual": 1.9262757016068545e-17,
+        "normalized_mass": 0.059145040561931525,
+        "support_count": 706,
+        "effective_support": 127.50944765664893,
+        "eigengap": 0.04406939397956889,
+        "normal_space_discrepancy": 0.00031619005275477824,
+        "jacobian_condition": 1.0001368059444755
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.1148172611565073e-17,
+        "full_residual": 3.1148172798478503e-17,
+        "normalized_mass": 0.059145040561785635,
+        "support_count": 706,
+        "effective_support": 127.50944765613237,
+        "eigengap": 0.04406939397974722,
+        "normal_space_discrepancy": 0.00016081736770747195,
+        "jacobian_condition": 1.0001367932240801
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.396150758654776,
+          0.9642208980093615,
+          0.15270985699771128
+        ],
+        "seconds": 1.809072100004414,
+        "chart_origin": [
+          0.39615339916111947,
+          0.964365937981536,
+          0.15277677674446827
+        ],
+        "chart_normal_basis": [
+          [
+            0.3715288408898138,
+            0.016413335640481606
+          ],
+          [
+            0.3836082666759103,
+            0.9077916835147318
+          ],
+          [
+            -0.8454649715540998,
+            0.4191000617449746
+          ]
+        ],
+        "chart_tangent": [
+          -0.9282763181295881,
+          0.16958466050734744,
+          -0.33097450071022594
+        ],
+        "domain": [
+          -0.00015975549644270333,
+          0.00015975549644270333
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 3.2948358368895782e-09,
+        "candidate_stationary_s": [
+          3.2948358368895782e-09
+        ],
+        "objective": 2.5521818308155146e-08,
+        "normalized_stationarity": 4.4045713241067695e-20,
+        "projected_residual": 5.858153146829235e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 5.858153146829237e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 3.2948358368895782e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 7,
+      "success": true,
+      "theta": 1.4685455958756717,
+      "true_base": [
+        0.15310897279221614,
+        0.9947769470702716,
+        0.06092371060932242
+      ],
+      "reference": [
+        0.15310932104131905,
+        0.9946594882824711,
+        0.060902418643375575
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.1531097165336079,
+          0.9945267367247881,
+          0.06087834969807902
+        ],
+        "ENF": [
+          0.15310971095145742,
+          0.9945267371069331,
+          0.06087834750196192
+        ],
+        "CP": [
+          0.15310970420086847,
+          0.9945267375690675,
+          0.06087834484616036
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.15310897091842307,
+          0.9947770110790871,
+          0.06092372648949217
+        ],
+        "ENF": [
+          0.15310897586021013,
+          0.9947770107407804,
+          0.06092372843367896
+        ],
+        "CP": [
+          0.15310898183639685,
+          0.9947770103316602,
+          0.06092373078481692
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 6.59758997650975e-08
+        },
+        "ENF": {
+          "E_match": 6.0107710745891405e-09,
+          "E_base": 6.011375619537172e-09,
+          "extrapolated_distance": 6.597528622331236e-08
+        },
+        "CP": {
+          "E_match": 1.3279698186028058e-08,
+          "E_base": 1.3281034181273029e-08,
+          "extrapolated_distance": 6.597454408686048e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0646465410725812e-17,
+        "full_residual": 1.0646465411314282e-17,
+        "normalized_mass": 0.0314945329174965,
+        "support_count": 587,
+        "effective_support": 86.61036906722454,
+        "eigengap": 0.020627845019894318,
+        "normal_space_discrepancy": 0.00012138014988220858,
+        "jacobian_condition": 1.0000469412832325
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.690215172766317e-18,
+        "full_residual": 1.690215219391843e-18,
+        "normalized_mass": 0.05914376735301283,
+        "support_count": 705,
+        "effective_support": 127.50493951926961,
+        "eigengap": 0.04407095066747665,
+        "normal_space_discrepancy": 0.0002469813256282239,
+        "jacobian_condition": 1.0000974660004118
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.264390496688592e-17,
+        "full_residual": 4.264390497459612e-17,
+        "normalized_mass": 0.05914376735299809,
+        "support_count": 705,
+        "effective_support": 127.50493951921743,
+        "eigengap": 0.04407095066749468,
+        "normal_space_discrepancy": 0.00012560030474619225,
+        "jacobian_condition": 1.0000975008938628
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.15310970420086847,
+          0.9945267375690675,
+          0.06087834484616036
+        ],
+        "seconds": 1.6410936000029324,
+        "chart_origin": [
+          0.15310932104131905,
+          0.9946594882824711,
+          0.060902418643375575
+        ],
+        "chart_normal_basis": [
+          [
+            0.37086081791007147,
+            -0.0029050112842803257
+          ],
+          [
+            0.1669006807464266,
+            0.9839221103253489
+          ],
+          [
+            -0.9135679594345747,
+            0.17857447108237623
+          ]
+        ],
+        "chart_tangent": [
+          -0.9286839153600708,
+          0.06357234917235416,
+          -0.36538300695598486
+        ],
+        "domain": [
+          -0.0001349164434281664,
+          0.0001349164434281664
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 1.0475994156351301e-09,
+        "candidate_stationary_s": [
+          1.0475994156351301e-09
+        ],
+        "objective": 1.820244643275734e-08,
+        "normalized_stationarity": 4.5282381350064444e-18,
+        "projected_residual": 4.390309065160362e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 4.390309065160362e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.0475994156351301e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 8,
+      "success": true,
+      "theta": 1.6307779265441749,
+      "true_base": [
+        -0.08991845899363388,
+        0.9982016431189776,
+        -0.035902701405668695
+      ],
+      "reference": [
+        -0.08991873898252731,
+        0.9980854206886146,
+        -0.035890301864079495
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.0899190565849487,
+          0.9979540681516736,
+          -0.03587628519569904
+        ],
+        "ENF": [
+          -0.08991905338321028,
+          0.9979540682799557,
+          -0.03587628392287232
+        ],
+        "CP": [
+          -0.0899190495112998,
+          0.9979540684350892,
+          -0.035876282383623795
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.08991845781426515,
+          0.9982017049549038,
+          -0.03590271059280602
+        ],
+        "ENF": [
+          -0.08991846064871213,
+          0.9982017048413377,
+          -0.03590271171961883
+        ],
+        "CP": [
+          -0.08991846407645156,
+          0.9982017047040006,
+          -0.03590271308229053
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 6.252580400516072e-08
+        },
+        "ENF": {
+          "E_match": 3.447850493612031e-09,
+          "E_base": 3.4481830032982715e-09,
+          "extrapolated_distance": 6.252559397731284e-08
+        },
+        "CP": {
+          "E_match": 7.617388026286146e-09,
+          "E_base": 7.61812269423239e-09,
+          "extrapolated_distance": 6.252533991302082e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.9114055881966897e-18,
+        "full_residual": 2.911405598500992e-18,
+        "normalized_mass": 0.03149450103332029,
+        "support_count": 587,
+        "effective_support": 86.61021970122373,
+        "eigengap": 0.02062788353869542,
+        "normal_space_discrepancy": 0.00011742008912996461,
+        "jacobian_condition": 1.0000449982619704
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.891296896807373e-17,
+        "full_residual": 3.891296898137311e-17,
+        "normalized_mass": 0.05914363645986378,
+        "support_count": 705,
+        "effective_support": 127.50447606444342,
+        "eigengap": 0.04407111069680817,
+        "normal_space_discrepancy": 0.00023891713187631285,
+        "jacobian_condition": 1.00009342074195
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.9119500453546944e-17,
+        "full_residual": 4.9119500454815057e-17,
+        "normalized_mass": 0.05914363645985893,
+        "support_count": 705,
+        "effective_support": 127.50447606442626,
+        "eigengap": 0.04407111069681413,
+        "normal_space_discrepancy": 0.00012149674758122292,
+        "jacobian_condition": 1.0000934610405823
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.0899190495112998,
+          0.9979540684350892,
+          -0.035876282383623795
+        ],
+        "seconds": 1.741488700004993,
+        "chart_origin": [
+          -0.08991873898252731,
+          0.9980854206886146,
+          -0.035890301864079495
+        ],
+        "chart_normal_basis": [
+          [
+            -0.3710463475076381,
+            -0.0023908411449918058
+          ],
+          [
+            0.09951646988736396,
+            -0.994340156010572
+          ],
+          [
+            0.9232665271861635,
+            0.10621646776037497
+          ]
+        ],
+        "chart_tangent": [
+          -0.9286112705970463,
+          -0.03720384880665961,
+          -0.3691842111387088
+        ],
+        "domain": [
+          -0.00013209866401528244,
+          0.00013209866401528244
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -6.009340664655446e-10,
+        "candidate_stationary_s": [
+          -6.009340664655446e-10
+        ],
+        "objective": 1.7450056766580883e-08,
+        "normalized_stationarity": 4.461322532252405e-18,
+        "projected_residual": 2.5120691499422415e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.5120691499422418e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 6.009340664655446e-10,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 9,
+      "success": true,
+      "theta": 1.7946448110807403,
+      "true_base": [
+        -0.332975585593867,
+        0.9750503712113023,
+        -0.12986718733504027
+      ],
+      "reference": [
+        -0.3329746336370396,
+        0.9749258139418349,
+        -0.12981864058437909
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.33297356079048784,
+          0.9747850296491638,
+          -0.12976376081809765
+        ],
+        "ENF": [
+          -0.3329735469661648,
+          0.9747850317490394,
+          -0.12976375571041365
+        ],
+        "CP": [
+          -0.3329735302483223,
+          0.9747850342884324,
+          -0.12976374953365863
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.33297558341065664,
+          0.9750504479881925,
+          -0.12986722474959417
+        ],
+        "ENF": [
+          -0.33297559564910517,
+          0.9750504461292068,
+          -0.1298672292713438
+        ],
+        "CP": [
+          -0.3329756104491394,
+          0.9750504438811234,
+          -0.12986723473952463
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 8.543597671001693e-08
+        },
+        "ENF": {
+          "E_match": 1.4886565095375855e-08,
+          "E_base": 1.4888443383521318e-08,
+          "extrapolated_distance": 8.54328515671024e-08
+        },
+        "CP": {
+          "E_match": 3.288898374993443e-08,
+          "E_base": 3.2893133525747654e-08,
+          "extrapolated_distance": 8.54290725623913e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.9152747387440844e-17,
+        "full_residual": 1.915274740949744e-17,
+        "normalized_mass": 0.03149472913943442,
+        "support_count": 587,
+        "effective_support": 86.61128830307297,
+        "eigengap": 0.02062760796664864,
+        "normal_space_discrepancy": 0.00014371866932134133,
+        "jacobian_condition": 1.0000588980463185
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.4006995513616045e-17,
+        "full_residual": 1.400699570275257e-17,
+        "normalized_mass": 0.05914457290246632,
+        "support_count": 705,
+        "effective_support": 127.50779177154185,
+        "eigengap": 0.044069965798558125,
+        "normal_space_discrepancy": 0.0002924713652960717,
+        "jacobian_condition": 1.0001223572962066
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.643769481129801e-17,
+        "full_residual": 3.643769496736199e-17,
+        "normalized_mass": 0.059144572902375916,
+        "support_count": 705,
+        "effective_support": 127.50779177122173,
+        "eigengap": 0.04406996579866862,
+        "normal_space_discrepancy": 0.00014874817591195905,
+        "jacobian_condition": 1.0001223612454
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.3329735302483223,
+          0.9747850342884324,
+          -0.12976374953365863
+        ],
+        "seconds": 1.600490400000126,
+        "chart_origin": [
+          -0.3329746336370396,
+          0.9749258139418349,
+          -0.12981864058437909
+        ],
+        "chart_normal_basis": [
+          [
+            -0.370918421546574,
+            0.007192618354138955
+          ],
+          [
+            0.3350669664265049,
+            -0.9315768537727885
+          ],
+          [
+            0.8661118014246992,
+            0.36347328891681197
+          ]
+        ],
+        "chart_tangent": [
+          -0.9286375992811242,
+          -0.14104855023902935,
+          -0.34312900733814133
+        ],
+        "domain": [
+          -0.0001511064394440778,
+          0.0001511064394440778
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -2.5939793709336227e-09,
+        "candidate_stationary_s": [
+          -2.5939793709336227e-09
+        ],
+        "objective": 2.283315572796357e-08,
+        "normalized_stationarity": 1.9027748121145844e-17,
+        "projected_residual": 1.66170595727271e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 1.6617059572727097e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 2.5939793709336227e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 10,
+      "success": true,
+      "theta": 1.9646750422375712,
+      "true_base": [
+        -0.5756595079881229,
+        0.9234274635202804,
+        -0.212631919725122
+      ],
+      "reference": [
+        -0.5756487258857714,
+        0.9232849308254231,
+        -0.21253796970718222
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.5756365380752689,
+          0.9231238035904062,
+          -0.2124317601925942
+        ],
+        "ENF": [
+          -0.5756365061549285,
+          0.9231238124420639,
+          -0.2124317504517505
+        ],
+        "CP": [
+          -0.5756364675600548,
+          0.9231238231445996,
+          -0.2124317386740991
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.57565951555634,
+          0.9234275741480378,
+          -0.21263199526439205
+        ],
+        "ENF": [
+          -0.5756595438148987,
+          0.9234275663118091,
+          -0.21263200388780265
+        ],
+        "CP": [
+          -0.5756595779823132,
+          0.9234275568370282,
+          -0.21263201431436604
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 1.3417138270861561e-07
+        },
+        "ENF": {
+          "E_match": 3.4527438581573155e-08,
+          "E_base": 3.45345709266567e-08,
+          "extrapolated_distance": 1.34159224370667e-07
+        },
+        "CP": {
+          "E_match": 7.6274553627715e-08,
+          "E_base": 7.62903094846588e-08,
+          "extrapolated_distance": 1.3414452541485054e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.802598318722196e-17,
+        "full_residual": 1.8025983391312138e-17,
+        "normalized_mass": 0.031495345854102005,
+        "support_count": 587,
+        "effective_support": 86.61417743956723,
+        "eigengap": 0.02062686274790411,
+        "normal_space_discrepancy": 0.00019834656735898457,
+        "jacobian_condition": 1.0000964743071208
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.6579428954758926e-17,
+        "full_residual": 4.657942895994343e-17,
+        "normalized_mass": 0.05914710437461364,
+        "support_count": 705,
+        "effective_support": 127.51675520168672,
+        "eigengap": 0.044066869275706896,
+        "normal_space_discrepancy": 0.00040371689900387377,
+        "jacobian_condition": 1.0002005655987944
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 6.06860880577702e-17,
+        "full_residual": 6.068608866722383e-17,
+        "normalized_mass": 0.059147104374127665,
+        "support_count": 705,
+        "effective_support": 127.51675519996598,
+        "eigengap": 0.04406686927630173,
+        "normal_space_discrepancy": 0.0002053527047753253,
+        "jacobian_condition": 1.000200486194341
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.5756364675600548,
+          0.9231238231445996,
+          -0.2124317386740991
+        ],
+        "seconds": 1.8370780000113882,
+        "chart_origin": [
+          -0.5756487258857714,
+          0.9232849308254231,
+          -0.21253796970718222
+        ],
+        "chart_normal_basis": [
+          [
+            -0.3759207421957856,
+            0.06328487880208854
+          ],
+          [
+            0.4901812098669084,
+            -0.8330716768001968
+          ],
+          [
+            0.78638793040101,
+            0.5495330794668445
+          ]
+        ],
+        "chart_tangent": [
+          -0.9244883015495515,
+          -0.25634734796116515,
+          -0.2821478645875293
+        ],
+        "domain": [
+          -0.00019336748483120267,
+          0.00019336748483120267
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -6.011143716770351e-09,
+        "candidate_stationary_s": [
+          -6.011143716770351e-09
+        ],
+        "objective": 3.7390983759593496e-08,
+        "normalized_stationarity": 1.7008421570717698e-17,
+        "projected_residual": 3.378110338124008e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 3.37811033812401e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 6.011143716770351e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 11,
+      "success": true,
+      "theta": 2.145592957028182,
+      "true_base": [
+        -0.8154961696436167,
+        0.8393028846202172,
+        -0.27377931503145014
+      ],
+      "reference": [
+        -0.8154540028796932,
+        0.83913586553019,
+        -0.2736255689293859
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.8154063211620239,
+          0.8389470276942979,
+          -0.2734517710968637
+        ],
+        "ENF": [
+          -0.8154062597884776,
+          0.8389470542226927,
+          -0.27345175916932096
+        ],
+        "CP": [
+          -0.8154061856361209,
+          0.8389470862746576,
+          -0.27345174475829803
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.8154962147294503,
+          0.8393030405974232,
+          -0.273779429326057
+        ],
+        "ENF": [
+          -0.8154962690624535,
+          0.8393030171122665,
+          -0.2737794398853167
+        ],
+        "CP": [
+          -0.8154963347083298,
+          0.8393029887371828,
+          -0.2737794526431611
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 1.9855699017882857e-07
+        },
+        "ENF": {
+          "E_match": 6.791711271363245e-08,
+          "E_base": 6.79426803344947e-08,
+          "extrapolated_distance": 1.985235811249867e-07
+        },
+        "CP": {
+          "E_match": 1.4997549464065626e-07,
+          "E_base": 1.5003195267586735e-07,
+          "extrapolated_distance": 1.9848322445474463e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.8895782317845585e-17,
+        "full_residual": 3.889578263370722e-17,
+        "normalized_mass": 0.03149664766614353,
+        "support_count": 589,
+        "effective_support": 86.62027592832644,
+        "eigengap": 0.020625287687756455,
+        "normal_space_discrepancy": 0.0002664400093135938,
+        "jacobian_condition": 1.0001758020723592
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.50817730351067e-17,
+        "full_residual": 1.508177319763839e-17,
+        "normalized_mass": 0.059152443520134275,
+        "support_count": 707,
+        "effective_support": 127.53565854382637,
+        "eigengap": 0.04406032111440923,
+        "normal_space_discrepancy": 0.0005423664033649161,
+        "jacobian_condition": 1.0003655501358977
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.6450507972247358e-17,
+        "full_residual": 2.6450508093931023e-17,
+        "normalized_mass": 0.05915244351825906,
+        "support_count": 707,
+        "effective_support": 127.53565853718776,
+        "eigengap": 0.04406032111671443,
+        "normal_space_discrepancy": 0.000275875625984051,
+        "jacobian_condition": 1.0003653409738307
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.8154061856361209,
+          0.8389470862746576,
+          -0.27345174475829803
+        ],
+        "seconds": 2.5062318999989657,
+        "chart_origin": [
+          -0.8154540028796932,
+          0.83913586553019,
+          -0.2736255689293859
+        ],
+        "chart_normal_basis": [
+          [
+            -0.3871306283003843,
+            0.18311737689490243
+          ],
+          [
+            0.5696209389718089,
+            -0.723177085778496
+          ],
+          [
+            0.7250254219795502,
+            0.6659451395453324
+          ]
+        ],
+        "chart_tangent": [
+          -0.9036580674740198,
+          -0.39057251374078666,
+          -0.17565650742094122
+        ],
+        "domain": [
+          -0.00026103436408159267,
+          0.00026103436408159267
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -1.1796341721359994e-08,
+        "candidate_stationary_s": [
+          -1.1796341721359994e-08
+        ],
+        "objective": 6.81389385565981e-08,
+        "normalized_stationarity": 1.2070558298624277e-16,
+        "projected_residual": 1.5943416447656583e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 1.594341644765741e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.1796341721359994e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 12,
+      "success": true,
+      "theta": 2.341512676042861,
+      "true_base": [
+        -1.044974002107884,
+        0.717411809498757,
+        -0.29987067589255
+      ],
+      "reference": [
+        -1.0448598039137589,
+        0.71722987309503,
+        -0.29965182640253335
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.0447306807794197,
+          0.7170241621320385,
+          -0.29940450572463007
+        ],
+        "ENF": [
+          -1.0447306001285863,
+          0.7170242143913812,
+          -0.2994045044467536
+        ],
+        "CP": [
+          -1.0447305028361697,
+          0.7170242774339645,
+          -0.29940450290518983
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.0449741145261555,
+          0.717411985667472,
+          -0.29987077537937007
+        ],
+        "ENF": [
+          -1.0449741859250277,
+          0.7174119394031251,
+          -0.29987077651065336
+        ],
+        "CP": [
+          -1.044974272056423,
+          0.7174118835925507,
+          -0.2998707778753747
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.314539074582336e-07
+        },
+        "ENF": {
+          "E_match": 9.61105030231788e-08,
+          "E_base": 9.61743528344873e-08,
+          "extrapolated_distance": 2.3140532761910853e-07
+        },
+        "CP": {
+          "E_match": 2.1205254908550451e-07,
+          "E_base": 2.1219342394259242e-07,
+          "extrapolated_distance": 2.3134674566735316e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 7.06460677118122e-18,
+        "full_residual": 7.064606936131733e-18,
+        "normalized_mass": 0.03149884769923038,
+        "support_count": 589,
+        "effective_support": 86.63058107895968,
+        "eigengap": 0.020622616931804134,
+        "normal_space_discrepancy": 0.0002773123184419541,
+        "jacobian_condition": 1.0003099064590635
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.9685024581033514e-17,
+        "full_residual": 3.9685025177434274e-17,
+        "normalized_mass": 0.05916144526751491,
+        "support_count": 708,
+        "effective_support": 127.56751956482492,
+        "eigengap": 0.044049204319562524,
+        "normal_space_discrepancy": 0.0005644854996022488,
+        "jacobian_condition": 1.000643877327784
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.4448142138390625e-17,
+        "full_residual": 4.444814336604417e-17,
+        "normalized_mass": 0.05916144526378122,
+        "support_count": 708,
+        "effective_support": 127.56751955161269,
+        "eigengap": 0.04404920432419499,
+        "normal_space_discrepancy": 0.000287075548571693,
+        "jacobian_condition": 1.0006436277894468
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.0447305028361697,
+          0.7170242774339645,
+          -0.29940450290518983
+        ],
+        "seconds": 2.554986300005112,
+        "chart_origin": [
+          -1.0448598039137589,
+          0.71722987309503,
+          -0.29965182640253335
+        ],
+        "chart_normal_basis": [
+          [
+            -0.39580380871658305,
+            0.37301771058484595
+          ],
+          [
+            0.5937030659149118,
+            -0.5932044444215869
+          ],
+          [
+            0.7006111721409247,
+            0.713418723267421
+          ]
+        ],
+        "chart_tangent": [
+          -0.8391645444103837,
+          -0.5437142233211404,
+          -0.013330820034884191
+        ],
+        "domain": [
+          -0.0003466370693484724,
+          0.0003466370693484724
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -1.6619725961844512e-08,
+        "candidate_stationary_s": [
+          -1.6619725961844512e-08
+        ],
+        "objective": 1.201572568528934e-07,
+        "normalized_stationarity": 1.8915262129977638e-16,
+        "projected_residual": 4.5434186211804154e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 4.5434186211804246e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.6619725961844512e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 13,
+      "success": true,
+      "theta": 2.5532021200575863,
+      "true_base": [
+        -1.2477525703457282,
+        0.55502293173671,
+        -0.2770125158701206
+      ],
+      "reference": [
+        -1.2475299131192061,
+        0.554867425032591,
+        -0.2767693361959625
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.2472782077363285,
+          0.55469158439814,
+          -0.27649459825713923
+        ],
+        "ENF": [
+          -1.2472781736204757,
+          0.554691618507525,
+          -0.2764946077012806
+        ],
+        "CP": [
+          -1.2472781324321056,
+          0.5546916596880828,
+          -0.27649461910327267
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.2477527438040992,
+          0.5550230938886114,
+          -0.2770125572283223
+        ],
+        "ENF": [
+          -1.2477527740063092,
+          0.5550230636921272,
+          -0.2770125488675774
+        ],
+        "CP": [
+          -1.2477528104697038,
+          0.5550230272356487,
+          -0.2770125387735791
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.410218795652865e-07
+        },
+        "ENF": {
+          "E_match": 4.915824816682745e-08,
+          "E_base": 4.920442407421814e-08,
+          "extrapolated_distance": 2.4100787111637875e-07
+        },
+        "CP": {
+          "E_match": 1.08507431702441e-07,
+          "E_base": 1.0860935590956645e-07,
+          "extrapolated_distance": 2.409909639088076e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.7653573989783854e-17,
+        "full_residual": 1.7653574172756258e-17,
+        "normalized_mass": 0.03150094225621926,
+        "support_count": 590,
+        "effective_support": 86.64039124837598,
+        "eigengap": 0.02062006463737332,
+        "normal_space_discrepancy": 0.00014585728953355972,
+        "jacobian_condition": 1.0004376067420448
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.15026252711059e-17,
+        "full_residual": 3.1502626263067723e-17,
+        "normalized_mass": 0.059169993922852125,
+        "support_count": 709,
+        "effective_support": 127.59776837530376,
+        "eigengap": 0.04403856614403441,
+        "normal_space_discrepancy": 0.00029713042687043624,
+        "jacobian_condition": 1.0009082793545894
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 6.642218839878018e-17,
+        "full_residual": 6.642218910652303e-17,
+        "normalized_mass": 0.05916999392187626,
+        "support_count": 709,
+        "effective_support": 127.59776837184958,
+        "eigengap": 0.04403856614524738,
+        "normal_space_discrepancy": 0.0001512245639885687,
+        "jacobian_condition": 1.0009082558996385
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.2472781324321056,
+          0.5546916596880828,
+          -0.27649461910327267
+        ],
+        "seconds": 2.3545290999900317,
+        "chart_origin": [
+          -1.2475299131192061,
+          0.554867425032591,
+          -0.2767693361959625
+        ],
+        "chart_normal_basis": [
+          [
+            -0.380567461849737,
+            -0.611151577389465
+          ],
+          [
+            0.5800686004640123,
+            0.426720441609712
+          ],
+          [
+            0.72020054549894,
+            -0.6666358932481665
+          ]
+        ],
+        "chart_tangent": [
+          -0.694018844438404,
+          -0.6938516292898175,
+          0.19211392478487357
+        ],
+        "domain": [
+          -0.0004120151121900744,
+          0.0004120151121900744
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -8.491971635900722e-09,
+        "candidate_stationary_s": [
+          -8.491971635900722e-09
+        ],
+        "objective": 1.697564517428706e-07,
+        "normalized_stationarity": 5.2570252821520754e-17,
+        "projected_residual": 4.073812639016907e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 4.073812639016914e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 8.491971635900722e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 14,
+      "success": true,
+      "theta": 2.7752970497639335,
+      "true_base": [
+        -1.4004907686263086,
+        0.3581592488715296,
+        -0.20063948869708395
+      ],
+      "reference": [
+        -1.4001851822591678,
+        0.35807058054697705,
+        -0.2004570343076584
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.3998396559490833,
+          0.35797027000400183,
+          -0.20025084486066497
+        ],
+        "ENF": [
+          -1.3998396715773764,
+          0.3579702428386389,
+          -0.2002508318993567
+        ],
+        "CP": [
+          -1.3998396903010082,
+          0.35797021029290305,
+          -0.20025081637093048
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.4004910710861942,
+          0.3581593838404847,
+          -0.20063957047421133
+        ],
+        "ENF": [
+          -1.40049105725072,
+          0.35815940788953904,
+          -0.20063958194864692
+        ],
+        "CP": [
+          -1.4004910406749933,
+          0.35815943670175004,
+          -0.20063959569571027
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 4.09288879109611e-15,
+          "extrapolated_distance": 3.4115407032108685e-07
+        },
+        "ENF": {
+          "E_match": 3.3914539688600297e-08,
+          "E_base": 3.394678393810836e-08,
+          "extrapolated_distance": 3.4115274089892525e-07
+        },
+        "CP": {
+          "E_match": 7.454619394202422e-08,
+          "E_base": 7.461707406308093e-08,
+          "extrapolated_distance": 3.4115115230217165e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.0625384024704538e-17,
+        "full_residual": 2.062538403826753e-17,
+        "normalized_mass": 0.031501033753176304,
+        "support_count": 590,
+        "effective_support": 86.64082256301145,
+        "eigengap": 0.02061996072886174,
+        "normal_space_discrepancy": 0.00020802786136251564,
+        "jacobian_condition": 1.0004430857130104
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.5468281188189287e-17,
+        "full_residual": 2.5468281513668655e-17,
+        "normalized_mass": 0.059170390819457304,
+        "support_count": 710,
+        "effective_support": 127.59919180840429,
+        "eigengap": 0.04403813751125651,
+        "normal_space_discrepancy": 0.00042310133127457727,
+        "jacobian_condition": 1.0009201445155416
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.837094973789188e-17,
+        "full_residual": 3.8370949745819664e-17,
+        "normalized_mass": 0.05917039081899958,
+        "support_count": 710,
+        "effective_support": 127.59919180678776,
+        "eigengap": 0.04403813751183812,
+        "normal_space_discrepancy": 0.00021505745442366067,
+        "jacobian_condition": 1.0009202416569254
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.3998396903010082,
+          0.35797021029290305,
+          -0.20025081637093048
+        ],
+        "seconds": 1.5936596999963513,
+        "chart_origin": [
+          -1.4001851822591678,
+          0.35807058054697705,
+          -0.2004570343076584
+        ],
+        "chart_normal_basis": [
+          [
+            -0.3057437217265003,
+            -0.8331702204528723
+          ],
+          [
+            0.5475710019218775,
+            0.2420694255309554
+          ],
+          [
+            0.7789010042868734,
+            -0.49722206002311
+          ]
+        ],
+        "chart_tangent": [
+          -0.46081250023772174,
+          -0.8009796446086408,
+          0.38220864530682047
+        ],
+        "domain": [
+          -0.0004146862903225697,
+          0.0004146862903225697
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 5.795620699179833e-09,
+        "candidate_stationary_s": [
+          5.795620699179833e-09
+        ],
+        "objective": 1.719647184841452e-07,
+        "normalized_stationarity": 5.5836411846204196e-18,
+        "projected_residual": 4.908268091320609e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 4.9082680913207335e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 5.795620699179833e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 15,
+      "success": true,
+      "theta": 3.0001361409113603,
+      "true_base": [
+        -1.4850175494486928,
+        0.1409852282717729,
+        -0.0837462152786451
+      ],
+      "reference": [
+        -1.4846866275908783,
+        0.14095687005950724,
+        -0.08367347755634148
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.4843123372132219,
+          0.14092477529341796,
+          -0.08359124183887545
+        ],
+        "ENF": [
+          -1.4843123427703468,
+          0.1409247492818591,
+          -0.08359122672281487
+        ],
+        "CP": [
+          -1.4843123494601542,
+          0.14092471796848122,
+          -0.08359120852571542
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.485017980779469,
+          0.1409852830343407,
+          -0.08374627950056736
+        ],
+        "ENF": [
+          -1.4850179758598365,
+          0.14098530606195103,
+          -0.08374629288257013
+        ],
+        "CP": [
+          -1.4850179699374588,
+          0.1409853337831756,
+          -0.08374630899216655
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 4.395106740852002e-07
+        },
+        "ENF": {
+          "E_match": 3.059375948649095e-08,
+          "E_base": 3.061875079875076e-08,
+          "extrapolated_distance": 4.39507216494537e-07
+        },
+        "CP": {
+          "E_match": 6.74233072180213e-08,
+          "E_base": 6.747838385548009e-08,
+          "extrapolated_distance": 4.3950305773256625e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.1464325629620508e-17,
+        "full_residual": 2.1464325643418798e-17,
+        "normalized_mass": 0.03150001578134725,
+        "support_count": 590,
+        "effective_support": 86.63605676156378,
+        "eigengap": 0.020621207247550937,
+        "normal_space_discrepancy": 0.00027967442416831006,
+        "jacobian_condition": 1.0003808735716169
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 9.98731469988146e-17,
+        "full_residual": 9.987314752894979e-17,
+        "normalized_mass": 0.05916625425669908,
+        "support_count": 710,
+        "effective_support": 127.58456900292235,
+        "eigengap": 0.04404333824841582,
+        "normal_space_discrepancy": 0.0005691602388940235,
+        "jacobian_condition": 1.0007915789519322
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 9.96755836717265e-17,
+        "full_residual": 9.967558375686672e-17,
+        "normalized_mass": 0.059166254256322326,
+        "support_count": 710,
+        "effective_support": 127.58456900158976,
+        "eigengap": 0.04404333824888619,
+        "normal_space_discrepancy": 0.0002894760367242034,
+        "jacobian_condition": 1.0007917918311995
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.4843123494601542,
+          0.14092471796848122,
+          -0.08359120852571542
+        ],
+        "seconds": 1.8073188999987906,
+        "chart_origin": [
+          -1.4846866275908783,
+          0.14095687005950724,
+          -0.08367347755634148
+        ],
+        "chart_normal_basis": [
+          [
+            -0.1405975864183457,
+            -0.973262970609661
+          ],
+          [
+            0.5197809736842078,
+            0.083581595407893
+          ],
+          [
+            0.8426506144833887,
+            -0.2139469722831558
+          ]
+        ],
+        "chart_tangent": [
+          -0.1816356483000899,
+          -0.8502010681626835,
+          0.4941322039309296
+        ],
+        "domain": [
+          -0.0003845595796783815,
+          0.0003845595796783815
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 5.268633848001086e-09,
+        "candidate_stationary_s": [
+          5.268633848001086e-09
+        ],
+        "objective": 1.478860694958281e-07,
+        "normalized_stationarity": 7.296002985733305e-17,
+        "projected_residual": 9.36527903485892e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 9.365279034859177e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 5.268633848001086e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 16,
+      "success": true,
+      "theta": 3.2246481177967348,
+      "true_base": [
+        -1.4948293157966914,
+        -0.08296000812920651,
+        0.04960442087610789
+      ],
+      "reference": [
+        -1.4944970428628306,
+        -0.08294387008280135,
+        0.04956172377663046
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.4941212098155263,
+          -0.0829256048877064,
+          0.04951344855431949
+        ],
+        "ENF": [
+          -1.4941212118460288,
+          -0.08292558862968175,
+          0.04951343891423702
+        ],
+        "CP": [
+          -1.4941212142914349,
+          -0.08292556904956279,
+          0.049513427304341794
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.49482976175179,
+          -0.08296003996318363,
+          0.049604461046401684
+        ],
+        "ENF": [
+          -1.4948297599542193,
+          -0.08296005435614864,
+          0.049604469580610024
+        ],
+        "CP": [
+          -1.494829757789341,
+          -0.08296007169010974,
+          0.04960447985866159
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 4.488908604483366e-07
+        },
+        "ENF": {
+          "E_match": 1.9009931499285338e-08,
+          "E_base": 1.902504124952588e-08,
+          "extrapolated_distance": 4.488894599054265e-07
+        },
+        "CP": {
+          "E_match": 4.190427002448848e-08,
+          "E_base": 4.1937577395969906e-08,
+          "extrapolated_distance": 4.4888777403692906e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.375493350382107e-17,
+        "full_residual": 3.375493352503565e-17,
+        "normalized_mass": 0.03149984790319323,
+        "support_count": 590,
+        "effective_support": 86.63527059567458,
+        "eigengap": 0.020621412027399446,
+        "normal_space_discrepancy": 0.0002824502116577891,
+        "jacobian_condition": 1.00037061635715
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.176312003697583e-16,
+        "full_residual": 1.1763120056533459e-16,
+        "normalized_mass": 0.0591655698509703,
+        "support_count": 709,
+        "effective_support": 127.58214806022403,
+        "eigengap": 0.0440441919737439,
+        "normal_space_discrepancy": 0.0005748572049909819,
+        "jacobian_condition": 1.0007703164768746
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.2001306212597274e-17,
+        "full_residual": 1.2001306542779342e-17,
+        "normalized_mass": 0.05916556985082468,
+        "support_count": 709,
+        "effective_support": 127.5821480597089,
+        "eigengap": 0.044044191973925326,
+        "normal_space_discrepancy": 0.0002924032688544497,
+        "jacobian_condition": 1.0007705592357792
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.4941212142914349,
+          -0.08292556904956279,
+          0.049513427304341794
+        ],
+        "seconds": 1.681516399999964,
+        "chart_origin": [
+          -1.4944970428628306,
+          -0.08294387008280135,
+          0.04956172377663046
+        ],
+        "chart_normal_basis": [
+          [
+            0.08443416604158321,
+            0.9906880792619631
+          ],
+          [
+            0.5160271544947236,
+            0.048222602287194535
+          ],
+          [
+            0.8524006378628194,
+            -0.1273252144584623
+          ]
+        ],
+        "chart_tangent": [
+          -0.1068082450614404,
+          0.8552137489848545,
+          -0.5071503153249197
+        ],
+        "domain": [
+          -0.00037936076883176884,
+          0.00037936076883176884
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 3.2762417887936172e-09,
+        "candidate_stationary_s": [
+          3.2762417887936172e-09
+        ],
+        "objective": 1.439145921304853e-07,
+        "normalized_stationarity": 5.105914599801501e-18,
+        "projected_residual": 3.033232785167774e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 3.0332327851678214e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 3.2762417887936172e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 17,
+      "success": true,
+      "theta": 3.4494616745895508,
+      "true_base": [
+        -1.4294722209528212,
+        -0.303028542494457,
+        0.17326835346065908
+      ],
+      "reference": [
+        -1.4291554452027742,
+        -0.30295765992784673,
+        0.17311229578428197
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.4287972320023237,
+          -0.30287745915224057,
+          0.1729359138059481
+        ],
+        "ENF": [
+          -1.4287972483997868,
+          -0.30287742477100593,
+          0.17293589615955057
+        ],
+        "CP": [
+          -1.428797268085931,
+          -0.302877383494253,
+          0.17293587497398152
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.4294725655276614,
+          -0.30302866037111476,
+          0.17326844388324414
+        ],
+        "ENF": [
+          -1.4294725510112538,
+          -0.303028690808263,
+          0.17326845950531308
+        ],
+        "CP": [
+          -1.4294725335834302,
+          -0.30302872734990155,
+          0.17326847826055308
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 7.24207805933704e-15,
+          "extrapolated_distance": 3.752372194896382e-07
+        },
+        "ENF": {
+          "E_match": 4.198025058852084e-08,
+          "E_base": 4.2018731863585166e-08,
+          "extrapolated_distance": 3.752330322791378e-07
+        },
+        "CP": {
+          "E_match": 9.23800813670698e-08,
+          "E_base": 9.246477059336213e-08,
+          "extrapolated_distance": 3.7522801107192103e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.954755552148403e-17,
+        "full_residual": 2.954755552882821e-17,
+        "normalized_mass": 0.03150077557155576,
+        "support_count": 590,
+        "effective_support": 86.63961414335523,
+        "eigengap": 0.020620277900976973,
+        "normal_space_discrepancy": 0.00023944133529395662,
+        "jacobian_condition": 1.000427302422388
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.63327774025534e-17,
+        "full_residual": 4.633277789794355e-17,
+        "normalized_mass": 0.05916934463103807,
+        "support_count": 710,
+        "effective_support": 127.5954956471946,
+        "eigengap": 0.044039461604998206,
+        "normal_space_discrepancy": 0.00048706536646262203,
+        "jacobian_condition": 1.0008876099524624
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 8.973547740215314e-17,
+        "full_residual": 8.973547743500376e-17,
+        "normalized_mass": 0.05916934463033346,
+        "support_count": 710,
+        "effective_support": 127.59549564470453,
+        "eigengap": 0.044039461605887224,
+        "normal_space_discrepancy": 0.0002476025731196101,
+        "jacobian_condition": 1.0008877271547278
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.428797268085931,
+          -0.302877383494253,
+          0.17293587497398152
+        ],
+        "seconds": 2.0526892999914708,
+        "chart_origin": [
+          -1.4291554452027742,
+          -0.30295765992784673,
+          0.17311229578428197
+        ],
+        "chart_normal_basis": [
+          [
+            0.27187463492139274,
+            0.8795000863984023
+          ],
+          [
+            0.5389191866592166,
+            0.19711884916805406
+          ],
+          [
+            0.7972767983184562,
+            -0.4331555809727783
+          ]
+        ],
+        "chart_tangent": [
+          -0.3905941383476748,
+          0.8189690284456613,
+          -0.4203878560748476
+        ],
+        "domain": [
+          -0.0004072584634197499,
+          0.0004072584634197499
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 7.196707377201775e-09,
+        "candidate_stationary_s": [
+          7.196707377201775e-09
+        ],
+        "objective": 1.658594551275917e-07,
+        "normalized_stationarity": 4.317835148154924e-17,
+        "projected_residual": 8.51239633565788e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 8.51239633565791e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 7.196707377201775e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 18,
+      "success": true,
+      "theta": 3.672901711534946,
+      "true_base": [
+        -1.293216838499733,
+        -0.5066623721838859,
+        0.26208972445696793
+      ],
+      "reference": [
+        -1.2929672050266425,
+        -0.5065220786956628,
+        0.2618541837168761
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.2926850015525482,
+          -0.5063634264581734,
+          0.26158807254545413
+        ],
+        "ENF": [
+          -1.2926849860987308,
+          -0.5063634439985595,
+          0.26158807848126964
+        ],
+        "CP": [
+          -1.2926849673631229,
+          -0.5063634652638418,
+          0.2615880856776213
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.2932170351760526,
+          -0.5066625309431887,
+          0.2620897676122527
+        ],
+        "ENF": [
+          -1.2932170488570658,
+          -0.50666251541497,
+          0.2620897623573717
+        ],
+        "CP": [
+          -1.293217065443395,
+          -0.5066624965891612,
+          0.2620897559865585
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.564146438027665e-07
+        },
+        "ENF": {
+          "E_match": 2.4118862290155393e-08,
+          "E_base": 2.4142300008882846e-08,
+          "extrapolated_distance": 2.5640959855338465e-07
+        },
+        "CP": {
+          "E_match": 5.335963373635235e-08,
+          "E_base": 5.341148688624784e-08,
+          "extrapolated_distance": 2.564034829951146e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.940400530762837e-17,
+        "full_residual": 3.9404005470772075e-17,
+        "normalized_mass": 0.03150118959322017,
+        "support_count": 590,
+        "effective_support": 86.64155010032411,
+        "eigengap": 0.020619763970769114,
+        "normal_space_discrepancy": 0.0001257953563643738,
+        "jacobian_condition": 1.0004526743951674
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0380175910380968e-16,
+        "full_residual": 1.038017613380732e-16,
+        "normalized_mass": 0.05917100610424945,
+        "support_count": 710,
+        "effective_support": 127.60135260920588,
+        "eigengap": 0.04403731286868757,
+        "normal_space_discrepancy": 0.0002561961832349109,
+        "jacobian_condition": 1.0009395350734287
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.1091876617273341e-16,
+        "full_residual": 1.1091876644471604e-16,
+        "normalized_mass": 0.059171006104012644,
+        "support_count": 710,
+        "effective_support": 127.60135260836662,
+        "eigengap": 0.0440373128689784,
+        "normal_space_discrepancy": 0.00013038741723586767,
+        "jacobian_condition": 1.0009395648869284
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.2926849673631229,
+          -0.5063634652638418,
+          0.2615880856776213
+        ],
+        "seconds": 1.7624464999971678,
+        "chart_origin": [
+          -1.2929672050266425,
+          -0.5065220786956628,
+          0.2618541837168761
+        ],
+        "chart_normal_basis": [
+          [
+            0.3685001181002985,
+            0.6735335430835173
+          ],
+          [
+            0.5725403776022384,
+            0.3785897842899456
+          ],
+          [
+            0.7323968725869546,
+            -0.6348404063799463
+          ]
+        ],
+        "chart_tangent": [
+          -0.6407497399932593,
+          0.7272326252626311,
+          -0.2461147688623991
+        ],
+        "domain": [
+          -0.0004190757531151905,
+          0.0004190757531151905
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -4.18966554199482e-09,
+        "candidate_stationary_s": [
+          -4.18966554199482e-09
+        ],
+        "objective": 1.756244859582905e-07,
+        "normalized_stationarity": 3.0628711365291545e-18,
+        "projected_residual": 3.584778459227407e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 3.5847784592274083e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 4.18966554199482e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 19,
+      "success": true,
+      "theta": 3.888045788649967,
+      "true_base": [
+        -1.1011529130213822,
+        -0.6790392762800246,
+        0.2990904308526721
+      ],
+      "reference": [
+        -1.1010124093409375,
+        -0.6788590704595389,
+        0.29885863439315447
+      ],
+      "second_scale": {
+        "Oracle": [
+          -1.10085355340229,
+          -0.6786553171938909,
+          0.2985967088358092
+        ],
+        "ENF": [
+          -1.1008534774141958,
+          -0.6786553720087447,
+          0.2985967123553331
+        ],
+        "CP": [
+          -1.1008533857792955,
+          -0.6786554381105845,
+          0.29859671659955733
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -1.1011530419217883,
+          -0.679039449914338,
+          0.2990905128324112
+        ],
+        "ENF": [
+          -1.101153109192813,
+          -0.6790394013876387,
+          0.2990905097166339
+        ],
+        "CP": [
+          -1.1011531903157012,
+          -0.6790393428687542,
+          0.29909050595929115
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.3126795520344556e-07
+        },
+        "ENF": {
+          "E_match": 9.376164307128603e-08,
+          "E_base": 9.383183148396695e-08,
+          "extrapolated_distance": 2.3122442394038625e-07
+        },
+        "CP": {
+          "E_match": 2.0682985974168e-07,
+          "E_base": 2.0698468832556095e-07,
+          "extrapolated_distance": 2.3117195022049197e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.6476986880145175e-17,
+        "full_residual": 1.6476987264710937e-17,
+        "normalized_mass": 0.03149948991088154,
+        "support_count": 590,
+        "effective_support": 86.63358895538559,
+        "eigengap": 0.02062183504991098,
+        "normal_space_discrepancy": 0.0002552584575486422,
+        "jacobian_condition": 1.000349061221593
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 8.572061467991883e-18,
+        "full_residual": 8.572062204705552e-18,
+        "normalized_mass": 0.05916406761455158,
+        "support_count": 709,
+        "effective_support": 127.5767986553417,
+        "eigengap": 0.04404594661759078,
+        "normal_space_discrepancy": 0.0005196203181884201,
+        "jacobian_condition": 1.0007249889479484
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.413033140849942e-17,
+        "full_residual": 3.41303319496277e-17,
+        "normalized_mass": 0.05916406761100352,
+        "support_count": 709,
+        "effective_support": 127.57679864278762,
+        "eigengap": 0.044045946622003694,
+        "normal_space_discrepancy": 0.00026426092796297566,
+        "jacobian_condition": 1.0007247787081275
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -1.1008533857792955,
+          -0.6786554381105845,
+          0.29859671659955733
+        ],
+        "seconds": 2.0397189000068465,
+        "chart_origin": [
+          -1.1010124093409375,
+          -0.6788590704595389,
+          0.29885863439315447
+        ],
+        "chart_normal_basis": [
+          [
+            0.3953581836431555,
+            0.43225904746545385
+          ],
+          [
+            0.5931097970006868,
+            0.5535987598833081
+          ],
+          [
+            0.7013648660491834,
+            -0.7118149541418202
+          ]
+        ],
+        "chart_tangent": [
+          -0.8104591430236588,
+          0.5845931762837014,
+          -0.03750727571937743
+        ],
+        "domain": [
+          -0.0003679069968430181,
+          0.0003679069968430181
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -1.619491934642168e-08,
+        "candidate_stationary_s": [
+          -1.619491934642168e-08
+        ],
+        "objective": 1.353555573007706e-07,
+        "normalized_stationarity": 2.817129935875399e-16,
+        "projected_residual": 2.4363104833226733e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.436310483322904e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.619491934642168e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 20,
+      "success": true,
+      "theta": 4.088217524974655,
+      "true_base": [
+        -0.8766377296221599,
+        -0.8114476202723966,
+        0.2845382398171593
+      ],
+      "reference": [
+        -0.8765814343607539,
+        -0.811274662204841,
+        0.2843669942700324
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.8765177753854229,
+          -0.8110791049123622,
+          0.28417342450285793
+        ],
+        "ENF": [
+          -0.8765177058804517,
+          -0.8110791383169865,
+          0.28417341368240606
+        ],
+        "CP": [
+          -0.876517621932255,
+          -0.811079178663131,
+          0.28417340061344554
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.876637790617066,
+          -0.8114477858977897,
+          0.2845383584391292
+        ],
+        "ENF": [
+          -0.8766378521486874,
+          -0.8114477563252186,
+          0.28453836801829946
+        ],
+        "CP": [
+          -0.8766379264666617,
+          -0.8114477206074326,
+          0.2845383795880378
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.1265775590856884e-07
+        },
+        "ENF": {
+          "E_match": 7.787099660191431e-08,
+          "E_base": 7.790531658615235e-08,
+          "extrapolated_distance": 2.126175378689192e-07
+        },
+        "CP": {
+          "E_match": 1.7192368839209862e-07,
+          "E_base": 1.7199946012216495e-07,
+          "extrapolated_distance": 2.125689746446758e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.5567109489179066e-18,
+        "full_residual": 3.556710990665362e-18,
+        "normalized_mass": 0.03149713959912843,
+        "support_count": 588,
+        "effective_support": 86.62258033084831,
+        "eigengap": 0.020624691547342474,
+        "normal_space_discrepancy": 0.00027965894590967964,
+        "jacobian_condition": 1.0002057836341602
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.3292217277972364e-17,
+        "full_residual": 3.329221945356662e-17,
+        "normalized_mass": 0.05915445884359065,
+        "support_count": 707,
+        "effective_support": 127.54279283695001,
+        "eigengap": 0.044057841232711774,
+        "normal_space_discrepancy": 0.0005692729377465494,
+        "jacobian_condition": 1.0004278451016517
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.1461176379557814e-17,
+        "full_residual": 3.146117719604324e-17,
+        "normalized_mass": 0.05915445884112857,
+        "support_count": 707,
+        "effective_support": 127.54279282823461,
+        "eigengap": 0.04405784123574441,
+        "normal_space_discrepancy": 0.0002895504128540849,
+        "jacobian_condition": 1.0004276053241754
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.876517621932255,
+          -0.811079178663131,
+          0.28417340061344554
+        ],
+        "seconds": 1.637633199992706,
+        "chart_origin": [
+          -0.8765814343607539,
+          -0.811274662204841,
+          0.2843669942700324
+        ],
+        "chart_normal_basis": [
+          [
+            0.3902372317376609,
+            -0.22589359760213845
+          ],
+          [
+            0.5804389839186528,
+            -0.6921679086650652
+          ],
+          [
+            0.7147065753952521,
+            0.6854747761782288
+          ]
+        ],
+        "chart_tangent": [
+          -0.8925732381872594,
+          0.42894541862772223,
+          0.13899223830918694
+        ],
+        "domain": [
+          -0.0002824258234377859,
+          0.0002824258234377859
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -1.3511959587988389e-08,
+        "candidate_stationary_s": [
+          -1.3511959587988389e-08
+        ],
+        "objective": 7.976434498111149e-08,
+        "normalized_stationarity": 2.2819067572160824e-16,
+        "projected_residual": 6.7646181503140064e-18,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 6.764618150314427e-18,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.3511959587988389e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 21,
+      "success": true,
+      "theta": 4.272709255307003,
+      "true_base": [
+        -0.6384745109350718,
+        -0.9048880345438007,
+        0.23109917812254055
+      ],
+      "reference": [
+        -0.6384583708512994,
+        -0.9047394478775752,
+        0.2309911283670529
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.6384401236642995,
+          -0.9045714691220307,
+          0.23086897933427417
+        ],
+        "ENF": [
+          -0.6384400850993672,
+          -0.9045714812264695,
+          0.23086896848099525
+        ],
+        "CP": [
+          -0.6384400384758887,
+          -0.9045714958602563,
+          0.23086895535980936
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.6384745247894078,
+          -0.9048881567399664,
+          0.23109926492067723
+        ],
+        "ENF": [
+          -0.6384745589303156,
+          -0.9048881460241034,
+          0.23109927452890866
+        ],
+        "CP": [
+          -0.6384746002053234,
+          -0.9048881330690497,
+          0.2310992861448813
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 1.5052495491424628e-07
+        },
+        "ENF": {
+          "E_match": 4.1851703677996085e-08,
+          "E_base": 4.186175371340285e-08,
+          "extrapolated_distance": 1.5050860495161577e-07
+        },
+        "CP": {
+          "E_match": 9.244875879158844e-08,
+          "E_base": 9.247096018957484e-08,
+          "extrapolated_distance": 1.5048884114490703e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.8258547731082376e-17,
+        "full_residual": 3.825854790669076e-17,
+        "normalized_mass": 0.031495603318544306,
+        "support_count": 588,
+        "effective_support": 86.61538358597123,
+        "eigengap": 0.02062655149330604,
+        "normal_space_discrepancy": 0.0002161546998880926,
+        "jacobian_condition": 1.000112161908335
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 5.3869664106736145e-17,
+        "full_residual": 5.386966637191981e-17,
+        "normalized_mass": 0.05914816089964863,
+        "support_count": 706,
+        "effective_support": 127.52049607775098,
+        "eigengap": 0.044065575681387824,
+        "normal_space_discrepancy": 0.00043998084943906626,
+        "jacobian_condition": 1.000233207716122
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.2024514682558595e-17,
+        "full_residual": 3.2024514745958514e-17,
+        "normalized_mass": 0.05914816089893493,
+        "support_count": 706,
+        "effective_support": 127.52049607522396,
+        "eigengap": 0.044065575682261965,
+        "normal_space_discrepancy": 0.000223802384346355,
+        "jacobian_condition": 1.0002330976708482
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.6384400384758887,
+          -0.9045714958602563,
+          0.23086895535980936
+        ],
+        "seconds": 2.2299331999965943,
+        "chart_origin": [
+          -0.6384583708512994,
+          -0.9047394478775752,
+          0.2309911283670529
+        ],
+        "chart_normal_basis": [
+          [
+            0.3784053785629296,
+            -0.08782604894538931
+          ],
+          [
+            0.5172973632485269,
+            -0.8054601862377857
+          ],
+          [
+            0.7676019850487409,
+            0.5861061964460308
+          ]
+        ],
+        "chart_tangent": [
+          -0.9214640278390077,
+          0.2892011866537077,
+          0.2593582831466912
+        ],
+        "domain": [
+          -0.00020849508456402178,
+          0.00020849508456402178
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -7.283181770179554e-09,
+        "candidate_stationary_s": [
+          -7.283181770179554e-09
+        ],
+        "objective": 4.347019980861644e-08,
+        "normalized_stationarity": 1.065160871077163e-16,
+        "projected_residual": 5.490167594471183e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 5.4901675944712176e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 7.283181770179554e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 22,
+      "success": true,
+      "theta": 4.445114365554465,
+      "true_base": [
+        -0.3961557036439568,
+        -0.9644942620577807,
+        0.15283596121842358
+      ],
+      "reference": [
+        -0.39615339916112313,
+        -0.9643659379815354,
+        0.1527767767444696
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.3961507974390096,
+          -0.9642208909235049,
+          0.15270987082505516
+        ],
+        "ENF": [
+          -0.39615077988390934,
+          -0.9642208941308115,
+          0.15270986456631586
+        ],
+        "CP": [
+          -0.39615075865477967,
+          -0.9642208980093607,
+          0.15270985699771258
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.39615570242342857,
+          -0.9644943457847895,
+          0.15283600746761133
+        ],
+        "ENF": [
+          -0.3961557179646735,
+          -0.9644943429454133,
+          0.15283601300837152
+        ],
+        "CP": [
+          -0.396155736758477,
+          -0.9644943395117966,
+          0.15283601970873298
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 9.565923412634862e-08
+        },
+        "ENF": {
+          "E_match": 1.8911376948576157e-08,
+          "E_base": 1.8914043620224444e-08,
+          "extrapolated_distance": 9.565457860053083e-08
+        },
+        "CP": {
+          "E_match": 4.178063243849142e-08,
+          "E_base": 4.1786524174335695e-08,
+          "extrapolated_distance": 9.564894932467055e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.5708612994628136e-17,
+        "full_residual": 1.570861308057177e-17,
+        "normalized_mass": 0.03149484305758064,
+        "support_count": 588,
+        "effective_support": 86.611821975954,
+        "eigengap": 0.02062747033740071,
+        "normal_space_discrepancy": 0.00015536593595286504,
+        "jacobian_condition": 1.0000658391840913
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.3131285051574245e-17,
+        "full_residual": 1.3131285083949131e-17,
+        "normalized_mass": 0.05914504056193018,
+        "support_count": 706,
+        "effective_support": 127.5094476566426,
+        "eigengap": 0.04406939397956607,
+        "normal_space_discrepancy": 0.0003161900527550439,
+        "jacobian_condition": 1.000136805944475
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.5392779082319533e-17,
+        "full_residual": 2.5392779090193495e-17,
+        "normalized_mass": 0.05914504056178429,
+        "support_count": 706,
+        "effective_support": 127.50944765612607,
+        "eigengap": 0.0440693939797444,
+        "normal_space_discrepancy": 0.00016081736770802752,
+        "jacobian_condition": 1.0001367932240788
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.39615075865477967,
+          -0.9642208980093607,
+          0.15270985699771258
+        ],
+        "seconds": 1.3782077999931062,
+        "chart_origin": [
+          -0.39615339916112313,
+          -0.9643659379815354,
+          0.1527767767444696
+        ],
+        "chart_normal_basis": [
+          [
+            0.37152884088982124,
+            -0.016413335640323396
+          ],
+          [
+            0.3836082666763019,
+            -0.9077916835145661
+          ],
+          [
+            0.845464971553919,
+            0.41910006174534
+          ]
+        ],
+        "chart_tangent": [
+          -0.928276318129588,
+          0.16958466050734977,
+          0.3309745007102255
+        ],
+        "domain": [
+          -0.00015975549644261323,
+          0.00015975549644261323
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -3.2948358608297816e-09,
+        "candidate_stationary_s": [
+          -3.2948358608297816e-09
+        ],
+        "objective": 2.5521818308191065e-08,
+        "normalized_stationarity": 9.988212510359042e-18,
+        "projected_residual": 2.82730157308487e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.8273015730848876e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 3.2948358608297816e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 23,
+      "success": true,
+      "theta": 4.6101382494654715,
+      "true_base": [
+        -0.1531089727922064,
+        -0.9947769470702723,
+        0.060923710609318574
+      ],
+      "reference": [
+        -0.1531093210413093,
+        -0.9946594882824717,
+        0.060902418643371745
+      ],
+      "second_scale": {
+        "Oracle": [
+          -0.15310971653359814,
+          -0.9945267367247888,
+          0.06087834969807519
+        ],
+        "ENF": [
+          -0.1531097109514477,
+          -0.9945267371069338,
+          0.06087834750195809
+        ],
+        "CP": [
+          -0.15310970420085873,
+          -0.9945267375690683,
+          0.06087834484615652
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          -0.1531089709184133,
+          -0.9947770110790879,
+          0.06092372648948835
+        ],
+        "ENF": [
+          -0.15310897586020036,
+          -0.9947770107407811,
+          0.06092372843367513
+        ],
+        "CP": [
+          -0.15310898183638708,
+          -0.9947770103316609,
+          0.0609237307848131
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 6.597589987860846e-08
+        },
+        "ENF": {
+          "E_match": 6.010771055871213e-09,
+          "E_base": 6.011375974487183e-09,
+          "extrapolated_distance": 6.597528620437867e-08
+        },
+        "CP": {
+          "E_match": 1.327969819562171e-08,
+          "E_base": 1.328103420450989e-08,
+          "extrapolated_distance": 6.597454413474807e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 8.051756385054379e-18,
+        "full_residual": 8.05175638533196e-18,
+        "normalized_mass": 0.031494532917497015,
+        "support_count": 587,
+        "effective_support": 86.61036906722576,
+        "eigengap": 0.020627845019893617,
+        "normal_space_discrepancy": 0.00012138014988267775,
+        "jacobian_condition": 1.0000469412832325
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.4619988712891357e-17,
+        "full_residual": 1.4619988713343427e-17,
+        "normalized_mass": 0.05914376735301241,
+        "support_count": 705,
+        "effective_support": 127.5049395192661,
+        "eigengap": 0.044070950667473664,
+        "normal_space_discrepancy": 0.0002469813256285492,
+        "jacobian_condition": 1.0000974660004123
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.4071034588539132e-17,
+        "full_residual": 2.4071034588618622e-17,
+        "normalized_mass": 0.059143767352997666,
+        "support_count": 705,
+        "effective_support": 127.50493951921388,
+        "eigengap": 0.04407095066749172,
+        "normal_space_discrepancy": 0.00012560030474601213,
+        "jacobian_condition": 1.0000975008938626
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          -0.15310970420085873,
+          -0.9945267375690683,
+          0.06087834484615652
+        ],
+        "seconds": 1.488086099998327,
+        "chart_origin": [
+          -0.1531093210413093,
+          -0.9946594882824717,
+          0.060902418643371745
+        ],
+        "chart_normal_basis": [
+          [
+            0.37086081791006886,
+            0.002905011284606999
+          ],
+          [
+            0.16690068074728281,
+            -0.9839221103252037
+          ],
+          [
+            0.913567959434419,
+            0.17857447108316993
+          ]
+        ],
+        "chart_tangent": [
+          -0.9286839153600709,
+          0.06357234917235005,
+          0.3653830069559856
+        ],
+        "domain": [
+          -0.0001349164434281664,
+          0.0001349164434281664
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -1.047599415180925e-09,
+        "candidate_stationary_s": [
+          -1.047599415180925e-09
+        ],
+        "objective": 1.8202446432728198e-08,
+        "normalized_stationarity": 5.527737012542472e-18,
+        "projected_residual": 2.300599610801879e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.3005996108018836e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.047599415180925e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 24,
+      "success": true,
+      "theta": 4.77237058013399,
+      "true_base": [
+        0.08991845899366693,
+        -0.9982016431189763,
+        -0.03590270140568185
+      ],
+      "reference": [
+        0.08991873898256036,
+        -0.9980854206886133,
+        -0.035890301864092644
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.08991905658498175,
+          -0.9979540681516723,
+          -0.03587628519571218
+        ],
+        "ENF": [
+          0.08991905338324335,
+          -0.9979540682799544,
+          -0.03587628392288546
+        ],
+        "CP": [
+          0.08991904951133285,
+          -0.9979540684350878,
+          -0.03587628238363694
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.08991845781429819,
+          -0.9982017049549025,
+          -0.035902710592819166
+        ],
+        "ENF": [
+          0.08991846064874516,
+          -0.9982017048413365,
+          -0.03590271171963198
+        ],
+        "CP": [
+          0.0899184640764846,
+          -0.9982017047039994,
+          -0.03590271308230368
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 6.252580400440293e-08
+        },
+        "ENF": {
+          "E_match": 3.4478504832864563e-09,
+          "E_base": 3.4481833525023804e-09,
+          "extrapolated_distance": 6.252559407582571e-08
+        },
+        "CP": {
+          "E_match": 7.617388026286146e-09,
+          "E_base": 7.618123403962574e-09,
+          "extrapolated_distance": 6.252534002232246e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.8880377671406805e-18,
+        "full_residual": 1.88803777507564e-18,
+        "normalized_mass": 0.031494501033318405,
+        "support_count": 587,
+        "effective_support": 86.6102197012184,
+        "eigengap": 0.020627883538695487,
+        "normal_space_discrepancy": 0.00011742008912933585,
+        "jacobian_condition": 1.0000449982619708
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.148653101622339e-17,
+        "full_residual": 4.1486531016274565e-17,
+        "normalized_mass": 0.05914363645986039,
+        "support_count": 705,
+        "effective_support": 127.50447606443642,
+        "eigengap": 0.04407111069680839,
+        "normal_space_discrepancy": 0.00023891713187620313,
+        "jacobian_condition": 1.0000934207419503
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 5.1316700629531356e-17,
+        "full_residual": 5.1316700652250045e-17,
+        "normalized_mass": 0.05914363645985554,
+        "support_count": 705,
+        "effective_support": 127.50447606441926,
+        "eigengap": 0.044071110696814325,
+        "normal_space_discrepancy": 0.00012149674758148876,
+        "jacobian_condition": 1.0000934610405827
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.08991904951133285,
+          -0.9979540684350878,
+          -0.03587628238363694
+        ],
+        "seconds": 1.3531947000010405,
+        "chart_origin": [
+          0.08991873898256036,
+          -0.9980854206886133,
+          -0.035890301864092644
+        ],
+        "chart_normal_basis": [
+          [
+            -0.37104634750763166,
+            0.002390841145974372
+          ],
+          [
+            0.09951646989003171,
+            0.9943401560103043
+          ],
+          [
+            -0.9232665271858784,
+            0.10621646776285754
+          ]
+        ],
+        "chart_tangent": [
+          -0.9286112705970464,
+          -0.037203848806673434,
+          0.36918421113870725
+        ],
+        "domain": [
+          -0.0001320986640151728,
+          0.0001320986640151728
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 6.009340615175237e-10,
+        "candidate_stationary_s": [
+          6.009340615175237e-10
+        ],
+        "objective": 1.745005676658108e-08,
+        "normalized_stationarity": 3.646476837164725e-18,
+        "projected_residual": 2.7559654646907053e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.7559654646907053e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 6.009340615175237e-10,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 25,
+      "success": true,
+      "theta": 4.936237464670559,
+      "true_base": [
+        0.3329755855939044,
+        -0.9750503712112966,
+        -0.12986718733505415
+      ],
+      "reference": [
+        0.332974633637077,
+        -0.9749258139418292,
+        -0.1298186405843929
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.33297356079052526,
+          -0.9747850296491581,
+          -0.1297637608181115
+        ],
+        "ENF": [
+          0.33297354696620224,
+          -0.9747850317490337,
+          -0.12976375571042748
+        ],
+        "CP": [
+          0.33297353024835974,
+          -0.9747850342884267,
+          -0.12976374953367245
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.33297558341069405,
+          -0.9750504479881869,
+          -0.12986722474960796
+        ],
+        "ENF": [
+          0.33297559564914253,
+          -0.9750504461292011,
+          -0.12986722927135763
+        ],
+        "CP": [
+          0.33297561044917684,
+          -0.9750504438811178,
+          -0.12986723473953846
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 8.543597677332234e-08
+        },
+        "ENF": {
+          "E_match": 1.4886565104898987e-08,
+          "E_base": 1.4888443296077154e-08,
+          "extrapolated_distance": 8.543285159647548e-08
+        },
+        "CP": {
+          "E_match": 3.2888983743796924e-08,
+          "E_base": 3.289313384677597e-08,
+          "extrapolated_distance": 8.542907269153902e-08
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 8.023976085288922e-18,
+        "full_residual": 8.023976104842311e-18,
+        "normalized_mass": 0.03149472913943318,
+        "support_count": 587,
+        "effective_support": 86.61128830307094,
+        "eigengap": 0.020627607966649784,
+        "normal_space_discrepancy": 0.00014371866932066813,
+        "jacobian_condition": 1.000058898046318
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.9042448356785513e-17,
+        "full_residual": 3.904244912288791e-17,
+        "normalized_mass": 0.05914457290246546,
+        "support_count": 705,
+        "effective_support": 127.5077917715427,
+        "eigengap": 0.044069965798560644,
+        "normal_space_discrepancy": 0.0002924713652959703,
+        "jacobian_condition": 1.000122357296206
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 9.740871097785108e-18,
+        "full_residual": 9.740871164125331e-18,
+        "normalized_mass": 0.059144572902375056,
+        "support_count": 705,
+        "effective_support": 127.5077917712226,
+        "eigengap": 0.04406996579867114,
+        "normal_space_discrepancy": 0.00014874817591293288,
+        "jacobian_condition": 1.0001223612454
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.33297353024835974,
+          -0.9747850342884267,
+          -0.12976374953367245
+        ],
+        "seconds": 1.3675863999960711,
+        "chart_origin": [
+          0.332974633637077,
+          -0.9749258139418292,
+          -0.1298186405843929
+        ],
+        "chart_normal_basis": [
+          [
+            -0.3709184215465761,
+            -0.0071926183540562605
+          ],
+          [
+            0.3350669664267536,
+            0.9315768537726966
+          ],
+          [
+            -0.866111801424602,
+            0.3634732889170492
+          ]
+        ],
+        "chart_tangent": [
+          -0.9286375992811239,
+          -0.1410485502390459,
+          0.3431290073381352
+        ],
+        "domain": [
+          -0.00015110643944419132,
+          0.00015110643944419132
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 2.5939793797880138e-09,
+        "candidate_stationary_s": [
+          2.5939793797880138e-09
+        ],
+        "objective": 2.2833155727994828e-08,
+        "normalized_stationarity": 6.403569079231774e-19,
+        "projected_residual": 6.242664261256345e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 6.242664261256345e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 2.5939793797880138e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 26,
+      "success": true,
+      "theta": 5.106267695827392,
+      "true_base": [
+        0.5756595079881612,
+        -0.9234274635202697,
+        -0.21263191972513368
+      ],
+      "reference": [
+        0.5756487258858097,
+        -0.9232849308254124,
+        -0.2125379697071939
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.5756365380753073,
+          -0.9231238035903957,
+          -0.21243176019260587
+        ],
+        "ENF": [
+          0.5756365061549668,
+          -0.9231238124420533,
+          -0.21243175045176219
+        ],
+        "CP": [
+          0.5756364675600931,
+          -0.9231238231445891,
+          -0.21243173867411078
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.5756595155563784,
+          -0.9234275741480271,
+          -0.21263199526440374
+        ],
+        "ENF": [
+          0.5756595438149372,
+          -0.9234275663117985,
+          -0.21263200388781434
+        ],
+        "CP": [
+          0.5756595779823516,
+          -0.9234275568370175,
+          -0.21263201431437773
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 1.3417138271487807e-07
+        },
+        "ENF": {
+          "E_match": 3.4527438684212386e-08,
+          "E_base": 3.4534570661590204e-08,
+          "extrapolated_distance": 1.341592242814044e-07
+        },
+        "CP": {
+          "E_match": 7.627455373035423e-08,
+          "E_base": 7.629030958729283e-08,
+          "extrapolated_distance": 1.34144525346086e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0955153369206121e-17,
+        "full_residual": 1.0955153526585682e-17,
+        "normalized_mass": 0.031495345854103414,
+        "support_count": 587,
+        "effective_support": 86.61417743957414,
+        "eigengap": 0.02062686274790617,
+        "normal_space_discrepancy": 0.00019834656735906908,
+        "jacobian_condition": 1.0000964743071208
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.4101433996843636e-17,
+        "full_residual": 4.410143564353087e-17,
+        "normalized_mass": 0.05914710437461786,
+        "support_count": 705,
+        "effective_support": 127.51675520169839,
+        "eigengap": 0.044066869275708284,
+        "normal_space_discrepancy": 0.00040371689900510184,
+        "jacobian_condition": 1.000200565598794
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0107503752226699e-17,
+        "full_residual": 1.0107503849106691e-17,
+        "normalized_mass": 0.05914710437413188,
+        "support_count": 705,
+        "effective_support": 127.51675519997764,
+        "eigengap": 0.04406686927630308,
+        "normal_space_discrepancy": 0.000205352704776197,
+        "jacobian_condition": 1.00020048619434
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.5756364675600931,
+          -0.9231238231445891,
+          -0.21243173867411078
+        ],
+        "seconds": 1.7050232000037795,
+        "chart_origin": [
+          0.5756487258858097,
+          -0.9232849308254124,
+          -0.2125379697071939
+        ],
+        "chart_normal_basis": [
+          [
+            -0.37592074219589694,
+            -0.0632848788014485
+          ],
+          [
+            0.4901812098683762,
+            0.8330716767993267
+          ],
+          [
+            -0.7863879304000417,
+            0.5495330794682375
+          ]
+        ],
+        "chart_tangent": [
+          -0.9244883015495501,
+          -0.25634734796118497,
+          0.28214786458751556
+        ],
+        "domain": [
+          -0.00019336748483111016,
+          0.00019336748483111016
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 6.011143693026393e-09,
+        "candidate_stationary_s": [
+          6.011143693026393e-09
+        ],
+        "objective": 3.739098375955772e-08,
+        "normalized_stationarity": 6.725441597186182e-18,
+        "projected_residual": 2.949351692984493e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.9493516929845155e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 6.011143693026393e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 27,
+      "success": true,
+      "theta": 5.2871856106180095,
+      "true_base": [
+        0.8154961696436596,
+        -0.8393028846201986,
+        -0.2737793150314585
+      ],
+      "reference": [
+        0.815454002879736,
+        -0.8391358655301715,
+        -0.27362556892939427
+      ],
+      "second_scale": {
+        "Oracle": [
+          0.8154063211620669,
+          -0.8389470276942794,
+          -0.2734517710968721
+        ],
+        "ENF": [
+          0.8154062597885204,
+          -0.8389470542226742,
+          -0.2734517591693293
+        ],
+        "CP": [
+          0.8154061856361637,
+          -0.8389470862746392,
+          -0.2734517447583064
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          0.8154962147294932,
+          -0.8393030405974047,
+          -0.27377942932606547
+        ],
+        "ENF": [
+          0.8154962690624964,
+          -0.839303017112248,
+          -0.2737794398853252
+        ],
+        "CP": [
+          0.8154963347083727,
+          -0.8393029887371642,
+          -0.2737794526431696
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 1.9855699024273594e-07
+        },
+        "ENF": {
+          "E_match": 6.791711282370696e-08,
+          "E_base": 6.794267962629853e-08,
+          "extrapolated_distance": 1.9852358115399255e-07
+        },
+        "CP": {
+          "E_match": 1.49975494740982e-07,
+          "E_base": 1.500319526188625e-07,
+          "extrapolated_distance": 1.9848322442846596e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.4874382099276405e-17,
+        "full_residual": 1.4874382266616128e-17,
+        "normalized_mass": 0.03149664766614681,
+        "support_count": 589,
+        "effective_support": 86.62027592832946,
+        "eigengap": 0.020625287687752503,
+        "normal_space_discrepancy": 0.0002664400093133678,
+        "jacobian_condition": 1.0001758020723583
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 3.803102991986806e-17,
+        "full_residual": 3.80310325587704e-17,
+        "normalized_mass": 0.05915244352013633,
+        "support_count": 707,
+        "effective_support": 127.53565854382353,
+        "eigengap": 0.044060321114402744,
+        "normal_space_discrepancy": 0.0005423664033654547,
+        "jacobian_condition": 1.0003655501358972
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 5.654886760609969e-17,
+        "full_residual": 5.654886763501607e-17,
+        "normalized_mass": 0.059152443518261114,
+        "support_count": 707,
+        "effective_support": 127.53565853718493,
+        "eigengap": 0.04406032111670792,
+        "normal_space_discrepancy": 0.00027587562598455935,
+        "jacobian_condition": 1.00036534097383
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          0.8154061856361637,
+          -0.8389470862746392,
+          -0.2734517447583064
+        ],
+        "seconds": 1.4442357000079937,
+        "chart_origin": [
+          0.815454002879736,
+          -0.8391358655301715,
+          -0.27362556892939427
+        ],
+        "chart_normal_basis": [
+          [
+            -0.387130628300367,
+            -0.18311737689497246
+          ],
+          [
+            0.5696209389717406,
+            0.7231770857785353
+          ],
+          [
+            -0.7250254219796128,
+            0.6659451395452705
+          ]
+        ],
+        "chart_tangent": [
+          -0.9036580674740128,
+          -0.39057251374081353,
+          0.17565650742091649
+        ],
+        "domain": [
+          -0.0002610343640815124,
+          0.0002610343640815124
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 1.1796341687834139e-08,
+        "candidate_stationary_s": [
+          1.1796341687834139e-08
+        ],
+        "objective": 6.813893855655618e-08,
+        "normalized_stationarity": 1.5419387755302051e-16,
+        "projected_residual": 2.5093281277248567e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.5093281277248987e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.1796341687834139e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 28,
+      "success": true,
+      "theta": 5.48310532963269,
+      "true_base": [
+        1.0449740021079226,
+        -0.7174118094987321,
+        -0.2998706758925506
+      ],
+      "reference": [
+        1.0448598039137975,
+        -0.717229873095005,
+        -0.299651826402534
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.0447306807794583,
+          -0.7170241621320135,
+          -0.29940450572463073
+        ],
+        "ENF": [
+          1.044730600128625,
+          -0.7170242143913562,
+          -0.29940450444675426
+        ],
+        "CP": [
+          1.0447305028362084,
+          -0.7170242774339395,
+          -0.2994045029051905
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.0449741145261942,
+          -0.717411985667447,
+          -0.2998707753793707
+        ],
+        "ENF": [
+          1.0449741859250663,
+          -0.7174119394031001,
+          -0.29987077651065397
+        ],
+        "CP": [
+          1.0449742720564617,
+          -0.7174118835925257,
+          -0.2998707778753753
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.314539074582336e-07
+        },
+        "ENF": {
+          "E_match": 9.61105030231788e-08,
+          "E_base": 9.617435338822656e-08,
+          "extrapolated_distance": 2.3140532758129367e-07
+        },
+        "CP": {
+          "E_match": 2.1205254908550451e-07,
+          "E_base": 2.1219342338885316e-07,
+          "extrapolated_distance": 2.3134674570516887e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 7.311430486306982e-18,
+        "full_residual": 7.311430748147572e-18,
+        "normalized_mass": 0.03149884769923401,
+        "support_count": 589,
+        "effective_support": 86.63058107896852,
+        "eigengap": 0.020622616931802795,
+        "normal_space_discrepancy": 0.0002773123184418504,
+        "jacobian_condition": 1.0003099064590633
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.4492580331990147e-17,
+        "full_residual": 4.4492580931595494e-17,
+        "normalized_mass": 0.059161445267519465,
+        "support_count": 708,
+        "effective_support": 127.56751956483039,
+        "eigengap": 0.044049204319557854,
+        "normal_space_discrepancy": 0.0005644854996034966,
+        "jacobian_condition": 1.0006438773277837
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 4.208407796047489e-17,
+        "full_residual": 4.20840792445197e-17,
+        "normalized_mass": 0.05916144526378576,
+        "support_count": 708,
+        "effective_support": 127.56751955161808,
+        "eigengap": 0.044049204324190336,
+        "normal_space_discrepancy": 0.0002870755485732077,
+        "jacobian_condition": 1.000643627789446
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.0447305028362084,
+          -0.7170242774339395,
+          -0.2994045029051905
+        ],
+        "seconds": 1.4945709000021452,
+        "chart_origin": [
+          1.0448598039137975,
+          -0.717229873095005,
+          -0.299651826402534
+        ],
+        "chart_normal_basis": [
+          [
+            -0.39580380871645965,
+            -0.3730177105850167
+          ],
+          [
+            0.593703065914716,
+            0.5932044444217562
+          ],
+          [
+            -0.7006111721411601,
+            0.7134187232671904
+          ]
+        ],
+        "chart_tangent": [
+          -0.8391645444103659,
+          -0.5437142233211684,
+          0.013330820034849866
+        ],
+        "domain": [
+          -0.0003466370693484724,
+          0.0003466370693484724
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 1.661972597906905e-08,
+        "candidate_stationary_s": [
+          1.661972597906905e-08
+        ],
+        "objective": 1.201572568528934e-07,
+        "normalized_stationarity": 1.719294768865832e-16,
+        "projected_residual": 5.5432051012008667e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 5.54320510120098e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 1.661972597906905e-08,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 29,
+      "success": true,
+      "theta": 5.694794773647421,
+      "true_base": [
+        1.2477525703457626,
+        -0.5550229317366757,
+        -0.2770125158701111
+      ],
+      "reference": [
+        1.2475299131192403,
+        -0.5548674250325567,
+        -0.276769336195953
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.2472782077363629,
+          -0.5546915843981056,
+          -0.27649459825712974
+        ],
+        "ENF": [
+          1.24727817362051,
+          -0.5546916185074908,
+          -0.27649460770127116
+        ],
+        "CP": [
+          1.2472781324321398,
+          -0.5546916596880486,
+          -0.27649461910326323
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.247752743804133,
+          -0.555023093888577,
+          -0.27701255722831286
+        ],
+        "ENF": [
+          1.247752774006343,
+          -0.5550230636920925,
+          -0.2770125488675679
+        ],
+        "CP": [
+          1.247752810469738,
+          -0.555023027235614,
+          -0.2770125387735696
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 0.0,
+          "extrapolated_distance": 2.410218790207172e-07
+        },
+        "ENF": {
+          "E_match": 4.9158248331561964e-08,
+          "E_base": 4.920442374472202e-08,
+          "extrapolated_distance": 2.410078705649565e-07
+        },
+        "CP": {
+          "E_match": 1.085074320212746e-07,
+          "E_base": 1.0860935550305982e-07,
+          "extrapolated_distance": 2.4099096361003905e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.0125511087234444e-17,
+        "full_residual": 1.0125511194739536e-17,
+        "normalized_mass": 0.03150094225622294,
+        "support_count": 590,
+        "effective_support": 86.64039124838668,
+        "eigengap": 0.02062006463737322,
+        "normal_space_discrepancy": 0.00014585728953514496,
+        "jacobian_condition": 1.0004376067420446
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.8075953841838284e-17,
+        "full_residual": 1.807595386491019e-17,
+        "normalized_mass": 0.059169993922857995,
+        "support_count": 709,
+        "effective_support": 127.59776837531423,
+        "eigengap": 0.044038566144031364,
+        "normal_space_discrepancy": 0.00029713042687087865,
+        "jacobian_condition": 1.00090827935459
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.780065551092903e-17,
+        "full_residual": 2.780065573050361e-17,
+        "normalized_mass": 0.059169993921882144,
+        "support_count": 709,
+        "effective_support": 127.59776837186004,
+        "eigengap": 0.04403856614524433,
+        "normal_space_discrepancy": 0.00015122456398783258,
+        "jacobian_condition": 1.000908255899639
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.2472781324321398,
+          -0.5546916596880486,
+          -0.27649461910326323
+        ],
+        "seconds": 1.4204381000017747,
+        "chart_origin": [
+          1.2475299131192403,
+          -0.5548674250325567,
+          -0.276769336195953
+        ],
+        "chart_normal_basis": [
+          [
+            0.3805674618496771,
+            -0.6111515773895438
+          ],
+          [
+            -0.5800686004639704,
+            0.42672044160972744
+          ],
+          [
+            0.7202005454990056,
+            0.6666358932480847
+          ]
+        ],
+        "chart_tangent": [
+          -0.6940188444383676,
+          -0.6938516292898427,
+          -0.1921139247849131
+        ],
+        "domain": [
+          -0.00041201511218999005,
+          0.00041201511218999005
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": 8.491971571529403e-09,
+        "candidate_stationary_s": [
+          8.491971571529403e-09
+        ],
+        "objective": 1.697564517428011e-07,
+        "normalized_stationarity": 1.173852139246203e-16,
+        "projected_residual": 2.7100473983297456e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 2.7100473983298242e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 8.491971571529403e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 30,
+      "success": true,
+      "theta": 5.916889703353769,
+      "true_base": [
+        1.4004907686263315,
+        -0.3581592488714899,
+        -0.200639488697065
+      ],
+      "reference": [
+        1.4001851822591906,
+        -0.35807058054693747,
+        -0.2004570343076395
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.3998396559491062,
+          -0.35797027000396214,
+          -0.20025084486064604
+        ],
+        "ENF": [
+          1.3998396715773993,
+          -0.35797024283859924,
+          -0.2002508318993378
+        ],
+        "CP": [
+          1.399839690301031,
+          -0.3579702102928635,
+          -0.2002508163709116
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.4004910710862168,
+          -0.3581593838404452,
+          -0.20063957047419245
+        ],
+        "ENF": [
+          1.400491057250743,
+          -0.3581594078894995,
+          -0.20063958194862802
+        ],
+        "CP": [
+          1.4004910406750162,
+          -0.3581594367017104,
+          -0.20063959569569134
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 1.449481623316431e-14,
+          "extrapolated_distance": 3.4115407037554773e-07
+        },
+        "ENF": {
+          "E_match": 3.391453963352866e-08,
+          "E_base": 3.39468036125081e-08,
+          "extrapolated_distance": 3.411527413051882e-07
+        },
+        "CP": {
+          "E_match": 7.454619378741682e-08,
+          "E_base": 7.461709367961771e-08,
+          "extrapolated_distance": 3.4115115229963913e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 5.377105782468544e-18,
+        "full_residual": 5.377105783304242e-18,
+        "normalized_mass": 0.03150103375317851,
+        "support_count": 590,
+        "effective_support": 86.64082256301486,
+        "eigengap": 0.02061996072886057,
+        "normal_space_discrepancy": 0.00020802786136244752,
+        "jacobian_condition": 1.0004430857130096
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 2.9546781096021896e-17,
+        "full_residual": 2.954678154892647e-17,
+        "normalized_mass": 0.0591703908194605,
+        "support_count": 710,
+        "effective_support": 127.5991918084096,
+        "eigengap": 0.044038137511254925,
+        "normal_space_discrepancy": 0.00042310133127519586,
+        "jacobian_condition": 1.0009201445155413
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 1.3344792720327911e-17,
+        "full_residual": 1.3344792751922408e-17,
+        "normalized_mass": 0.0591703908190028,
+        "support_count": 710,
+        "effective_support": 127.59919180679316,
+        "eigengap": 0.04403813751183652,
+        "normal_space_discrepancy": 0.00021505745442465703,
+        "jacobian_condition": 1.0009202416569245
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.399839690301031,
+          -0.3579702102928635,
+          -0.2002508163709116
+        ],
+        "seconds": 1.4009552000061376,
+        "chart_origin": [
+          1.4001851822591906,
+          -0.35807058054693747,
+          -0.2004570343076395
+        ],
+        "chart_normal_basis": [
+          [
+            0.3057437217265242,
+            -0.8331702204528911
+          ],
+          [
+            -0.5475710019218843,
+            0.2420694255308925
+          ],
+          [
+            0.7789010042868589,
+            0.4972220600231099
+          ]
+        ],
+        "chart_tangent": [
+          -0.46081250023767273,
+          -0.8009796446086553,
+          -0.38220864530685
+        ],
+        "domain": [
+          -0.0004146862903225693,
+          0.0004146862903225693
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -5.79562064145377e-09,
+        "candidate_stationary_s": [
+          -5.79562064145377e-09
+        ],
+        "objective": 1.7196471848412258e-07,
+        "normalized_stationarity": 2.5749801579560178e-17,
+        "projected_residual": 1.4634476733739258e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 1.4634476733739554e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 5.79562064145377e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    },
+    {
+      "query_id": 31,
+      "success": true,
+      "theta": 6.141728794501191,
+      "true_base": [
+        1.4850175494487008,
+        -0.1409852282717361,
+        -0.08374621527862368
+      ],
+      "reference": [
+        1.484686627590886,
+        -0.1409568700594704,
+        -0.08367347755632008
+      ],
+      "second_scale": {
+        "Oracle": [
+          1.4843123372132294,
+          -0.1409247752933811,
+          -0.08359124183885404
+        ],
+        "ENF": [
+          1.4843123427703546,
+          -0.1409247492818223,
+          -0.08359122672279348
+        ],
+        "CP": [
+          1.484312349460162,
+          -0.1409247179684445,
+          -0.08359120852569404
+        ]
+      },
+      "extrapolated": {
+        "Oracle": [
+          1.485017980779477,
+          -0.1409852830343039,
+          -0.08374627950054596
+        ],
+        "ENF": [
+          1.4850179758598443,
+          -0.14098530606191417,
+          -0.08374629288254871
+        ],
+        "CP": [
+          1.4850179699374666,
+          -0.14098533378313866,
+          -0.08374630899214511
+        ]
+      },
+      "metrics": {
+        "Oracle": {
+          "E_match": 0.0,
+          "E_base": 3.085897051105673e-15,
+          "extrapolated_distance": 4.3951067397144954e-07
+        },
+        "ENF": {
+          "E_match": 3.0593759465913e-08,
+          "E_base": 3.061874817579371e-08,
+          "extrapolated_distance": 4.3950721646367495e-07
+        },
+        "CP": {
+          "E_match": 6.742330711979107e-08,
+          "E_base": 6.747838127970066e-08,
+          "extrapolated_distance": 4.39503057377522e-07
+        }
+      },
+      "reference_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 7.68449986110931e-18,
+        "full_residual": 7.684499876357473e-18,
+        "normalized_mass": 0.03150001578134807,
+        "support_count": 590,
+        "effective_support": 86.63605676156821,
+        "eigengap": 0.02062120724755323,
+        "normal_space_discrepancy": 0.00027967442416847096,
+        "jacobian_condition": 1.0003808735716169
+      },
+      "oracle_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 7.689177643185739e-17,
+        "full_residual": 7.689177646147395e-17,
+        "normalized_mass": 0.05916625425670323,
+        "support_count": 710,
+        "effective_support": 127.584569002936,
+        "eigengap": 0.04404333824841957,
+        "normal_space_discrepancy": 0.0005691602388940873,
+        "jacobian_condition": 1.0007915789519315
+      },
+      "ENF_diagnostics": {
+        "function_evaluations": 5,
+        "projected_residual": 8.853533557448419e-17,
+        "full_residual": 8.853533594914845e-17,
+        "normalized_mass": 0.05916625425632648,
+        "support_count": 710,
+        "effective_support": 127.58456900160338,
+        "eigengap": 0.04404333824888994,
+        "normal_space_discrepancy": 0.00028947603672387816,
+        "jacobian_condition": 1.0007917918311995
+      },
+      "CP_diagnostics": {
+        "status": "success",
+        "point": [
+          1.484312349460162,
+          -0.1409247179684445,
+          -0.08359120852569404
+        ],
+        "seconds": 1.4336508999986108,
+        "chart_origin": [
+          1.484686627590886,
+          -0.1409568700594704,
+          -0.08367347755632008
+        ],
+        "chart_normal_basis": [
+          [
+            0.14059758641833078,
+            -0.9732629706096718
+          ],
+          [
+            -0.5197809736842063,
+            0.08358159540785959
+          ],
+          [
+            0.842650614483392,
+            0.21394697228311882
+          ]
+        ],
+        "chart_tangent": [
+          -0.18163564830004253,
+          -0.8502010681626878,
+          -0.49413220393094004
+        ],
+        "domain": [
+          -0.0003845595796783815,
+          0.0003845595796783815
+        ],
+        "grid_nodes": 9,
+        "initial_grid_nodes": 9,
+        "selected_s": -5.268633829213169e-09,
+        "candidate_stationary_s": [
+          -5.268633829213169e-09
+        ],
+        "objective": 1.478860694958164e-07,
+        "normalized_stationarity": 1.641888662991715e-17,
+        "projected_residual": 9.066769164498184e-17,
+        "stationarity_tolerance": 1e-13,
+        "full_residual": 9.066769164498189e-17,
+        "chart_evaluations": 11,
+        "STSP_root_function_evaluations": 55,
+        "normal_multistart_point_differences": [],
+        "nearest_grid_s_difference": 5.268633829213169e-09,
+        "global_scope": "Continuous minimum on the numerically verified local fitted sheet; outside the incumbent tangent interval excluded by Euclidean lower bound. This is not a formal global certificate for every spurious empirical residual component.",
+        "algorithm_inputs": "Empirical STSP operator and reference point only; no true geometry"
+      },
+      "CP_refinement": null
+    }
+  ],
+  "failures": [],
+  "adopted_pilot_query_ids": [],
+  "pilot_source_sha256": null,
+  "no_monte_carlo": true,
+  "weights": [
+    1.885283748584506,
+    -0.885283748584506
+  ],
+  "elapsed_seconds": 71.0341330999945,
+  "operator_evaluations": {
+    "h1": 192,
+    "h2": 2464
+  },
+  "algorithm_source_sha256": "01926d0a009c2fd50b9edaba657ecaaff5204a6d94362e9715ff9bf118e58657",
+  "operator_source_sha256": "05acd0fbf7b7815affb1c35e8b83b0d3281f77cdeb50c9706834d898f9869160",
+  "radial_source_sha256": "9c55a814c7ccd8b6b6ef28ff4b2408a64c283fdb9d997a2ab77af4a870ffd8d6",
+  "CP_source_sha256": "ea18b32bc1a14283582920d133cd8d9e2f7e53c5f7f9972ce2e5e07e72fda655",
+  "common_reference_disclosure": "As in E4, common h1 branch points are constructed on the known true normal charts. ENF and CP matching do not receive the true parameter/basis. Truth is used for Oracle and evaluation.",
+  "integral": "Uniform-arclength latent quadrature, analytic Gaussian reduction, original K6 radial GL nodes, padding12, float64; exact half-integer Bessel evaluation."
+}

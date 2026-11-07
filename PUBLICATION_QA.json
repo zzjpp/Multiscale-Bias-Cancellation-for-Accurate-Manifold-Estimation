@@ -1,0 +1,42 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_RAW_DATA_GAP",
+  "scope": "Current 2026-11-07 main and supplement, no new production fits",
+  "numerical_claims_matched": 41,
+  "root_tests": {
+    "cases": 48,
+    "initial_passed": 39,
+    "initial_engineering_failures": 1,
+    "initial_temp_directory_errors": 8,
+    "retry_passed": 9,
+    "retry_note": "Use an in-workspace pytest base directory; public documentation now has its explicit V2 producer contract. Every original executable/config scientific producer member remains byte-identical."
+  },
+  "additional_sampling_tests_passed": 5,
+  "nonuniform_E1_actual_reduced_CPU_smoke": {
+    "successful_queries": 1,
+    "failures": 0,
+    "production_precision_claim": false
+  },
+  "saved_result_replay": {
+    "logical_plots": 33,
+    "paper_exports": 66,
+    "byte_identical_to_selected_exports": 66,
+    "additional_counterexample_diagnostic_exports": 2,
+    "new_fits": false
+  },
+  "secret_literal_scan": "No private-key or GitHub-token literal matched in the release",
+  "static_repro_essentials": "README, environment, seed, entrypoint, data and results command all OK",
+  "behavior_risk_static_findings": "Original scientific literals, seeds, precision and code paths retained; not mechanically rewritten",
+  "E5_finite_raw_gap": {
+    "status": "MISSING_LOCAL_RAW_PACKETS",
+    "expected": 60,
+    "selected_exports_present": true
+  },
+  "full_GPU_experiments_rerun": false,
+  "artifact_badge_claim": false,
+  "complete_original_CPU_smoke_entrypoint": {
+    "status": "PASS",
+    "completed_method_experiment_commands": 11,
+    "includes_E5_population_and_finite_smoke": true,
+    "full_science_or_GPU_claim": false
+  }
+}

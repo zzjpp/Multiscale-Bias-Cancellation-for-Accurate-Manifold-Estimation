@@ -1,0 +1,127 @@
+% Native TikZ geometry, reconstructed from the supplied reference image.
+% Ambient model: p(t)=(t,a*t^2,b*t^2), x=p(0).
+% T_x M=span(e_1), nu_0=e_2, Ran(P_0)=span(e_2), Ran(S_0)=span(e_3).
+% Oblique display: (v1,v2,v3) -> (v1-0.25*v2+0.60*v3,v2+0.65*v3).
+% The three colored arrows are illustrative WEIGHTED leading components;
+% their scalar coefficients are suppressed in the graphic and stated in
+% the caption. The closing remainder is deliberately nonzero.
+\begingroup
+\definecolor{truecurve}{HTML}{292E34}
+\definecolor{yycurve}{HTML}{315F91}
+\definecolor{pcomponent}{HTML}{2868A8}
+\definecolor{scomponent}{HTML}{148A85}
+\definecolor{bcomponent}{HTML}{C4772B}
+\definecolor{fullnormal}{HTML}{525E69}
+\definecolor{planeedge}{HTML}{CDD0D3}
+\definecolor{guide}{HTML}{9098A1}
+\def\curva{0.08}
+\def\curvb{0.04}
+\def\leadP{2.05}
+\def\leadS{0.62}
+\def\leadB{0.49}
+\def\restP{0.05}
+\def\restS{0.01}
+% Small parallel translation of the free direction marker within the plane.
+% The true P_0 component itself still starts at x and lies in Ran(P_0).
+\def\pguideS{-0.20}
+\pgfmathsetmacro{\offsetP}{\leadP+\restP}
+\pgfmathsetmacro{\offsetS}{\leadS+\leadB+\restS}
+\pgfmathdeclarefunction{tx}{1}{\pgfmathparse{#1+(-0.25*\curva+0.60*\curvb)*#1*#1}}
+\pgfmathdeclarefunction{ty}{1}{\pgfmathparse{(\curva+0.65*\curvb)*#1*#1}}
+\pgfmathdeclarefunction{normalfactor}{1}{\pgfmathparse{
+  (2*\curva*\offsetP+2*\curvb*\offsetS)*#1 /
+  (1+4*(\curva*\curva+\curvb*\curvb)*#1*#1)}}
+\pgfmathdeclarefunction{qx}{1}{\pgfmathparse{
+  tx(#1)-0.25*\offsetP+0.60*\offsetS
+  -normalfactor(#1)*(1+(-0.50*\curva+1.20*\curvb)*#1)}}
+\pgfmathdeclarefunction{qy}{1}{\pgfmathparse{
+  ty(#1)+\offsetP+0.65*\offsetS
+  -normalfactor(#1)*(2*\curva+1.30*\curvb)*#1}}
+% Normal-plane points are constructed from their actual basis coefficients.
+\newcommand{\NormalCoordinate}[3]{%
+  \coordinate (#1) at ({-0.25*(#2)+0.60*(#3)},{(#2)+0.65*(#3)});}
+\begin{tikzpicture}[
+  x=1.40cm,y=1.40cm,line cap=round,line join=round,
+  >=Latex,font=\normalsize,
+  every node/.style={inner sep=1.2pt,outer sep=0pt},
+  field/.style={-{Latex[length=2.2mm,width=1.5mm]},line width=1.25pt},
+  leader/.style={draw=guide,line width=0.38pt},
+  axisguide/.style={draw=guide,line width=0.55pt,-{Latex[length=1.4mm,width=0.9mm]}}
+]
+\path[use as bounding box] (-3.95,-1.02) rectangle (4.28,4.56);
+\NormalCoordinate{X}{0}{0}
+\NormalCoordinate{A}{\leadP}{0}
+\NormalCoordinate{B}{\leadP}{\leadS}
+\NormalCoordinate{C}{\leadP}{\leadS+\leadB}
+\NormalCoordinate{Q}{\offsetP}{\offsetS}
+\NormalCoordinate{Fll}{-0.45}{-0.65}
+\NormalCoordinate{Ful}{2.60}{-0.65}
+\NormalCoordinate{Fur}{2.60}{1.35}
+\NormalCoordinate{Flr}{-0.45}{1.35}
+\NormalCoordinate{PaxisLow}{-0.33}{\pguideS}
+\NormalCoordinate{PaxisHigh}{2.62}{\pguideS}
+\NormalCoordinate{SaxisLow}{0}{-0.50}
+\NormalCoordinate{SaxisHigh}{0}{1.22}
+
+% The affine true normal plane: very light gray fill, thin gray outline.
+\filldraw[fill=black!1.5,draw=planeedge,line width=0.35pt]
+  (Fll)--(Ful)--(Fur)--(Flr)--cycle;
+
+% Tangent and the two orthogonal ambient normal directions (oblique view).
+\draw[guide,line width=0.48pt,dash pattern=on 2.6pt off 2.1pt,
+  -{Latex[length=1.5mm,width=1mm]}] (-3.50,0)--(3.48,0);
+\draw[axisguide] (PaxisLow)--(PaxisHigh);
+\draw[axisguide] (SaxisLow)--(SaxisHigh);
+
+% Curves are analytic, not unrelated hand-drawn Bezier paths.
+\draw[truecurve,line width=1.35pt]
+  plot[domain=-3.40:3.40,samples=161,variable=\t] ({tx(\t)},{ty(\t)});
+% q(t)=p(t)+Q(t)U, where Q(t) is the true normal projector at p(t).
+% Thus the blue curve is a genuine normal graph and q(0)=x+u_{r_1}(x).
+\draw[yycurve,line width=1.35pt]
+  plot[domain=-4.60:4.60,samples=201,variable=\t] ({qx(\t)},{qy(\t)});
+
+% Independent full normal displacement, with its own dashed encoding.
+\draw[fullnormal,line width=0.85pt,dash pattern=on 3.3pt off 2.2pt,
+  -{Latex[length=2.1mm,width=1.3mm]}]
+  (X)--(Q);
+
+% Head-to-tail leading components. B-A and C-B are exactly collinear.
+\draw[field,pcomponent] (X)--(A);
+\draw[field,scomponent] (A)--(B);
+\draw[field,bcomponent] (B)--(C);
+% C is close to, but not exactly Q. The remaining O(sigma^4) term is
+% suppressed at this drawing scale and is explained in the caption.
+
+% Point markers indicate positions; the colored paths indicate vectors.
+\fill[truecurve] (X) circle[radius=1.8pt];
+\fill[yycurve] (Q) circle[radius=1.9pt];
+\node[below=4pt,text=truecurve] at (X) {$x$};
+
+% Direct component labels, with thin neutral leaders where needed.
+\node[anchor=east,text=pcomponent] at (-0.58,1.08) {$P_0H$};
+\draw[leader] (-0.56,1.08)--(-0.25,1.00);
+\node[anchor=west,text=scomponent] at (0.82,2.05) {$S_0H$};
+\draw[leader] (0.79,2.05)--($(A)!0.50!(B)$);
+\node[anchor=west,text=bcomponent] at (0.84,2.56) {$b_\perp$};
+\draw[leader] (0.80,2.56)--($(B)!0.50!(C)$);
+
+% nu_0 identifies the P_0 axis, not an additional bias displacement.
+\node[anchor=east,text=fullnormal] at (-0.92,2.58)
+  {$\nu_0\; (\operatorname{Ran}P_0)$};
+\node[anchor=west,text=fullnormal] at (0.91,0.83) {$\operatorname{Ran}S_0$};
+\node[anchor=west,text=guide] at (3.58,-0.02) {$T_x\mathcal M$};
+\node[anchor=west,text=fullnormal] at (0.94,1.37) {$u_{r_1}(x)$};
+\draw[leader] (0.90,1.37)--($(X)!0.485!(Q)$);
+
+% Position and manifold labels are separated from vector labels.
+\node[anchor=south,text=yycurve] at (-0.40,3.62) {$x+u_{r_1}(x)$};
+\draw[leader] (-0.40,3.58)--(Q);
+\node[anchor=west,text=fullnormal] at (1.02,4.13) {$x+N_x\mathcal M$};
+\draw[leader] (0.96,4.12)--(Fur);
+\node[anchor=west,text=yycurve] at (3.60,3.85) {$\mathcal M_{r_1}^{\mathrm{YY}}$};
+\draw[leader] (3.57,3.85)--({qx(4.60)},{qy(4.60)});
+\node[anchor=west,text=truecurve] at (3.62,1.17) {$\mathcal M$};
+\draw[leader] (3.59,1.17)--({tx(3.40)},{ty(3.40)});
+\end{tikzpicture}
+\endgroup

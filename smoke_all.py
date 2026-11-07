@@ -15,7 +15,6 @@ def commands():
             yield exp+'/'+entry,args
     yield 'E4/smoke.py',[]
     yield 'E5/reproduce.py',['--mode','smoke','--skip-tests']
-    yield 'E6/smoke.py',[]
 
 def main():
     env=dict(os.environ,OPENBLAS_NUM_THREADS='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1')

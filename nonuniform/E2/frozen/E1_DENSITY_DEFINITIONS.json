@@ -1,0 +1,175 @@
+{
+  "schema_version": "E1_NONUNIFORM_DENSITY_FROZEN_DESIGN_V1",
+  "experiment": "STSP population Single/Multi under predeclared positive nonuniform surface densities",
+  "methods": [
+    "STSP"
+  ],
+  "sigma_grid": [
+    0.008,
+    0.01,
+    0.0125,
+    0.016,
+    0.02,
+    0.025,
+    0.03
+  ],
+  "bandwidth_path": {
+    "a1": 3.0,
+    "a2": 6.0,
+    "rule": "h1=a1*sigma, h2=a2*sigma",
+    "provenance": "ratios fixed by the existing E6 formal STSP/DR design"
+  },
+  "geometries": {
+    "circle_r2": {
+      "label": "S^1 subset R^2",
+      "query_count": 128,
+      "query_phase": 0.0,
+      "homogeneous_canonical_query": false,
+      "latent_rule": "periodic trapezoid",
+      "integration_resolution": {
+        "production": 8192,
+        "reference": 16384
+      },
+      "query_rule": "theta_j=2*pi*j/128, j=0,...,127; Clifford second phase fixed0 by retained symmetry"
+    },
+    "sphere2_r3": {
+      "label": "S^2 subset R^3",
+      "query_count": 33,
+      "homogeneous_canonical_query": false,
+      "latent_rule": "original Gauss-Jacobi latitude and signed-axis degree3 exact angular rule, rotated to current evaluation direction; linear density reweighting",
+      "integration_resolution": {
+        "production": 768,
+        "reference": 1024
+      },
+      "query_rule": "theta_j=pi*j/32, j=0,...,32; x=(cos(theta),sin(theta),0,...); retained axial symmetry"
+    },
+    "clifford_torus_r4": {
+      "label": "Clifford torus subset R^4",
+      "query_count": 128,
+      "homogeneous_canonical_query": false,
+      "latent_rule": "tensor periodic trapezoid",
+      "integration_resolution": {
+        "production": 512,
+        "reference": 768
+      },
+      "query_rule": "theta_j=2*pi*j/128, j=0,...,127; Clifford second phase fixed0 by retained symmetry"
+    },
+    "sphere3_r4": {
+      "label": "S^3 subset R^4",
+      "query_count": 33,
+      "homogeneous_canonical_query": false,
+      "latent_rule": "original Gauss-Jacobi latitude and signed-axis degree3 exact angular rule, rotated to current evaluation direction; linear density reweighting",
+      "integration_resolution": {
+        "production": 768,
+        "reference": 1024
+      },
+      "query_rule": "theta_j=pi*j/32, j=0,...,32; x=(cos(theta),sin(theta),0,...); retained axial symmetry"
+    },
+    "sphere2_r10": {
+      "label": "S^2 subset R^10",
+      "query_count": 33,
+      "homogeneous_canonical_query": false,
+      "latent_rule": "original Gauss-Jacobi latitude and signed-axis degree3 exact angular rule, rotated to current evaluation direction; linear density reweighting",
+      "integration_resolution": {
+        "production": 768,
+        "reference": 1024
+      },
+      "query_rule": "theta_j=pi*j/32, j=0,...,32; x=(cos(theta),sin(theta),0,...); retained axial symmetry"
+    },
+    "corrugated_torus_r3": {
+      "label": "Corrugated torus subset R^3",
+      "query_count": 128,
+      "query_phase": 0.0,
+      "homogeneous_canonical_query": false,
+      "symmetry_reduction": "rotational symmetry fixes u=0; v uses 128 equal-area mid-quantiles",
+      "latent_rule": "tensor midpoint rule in u and equal-area v quantiles",
+      "integration_resolution": {
+        "production": 2560,
+        "reference": 3840
+      },
+      "query_rule": "original128 equal-area meridian midquantiles, u=0; retained rotational symmetry"
+    }
+  },
+  "kernel_power": 6,
+  "population_integration": {
+    "stsp_noncentral_radius_padding": 12.0,
+    "tail_bound_description": "latent nodes with distance/h beyond h/sigma+12 are omitted; the corresponding Gaussian displacement tail is bounded at the exp(-72) scale before dimension-polynomial factors"
+  },
+  "resolutions": {
+    "production": {
+      "stsp_radial_order": 160
+    },
+    "reference": {
+      "stsp_radial_order": 224
+    }
+  },
+  "solver": {
+    "search_radius_factor": 4.0,
+    "max_iterations": 24,
+    "max_backtracks": 16,
+    "projected_residual_tolerance": 2e-12,
+    "full_residual_tolerance": 2e-10,
+    "coordinate_correction_tolerance": 2e-11,
+    "normalized_eigengap_min": 1e-07,
+    "dr_normal_eigenvalue_max": -1e-08
+  },
+  "coefficient_quadrature": {
+    "absolute_tolerance": 2e-13,
+    "relative_tolerance": 2e-13,
+    "limit": 300
+  },
+  "slope_windows": {
+    "all_7": 7,
+    "smallest_5": 5,
+    "smallest_4": 4,
+    "smallest_3": 3
+  },
+  "audit_gates": {
+    "required_backend": "gpu_cupy",
+    "cpu_gpu_fitted_point_max": 1e-10,
+    "weight_constraint_max": 1e-11,
+    "reference_point_difference_fraction_of_min_multi_error": 0.25,
+    "root_position_uncertainty_fraction_of_min_multi_error": 0.1,
+    "all_declared_cells_and_queries_resolved": true
+  },
+  "failure_policy": "retain every declared cell and query; never crop sigma points or fitting windows",
+  "production_locked": true,
+  "seed": 20261029,
+  "geometry_order": [
+    "circle_r2",
+    "sphere2_r3",
+    "clifford_torus_r4",
+    "sphere3_r4",
+    "sphere2_r10",
+    "corrugated_torus_r3"
+  ],
+  "density": {
+    "amplitude": 0.5,
+    "surface_measure": "induced Riemannian area; not parameter-uniform density",
+    "circle_r2": "(1+0.5*cos(theta))/(2*pi)",
+    "sphere2_r3": "(1+0.5*x_1)/(4*pi)",
+    "clifford_torus_r4": "(1+0.5*cos(u))/(2*pi^2)",
+    "sphere3_r4": "(1+0.5*x_1)/(2*pi^2)",
+    "sphere2_r10": "(1+0.5*x_1)/(4*pi)",
+    "corrugated_torus_r3": "(1+0.5*cos(v))/Z, Z=2*pi*integral_0^{2*pi}(1+0.5*cos(v))*J(v)dv",
+    "max_min_ratio": 3.0,
+    "normalization_epsabs": 2e-13,
+    "normalization_epsrel": 2e-13
+  },
+  "numerical_validation": {
+    "global_reference_difference_fraction_of_minimum_new_multi_error": 0.001,
+    "root_uncertainty_fraction_of_minimum_multi_error": 0.1,
+    "all_cells_queries_required": true,
+    "all7_noise_levels_required": true,
+    "queries_same_at_both_resolutions": true
+  },
+  "execution": {
+    "gpu_device": 0,
+    "workers": 4,
+    "cpu_threads_per_worker": 1,
+    "precision": "float64",
+    "automatic_retry": false,
+    "no_overwrite": true
+  },
+  "scope_note": "new density and the necessary symmetry-quotient query coverage only; original STSP residual/PCA/fiber/Newton/coefficient/quadrature controls retained; no MS-STSP or DR/YY rerun"
+}
