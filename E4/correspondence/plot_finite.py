@@ -64,25 +64,12 @@ def main():
     panel(axes[0],table,'E_infinity',r'Final error $E_\infty$')
     panel(axes[1],table,'E_match',r'Matching error $E_{\mathrm{match}}$',scale='symlog')
     panel(axes[2],table,'total_seconds','Total computation time (s)')
-    for ax,title in zip(axes,['(A) Final maximum\ngeometric error','(B) Direct correspondence\nerror','(C) Full measured\nCPU cost']):ax.set_title(title,pad=10)
-    fig.legend(handles=[Line2D([],[],color=COLORS[m],ls=STYLES[m],lw=1.7,label=LABELS[m]) for m in ['NN','ENF','CP','Oracle']],
+    for ax,title in zip(axes,['(A) Final maximum\ngeometric error','(B) Direct correspondence\nerror','(C) Total elapsed\ntime']):ax.set_title(title,pad=10)
+    fig.legend(handles=[Line2D([],[],color=COLORS[m],ls=STYLES[m],lw=1.7,label='Local CP' if m=='CP' else LABELS[m]) for m in ['NN','ENF','CP','Oracle']],
                loc='upper center',ncol=4,frameon=False,bbox_to_anchor=(.52,.995))
     fig.supxlabel(r'NN candidate count $M_{\mathrm{match}}$',y=.01,fontsize=16)
     fig.subplots_adjust(top=.75,left=.066,right=.99,bottom=.24,wspace=.32)
     save(fig,out,'e4_nn_density_accuracy')
-    if a.main_only:
-        print(out)
-        return
-    fig,axes=plt.subplots(1,2,figsize=(12.6,4.5))
-    panel(axes[0],table,'E_average',r'Final error $E_{\mathrm{avg}}$')
-    panel(axes[1],table,'E_base',r'Base-point error $E_{\mathrm{base}}$',scale='symlog')
-    for ax,title in zip(axes,['(A) Final average geometric error','(B) Projected base-point error']):
-        ax.set_title(title,pad=10);ax.set_xlabel(r'NN candidate count $M_{\mathrm{match}}$')
-    fig.legend(handles=[Line2D([],[],color=COLORS[m],ls=STYLES[m],label=LABELS[m]) for m in ['NN','ENF','CP','Oracle']],
-               loc='upper center',ncol=4,frameon=False,bbox_to_anchor=(.52,1.0))
-    fig.subplots_adjust(top=.79,left=.09,right=.99,bottom=.22,wspace=.27)
-    save(fig,out,'P1_E4_correspondence_supplement')
-    (out/'E4_caption.tex').write_text(r'''\caption{Correspondence accuracy and cost for the original space-curve STSP experiment ($n=200000$, $N_q=32$, $\sigma=0.06$, $h_1=0.12$, $h_2=0.24$). All methods use the exact archived fine-scale reference coordinates, with ten original held-out parent samples. Continuous CP constructs a local chart from empirical $h_2$-scale PCA and continuously minimizes distance while solving the actual STSP residual at every chart evaluation; it does not choose among NN candidates and does not receive true curve coordinates. Medians and interquartile bands are over ten repeats. All displayed time measurements are fresh, serial single-thread CPU measurements including common reference setup and target representation/search; they are not mixed with old GPU times. The NN libraries retain the exact original nested candidate sets; cumulative actual construction through $M_{\mathrm{match}}$ is charged despite reuse across this density sweep. Zero Oracle correspondence error is displayed using a symmetric-log axis with a linear neighborhood of zero. Oracle and the original common-reference/NN branch initializers retain their explicitly controlled geometric information. The timing comparison concerns these implementations, not a lower bound for every possible CP solver.}'''+'\n',encoding='utf8')
     manifest=dict(status='ACTUAL_TEN_REPEAT_DATA',finite_summary_sha256=sha(ROOT/'finite_summary/SUMMARY.csv'),
         renderer_sha256=sha(__file__),exports={p.name:sha(p) for p in out.iterdir() if p.suffix in ['.png','.pdf']})
     (out/'FINITE_PLOT_MANIFEST.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')

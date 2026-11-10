@@ -19,18 +19,24 @@ TITLES=[r'$S^1\subset\mathbb{R}^2$',r'$S^2\subset\mathbb{R}^3$',
         r'$S^2\subset\mathbb{R}^{10}$',r'Corrugated torus $\subset\mathbb{R}^3$']
 TEXT=['Circle','S2 in R3','Clifford torus','S3 in R4','S2 in R10','Corrugated torus']
 METHODS=['single','naive','proposed','ms_stsp']
-LEGEND=['Single STSP',r'Naive $h^2$ extrapolation','Proposed (ours)','Original MS-STSP']
-COLORS=['#3B6EA8','#8E44AD','#D55E00','#009E73']
+LEGEND=['Successive tangent-space projection (STSP)','Squared extrapolation (SQ)',
+        'Geometric bias cancellation (GBC)','Multiscale successive tangent-space projection (MS-STSP)']
+COLORS=['#94989C','#294F7E','#C54F2D','#BABEC3']
 MARKS=['o','^','s','D'];STYLES=['-','--','--','-.']
+DISPLAY_INDICES=[0,3,1,2]
+LINE_WIDTHS=[1.0,1.25,1.55,.95]
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def read_csv(path):return list(csv.DictReader(Path(path).open(encoding='utf8')))
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--figure-only',action='store_true');a=p.parse_args()
+    p.add_argument('--figure-only',action='store_true')
+    p.add_argument('--overwrite',action='store_true',help='Replace the figure exports in an existing output directory; requires --figure-only.')
+    a=p.parse_args()
+    if a.overwrite and not a.figure_only:p.error('--overwrite requires --figure-only')
     dest=a.output.resolve()
-    if dest.exists():raise ValueError('Fresh output inside this isolated study required')
+    if dest.exists() and not a.overwrite:raise ValueError('Use a fresh output directory or --figure-only --overwrite')
     audit=json.loads((ROOT/'analysis/NUMERICAL_CHECK.json').read_bytes())
     precision=json.loads((ROOT/'analysis/INDEPENDENT_PRECISION.json').read_bytes())
     assert audit['status']==precision['status']=='PASS'
@@ -40,41 +46,69 @@ def main():
     sigmas=[.008,.01,.0125,.016,.02,.025,.03]
     allvalues=[float(r[m+'_E_infinity']) for r in rows for m in METHODS]
     assert np.isfinite(allvalues).all() and min(allvalues)>0
-    dest.mkdir()
-    plt.rcParams.update({'font.size':14,'axes.titlesize':17,'xtick.labelsize':13,
-                         'ytick.labelsize':14,'legend.fontsize':14,'pdf.fonttype':42,'ps.fonttype':42})
+    dest.mkdir(exist_ok=a.overwrite)
+    plt.rcParams.update({'font.family':'STIXGeneral','mathtext.fontset':'stix',
+                         'font.size':14,'axes.titlesize':15.5,'xtick.labelsize':12.5,
+                         'ytick.labelsize':13,'legend.fontsize':13,'pdf.fonttype':42,'ps.fonttype':42})
     fig,axes=plt.subplots(2,3,figsize=(14.2,7.7),sharex=True,sharey=True)
-    for ax,key,title in zip(axes.flat,ORDER,TITLES):
+    slope_artists=[];series_records=[]
+    for panel,(ax,key,title) in enumerate(zip(axes.flat,ORDER,TITLES)):
         block=sorted([r for r in rows if r['geometry']==key],key=lambda r:float(r['sigma']))
         assert [float(r['sigma']) for r in block]==sigmas
-        annotations=[]
-        for i,m in enumerate(METHODS):
+        annotations={};series={}
+        for i in DISPLAY_INDICES:
+            m=METHODS[i]
             yy=np.array([float(r[m+'_E_infinity']) for r in block])
-            line,=ax.plot(sigmas,yy,c=COLORS[i],marker=MARKS[i],linestyle=STYLES[i],lw=1.7,ms=5)
+            line,=ax.plot(sigmas,yy,c=COLORS[i],marker=MARKS[i],linestyle=STYLES[i],
+                         lw=LINE_WIDTHS[i],ms=4.2,mew=.8,
+                         mfc=COLORS[i] if m=='proposed' else 'white',zorder=4 if m=='proposed' else 3)
             assert np.array_equal(line.get_ydata(),yy)
             actual=float(np.polyfit(np.log(sigmas),np.log(yy),1)[0])
             saved=float(next(r for r in slopes if r['geometry']==key and r['method']==m)['slope_all_7'])
             assert abs(actual-saved)<1e-12
-            annotations.append(actual)
+            annotations[m]=actual;series[m]=yy.tolist()
         assert len(ax.patches)==0
         ax.set_xscale('log');ax.set_yscale('log');ax.set_xlim(.032,.0075);ax.set_ylim(1e-9,.1)
-        ax.xaxis.set_major_locator(FixedLocator(sigmas));ax.xaxis.set_minor_locator(NullLocator())
+        ax.xaxis.set_major_locator(FixedLocator([.03,.02,.01,.008]));ax.xaxis.set_minor_locator(NullLocator())
         ax.xaxis.set_major_formatter(FuncFormatter(lambda x,_:f'{x:g}'))
-        plt.setp(ax.get_xticklabels(),rotation=40,ha='right')
-        ax.set_title(title,pad=11);ax.grid(axis='y',alpha=.18)
+        plt.setp(ax.get_xticklabels(),rotation=0,ha='center')
+        ax.set_title(title,pad=10);ax.grid(False)
+        ax.tick_params(axis='both',length=3,width=.7,pad=4)
         ax.spines[['top','right']].set_visible(False)
-        ax.text(.02,.96,'slopes: '+' / '.join(f'{x:.2f}' for x in annotations),
-                transform=ax.transAxes,va='top',fontsize=13)
-    handles=[Line2D([],[],color=COLORS[i],marker=MARKS[i],linestyle=STYLES[i],lw=1.7,ms=6,label=LEGEND[i]) for i in range(4)]
-    fig.legend(handles=handles,ncol=4,frameon=False,loc='upper center',bbox_to_anchor=(.52,.995),columnspacing=1.3,handletextpad=.5)
-    fig.supxlabel(r'Noise level $\sigma$',y=.012,fontsize=18)
-    fig.supylabel(r'Population error $E_\infty$',x=.01,fontsize=18)
-    fig.subplots_adjust(left=.10,right=.99,bottom=.18,top=.86,wspace=.23,hspace=.40)
+        for side in ['left','bottom']:
+            ax.spines[side].set_linewidth(.7);ax.spines[side].set_color('#55595D')
+        ax.text(-.115,1.06,f'({chr(97+panel)})',transform=ax.transAxes,
+                va='bottom',ha='left',fontsize=13.5,fontweight='bold')
+        first=(rf'$p_{{\mathrm{{STSP}}}}={annotations["single"]:.2f},\quad '
+               rf'p_{{\mathrm{{MS\!-\!STSP}}}}={annotations["ms_stsp"]:.2f}$')
+        second=(rf'$p_{{\mathrm{{sq}}}}={annotations["naive"]:.2f},\quad '
+                rf'p_{{\mathrm{{GBC\!-\!STSP}}}}={annotations["proposed"]:.2f}$')
+        for height,label in [(.12,first),(.035,second)]:
+            slope_artists.append((ax,ax.text(.035,height,label,transform=ax.transAxes,
+                                           va='bottom',ha='left',fontsize=12)))
+        series_records.append(dict(geometry=key,sigma=sigmas,values=series,slopes=annotations))
+    handles=[Line2D([],[],color=COLORS[i],marker=MARKS[i],linestyle=STYLES[i],
+                    lw=LINE_WIDTHS[i],ms=4.5,mew=.8,
+                    mfc=COLORS[i] if METHODS[i]=='proposed' else 'white',label=LEGEND[i]) for i in DISPLAY_INDICES]
+    fig.legend(handles=[handles[i] for i in [0,2,1,3]],ncol=2,frameon=False,loc='upper center',bbox_to_anchor=(.53,.995),columnspacing=1.6,handletextpad=.65)
+    fig.text(.535,.885,r'$h_1=3\sigma,\quad h_2=6\sigma$',ha='center',fontsize=14)
+    fig.supxlabel(r'Noise level $\sigma$',y=.025,fontsize=16)
+    fig.supylabel(r'Population error $E_\infty$',x=.014,fontsize=16)
+    fig.subplots_adjust(left=.085,right=.99,bottom=.12,top=.78,wspace=.22,hspace=.42)
+    fig.canvas.draw();renderer=fig.canvas.get_renderer()
+    for legend in fig.legends:
+        box=legend.get_window_extent(renderer)
+        assert fig.bbox.contains(box.x0,box.y0) and fig.bbox.contains(box.x1,box.y1), 'Legend exceeds canvas'
+    for ax,artist in slope_artists:
+        bounds=artist.get_window_extent(renderer).expanded(1.02,1.08)
+        assert ax.bbox.contains(bounds.x0,bounds.y0) and ax.bbox.contains(bounds.x1,bounds.y1)
+        for line in ax.lines:
+            assert not line.get_transform().transform_path(line.get_path()).intersects_bbox(bounds,filled=False), 'Slope text touches a data curve'
     stem='e1_stsp_population_infinity_with_ms_stsp'
     fig.savefig(dest/(stem+'.png'),dpi=300,bbox_inches='tight')
     fig.savefig(dest/(stem+'.pdf'),bbox_inches='tight',metadata={'CreationDate':None,'ModDate':None})
     plt.close(fig)
-    caption=r'''\caption{Population maximum errors under a controlled STSP weight comparison. All three controlled estimators use exactly the same archived smooth-kernel STSP fits and estimated-normal-fiber correspondence at $h_1=3\sigma$ and $h_2=6\sigma$. Single is the matched coarse-scale point $Z_{h_2}$; Naive uses $(4/3,-1/3)$; Proposed uses the exact noise-dependent STSP bias coefficients. Original MS-STSP is the previously computed population adaptation with a hard-ball kernel, its own fixed-reference iteration and radii $\{3,4.5,6\}\sigma$; its measurements are reused without refitting. Axes are logarithmic, with noise level decreasing from left to right. Unboxed slopes are fitted over all seven displayed noise levels, in legend order. Errors use the original E1 queries: one canonical query on each homogeneous example and 128 fixed meridional queries on the corrugated torus. The plotted maximum is over these finite query sets, not a certified continuous supremum.}'''
+    caption=r'''\caption{Population maximum errors under a controlled STSP weight comparison. In the legend, Successive tangent-space projection (STSP), Multiscale successive tangent-space projection (MS-STSP), Squared extrapolation (SQ), and Geometric bias cancellation (GBC) denote Single, Original MS-STSP, Naive, and GBC-STSP (the proposed method), respectively. All three controlled estimators use exactly the same archived smooth-kernel STSP fits and estimated-normal-fiber correspondence at $h_1=3\sigma$ and $h_2=6\sigma$. Single is the matched coarse-scale point $Z_{h_2}$; Naive uses $(4/3,-1/3)$; Proposed uses the exact noise-dependent STSP bias coefficients. Original MS-STSP is the previously computed population adaptation with a hard-ball kernel, its own fixed-reference iteration and radii $\{3,4.5,6\}\sigma$; its measurements are reused without refitting. Axes are logarithmic, with noise level decreasing from left to right. The four unboxed slopes $p_{\mathrm{STSP}}$, $p_{\mathrm{MS\!-\!STSP}}$, $p_{\mathrm{sq}}$, and $p_{\mathrm{GBC\!-\!STSP}}$ are fitted over all seven displayed noise levels and correspond to the four legend entries, respectively. Errors use the original E1 queries: one canonical query on each homogeneous example and 128 fixed meridional queries on the corrugated torus. The plotted maximum is over these finite query sets, not a certified continuous supremum.}'''
     (dest/'figure_caption.tex').write_text(caption+'\n',encoding='utf8')
     if not a.figure_only:
         table_rows=[]
@@ -116,8 +150,11 @@ To isolate the role of the bias coefficient, we reuse exactly the same smooth-ke
         make_table_pdf(dest,table_rows,constants)
         write_report(dest,rows,slopes,constants,audit,precision)
     manifest=dict(input_csv_sha256=sha(ROOT/'analysis/VALUES.csv'),renderer_sha256=sha(__file__),
-        method_order=METHODS,log_x=True,log_y=True,x_direction='descending',bars=False,slope_boxes=False,
-        main_title=False,subtitle=False,query_sets_retained=True,
+        method_order=METHODS,display_method_order=[METHODS[i] for i in DISPLAY_INDICES],
+        legend_labels=[LEGEND[i] for i in DISPLAY_INDICES],
+        log_x=True,log_y=True,x_direction='descending',bars=False,slope_boxes=False,
+        main_title=False,subtitle=True,query_sets_retained=True,
+        four_slopes_per_panel=True,slope_text_curve_collisions=False,series=series_records,
         exports={f.name:sha(f) for f in dest.iterdir() if f.suffix in ['.png','.pdf','.tex']})
     (dest/'PLOT_MANIFEST.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')
     print('Actual controlled figure and requested accompanying material generated:',dest)

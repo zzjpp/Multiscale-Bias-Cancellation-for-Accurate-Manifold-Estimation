@@ -1,3 +1,5 @@
-# Release scope and manuscript cautions
+# Final-paper scope and limitations
 
-This release targets the two PDFs identified in PAPER_REFERENCE.json, not the older manuscript71 snapshot. Current main/supplement figure numbering is in FIGURE_MAP.md. E2 population baselines withdrawn by the author are absent. Continuous CP is a local implicit-sheet benchmark, not a globally certified nearest point over arbitrary empirical components. The E5 finite raw-data gap is disclosed in DATA_AVAILABILITY.md. No numerical claim is repaired by changing solver tolerances or replacing failed cells.
+This release targets only `arxiv_final.pdf`, identified by SHA-256 in `PAPER_REFERENCE.json`. Appendix figure numbering is E.1–E.18. Historical figure labels, source paths and original plans remain where required to authenticate immutable numerical evidence; they are not the current figure map.
+
+E2 population overlays were withdrawn and are absent. E3 uses six equal reverse reference counts of 262144 and YY radii (0.4,1,1.6). E4 is local continuous CP with geometry-assisted common-query initialization, not a globally certified empirical nearest-point solver. The missing E5 finite raw packets are disclosed in DATA_AVAILABILITY.md. Numerical failures and partial-query statistics are preserved.

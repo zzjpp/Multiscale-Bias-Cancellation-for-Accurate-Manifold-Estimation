@@ -1,5 +1,5 @@
 {
-  "schema": "E2_NONUNIFORM_PUBLIC_PRODUCER_SOURCE_V2",
+  "schema": "E2_NONUNIFORM_PUBLIC_PRODUCER_SOURCE_V3",
   "members": {
     "parent.py": {
       "size": 6510,
@@ -34,8 +34,8 @@
       "sha256": "214212469258cf5e693649ee919876aa894e8a7b7089018cc073fad952a53585"
     },
     "README.md": {
-      "size": 1061,
-      "sha256": "732a0a9174447ee316ebc2f28fbd92580cd2e72ee4151d2922550e865c293d6f"
+      "size": 1063,
+      "sha256": "2ef9eae84fae115556b7bc57b0e5cf1865ce01d3847b08ee531c717ce000ecb9"
     },
     "requirements.txt": {
       "size": 228,

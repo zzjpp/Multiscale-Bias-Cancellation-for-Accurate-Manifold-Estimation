@@ -72,7 +72,7 @@ def test_distribution_manifest():
 
 def test_changed_member_rejected(tmp_path):
     member=tmp_path/'fake.py';member.write_text('changed',encoding='utf-8')
-    (tmp_path/'SOURCE_MANIFEST.json').write_text(json.dumps(dict(schema='PAPER71_PUBLIC_SOURCE_AND_DATA_V1',
+    (tmp_path/'SOURCE_MANIFEST.json').write_text(json.dumps(dict(schema='ARXIV_FINAL_SOURCE_AND_DATA_V3',
         files={'fake.py':{'sha256':'0'*64,'size':7}})),encoding='utf-8')
     spec=importlib.util.spec_from_file_location('release_validation_negative',ROOT/'validate_release.py')
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)

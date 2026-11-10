@@ -63,7 +63,7 @@ def main():
                 if index in (0,3):
                     axis.set_ylabel(r'Average error $E_{\mathrm{avg}}$' if metric=='E_avg' else r'Maximum error $E_{\infty}$',labelpad=4)
             handles=[Line2D([],[],color=style.COLORS[name],marker=style.MARKERS[name],linestyle=style.STYLES[name],
-                linewidth=1.4,markersize=4,label=name) for name in ('Single','Multi')]
+                linewidth=1.4,markersize=4,label=method if name=='Single' else f'GBC-{method}') for name in ('Single','Multi')]
             handles.append(Line2D([],[],linestyle='none',marker='o',markerfacecolor='white',markeredgecolor='#555555',markersize=4,label='Unreliable'))
             fig.legend(handles=handles,loc='upper center',bbox_to_anchor=(.5,.956),ncol=3,frameon=False,fontsize=9,handlelength=2,columnspacing=1.8)
             for extension in ('png','pdf'):

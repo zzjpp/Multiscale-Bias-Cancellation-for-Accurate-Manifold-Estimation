@@ -23,7 +23,6 @@ def main():
     exported=[]
     for metric in style.METRICS:
         fig,axes=plt.subplots(2,3,figsize=(9.6,6.6));fig.subplots_adjust(left=.13,right=.985,bottom=.17,top=.77,wspace=.40,hspace=.58)
-        fig.suptitle('STSP (nonuniform density)',fontsize=20,y=.995)
         for i,(axis,(key,title)) in enumerate(zip(axes.flat,style.GEOMETRIES)):
             if 'torus' in title:title=title.replace('torus ','torus\n')
             axis.set_title(title,pad=6)
@@ -38,7 +37,7 @@ def main():
                 plt.setp(axis.get_xticklabels(),rotation=45,ha='right',rotation_mode='anchor');axis.set_xlabel(r'Sample size $n$',labelpad=4)
             else:axis.tick_params(labelbottom=False)
             if i in [0,3]:axis.set_ylabel(r'Average error $E_{\mathrm{avg}}$' if metric=='E_avg' else r'Maximum error $E_{\infty}$',labelpad=5)
-        handles=[Line2D([],[],color=style.COLORS[name],marker=style.MARKERS[name],linestyle=style.STYLES[name],linewidth=1.6,markersize=6,label=name) for name in ['Single','Multi']]
+        handles=[Line2D([],[],color=style.COLORS[name],marker=style.MARKERS[name],linestyle=style.STYLES[name],linewidth=1.6,markersize=6,label='STSP' if name=='Single' else 'GBC-STSP') for name in ['Single','Multi']]
         handles.append(Line2D([],[],linestyle='none',marker='o',markerfacecolor='white',markeredgecolor='#555555',markersize=6,label='Unreliable'))
         fig.legend(handles=handles,loc='upper center',bbox_to_anchor=(.52,.93),ncol=3,frameon=False,fontsize=15,handlelength=2,columnspacing=1.4)
         for ext in ['png','pdf']:

@@ -1,14 +1,12 @@
 {
-  "schema": "MANUSCRIPT_MAIN_AND_SUPPLEMENT_20261107_V1",
+  "schema": "ARXIV_FINAL_MANUSCRIPT_20261110_V1",
   "title": "Beyond Curvature Bias: Higher-Order Manifold Fitting via Multiscale Cancellation",
   "repository": "https://github.com/zzjpp/Multiscale-Bias-Cancellation-for-Accurate-Manifold-Estimation",
-  "main_pdf": {
-    "filename": "manifold_fitting - 2026-11-07T190502.832.pdf",
-    "sha256": "51e0fe09fd9af1130c82dde06471f6b35654ac75abbb05dd560300e342f2a74e"
-  },
-  "supplement_pdf": {
-    "filename": "manifold_fitting - 2026-11-07T190515.870.pdf",
-    "sha256": "fd76a325714b942e1e102d521fa5f28af43665b8f22e74736c459a9507fca430"
+  "manuscript_pdf": {
+    "filename": "arxiv_final.pdf",
+    "sha256": "bdc7b87ba20118aaf323bbe25d6b6921235e9f18c1c1d0453604c92f60d561be",
+    "pages": 128,
+    "figure_numbering": "Figures 1-8; Appendix Figures E.1-E.18"
   },
   "E2_population_reference_overlay": false,
   "E7_included": false,

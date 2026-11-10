@@ -78,59 +78,7 @@ def finite():
         CP_scope='Continuous local fitted-sheet optimization with multi-start/resolution checks; not a formal mathematical global certificate over arbitrary spurious empirical components.')
     write_json(dest/'AUDIT.json',report);print(json.dumps(report,indent=2),flush=True)
 
-def population():
-    sigmas=[.008,.01,.0125,.016,.02,.025,.03]
-    files=[ROOT/'population'/f'sigma_{s:.4f}_{res}.json' for s in sigmas for res in ['production','reference']]
-    if not all(p.is_file() for p in files):raise ValueError('Fourteen complete population cells required')
-    dest=ROOT/'population_summary';dest.mkdir(exist_ok=False)
-    cells={};rows=[];precision=[];failures=[]
-    for path in files:
-        d=json.loads(path.read_bytes());assert not d['pilot'] and d['query_ids']==list(range(32))
-        assert d['algorithm_source_sha256']==sha(ROOT/'population_experiment.py')
-        assert d['operator_source_sha256']==sha(ROOT/'population_operator.py')
-        assert d['CP_source_sha256']==sha(ROOT/'continuous_cp.py')
-        if d['failures']:failures.append(dict(file=path.name,failures=d['failures']))
-        assert len(d['rows'])==32
-        cells[(d['sigma'],d['resolution'])]=d
-    if failures:
-        write_json(dest/'FAILURES.json',failures);raise ArithmeticError('Population failures retained; no valid full result')
-    minimum=float('inf')
-    for sigma in sigmas:
-        p=cells[(sigma,'production')];r=cells[(sigma,'reference')]
-        record=dict(sigma=sigma,query_count=32)
-        for method in ['ENF','CP']:
-            em=max(q['metrics'][method]['E_match'] for q in p['rows'])
-            eb=max(q['metrics'][method]['E_base'] for q in p['rows'])
-            ei=max(q['metrics'][method]['extrapolated_distance'] for q in p['rows'])
-            ea=float(np.mean([q['metrics'][method]['extrapolated_distance'] for q in p['rows']]))
-            record.update({method+'_E_match':em,method+'_E_base':eb,method+'_E_infinity':ei,
-                           method+'_E_average':ea,method+'_match_over_sigma4':em/sigma**4})
-            minimum=min(minimum,em)
-            difference=max(float(np.linalg.norm(np.array(a['second_scale'][method])-b['second_scale'][method])) for a,b in zip(p['rows'],r['rows']))
-            ref_metric=max(q['metrics'][method]['E_match'] for q in r['rows'])
-            precision.append(dict(sigma=sigma,method=method,point_difference=difference,
-                match_metric_difference=abs(em-ref_metric)))
-        rows.append(record)
-    budget=.001*minimum
-    bad=[x for x in precision if max(x['point_difference'],x['match_metric_difference'])>budget]
-    slopes=[]
-    for method in ['ENF','CP']:
-        for metric in ['E_match','E_base','E_infinity']:
-            y=[x[method+'_'+metric] for x in rows]
-            slopes.append(dict(method=method,metric=metric,
-                slope_all7=float(np.polyfit(np.log(sigmas),np.log(y),1)[0]),
-                slope_smallest4=float(np.polyfit(np.log(sigmas[:4]),np.log(y[:4]),1)[0])))
-    write_csv(dest/'VALUES.csv',rows);write_csv(dest/'PRECISION.csv',precision);write_csv(dest/'SLOPES.csv',slopes)
-    report=dict(status='PASS' if not bad else 'FAIL',cells=14,query_resolution_workflows=448,
-        pilot_queries_adopted=sum(len(d['adopted_pilot_query_ids']) for d in cells.values()),
-        minimum_maximum_match_error=minimum,precision_budget=budget,precision_failures=bad,
-        maximum_point_difference=max(x['point_difference'] for x in precision),
-        maximum_match_metric_difference=max(x['match_metric_difference'] for x in precision),
-        no_Monte_Carlo=True,packet_sha256={p.name:sha(p) for p in files},source_sha256=sha(__file__),
-        finite_range_not_asymptotic_proof=True)
-    write_json(dest/'AUDIT.json',report);print(json.dumps(report,indent=2),flush=True)
-    if bad:raise SystemExit(2)
-
-if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('phase',choices=['finite','population']);a=p.parse_args()
-    (finite if a.phase=='finite' else population)()
+if __name__ == '__main__':
+    p=argparse.ArgumentParser(description='Summarize the ten final-paper finite CP/ENF/NN/Oracle packets.')
+    p.add_argument('phase',choices=['finite']);p.parse_args()
+    finite()

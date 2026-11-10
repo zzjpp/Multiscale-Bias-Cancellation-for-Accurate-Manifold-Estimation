@@ -1,10 +1,13 @@
-# Actual release checks, 2026-11-07
+# Final-manuscript release checks, 2026-11-10
 
-- 41 archived-result/protocol checks match the supplied manuscript.
-- All 48 root test cases reached PASS: 39 in the initial run; the remaining 9 passed after fixing the local temporary-directory environment and explicitly versioning the public documentation contract.
-- Five original nonuniform sampling tests passed. One actual reduced nonuniform E1 CPU query succeeded, with zero failures; this is not a production precision gate.
-- Full saved-result replay generated 33 logical paper plots. All 66 paper PNG/vector exports match the current selected source files byte-for-byte in the recorded environment. Two additional counterexample branch-switch exports are diagnostic, not paper figures.
-- The complete original CPU smoke entrypoint passed all 11 method/experiment commands, including E5 population and finite smoke.
-- The six static reproducibility essentials are OK. Source/data checksum validation and credential-literal/size scans passed.
+- Authority: `arxiv_final.pdf`, 128 pages, SHA-256 in PAPER_REFERENCE.json.
+- 61 tests passed: 48 root interface/evaluation/provenance checks, eight E5 tests and five original nonuniform sampling tests. The initial test collection command had a wrong test-file path and ran zero tests; corrected suites passed. Logs are retained in the local task archive.
+- Eleven actual reduced CPU experiment commands passed, including E5 population and finite smoke. Smoke does not validate production accuracy or GPU equivalence.
+- 41 saved numerical/protocol checks matched. The known 60 missing E5 finite raw packets remain disclosed.
+- Full saved-result replay emitted exactly the 33 selected experimental plots / 66 exports. All 66 export bytes match the selected source files. E5 finite exports are checked copies, not independently recalculated medians/IQRs.
+- All 33 experimental plots and both schematics match inclusions in the final PDF: exact decoded vector content streams or exact embedded raster pixels. Figure 1 now uses the final native TikZ schematic instead of the previous Matplotlib schematic.
+- Actual overview review covered 33 PNGs and all 32 complete PDF pages rendered in contact sheets. No clipping, missing panels, unintended green background, or omitted reliability markers was observed.
+- Retained scientific input arrays, frozen implementations, raw packets, tables and failure records are byte-identical to the pre-cleanup snapshot. No production fits or parameter tuning were performed.
+- Removed independent experiments/plots are reversibly archived outside the repository. Immutable historical plans and required frozen code remain as evidence/dependencies, not as additional selected experiments.
 
-The original engineering failure and temporary-directory errors were retained locally; they are not relabeled as numerical failures or hidden behind a full-grid scientific PASS. No new production GPU run or artifact badge is claimed. Missing E5 finite raw packets remain explicitly disclosed.
+Environment: Windows Python 3.12, versions pinned in requirements.txt; original GPU environment remains separate. A passing release check is not independent experimental replication or an artifact badge.

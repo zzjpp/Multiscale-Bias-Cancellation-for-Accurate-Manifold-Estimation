@@ -1,5 +1,5 @@
 {
-  "schema": "CURRENT_MAIN_SUPPLEMENT_RESULT_CONSISTENCY_V2",
+  "schema": "ARXIV_FINAL_RESULT_CONSISTENCY_V1",
   "status": "MATCH_WITH_DOCUMENTED_RAW_DATA_GAP",
   "matched_claims": 41,
   "claims": [
@@ -234,13 +234,13 @@
       "status": "MATCH"
     },
     {
-      "claim": "S13 nonunique CP pair",
+      "claim": "E.13 nonunique CP pair",
       "observed": 2,
       "paper": 2,
       "status": "MATCH"
     },
     {
-      "claim": "S17/S18 complete nonuniform table",
+      "claim": "E.17/E.18 complete nonuniform table",
       "observed": 768,
       "paper": 768,
       "status": "MATCH"

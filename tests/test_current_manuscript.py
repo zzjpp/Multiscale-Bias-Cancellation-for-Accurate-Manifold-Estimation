@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def test_every_current_main_and_supplement_figure_exists():
     figures=json.loads((ROOT/'docs/FIGURE_MAP.json').read_bytes())['figures']
-    assert {x['figure'] for x in figures}=={f'Figure {i}' for i in range(1,9)}|{f'Figure S{i}' for i in range(1,19)}
+    assert {x['figure'] for x in figures}=={f'Figure {i}' for i in range(1,9)}|{f'Figure E.{i}' for i in range(1,19)}
     for row in figures:
         assert all((ROOT/p).is_file() for p in row['files'])
 

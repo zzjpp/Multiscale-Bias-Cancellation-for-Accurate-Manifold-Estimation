@@ -6,14 +6,14 @@ python E5/reproduce.py --mode smoke
 ```
 
 `paper` validates and copies the four **selected, existing** exports into
-`E5/results/figures`, without refitting. They correspond to paper Figure7
-(finite PNG/SVG) and Figure20 (population PNG/PDF). Original configuration
+`E5/results/figures`, without refitting. They correspond to paper Figure 8
+(finite PNG/SVG) and Figure E.14 (population PNG/PDF). Original configuration
 labels 6/22 are historical metadata, not the current paper's figure numbers.
 
 **Data limitation:** the seven original population packets are in
 `data/population`; all Table2 slopes can be checked with `python verify_paper.py`
 from the repository root. The 60 historical finite held-out packets are
-missing locally. Selected Figure7 exports are preserved, but raw-data
+missing locally. Selected Figure 8 exports are preserved, but raw-data
 verification of its medians is incomplete; see `docs/DATA_AVAILABILITY.md`.
 
 Full expensive new CPU computations and raw-result plotting:

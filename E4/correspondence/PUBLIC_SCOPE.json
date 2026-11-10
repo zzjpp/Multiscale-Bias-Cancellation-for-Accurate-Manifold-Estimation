@@ -1,0 +1,15 @@
+{
+  "schema": "FINAL_PAPER_E4_SCOPE_V1",
+  "retained": "finite comparison and deterministic oscillatory example",
+  "excluded": "unselected population scaling and additional plots/report artifacts",
+  "historical_plan_retained": true,
+  "historical_summarizer_sha256": "b1b7692ff35c5a22bfa0b0fc70c159e887feee29d5b6c1b12dab7e19c5ac316d",
+  "finite_function_source_sha256": "689bddbd1ceb3785074cfb93e987a029b0539e065bce2c7ee6c8413e54d751d3",
+  "finite_function_source_unchanged": true,
+  "scientific_fit_generators_unchanged": [
+    "finite_experiment.py",
+    "continuous_cp.py",
+    "counterexample.py"
+  ],
+  "note": "The historical AUDIT source hash describes the original summarizer; this public dispatcher removes only its unused population branch."
+}

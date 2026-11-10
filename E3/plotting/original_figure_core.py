@@ -170,7 +170,7 @@ def draw(rows, output, anchor):
                     fig.text(0.5, 0.014, 'Reference: 262144 (first five), 65536 (E7); fixed repeat: 0', ha='center', fontsize=8.0)
                 else:
                     fig.text(0.5, 0.009, '$n$: 12000 / 24000 / 24000 / 60000 / 24000 / 36000; 20 repeats; $N_q=256$ (first five), 512 (E7); finite-repeat median', ha='center', fontsize=8.0)
-                handles = [Line2D([], [], color=COLORS[e], marker=MARKERS[e], linestyle=STYLES[e], linewidth=1.65, markersize=5, label=LABELS[e]) for e in GROUPS[method]]
+                handles = [Line2D([], [], color=COLORS[e], marker=MARKERS[e], linestyle=STYLES[e], linewidth=1.65, markersize=5, label='GBC' if e == 'Multi' else LABELS[e].replace('Single', method, 1)) for e in GROUPS[method]]
                 handles.append(Line2D([], [], linestyle='none', marker='o', markerfacecolor='white', markeredgecolor='#333333', markersize=5, label='Unreliable'))
                 fig.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.5, 0.995), ncol=len(handles), frameon=False, handlelength=1.8, columnspacing=1.0)
                 fig.subplots_adjust(left=0.095, right=0.985, bottom=0.21 if phase == 'rev' else 0.16, top=0.865, wspace=0.3, hspace=0.49)

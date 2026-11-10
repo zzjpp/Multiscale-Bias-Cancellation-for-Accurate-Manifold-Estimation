@@ -1,21 +1,9 @@
 {
   "status": "ACTUAL_TEN_REPEAT_DATA",
   "finite_summary_sha256": "f4eb0cf259b0cbb21c44de4f16028e0e2c65322ce37b3257e4e9fb0e1c025d9c",
-  "renderer_sha256": "3fa49e17f23326e59f98ce5c1eae9961c05c6b1a0f94f9f3fbdc0aae9d7b8af2",
+  "renderer_sha256": "4c9bbcccd7d01607e29fd029b96eafce85136f2afcc1a2c1d87cb44d3efca188",
   "exports": {
-    "e4_nn_density_accuracy.pdf": "e625675c3cec892a1d05fe828493dfec1632d4b36d2293e5c6a39850eed196d8",
-    "e4_nn_density_accuracy.png": "b4c568371e95b7f5cf3cbf3ef76f25bcda825838524ded87e469adcdcc0943aa",
-    "P1_E4_correspondence_supplement.pdf": "d1d33e4426f212f6d6aec056dc9d88204814f53e2712afb94e20fbdc33786aa4",
-    "P1_E4_correspondence_supplement.png": "7426176aea4de6da36d773760809d8463c1889ee195c997b0809d1e8edaf10fb"
-  },
-  "main_layout": {
-    "rows": 1,
-    "columns": 3,
-    "panels": [
-      "A",
-      "B",
-      "C"
-    ],
-    "removed": "D"
+    "e4_nn_density_accuracy.pdf": "108c31a9fa6f896be437b68854bcac27729e0489dd247c2752ba44734a89445a",
+    "e4_nn_density_accuracy.png": "e31b8d852e49577d0585b66ade4f2996c43abedffb769ecac17f74698d640812"
   }
 }

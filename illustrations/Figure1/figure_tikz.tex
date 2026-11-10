@@ -1,0 +1,125 @@
+% Native TikZ artwork: no external images or generated path files.
+% These finite drawing parameters are schematic, not error-bound constants.
+\begingroup
+\definecolor{nctrue}{HTML}{30363B}
+\definecolor{ncfine}{HTML}{6E8CA7}
+\definecolor{nccoarse}{HTML}{B9897C}
+\definecolor{nccorrected}{HTML}{318571}
+\definecolor{ncnormal}{HTML}{A3AAB2}
+\def\ncA{0.135}
+\def\ncDOne{0.90}
+\def\ncDTwo{1.80}
+\def\ncTilt{0.40}
+\def\ncWTwo{-0.80}
+\pgfmathdeclarefunction{ncf}{1}{\pgfmathparse{\ncA*(#1)^2}}
+\pgfmathdeclarefunction{ncb}{1}{\pgfmathparse{1-2*\ncA*\ncTilt*(#1)}}
+% Vertical displacement along (ncTilt,1), from the fine to the coarse curve.
+\pgfmathdeclarefunction{ncs}{1}{\pgfmathparse{
+  2*(\ncDTwo-\ncDOne)/(ncb(#1)+sqrt(ncb(#1)^2
+  -4*\ncA*\ncTilt^2*(\ncDTwo-\ncDOne)))}}
+% Same affine-extrapolated curve, reparameterized by its displayed x coordinate.
+\pgfmathdeclarefunction{ncsc}{1}{\pgfmathparse{
+  2*(\ncDTwo-\ncDOne)/(ncb(#1)+sqrt(ncb(#1)^2
+  -4*\ncA*\ncTilt^2*(1-2*\ncWTwo)*(\ncDTwo-\ncDOne)))}}
+\pgfmathdeclarefunction{nccy}{1}{\pgfmathparse{
+  ncf((#1)-\ncWTwo*\ncTilt*ncsc(#1))+\ncDOne+\ncWTwo*ncsc(#1)}}
+\pgfmathsetmacro{\ncSZero}{ncs(0)}
+\pgfmathsetmacro{\ncZX}{\ncTilt*\ncSZero}
+\pgfmathsetmacro{\ncZY}{\ncDOne+\ncSZero}
+\pgfmathsetmacro{\ncCX}{\ncWTwo*\ncTilt*\ncSZero}
+\pgfmathsetmacro{\ncCY}{\ncDOne+\ncWTwo*\ncSZero}
+\pgfmathsetmacro{\ncOracleC}{(1-\ncWTwo)*\ncDOne+\ncWTwo*\ncDTwo}
+\begin{tikzpicture}[
+  font=\normalfont\fontsize{10}{12}\selectfont,
+  curve true/.style={draw=nctrue,line width=1.05pt},
+  curve fine/.style={draw=ncfine,line width=.80pt,dash pattern=on 2.7pt off 2.0pt},
+  curve coarse/.style={draw=nccoarse,line width=.80pt,dash pattern=on 5.8pt off 2.6pt},
+  curve corrected/.style={draw=nccorrected,line width=1.10pt,
+    dash pattern=on 7.0pt off 2.0pt on .9pt off 2.0pt},
+  true normal/.style={draw=ncnormal,line width=.65pt},
+  estimated normal/.style={draw=nctrue,line width=.80pt,dash pattern=on 4.0pt off 2.3pt},
+  oracle point/.style={circle,draw=nccoarse,fill=white,line width=.75pt,
+    inner sep=0pt,minimum size=3.6pt,outer sep=0pt},
+  fine point/.style={circle,draw=ncfine,fill=white,line width=.75pt,
+    inner sep=0pt,minimum size=3.6pt,outer sep=0pt},
+  estimated point/.style={rectangle,draw=nccoarse,fill=white,line width=.75pt,
+    inner sep=0pt,minimum size=3.5pt,outer sep=0pt},
+  corrected point/.style={diamond,draw=nccorrected,fill=nccorrected,line width=.6pt,
+    inner sep=0pt,minimum size=5.8pt,outer sep=0pt},
+  base point/.style={circle,draw=nctrue,fill=nctrue,inner sep=0pt,
+    minimum size=3.5pt,outer sep=0pt},
+  panel title/.style={font=\normalfont\fontsize{10.5}{12.6}\selectfont},
+  explanation/.style={text=nctrue,font=\normalfont\fontsize{9.2}{11.3}\selectfont,align=center},
+  point name/.style={font=\normalfont\fontsize{9.5}{11.4}\selectfont},
+  line cap=round,line join=round]
+\path[use as bounding box] (0,-2.90) rectangle (18.0,5.53);
+
+% (a) At x=0 the vertical line is the exact normal of the true parabola.
+\begin{scope}[xshift=4.0cm,x=1.35cm,y=1.35cm]
+  \node[panel title] at (.15,3.90) {(a) Oracle-normal correspondence};
+  \draw[curve true] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)});
+  \draw[curve fine] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)+\ncDOne});
+  \draw[curve coarse] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)+\ncDTwo});
+  \draw[curve corrected] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)+\ncOracleC});
+  \draw[true normal] (0,-.27)--(0,2.67);
+  \node[anchor=south] at (0,2.74) {$n(x)$};
+  \node[base point] at (0,0) {};
+  \node[fine point] at (0,\ncDOne) {};
+  \node[oracle point] at (0,\ncDTwo) {};
+  \node[corrected point] at (0,\ncOracleC) {};
+  \node[point name,anchor=north west] at (.12,-.09) {$x$};
+  \node[point name,anchor=east] at (-.15,2.16) {$X_{h_2}(x)$};
+  \node[point name,anchor=west] at (.16,1.18) {$X_{h_1}(x)$};
+  \node[point name,anchor=east] at (-.14,.43) {$\widetilde X(x)$};
+  \node[anchor=west] at (2.40,2.53) {$\mathcal M_{h_2}$};
+  \node[anchor=west] at (2.40,1.62) {$\mathcal M_{h_1}$};
+  \node[anchor=west] at (2.40,1.03) {$\widetilde{\mathcal M}$};
+  \node[anchor=west] at (2.40,.59) {$\mathcal M$};
+  \node[text=nccorrected] at (.15,-.63)
+    {$\displaystyle\widetilde X(x)=\sum_k w_k X_{h_k}(x)$};
+  \node at (.15,-1.27)
+    {$\displaystyle\sum_k w_k=1,\qquad\sum_k w_k c(h_k,\sigma)=0$};
+  \node[explanation] at (.15,-1.82) {Cancellation of the leading normal bias};
+\end{scope}
+
+% (b) Both normal lines pass through Z_h1=X_h1; all plotted correspondences
+% and the entire corrected curve use the same analytic intersection rule.
+\begin{scope}[xshift=13.10cm,x=1.35cm,y=1.35cm]
+  \node[panel title] at (.10,3.90) {(b) Estimated-normal correspondence};
+  \node at (.10,3.43)
+    {$\bigl\|\widetilde n(x)-n(x)\bigr\|=O(h_1^2)$};
+  \draw[curve true] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)});
+  \draw[curve fine] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)+\ncDOne});
+  \draw[curve coarse] plot[domain=-2.25:2.25,samples=151] (\x,{ncf(\x)+\ncDTwo});
+  \draw[curve corrected] plot[domain=-2.25:2.25,samples=181] (\x,{nccy(\x)});
+  \draw[true normal] (0,-.27)--(0,2.67);
+  \draw[estimated normal] ({\ncTilt*(-.27-\ncDOne)},-.27)
+                         --({\ncTilt*(2.67-\ncDOne)},2.67);
+  \node[anchor=south] at (0,2.74) {$n(x)$};
+  \node[anchor=south] at (.78,2.74) {$\widetilde n(x)$};
+  \node[base point] at (0,0) {};
+  \node[fine point] at (0,\ncDOne) {};
+  \node[oracle point] at (0,\ncDTwo) {};
+  \node[estimated point] at (\ncZX,\ncZY) {};
+  \node[corrected point] at (\ncCX,\ncCY) {};
+  \node[point name,anchor=north west] at (.12,-.09) {$x$};
+  \node[point name,anchor=east] at (-.16,2.16) {$X_{h_2}(x)$};
+  \node[point name,anchor=west] at ({\ncZX+.17},{\ncZY+.46}) {$Z_{h_2}(x)$};
+  \node[point name,anchor=west,font=\normalfont\fontsize{9}{10.8}\selectfont] at (0,.75)
+    {$Z_{h_1}(x)\!=\!X_{h_1}(x)$};
+  \node[point name,anchor=east] at ({\ncCX-.15},.43) {$\widetilde X(x)$};
+  \node[anchor=west] at (2.40,2.53) {$\mathcal M_{h_2}$};
+  \node[anchor=west] at (2.40,1.62) {$\mathcal M_{h_1}$};
+  \node[anchor=west] at (2.40,1.03) {$\widetilde{\mathcal M}$};
+  \node[anchor=west] at (2.40,.59) {$\mathcal M$};
+  \node[text=nccorrected] at (.10,-.63)
+    {$\displaystyle\widetilde X(x)=\sum_k w_k Z_{h_k}(x)$};
+  \node[inner sep=3.5pt] at (.10,-1.27)
+    {$\bigl\|\widetilde X(x)-x\bigr\|
+      =O(h_{\max}^4)$};
+  \node[explanation,font=\normalfont\itshape\fontsize{9.2}{11.3}\selectfont]
+    at (.10,-1.86)
+    {Second-order normal accuracy suffices\\for fourth-order correspondence.};
+\end{scope}
+\end{tikzpicture}
+\endgroup

@@ -1,7 +1,0 @@
-\paragraph{A nonunique closest-point correspondence under weak first-order control.}
-This constructed example is separate from the STSP-generated curves. Let $X_1(\theta)=1.01(\cos\theta,\sin\theta)$ and $X_2(\theta)=[1.04+a\cos(N\theta)](\cos\theta,\sin\theta)$, with $N=15625$ and $a=2.56\times10^{-6}$. For $y_1=(1.01,0)$ the local outward radial ENF intersection is uniquely $(1.04000256,0)$. Closest points minimize $g(\theta)=r(\theta)^2+1.01^2-2(1.01)r(\theta)\cos\theta$. High-precision evaluation locates two equal minima at $\theta\simeq\pm1.9034756261746264\times10^{-4}$, with $g=0.0008998866120100563<g(0)=0.0009001536065536$. Nonuniqueness also follows without trusting a stationary-point search: writing $R=1.04$ and $\rho=1.01$, the elementary bounds $\sin x\le x$ and $\pi^2<10$ give
-\[
-g(\pi/N)-g(0)\le -4a(R-\rho)+\frac{10\rho(R-a)}{N^2}
-=-2.64175721906176\times10^{-7}<0.
-\]
-Since $g$ is even and $g(\pi)>g(0)$, compactness implies at least two symmetric global minimizers. Under reference-angle perturbations $\phi\to0^\pm$, the selected CP branch has a limiting point jump of approximately $3.9592196689924\times10^{-4}$, while the local ENF angle equals $\phi$ and varies continuously. Uniqueness here is local to the outward normal fibre, not the entire normal line. The example diagnoses a lack of a single-valued continuous CP selection; it does not refute fourth-order position accuracy or numerically establish loss of embeddedness of a complete extrapolated image.

@@ -64,7 +64,7 @@ def population_figure(results: Path, output: Path, config: dict) -> dict:
     slopes = {}
     fig, axes = plt.subplots(1, 3, figsize=(10.5, 2.85), constrained_layout=True)
     for axis, (metric, title) in zip(axes, metrics):
-        for method in METHODS:
+        for index, method in enumerate(METHODS):
             x = np.asarray([row["sigma"] for row in rows])
             y = np.asarray([row["summaries"][method][metric] for row in rows])
             select = np.asarray([value in slope_window for value in x])
@@ -72,14 +72,22 @@ def population_figure(results: Path, output: Path, config: dict) -> dict:
             slopes.setdefault(method, {})[metric] = fitted
             axis.loglog(
                 x, y, color=COLORS_POPULATION[method], marker=MARKERS[method],
-                lw=1.5, ms=4, label=f"{method} ({fitted:.2f})",
+                lw=1.5, ms=4, label=method,
+            )
+            axis.text(
+                0.055, 0.54 - 0.06 * index,
+                rf"$p_{{\mathrm{{{method}}}}}={fitted:.2f}$",
+                transform=axis.transAxes, ha="left", va="top",
+                fontsize=7.5, color="#333333",
             )
         axis.set_title(title, fontsize=10, color="#1A1A1A", fontweight="normal")
         axis.set_xlabel(r"Noise level $\sigma$", fontsize=9.5, color="#1A1A1A")
         axis.tick_params(axis="both", which="both", labelsize=8.5, colors="#1A1A1A")
         axis.grid(False)
-    axes[0].set_ylabel(r"Population maximum error $E_{\infty}$", fontsize=10)
-    axes[0].legend(frameon=False, fontsize=8, ncol=1)
+    axes[0].set_ylabel("Population maximum error", fontsize=10)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 1.12),
+               frameon=False, fontsize=8, ncol=4)
     base = output / "figure_e5_population_directional_ablation"
     fig.savefig(base.with_suffix(".pdf"), bbox_inches="tight")
     fig.savefig(base.with_suffix(".png"), dpi=300, bbox_inches="tight")

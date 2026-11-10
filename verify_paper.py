@@ -1,4 +1,4 @@
-"""Compare archived evidence to the 2026-11-07 main manuscript and supplement; never launches numerical fits."""
+"""Compare archived evidence to the final arxiv_final.pdf manuscript; never launches numerical fits."""
 import argparse
 import csv
 import hashlib
@@ -61,8 +61,8 @@ def audit():
     for r in controlled:
         if r['method']=='naive':record('Figure2 naive '+r['geometry'],float(r['slope_all_7']),2.,abs(float(r['slope_all_7'])-2)<.001)
     result=json.loads((ROOT/'E4/correspondence/counterexample/RESULT.json').read_bytes())
-    record('S13 nonunique CP pair',len(result['CP_angles']),2,len(result['CP_angles'])==2 and float(result['CP_g'])<float(result['ENF_g']))
-    record('S17/S18 complete nonuniform table',len(rows('nonuniform/E2/data/NONUNIFORM_SUMMARY.csv')),768,len(rows('nonuniform/E2/data/NONUNIFORM_SUMMARY.csv'))==768)
+    record('E.13 nonunique CP pair',len(result['CP_angles']),2,len(result['CP_angles'])==2 and float(result['CP_g'])<float(result['ENF_g']))
+    record('E.17/E.18 complete nonuniform table',len(rows('nonuniform/E2/data/NONUNIFORM_SUMMARY.csv')),768,len(rows('nonuniform/E2/data/NONUNIFORM_SUMMARY.csv'))==768)
     packets=[json.loads(p.read_bytes())['result'] for p in sorted((ROOT/'E5/data/population').glob('e5_population_*.json'))]
     record('E5 population packets',len(packets),7,len(packets)==7)
     if any(p['query_count']!=64 or p['retained_count']!=64 or p['failure_count'] or p['kappas']!=[1.25,5.,8.] for p in packets):
@@ -88,7 +88,7 @@ def audit():
     availability=json.loads((ROOT/'E5/data/finite_packet_availability.json').read_bytes())
     if availability['status']!='MISSING_LOCAL_RAW_PACKETS' or len(availability['expected_files'])!=60:
         raise ValueError('Missing finite evidence must be disclosed')
-    return dict(schema='CURRENT_MAIN_SUPPLEMENT_RESULT_CONSISTENCY_V2',status='MATCH_WITH_DOCUMENTED_RAW_DATA_GAP',
+    return dict(schema='ARXIV_FINAL_RESULT_CONSISTENCY_V1',status='MATCH_WITH_DOCUMENTED_RAW_DATA_GAP',
         matched_claims=len(claims),claims=claims,E3_protocol=protocol,
         unresolved=[dict(experiment='E5 finite / Figure8',status='MISSING_LOCAL_RAW_PACKETS',expected=60,
             interpretation='Selected exports match; historical median/IQR raw-data verification incomplete')],

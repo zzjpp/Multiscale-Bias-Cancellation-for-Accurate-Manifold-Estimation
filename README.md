@@ -1,8 +1,8 @@
 # Beyond Curvature Bias: Higher-Order Manifold Fitting via Multiscale Cancellation
 
-Code, selected numerical results, and figure replay for the **2026-11-07 main manuscript and separate Supplementary Material**. Their exact PDF SHA-256 values are recorded in `PAPER_REFERENCE.json`; the manuscript PDFs themselves are not uploaded.
+Code, selected numerical results, and figure replay for the **final combined manuscript `arxiv_final.pdf`** (128 pages; Figures 1–8 and E.1–E.18). Its exact PDF SHA-256 is recorded in `PAPER_REFERENCE.json`; the manuscript PDF itself is not uploaded.
 
-## Reproduce the current paper figures
+## Reproduce the results
 
 Use Python 3.12 in a separate environment:
 
@@ -22,17 +22,17 @@ This is saved-result replay, not an independent rerun of the large numerical exp
 
 | Directory | Current paper content | New numerical calculations |
 |---|---|---|
-| `E1/` | Supplement S1-S3 and normalized circle Figure 4 | Original population packages and `E1/smoke.py` |
+| `E1/` | Supplement E.1–E.3 and normalized circle Figure 4 | Original population packages and `E1/smoke.py` |
 | `E1/weight_control/` | Figure 2: shared-fit Single, naive h-squared, coefficient-based Proposed and original MS-STSP | Shared-point postprocessing; independent coefficient/precision checks |
 | `E1/ms_stsp/` | Hard-ball MS-STSP population operator, fixed-reference iteration and OLS intercept | `study.py cell --help` |
-| `E2/` | Figure 5 and S4-S6: finite sample size | Original `run_fits.py` / `evaluate_fits.py` |
-| `E3/` | Figure 6 and S7-S12: bandwidth and reverse coverage | Original `run_fits.py` / `evaluate_fits.py` |
-| `E4/correspondence/` | Figure 7 and S13: local continuous CP benchmark and oscillatory counterexample | `finite_experiment.py`, `population_experiment.py`, `counterexample.py` |
-| `E5/` | Figure 8, S14 and Table 2: directional ablation | Original E5 raw-run entrypoints |
-| `nonuniform/E1/` | S15-S16: nonuniform population STSP | `run_population.py --help` |
-| `nonuniform/E2/` | S17-S18: nonuniform finite-sample STSP | Original `parent.py` / `aggregate.py` |
+| `E2/` | Figure 5 and E.4–E.6: finite sample size | Original `run_fits.py` / `evaluate_fits.py` |
+| `E3/` | Figure 6 and E.7–E.12: bandwidth and reverse coverage | Original `run_fits.py` / `evaluate_fits.py` |
+| `E4/correspondence/` | Figure 7 and E.13: local continuous CP benchmark and oscillatory counterexample | `finite_experiment.py`, `counterexample.py` |
+| `E5/` | Figure 8, E.14 and Table 2: directional ablation | Original E5 raw-run entrypoints |
+| `nonuniform/E1/` | E.15–E.16: nonuniform population STSP | `run_population.py --help` |
+| `nonuniform/E2/` | E.17–E.18: nonuniform finite-sample STSP | Original `parent.py` / `aggregate.py` |
 
-`E7` and standalone obsolete studies are excluded. Corrugated torus remains the sixth geometry, not a separate E7 experiment. E2 has **no population reference-line overlay**. Larger raw archives, queue controllers, connection helpers, SSH material, logs, caches, and unrelated experiments are not part of this repository.
+`E7` and standalone obsolete studies are excluded. Corrugated torus remains the sixth geometry, not a separate E7 experiment. E2 has **no population reference-line overlay**. Unselected normalized triptychs, P1 population scaling and additional P1 figure/report exports are archived outside this repository. Required frozen solver/input/audit dependencies remain. Larger raw archives, connection helpers, SSH material, live queue state, logs, caches, and unrelated experiments are excluded. The nonuniform-E2 producer scheduler is retained as authentication-free source required by its original producer contract; no active queue is included.
 
 ## Numerical and geometric scope
 
