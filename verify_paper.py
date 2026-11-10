@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import math
+import sys
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parent
@@ -86,13 +87,20 @@ def audit():
         if hashlib.sha256((ROOT/'E5/paper_figures'/name).read_bytes()).hexdigest()!=sha:
             raise ValueError('E5 selected export changed')
     availability=json.loads((ROOT/'E5/data/finite_packet_availability.json').read_bytes())
-    if availability['status']!='MISSING_LOCAL_RAW_PACKETS' or len(availability['expected_files'])!=60:
-        raise ValueError('Missing finite evidence must be disclosed')
-    return dict(schema='ARXIV_FINAL_RESULT_CONSISTENCY_V1',status='MATCH_WITH_DOCUMENTED_RAW_DATA_GAP',
+    if availability['status']!='RECOVERED_AND_DISTRIBUTED' or len(availability['expected_files'])!=60:
+        raise ValueError('Historical finite packets must be complete and distributed')
+    sys.path.insert(0,str(ROOT/'E5/scripts'))
+    from verify_historical_finite import audit as audit_finite
+    finite=audit_finite()
+    record('E5 finite recovered packets',finite['packets'],60,finite['packets']==60)
+    record('E5 Figure8 medians from all recorded query metrics',finite['selected_plot_check']['median_values'],24,finite['selected_plot_check']['status']=='MATCH')
+    record('E5 Figure8 IQR boundaries from all repeats',finite['selected_plot_check']['quartile_boundary_values'],48,finite['selected_plot_check']['status']=='MATCH')
+    return dict(schema='ARXIV_FINAL_RESULT_CONSISTENCY_V2',status='MATCH_ARCHIVED_RESULTS',
         matched_claims=len(claims),claims=claims,E3_protocol=protocol,
-        unresolved=[dict(experiment='E5 finite / Figure8',status='MISSING_LOCAL_RAW_PACKETS',expected=60,
-            interpretation='Selected exports match; historical median/IQR raw-data verification incomplete')],
-        manuscript_note='Local CP scope and raw-data limitations are explicitly disclosed',
+        E5_finite=dict(packets=finite['packets'],query_outcomes=finite['archived_estimator_query_outcomes'],
+            total_query_failures=finite['total_query_failures'],selected_plot_check=finite['selected_plot_check']),
+        unresolved=[],
+        manuscript_note='Local CP scope, controlled initialization and original pilot-selection caveats remain disclosed',
         evidence='archived-result consistency; not an independent full fitting rerun')
 
 def main():

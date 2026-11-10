@@ -1,5 +1,5 @@
 {
-  "status": "MISSING_LOCAL_RAW_PACKETS",
+  "status": "RECOVERED_AND_DISTRIBUTED",
   "expected_packet_count": 60,
   "expected_files": {
     "packets/e5_directional_n0240000_r000.json": {
@@ -247,5 +247,10 @@
   "figure_7_exports": {
     "figure_e5_finite_sample_dual_metrics.png": "199e5c303cd0a72c9d2260b21445994c7cf159ff37175bd861c2bb26d17ef7a0",
     "figure_e5_finite_sample_dual_metrics.svg": "3ff0fcf24c3036e0435fbfdd3d161ad7e8322c438392a3ee3eb5654f1d57e86b"
-  }
+  },
+  "packet_root": "E5/data/finite",
+  "recovered_packet_count": 60,
+  "missing_packet_count": 0,
+  "recovery_receipt": "E5/data/finite/RECOVERY_RECEIPT.json",
+  "note": "Exact historical packets recovered at the moved BeeGFS project path; all expected file sizes and SHA-256 values match. No refitting."
 }

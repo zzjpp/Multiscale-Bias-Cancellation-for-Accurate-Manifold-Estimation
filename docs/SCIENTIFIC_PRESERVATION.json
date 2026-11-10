@@ -2488,5 +2488,12 @@
     "E4/correspondence/summarize.py"
   ],
   "changes": "Public metadata/validation, selected plot dispatch and file naming only. The retained finite audit body is unchanged; its unused population branch is archived. Numerical fit generators, frozen source, input arrays, tables, packets and failure records remain unchanged.",
-  "new_production_fits": false
+  "new_production_fits": false,
+  "E5_recovery_update": {
+    "original_protected_members_unchanged": true,
+    "additional_exact_historical_members": 65,
+    "additional_historical_packets": 60,
+    "provenance": "E5/data/finite/RECOVERY_RECEIPT.json",
+    "new_fits": false
+  }
 }

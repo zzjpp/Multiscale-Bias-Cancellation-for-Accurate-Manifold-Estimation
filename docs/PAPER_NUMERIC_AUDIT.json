@@ -1,7 +1,7 @@
 {
-  "schema": "ARXIV_FINAL_RESULT_CONSISTENCY_V1",
-  "status": "MATCH_WITH_DOCUMENTED_RAW_DATA_GAP",
-  "matched_claims": 41,
+  "schema": "ARXIV_FINAL_RESULT_CONSISTENCY_V2",
+  "status": "MATCH_ARCHIVED_RESULTS",
+  "matched_claims": 44,
   "claims": [
     {
       "claim": "E1 STSP circle_r2 Single slope",
@@ -322,6 +322,24 @@
       "observed": 4.005362104972045,
       "paper": 4.005,
       "status": "MATCH"
+    },
+    {
+      "claim": "E5 finite recovered packets",
+      "observed": 60,
+      "paper": 60,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E5 Figure8 medians from all recorded query metrics",
+      "observed": 24,
+      "paper": 24,
+      "status": "MATCH"
+    },
+    {
+      "claim": "E5 Figure8 IQR boundaries from all repeats",
+      "observed": 48,
+      "paper": 48,
+      "status": "MATCH"
     }
   ],
   "E3_protocol": [
@@ -368,14 +386,21 @@
       "scales": 28
     }
   ],
-  "unresolved": [
-    {
-      "experiment": "E5 finite / Figure8",
-      "status": "MISSING_LOCAL_RAW_PACKETS",
-      "expected": 60,
-      "interpretation": "Selected exports match; historical median/IQR raw-data verification incomplete"
+  "E5_finite": {
+    "packets": 60,
+    "query_outcomes": 61440,
+    "total_query_failures": 0,
+    "selected_plot_check": {
+      "status": "MATCH",
+      "median_values": 24,
+      "quartile_boundary_values": 48,
+      "maximum_vector_coordinate_difference": 6.363636373407644e-07,
+      "SVG_coordinate_tolerance": 2e-06,
+      "SVG_sha256": "3ff0fcf24c3036e0435fbfdd3d161ad7e8322c438392a3ee3eb5654f1d57e86b",
+      "interpretation": "All medians and both IQR boundaries match the selected vector figure within SVG serialization rounding."
     }
-  ],
-  "manuscript_note": "Local CP scope and raw-data limitations are explicitly disclosed",
+  },
+  "unresolved": [],
+  "manuscript_note": "Local CP scope, controlled initialization and original pilot-selection caveats remain disclosed",
   "evidence": "archived-result consistency; not an independent full fitting rerun"
 }

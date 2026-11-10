@@ -6,6 +6,10 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+if __package__:
+    from .verify_historical_finite import audit as audit_historical_finite
+else:
+    from verify_historical_finite import audit as audit_historical_finite
 
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "paper_figures"
@@ -18,11 +22,14 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
+    finite_audit = audit_historical_finite()
     OUTPUT.mkdir(parents=True, exist_ok=True)
     manifest: dict[str, object] = {
         "schema": "E5_PAPER_FIGURE_MANIFEST_V1",
         "status": "PASS",
         "figures": [],
+        "finite_packets_checked": finite_audit["packets"],
+        "finite_statistics_match_selected_SVG": finite_audit["selected_plot_check"],
     }
     expected = PROVENANCE["reference_files"]
     observed = {path.name for path in REFERENCE.iterdir() if path.is_file()}

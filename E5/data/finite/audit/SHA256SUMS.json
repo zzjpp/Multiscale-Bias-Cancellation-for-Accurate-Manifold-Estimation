@@ -1,0 +1,27 @@
+[
+  {
+    "bytes": 5326,
+    "file": "audit/AUDIT.json",
+    "sha256": "726c5907b721bc6ac67420e07f00fa40f0c3a57940df29d033bee021d3a886b4"
+  },
+  {
+    "bytes": 10412,
+    "file": "audit/repeat_values.csv",
+    "sha256": "2155eca01c8f12fa21cb4b71d732ae7f76cc0da6f9858347ede5f9fdb3c7431d"
+  },
+  {
+    "bytes": 1580,
+    "file": "audit/summary.csv",
+    "sha256": "057457bb0e80c22788eeeb60b78bfec4bcc8c960cb39353f33599c85409193a5"
+  },
+  {
+    "bytes": 149275,
+    "file": "figures/e5_directional_ordering_heldout.png",
+    "sha256": "ef1bf14d814565e96bdd667b9b645a239f808c7d3e32ea8fda6acb56ff9f7aa4"
+  },
+  {
+    "bytes": 37646,
+    "file": "figures/e5_directional_ordering_heldout.svg",
+    "sha256": "1296890250a3eaa322dbdcc6ee616ca8b69bbb347229760dc87805068b0599e4"
+  }
+]

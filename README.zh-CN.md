@@ -17,6 +17,6 @@ python reproduce_all.py --output ./replay_output
 
 E2 不含已撤销的 population 参考线。E3 维持原样本量、YY 的 .4/1/1.6 半径和六个流形统一 262144 个反向参考点，保留失败、空心点和全部 28 档尺度。代码整理不改变拟合器、随机种子、数值精度或任何实验结论。
 
-E5 有限样本的 60 个历史 held-out 原始包缺失；图件可从有校验值的存档导出恢复，但其原始中位数/IQR 不能据此声称已完整复核。E5 的七个 population 包可用于核验 Table 2。详见 `docs/DATA_AVAILABILITY.md`。
+E5 的 60 个历史有限样本结果包已从迁移后的服务器目录完整找回，并按历史 SHA-256 核验后纳入 `E5/data/finite`。代码会重新汇总逐查询指标，核对 Figure 8 的全部中位数和 IQR；也可运行 `python E5/scripts/replay_historical_finite.py --output NEW` 从这些指标重新绘图。该核对不重新拟合，也不独立重算点到真流形的距离。七个 population 包仍可用于核验 Table 2。详见 `docs/DATA_AVAILABILITY.md`。
 
 服务器连接、私钥、活跃任务状态、缓存、E7 和无关实验不上传。完整实验计算与图件重放分开，烟雾测试不等于全量 GPU 复算。

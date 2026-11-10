@@ -25,6 +25,8 @@ def main():
     for script,destination,args in commands:
         subprocess.run([sys.executable,'-X','utf8','-B',str(ROOT/script),'--output',str(out/destination),*args],cwd=ROOT,env=env,check=True)
     provenance=json.loads((ROOT/'E5/data/PROVENANCE.json').read_bytes())['reference_files']
+    subprocess.run([sys.executable,'-X','utf8','-B',str(ROOT/'E5/scripts/verify_historical_finite.py'),
+                    '--output',str(out/'E5_statistics')],cwd=ROOT,env=env,check=True)
     (out/'E5').mkdir()
     for name,digest in provenance.items():
         src=ROOT/'E5/paper_figures'/name
@@ -37,7 +39,7 @@ def main():
         raise ValueError('Replay export inventory differs from the final manuscript figure map')
     (out/'EXPORT_MANIFEST.json').write_text(json.dumps(dict(schema='ARXIV_FINAL_SAVED_RESULTS_V1',
         manuscript_sha256=mapping['manuscript_sha256'],outputs=files,logical_experimental_plots=mapping['logical_experimental_plots'],
-        new_fits=False,evidence='Saved-data rendering; E5 finite exports are validated copies, not raw-statistic reconstruction.'),indent=2)+'\n',encoding='utf8')
+        new_fits=False,evidence='Saved-data rendering; all E5 finite medians/IQRs are reaggregated from the 60 historical packets before restoring the exact selected exports.'),indent=2)+'\n',encoding='utf8')
     print(json.dumps(dict(experimental_plots=mapping['logical_experimental_plots'],paper_exports=len(files),new_fits=False)))
 
 if __name__=='__main__':main()

@@ -24,5 +24,14 @@
     "figure_e5_finite_sample_dual_metrics.svg": "3ff0fcf24c3036e0435fbfdd3d161ad7e8322c438392a3ee3eb5654f1d57e86b",
     "figure_e5_population_directional_ablation.png": "c6a92ee58b7f0bba2a3e08fa44f2d4dcf5fb0c2fd97f46f3bff7b38b105c5ee3",
     "e5_population_directional_ablation.pdf": "897223a05c29d86544b7aca3888db7d8ab04cda2f0c4d058748931b670c1e981"
+  },
+  "finite_raw_evidence": {
+    "status": "RECOVERED_AND_DISTRIBUTED",
+    "packet_count": 60,
+    "root": "E5/data/finite",
+    "recovery_receipt": "E5/data/finite/RECOVERY_RECEIPT.json",
+    "reaggregation_audit": "E5/data/finite/REAGGREGATION_AUDIT.json",
+    "new_fits": false,
+    "original_evidence_class_unchanged": true
   }
 }

@@ -1,13 +1,11 @@
-# Final-manuscript release checks, 2026-11-10
+# Final-manuscript release checks — E5 recovery update, 2026-11-10
 
-- Authority: `arxiv_final.pdf`, 128 pages, SHA-256 in PAPER_REFERENCE.json.
-- 61 tests passed: 48 root interface/evaluation/provenance checks, eight E5 tests and five original nonuniform sampling tests. The initial test collection command had a wrong test-file path and ran zero tests; corrected suites passed. Logs are retained in the local task archive.
-- Eleven actual reduced CPU experiment commands passed, including E5 population and finite smoke. Smoke does not validate production accuracy or GPU equivalence.
-- 41 saved numerical/protocol checks matched. The known 60 missing E5 finite raw packets remain disclosed.
-- Full saved-result replay emitted exactly the 33 selected experimental plots / 66 exports. All 66 export bytes match the selected source files. E5 finite exports are checked copies, not independently recalculated medians/IQRs.
-- All 33 experimental plots and both schematics match inclusions in the final PDF: exact decoded vector content streams or exact embedded raster pixels. Figure 1 now uses the final native TikZ schematic instead of the previous Matplotlib schematic.
-- Actual overview review covered 33 PNGs and all 32 complete PDF pages rendered in contact sheets. No clipping, missing panels, unintended green background, or omitted reliability markers was observed.
-- Retained scientific input arrays, frozen implementations, raw packets, tables and failure records are byte-identical to the pre-cleanup snapshot. No production fits or parameter tuning were performed.
-- Removed independent experiments/plots are reversibly archived outside the repository. Immutable historical plans and required frozen code remain as evidence/dependencies, not as additional selected experiments.
+- All 60 historical E5 finite packets are now distributed. Their exact sizes/SHA-256 values match the October 7 migration record and the byte-verified server recovery. The prior local-data gap is resolved.
+- Reaggregation uses all 61,440 recorded estimator/query outcomes: 60 packets × 256 queries × four methods, with zero recorded query failures. All 24 medians and 48 quartile-boundary values match the actual selected Figure 8 SVG within its six-decimal coordinate serialization.
+- An actual fresh PNG/SVG redraw from the original metrics was run with the unchanged original postprocessor. Its PNG exactly matches the selected paper PNG. SVG metadata/IDs need not be byte-identical; vector data paths are checked independently. The reconstructed PNG was visually inspected.
+- 61 current tests passed: 48 root tests and 13 E5 tests, including rejection of missing packets, changed bytes and incorrect median/IQR values. Prior nonuniform sampling QA and the prior 11-command reduced CPU smoke remain applicable to unchanged numerical sources.
+- 44 saved numerical/protocol checks pass with no unresolved E5 raw-packet gap. This is archived-result verification, not independent refitting or recomputation of truth distances from fitted coordinates.
+- Full saved-result replay was rerun and all 66 selected exports remain byte-identical. The final paper still contains Figures 1–8 and E.1–E.18, using 33 experimental plots and two schematics. Their previous inclusion/visual checks remain applicable because the selected graphics did not change.
+- Kernels, initialization, seed rules, sample/query/reference counts, tolerances, weights and failure policies were not changed. The original E5 pilot-selection history, declared/applied-c0 distinction and historical conditioning-gate caveat remain disclosed.
 
-Environment: Windows Python 3.12, versions pinned in requirements.txt; original GPU environment remains separate. A passing release check is not independent experimental replication or an artifact badge.
+No full production experiment was rerun. The recovered packets store original query metrics and input digests; they do not provide every noisy observation or fitted coordinate. No artifact-badge claim is made.
