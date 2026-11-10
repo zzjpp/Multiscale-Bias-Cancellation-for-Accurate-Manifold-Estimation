@@ -11,4 +11,6 @@ venv/
 new_figures/
 new_raw/
 replay_output/
+paper_run/
+smoke_run/
 tmp/

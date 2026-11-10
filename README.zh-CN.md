@@ -1,22 +1,30 @@
-# 最终稿实验代码
+# 论文实验复现
 
-本目录以 `arxiv_final.pdf` 为唯一论文依据，题目为 Beyond Curvature Bias: Higher-Order Manifold Fitting via Multiscale Cancellation。论文 SHA-256 与 128 页信息见 `PAPER_REFERENCE.json`。仓库名称维持原样。
-
-安装 `requirements.txt` 后运行：
+以最终 `arxiv_final.pdf` 为准，提供从**生成输入、拟合、评价到绘图**的新运行入口，不读取历史拟合点或复制旧图作为复现结果。完整说明见 [README.md](README.md)。
 
 ```bash
+python -m pip install -r requirements.txt
 python validate_release.py
 python verify_paper.py
-python -m pytest -q tests --basetemp ./tmp/pytest
-python reproduce_all.py --output ./replay_output
+python -m pytest -q tests
+python run_paper.py --profile smoke --backend cpu --output ./smoke_run --workers 2
 ```
 
-输出目录必须不存在。默认重放最终稿选用的 33 张独立实验图（66 个 PNG/矢量文件）；正文图 1–8、附录图 E.1–E.18 的文件和入口见 `docs/FIGURE_MAP.md`。两个示意图的可编辑源文件在 `illustrations/`。
+最后一条命令实际运行 24 个缩小规模任务，覆盖 E1–E5 和两组非均匀实验，生成诊断图。它只验证计算链路，**不能用于报告论文数值或阶数**。
 
-只保留论文使用的 E1–E5、MS-STSP/权重控制、CP 非唯一示例及非均匀密度 STSP 补充实验。未采用的额外归一化图、P1 population scaling 和附加图表已移出发布目录；所需冻结求解器、数据和来源校验依赖仍保留。原始数据字段中的 Single/Multi 名称保留，与图中基线/GBC 一一对应。
+正式配置：
 
-E2 不含已撤销的 population 参考线。E3 维持原样本量、YY 的 .4/1/1.6 半径和六个流形统一 262144 个反向参考点，保留失败、空心点和全部 28 档尺度。代码整理不改变拟合器、随机种子、数值精度或任何实验结论。
+```bash
+python run_paper.py --experiment all --backend cpu --output ./paper_run --plan-only
+python run_paper.py --experiment all --backend cpu --output ./paper_run --resume --workers 1
+```
 
-E5 的 60 个历史有限样本结果包已从迁移后的服务器目录完整找回，并按历史 SHA-256 核验后纳入 `E5/data/finite`。代码会重新汇总逐查询指标，核对 Figure 8 的全部中位数和 IQR；也可运行 `python E5/scripts/replay_historical_finite.py --output NEW` 从这些指标重新绘图。该核对不重新拟合，也不独立重算点到真流形的距离。七个 population 包仍可用于核验 Table 2。详见 `docs/DATA_AVAILABILITY.md`。
+也可只选择 `E1`、`E2`、`E3`、`E4`、`E5`、`nonuniform_E1`、`nonuniform_E2`。全套有 1,356 个任务，计算量很大，本次整理不自动重跑。GPU 使用原 Linux 环境及 CPU/GPU 门禁；E4、E5 保留原 CPU 实现。CPU 正式模式使用相同预算的原 CPU 拟合器，不是静默回退。
 
-服务器连接、私钥、活跃任务状态、缓存、E7 和无关实验不上传。完整实验计算与图件重放分开，烟雾测试不等于全量 GPU 复算。
+`packets/` 保存全部结果与失败，`evaluation/` 保存汇总与精度诊断；图在 `figures/`、`evaluation/E5/figures/`、`counterexample/`。已有目录必须显式 `--resume` 并匹配原计划、源码；工程失败不自动重试，不覆盖论文目录。公共入口统一为 `run_paper.py`；保留的旧模块作为科学计算库使用，历史部署/重放 CLI 不作为本版运行流程。
+
+E3 保持最新样本量、六流形统一 262144 个反向参考点、全部尺度与可靠性规则。非均匀 E2 仅运行文中 STSP。E2 不加已撤销的 population 参考线；E7 不作为独立实验发布。E4 公共查询的几何辅助、CP 局部分支及计时范围，E5 的 pilot 选择与旧失败门禁，均保留披露。
+
+大型历史输出、重复观测数组和旧图不随新版发布，已保留在本机归档。少量 `reference_values/` 历史对照表**不进入新实验计算**。E3 固定 query/reference 坐标属于设计输入，仍包含在仓库；其余观测由原种子生成。建议 `git clone --depth 1` 避免下载旧提交的大文件历史。
+
+本次验证包括干净安装、不含历史输出的实际小流程；没有声称重跑全部正式实验、获得复现徽章或满足某个尚未指定期刊的全部提交细则。原版权和许可证保留。

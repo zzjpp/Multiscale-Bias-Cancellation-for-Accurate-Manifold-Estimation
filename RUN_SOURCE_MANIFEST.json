@@ -1,0 +1,2075 @@
+{
+  "schema": "PAPER_RUNTIME_SOURCE_AND_DESIGN_V1",
+  "manuscript_sha256": "bdc7b87ba20118aaf323bbe25d6b6921235e9f18c1c1d0453604c92f60d561be",
+  "description": "Only source/configuration/registered E3 query-reference coordinates; no saved fitted points, tables or exports.",
+  "files": {
+    "E1/config.json": {
+      "size": 3715,
+      "sha256": "7191282cc60b63217245eb6cfd715cd625dc93cc7267121bccbc40e9b757042e"
+    },
+    "E1/LICENSE": {
+      "size": 304,
+      "sha256": "f7a87c9c0957670b5afc40caa8f7d9a8c4041e9590640eecbe44c7473ccc87e5"
+    },
+    "E1/ms_stsp/config.json": {
+      "size": 2108,
+      "sha256": "89439c204c9ee570ce9d4c4cae76a82877d5b18ab9eda6535e8d4568461a529d"
+    },
+    "E1/ms_stsp/fast_gpu.py": {
+      "size": 2210,
+      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b"
+    },
+    "E1/ms_stsp/frozen/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "E1/ms_stsp/frozen/e1_theory_path/geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "E1/ms_stsp/frozen/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "E1/ms_stsp/frozen/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "E1/ms_stsp/frozen/original_corrugated_config.json": {
+      "size": 2313,
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    "E1/ms_stsp/frozen/original_five_config.json": {
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "E1/ms_stsp/FROZEN_INPUTS.json": {
+      "size": 15289,
+      "sha256": "572fdbf42232de5ccdeb4a87ce94971ae9cf919d6d70864de8ed3529ae0870e1"
+    },
+    "E1/ms_stsp/gate.py": {
+      "size": 4085,
+      "sha256": "a7cf5716bea424212658b4591de3dbea8cb7ae3492bedd93d177414ad8e01901"
+    },
+    "E1/ms_stsp/README.md": {
+      "size": 827,
+      "sha256": "040f2a5920170e252137e5c4c197da0c7887abc90667535c48f0168cc1c66d93"
+    },
+    "E1/ms_stsp/study.py": {
+      "size": 14948,
+      "sha256": "200bdacd2d68a6e7a8910faa302b05f0845c1762ca6737b96117543128de6864"
+    },
+    "E1/presentation.py": {
+      "size": 13739,
+      "sha256": "e6294895e1f64accf78e9ffc34134c136cbdf366c10cd2c43718c2fee8eb69d3"
+    },
+    "E1/README.md": {
+      "size": 827,
+      "sha256": "040f2a5920170e252137e5c4c197da0c7887abc90667535c48f0168cc1c66d93"
+    },
+    "E1/reproduce.py": {
+      "size": 117,
+      "sha256": "8fed0999dfa5ff4a0c773e0ed748f7e31aa4cb797b21599af27bc922b0ddf1b1"
+    },
+    "E1/requirements.txt": {
+      "size": 47,
+      "sha256": "8ced97ad816d94c306b8e583cdc431a89817176596fc71b31b0fa1d9ffa54d4f"
+    },
+    "E1/smoke.py": {
+      "size": 1790,
+      "sha256": "5ff6b3deb6a0b5edcdf39bb32e87f80ab9071053167357c9ea2743940c07ff71"
+    },
+    "E1/src/e1_simulation/__init__.py": {
+      "size": 95,
+      "sha256": "55e823b3a4ec922a8508c02f50b5eeb207b97ba6a7489d20c8a252d45a0f93b5"
+    },
+    "E1/src/e1_simulation/plot_sigma_path.py": {
+      "size": 30283,
+      "sha256": "a820833e8e138080af6673fe1bfe23c4f7e5833df998b3c799194d284380d349"
+    },
+    "E1/theory_path_population_all_e1/config.json": {
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "E1/theory_path_population_all_e1/run_experiment.py": {
+      "size": 1173,
+      "sha256": "bace1799e45fb7f461fe584cb91e941c09d86050d5c6de3c922fdcacc9100c87"
+    },
+    "E1/theory_path_population_all_e1/run_experiment_gpu.py": {
+      "size": 868,
+      "sha256": "cffac8ee00b50c9c95f965f4482c17a4a651e67889416a59811dd09a1a90639b"
+    },
+    "E1/theory_path_population_all_e1/run_gpu_gate.py": {
+      "size": 4163,
+      "sha256": "a8f30cb3117af6a301ff69013ed3f75c1729f42cc58140bf88904b5bafe541ff"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/geometry.py": {
+      "size": 4223,
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/plotting.py": {
+      "size": 6954,
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+    },
+    "E1/theory_path_population_all_e1/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "E1/theory_path_population_six_manifolds/config.json": {
+      "size": 2313,
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    "E1/theory_path_population_six_manifolds/run_experiment.py": {
+      "size": 1173,
+      "sha256": "bace1799e45fb7f461fe584cb91e941c09d86050d5c6de3c922fdcacc9100c87"
+    },
+    "E1/theory_path_population_six_manifolds/run_experiment_gpu.py": {
+      "size": 868,
+      "sha256": "cffac8ee00b50c9c95f965f4482c17a4a651e67889416a59811dd09a1a90639b"
+    },
+    "E1/theory_path_population_six_manifolds/run_gpu_gate.py": {
+      "size": 4163,
+      "sha256": "a8f30cb3117af6a301ff69013ed3f75c1729f42cc58140bf88904b5bafe541ff"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/plotting.py": {
+      "size": 6723,
+      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d"
+    },
+    "E1/theory_path_population_six_manifolds/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "E1/theory_path_population_yy_all_e1/aggregate_results.py": {
+      "size": 366,
+      "sha256": "9cabe3832ba75fd32bfd5311cdd524046b3b74affb8e22de6dd5f0d18f6975f7"
+    },
+    "E1/theory_path_population_yy_all_e1/config.json": {
+      "size": 3360,
+      "sha256": "54e0c79ee22b4eb38820158f24e581161981b63ffce1f7652acd3ca13bfc3914"
+    },
+    "E1/theory_path_population_yy_all_e1/plot_results.py": {
+      "size": 290,
+      "sha256": "7b117e819267fbd0cd0c6f56e09b4c978dab4c1e4f8a5ab0076f8c5eacff13ff"
+    },
+    "E1/theory_path_population_yy_all_e1/run_experiment_gpu.py": {
+      "size": 596,
+      "sha256": "d57e1e6c2b851603f9f513cea0124f9e4a322f8bab0e8caaeb2c031ac056ee2a"
+    },
+    "E1/theory_path_population_yy_all_e1/run_gpu_gate.py": {
+      "size": 3608,
+      "sha256": "92db306f5f1fb583a66d61d257e88e34bb83a438e8a916c9d3ef489a627fe1ac"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/__init__.py": {
+      "size": 77,
+      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/aggregate.py": {
+      "size": 9622,
+      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/coefficients.py": {
+      "size": 2137,
+      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/experiment.py": {
+      "size": 6772,
+      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/geometry.py": {
+      "size": 5578,
+      "sha256": "f4765ddd458f86b5fcec999f625d5c96a0168e90fed0655d7a5d0b433269a92c"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_moments.py": {
+      "size": 5466,
+      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_population.py": {
+      "size": 6204,
+      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_runner.py": {
+      "size": 2463,
+      "sha256": "4b3bfc9aff446ad5693f525fb5e320ab2eacc0875e2b10eed7e1d8c2383f56f9"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/moments.py": {
+      "size": 2489,
+      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/plotting.py": {
+      "size": 6148,
+      "sha256": "511653f6c250a9ffcede717d3cfd3eb3edbe3c673e1266b22598e3e0b3b3b706"
+    },
+    "E1/theory_path_population_yy_all_e1/src/e1_yy_path/population.py": {
+      "size": 5345,
+      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367"
+    },
+    "E1/theory_path_population_yy_six_manifolds/aggregate_results.py": {
+      "size": 366,
+      "sha256": "9cabe3832ba75fd32bfd5311cdd524046b3b74affb8e22de6dd5f0d18f6975f7"
+    },
+    "E1/theory_path_population_yy_six_manifolds/config.json": {
+      "size": 2085,
+      "sha256": "d000da55e95f0bd341322417e237caed492052c93d5270f4cb0a2eac0e0949e2"
+    },
+    "E1/theory_path_population_yy_six_manifolds/plot_results.py": {
+      "size": 290,
+      "sha256": "7b117e819267fbd0cd0c6f56e09b4c978dab4c1e4f8a5ab0076f8c5eacff13ff"
+    },
+    "E1/theory_path_population_yy_six_manifolds/run_experiment_gpu.py": {
+      "size": 596,
+      "sha256": "d57e1e6c2b851603f9f513cea0124f9e4a322f8bab0e8caaeb2c031ac056ee2a"
+    },
+    "E1/theory_path_population_yy_six_manifolds/run_gpu_gate.py": {
+      "size": 3608,
+      "sha256": "92db306f5f1fb583a66d61d257e88e34bb83a438e8a916c9d3ef489a627fe1ac"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/__init__.py": {
+      "size": 77,
+      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/aggregate.py": {
+      "size": 9622,
+      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/coefficients.py": {
+      "size": 2137,
+      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/experiment.py": {
+      "size": 6772,
+      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/geometry.py": {
+      "size": 12029,
+      "sha256": "added7d04709d052e90706c41d160f84b32b98ff7b567ec48179fb1a0be12157"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_moments.py": {
+      "size": 5466,
+      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_population.py": {
+      "size": 6204,
+      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_runner.py": {
+      "size": 2491,
+      "sha256": "189cf889c566455b89cc32f68f463c32238b24be43de87729cc1b235f7b55702"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/moments.py": {
+      "size": 2489,
+      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/plotting.py": {
+      "size": 5932,
+      "sha256": "87349611766f1f5b2880f3cae1ed0582b4cbfaa995ba5cd5196d4efb588e6837"
+    },
+    "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/population.py": {
+      "size": 5345,
+      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367"
+    },
+    "E1/weight_control/analyze.py": {
+      "size": 12115,
+      "sha256": "587362fe17dec6a3111b9b7f2aee150976b5140f6ea1f65f2865429584665c6c"
+    },
+    "E1/weight_control/frozen/five/config.json": {
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/geometry.py": {
+      "size": 4223,
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/plotting.py": {
+      "size": 6954,
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+    },
+    "E1/weight_control/frozen/five/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "E1/weight_control/frozen/selected/provenance.json": {
+      "size": 8416,
+      "sha256": "a3d68854e4e188e9edee7d7cab9c4c253f4c290d2bfd2fac1577a4fde5611834"
+    },
+    "E1/weight_control/frozen/six/config.json": {
+      "size": 2313,
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/plotting.py": {
+      "size": 6723,
+      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d"
+    },
+    "E1/weight_control/frozen/six/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "E1/weight_control/PLAN.json": {
+      "size": 1354,
+      "sha256": "d77b8ca723b24a220af60ec65c0dc7a03f6a1c0db633f3c201ff30b6e874b485"
+    },
+    "E1/weight_control/README.md": {
+      "size": 827,
+      "sha256": "040f2a5920170e252137e5c4c197da0c7887abc90667535c48f0168cc1c66d93"
+    },
+    "E1/weight_control/render_and_report.py": {
+      "size": 21530,
+      "sha256": "cf2742d643d6b3b80fc3472497aeaac75c641af3e6acbcc8fa7c40445494cc01"
+    },
+    "E1/weight_control/requirements.txt": {
+      "size": 64,
+      "sha256": "f57a50eeadca21432877fea420db64f113187095603067a020fd763960890f48"
+    },
+    "E1/weight_control/SOURCE_BINDING.json": {
+      "size": 39857,
+      "sha256": "a6c3127b17cb0d7ee1e22f341ce21bec7d079de66f6e75d671346e5aaffcbe49"
+    },
+    "E1/weight_control/strict_circle.py": {
+      "size": 1730,
+      "sha256": "373d24774a6814a0791892dafa5836ff68bf5316febbaaed8cc39415a4f48836"
+    },
+    "E1/weight_control/validate_precision.py": {
+      "size": 4479,
+      "sha256": "9377de6f82b78faaaa3efac439bef010dcfbbbc18a21d475e5015577ba200d32"
+    },
+    "E2/corrugated/corrugated_geometry.py": {
+      "size": 4258,
+      "sha256": "eb5848ac783bfdc7f691840bd3dab7bbdc284887bde845d9cc6b7385e3b471c9"
+    },
+    "E2/corrugated/frozen/corrugated_e1_geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "E2/corrugated/frozen/DR/configs/e2_dr_yy_frozen.json": {
+      "size": 1766,
+      "sha256": "995faf44576192025ef6bff4c6149810d50b476f1c1cdc3b70621fbb55e72aba"
+    },
+    "E2/corrugated/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 23268,
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/dr.py": {
+      "size": 13702,
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/runner.py": {
+      "size": 10705,
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "E2/corrugated/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "E2/corrugated/frozen/STSP/E2FS_CONFIG.json": {
+      "size": 2148,
+      "sha256": "ac0e75e8f7310cce222eba1950f6091344cb349b4be9a72af7f8222949d2e702"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/__init__.py": {
+      "size": 64,
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/config.py": {
+      "size": 1403,
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/geometry.py": {
+      "size": 4759,
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/runner.py": {
+      "size": 7301,
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+    },
+    "E2/corrugated/frozen/STSP/src/e2fs/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "E2/corrugated/frozen/YY/configs/e2_dr_yy_frozen.json": {
+      "size": 1750,
+      "sha256": "cc451a19bf08219ce52455f0e700f314f8bc9677712d4d5c6163ae9af9117d6d"
+    },
+    "E2/corrugated/frozen/YY/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "E2/corrugated/frozen/YY/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "E2/corrugated/run_extension.py": {
+      "size": 5226,
+      "sha256": "b369a8b8bda0af1f52ec07af3c8ca3eb6b6efd6fed3a21355a7e03cc9255a75e"
+    },
+    "E2/dr_rejected_basis_failure_adapter.py": {
+      "size": 2705,
+      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f"
+    },
+    "E2/evaluate_fits.py": {
+      "size": 4162,
+      "sha256": "bf14831068c155efcb2c9f5978a6705c453a2c383f2b8ae6240b53050072a260"
+    },
+    "E2/frozen/DR/configs/e2_dr_yy_frozen.json": {
+      "size": 1766,
+      "sha256": "995faf44576192025ef6bff4c6149810d50b476f1c1cdc3b70621fbb55e72aba"
+    },
+    "E2/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 23268,
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+    },
+    "E2/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E2/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E2/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E2/frozen/DR/src/dryy/dr.py": {
+      "size": 13702,
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+    },
+    "E2/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E2/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E2/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E2/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E2/frozen/DR/src/dryy/runner.py": {
+      "size": 10705,
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+    },
+    "E2/frozen/DR/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "E2/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "E2/frozen/STSP/E2FS_CONFIG.json": {
+      "size": 2148,
+      "sha256": "ac0e75e8f7310cce222eba1950f6091344cb349b4be9a72af7f8222949d2e702"
+    },
+    "E2/frozen/STSP/src/e2fs/__init__.py": {
+      "size": 64,
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+    },
+    "E2/frozen/STSP/src/e2fs/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "E2/frozen/STSP/src/e2fs/config.py": {
+      "size": 1403,
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+    },
+    "E2/frozen/STSP/src/e2fs/geometry.py": {
+      "size": 4759,
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+    },
+    "E2/frozen/STSP/src/e2fs/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "E2/frozen/STSP/src/e2fs/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "E2/frozen/STSP/src/e2fs/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "E2/frozen/STSP/src/e2fs/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "E2/frozen/STSP/src/e2fs/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "E2/frozen/STSP/src/e2fs/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "E2/frozen/STSP/src/e2fs/runner.py": {
+      "size": 7301,
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+    },
+    "E2/frozen/STSP/src/e2fs/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "E2/frozen/YY/configs/e2_dr_yy_frozen.json": {
+      "size": 1750,
+      "sha256": "cc451a19bf08219ce52455f0e700f314f8bc9677712d4d5c6163ae9af9117d6d"
+    },
+    "E2/frozen/YY/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "E2/frozen/YY/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E2/frozen/YY/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E2/frozen/YY/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E2/frozen/YY/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "E2/frozen/YY/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E2/frozen/YY/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E2/frozen/YY/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E2/frozen/YY/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E2/frozen/YY/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "E2/frozen/YY/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "E2/frozen/YY/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "E2/LICENSE": {
+      "size": 1072,
+      "sha256": "6c17757723550b044454f2a985d73abebe3e303f86c8cbd2f6ea0d4579e9e22d"
+    },
+    "E2/plotting/style.py": {
+      "size": 2925,
+      "sha256": "2622c266f5e9b76f9eda0569d6cb5415f2749a3638b4005ef25d9e31c2ec414c"
+    },
+    "E2/README.md": {
+      "size": 827,
+      "sha256": "8acd451c7ba5cf4fc1e4fdaeb7ed530b5fc035ecc99c303ae60536c6c84504fd"
+    },
+    "E2/reproduce.py": {
+      "size": 4962,
+      "sha256": "70a43b809bebdbc9b305f2161831097733c3500eccbaf4386fe665aa4fdb8a66"
+    },
+    "E2/run_fits.py": {
+      "size": 8370,
+      "sha256": "94c886f5da19d7c9634a45aabaa4fb07a0e5fdb57303e908b829db5b5f863686"
+    },
+    "E3/assets/circle_r2_main.npy": {
+      "size": 4224,
+      "sha256": "ce3004581b5f97a0f30121e4901d629e89ea3741cf97986731422b3dac440ea6"
+    },
+    "E3/assets/circle_r2_reference.npy": {
+      "size": 4194432,
+      "sha256": "d875a6c6cc6b199624d81297fdce2cec41aa41deeb7f212ee2fa4035adbce03e"
+    },
+    "E3/assets/circle_r2_rev.npy": {
+      "size": 16512,
+      "sha256": "36cf04b02f40e46649fe02e7a047a8551ec42981c0b66f88a58353b4b41f3363"
+    },
+    "E3/assets/clifford_torus_r4_main.npy": {
+      "size": 8320,
+      "sha256": "3afbb88dcfaede079ce3d3b0971e5736793f3318d97cc90826271e889df42058"
+    },
+    "E3/assets/clifford_torus_r4_reference.npy": {
+      "size": 8388736,
+      "sha256": "7c94e51ab78924070e137448ec192c6572e1c556e713d87a7a4244271b256ae3"
+    },
+    "E3/assets/clifford_torus_r4_rev.npy": {
+      "size": 262272,
+      "sha256": "b4aca090d16f08defa9d29a3beddd41150e5892bf8152a82d6de7c9d8ffdfad8"
+    },
+    "E3/assets/corrugated_torus_r3_main.npy": {
+      "size": 12416,
+      "sha256": "a32c00a9c3fd7f50049ec1e0b42a0ce08eb85ad33b7e64fb324381014d349ff2"
+    },
+    "E3/assets/corrugated_torus_r3_reference.npy": {
+      "size": 1572992,
+      "sha256": "df313f289625db78d68908e7568e2303bb7d9fc97360534757bd1f35e904b868"
+    },
+    "E3/assets/corrugated_torus_r3_rev.npy": {
+      "size": 24704,
+      "sha256": "79ec8adc3051ebe079564cb26042323ba9fbe28a21065806682c822366cf7206"
+    },
+    "E3/assets/corrugated_torus_r3_reverse_reference.npy": {
+      "size": 6291584,
+      "sha256": "09bc77e2f6cbbc6527b45d1cbde8495d416f1176440f47458a673059d579ec00"
+    },
+    "E3/assets/sphere2_r10_main.npy": {
+      "size": 20608,
+      "sha256": "b0389a71f4287b88994e6be2e2d2f270d4232e2f0a79e82aa89a3d3d91065025"
+    },
+    "E3/assets/sphere2_r10_reference.npy": {
+      "size": 20971648,
+      "sha256": "9d794dce085b4b63947c4ac320d137eee14edae205828ba9167ee3f579e30091"
+    },
+    "E3/assets/sphere2_r10_rev.npy": {
+      "size": 655488,
+      "sha256": "745d1de0c5897b683fe123a8f237bdf86efba4cd0889b068f2684b7f0e801e77"
+    },
+    "E3/assets/sphere2_r3_main.npy": {
+      "size": 6272,
+      "sha256": "520721f7a660bea5b22af89bd0712a6cbc003ba639f252dc6e7b2876937cc2a6"
+    },
+    "E3/assets/sphere2_r3_reference.npy": {
+      "size": 6291584,
+      "sha256": "febadd701faf717d2a0f7a0ff5c7ec5379c7ade8a393f51c452c488f6b37a514"
+    },
+    "E3/assets/sphere2_r3_rev.npy": {
+      "size": 196736,
+      "sha256": "3625905f1d5d8cbd2acf748c3f4dd5772a13afa851033083b08f60fc3e729a03"
+    },
+    "E3/assets/sphere3_r4_main.npy": {
+      "size": 8320,
+      "sha256": "259d64b4c04336ca0f8f5abed6c31aa8c7c052283fdc01b6126887b5a131ddbd"
+    },
+    "E3/assets/sphere3_r4_reference.npy": {
+      "size": 8388736,
+      "sha256": "abe7e9198ed61cd11e5146f789747202ee83389643ba8dc94c28e9fa6f9fc802"
+    },
+    "E3/assets/sphere3_r4_rev.npy": {
+      "size": 524416,
+      "sha256": "7c4551c6b00abc0e272adabf3438093d869a01896bbddf762ddeb15d917b0a57"
+    },
+    "E3/evaluate_fits.py": {
+      "size": 5082,
+      "sha256": "100806dbef32b318adf0aa70da6000b8900e76d17df3ba2c85d8285e2c3c0c15"
+    },
+    "E3/frozen/corrugated_dr_yy.json": {
+      "size": 1419,
+      "sha256": "2b7b7c187c68c94ff1aa719751ac7bb322d515103d909a7b4ca0e4d0a66783de"
+    },
+    "E3/frozen/corrugated_geometry/e7_config.json": {
+      "size": 3103,
+      "sha256": "6bda92890627b6babee7a2ba48592878788d775c8d1427fd7d013048f3133181"
+    },
+    "E3/frozen/corrugated_geometry/src/corrugated/__init__.py": {
+      "size": 39,
+      "sha256": "afe451889b9780adbde78f8d19cf690f4c654c4c6afa7590f44be566ad6adabb"
+    },
+    "E3/frozen/corrugated_geometry/src/corrugated/config.py": {
+      "size": 385,
+      "sha256": "e7cd7d336339d11d6fc86ac06097939593fae1154c1c50aa525fd88545bf83cd"
+    },
+    "E3/frozen/corrugated_geometry/src/corrugated/geometry.py": {
+      "size": 6418,
+      "sha256": "cc6c671f3fe313f3ac9ce73dfd3e8163bf72e6bc077cfa5282ff751f8efb33cd"
+    },
+    "E3/frozen/DR/configs/e3_dr_yy_frozen.json": {
+      "size": 2169,
+      "sha256": "db021b0c98b920802e277f62e33067d8a61a56596aeb137704046c2ffc68dc3e"
+    },
+    "E3/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 24512,
+      "sha256": "4a49d4f02af39d93b9399fef93ce9818a9078455d39df912425e269f00a84a08"
+    },
+    "E3/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E3/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E3/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E3/frozen/DR/src/dryy/dr.py": {
+      "size": 14211,
+      "sha256": "efee68025f52fbf4599c1d8244c3072c382fa4262698d2689244b91cce22b814"
+    },
+    "E3/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E3/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E3/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E3/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E3/frozen/DR/src/dryy/runner.py": {
+      "size": 13126,
+      "sha256": "769e0633d73e233afbc14f2d2d2e781de127ff6fde2a850bf1902993677eda06"
+    },
+    "E3/frozen/DR/src/dryy/yy.py": {
+      "size": 5440,
+      "sha256": "b0bd38e8a3403a28a351ce3fbc9f20eccd387612dc213226b416aca4d1d9ba5d"
+    },
+    "E3/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5345,
+      "sha256": "73408eb375dd8c188d740f1b0819734c10a3f2b629eaafa1ed2f93b6ed2ef76b"
+    },
+    "E3/frozen/dr_rejected_basis_failure_adapter.py": {
+      "size": 2705,
+      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f"
+    },
+    "E3/frozen/STSP/E3_CONFIG.json": {
+      "size": 2248,
+      "sha256": "fbfecc1802d38eb4a7624b22d7751a4255321e90823fc13d7e25081a6da5207d"
+    },
+    "E3/frozen/STSP/src/e3/__init__.py": {
+      "size": 83,
+      "sha256": "8c7e358f4db643a26ac4ad12fabb6a53cbbd4d400de93d9834f97735d9fa4760"
+    },
+    "E3/frozen/STSP/src/e3/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "E3/frozen/STSP/src/e3/config.py": {
+      "size": 1399,
+      "sha256": "8f0650ee42dba6178a0c908ac29a9c0050342b2752912e166390ae6213df884b"
+    },
+    "E3/frozen/STSP/src/e3/geometry.py": {
+      "size": 4751,
+      "sha256": "034c39252209cd672a70cb1e85917b1774aebdd2f4bef961d0a9c1761cec5440"
+    },
+    "E3/frozen/STSP/src/e3/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "E3/frozen/STSP/src/e3/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "E3/frozen/STSP/src/e3/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "E3/frozen/STSP/src/e3/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "E3/frozen/STSP/src/e3/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "E3/frozen/STSP/src/e3/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "E3/frozen/STSP/src/e3/runner.py": {
+      "size": 6981,
+      "sha256": "ae8cbdefe348815324e57d6323827c5d22cdca994cc2b4edcfac10dc45661b8a"
+    },
+    "E3/frozen/STSP/src/e3/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "E3/frozen/YY_CORRUGATED/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "E3/frozen/YY_CORRUGATED/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "E3/frozen/YY_MAIN/configs/e3_dr_yy_frozen.json": {
+      "size": 2169,
+      "sha256": "db021b0c98b920802e277f62e33067d8a61a56596aeb137704046c2ffc68dc3e"
+    },
+    "E3/frozen/YY_MAIN/gpu_backend/dryy_gpu.py": {
+      "size": 21994,
+      "sha256": "f6330be81ef4e7d1e9b0e518b2e779237b201993f31a1b454b246a529698bf31"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/dr.py": {
+      "size": 11821,
+      "sha256": "4d7461ce4dcdfeffd49d2559036fbffd4ce4cc9299b8c32e746894171d89f65e"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/runner.py": {
+      "size": 12819,
+      "sha256": "145c6417badab9ced6ac835b5bda92526b7058aa00f9a6a13eeda8ad33da478c"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/yy.py": {
+      "size": 5440,
+      "sha256": "b0bd38e8a3403a28a351ce3fbc9f20eccd387612dc213226b416aca4d1d9ba5d"
+    },
+    "E3/frozen/YY_MAIN/src/dryy/yy_common.py": {
+      "size": 5345,
+      "sha256": "73408eb375dd8c188d740f1b0819734c10a3f2b629eaafa1ed2f93b6ed2ef76b"
+    },
+    "E3/frozen/YY_REV/configs/e3_dr_yy_frozen.json": {
+      "size": 2169,
+      "sha256": "db021b0c98b920802e277f62e33067d8a61a56596aeb137704046c2ffc68dc3e"
+    },
+    "E3/frozen/YY_REV/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "E3/frozen/YY_REV/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "E3/frozen/YY_REV/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "E3/frozen/YY_REV/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "E3/frozen/YY_REV/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "E3/frozen/YY_REV/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "E3/frozen/YY_REV/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "E3/frozen/YY_REV/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "E3/frozen/YY_REV/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "E3/frozen/YY_REV/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "E3/frozen/YY_REV/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "E3/frozen/YY_REV/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "E3/LICENSE": {
+      "size": 1072,
+      "sha256": "6c17757723550b044454f2a985d73abebe3e303f86c8cbd2f6ea0d4579e9e22d"
+    },
+    "E3/output_adapter.py": {
+      "size": 1302,
+      "sha256": "95ed99fc520293efa5b2897bd5367c0dd765176c3ecd88ce92efc80eec035bce"
+    },
+    "E3/plotting/no_footer_helpers.py": {
+      "size": 7038,
+      "sha256": "368610997a50a748d3d55926bccb87269fa42b08ce7469341855bdb220783a3c"
+    },
+    "E3/plotting/original_design.py": {
+      "size": 1385,
+      "sha256": "9b48fc8b2f05c38d68429094ae81b4da3d6f4ff6af372b617557e4c648435b9c"
+    },
+    "E3/plotting/original_figure_core.py": {
+      "size": 13603,
+      "sha256": "674ad6e8982fc60d90d1b25d6e378dd399f9be2238a70a0a2b5893bd57ee6282"
+    },
+    "E3/README.md": {
+      "size": 827,
+      "sha256": "b70b2f7a4b075e4d0f921d8b6035768df70d55d5e614ca1f283ca66a9a6081c9"
+    },
+    "E3/reproduce.py": {
+      "size": 2708,
+      "sha256": "13bc45a4fbd32930639d82401d3bb3b5621388028b386247f7ed90967ee63535"
+    },
+    "E3/run_fits.py": {
+      "size": 6826,
+      "sha256": "75e746eff8c4d358a45ec699978b1412e1b7f15273acf011264d31e2d916cae6"
+    },
+    "E3/science_support.py": {
+      "size": 5361,
+      "sha256": "52c776ac8486a764fd4c987a738e6d71ef88e438747d5c4e4b86421ff64a6fc8"
+    },
+    "E3/scientific.py": {
+      "size": 6760,
+      "sha256": "6630410950af1faedeec489a9d0c9e78faffb281836189e19a36e2b9a2de5dd3"
+    },
+    "E4/correspondence/continuous_cp.py": {
+      "size": 6679,
+      "sha256": "ea18b32bc1a14283582920d133cd8d9e2f7e53c5f7f9972ce2e5e07e72fda655"
+    },
+    "E4/correspondence/counterexample.py": {
+      "size": 9939,
+      "sha256": "9a9cdfb5640ce0a63862f29c34f3e39c319e90ecb9e6fa6f76087d5af81fe105"
+    },
+    "E4/correspondence/CP_IMPLEMENTATION_AUDIT_20261104.json": {
+      "size": 5578,
+      "sha256": "4f98f20b0b3a74c731cc958efca7a03558048c0c8921047bbec8d6e97ffe897e"
+    },
+    "E4/correspondence/CP_IMPLEMENTATION_AUDIT_20261104.md": {
+      "size": 4105,
+      "sha256": "fd62fb05c32f8802207a563b2aeb95b620889555189d84309fd1d89cb9a50c3b"
+    },
+    "E4/correspondence/ENVIRONMENT.json": {
+      "size": 691,
+      "sha256": "8e4382a5ea2ea8bf450deaeb934b7d4580d89619a3e3caff13be7a799e1cd9d9"
+    },
+    "E4/correspondence/finite_experiment.py": {
+      "size": 10667,
+      "sha256": "abf3b522d6f62b4e336d33de42aba628cf03ac098bf897359b4e1042468e8550"
+    },
+    "E4/correspondence/frozen/E4/fitting/CPU_GPU_FIXED_QUERY_GATE.json": {
+      "size": 2031,
+      "sha256": "30a2c33acf77f336f536ef1e8dd05fb2ab0e8ad8781735df134a61c58e9343ab"
+    },
+    "E4/correspondence/frozen/E4/fitting/fixed_queries.py": {
+      "size": 9796,
+      "sha256": "b12e13e0572869bbfe3cbaccff93e0c986db6812f1c03ec7597cf12c51cc70ef"
+    },
+    "E4/correspondence/frozen/E4/fitting/FROZEN_INPUTS.json": {
+      "size": 12717,
+      "sha256": "b24276832a5990560905ee9d6c1f56858655cbf03f505b4c5c114dba36215f08"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/config.json": {
+      "size": 1634,
+      "sha256": "9c7c54389b6e3f85001378e805942e7c1adb8481c15422cec17941258937d32d"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/data_hashes_n200000.json": {
+      "size": 2663,
+      "sha256": "ed0942691463687ca234df274c44059d55cece048b2145fca702a591b91b7dbf"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/density_scan_config.json": {
+      "size": 2101,
+      "sha256": "375acc2fc43275797961b7f6a4f6103a7ebdb97ff63c64370b5293801f5837f2"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/requirements-gpu-compute.txt": {
+      "size": 53,
+      "sha256": "db4c74b1e14126e1a3c468c8ed3cabca3d441250806f8f77c5236f2fcee7a85b"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/requirements-gpu-cu13.txt": {
+      "size": 46,
+      "sha256": "5c7e0949e035655472c4aeaf6f127880d67b1ab7b5d7d22f7fb69b7d78fc14e1"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/requirements.txt": {
+      "size": 62,
+      "sha256": "6f39695f3f50af68983ca8ad975d5af692534e575cd16da2b242a902e41f87a1"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/run_density_scan.py": {
+      "size": 35810,
+      "sha256": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/__init__.py": {
+      "size": 106,
+      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/coefficients.py": {
+      "size": 1907,
+      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/config.py": {
+      "size": 230,
+      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/experiment.py": {
+      "size": 2552,
+      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/geometry.py": {
+      "size": 5525,
+      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/gpu_operator.py": {
+      "size": 6378,
+      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/operator.py": {
+      "size": 6293,
+      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/pipeline.py": {
+      "size": 16272,
+      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6"
+    },
+    "E4/correspondence/frozen/E4/fitting/original/src/e4/solver.py": {
+      "size": 4924,
+      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165"
+    },
+    "E4/correspondence/frozen/population_engine/config.json": {
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/geometry.py": {
+      "size": 4223,
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/gpu_experiment.py": {
+      "size": 3382,
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/plotting.py": {
+      "size": 6954,
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+    },
+    "E4/correspondence/frozen/population_engine/src/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "E4/correspondence/PLAN.json": {
+      "size": 3173,
+      "sha256": "2e4a4e43bc407e1d4376592c0c66ed672137ce08764c873e63f11a148f26a47e"
+    },
+    "E4/correspondence/plot_finite.py": {
+      "size": 4464,
+      "sha256": "8d106fe928252a6a81e9e63a5e642fe056281be765fe01702b691510d07f01b5"
+    },
+    "E4/correspondence/PUBLIC_SCOPE.json": {
+      "size": 771,
+      "sha256": "463e5b875b2146c47647a31f6cb676d09483513fe24659f26060ad88af61f15a"
+    },
+    "E4/correspondence/README.md": {
+      "size": 827,
+      "sha256": "ff8e82e0bd9ea1390c70610c7d04de630fe8cd7bbbff2092aebd45e9320680d8"
+    },
+    "E4/correspondence/replay_counterexample.py": {
+      "size": 3655,
+      "sha256": "61bcbe37baebb5531f40f409557d8a12a29153e0180e88faffaa567c81d2a4b2"
+    },
+    "E4/correspondence/requirements.txt": {
+      "size": 60,
+      "sha256": "74316ce7bbfee8a983df0f35aa80f6138db8b142437f0dc14fbd07eba47907a2"
+    },
+    "E4/correspondence/SOURCE_BINDING.json": {
+      "size": 13823,
+      "sha256": "c6f891a2ee6562f6dd0c5e22a75c8d59ca19be7eaca4ccea3459213f12a83eae"
+    },
+    "E4/correspondence/summarize.py": {
+      "size": 5650,
+      "sha256": "e134b1c7b5be90a63d95bdf1d2b165ef3b36fc6da2044e287a2f4cd99482f8ac"
+    },
+    "E4/fitting/CPU_GPU_FIXED_QUERY_GATE.json": {
+      "size": 2031,
+      "sha256": "30a2c33acf77f336f536ef1e8dd05fb2ab0e8ad8781735df134a61c58e9343ab"
+    },
+    "E4/fitting/fixed_queries.py": {
+      "size": 10350,
+      "sha256": "3dd87af9325a9543ba6a29200bd08aa87461b0101218c088f82e18dc141b4c3b"
+    },
+    "E4/fitting/FROZEN_INPUTS.json": {
+      "size": 12717,
+      "sha256": "b24276832a5990560905ee9d6c1f56858655cbf03f505b4c5c114dba36215f08"
+    },
+    "E4/fitting/original/config.json": {
+      "size": 1634,
+      "sha256": "9c7c54389b6e3f85001378e805942e7c1adb8481c15422cec17941258937d32d"
+    },
+    "E4/fitting/original/data_hashes_n200000.json": {
+      "size": 2663,
+      "sha256": "ed0942691463687ca234df274c44059d55cece048b2145fca702a591b91b7dbf"
+    },
+    "E4/fitting/original/density_scan_config.json": {
+      "size": 2101,
+      "sha256": "375acc2fc43275797961b7f6a4f6103a7ebdb97ff63c64370b5293801f5837f2"
+    },
+    "E4/fitting/original/requirements-gpu-compute.txt": {
+      "size": 53,
+      "sha256": "db4c74b1e14126e1a3c468c8ed3cabca3d441250806f8f77c5236f2fcee7a85b"
+    },
+    "E4/fitting/original/requirements-gpu-cu13.txt": {
+      "size": 46,
+      "sha256": "5c7e0949e035655472c4aeaf6f127880d67b1ab7b5d7d22f7fb69b7d78fc14e1"
+    },
+    "E4/fitting/original/requirements.txt": {
+      "size": 62,
+      "sha256": "6f39695f3f50af68983ca8ad975d5af692534e575cd16da2b242a902e41f87a1"
+    },
+    "E4/fitting/original/run_density_scan.py": {
+      "size": 35810,
+      "sha256": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36"
+    },
+    "E4/fitting/original/src/e4/__init__.py": {
+      "size": 106,
+      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250"
+    },
+    "E4/fitting/original/src/e4/coefficients.py": {
+      "size": 1907,
+      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8"
+    },
+    "E4/fitting/original/src/e4/config.py": {
+      "size": 230,
+      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301"
+    },
+    "E4/fitting/original/src/e4/experiment.py": {
+      "size": 2552,
+      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f"
+    },
+    "E4/fitting/original/src/e4/geometry.py": {
+      "size": 5525,
+      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e"
+    },
+    "E4/fitting/original/src/e4/gpu_operator.py": {
+      "size": 6378,
+      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d"
+    },
+    "E4/fitting/original/src/e4/operator.py": {
+      "size": 6293,
+      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1"
+    },
+    "E4/fitting/original/src/e4/pipeline.py": {
+      "size": 16272,
+      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6"
+    },
+    "E4/fitting/original/src/e4/solver.py": {
+      "size": 4924,
+      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165"
+    },
+    "E4/legacy_reproduce.py": {
+      "size": 2613,
+      "sha256": "07f35e80b9f0e8d0434bb6b45ddba9ffb00ec96a969df0598ee5207a96485e05"
+    },
+    "E4/LICENSE": {
+      "size": 1068,
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
+    },
+    "E4/plotting/density_scan_config.json": {
+      "size": 2101,
+      "sha256": "375acc2fc43275797961b7f6a4f6103a7ebdb97ff63c64370b5293801f5837f2"
+    },
+    "E4/plotting/original_scan.py": {
+      "size": 35810,
+      "sha256": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36"
+    },
+    "E4/README.md": {
+      "size": 827,
+      "sha256": "ff8e82e0bd9ea1390c70610c7d04de630fe8cd7bbbff2092aebd45e9320680d8"
+    },
+    "E4/reproduce.py": {
+      "size": 756,
+      "sha256": "7f24c882750b08b7a03267de3c1f3804784303e9fc8a9ed3a7274752c6f82489"
+    },
+    "E4/smoke.py": {
+      "size": 1376,
+      "sha256": "50c98162b5b5e1303fb3c6bfc9657d1762a3f4e060bd10c14d63a062fd367998"
+    },
+    "E5/config/finite_sample.json": {
+      "size": 1694,
+      "sha256": "e6864bae3dc784c21ea7dadf4048f11d5328ebef8aa9bfc14c0540cf4cb631ff"
+    },
+    "E5/config/population.json": {
+      "size": 946,
+      "sha256": "e14251ec65958f9551c9e72bc11b99f038d811d7b52d780dabb2c81680ce33af"
+    },
+    "E5/LICENSE": {
+      "size": 1072,
+      "sha256": "6c17757723550b044454f2a985d73abebe3e303f86c8cbd2f6ea0d4579e9e22d"
+    },
+    "E5/README.md": {
+      "size": 827,
+      "sha256": "af726bdfc166de3985ec3569a3f7714f7e82c95eafa8694d051f1322935da760"
+    },
+    "E5/reproduce.py": {
+      "size": 3820,
+      "sha256": "f4937984bab3e470cb988f40f77fcb8ee18e8b87597c2f38c35cb8676c230d4e"
+    },
+    "E5/requirements.txt": {
+      "size": 60,
+      "sha256": "694c3c0f404af3763ed8a2cec12ced9984e83aa3701f6d627fec8e2fbedba062"
+    },
+    "E5/scripts/plot_from_raw_packets.py": {
+      "size": 9102,
+      "sha256": "3e5fd83711a06632ec5e5b43390a9250c8861fff1f6ac48713b256b84665dff3"
+    },
+    "E5/scripts/plot_historical_finite.py": {
+      "size": 6625,
+      "sha256": "52cd95933782d4f0142ffc9e65b35c84b0c3dce2284e8585a31b4c5c62ebb91e"
+    },
+    "E5/scripts/publish_paper_figures.py": {
+      "size": 2069,
+      "sha256": "5c73a9301a2d0a5b897d89428618a1715f3f0b25fbe3d0070e0af67f3e570abc"
+    },
+    "E5/scripts/replay_historical_finite.py": {
+      "size": 1094,
+      "sha256": "99c7e0f3d8e466ff29d88d4a759c72b63b277fe92ac849052334679d406ee0ed"
+    },
+    "E5/scripts/verify_historical_finite.py": {
+      "size": 10422,
+      "sha256": "a9c8a8c72ae5e73ff8905996439506b889c602554d4fc155cc3b5195d1eb879e"
+    },
+    "E5/src/e56v2/__init__.py": {
+      "size": 302,
+      "sha256": "648e6270dce39d507eb92fa192bb454f8eaf331acfb628136cd10f10ba2fa8fb"
+    },
+    "E5/src/e56v2/contracts.py": {
+      "size": 6058,
+      "sha256": "08530b20a9ddbd2d83a92b6dd29a7a77379741882cca995a832bf64ab9645875"
+    },
+    "E5/src/e56v2/e5_ablation.py": {
+      "size": 3100,
+      "sha256": "196281139847f452d998f956e5b1f407b52308226955156b16a017d2ec64aeba"
+    },
+    "E5/src/e56v2/e5_empirical.py": {
+      "size": 5138,
+      "sha256": "6fdf229b9ce4a4d28421b2017450b99832a2ac1bfc40b20f3281cf36bdd74ef0"
+    },
+    "E5/src/e56v2/e5_population.py": {
+      "size": 5827,
+      "sha256": "296a3fc783333639e3ddbc3463cf055059365847ef454cc356e40de0296aebde"
+    },
+    "E5/src/e56v2/experiment.py": {
+      "size": 16922,
+      "sha256": "a5feb46acc7674d7991e39770045aa8dbce17e6eb7789b368e8316c9f4af4deb"
+    },
+    "E5/src/e56v2/geometry_e5.py": {
+      "size": 2975,
+      "sha256": "a25565780cd83155973f3d499533b3368982475ef438498f587b13f0623b6e18"
+    },
+    "E5/src/e56v2/kernels.py": {
+      "size": 938,
+      "sha256": "001f83f5f7e86ae09ac39b6bd622afa2e82b318d306d26530689d9ff1abbb08b"
+    },
+    "E5/src/e56v2/moments.py": {
+      "size": 2103,
+      "sha256": "e61ee9fd00d67bd3ce9d2838e87150ef3ec0f4c30a6f166cb28261f5681662c7"
+    },
+    "LICENSES.md": {
+      "size": 668,
+      "sha256": "97231e8884ea69b13a20592c52635fccdd5546ca3b227798f7ee606315f388d1"
+    },
+    "nonuniform/E1/config.json": {
+      "size": 6317,
+      "sha256": "1437cfdfbdaa3b7e9b43b746a3ee448fc26e6a5c849fad7387cd0b3033969fc5"
+    },
+    "nonuniform/E1/density.py": {
+      "size": 4910,
+      "sha256": "a9b46b6d25f4e544c09b83dec7e11ea16183ef73674070ccd9b31ed91ece7d0e"
+    },
+    "nonuniform/E1/fast_gpu.py": {
+      "size": 2210,
+      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b"
+    },
+    "nonuniform/E1/frozen/e1_theory_path/__init__.py": {
+      "size": 55,
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+    },
+    "nonuniform/E1/frozen/e1_theory_path/coefficients.py": {
+      "size": 2125,
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+    },
+    "nonuniform/E1/frozen/e1_theory_path/experiment.py": {
+      "size": 22091,
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+    },
+    "nonuniform/E1/frozen/e1_theory_path/geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "nonuniform/E1/frozen/e1_theory_path/gpu_population.py": {
+      "size": 10056,
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+    },
+    "nonuniform/E1/frozen/e1_theory_path/population.py": {
+      "size": 11641,
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+    },
+    "nonuniform/E1/frozen/original_corrugated_config.json": {
+      "size": 2313,
+      "sha256": "88dd6ffb4f16c66d89a35082f4fe22d66c4d597fb0a92ac2612d8dc701fd6c77"
+    },
+    "nonuniform/E1/frozen/original_five_config.json": {
+      "size": 3234,
+      "sha256": "ee2829922ec1e8577f6ddd1cab825dfdb9c6b31692ec11bc86d8ab1ea5503e05"
+    },
+    "nonuniform/E1/gate.py": {
+      "size": 3086,
+      "sha256": "8935c5239a7a980c60999dca51d304a651547b50b5d1f43675469ae49aa325eb"
+    },
+    "nonuniform/E1/README.md": {
+      "size": 849,
+      "sha256": "ddfc79021c15e5b6421b0913e6c913c826cbdb361e4e0ffa4ee750ea616157c7"
+    },
+    "nonuniform/E1/reproduce.py": {
+      "size": 1033,
+      "sha256": "93c23ff7bfea8401cbb93926a46a9ff2f95cba69366cb8d9a2c5c3e9bad5096e"
+    },
+    "nonuniform/E1/run_population.py": {
+      "size": 916,
+      "sha256": "4446b67597947ad16630d4f726a0730468640eb25ef4b55b525a15f68dd65201"
+    },
+    "nonuniform/E1/SOURCE_BINDING.json": {
+      "size": 16470,
+      "sha256": "55b65476ad0636113764975261bee105244e70b1a1e72546867aeb8260f4f60a"
+    },
+    "nonuniform/E1/study.py": {
+      "size": 5009,
+      "sha256": "df189402d4ebdee2bc567331d6a6bc79e4668486a17049e1e8a313ead50e0990"
+    },
+    "nonuniform/E2/aggregate.py": {
+      "size": 4230,
+      "sha256": "19c33ab4552dc49717a39603e7aa398ffcb658eddb697ae85bb22177d271c151"
+    },
+    "nonuniform/E2/common.py": {
+      "size": 927,
+      "sha256": "46c03c381d464e7fecf93ccd383dd6f1a22389c593d15c1cc375c45010c57773"
+    },
+    "nonuniform/E2/frozen/E1_DENSITY_DEFINITIONS.json": {
+      "size": 6317,
+      "sha256": "1437cfdfbdaa3b7e9b43b746a3ee448fc26e6a5c849fad7387cd0b3033969fc5"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/corrugated_geometry.py": {
+      "size": 4258,
+      "sha256": "eb5848ac783bfdc7f691840bd3dab7bbdc284887bde845d9cc6b7385e3b471c9"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/corrugated_e1_geometry.py": {
+      "size": 10591,
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/configs/e2_dr_yy_frozen.json": {
+      "size": 1766,
+      "sha256": "995faf44576192025ef6bff4c6149810d50b476f1c1cdc3b70621fbb55e72aba"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 23268,
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/dr.py": {
+      "size": 13702,
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/runner.py": {
+      "size": 10705,
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/E2FS_CONFIG.json": {
+      "size": 2148,
+      "sha256": "ac0e75e8f7310cce222eba1950f6091344cb349b4be9a72af7f8222949d2e702"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/__init__.py": {
+      "size": 64,
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/config.py": {
+      "size": 1403,
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/geometry.py": {
+      "size": 4759,
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/runner.py": {
+      "size": 7301,
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/configs/e2_dr_yy_frozen.json": {
+      "size": 1750,
+      "sha256": "cc451a19bf08219ce52455f0e700f314f8bc9677712d4d5c6163ae9af9117d6d"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "nonuniform/E2/frozen/E2/corrugated/run_extension.py": {
+      "size": 5226,
+      "sha256": "b369a8b8bda0af1f52ec07af3c8ca3eb6b6efd6fed3a21355a7e03cc9255a75e"
+    },
+    "nonuniform/E2/frozen/E2/dr_rejected_basis_failure_adapter.py": {
+      "size": 2705,
+      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f"
+    },
+    "nonuniform/E2/frozen/E2/evaluate_fits.py": {
+      "size": 4162,
+      "sha256": "bf14831068c155efcb2c9f5978a6705c453a2c383f2b8ae6240b53050072a260"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/configs/e2_dr_yy_frozen.json": {
+      "size": 1766,
+      "sha256": "995faf44576192025ef6bff4c6149810d50b476f1c1cdc3b70621fbb55e72aba"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/gpu_backend/dryy_gpu.py": {
+      "size": 23268,
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/dr.py": {
+      "size": 13702,
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/runner.py": {
+      "size": 10705,
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/E2FS_CONFIG.json": {
+      "size": 2148,
+      "sha256": "ac0e75e8f7310cce222eba1950f6091344cb349b4be9a72af7f8222949d2e702"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/__init__.py": {
+      "size": 64,
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/coefficients.py": {
+      "size": 3282,
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/config.py": {
+      "size": 1403,
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/geometry.py": {
+      "size": 4759,
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/gpu_operator.py": {
+      "size": 4067,
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/metrics.py": {
+      "size": 3410,
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/operator.py": {
+      "size": 4782,
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/packets.py": {
+      "size": 2427,
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/pipelines.py": {
+      "size": 7254,
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/records.py": {
+      "size": 1398,
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/runner.py": {
+      "size": 7301,
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+    },
+    "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/solver.py": {
+      "size": 6309,
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/configs/e2_dr_yy_frozen.json": {
+      "size": 1750,
+      "sha256": "cc451a19bf08219ce52455f0e700f314f8bc9677712d4d5c6163ae9af9117d6d"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/gpu_backend/dryy_gpu.py": {
+      "size": 20770,
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/__init__.py": {
+      "size": 223,
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/coefficients.py": {
+      "size": 3368,
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/config.py": {
+      "size": 1080,
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/dr.py": {
+      "size": 11317,
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/geometry.py": {
+      "size": 4995,
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/io.py": {
+      "size": 1246,
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/kernels.py": {
+      "size": 889,
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/metrics.py": {
+      "size": 1507,
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/runner.py": {
+      "size": 10398,
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/yy.py": {
+      "size": 5399,
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+    },
+    "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/yy_common.py": {
+      "size": 5312,
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+    },
+    "nonuniform/E2/frozen/E2/LICENSE": {
+      "size": 1072,
+      "sha256": "6c17757723550b044454f2a985d73abebe3e303f86c8cbd2f6ea0d4579e9e22d"
+    },
+    "nonuniform/E2/frozen/E2/plotting/style.py": {
+      "size": 2925,
+      "sha256": "2622c266f5e9b76f9eda0569d6cb5415f2749a3638b4005ef25d9e31c2ec414c"
+    },
+    "nonuniform/E2/frozen/E2/README.md": {
+      "size": 2193,
+      "sha256": "6e1e47d7235a8e37a32801d762f0c0a14692652cb6e43bac9f234375327f383b"
+    },
+    "nonuniform/E2/frozen/E2/reproduce.py": {
+      "size": 4830,
+      "sha256": "cd762866b5045af28622d8b384ed6100cfead21838ca8c98598d11774f055a68"
+    },
+    "nonuniform/E2/frozen/E2/run_fits.py": {
+      "size": 8370,
+      "sha256": "94c886f5da19d7c9634a45aabaa4fb07a0e5fdb57303e908b829db5b5f863686"
+    },
+    "nonuniform/E2/frozen/ORIGINAL_RELEASE_SOURCE_MANIFEST.json": {
+      "size": 64751,
+      "sha256": "bdd6e72faee98b2fb3d230a9da4bdaf7997bb4d603aed9456c9f99f2ce85fb88"
+    },
+    "nonuniform/E2/native.py": {
+      "size": 1707,
+      "sha256": "f00e7b875154c690c79d418bebfa924f1815311c05d59e5c66a01328b615fe6f"
+    },
+    "nonuniform/E2/parent.py": {
+      "size": 6510,
+      "sha256": "2194dd34fe27eed2fb6a38d4bd346c752422fef44483a9da1d1362ebd6657f54"
+    },
+    "nonuniform/E2/PLAN.json": {
+      "size": 2155,
+      "sha256": "e373aaeb8fc8fce23a01ff9ca089223a748a3b34af9f343ce375077953d467eb"
+    },
+    "nonuniform/E2/PRODUCER_MANIFEST.json": {
+      "size": 17202,
+      "sha256": "260369218c1bd9deae0c5a5e5a99fed1e02222b707e3d7a9a276b04a9c6a6d84"
+    },
+    "nonuniform/E2/README.md": {
+      "size": 849,
+      "sha256": "52964128e8d79a12591442fdc40e484bc124d4f44fa208c04f053109a1ac1403"
+    },
+    "nonuniform/E2/reproduce.py": {
+      "size": 3817,
+      "sha256": "fb466f88c19157914fcd95b656af7d6f22b1b587f7306f266792f0c4307da929"
+    },
+    "nonuniform/E2/requirements.txt": {
+      "size": 228,
+      "sha256": "66ac8d17dc68f4c07f8ad019fd31ac7210697d0c8471a3d6fa04f15f7cf311bd"
+    },
+    "nonuniform/E2/run_queue.py": {
+      "size": 8172,
+      "sha256": "0de8ccdc7cd68a0e27d2a5a86b4aa26c3ddf1655d7e9bf6274017fbb570abfc0"
+    },
+    "nonuniform/E2/sampling.py": {
+      "size": 2411,
+      "sha256": "f6d83751e4fa42dddb5e18e9d150b6073da7fbbbe916a8052263b28e90299378"
+    },
+    "nonuniform/E2/SOURCE_BINDING.json": {
+      "size": 14617,
+      "sha256": "214212469258cf5e693649ee919876aa894e8a7b7089018cc073fad952a53585"
+    },
+    "PAPER_REFERENCE.json": {
+      "size": 612,
+      "sha256": "f3fe5ec9266e56bf250cb6fada9769c1c6c206e16b9ba792358141946dcc6fb7"
+    },
+    "paper_runs/__init__.py": {
+      "size": 80,
+      "sha256": "1c56428936f1e1c94085c99143b8a4644737bf1866803bb3ebf4d18f1f258b71"
+    },
+    "paper_runs/evaluate.py": {
+      "size": 23332,
+      "sha256": "57f50dc4fc5a9b174f176f4ad60c23dc6c618315835e557cd49f859cd49d1c42"
+    },
+    "paper_runs/protocol.py": {
+      "size": 2812,
+      "sha256": "2bec10b0988fdc185a6dfb7533e7902fd4dc72b6a31ad935b3df7afc86e455d0"
+    },
+    "paper_runs/worker.py": {
+      "size": 12665,
+      "sha256": "893946eef685d4a765fcbc6f71e9fffb7d14e46fd8b90ec021f72fe7ad216728"
+    },
+    "README.md": {
+      "size": 8089,
+      "sha256": "01ac7ecd2cbe53a91b5685d9558e467757d260882abdb09286f73aaf1e307c9e"
+    },
+    "README.zh-CN.md": {
+      "size": 2495,
+      "sha256": "7abbc88e8b98cead86410d041c0eece72c05122a8328c687a3d2fcb829737f9b"
+    },
+    "release_contract.py": {
+      "size": 1197,
+      "sha256": "4ea65b9df5995fceb112bab175604dcea7466af092a67039d404b2279eabff82"
+    },
+    "reproduce_all.py": {
+      "size": 134,
+      "sha256": "c0925165071528e0c57723f664a63aedf2c3b0e4dbf2a53cd4649c5ea3417a2f"
+    },
+    "requirements-gpu.txt": {
+      "size": 201,
+      "sha256": "53b3618939497fcb822734ad94b9ebb76577270dc8f8b801841396eb551ce9f1"
+    },
+    "requirements.txt": {
+      "size": 159,
+      "sha256": "a282ffca36306485dfa360b8519a7c9ed82b9cdc295d6d43d774044e584245a1"
+    },
+    "run_paper.py": {
+      "size": 4640,
+      "sha256": "f39db4b7b51379281c9009990582cf44ebfce9c88b3ba8ca6a5c96af9b888dbe"
+    },
+    "smoke_all.py": {
+      "size": 214,
+      "sha256": "dbc5d2889c1733e3a9205d313471942d81a2ee9c061d6ed75586bd446526b338"
+    },
+    "tools/build_manifests.py": {
+      "size": 2373,
+      "sha256": "f6c475320bf30ace97df85cdfa99ce89e8d557c72e4d0bba905b9a7e31824798"
+    },
+    "tools/export_runtime.py": {
+      "size": 1701,
+      "sha256": "5450a65ef039521cee3af468f89c97e321554f36021673ef0fb555752172f86e"
+    },
+    "validate_release.py": {
+      "size": 1083,
+      "sha256": "ca8c148c38240987f50cc47fdd89432d88375e523fc94713eaecce396fc7fe61"
+    },
+    "verify_paper.py": {
+      "size": 4887,
+      "sha256": "861f88820f05f3d66345a5969eaa0291dfbc50150ec3fed9da145dff41803209"
+    }
+  }
+}

@@ -1,75 +1,79 @@
 {
-  "schema": "ARXIV_FINAL_RELEASE_QA_E5_RECOVERED_V2",
+  "schema": "FINAL_PAPER_SOURCE_FOCUSED_RELEASE_QA_V1",
+  "date": "2026-11-10",
   "manuscript_sha256": "bdc7b87ba20118aaf323bbe25d6b6921235e9f18c1c1d0453604c92f60d561be",
-  "final_paper_scope": {
-    "main_figures": 8,
-    "appendix_figures": 18,
-    "logical_experimental_plots": 33,
-    "schematics": 2
+  "clean_cpu_environment": {
+    "python": "3.12.9",
+    "requirements_sha256": "a282ffca36306485dfa360b8519a7c9ed82b9cdc295d6d43d774044e584245a1",
+    "actual_install": true
   },
-  "tests": [
-    {
-      "suite": "tests_root.xml",
-      "tests": 48,
-      "failures": 0,
-      "errors": 0,
-      "skipped": 0
-    },
-    {
-      "suite": "tests_e5.xml",
-      "tests": 13,
-      "failures": 0,
-      "errors": 0,
-      "skipped": 0
-    }
-  ],
-  "tests_passed": 61,
-  "actual_CPU_smoke_commands": 11,
-  "numeric_protocol_checks": 44,
-  "saved_result_replay": {
-    "paper_exports": 66,
-    "exact_byte_matches": 66,
-    "new_fits": false,
-    "E5_finite": "All 60 historical packets and all recorded query metrics reaggregated before selected export replay. An actual raw-metric redraw reproduces the selected PNG byte-for-byte."
+  "tests": {
+    "passed": 9,
+    "failed": 0,
+    "junit_sha256": "f810802d7e7a73d8bcb897c636d9148a96779709e09ee03a0aaeb2f2a00e44e1"
   },
-  "manuscript_graphic_inclusions": {
-    "experimental_plots": 33,
-    "schematics": 2,
-    "source_match": 35
+  "actual_source_only_run": {
+    "profile": "smoke",
+    "tasks": 24,
+    "status": "PASS",
+    "historical_outputs_present": false,
+    "evaluation_sha256": "2400aff010c48746fbce51f9aeaabee5e35c0ec8416b510a97f7ab9d5ac777e2",
+    "tested_runtime_manifest_sha256": "55eab08b090d38555bb5ccbe848c2722899303b099c9f94ee51cc7e13516b2cd",
+    "current_runtime_manifest_sha256": "8917e2e5138d2d6fe44d3fd6962aa68c5e83cc5149cec85bd8a6b2abcd312ff5",
+    "post_run_changes": [
+      "E3/README.md",
+      "E1/ms_stsp/README.md",
+      "E4/README.md",
+      "E5/README.md",
+      "E2/README.md",
+      "E1/README.md",
+      "nonuniform/E1/README.md",
+      "E4/correspondence/README.md",
+      "E1/weight_control/README.md",
+      "nonuniform/E2/README.md"
+    ],
+    "post_run_changes_only_dataset_documentation": true,
+    "executable_config_design_bytes_identical": true,
+    "smoke_geometry_scope": "Circle for population/finite/bandwidth/nonuniform checks; original space curve and constructed circle counterexample for E4; original R4 curve for E5. Full six-geometry production plan not rerun."
   },
-  "visual_review": {
-    "PNG_overview_inspected": 33,
-    "PDF_pages_rendered_and_overviews_inspected": 32,
-    "all_full_pages_in_contact_sheets": true,
-    "layout_changes_made": false
+  "full_format_interface_check": {
+    "logical_plots": 32,
+    "PNG_viewed": 32,
+    "PDF_full_pages_rendered_and_viewed": 32,
+    "evidence": "Summary/rendering interfaces checked using actual historical values, not new full-size fitting.",
+    "counterexample": "Separately computed in actual fresh smoke"
   },
-  "scientific_preservation": {
-    "protected_members": 618,
-    "changed_input_tables_packets": 0
+  "core_scientific_sources_unchanged": 329,
+  "static_essentials": {
+    "missing": [],
+    "warn": [],
+    "ok": [
+      "README",
+      "ENV",
+      "SEED",
+      "ENTRYPOINT",
+      "DATA",
+      "RESULTS_CMD"
+    ]
   },
-  "full_GPU_experiments_rerun": false,
-  "artifact_badge_claim": false,
-  "E5_finite_recovered": {
-    "status": "RECOVERED_AND_DISTRIBUTED",
-    "packets": 60,
-    "archived_estimator_query_outcomes": 61440,
-    "total_query_failures": 0,
-    "selected_median_values_checked": 24,
-    "selected_IQR_boundary_values_checked": 48,
-    "vector_rounding_check": {
-      "status": "MATCH",
-      "median_values": 24,
-      "quartile_boundary_values": 48,
-      "maximum_vector_coordinate_difference": 6.363636373407644e-07,
-      "SVG_coordinate_tolerance": 2e-06,
-      "SVG_sha256": "3ff0fcf24c3036e0435fbfdd3d161ad7e8322c438392a3ee3eb5654f1d57e86b",
-      "interpretation": "All medians and both IQR boundaries match the selected vector figure within SVG serialization rounding."
-    },
-    "reaggregation_audit": "E5/data/finite/REAGGREGATION_AUDIT.json",
-    "raw_metric_PNG_reconstruction_exact": true,
-    "truth_distance_recomputation": false,
-    "original_pilot_and_conditioning_caveats_retained": true
+  "distribution": {
+    "source_and_design_inputs": true,
+    "optional_small_reference_tables": true,
+    "large_historical_outputs": false,
+    "local_original_archives_preserved": true,
+    "git_history_rewritten": false
   },
-  "current_update_scope": "Recover exact original E5 evidence, add tested raw-metric replay and remove the resolved local-data gap; no numerical fitting code, scientific settings or selected figure bytes changed.",
-  "CPU_smoke_note": "The prior 11-command smoke results remain applicable to unchanged fitter sources; this update reran the 48 root tests and 13 E5 tests. Prior nonuniform sampling QA is unchanged."
+  "gpu": {
+    "original_dependency_wheel_metadata_available_on_official_PyPI": true,
+    "linux_tags": [
+      "manylinux2014_x86_64",
+      "manylinux_2_27_x86_64",
+      "manylinux_2_28_x86_64"
+    ],
+    "installation_or_execution_verified_in_this_revision": false,
+    "download_probe": "Official wheel downloads timed out; CPU environment was actually installed and tested. Original GPU environment and gates remain required."
+  },
+  "full_production_tasks_planned": 1356,
+  "full_production_rerun_during_cleanup": false,
+  "artifact_badge_claimed": false
 }

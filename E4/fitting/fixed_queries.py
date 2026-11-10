@@ -87,7 +87,16 @@ def verify_inputs():
         if sha(ROOT/'original'/name)!=digest:raise ValueError('Original scientific source changed: '+name)
     for repeat,row in INPUTS['repeats'].items():
         p=ROOT/'data'/f'repeat_{int(repeat):02d}.npz'
-        if sha(p)!=row['data_file_sha256']:raise ValueError('Frozen observation parent changed')
+        if p.exists():
+            if sha(p)!=row['data_file_sha256']:raise ValueError('Frozen observation parent changed')
+        else:
+            # Large observation archives are not distributed. Check the
+            # original deterministic generator against recorded ARRAY hashes,
+            # rather than manufacturing the old compressed-file hash.
+            _,_,generated=scan.parent_sample(int(repeat),200000)
+            for name in ('theta_sha256','clean_sha256','standard_noise_sha256'):
+                if generated[name]!=row['seed_lineage'][name]:
+                    raise ValueError('Regenerated historical input differs: '+name)
 
 def contract(packet):
     z=FROZEN

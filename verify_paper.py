@@ -1,115 +1,61 @@
-"""Compare archived evidence to the final arxiv_final.pdf manuscript; never launches numerical fits."""
+"""Check final-manuscript protocol/source consistency, not saved-figure replay."""
 import argparse
-import csv
-import hashlib
+from collections import Counter
 import json
-import math
-import sys
 from pathlib import Path
+import sys
 import numpy as np
-ROOT=Path(__file__).resolve().parent
-GEOMETRIES=['circle_r2','sphere2_r3','clifford_torus_r4','sphere3_r4','sphere2_r10','corrugated_torus_r3']
-
-def rows(path):
-    with (ROOT/path).open(encoding='utf-8-sig',newline='') as stream:
-        return list(csv.DictReader(stream))
+from paper_runs.protocol import ROOT,GEOMETRIES,SIGMAS,SIZES,EXPERIMENTS,jobs
 
 def audit():
-    claims=[]
-    def record(label,actual,expected,match):
-        if not match: raise ValueError(f'{label}: {actual!r} != {expected!r}')
-        claims.append(dict(claim=label,observed=actual,paper=expected,status='MATCH'))
-    slopes=rows('E1/data/e1_theory_path_slopes.csv')
-    for geom,expected in [('circle_r2',[2.001,4.004]),('clifford_torus_r4',[2.003,4.008]),('sphere2_r10',[2.002,4.005])]:
-        for estimator,value in zip(('Single','Multi'),expected):
-            cell=next(r for r in slopes if r['method']=='STSP' and r['geometry']==geom and r['estimator']==estimator and r['window']=='all_7')
-            actual=float(cell['slope'])
-            record(f'E1 STSP {geom} {estimator} slope',actual,value,round(actual,3)==value)
-    e2=rows('E2/data/summary.csv')
-    record('E2 complete table rows',len(e2),768,len(e2)==768)
-    record('E2 six geometries',sorted({r['geometry'] for r in e2}),sorted(GEOMETRIES),{r['geometry'] for r in e2}==set(GEOMETRIES))
-    e2vals={}
-    for est,printed in [('Single_h2','1.343e-03'),('Multi','5.243e-05')]:
-        r=next(r for r in e2 if r['method']=='STSP' and r['geometry']=='circle_r2' and float(r['scale'])==500000 and r['estimator']==est and r['metric']=='E_avg')
-        value=float(r['median']);e2vals[est]=value
-        record('E2 circle n500000 '+est+' E_avg',value,printed,format(value,'.3e')==printed)
-    ratio=e2vals['Single_h2']/e2vals['Multi']
-    record('E2 circle improvement factor',ratio,25.6,round(ratio,1)==25.6)
-    e3=rows('E3/data/summary.csv')
-    record('E3 complete table rows',len(e3),6720,len(e3)==6720)
-    protocol=[]
-    for geom,n,nq in zip(GEOMETRIES,[12000,24000,24000,60000,24000,36000],[1024,8192,8192,16384,8192,1024]):
-        cells=[r for r in e3 if r['geometry']==geom]
-        ok=all(int(r['n'])==n and float(r['sigma'])==.015 for r in cells)
-        reverse=[r for r in cells if r['phase']=='rev']
-        ok &= bool(reverse) and all(int(r['reference_count'])==262144 and int(r['query_count'])==nq for r in reverse)
-        ok &= len({float(r['scale']) for r in cells})==28
-        record('E3 '+geom+' n/reverse queries/reference/scales',[n,nq,262144,28],[n,nq,262144,28],ok)
-        protocol.append(dict(geometry=geom,n=n,reverse_queries=nq,reverse_references=262144,scales=28))
-    for r in e3:
-        expected=float(r['query_failure_rate'])<=.01
-        if r['phase']=='main': expected &= int(r['complete_repeats'])>=18
-        if (r['reliable'].lower()=='true')!=expected: raise ValueError('E3 reliability disagreement')
-    if not any(r['method']=='DR' and r['geometry']=='sphere3_r4' and r['phase']=='main' and r['reliable'].lower()=='false' for r in e3):
-        raise ValueError('DR S3 failure evidence missing')
-    e4=rows('E4/correspondence/finite_summary/SUMMARY.csv')
-    cp=next(r for r in e4 if r['method']=='CP')
-    record('E4 CP complete repeats',int(cp['complete_repeats']),10,int(cp['complete_repeats'])==10)
-    record('E4 CP total median seconds',float(cp['total_seconds_median']),25.6,abs(float(cp['total_seconds_median'])-25.6)<.5)
-    for r in e4:
-        if int(r['total_query_failures'])!=0:raise ValueError('E4 query failures changed')
-    controlled=rows('E1/weight_control/analysis/SLOPES.csv')
-    for r in controlled:
-        if r['method']=='naive':record('Figure2 naive '+r['geometry'],float(r['slope_all_7']),2.,abs(float(r['slope_all_7'])-2)<.001)
-    result=json.loads((ROOT/'E4/correspondence/counterexample/RESULT.json').read_bytes())
-    record('E.13 nonunique CP pair',len(result['CP_angles']),2,len(result['CP_angles'])==2 and float(result['CP_g'])<float(result['ENF_g']))
-    record('E.17/E.18 complete nonuniform table',len(rows('nonuniform/E2/data/NONUNIFORM_SUMMARY.csv')),768,len(rows('nonuniform/E2/data/NONUNIFORM_SUMMARY.csv'))==768)
-    packets=[json.loads(p.read_bytes())['result'] for p in sorted((ROOT/'E5/data/population').glob('e5_population_*.json'))]
-    record('E5 population packets',len(packets),7,len(packets)==7)
-    if any(p['query_count']!=64 or p['retained_count']!=64 or p['failure_count'] or p['kappas']!=[1.25,5.,8.] for p in packets):
-        raise ValueError('Population protocol differs')
-    selected=sorted([p for p in packets if p['sigma'] in {.008,.01,.0125,.016}],key=lambda p:p['sigma'])
-    if len(selected)!=4: raise ValueError('Missing E5 slope-window packets')
-    expected={'Single':[2.001,1.995,2.013],'Scalar-A':[2.038,3.993,2.038],'Scalar-C':[1.992,1.992,4.005],'Directional':[4.002,3.993,4.005]}
-    for method,values in expected.items():
-        for metric,value in zip(('geometric_max','axial_normal_max','complementary_normal_max'),values):
-            # Recompute each maximum from the 64 per-query errors, then regress.
-            component={'geometric_max':'geometric','axial_normal_max':'axial_normal','complementary_normal_max':'complementary_normal'}[metric]
-            maxima=[]
-            for p in selected:
-                actual=max(q['metrics'][method][component] for q in p['query_rows'])
-                if actual!=p['summaries'][method][metric]: raise ValueError('E5 summary not equal to query maximum')
-                maxima.append(actual)
-            slope=float(np.polyfit(np.log([p['sigma'] for p in selected]),np.log(maxima),1)[0])
-            record(f'Table2 {method} {metric} slope',slope,value,round(slope,3)==value)
-    provenance=json.loads((ROOT/'E5/data/PROVENANCE.json').read_bytes())
-    for name,sha in provenance['reference_files'].items():
-        if hashlib.sha256((ROOT/'E5/paper_figures'/name).read_bytes()).hexdigest()!=sha:
-            raise ValueError('E5 selected export changed')
-    availability=json.loads((ROOT/'E5/data/finite_packet_availability.json').read_bytes())
-    if availability['status']!='RECOVERED_AND_DISTRIBUTED' or len(availability['expected_files'])!=60:
-        raise ValueError('Historical finite packets must be complete and distributed')
-    sys.path.insert(0,str(ROOT/'E5/scripts'))
-    from verify_historical_finite import audit as audit_finite
-    finite=audit_finite()
-    record('E5 finite recovered packets',finite['packets'],60,finite['packets']==60)
-    record('E5 Figure8 medians from all recorded query metrics',finite['selected_plot_check']['median_values'],24,finite['selected_plot_check']['status']=='MATCH')
-    record('E5 Figure8 IQR boundaries from all repeats',finite['selected_plot_check']['quartile_boundary_values'],48,finite['selected_plot_check']['status']=='MATCH')
-    return dict(schema='ARXIV_FINAL_RESULT_CONSISTENCY_V2',status='MATCH_ARCHIVED_RESULTS',
-        matched_claims=len(claims),claims=claims,E3_protocol=protocol,
-        E5_finite=dict(packets=finite['packets'],query_outcomes=finite['archived_estimator_query_outcomes'],
-            total_query_failures=finite['total_query_failures'],selected_plot_check=finite['selected_plot_check']),
-        unresolved=[],
-        manuscript_note='Local CP scope, controlled initialization and original pilot-selection caveats remain disclosed',
-        evidence='archived-result consistency; not an independent full fitting rerun')
+    checks=[]
+    def check(label,condition):
+        if not condition:raise ValueError('Paper protocol mismatch: '+label)
+        checks.append(label)
+    paper=json.loads((ROOT/'PAPER_REFERENCE.json').read_bytes())
+    check('final manuscript',paper['manuscript_pdf']['sha256']=='bdc7b87ba20118aaf323bbe25d6b6921235e9f18c1c1d0453604c92f60d561be')
+    for suffix in ('all_e1','six_manifolds'):
+        cfg=json.loads((ROOT/'E1'/('theory_path_population_'+suffix)/'config.json').read_bytes())
+        check('E1 bandwidth/noise '+suffix,tuple(sorted(cfg['sigma_grid']))==SIGMAS and cfg['bandwidth_path']['a1']==3 and cfg['bandwidth_path']['a2']==6 and cfg['kernel_power']==6)
+        check('E1 Newton '+suffix,(cfg['solver']['max_iterations'],cfg['solver']['max_backtracks'],cfg['solver']['projected_residual_tolerance'],cfg['solver']['full_residual_tolerance'])==(24,16,2e-12,2e-10))
+        yy=json.loads((ROOT/'E1'/('theory_path_population_yy_'+suffix)/'config.json').read_bytes())
+        check('E1 YY '+suffix,yy['yy_path']['kappas']==[1.25,5.,8.] and yy['yy_path']['c0']==3 and yy['yy_path']['c2']==12)
+    from paper_runs.worker import load
+    e3=load(Path('E3/science_support.py'),'protocol_e3_design')
+    check('E3 sample sizes',tuple(e3.N[g] for g in GEOMETRIES)==(12000,24000,24000,60000,24000,36000))
+    check('E3 reverse queries',tuple(e3.REVERSE_QUERIES[g] for g in GEOMETRIES)==(1024,8192,8192,16384,8192,1024))
+    check('E3 all original scales',len(e3.GRID)==28 and (e3.GRID[0],e3.GRID[-1])==(.06,5.))
+    check('E3 original YY baselines',e3.GROUPS['YY']==('Single_0p4r1','Single_r1','Single_1p6r1','Multi'))
+    for g in GEOMETRIES:
+        q,reference=e3.assets(g,'rev')
+        check('E3 full reverse set '+g,len(q)==e3.REVERSE_QUERIES[g] and reference.shape==(262144,q.shape[1]) and np.isfinite(reference).all())
+    check('E2 nested sample sizes',SIZES==(2000,5000,10000,20000,50000,100000,200000,500000))
+    e4=json.loads((ROOT/'E4/correspondence/frozen/E4/fitting/original/config.json').read_bytes())
+    check('E4 design',(e4['sigma'],e4['h1'],e4['h2'],e4['sample_size'],e4['query_count'])==(.06,.12,.24,200000,32))
+    check('E4 simultaneous residual tests',(e4['matching']['projected_residual_tolerance'],e4['matching']['full_residual_tolerance'])==(1e-11,1e-9))
+    population=json.loads((ROOT/'E5/config/population.json').read_bytes())
+    finite=json.loads((ROOT/'E5/config/finite_sample.json').read_bytes())
+    check('E5 population',population['query_count']==64 and population['kappas']==[1.25,5.,8.] and population['slope_window']==[.008,.01,.0125,.016])
+    check('E5 finite',finite['sample_sizes']==[240000,480000,960000] and finite['repeats']==20 and finite['query_count']==256 and finite['c0']==3 and finite['kappas']==[5.,6.,12.])
+    check('E5 evidence not upgraded',finite['formal_evidence'] is False and finite['legacy_failed_gate']['pass'] is False and 'selection_source' in finite['provenance'])
+    expected={'E1':336,'E2':360,'E3':378,'E4':11,'E5':67,'nonuniform_E1':84,'nonuniform_E2':120}
+    check('complete paper job grid',dict(Counter(j['experiment'] for j in jobs(EXPERIMENTS)))==expected)
+    nonuniform=jobs(('nonuniform_E2',))
+    check('nonuniform E2 only paper method',{j['method'] for j in nonuniform}=={'STSP'})
+    check('no independent E7/no withdrawn E2 overlay',not (ROOT/'E7').exists() and not (ROOT/'E2/population_reference').exists())
+    return dict(schema='FINAL_PAPER_PROTOCOL_AUDIT_V1',status='MATCH_PROTOCOL',checks=checks,
+        planned_tasks=sum(expected.values()),full_numerical_rerun=False,
+        evidence='Source/configuration/design-input consistency only; new numerical results require run_paper.py.')
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output',type=Path)
-    args=parser.parse_args();report=audit()
-    if args.output:
-        if args.output.exists(): raise FileExistsError('Use a fresh report path')
-        args.output.write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--run',type=Path);a=p.parse_args();report=audit()
+    if a.run:
+        run=a.run.resolve();plan=json.loads((run/'PLAN.json').read_bytes());result=json.loads((run/'EVALUATION.json').read_bytes())
+        from release_contract import run_source_digest
+        if plan['source_manifest_sha256']!=run_source_digest(verify=True) or result['source_manifest_sha256']!=plan['source_manifest_sha256']:raise ValueError('Run/source identity mismatch')
+        if result['status']!='PASS':raise ValueError('Run did not pass its declared evaluation')
+        report['run']=dict(profile=plan['profile'],completed_tasks=result['tasks'],paper_evidence=plan['profile']=='paper',
+            scope='declared selected experiment plan, not an independent replication or badge')
     print(json.dumps(report,indent=2))
 
-if __name__=='__main__': main()
+if __name__=='__main__':main()

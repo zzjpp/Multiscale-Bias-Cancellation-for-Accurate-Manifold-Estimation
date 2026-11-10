@@ -172,6 +172,7 @@ def finite_figure(rows: list[dict], output: Path, config: dict) -> None:
                bbox_to_anchor=(0.5, 1.055))
     base = output / "figure_e5_finite_sample_dual_metrics"
     fig.savefig(base.with_suffix(".pdf"), bbox_inches="tight")
+    fig.savefig(base.with_suffix(".svg"), bbox_inches="tight")
     fig.savefig(base.with_suffix(".png"), dpi=300, bbox_inches="tight")
     plt.close(fig)
 

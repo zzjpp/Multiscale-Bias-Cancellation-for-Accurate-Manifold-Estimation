@@ -61,8 +61,10 @@ def packet_path(key, sigma, resolution):
     tag = 'six' if key == 'corrugated_torus_r3' else 'five'
     return ROOT/'frozen'/tag/'results/packets'/f'stsp_{key}_sigma_{sigma:.6f}_{resolution}.json'
 
-def evaluate(key, sigma, resolution):
-    packet = json.loads(packet_path(key,sigma,resolution).read_bytes())
+def evaluate(key, sigma, resolution, packet=None):
+    # An explicit packet supports a new run without reading archived fits.
+    if packet is None:
+        packet = json.loads(packet_path(key,sigma,resolution).read_bytes())
     geometry = GEO.GEOMETRIES[key]
     if packet['failures'] or packet['failure_count'] or packet['single_failure_count']:
         raise ArithmeticError('Saved failures present; preserve and report, never drop queries')

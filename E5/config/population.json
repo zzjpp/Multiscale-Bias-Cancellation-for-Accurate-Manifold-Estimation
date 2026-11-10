@@ -1,17 +1,53 @@
 {
   "schema": "E5_POPULATION_PAPER_FIGURE_22_V1",
-  "paper_figure": 22,
+  "paper_figure": "E.14",
   "formal_evidence": true,
-  "geometry": {"name": "nonconstant_curve_R4", "d": 1, "D": 4, "q": 3, "m": 2},
-  "kernel": {"p": 6, "longitudinal_profile": "exact_Eq_58_C3_plateau"},
-  "sigma_grid": [0.03, 0.025, 0.02, 0.016, 0.0125, 0.01, 0.008],
-  "kappas": [1.25, 5.0, 8.0],
+  "geometry": {
+    "name": "nonconstant_curve_R4",
+    "d": 1,
+    "D": 4,
+    "q": 3,
+    "m": 2
+  },
+  "kernel": {
+    "p": 6,
+    "longitudinal_profile": "exact_Eq_58_C3_plateau"
+  },
+  "sigma_grid": [
+    0.03,
+    0.025,
+    0.02,
+    0.016,
+    0.0125,
+    0.01,
+    0.008
+  ],
+  "kappas": [
+    1.25,
+    5.0,
+    8.0
+  ],
   "single_kappa": 5.0,
   "c0": 3.0,
   "c2": 12.0,
   "query_count": 64,
-  "numerical": {"latent_count": 4096, "radial_order": 160, "longitudinal_order": 160},
-  "slope_window": [0.008, 0.01, 0.0125, 0.016],
-  "methods": ["Single", "Scalar-A", "Scalar-C", "Directional"],
-  "failure_policy": "retain every declared query and failure; never repair, crop, or enlarge support"
+  "numerical": {
+    "latent_count": 4096,
+    "radial_order": 160,
+    "longitudinal_order": 160
+  },
+  "slope_window": [
+    0.008,
+    0.01,
+    0.0125,
+    0.016
+  ],
+  "methods": [
+    "Single",
+    "Scalar-A",
+    "Scalar-C",
+    "Directional"
+  ],
+  "failure_policy": "retain every declared query and failure; never repair, crop, or enlarge support",
+  "legacy_paper_figure": 22
 }

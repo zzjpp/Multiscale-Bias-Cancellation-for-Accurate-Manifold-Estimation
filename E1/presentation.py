@@ -167,10 +167,11 @@ def six_panel(rows,method,metric,folder,nonuniform=False):
         target=NON/'outputs'/('nonuniform_average' if metric=='average' else 'nonuniform')
     return save(fig,folder,stem,target,dict(caption=caption(method,metric,nonuniform),method=method,metric=metric,nonuniform=nonuniform,x_direction='descending',x_spacing='original equally spaced sigma positions',axis_limits=limits,series=records,slope_text_curve_collisions=False))
 
-def circle(folder):
+def circle(folder, rows=None):
     configure_style()
-    p=E1/'data/circle_normalized_values.csv';SOURCES[str(p)]=sha(p)
-    rows=list(csv.DictReader(p.open(encoding='utf8')))
+    if rows is None:
+        p=E1/'data/circle_normalized_values.csv';SOURCES[str(p)]=sha(p)
+        rows=list(csv.DictReader(p.open(encoding='utf8')))
     if len(rows)!=21:raise ValueError('Full original normalized-circle grid required')
     fig,axes=plt.subplots(1,3,figsize=(14.2,4.1));records=[]
     for panel,(axis,method) in enumerate(zip(axes,['STSP','DR','YY'])):

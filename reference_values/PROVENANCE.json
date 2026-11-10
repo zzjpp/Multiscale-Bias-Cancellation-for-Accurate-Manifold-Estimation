@@ -1,0 +1,50 @@
+[
+  {
+    "path": "reference_values/E1/data/e1_theory_path_errors.csv",
+    "original": "E1/data/e1_theory_path_errors.csv",
+    "sha256": "c5888bc9f685f98c664b35998a89151aa623d1357a0a860e9359988360d268c9",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/E1/data/yy_theory_path_errors.csv",
+    "original": "E1/data/yy_theory_path_errors.csv",
+    "sha256": "939cd0efcb17c285f85a73af5f04a3e62f4829772737ec74aeea16098baceaed",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/E1/weight_control/analysis/VALUES.csv",
+    "original": "E1/weight_control/analysis/VALUES.csv",
+    "sha256": "d6e626c93ad4a36697e7af1192f6b36d72d18eb8e6b320376ca27e6c835b14d1",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/E1/weight_control/analysis/SLOPES.csv",
+    "original": "E1/weight_control/analysis/SLOPES.csv",
+    "sha256": "81687772268dcb48acdf839317f7855a73892208cd0d6ad0e632f63764b45420",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/E2/data/summary.csv",
+    "original": "E2/data/summary.csv",
+    "sha256": "d99e138fd713ca1e73134270d39b1efc17e10b47088497c5e3c655a476aacd68",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/E3/data/summary.csv",
+    "original": "E3/data/summary.csv",
+    "sha256": "9324da7982e22a8a76d694fadf848e8a31be22d005c79877e6589a4cf9e3b12c",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/E4/correspondence/finite_summary/SUMMARY.csv",
+    "original": "E4/correspondence/finite_summary/SUMMARY.csv",
+    "sha256": "f4eb0cf259b0cbb21c44de4f16028e0e2c65322ce37b3257e4e9fb0e1c025d9c",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  },
+  {
+    "path": "reference_values/nonuniform/E2/data/NONUNIFORM_SUMMARY.csv",
+    "original": "nonuniform/E2/data/NONUNIFORM_SUMMARY.csv",
+    "sha256": "36855784d7d81f17e25af91149d1176d14bde5ce89a452fcb74f02fe89a060c6",
+    "purpose": "Optional historical reference values; never read by run_paper.py"
+  }
+]

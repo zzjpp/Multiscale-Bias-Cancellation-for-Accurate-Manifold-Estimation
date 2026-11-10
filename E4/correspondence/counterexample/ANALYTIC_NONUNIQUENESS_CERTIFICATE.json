@@ -1,7 +1,0 @@
-{
-  "status": "PASS",
-  "argument": "At theta=pi/N, sin(x)<=x and pi^2<10 give g(pi/N)-g(0)<=the stated negative rational bound. Since g is even and g(pi)>g(0), compactness implies at least two symmetric global minimizers, irrespective of the numerical stationary-point census.",
-  "upper_bound_exact": "-251937601/953674316406250",
-  "upper_bound_float": -2.64175721906176e-07,
-  "ENF_unique_scope": "Outward radial ray in the local fitted-neighborhood; not the entire normal line"
-}

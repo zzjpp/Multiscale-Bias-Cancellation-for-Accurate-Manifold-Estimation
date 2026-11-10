@@ -9,7 +9,9 @@
         "illustrations/Figure1/normal_correspondence.pdf"
       ],
       "replay": "Compile illustrations/Figure1/normal_correspondence.tex with TikZ",
-      "pdf_page": 3
+      "pdf_page": 3,
+      "legacy_replay": "Compile illustrations/Figure1/normal_correspondence.tex with TikZ",
+      "reproduce": "Compile illustrations/Figure1/normal_correspondence.tex with TikZ"
     },
     {
       "figure": "Figure 2",
@@ -18,8 +20,10 @@
         "E1/weight_control/outputs/e1_stsp_population_infinity_with_ms_stsp.png",
         "E1/weight_control/outputs/e1_stsp_population_infinity_with_ms_stsp.pdf"
       ],
-      "replay": "python E1/weight_control/render_and_report.py --output NEW --figure-only",
-      "pdf_page": 4
+      "replay": "python run_paper.py --experiment E1 --output NEW",
+      "pdf_page": 4,
+      "legacy_replay": "python E1/weight_control/render_and_report.py --output NEW --figure-only",
+      "reproduce": "python run_paper.py --experiment E1 --output NEW"
     },
     {
       "figure": "Figure 3",
@@ -29,7 +33,9 @@
         "illustrations/Figure3/yy_normal_decomposition.pdf"
       ],
       "replay": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ",
-      "pdf_page": 24
+      "pdf_page": 24,
+      "legacy_replay": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ",
+      "reproduce": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ"
     },
     {
       "figure": "Figure 4",
@@ -38,8 +44,10 @@
         "E1/figures/E1_circle_r2_normalized_E_infinity_STSP_DR_YY.png",
         "E1/figures/E1_circle_normalized_E_infinity_STSP_DR_YY_clear.pdf"
       ],
-      "replay": "python E1/reproduce.py --output NEW",
-      "pdf_page": 30
+      "replay": "python run_paper.py --experiment E1 --output NEW",
+      "pdf_page": 30,
+      "legacy_replay": "python E1/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E1 --output NEW"
     },
     {
       "figure": "Figure 5",
@@ -48,8 +56,10 @@
         "E2/figures/E2_STSP_E_infty.png",
         "E2/figures/E2_STSP_E_infty.pdf"
       ],
-      "replay": "python E2/reproduce.py --output NEW",
-      "pdf_page": 31
+      "replay": "python run_paper.py --experiment E2 --output NEW",
+      "pdf_page": 31,
+      "legacy_replay": "python E2/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E2 --output NEW"
     },
     {
       "figure": "Figure 6",
@@ -58,8 +68,10 @@
         "E3/paper_figures/figure_e3_stsp_all_single_scales_max_error.png",
         "E3/paper_figures/figure_e3_stsp_all_single_scales_max_error.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 32
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 32,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure 7",
@@ -68,8 +80,10 @@
         "E4/correspondence/figures/e4_nn_density_accuracy.png",
         "E4/correspondence/figures/e4_nn_density_accuracy.pdf"
       ],
-      "replay": "python E4/reproduce.py --output NEW",
-      "pdf_page": 33
+      "replay": "python run_paper.py --experiment E4 --output NEW",
+      "pdf_page": 33,
+      "legacy_replay": "python E4/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E4 --output NEW"
     },
     {
       "figure": "Figure 8",
@@ -78,8 +92,10 @@
         "E5/paper_figures/figure_e5_finite_sample_dual_metrics.png",
         "E5/paper_figures/figure_e5_finite_sample_dual_metrics.svg"
       ],
-      "replay": "Selected-export replay; see E5/README.md",
-      "pdf_page": 34
+      "replay": "python run_paper.py --experiment E5 --output NEW",
+      "pdf_page": 34,
+      "legacy_replay": "Selected-export replay; see E5/README.md",
+      "reproduce": "python run_paper.py --experiment E5 --output NEW"
     },
     {
       "figure": "Figure E.1",
@@ -88,8 +104,10 @@
         "E1/figures/E1_STSP_average_sigma.png",
         "E1/figures/E1_STSP_average_sigma.pdf"
       ],
-      "replay": "python E1/reproduce.py --output NEW",
-      "pdf_page": 97
+      "replay": "python run_paper.py --experiment E1 --output NEW",
+      "pdf_page": 97,
+      "legacy_replay": "python E1/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E1 --output NEW"
     },
     {
       "figure": "Figure E.2",
@@ -100,8 +118,10 @@
         "E1/figures/E1_DR_average_sigma.png",
         "E1/figures/E1_DR_average_sigma.pdf"
       ],
-      "replay": "python E1/reproduce.py --output NEW",
-      "pdf_page": 98
+      "replay": "python run_paper.py --experiment E1 --output NEW",
+      "pdf_page": 98,
+      "legacy_replay": "python E1/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E1 --output NEW"
     },
     {
       "figure": "Figure E.3",
@@ -112,8 +132,10 @@
         "E1/figures/E1_YY_average_sigma.png",
         "E1/figures/E1_YY_average_sigma.pdf"
       ],
-      "replay": "python E1/reproduce.py --output NEW",
-      "pdf_page": 99
+      "replay": "python run_paper.py --experiment E1 --output NEW",
+      "pdf_page": 99,
+      "legacy_replay": "python E1/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E1 --output NEW"
     },
     {
       "figure": "Figure E.4",
@@ -122,8 +144,10 @@
         "E2/figures/E2_STSP_E_avg.png",
         "E2/figures/E2_STSP_E_avg.pdf"
       ],
-      "replay": "python E2/reproduce.py --output NEW",
-      "pdf_page": 100
+      "replay": "python run_paper.py --experiment E2 --output NEW",
+      "pdf_page": 100,
+      "legacy_replay": "python E2/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E2 --output NEW"
     },
     {
       "figure": "Figure E.5",
@@ -134,8 +158,10 @@
         "E2/figures/E2_DR_E_avg.png",
         "E2/figures/E2_DR_E_avg.pdf"
       ],
-      "replay": "python E2/reproduce.py --output NEW",
-      "pdf_page": 101
+      "replay": "python run_paper.py --experiment E2 --output NEW",
+      "pdf_page": 101,
+      "legacy_replay": "python E2/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E2 --output NEW"
     },
     {
       "figure": "Figure E.6",
@@ -146,8 +172,10 @@
         "E2/figures/E2_YY_E_avg.png",
         "E2/figures/E2_YY_E_avg.pdf"
       ],
-      "replay": "python E2/reproduce.py --output NEW",
-      "pdf_page": 102
+      "replay": "python run_paper.py --experiment E2 --output NEW",
+      "pdf_page": 102,
+      "legacy_replay": "python E2/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E2 --output NEW"
     },
     {
       "figure": "Figure E.7",
@@ -156,8 +184,10 @@
         "E3/paper_figures/figure_e3_stsp_all_single_scales_average_error.png",
         "E3/paper_figures/figure_e3_stsp_all_single_scales_average_error.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 104
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 104,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure E.8",
@@ -168,8 +198,10 @@
         "E3/paper_figures/figure_e3_dr_all_single_scales_max_error.png",
         "E3/paper_figures/figure_e3_dr_all_single_scales_max_error.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 105
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 105,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure E.9",
@@ -180,8 +212,10 @@
         "E3/paper_figures/figure_e3_yy_all_single_scales_max_error.png",
         "E3/paper_figures/figure_e3_yy_all_single_scales_max_error.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 107
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 107,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure E.10",
@@ -192,8 +226,10 @@
         "E3/paper_figures/figure_e3_stsp_E_reverse.png",
         "E3/paper_figures/figure_e3_stsp_E_reverse.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 109
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 109,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure E.11",
@@ -204,8 +240,10 @@
         "E3/paper_figures/figure_e3_dr_E_reverse.png",
         "E3/paper_figures/figure_e3_dr_E_reverse.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 110
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 110,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure E.12",
@@ -216,8 +254,10 @@
         "E3/paper_figures/figure_e3_yy_E_reverse.png",
         "E3/paper_figures/figure_e3_yy_E_reverse.pdf"
       ],
-      "replay": "python E3/reproduce.py --output NEW",
-      "pdf_page": 111
+      "replay": "python run_paper.py --experiment E3 --output NEW",
+      "pdf_page": 111,
+      "legacy_replay": "python E3/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E3 --output NEW"
     },
     {
       "figure": "Figure E.13",
@@ -226,8 +266,10 @@
         "E4/correspondence/counterexample/P1_oscillatory_CP_nonuniqueness.png",
         "E4/correspondence/counterexample/P1_oscillatory_CP_nonuniqueness.pdf"
       ],
-      "replay": "python E4/correspondence/replay_counterexample.py --output NEW",
-      "pdf_page": 114
+      "replay": "python run_paper.py --experiment E4 --output NEW",
+      "pdf_page": 114,
+      "legacy_replay": "python E4/correspondence/replay_counterexample.py --output NEW",
+      "reproduce": "python run_paper.py --experiment E4 --output NEW"
     },
     {
       "figure": "Figure E.14",
@@ -236,8 +278,10 @@
         "E5/paper_figures/figure_e5_population_directional_ablation.png",
         "E5/paper_figures/e5_population_directional_ablation.pdf"
       ],
-      "replay": "Selected-export replay; see E5/README.md",
-      "pdf_page": 115
+      "replay": "python run_paper.py --experiment E5 --output NEW",
+      "pdf_page": 115,
+      "legacy_replay": "Selected-export replay; see E5/README.md",
+      "reproduce": "python run_paper.py --experiment E5 --output NEW"
     },
     {
       "figure": "Figure E.15",
@@ -246,8 +290,10 @@
         "nonuniform/E1/outputs/nonuniform/e1_stsp_nonuniform_density_infinity.png",
         "nonuniform/E1/outputs/nonuniform/e1_stsp_nonuniform_density_infinity.pdf"
       ],
-      "replay": "python nonuniform/E1/reproduce.py --output NEW",
-      "pdf_page": 116
+      "replay": "python run_paper.py --experiment nonuniform_E1 --output NEW",
+      "pdf_page": 116,
+      "legacy_replay": "python nonuniform/E1/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment nonuniform_E1 --output NEW"
     },
     {
       "figure": "Figure E.16",
@@ -256,8 +302,10 @@
         "nonuniform/E1/outputs/nonuniform_average/e1_stsp_nonuniform_density_average.png",
         "nonuniform/E1/outputs/nonuniform_average/e1_stsp_nonuniform_density_average.pdf"
       ],
-      "replay": "python nonuniform/E1/reproduce.py --output NEW",
-      "pdf_page": 116
+      "replay": "python run_paper.py --experiment nonuniform_E1 --output NEW",
+      "pdf_page": 116,
+      "legacy_replay": "python nonuniform/E1/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment nonuniform_E1 --output NEW"
     },
     {
       "figure": "Figure E.17",
@@ -266,8 +314,10 @@
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_avg.png",
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_avg.pdf"
       ],
-      "replay": "python nonuniform/E2/reproduce.py --output NEW",
-      "pdf_page": 117
+      "replay": "python run_paper.py --experiment nonuniform_E2 --output NEW",
+      "pdf_page": 117,
+      "legacy_replay": "python nonuniform/E2/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment nonuniform_E2 --output NEW"
     },
     {
       "figure": "Figure E.18",
@@ -276,11 +326,14 @@
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_infty.png",
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_infty.pdf"
       ],
-      "replay": "python nonuniform/E2/reproduce.py --output NEW",
-      "pdf_page": 118
+      "replay": "python run_paper.py --experiment nonuniform_E2 --output NEW",
+      "pdf_page": 118,
+      "legacy_replay": "python nonuniform/E2/reproduce.py --output NEW",
+      "reproduce": "python run_paper.py --experiment nonuniform_E2 --output NEW"
     }
   ],
   "manuscript_sha256": "bdc7b87ba20118aaf323bbe25d6b6921235e9f18c1c1d0453604c92f60d561be",
   "logical_experimental_plots": 33,
-  "experimental_exports": 66
+  "experimental_exports": 66,
+  "distribution_note": "Original manuscript filenames are identifiers, not bundled historical exports. Use the fresh calculation entrypoint."
 }

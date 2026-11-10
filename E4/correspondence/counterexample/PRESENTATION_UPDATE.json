@@ -1,5 +1,0 @@
-{
-  "change": "Inset moved upward to avoid overlapping its x-label with main axes. No numerical results changed.",
-  "original_numeric_source": "engineering/counter_layout_before/counterexample.py",
-  "current_plot_source_sha256": "9a9cdfb5640ce0a63862f29c34f3e39c319e90ecb9e6fa6f76087d5af81fe105"
-}

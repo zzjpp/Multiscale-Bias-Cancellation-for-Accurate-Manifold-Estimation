@@ -1,9 +1,0 @@
-{
-  "status": "ACTUAL_TEN_REPEAT_DATA",
-  "finite_summary_sha256": "f4eb0cf259b0cbb21c44de4f16028e0e2c65322ce37b3257e4e9fb0e1c025d9c",
-  "renderer_sha256": "4c9bbcccd7d01607e29fd029b96eafce85136f2afcc1a2c1d87cb44d3efca188",
-  "exports": {
-    "e4_nn_density_accuracy.pdf": "108c31a9fa6f896be437b68854bcac27729e0489dd247c2752ba44734a89445a",
-    "e4_nn_density_accuracy.png": "e31b8d852e49577d0585b66ade4f2996c43abedffb769ecac17f74698d640812"
-  }
-}

@@ -32,21 +32,23 @@ def read_csv(path):return list(csv.DictReader(Path(path).open(encoding='utf8')))
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True)
     p.add_argument('--figure-only',action='store_true')
+    p.add_argument('--analysis',type=Path,help='Explicit fresh analysis directory; never read archived fits')
     p.add_argument('--overwrite',action='store_true',help='Replace the figure exports in an existing output directory; requires --figure-only.')
     a=p.parse_args()
     if a.overwrite and not a.figure_only:p.error('--overwrite requires --figure-only')
     dest=a.output.resolve()
     if dest.exists() and not a.overwrite:raise ValueError('Use a fresh output directory or --figure-only --overwrite')
-    audit=json.loads((ROOT/'analysis/NUMERICAL_CHECK.json').read_bytes())
-    precision=json.loads((ROOT/'analysis/INDEPENDENT_PRECISION.json').read_bytes())
+    analysis=a.analysis or ROOT/'analysis'
+    audit=json.loads((analysis/'NUMERICAL_CHECK.json').read_bytes())
+    precision=json.loads((analysis/'INDEPENDENT_PRECISION.json').read_bytes())
     assert audit['status']==precision['status']=='PASS'
-    rows=read_csv(ROOT/'analysis/VALUES.csv');slopes=read_csv(ROOT/'analysis/SLOPES.csv')
-    constants=read_csv(ROOT/'analysis/CIRCLE_CONSTANT.csv')
+    rows=read_csv(analysis/'VALUES.csv');slopes=read_csv(analysis/'SLOPES.csv')
+    constants=read_csv(analysis/'CIRCLE_CONSTANT.csv')
     assert len(rows)==42 and len(slopes)==24 and len(constants)==7
     sigmas=[.008,.01,.0125,.016,.02,.025,.03]
     allvalues=[float(r[m+'_E_infinity']) for r in rows for m in METHODS]
     assert np.isfinite(allvalues).all() and min(allvalues)>0
-    dest.mkdir(exist_ok=a.overwrite)
+    dest.mkdir(parents=True,exist_ok=a.overwrite)
     plt.rcParams.update({'font.family':'STIXGeneral','mathtext.fontset':'stix',
                          'font.size':14,'axes.titlesize':15.5,'xtick.labelsize':12.5,
                          'ytick.labelsize':13,'legend.fontsize':13,'pdf.fonttype':42,'ps.fonttype':42})
@@ -109,6 +111,8 @@ def main():
     fig.savefig(dest/(stem+'.pdf'),bbox_inches='tight',metadata={'CreationDate':None,'ModDate':None})
     plt.close(fig)
     caption=r'''\caption{Population maximum errors under a controlled STSP weight comparison. In the legend, Successive tangent-space projection (STSP), Multiscale successive tangent-space projection (MS-STSP), Squared extrapolation (SQ), and Geometric bias cancellation (GBC) denote Single, Original MS-STSP, Naive, and GBC-STSP (the proposed method), respectively. All three controlled estimators use exactly the same archived smooth-kernel STSP fits and estimated-normal-fiber correspondence at $h_1=3\sigma$ and $h_2=6\sigma$. Single is the matched coarse-scale point $Z_{h_2}$; Naive uses $(4/3,-1/3)$; Proposed uses the exact noise-dependent STSP bias coefficients. Original MS-STSP is the previously computed population adaptation with a hard-ball kernel, its own fixed-reference iteration and radii $\{3,4.5,6\}\sigma$; its measurements are reused without refitting. Axes are logarithmic, with noise level decreasing from left to right. The four unboxed slopes $p_{\mathrm{STSP}}$, $p_{\mathrm{MS\!-\!STSP}}$, $p_{\mathrm{sq}}$, and $p_{\mathrm{GBC\!-\!STSP}}$ are fitted over all seven displayed noise levels and correspond to the four legend entries, respectively. Errors use the original E1 queries: one canonical query on each homogeneous example and 128 fixed meridional queries on the corrugated torus. The plotted maximum is over these finite query sets, not a certified continuous supremum.}'''
+    if a.analysis:
+        caption=caption.replace('archived smooth-kernel STSP fits','newly computed smooth-kernel STSP fits').replace('previously computed population adaptation','population adaptation').replace('its measurements are reused without refitting','all of its measurements are newly computed')
     (dest/'figure_caption.tex').write_text(caption+'\n',encoding='utf8')
     if not a.figure_only:
         table_rows=[]
@@ -149,7 +153,7 @@ To isolate the role of the bias coefficient, we reuse exactly the same smooth-ke
         (dest/'section_5_1_1_discussion.tex').write_text(paragraph,encoding='utf8')
         make_table_pdf(dest,table_rows,constants)
         write_report(dest,rows,slopes,constants,audit,precision)
-    manifest=dict(input_csv_sha256=sha(ROOT/'analysis/VALUES.csv'),renderer_sha256=sha(__file__),
+    manifest=dict(input_csv_sha256=sha(analysis/'VALUES.csv'),renderer_sha256=sha(__file__),
         method_order=METHODS,display_method_order=[METHODS[i] for i in DISPLAY_INDICES],
         legend_labels=[LEGEND[i] for i in DISPLAY_INDICES],
         log_x=True,log_y=True,x_direction='descending',bars=False,slope_boxes=False,

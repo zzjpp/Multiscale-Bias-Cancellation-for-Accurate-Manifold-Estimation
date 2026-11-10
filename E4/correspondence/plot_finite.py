@@ -19,9 +19,10 @@ LABELS={'NN':'Discrete NN','ENF':'ENF','CP':'Continuous CP','Oracle':'Oracle'}
 COUNTS=[32,36,40,44,48,52,56,60,64,80,96,112,128,256,512]
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
-def rows():
-    audit=json.loads((ROOT/'finite_summary/AUDIT.json').read_bytes());assert audit['status']=='PASS'
-    source=ROOT/'finite_summary/SUMMARY.csv';assert sha(source)==audit['summary_sha256']
+def rows(folder=None):
+    folder=folder or ROOT/'finite_summary'
+    audit=json.loads((folder/'AUDIT.json').read_bytes());assert audit['status']=='PASS'
+    source=folder/'SUMMARY.csv';assert sha(source)==audit['summary_sha256']
     return list(csv.DictReader(source.open(encoding='utf8')))
 
 def series(table,method,key):
@@ -55,10 +56,11 @@ def save(fig,out,stem):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ROOT/'figures')
     p.add_argument('--main-only',action='store_true',help='Render only the three-panel main figure')
+    p.add_argument('--summary',type=Path,help='Explicit fresh evaluated summary directory')
     a=p.parse_args()
     out=a.output.resolve()
     if out.exists():raise ValueError('Use a fresh isolated figure directory')
-    out.mkdir();table=rows()
+    out.mkdir(parents=True);table=rows(a.summary)
     plt.rcParams.update({'font.size':13,'axes.titlesize':14,'legend.fontsize':13,'pdf.fonttype':42,'ps.fonttype':42})
     fig,axes=plt.subplots(1,3,figsize=(15.0,4.7),sharex=True)
     panel(axes[0],table,'E_infinity',r'Final error $E_\infty$')
@@ -70,7 +72,7 @@ def main():
     fig.supxlabel(r'NN candidate count $M_{\mathrm{match}}$',y=.01,fontsize=16)
     fig.subplots_adjust(top=.75,left=.066,right=.99,bottom=.24,wspace=.32)
     save(fig,out,'e4_nn_density_accuracy')
-    manifest=dict(status='ACTUAL_TEN_REPEAT_DATA',finite_summary_sha256=sha(ROOT/'finite_summary/SUMMARY.csv'),
+    manifest=dict(status='ACTUAL_TEN_REPEAT_DATA',finite_summary_sha256=sha((a.summary or ROOT/'finite_summary')/'SUMMARY.csv'),
         renderer_sha256=sha(__file__),exports={p.name:sha(p) for p in out.iterdir() if p.suffix in ['.png','.pdf']})
     (out/'FINITE_PLOT_MANIFEST.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')
     print(out)

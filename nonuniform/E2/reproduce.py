@@ -12,12 +12,15 @@ from matplotlib.ticker import FixedLocator,FuncFormatter,NullLocator
 ROOT=Path(__file__).resolve().parent
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--table',type=Path,help='Fresh STSP-only evaluated table (288 rows); no DR/YY run required')
+    a=p.parse_args()
     out=a.output.resolve()
     if out.exists():raise FileExistsError('Use a fresh output directory')
     spec=importlib.util.spec_from_file_location('original_e2_table_and_style',ROOT.parent.parent/'E2/reproduce.py')
     original=importlib.util.module_from_spec(spec);spec.loader.exec_module(original)
-    table=ROOT/'data/NONUNIFORM_SUMMARY.csv';rows=original.read_rows(table);style=original.style
+    table=a.table or ROOT/'data/NONUNIFORM_SUMMARY.csv'
+    rows=original.read_rows(table,methods=('STSP',) if a.table else None);style=original.style
     out.mkdir(parents=True)
     plt.rcParams.update({'font.family':'DejaVu Sans','font.size':14,'axes.titlesize':16,'axes.labelsize':14,'xtick.labelsize':13,'ytick.labelsize':13,'axes.linewidth':.9,'pdf.fonttype':42,'ps.fonttype':42,'savefig.facecolor':'white'})
     exported=[]
@@ -44,6 +47,6 @@ def main():
             f=out/f'E2_nonuniform_STSP_{metric}.{ext}'
             fig.savefig(f,**({'dpi':400} if ext=='png' else {'metadata':{'CreationDate':None,'ModDate':None}}));exported.append(f.name)
         plt.close(fig)
-    (out/'MANIFEST.json').write_text(json.dumps(dict(rows=768,selected_method='STSP',figures=2,exports=exported,summary_sha256=hashlib.sha256(table.read_bytes()).hexdigest(),new_fits=False),indent=2),encoding='utf8')
+    (out/'MANIFEST.json').write_text(json.dumps(dict(rows=len(rows),selected_method='STSP',figures=2,exports=exported,summary_sha256=hashlib.sha256(table.read_bytes()).hexdigest(),new_fits=bool(a.table)),indent=2),encoding='utf8')
     print(json.dumps(dict(figures=2,exports=4)))
 if __name__=='__main__':main()

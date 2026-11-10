@@ -1,54 +1,84 @@
 # Beyond Curvature Bias: Higher-Order Manifold Fitting via Multiscale Cancellation
 
-Code, selected numerical results, and figure replay for the **final combined manuscript `arxiv_final.pdf`** (128 pages; Figures 1–8 and E.1–E.18). Its exact PDF SHA-256 is recorded in `PAPER_REFERENCE.json`; the manuscript PDF itself is not uploaded.
+Source for the experiments in the final **arxiv_final.pdf** (128 pages; SHA-256 in `PAPER_REFERENCE.json`). The supported entry point performs **new input generation, fitting, evaluation and plotting**. It does not copy old figures or load historical fitted points.
 
-## Reproduce the results
-
-Use Python 3.12 in a separate environment:
+## Install and check
 
 ```bash
+git clone --depth 1 https://github.com/zzjpp/Multiscale-Bias-Cancellation-for-Accurate-Manifold-Estimation.git
+cd Multiscale-Bias-Cancellation-for-Accurate-Manifold-Estimation
+python -m venv .venv
+# Linux/macOS: source .venv/bin/activate
+# Windows PowerShell: .venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python validate_release.py
 python verify_paper.py
-python -m pytest -q tests --basetemp ./tmp/pytest
-python reproduce_all.py --output ./replay_output
+python -m pytest -q tests
 ```
 
-The output directory must not already exist. The command renders **33 logical experimental plots / 66 PNG and vector exports**, including all 12 E3 panels-of-six figures. Two schematic illustrations have separate editable sources under `illustrations/`. See [every main/supplement figure and its exact source](docs/FIGURE_MAP.md).
+The tested CPU environment is Python 3.12.9 with the exact versions in `requirements.txt`. Use a separate environment for the original Linux GPU dependencies in `requirements-gpu.txt`. GPU mode retains the original CPU/GPU equivalence gates and hardware checks; it never silently falls back to CPU. E4 and E5 retain their original CPU implementations even when other experiments use GPU.
 
-This is saved-result replay, not an independent rerun of the large numerical experiments. Numerical values, IQR bands, unreliable markers, undefined cells, all 28 E3 scales and the original failure rules are retained. Font or Matplotlib differences can change rendered bytes without changing numerical values. E1 noise axes decrease from 0.03 to 0.008; fitted slopes use the original numerical sigma values.
+## Run from scratch
 
-## Experiment directories
+Start with the reduced **actual fitting → packet → evaluation → figure** check:
 
-| Directory | Current paper content | New numerical calculations |
-|---|---|---|
-| `E1/` | Supplement E.1–E.3 and normalized circle Figure 4 | Original population packages and `E1/smoke.py` |
-| `E1/weight_control/` | Figure 2: shared-fit Single, naive h-squared, coefficient-based Proposed and original MS-STSP | Shared-point postprocessing; independent coefficient/precision checks |
-| `E1/ms_stsp/` | Hard-ball MS-STSP population operator, fixed-reference iteration and OLS intercept | `study.py cell --help` |
-| `E2/` | Figure 5 and E.4–E.6: finite sample size | Original `run_fits.py` / `evaluate_fits.py` |
-| `E3/` | Figure 6 and E.7–E.12: bandwidth and reverse coverage | Original `run_fits.py` / `evaluate_fits.py` |
-| `E4/correspondence/` | Figure 7 and E.13: local continuous CP benchmark and oscillatory counterexample | `finite_experiment.py`, `counterexample.py` |
-| `E5/` | Figure 8, E.14 and Table 2: directional ablation | Original E5 raw-run entrypoints |
-| `nonuniform/E1/` | E.15–E.16: nonuniform population STSP | `run_population.py --help` |
-| `nonuniform/E2/` | E.17–E.18: nonuniform finite-sample STSP | Original `parent.py` / `aggregate.py` |
+```bash
+python run_paper.py --profile smoke --backend cpu --output ./smoke_run --workers 2
+```
 
-`E7` and standalone obsolete studies are excluded. Corrugated torus remains the sixth geometry, not a separate E7 experiment. E2 has **no population reference-line overlay**. Unselected normalized triptychs, P1 population scaling and additional P1 figure/report exports are archived outside this repository. Required frozen solver/input/audit dependencies remain. Larger raw archives, connection helpers, SSH material, live queue state, logs, caches, and unrelated experiments are excluded. The nonuniform-E2 producer scheduler is retained as authentication-free source required by its original producer contract; no active queue is included.
+It runs 24 tasks covering E1–E5 and both nonuniform studies, generates new observations/roots, preserves failed queries, and produces seven diagnostic PNG/PDF pairs plus the counterexample figure. **It changes sample/query/quadrature budgets and is not evidence for the paper's errors or convergence rates.**
 
-## Numerical and geometric scope
+Inspect the full plan without starting expensive computations:
 
-- STSP/DR matching uses compact centered reference-scale PCA; their original kernels and solvers are unchanged. No true normal is substituted into matching.
-- Figure 2's three controlled curves share the same archived fits and ENF correspondence. Naive uses `(4/3,-1/3)`. The hard-ball MS-STSP curve is a separate algorithm and not the naive controlled estimator.
-- E3 sample sizes in panel order are `12000/24000/24000/60000/24000/36000`; reverse query counts are `1024/8192/8192/16384/8192/1024`, with **262144 references for every geometry**. YY uses the selected `(0.4,1,1.6) r1` version; the 0.8 experiment is not the paper version.
-- E4 CP continuously searches an empirical-PCA local implicit STSP sheet. It is not discrete NN and is not a certified global projection over every empirical zero-set component. Common query/branch initialization retains disclosed geometry assistance. Approximately 25.6 seconds is the measured batch median for this implementation, not a universal CP complexity bound.
-- YY retains its controlled geometry-based preliminary manifold and original data-axis construction. Cross-method random streams are not claimed to be paired.
-- Nonuniform densities are relative to surface measure, with amplitude 0.5 and max/min ratio 3. Finite samples use rejection of clean area-uniform proposals **before** Gaussian noise. Original query grids and failures are retained; default paper replay selects STSP only in this supplementary study.
+```bash
+python run_paper.py --experiment all --backend cpu --output ./paper_run --plan-only
+```
 
-## Data availability and precision
+Then execute that exact plan:
 
-Selected tables, population packets, all E5 finite packets and CP measurements are distributed. Historical E2/E3 and nonuniform-E2 full raw archives are too large for this repository; exact generation and aggregation code is included. **All 60 original E5 finite packets are now included**, after recovery from the moved BeeGFS project path and verification against their historical hashes. Their per-query metrics reproduce all selected Figure 8 medians and IQR boundaries. `python E5/scripts/replay_historical_finite.py --output NEW` redraws the finite figure from those metrics; the recovered data were not refitted. Observation arrays and truth distances are not independently reconstructed by this check. See [data availability](docs/DATA_AVAILABILITY.md).
+```bash
+python run_paper.py --experiment all --backend cpu --output ./paper_run --resume --workers 1
+```
 
-GPU production used its original Linux Python/CuPy environment; use `requirements-gpu.txt` separately from the plotting requirements. Full calculations are expensive. Reduced smoke tests check interfaces only and are not production quadrature/accuracy gates. No selected production result was refitted or tuned during cleanup; reduced CPU smoke checks are reported separately.
+Or select an experiment into a fresh directory:
 
-## Attribution and licensing
+```bash
+python run_paper.py --experiment E2 --backend cpu --output ./e2_run --workers 4
+python run_paper.py --experiment E3 --backend gpu --output ./e3_run --workers 2
+```
 
-Existing notices are retained; see `LICENSES.md`. E1-derived components retain their original all-rights-reserved status. A public GitHub repository does not change those rights. No new blanket license is assigned. Historical source-binding records may contain original compute paths as provenance labels; execution resolves distributed inputs relative to the package, and no authentication material is shipped.
+`--workers` controls separate interpreters with one BLAS/OpenMP thread each. Use it conservatively. The GPU path requires the original visible device/environment; population GPU tasks include fresh same-input CPU equivalence checks, adding substantial CPU cost. CPU mode explicitly runs the original full-size CPU fitters. The full plan has **1,356 tasks**, many containing multiple scales and hundreds of queries; it is expensive and has no promised runtime.
+
+Existing output directories require `--resume` and an identical source-bound plan. Valid completed tasks are reused; recorded engineering failures are **not automatically retried**. Scientific failures remain in packets and summaries. Add `--evaluate-only` to evaluate a complete new run separately. Sources and publication directories are never overwritten.
+
+## Paper experiment mapping
+
+| Selection | New calculations and selected figures |
+|---|---|
+| `E1` | STSP/DR/YY population, shared-fit naive/Proposed control, original MS-STSP; Figures 2, 4 and E.1–E.3 |
+| `E2` | Three methods, six geometries, nested sizes, 20 repeats; Figure 5 and E.4–E.6 |
+| `E3` | Three methods, six geometries, main/reverse, 28 scales; twelve plots, Figure 6 and E.7–E.12 |
+| `E4` | Common-query ENF/local CP/Oracle/NN, constructed counterexample; Figure 7 and E.13 |
+| `E5` | Population/finite directional ablation; Figure 8, E.14 and Table 2 |
+| `nonuniform_E1` | Nonuniform population STSP; E.15–E.16 |
+| `nonuniform_E2` | Nonuniform finite-sample STSP only; E.17–E.18. Unreported DR/YY runs are not required. |
+
+Figures 1 and 3 are schematics with editable sources under `illustrations/`. `docs/FIGURE_MAP.json` records original manuscript filenames/pages, not a claim that historical exports are distributed. New figures are under `RUN/figures/`, `RUN/evaluation/E5/figures/`, and `RUN/counterexample/`. Summaries and precision diagnostics are under `RUN/evaluation/`; `EVALUATION.json` records completion or failure. Use `run_paper.py` as the public orchestration interface; original experiment modules are retained as versioned scientific libraries, and their historical deployment/replay CLIs are not the release workflow.
+
+## Scientific contracts
+
+- E1 keeps the seven sigma levels, original deterministic integration, smooth STSP kernel, noise-dependent coefficients and PCA-based ENF. Controlled Single/naive/Proposed share the **same** two fitted points. MS-STSP has its separate original hard-ball operator/iteration and is not the naive control. Integration refinement, root and weight checks precede paper rendering.
+- E2 keeps sigma 0.005, bandwidths 0.1/0.2, 144 queries, eight nested prefixes of a 500000-point parent and 20 repeats. The withdrawn population overlay is absent.
+- E3 order is circle, S2/R3, Clifford torus, S3/R4, S2/R10, corrugated torus. Sample sizes: `12000/24000/24000/60000/24000/36000`; reverse queries: `1024/8192/8192/16384/8192/1024`; **262144 references on all six geometries**. YY uses `(0.4,1,1.6) r1`. All scales, independent baselines, failures, NaN breaks and unreliable markers remain; green backgrounds are absent. Reverse distances use each complete fitted cloud, never pooled shard errors.
+- STSP/DR matching uses compact centered reference-scale PCA; true normals are blocked. Original DR internal Gaussian fitting and failure adapters remain. YY's original geometry-assisted preliminary manifold and data-axis construction remain disclosed.
+- E4 regenerates common queries on the empirical fine STSP branch with the original geometry-assisted initialization and seeds. CP searches a continuous **local empirical implicit sheet**, not discrete candidates or a certified global projection over all zero-set components. Fresh timings include common reference construction and target-curve/search costs; they are not a promise to reproduce the historical approximately 26-second timing on other hardware.
+- E5 keeps actual `c0=3`, the pilot-selected finite scale triple, the historical rejected condition-number gate and original evidence class. Cleanup does not upgrade that evidence. Directional errors use the original base point and the projected actual first-stage axis.
+- Nonuniform densities are relative to surface measure, amplitude 0.5 (max/min ratio 3). Clean area-uniform proposals are rejected **before** Gaussian noise with the original separate acceptance stream. Definitions are in `nonuniform/E1/config.json` and `nonuniform/E2/sampling.py`.
+
+## Inputs, outputs and validation limits
+
+No external training data or private server path is needed. Observations are generated from distributed geometry/seed definitions. E3's exact registered query/reference NPY coordinates are included as fixed design inputs shared across methods, not fitted outputs. `RUN_SOURCE_MANIFEST.json` binds only source/configuration/design inputs. The runtime was also tested in a separate copy containing **no historical numerical outputs**.
+
+Large historical packets, duplicate observation arrays, queue logs and old figure exports are excluded from this revision. Small optional tables under `reference_values/` are **never read by the fresh estimator pipeline**. Older Git commits retain their history; use `--depth 1` to avoid downloading it. Private local scientific archives were preserved during cleanup.
+
+Release checks cover clean installation, protocol consistency and reduced real end-to-end runs. They do **not** claim an independent rerun of the entire 1,356-task production study during packaging. Numerical diagnostics are not certified bounds; finite query maxima are not continuous suprema; finite-range slopes are not asymptotic proofs. Hardware/library differences may affect floating-point values, classifications near thresholds, and timing. Existing notices are retained in `LICENSES.md` and source; no new blanket license or artifact badge is claimed.

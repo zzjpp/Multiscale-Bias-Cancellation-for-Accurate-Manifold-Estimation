@@ -13,9 +13,10 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.ticker import FixedLocator,FuncFormatter,NullLocator
 
-def read_rows(table=None):
+def read_rows(table=None,methods=None):
     with (table or ROOT/'data/summary.csv').open(encoding='utf-8-sig',newline='') as f: rows=list(csv.DictReader(f))
-    expected={(m,g,e,t,n) for m in style.METHODS for g,_ in style.GEOMETRIES
+    methods=style.METHODS if methods is None else methods
+    expected={(m,g,e,t,n) for m in methods for g,_ in style.GEOMETRIES
               for e in (('Single','Multi') if m=='YY' else ('Single_h1','Single_h2','Multi'))
               for t in style.METRICS for n in style.N}
     seen=set()
@@ -28,7 +29,7 @@ def read_rows(table=None):
         if int(r['query_count_per_repeat'])!=144: raise ValueError('E2 query budget changed')
         reliable=int(r['complete_repeats'])>=18 and float(r['query_failure_rate'])<=.01
         if (r['reliable']=='True')!=reliable: raise ValueError('Original E2 reliability rule changed')
-    if seen!=expected or len(rows)!=768: raise ValueError('Complete six-manifold table required')
+    if seen!=expected or len(rows)!=len(expected): raise ValueError('Complete selected-method six-manifold table required')
     return rows
 
 def main():

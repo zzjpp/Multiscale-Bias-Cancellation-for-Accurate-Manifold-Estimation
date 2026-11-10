@@ -1,11 +1,13 @@
-# Final-manuscript release checks — E5 recovery update, 2026-11-10
+# Release QA: final paper source-focused distribution
 
-- All 60 historical E5 finite packets are now distributed. Their exact sizes/SHA-256 values match the October 7 migration record and the byte-verified server recovery. The prior local-data gap is resolved.
-- Reaggregation uses all 61,440 recorded estimator/query outcomes: 60 packets × 256 queries × four methods, with zero recorded query failures. All 24 medians and 48 quartile-boundary values match the actual selected Figure 8 SVG within its six-decimal coordinate serialization.
-- An actual fresh PNG/SVG redraw from the original metrics was run with the unchanged original postprocessor. Its PNG exactly matches the selected paper PNG. SVG metadata/IDs need not be byte-identical; vector data paths are checked independently. The reconstructed PNG was visually inspected.
-- 61 current tests passed: 48 root tests and 13 E5 tests, including rejection of missing packets, changed bytes and incorrect median/IQR values. Prior nonuniform sampling QA and the prior 11-command reduced CPU smoke remain applicable to unchanged numerical sources.
-- 44 saved numerical/protocol checks pass with no unresolved E5 raw-packet gap. This is archived-result verification, not independent refitting or recomputation of truth distances from fitted coordinates.
-- Full saved-result replay was rerun and all 66 selected exports remain byte-identical. The final paper still contains Figures 1–8 and E.1–E.18, using 33 experimental plots and two schematics. Their previous inclusion/visual checks remain applicable because the selected graphics did not change.
-- Kernels, initialization, seed rules, sample/query/reference counts, tolerances, weights and failure policies were not changed. The original E5 pilot-selection history, declared/applied-c0 distinction and historical conditioning-gate caveat remain disclosed.
-
-No full production experiment was rerun. The recovered packets store original query metrics and input digests; they do not provide every noisy observation or fitted coordinate. No artifact-badge claim is made.
+- Authority: final `arxiv_final.pdf`, 128 pages; checksum in `PAPER_REFERENCE.json`.
+- New public entrypoint: `run_paper.py` (new inputs → fitting → saved packets → evaluation → figures).
+- Clean Python 3.12.9 CPU environment was actually installed from pinned requirements.
+- Nine protocol/failure/custody regressions passed. The full manuscript plan contains 1,356 tasks.
+- The actual source-only copy completed 24 reduced tasks across all seven experiment selections. It contained no historical numerical outputs. Executable/configuration/design files in the submitted revision match that tested copy byte-for-byte; ten module README files subsequently clarified dataset instructions.
+- The new full-format aggregation/rendering interfaces were also exercised on actual historical values: 32 PNG plots and 32 corresponding rendered PDF pages were viewed. The constructed counterexample was computed afresh in the smoke pipeline. This interface check is not a new production fit or a claim of repeated whole-study science validation.
+- 329 core scientific source files retain exactly their prior released bytes. E5 config changes only update figure-number metadata, retaining original numbers under legacy fields.
+- Large historical packets/duplicate observation arrays/old exports were preserved privately and removed from the current Git tree. Original licenses remain. E3 exact query/reference coordinates remain as required design inputs; small reference tables are optional and excluded from new fitting inputs.
+- All six static reproducibility essentials are OK in the source-only export. This is an engineering checklist, not a formal artifact badge.
+- GPU wheel names were confirmed through official PyPI metadata. A combined download probe timed out; neither a fresh GPU installation nor a full production GPU rerun is claimed. Original same-input CPU/GPU gates and environment requirements remain enforced.
+- Full production numerical reproduction was not rerun during release cleanup. Population accuracy checks, failure accounting, geometry-assisted initialization, local-CP scope, finite-query maxima and E5 pilot provenance retain their disclosed limitations.
