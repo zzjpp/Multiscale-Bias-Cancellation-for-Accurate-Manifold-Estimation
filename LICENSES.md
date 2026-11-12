@@ -1,11 +1,9 @@
-# Existing license boundaries
+# MIT license
 
-- E1: its original `E1/LICENSE` reserves all rights. The preparation work does
-  not grant an additional redistribution license.
-- E2–E5: the existing MIT notice is retained. E4/E5 notices were copied from
-  their own directories; E2/E3 previously declared MIT and use the same
-  pre-existing project MIT notice retained in E5. No new copyright holder or
-  license was selected during cleanup.
+The repository code is distributed under the MIT License; see the root `LICENSE`.
 
-There is intentionally no root license that silently relicenses E1. GitHub publication does not change the existing license boundaries. This cleanup preserves the existing notices without selecting a new
-repository-wide license.
+- E1 uses MIT, copyright (c) 2026 The Authors. On 2026-11-12 the repository owner explicitly authorized replacing its previous all-rights-reserved notice with MIT.
+- E2–E5 retain their existing MIT license files and contributor copyright notices unchanged.
+- Derived nonuniform-experiment implementations retain the applicable original notices. Existing attribution in source files is preserved.
+
+Historical source-binding/checksum records describe earlier snapshots. They do not override the current root and component MIT license texts. This licensing update does not alter fitting code, numerical settings, experimental data, or reported validation scope.

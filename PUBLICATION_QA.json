@@ -19,7 +19,6 @@
     "historical_outputs_present": false,
     "evaluation_sha256": "2400aff010c48746fbce51f9aeaabee5e35c0ec8416b510a97f7ab9d5ac777e2",
     "tested_runtime_manifest_sha256": "55eab08b090d38555bb5ccbe848c2722899303b099c9f94ee51cc7e13516b2cd",
-    "current_runtime_manifest_sha256": "8917e2e5138d2d6fe44d3fd6962aa68c5e83cc5149cec85bd8a6b2abcd312ff5",
     "post_run_changes": [
       "E3/README.md",
       "E1/ms_stsp/README.md",
@@ -34,7 +33,8 @@
     ],
     "post_run_changes_only_dataset_documentation": true,
     "executable_config_design_bytes_identical": true,
-    "smoke_geometry_scope": "Circle for population/finite/bandwidth/nonuniform checks; original space curve and constructed circle counterexample for E4; original R4 curve for E5. Full six-geometry production plan not rerun."
+    "smoke_geometry_scope": "Circle for population/finite/bandwidth/nonuniform checks; original space curve and constructed circle counterexample for E4; original R4 curve for E5. Full six-geometry production plan not rerun.",
+    "release_20261110_runtime_manifest_sha256": "8917e2e5138d2d6fe44d3fd6962aa68c5e83cc5149cec85bd8a6b2abcd312ff5"
   },
   "full_format_interface_check": {
     "logical_plots": 32,
@@ -75,5 +75,14 @@
   },
   "full_production_tasks_planned": 1356,
   "full_production_rerun_during_cleanup": false,
-  "artifact_badge_claimed": false
+  "artifact_badge_claimed": false,
+  "license_update": {
+    "date": "2026-11-12",
+    "license": "MIT",
+    "owner_explicitly_authorized": true,
+    "E1_previous_restriction_replaced": true,
+    "existing_E2_E5_notices_unchanged": true,
+    "scientific_code_configuration_data_changed": false,
+    "new_numerical_validation_claimed": false
+  }
 }

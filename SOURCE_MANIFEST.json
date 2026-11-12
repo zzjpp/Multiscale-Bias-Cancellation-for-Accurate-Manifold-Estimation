@@ -35,12 +35,12 @@
       "sha256": "51c79101f35538545c4d7bfebf28c6b5c6d5b6df63b1e36f2aa1046f1c3eb82a"
     },
     "docs/RELEASE_QA.md": {
-      "size": 2252,
-      "sha256": "c4c4def0b0653a5ce7b5ff3c94cb7a731eb1d87ba32060d7e0032007330e2236"
+      "size": 2709,
+      "sha256": "0acdfefbae8b49c6623f3762a891fa4b7c9d6d3094868ee57fdca08da4ccbd52"
     },
     "docs/REPRODUCIBILITY.md": {
-      "size": 1797,
-      "sha256": "dd0c029ca30c0a2324cf18c506be9fd5990aa47ddc59d0881f360acd129756a9"
+      "size": 1920,
+      "sha256": "02ad21633d156c9c40224de62793cc2ff511f631cd7667931594d26b841006e3"
     },
     "docs/SCIENTIFIC_PRESERVATION.json": {
       "size": 55264,
@@ -51,8 +51,8 @@
       "sha256": "7191282cc60b63217245eb6cfd715cd625dc93cc7267121bccbc40e9b757042e"
     },
     "E1/LICENSE": {
-      "size": 304,
-      "sha256": "f7a87c9c0957670b5afc40caa8f7d9a8c4041e9590640eecbe44c7473ccc87e5"
+      "size": 1068,
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
     },
     "E1/ms_stsp/config.json": {
       "size": 2108,
@@ -1618,9 +1618,13 @@
       "size": 168,
       "sha256": "3cab8e922925d99c31f5e578187737050b540c2929e81139665a86f661c52a49"
     },
+    "LICENSE": {
+      "size": 1068,
+      "sha256": "9f1abe28a25b5f6f95c58a81a647de3fa72ff6388d228c59bddd079255709989"
+    },
     "LICENSES.md": {
-      "size": 668,
-      "sha256": "97231e8884ea69b13a20592c52635fccdd5546ca3b227798f7ee606315f388d1"
+      "size": 768,
+      "sha256": "65124cdeb9894ffecfe76dcc5d43c179d3516cf53e7dce84ef1fc374cdcaa8d7"
     },
     "nonuniform/E1/config.json": {
       "size": 6317,
@@ -2119,16 +2123,16 @@
       "sha256": "893946eef685d4a765fcbc6f71e9fffb7d14e46fd8b90ec021f72fe7ad216728"
     },
     "PUBLICATION_QA.json": {
-      "size": 2996,
-      "sha256": "cf75320c8a46db8f3c4eb8304a0dd621724983e1852ceb365e4369fc839bf8dc"
+      "size": 3325,
+      "sha256": "62de063a9d238887f0b44d582023fd3923d2d98a4f475748390e7ff7df02cb1f"
     },
     "README.md": {
-      "size": 8089,
-      "sha256": "01ac7ecd2cbe53a91b5685d9558e467757d260882abdb09286f73aaf1e307c9e"
+      "size": 8228,
+      "sha256": "ef441a2524ebb4a484a28b964ef8fb73fcf7460e355ddb1067199d03278338f8"
     },
     "README.zh-CN.md": {
-      "size": 2495,
-      "sha256": "7abbc88e8b98cead86410d041c0eece72c05122a8328c687a3d2fcb829737f9b"
+      "size": 2628,
+      "sha256": "9aad33203aa92adc2bdf9ae1e42a2347225eff6a68c03997ccccd3620eeb904c"
     },
     "reference_values/E1/data/e1_theory_path_errors.csv": {
       "size": 14424,
@@ -2187,8 +2191,8 @@
       "sha256": "f39db4b7b51379281c9009990582cf44ebfce9c88b3ba8ca6a5c96af9b888dbe"
     },
     "RUN_SOURCE_MANIFEST.json": {
-      "size": 86899,
-      "sha256": "8917e2e5138d2d6fe44d3fd6962aa68c5e83cc5149cec85bd8a6b2abcd312ff5"
+      "size": 87031,
+      "sha256": "ae073b15977d82539e040b4fdb711d078649c6141bb72944fef9fbd88c7bcc60"
     },
     "smoke_all.py": {
       "size": 214,
