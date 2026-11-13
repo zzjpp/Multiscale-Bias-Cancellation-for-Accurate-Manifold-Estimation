@@ -5,1320 +5,1650 @@
   "files": [
     {
       "path": "E3/science_support.py",
-      "sha256": "52c776ac8486a764fd4c987a738e6d71ef88e438747d5c4e4b86421ff64a6fc8"
+      "sha256": "52c776ac8486a764fd4c987a738e6d71ef88e438747d5c4e4b86421ff64a6fc8",
+      "current_path": "experiments/bandwidth_robustness/science_support.py"
     },
     {
       "path": "E3/scientific.py",
-      "sha256": "6630410950af1faedeec489a9d0c9e78faffb281836189e19a36e2b9a2de5dd3"
+      "sha256": "6630410950af1faedeec489a9d0c9e78faffb281836189e19a36e2b9a2de5dd3",
+      "current_path": "experiments/bandwidth_robustness/scientific.py"
     },
     {
       "path": "E1/ms_stsp/fast_gpu.py",
-      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b"
+      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b",
+      "current_path": "experiments/population_verification/ms_stsp/fast_gpu.py"
     },
     {
       "path": "E1/ms_stsp/study.py",
-      "sha256": "200bdacd2d68a6e7a8910faa302b05f0845c1762ca6737b96117543128de6864"
+      "sha256": "200bdacd2d68a6e7a8910faa302b05f0845c1762ca6737b96117543128de6864",
+      "current_path": "experiments/population_verification/ms_stsp/study.py"
     },
     {
       "path": "E1/ms_stsp/frozen/e1_theory_path/geometry.py",
-      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81",
+      "current_path": "experiments/population_verification/ms_stsp/frozen/e1_theory_path/geometry.py"
     },
     {
       "path": "E1/ms_stsp/frozen/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/population_verification/ms_stsp/frozen/e1_theory_path/gpu_population.py"
     },
     {
       "path": "E1/ms_stsp/frozen/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/population_verification/ms_stsp/frozen/e1_theory_path/population.py"
     },
     {
       "path": "E1/ms_stsp/frozen/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/population_verification/ms_stsp/frozen/e1_theory_path/__init__.py"
     },
     {
       "path": "E1/src/e1_simulation/plot_sigma_path.py",
-      "sha256": "a820833e8e138080af6673fe1bfe23c4f7e5833df998b3c799194d284380d349"
+      "sha256": "a820833e8e138080af6673fe1bfe23c4f7e5833df998b3c799194d284380d349",
+      "current_path": "experiments/population_verification/src/e1_simulation/plot_sigma_path.py"
     },
     {
       "path": "E1/src/e1_simulation/__init__.py",
-      "sha256": "55e823b3a4ec922a8508c02f50b5eeb207b97ba6a7489d20c8a252d45a0f93b5"
+      "sha256": "55e823b3a4ec922a8508c02f50b5eeb207b97ba6a7489d20c8a252d45a0f93b5",
+      "current_path": "experiments/population_verification/src/e1_simulation/__init__.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/coefficients.py",
-      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/coefficients.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/experiment.py",
-      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/experiment.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/geometry.py",
-      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/geometry.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/gpu_experiment.py",
-      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/gpu_experiment.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/gpu_population.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/plotting.py",
-      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/plotting.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/population.py"
     },
     {
       "path": "E1/theory_path_population_all_e1/src/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/population_verification/theory_path_population_all_e1/src/e1_theory_path/__init__.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/coefficients.py",
-      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/coefficients.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/experiment.py",
-      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/experiment.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/geometry.py",
-      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/geometry.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/gpu_experiment.py",
-      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/gpu_experiment.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/gpu_population.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/plotting.py",
-      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d"
+      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/plotting.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/population.py"
     },
     {
       "path": "E1/theory_path_population_six_manifolds/src/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/population_verification/theory_path_population_six_manifolds/src/e1_theory_path/__init__.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/aggregate.py",
-      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18"
+      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/aggregate.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/coefficients.py",
-      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747"
+      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/coefficients.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/experiment.py",
-      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f"
+      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/experiment.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/geometry.py",
-      "sha256": "f4765ddd458f86b5fcec999f625d5c96a0168e90fed0655d7a5d0b433269a92c"
+      "sha256": "f4765ddd458f86b5fcec999f625d5c96a0168e90fed0655d7a5d0b433269a92c",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/geometry.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_moments.py",
-      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78"
+      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_moments.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_population.py",
-      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836"
+      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_population.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_runner.py",
-      "sha256": "4b3bfc9aff446ad5693f525fb5e320ab2eacc0875e2b10eed7e1d8c2383f56f9"
+      "sha256": "4b3bfc9aff446ad5693f525fb5e320ab2eacc0875e2b10eed7e1d8c2383f56f9",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/gpu_runner.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/moments.py",
-      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29"
+      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/moments.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/plotting.py",
-      "sha256": "511653f6c250a9ffcede717d3cfd3eb3edbe3c673e1266b22598e3e0b3b3b706"
+      "sha256": "511653f6c250a9ffcede717d3cfd3eb3edbe3c673e1266b22598e3e0b3b3b706",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/plotting.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/population.py",
-      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367"
+      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/population.py"
     },
     {
       "path": "E1/theory_path_population_yy_all_e1/src/e1_yy_path/__init__.py",
-      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b"
+      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b",
+      "current_path": "experiments/population_verification/theory_path_population_yy_all_e1/src/e1_yy_path/__init__.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/aggregate.py",
-      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18"
+      "sha256": "b93b90508a160cc2642e77912e8ce27ad0d55919818ccf131265d8b920d44b18",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/aggregate.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/coefficients.py",
-      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747"
+      "sha256": "f1d4a4443efe85a07d0b30863a55d6aa84998a0704d61fe67c7d486874f80747",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/coefficients.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/experiment.py",
-      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f"
+      "sha256": "9204e117afd558a0b2df9bb97103f403d1c03b469023007e5606d00ab77c3f7f",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/experiment.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/geometry.py",
-      "sha256": "added7d04709d052e90706c41d160f84b32b98ff7b567ec48179fb1a0be12157"
+      "sha256": "added7d04709d052e90706c41d160f84b32b98ff7b567ec48179fb1a0be12157",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/geometry.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_moments.py",
-      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78"
+      "sha256": "c9e1828ea32469bc4d77b210977307922383f911041aff783780b12474613c78",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_moments.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_population.py",
-      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836"
+      "sha256": "1d147ae75e3ed81dacfe52e66fefae12cdefee33a1891aee5dc66ebdd867b836",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_population.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_runner.py",
-      "sha256": "189cf889c566455b89cc32f68f463c32238b24be43de87729cc1b235f7b55702"
+      "sha256": "189cf889c566455b89cc32f68f463c32238b24be43de87729cc1b235f7b55702",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/gpu_runner.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/moments.py",
-      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29"
+      "sha256": "896e844483905a6807b7042d47000f789f129a141a213a464af92bbd4c55df29",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/moments.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/plotting.py",
-      "sha256": "87349611766f1f5b2880f3cae1ed0582b4cbfaa995ba5cd5196d4efb588e6837"
+      "sha256": "87349611766f1f5b2880f3cae1ed0582b4cbfaa995ba5cd5196d4efb588e6837",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/plotting.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/population.py",
-      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367"
+      "sha256": "5d538fead947301edd99cd8332f3450bc7a3d1a700dae50993746cbb22f9e367",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/population.py"
     },
     {
       "path": "E1/theory_path_population_yy_six_manifolds/src/e1_yy_path/__init__.py",
-      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b"
+      "sha256": "8bfcd5cc79ae63ee210441a00285257a72cdc4fa8c678aeeb2b5981d302c965b",
+      "current_path": "experiments/population_verification/theory_path_population_yy_six_manifolds/src/e1_yy_path/__init__.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/coefficients.py",
-      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/coefficients.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/experiment.py",
-      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/experiment.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/geometry.py",
-      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/geometry.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/gpu_experiment.py",
-      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/gpu_experiment.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/gpu_population.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/plotting.py",
-      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/plotting.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/population.py"
     },
     {
       "path": "E1/weight_control/frozen/five/src/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/population_verification/weight_control/frozen/five/src/e1_theory_path/__init__.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/coefficients.py",
-      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/coefficients.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/experiment.py",
-      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/experiment.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/geometry.py",
-      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/geometry.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/gpu_experiment.py",
-      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/gpu_experiment.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/gpu_population.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/plotting.py",
-      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d"
+      "sha256": "9a9cd48600837340928f7ba52b076a535a75b2af1b49e1fdb7b9de8a9b21480d",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/plotting.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/population.py"
     },
     {
       "path": "E1/weight_control/frozen/six/src/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/population_verification/weight_control/frozen/six/src/e1_theory_path/__init__.py"
     },
     {
       "path": "E2/corrugated/frozen/corrugated_e1_geometry.py",
-      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/corrugated_e1_geometry.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/gpu_backend/dryy_gpu.py",
-      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/coefficients.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/config.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/dr.py",
-      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/dr.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/geometry.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/io.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/kernels.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/metrics.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/runner.py",
-      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/runner.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/yy.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/yy_common.py"
     },
     {
       "path": "E2/corrugated/frozen/DR/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/DR/src/dryy/__init__.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/coefficients.py",
-      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/coefficients.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/config.py",
-      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/config.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/geometry.py",
-      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/geometry.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/gpu_operator.py",
-      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/gpu_operator.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/metrics.py",
-      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/metrics.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/operator.py",
-      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/operator.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/packets.py",
-      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/packets.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/pipelines.py",
-      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/pipelines.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/records.py",
-      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/records.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/runner.py",
-      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/runner.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/solver.py",
-      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/solver.py"
     },
     {
       "path": "E2/corrugated/frozen/STSP/src/e2fs/__init__.py",
-      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/STSP/src/e2fs/__init__.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/gpu_backend/dryy_gpu.py",
-      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/coefficients.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/config.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/dr.py",
-      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/dr.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/geometry.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/io.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/kernels.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/metrics.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/runner.py",
-      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/runner.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/yy.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/yy_common.py"
     },
     {
       "path": "E2/corrugated/frozen/YY/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/finite_sample_fixed_scales/corrugated/frozen/YY/src/dryy/__init__.py"
     },
     {
       "path": "E2/frozen/DR/gpu_backend/dryy_gpu.py",
-      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/coefficients.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/config.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/dr.py",
-      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/dr.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/geometry.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/io.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/kernels.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/metrics.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/runner.py",
-      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/runner.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/yy.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/yy_common.py"
     },
     {
       "path": "E2/frozen/DR/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/DR/src/dryy/__init__.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/coefficients.py",
-      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/coefficients.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/config.py",
-      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/config.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/geometry.py",
-      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/geometry.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/gpu_operator.py",
-      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/gpu_operator.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/metrics.py",
-      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/metrics.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/operator.py",
-      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/operator.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/packets.py",
-      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/packets.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/pipelines.py",
-      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/pipelines.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/records.py",
-      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/records.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/runner.py",
-      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/runner.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/solver.py",
-      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/solver.py"
     },
     {
       "path": "E2/frozen/STSP/src/e2fs/__init__.py",
-      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/STSP/src/e2fs/__init__.py"
     },
     {
       "path": "E2/frozen/YY/gpu_backend/dryy_gpu.py",
-      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/coefficients.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/config.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/dr.py",
-      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/dr.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/geometry.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/io.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/kernels.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/metrics.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/runner.py",
-      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/runner.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/yy.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/yy_common.py"
     },
     {
       "path": "E2/frozen/YY/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/finite_sample_fixed_scales/frozen/YY/src/dryy/__init__.py"
     },
     {
       "path": "E3/frozen/dr_rejected_basis_failure_adapter.py",
-      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f"
+      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f",
+      "current_path": "experiments/bandwidth_robustness/frozen/dr_rejected_basis_failure_adapter.py"
     },
     {
       "path": "E3/frozen/corrugated_geometry/src/corrugated/config.py",
-      "sha256": "e7cd7d336339d11d6fc86ac06097939593fae1154c1c50aa525fd88545bf83cd"
+      "sha256": "e7cd7d336339d11d6fc86ac06097939593fae1154c1c50aa525fd88545bf83cd",
+      "current_path": "experiments/bandwidth_robustness/frozen/corrugated_geometry/src/corrugated/config.py"
     },
     {
       "path": "E3/frozen/corrugated_geometry/src/corrugated/geometry.py",
-      "sha256": "cc6c671f3fe313f3ac9ce73dfd3e8163bf72e6bc077cfa5282ff751f8efb33cd"
+      "sha256": "cc6c671f3fe313f3ac9ce73dfd3e8163bf72e6bc077cfa5282ff751f8efb33cd",
+      "current_path": "experiments/bandwidth_robustness/frozen/corrugated_geometry/src/corrugated/geometry.py"
     },
     {
       "path": "E3/frozen/corrugated_geometry/src/corrugated/__init__.py",
-      "sha256": "afe451889b9780adbde78f8d19cf690f4c654c4c6afa7590f44be566ad6adabb"
+      "sha256": "afe451889b9780adbde78f8d19cf690f4c654c4c6afa7590f44be566ad6adabb",
+      "current_path": "experiments/bandwidth_robustness/frozen/corrugated_geometry/src/corrugated/__init__.py"
     },
     {
       "path": "E3/frozen/DR/gpu_backend/dryy_gpu.py",
-      "sha256": "4a49d4f02af39d93b9399fef93ce9818a9078455d39df912425e269f00a84a08"
+      "sha256": "4a49d4f02af39d93b9399fef93ce9818a9078455d39df912425e269f00a84a08",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/coefficients.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/config.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/dr.py",
-      "sha256": "efee68025f52fbf4599c1d8244c3072c382fa4262698d2689244b91cce22b814"
+      "sha256": "efee68025f52fbf4599c1d8244c3072c382fa4262698d2689244b91cce22b814",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/dr.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/geometry.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/io.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/kernels.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/metrics.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/runner.py",
-      "sha256": "769e0633d73e233afbc14f2d2d2e781de127ff6fde2a850bf1902993677eda06"
+      "sha256": "769e0633d73e233afbc14f2d2d2e781de127ff6fde2a850bf1902993677eda06",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/runner.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/yy.py",
-      "sha256": "b0bd38e8a3403a28a351ce3fbc9f20eccd387612dc213226b416aca4d1d9ba5d"
+      "sha256": "b0bd38e8a3403a28a351ce3fbc9f20eccd387612dc213226b416aca4d1d9ba5d",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/yy.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/yy_common.py",
-      "sha256": "73408eb375dd8c188d740f1b0819734c10a3f2b629eaafa1ed2f93b6ed2ef76b"
+      "sha256": "73408eb375dd8c188d740f1b0819734c10a3f2b629eaafa1ed2f93b6ed2ef76b",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/yy_common.py"
     },
     {
       "path": "E3/frozen/DR/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/bandwidth_robustness/frozen/DR/src/dryy/__init__.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/coefficients.py",
-      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/coefficients.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/config.py",
-      "sha256": "8f0650ee42dba6178a0c908ac29a9c0050342b2752912e166390ae6213df884b"
+      "sha256": "8f0650ee42dba6178a0c908ac29a9c0050342b2752912e166390ae6213df884b",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/config.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/geometry.py",
-      "sha256": "034c39252209cd672a70cb1e85917b1774aebdd2f4bef961d0a9c1761cec5440"
+      "sha256": "034c39252209cd672a70cb1e85917b1774aebdd2f4bef961d0a9c1761cec5440",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/geometry.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/gpu_operator.py",
-      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/gpu_operator.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/metrics.py",
-      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/metrics.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/operator.py",
-      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/operator.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/packets.py",
-      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/packets.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/pipelines.py",
-      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/pipelines.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/records.py",
-      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/records.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/runner.py",
-      "sha256": "ae8cbdefe348815324e57d6323827c5d22cdca994cc2b4edcfac10dc45661b8a"
+      "sha256": "ae8cbdefe348815324e57d6323827c5d22cdca994cc2b4edcfac10dc45661b8a",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/runner.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/solver.py",
-      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/solver.py"
     },
     {
       "path": "E3/frozen/STSP/src/e3/__init__.py",
-      "sha256": "8c7e358f4db643a26ac4ad12fabb6a53cbbd4d400de93d9834f97735d9fa4760"
+      "sha256": "8c7e358f4db643a26ac4ad12fabb6a53cbbd4d400de93d9834f97735d9fa4760",
+      "current_path": "experiments/bandwidth_robustness/frozen/STSP/src/e3/__init__.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/gpu_backend/dryy_gpu.py",
-      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/coefficients.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/config.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/dr.py",
-      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/dr.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/geometry.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/io.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/kernels.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/metrics.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/runner.py",
-      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/runner.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/yy.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/yy_common.py"
     },
     {
       "path": "E3/frozen/YY_CORRUGATED/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_CORRUGATED/src/dryy/__init__.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/gpu_backend/dryy_gpu.py",
-      "sha256": "f6330be81ef4e7d1e9b0e518b2e779237b201993f31a1b454b246a529698bf31"
+      "sha256": "f6330be81ef4e7d1e9b0e518b2e779237b201993f31a1b454b246a529698bf31",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/coefficients.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/config.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/dr.py",
-      "sha256": "4d7461ce4dcdfeffd49d2559036fbffd4ce4cc9299b8c32e746894171d89f65e"
+      "sha256": "4d7461ce4dcdfeffd49d2559036fbffd4ce4cc9299b8c32e746894171d89f65e",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/dr.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/geometry.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/io.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/kernels.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/metrics.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/runner.py",
-      "sha256": "145c6417badab9ced6ac835b5bda92526b7058aa00f9a6a13eeda8ad33da478c"
+      "sha256": "145c6417badab9ced6ac835b5bda92526b7058aa00f9a6a13eeda8ad33da478c",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/runner.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/yy.py",
-      "sha256": "b0bd38e8a3403a28a351ce3fbc9f20eccd387612dc213226b416aca4d1d9ba5d"
+      "sha256": "b0bd38e8a3403a28a351ce3fbc9f20eccd387612dc213226b416aca4d1d9ba5d",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/yy.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/yy_common.py",
-      "sha256": "73408eb375dd8c188d740f1b0819734c10a3f2b629eaafa1ed2f93b6ed2ef76b"
+      "sha256": "73408eb375dd8c188d740f1b0819734c10a3f2b629eaafa1ed2f93b6ed2ef76b",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/yy_common.py"
     },
     {
       "path": "E3/frozen/YY_MAIN/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_MAIN/src/dryy/__init__.py"
     },
     {
       "path": "E3/frozen/YY_REV/gpu_backend/dryy_gpu.py",
-      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/coefficients.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/config.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/dr.py",
-      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/dr.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/geometry.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/io.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/kernels.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/metrics.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/runner.py",
-      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/runner.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/yy.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/yy_common.py"
     },
     {
       "path": "E3/frozen/YY_REV/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/bandwidth_robustness/frozen/YY_REV/src/dryy/__init__.py"
     },
     {
       "path": "E4/correspondence/continuous_cp.py",
-      "sha256": "ea18b32bc1a14283582920d133cd8d9e2f7e53c5f7f9972ce2e5e07e72fda655"
+      "sha256": "ea18b32bc1a14283582920d133cd8d9e2f7e53c5f7f9972ce2e5e07e72fda655",
+      "current_path": "experiments/correspondence_accuracy/correspondence/continuous_cp.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/fixed_queries.py",
-      "sha256": "b12e13e0572869bbfe3cbaccff93e0c986db6812f1c03ec7597cf12c51cc70ef"
+      "sha256": "b12e13e0572869bbfe3cbaccff93e0c986db6812f1c03ec7597cf12c51cc70ef",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/fixed_queries.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/run_density_scan.py",
-      "sha256": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36"
+      "sha256": "c8b49721605d32b3421dcedd4e43978a2bccfc2e5771351f25b2554454c43b36",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/run_density_scan.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/coefficients.py",
-      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8"
+      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/coefficients.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/config.py",
-      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301"
+      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/config.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/experiment.py",
-      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f"
+      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/experiment.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/geometry.py",
-      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e"
+      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/geometry.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/gpu_operator.py",
-      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d"
+      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/gpu_operator.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/operator.py",
-      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1"
+      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/operator.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/pipeline.py",
-      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6"
+      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/pipeline.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/solver.py",
-      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165"
+      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/solver.py"
     },
     {
       "path": "E4/correspondence/frozen/E4/fitting/original/src/e4/__init__.py",
-      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250"
+      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/E4/fitting/original/src/e4/__init__.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/coefficients.py",
-      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/coefficients.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/experiment.py",
-      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/experiment.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/geometry.py",
-      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f"
+      "sha256": "4b3a3efdcc3ec9f412750fb3881da5ce8131b29182cb89243247bebc0e049b5f",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/geometry.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/gpu_experiment.py",
-      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e"
+      "sha256": "92da039f130b867c497f681d6fec48ce279833d6e9ee88eb1af5c78f2a76493e",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/gpu_experiment.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/gpu_population.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/plotting.py",
-      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53"
+      "sha256": "310b3a8b09a9183a274e8e6c428aa40bd9b7ae18ef6cb475e552beabc54ddc53",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/plotting.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/population.py"
     },
     {
       "path": "E4/correspondence/frozen/population_engine/src/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/correspondence_accuracy/correspondence/frozen/population_engine/src/e1_theory_path/__init__.py"
     },
     {
       "path": "E4/fitting/original/src/e4/coefficients.py",
-      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8"
+      "sha256": "ecd1d98d94b909a6836de53758812bcb720ad2c0656c990d9675df66a36918e8",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/coefficients.py"
     },
     {
       "path": "E4/fitting/original/src/e4/config.py",
-      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301"
+      "sha256": "5b513f79ef3d3a7161652e47527851d4b91815d27d3e28542338e4117497a301",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/config.py"
     },
     {
       "path": "E4/fitting/original/src/e4/experiment.py",
-      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f"
+      "sha256": "bbc8c897260a4211eee78e025771d97cf8f877965dc4a0736a6c2f23c5aa683f",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/experiment.py"
     },
     {
       "path": "E4/fitting/original/src/e4/geometry.py",
-      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e"
+      "sha256": "2647eeb795b0ba30c87ec7f4a55e43c61e40a8180b442175f861fffbf121463e",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/geometry.py"
     },
     {
       "path": "E4/fitting/original/src/e4/gpu_operator.py",
-      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d"
+      "sha256": "879e846f5551dbef879cf0cfffdcabbcfd89fb424e3d1d5476586fa71148119d",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/gpu_operator.py"
     },
     {
       "path": "E4/fitting/original/src/e4/operator.py",
-      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1"
+      "sha256": "6965ad13fb91c71e806dc67f7110ca468e75c11f8504bfd0528186ee3adbbea1",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/operator.py"
     },
     {
       "path": "E4/fitting/original/src/e4/pipeline.py",
-      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6"
+      "sha256": "73169d7a5fb7d5616c43f228404ec2adf525f23e002b64c96de01a577ad9ddd6",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/pipeline.py"
     },
     {
       "path": "E4/fitting/original/src/e4/solver.py",
-      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165"
+      "sha256": "f18b06a700b49bb20c52b69d76ae4c824a59c1be55330f2371ce527d69973165",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/solver.py"
     },
     {
       "path": "E4/fitting/original/src/e4/__init__.py",
-      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250"
+      "sha256": "608e9a4e65d4df67a62ff62ab250a892f39cced392044ab0ad88a556dc213250",
+      "current_path": "experiments/correspondence_accuracy/fitting/original/src/e4/__init__.py"
     },
     {
       "path": "E5/src/e56v2/contracts.py",
-      "sha256": "08530b20a9ddbd2d83a92b6dd29a7a77379741882cca995a832bf64ab9645875"
+      "sha256": "08530b20a9ddbd2d83a92b6dd29a7a77379741882cca995a832bf64ab9645875",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/contracts.py"
     },
     {
       "path": "E5/src/e56v2/e5_ablation.py",
-      "sha256": "196281139847f452d998f956e5b1f407b52308226955156b16a017d2ec64aeba"
+      "sha256": "196281139847f452d998f956e5b1f407b52308226955156b16a017d2ec64aeba",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/e5_ablation.py"
     },
     {
       "path": "E5/src/e56v2/e5_empirical.py",
-      "sha256": "6fdf229b9ce4a4d28421b2017450b99832a2ac1bfc40b20f3281cf36bdd74ef0"
+      "sha256": "6fdf229b9ce4a4d28421b2017450b99832a2ac1bfc40b20f3281cf36bdd74ef0",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/e5_empirical.py"
     },
     {
       "path": "E5/src/e56v2/e5_population.py",
-      "sha256": "296a3fc783333639e3ddbc3463cf055059365847ef454cc356e40de0296aebde"
+      "sha256": "296a3fc783333639e3ddbc3463cf055059365847ef454cc356e40de0296aebde",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/e5_population.py"
     },
     {
       "path": "E5/src/e56v2/experiment.py",
-      "sha256": "a5feb46acc7674d7991e39770045aa8dbce17e6eb7789b368e8316c9f4af4deb"
+      "sha256": "a5feb46acc7674d7991e39770045aa8dbce17e6eb7789b368e8316c9f4af4deb",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/experiment.py"
     },
     {
       "path": "E5/src/e56v2/geometry_e5.py",
-      "sha256": "a25565780cd83155973f3d499533b3368982475ef438498f587b13f0623b6e18"
+      "sha256": "a25565780cd83155973f3d499533b3368982475ef438498f587b13f0623b6e18",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/geometry_e5.py"
     },
     {
       "path": "E5/src/e56v2/kernels.py",
-      "sha256": "001f83f5f7e86ae09ac39b6bd622afa2e82b318d306d26530689d9ff1abbb08b"
+      "sha256": "001f83f5f7e86ae09ac39b6bd622afa2e82b318d306d26530689d9ff1abbb08b",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/kernels.py"
     },
     {
       "path": "E5/src/e56v2/moments.py",
-      "sha256": "e61ee9fd00d67bd3ce9d2838e87150ef3ec0f4c30a6f166cb28261f5681662c7"
+      "sha256": "e61ee9fd00d67bd3ce9d2838e87150ef3ec0f4c30a6f166cb28261f5681662c7",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/moments.py"
     },
     {
       "path": "E5/src/e56v2/__init__.py",
-      "sha256": "648e6270dce39d507eb92fa192bb454f8eaf331acfb628136cd10f10ba2fa8fb"
+      "sha256": "648e6270dce39d507eb92fa192bb454f8eaf331acfb628136cd10f10ba2fa8fb",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/__init__.py"
     },
     {
       "path": "nonuniform/E1/density.py",
-      "sha256": "a9b46b6d25f4e544c09b83dec7e11ea16183ef73674070ccd9b31ed91ece7d0e"
+      "sha256": "a9b46b6d25f4e544c09b83dec7e11ea16183ef73674070ccd9b31ed91ece7d0e",
+      "current_path": "experiments/nonuniform/population/density.py"
     },
     {
       "path": "nonuniform/E1/fast_gpu.py",
-      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b"
+      "sha256": "2c1ff16b799309373f3ffddf47e273242001874863fc408b6b49fc0997126d9b",
+      "current_path": "experiments/nonuniform/population/fast_gpu.py"
     },
     {
       "path": "nonuniform/E1/study.py",
-      "sha256": "df189402d4ebdee2bc567331d6a6bc79e4668486a17049e1e8a313ead50e0990"
+      "sha256": "df189402d4ebdee2bc567331d6a6bc79e4668486a17049e1e8a313ead50e0990",
+      "current_path": "experiments/nonuniform/population/study.py"
     },
     {
       "path": "nonuniform/E2/sampling.py",
-      "sha256": "f6d83751e4fa42dddb5e18e9d150b6073da7fbbbe916a8052263b28e90299378"
+      "sha256": "f6d83751e4fa42dddb5e18e9d150b6073da7fbbbe916a8052263b28e90299378",
+      "current_path": "experiments/nonuniform/fixed_scales/sampling.py"
     },
     {
       "path": "nonuniform/E1/frozen/e1_theory_path/coefficients.py",
-      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425"
+      "sha256": "ef77e8b38eb7e296b6b86109f57e46a1ebab8b7b252ef789df7a96f64b59a425",
+      "current_path": "experiments/nonuniform/population/frozen/e1_theory_path/coefficients.py"
     },
     {
       "path": "nonuniform/E1/frozen/e1_theory_path/experiment.py",
-      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1"
+      "sha256": "ca15d56c84618da0c4df0d0863ca87612a64289a8a304b53544513577fcfceb1",
+      "current_path": "experiments/nonuniform/population/frozen/e1_theory_path/experiment.py"
     },
     {
       "path": "nonuniform/E1/frozen/e1_theory_path/geometry.py",
-      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81",
+      "current_path": "experiments/nonuniform/population/frozen/e1_theory_path/geometry.py"
     },
     {
       "path": "nonuniform/E1/frozen/e1_theory_path/gpu_population.py",
-      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f"
+      "sha256": "d3f428d6816c079e8bf307eaba9da4e774ee573c8eaa3afd1749e5e1e032f66f",
+      "current_path": "experiments/nonuniform/population/frozen/e1_theory_path/gpu_population.py"
     },
     {
       "path": "nonuniform/E1/frozen/e1_theory_path/population.py",
-      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6"
+      "sha256": "213b25023500f77598ca45fffa8389b591835c54d2695d727304792e70f0f3e6",
+      "current_path": "experiments/nonuniform/population/frozen/e1_theory_path/population.py"
     },
     {
       "path": "nonuniform/E1/frozen/e1_theory_path/__init__.py",
-      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9"
+      "sha256": "c4596022e4f60b240daf29ac9c3f89ddba2514a3f4fb448d2073383b35eab1b9",
+      "current_path": "experiments/nonuniform/population/frozen/e1_theory_path/__init__.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/dr_rejected_basis_failure_adapter.py",
-      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f"
+      "sha256": "b2edd8a1b4eaef361adaca2599ef996f6c4d8a72b88aa84a8a81435741e5ca7f",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/dr_rejected_basis_failure_adapter.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/evaluate_fits.py",
-      "sha256": "bf14831068c155efcb2c9f5978a6705c453a2c383f2b8ae6240b53050072a260"
+      "sha256": "bf14831068c155efcb2c9f5978a6705c453a2c383f2b8ae6240b53050072a260",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/evaluate_fits.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/reproduce.py",
-      "sha256": "cd762866b5045af28622d8b384ed6100cfead21838ca8c98598d11774f055a68"
+      "sha256": "cd762866b5045af28622d8b384ed6100cfead21838ca8c98598d11774f055a68",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/reproduce.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/run_fits.py",
-      "sha256": "94c886f5da19d7c9634a45aabaa4fb07a0e5fdb57303e908b829db5b5f863686"
+      "sha256": "94c886f5da19d7c9634a45aabaa4fb07a0e5fdb57303e908b829db5b5f863686",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/run_fits.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/corrugated_geometry.py",
-      "sha256": "eb5848ac783bfdc7f691840bd3dab7bbdc284887bde845d9cc6b7385e3b471c9"
+      "sha256": "eb5848ac783bfdc7f691840bd3dab7bbdc284887bde845d9cc6b7385e3b471c9",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/corrugated_geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/run_extension.py",
-      "sha256": "b369a8b8bda0af1f52ec07af3c8ca3eb6b6efd6fed3a21355a7e03cc9255a75e"
+      "sha256": "b369a8b8bda0af1f52ec07af3c8ca3eb6b6efd6fed3a21355a7e03cc9255a75e",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/run_extension.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/plotting/style.py",
-      "sha256": "2622c266f5e9b76f9eda0569d6cb5415f2749a3638b4005ef25d9e31c2ec414c"
+      "sha256": "2622c266f5e9b76f9eda0569d6cb5415f2749a3638b4005ef25d9e31c2ec414c",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/plotting/style.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/corrugated_e1_geometry.py",
-      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81"
+      "sha256": "5925a6445280e0d4fcf7a3b3ebe87d01951b1fedea8b76ec755a0f3f8c321c81",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/corrugated_e1_geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/gpu_backend/dryy_gpu.py",
-      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/coefficients.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/config.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/dr.py",
-      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/dr.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/io.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/kernels.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/metrics.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/runner.py",
-      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/runner.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/yy.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/yy_common.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/DR/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/DR/src/dryy/__init__.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/coefficients.py",
-      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/coefficients.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/config.py",
-      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/config.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/geometry.py",
-      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/gpu_operator.py",
-      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/gpu_operator.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/metrics.py",
-      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/metrics.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/operator.py",
-      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/operator.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/packets.py",
-      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/packets.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/pipelines.py",
-      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/pipelines.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/records.py",
-      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/records.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/runner.py",
-      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/runner.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/solver.py",
-      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/solver.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/STSP/src/e2fs/__init__.py",
-      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/STSP/src/e2fs/__init__.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/gpu_backend/dryy_gpu.py",
-      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/coefficients.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/config.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/dr.py",
-      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/dr.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/io.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/kernels.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/metrics.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/runner.py",
-      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/runner.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/yy.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/yy_common.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/corrugated/frozen/YY/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/corrugated/frozen/YY/src/dryy/__init__.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/gpu_backend/dryy_gpu.py",
-      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37"
+      "sha256": "7c12464ca4ba4e52ba95c14bec24c0c89aca4741eec36af35ba6d6d029e31e37",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/coefficients.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/config.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/dr.py",
-      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047"
+      "sha256": "554f0b81cb946b906d7f3badbd4ea4b827c73de4961cf84008451a15993da047",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/dr.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/io.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/kernels.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/metrics.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/runner.py",
-      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b"
+      "sha256": "e17e0b29c92b146d90d5589dec9bd12482bee8813cc5c2fea3537265fc51bf0b",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/runner.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/yy.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/yy_common.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/DR/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/DR/src/dryy/__init__.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/coefficients.py",
-      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d"
+      "sha256": "b95a63eb9792c51dc833afaf325c1f4d152a67c7e62d5b36895d742b0d5cc62d",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/coefficients.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/config.py",
-      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784"
+      "sha256": "596557d0d387caa7419dadebf3ce9540b3e30aa2905fa70a79d403ec245df784",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/config.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/geometry.py",
-      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7"
+      "sha256": "659ef90a8bd423c924abce35db65206d6184b6eda157569779ac9f35696eeed7",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/gpu_operator.py",
-      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453"
+      "sha256": "9c3400f7b48356a89afe5eef6a6fd27656cbc880f7608cdc6356b6e4a561b453",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/gpu_operator.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/metrics.py",
-      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab"
+      "sha256": "16c7479c656a9b4d45ad99fca06b2a7ce8a7fa19604b43cb6c4be051612260ab",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/metrics.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/operator.py",
-      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903"
+      "sha256": "47595ca08c83143fbe6eb46adaa70bdf41fea398a678e6d533b0ba826b605903",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/operator.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/packets.py",
-      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889"
+      "sha256": "6298768cfadc76918ac7fdea487035741af088efac938d69d56f641fdc0ee889",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/packets.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/pipelines.py",
-      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df"
+      "sha256": "8c17588542efd45d0ed8f6fee2604a08007e46a212931d95f5d56abbff53b0df",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/pipelines.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/records.py",
-      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d"
+      "sha256": "b641d7cc37b91b1a62ce4383b3c0327b602ef69d047814f6eae2da6f1cda725d",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/records.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/runner.py",
-      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174"
+      "sha256": "8e5c76b42868da160c63cbdda277b247d3fbe0a3db33d35eb823352bb5d49174",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/runner.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/solver.py",
-      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b"
+      "sha256": "9303efb6ed6f0b6192ab8b935619ce519b8b9a045476d97834b62760ab8c582b",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/solver.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/STSP/src/e2fs/__init__.py",
-      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214"
+      "sha256": "ca1543e24a2764c2410a76b1583aac0af2750827e88b2e579bf6779770286214",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/STSP/src/e2fs/__init__.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/gpu_backend/dryy_gpu.py",
-      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1"
+      "sha256": "8e42300d0adba9c727c7fd4658881fe54507f2f13358cccfbe946482b107dde1",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/gpu_backend/dryy_gpu.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/coefficients.py",
-      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1"
+      "sha256": "894be02af9204f41940cba08e5eb3fae9e4c0cb4f74bc325605ecc689604beb1",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/coefficients.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/config.py",
-      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca"
+      "sha256": "b1558ad10b38b4d0aafa6af165b2f0ab2abccddf5c9b4e49ff6b247da8bf0dca",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/config.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/dr.py",
-      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3"
+      "sha256": "18b4aa39e26ac87ce038268298c043d510fe030494c4f8e6db32589ce6dbf9c3",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/dr.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/geometry.py",
-      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f"
+      "sha256": "401965b2bae43a24817b23541d98e2d305b5112d2c837c656bb15e6d1f2fc32f",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/geometry.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/io.py",
-      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4"
+      "sha256": "dc9a8baebad4b8cfb270fefad98a93303b2eb375de1598c1cbc0ab39b93e21d4",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/io.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/kernels.py",
-      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054"
+      "sha256": "bcd5d0def93ee049775bbf62b2f1ab6b78b25e92bdd72f5ab249971a33b88054",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/kernels.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/metrics.py",
-      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483"
+      "sha256": "55e1ee0d4624d49e21b179a838e36a5e30162a4e4d845541a8908ee1ac01b483",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/metrics.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/runner.py",
-      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23"
+      "sha256": "e201aa8c60865e155d9edf1ce2ff2b5dc0af2ef5e00f6f7371938f13c1d94d23",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/runner.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/yy.py",
-      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267"
+      "sha256": "d7ca3efef428f5c2cf64ba309aa41759f442a76fb690128426b11b3af41ac267",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/yy.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/yy_common.py",
-      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735"
+      "sha256": "e2cae6db269cb730943fb3a9f168917e82de858a1555f85a1b23ac43d6cd7735",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/yy_common.py"
     },
     {
       "path": "nonuniform/E2/frozen/E2/frozen/YY/src/dryy/__init__.py",
-      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0"
+      "sha256": "6de8585fc4f927dc690bf12175680d306a9f5488b054d7d670f9f4bca348e9f0",
+      "current_path": "experiments/nonuniform/fixed_scales/frozen/E2/frozen/YY/src/dryy/__init__.py"
     }
   ],
-  "interface_changes": "New orchestration/aggregation/input-generation adapters; E5 figure labels only changed in configs; solver kernels, seed generators, failure adapters and fitting function bodies preserved."
+  "interface_changes": "New orchestration/aggregation/input-generation adapters; E5 figure labels only changed in configs; solver kernels, seed generators, failure adapters and fitting function bodies preserved.",
+  "path_note": "path is the original source identifier; current_path is the 2026-11-13 location. Original recorded SHA values are unchanged."
 }

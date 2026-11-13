@@ -1,4 +1,4 @@
-# Saved-result rendering and small CPU tests (tested on Windows Python3.12.9).
+# Fresh CPU fitting, evaluation, rendering, and reduced tests (tested on Windows Python3.12.9).
 numpy==2.4.4
 scipy==1.18.0
 matplotlib==3.11.1

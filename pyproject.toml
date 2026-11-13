@@ -1,0 +1,8 @@
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+# CI formats only explicitly listed public layers, not numerical libraries.
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers"

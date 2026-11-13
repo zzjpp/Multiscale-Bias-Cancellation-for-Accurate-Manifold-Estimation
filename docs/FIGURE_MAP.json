@@ -1,339 +1,479 @@
 {
-  "schema": "ARXIV_FINAL_FIGURE_MAP_V1",
+  "schema": "PAPER_FIGURE_MAP_20261112_V2",
   "figures": [
     {
       "figure": "Figure 1",
       "experiment": "schematic",
-      "files": [
+      "pdf_page": 3,
+      "manuscript_include_paths": [
         "illustrations/Figure1/normal_correspondence.png",
         "illustrations/Figure1/normal_correspondence.pdf"
       ],
-      "replay": "Compile illustrations/Figure1/normal_correspondence.tex with TikZ",
-      "pdf_page": 3,
-      "legacy_replay": "Compile illustrations/Figure1/normal_correspondence.tex with TikZ",
-      "reproduce": "Compile illustrations/Figure1/normal_correspondence.tex with TikZ"
+      "source_files": [
+        "illustrations/Figure1/normal_correspondence.tex"
+      ],
+      "command": "Compile the listed TikZ source; see illustrations/README.md"
     },
     {
       "figure": "Figure 2",
-      "experiment": "E1 controlled weights",
-      "files": [
+      "experiment": "Population Verification",
+      "pdf_page": 4,
+      "manuscript_include_paths": [
         "E1/weight_control/outputs/e1_stsp_population_infinity_with_ms_stsp.png",
         "E1/weight_control/outputs/e1_stsp_population_infinity_with_ms_stsp.pdf"
       ],
-      "replay": "python run_paper.py --experiment E1 --output NEW",
-      "pdf_page": 4,
-      "legacy_replay": "python E1/weight_control/render_and_report.py --output NEW --figure-only",
-      "reproduce": "python run_paper.py --experiment E1 --output NEW"
+      "experiment_code": "E1",
+      "section": "5.1; E.1; E.7",
+      "source_directory": "experiments/population_verification",
+      "command": "python -m manifold_experiments --experiment population --output NEW",
+      "generated_files": [
+        "RUN/figures/controlled/e1_stsp_population_infinity_with_ms_stsp.png",
+        "RUN/figures/controlled/e1_stsp_population_infinity_with_ms_stsp.pdf"
+      ]
     },
     {
       "figure": "Figure 3",
       "experiment": "schematic",
-      "files": [
+      "pdf_page": 24,
+      "manuscript_include_paths": [
         "illustrations/Figure3/yy_normal_decomposition.png",
         "illustrations/Figure3/yy_normal_decomposition.pdf"
       ],
-      "replay": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ",
-      "pdf_page": 24,
-      "legacy_replay": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ",
-      "reproduce": "Compile illustrations/Figure3/yy_normal_decomposition.tex with TikZ"
+      "source_files": [
+        "illustrations/Figure3/yy_normal_decomposition.tex"
+      ],
+      "command": "Compile the listed TikZ source; see illustrations/README.md"
     },
     {
       "figure": "Figure 4",
-      "experiment": "E1 normalized",
-      "files": [
+      "experiment": "Population Verification",
+      "pdf_page": 30,
+      "manuscript_include_paths": [
         "E1/figures/E1_circle_r2_normalized_E_infinity_STSP_DR_YY.png",
         "E1/figures/E1_circle_normalized_E_infinity_STSP_DR_YY_clear.pdf"
       ],
-      "replay": "python run_paper.py --experiment E1 --output NEW",
-      "pdf_page": 30,
-      "legacy_replay": "python E1/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E1 --output NEW"
+      "experiment_code": "E1",
+      "section": "5.1; E.1; E.7",
+      "source_directory": "experiments/population_verification",
+      "command": "python -m manifold_experiments --experiment population --output NEW",
+      "generated_files": [
+        "RUN/figures/E1/E1_circle_r2_normalized_E_infinity_STSP_DR_YY.png",
+        "RUN/figures/E1/E1_circle_normalized_E_infinity_STSP_DR_YY_clear.pdf"
+      ]
     },
     {
       "figure": "Figure 5",
-      "experiment": "E2",
-      "files": [
+      "experiment": "Finite-Sample Behavior at Fixed Scales",
+      "pdf_page": 31,
+      "manuscript_include_paths": [
         "E2/figures/E2_STSP_E_infty.png",
         "E2/figures/E2_STSP_E_infty.pdf"
       ],
-      "replay": "python run_paper.py --experiment E2 --output NEW",
-      "pdf_page": 31,
-      "legacy_replay": "python E2/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E2 --output NEW"
+      "experiment_code": "E2",
+      "section": "5.2; E.2",
+      "source_directory": "experiments/finite_sample_fixed_scales",
+      "command": "python -m manifold_experiments --experiment fixed-scales --output NEW",
+      "generated_files": [
+        "RUN/figures/E2/E2_STSP_E_infty.png",
+        "RUN/figures/E2/E2_STSP_E_infty.pdf"
+      ]
     },
     {
       "figure": "Figure 6",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 32,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_stsp_all_single_scales_max_error.png",
         "E3/paper_figures/figure_e3_stsp_all_single_scales_max_error.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 32,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_stsp_all_single_scales_max_error.png",
+        "RUN/figures/E3/figure_e3_stsp_all_single_scales_max_error.pdf"
+      ]
     },
     {
       "figure": "Figure 7",
-      "experiment": "E4",
-      "files": [
+      "experiment": "Correspondence Accuracy and Computational Stability",
+      "pdf_page": 33,
+      "manuscript_include_paths": [
         "E4/correspondence/figures/e4_nn_density_accuracy.png",
         "E4/correspondence/figures/e4_nn_density_accuracy.pdf"
       ],
-      "replay": "python run_paper.py --experiment E4 --output NEW",
-      "pdf_page": 33,
-      "legacy_replay": "python E4/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E4 --output NEW"
+      "experiment_code": "E4",
+      "section": "5.4; E.3.1; E.6.3",
+      "source_directory": "experiments/correspondence_accuracy",
+      "command": "python -m manifold_experiments --experiment correspondence --output NEW",
+      "generated_files": [
+        "RUN/figures/E4/e4_nn_density_accuracy.png",
+        "RUN/figures/E4/e4_nn_density_accuracy.pdf"
+      ]
     },
     {
       "figure": "Figure 8",
-      "experiment": "E5",
-      "files": [
+      "experiment": "Directional Ablation of the YY Estimator",
+      "pdf_page": 34,
+      "manuscript_include_paths": [
         "E5/paper_figures/figure_e5_finite_sample_dual_metrics.png",
         "E5/paper_figures/figure_e5_finite_sample_dual_metrics.svg"
       ],
-      "replay": "python run_paper.py --experiment E5 --output NEW",
-      "pdf_page": 34,
-      "legacy_replay": "Selected-export replay; see E5/README.md",
-      "reproduce": "python run_paper.py --experiment E5 --output NEW"
+      "experiment_code": "E5",
+      "section": "5.5; E.4; E.6.3",
+      "source_directory": "experiments/yy_directional_ablation",
+      "command": "python -m manifold_experiments --experiment directional-ablation --output NEW",
+      "generated_files": [
+        "RUN/evaluation/E5/figures/figure_e5_finite_sample_dual_metrics.png",
+        "RUN/evaluation/E5/figures/figure_e5_finite_sample_dual_metrics.svg"
+      ]
     },
     {
       "figure": "Figure E.1",
-      "experiment": "E1",
-      "files": [
+      "experiment": "Population Verification",
+      "pdf_page": 97,
+      "manuscript_include_paths": [
         "E1/figures/E1_STSP_average_sigma.png",
         "E1/figures/E1_STSP_average_sigma.pdf"
       ],
-      "replay": "python run_paper.py --experiment E1 --output NEW",
-      "pdf_page": 97,
-      "legacy_replay": "python E1/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E1 --output NEW"
+      "experiment_code": "E1",
+      "section": "5.1; E.1; E.7",
+      "source_directory": "experiments/population_verification",
+      "command": "python -m manifold_experiments --experiment population --output NEW",
+      "generated_files": [
+        "RUN/figures/E1/E1_STSP_average_sigma.png",
+        "RUN/figures/E1/E1_STSP_average_sigma.pdf"
+      ]
     },
     {
       "figure": "Figure E.2",
-      "experiment": "E1",
-      "files": [
+      "experiment": "Population Verification",
+      "pdf_page": 98,
+      "manuscript_include_paths": [
         "E1/figures/E1_DR_infinity_sigma.png",
         "E1/figures/E1_DR_infinity_sigma.pdf",
         "E1/figures/E1_DR_average_sigma.png",
         "E1/figures/E1_DR_average_sigma.pdf"
       ],
-      "replay": "python run_paper.py --experiment E1 --output NEW",
-      "pdf_page": 98,
-      "legacy_replay": "python E1/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E1 --output NEW"
+      "experiment_code": "E1",
+      "section": "5.1; E.1; E.7",
+      "source_directory": "experiments/population_verification",
+      "command": "python -m manifold_experiments --experiment population --output NEW",
+      "generated_files": [
+        "RUN/figures/E1/E1_DR_infinity_sigma.png",
+        "RUN/figures/E1/E1_DR_infinity_sigma.pdf",
+        "RUN/figures/E1/E1_DR_average_sigma.png",
+        "RUN/figures/E1/E1_DR_average_sigma.pdf"
+      ]
     },
     {
       "figure": "Figure E.3",
-      "experiment": "E1",
-      "files": [
+      "experiment": "Population Verification",
+      "pdf_page": 99,
+      "manuscript_include_paths": [
         "E1/figures/E1_YY_infinity_sigma.png",
         "E1/figures/E1_YY_infinity_sigma.pdf",
         "E1/figures/E1_YY_average_sigma.png",
         "E1/figures/E1_YY_average_sigma.pdf"
       ],
-      "replay": "python run_paper.py --experiment E1 --output NEW",
-      "pdf_page": 99,
-      "legacy_replay": "python E1/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E1 --output NEW"
+      "experiment_code": "E1",
+      "section": "5.1; E.1; E.7",
+      "source_directory": "experiments/population_verification",
+      "command": "python -m manifold_experiments --experiment population --output NEW",
+      "generated_files": [
+        "RUN/figures/E1/E1_YY_infinity_sigma.png",
+        "RUN/figures/E1/E1_YY_infinity_sigma.pdf",
+        "RUN/figures/E1/E1_YY_average_sigma.png",
+        "RUN/figures/E1/E1_YY_average_sigma.pdf"
+      ]
     },
     {
       "figure": "Figure E.4",
-      "experiment": "E2",
-      "files": [
+      "experiment": "Finite-Sample Behavior at Fixed Scales",
+      "pdf_page": 100,
+      "manuscript_include_paths": [
         "E2/figures/E2_STSP_E_avg.png",
         "E2/figures/E2_STSP_E_avg.pdf"
       ],
-      "replay": "python run_paper.py --experiment E2 --output NEW",
-      "pdf_page": 100,
-      "legacy_replay": "python E2/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E2 --output NEW"
+      "experiment_code": "E2",
+      "section": "5.2; E.2",
+      "source_directory": "experiments/finite_sample_fixed_scales",
+      "command": "python -m manifold_experiments --experiment fixed-scales --output NEW",
+      "generated_files": [
+        "RUN/figures/E2/E2_STSP_E_avg.png",
+        "RUN/figures/E2/E2_STSP_E_avg.pdf"
+      ]
     },
     {
       "figure": "Figure E.5",
-      "experiment": "E2",
-      "files": [
+      "experiment": "Finite-Sample Behavior at Fixed Scales",
+      "pdf_page": 101,
+      "manuscript_include_paths": [
         "E2/figures/E2_DR_E_infty.png",
         "E2/figures/E2_DR_E_infty.pdf",
         "E2/figures/E2_DR_E_avg.png",
         "E2/figures/E2_DR_E_avg.pdf"
       ],
-      "replay": "python run_paper.py --experiment E2 --output NEW",
-      "pdf_page": 101,
-      "legacy_replay": "python E2/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E2 --output NEW"
+      "experiment_code": "E2",
+      "section": "5.2; E.2",
+      "source_directory": "experiments/finite_sample_fixed_scales",
+      "command": "python -m manifold_experiments --experiment fixed-scales --output NEW",
+      "generated_files": [
+        "RUN/figures/E2/E2_DR_E_infty.png",
+        "RUN/figures/E2/E2_DR_E_infty.pdf",
+        "RUN/figures/E2/E2_DR_E_avg.png",
+        "RUN/figures/E2/E2_DR_E_avg.pdf"
+      ]
     },
     {
       "figure": "Figure E.6",
-      "experiment": "E2",
-      "files": [
+      "experiment": "Finite-Sample Behavior at Fixed Scales",
+      "pdf_page": 102,
+      "manuscript_include_paths": [
         "E2/figures/E2_YY_E_infty.png",
         "E2/figures/E2_YY_E_infty.pdf",
         "E2/figures/E2_YY_E_avg.png",
         "E2/figures/E2_YY_E_avg.pdf"
       ],
-      "replay": "python run_paper.py --experiment E2 --output NEW",
-      "pdf_page": 102,
-      "legacy_replay": "python E2/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E2 --output NEW"
+      "experiment_code": "E2",
+      "section": "5.2; E.2",
+      "source_directory": "experiments/finite_sample_fixed_scales",
+      "command": "python -m manifold_experiments --experiment fixed-scales --output NEW",
+      "generated_files": [
+        "RUN/figures/E2/E2_YY_E_infty.png",
+        "RUN/figures/E2/E2_YY_E_infty.pdf",
+        "RUN/figures/E2/E2_YY_E_avg.png",
+        "RUN/figures/E2/E2_YY_E_avg.pdf"
+      ]
     },
     {
       "figure": "Figure E.7",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 104,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_stsp_all_single_scales_average_error.png",
         "E3/paper_figures/figure_e3_stsp_all_single_scales_average_error.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 104,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_stsp_all_single_scales_average_error.png",
+        "RUN/figures/E3/figure_e3_stsp_all_single_scales_average_error.pdf"
+      ]
     },
     {
       "figure": "Figure E.8",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 105,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_dr_all_single_scales_average_error.png",
         "E3/paper_figures/figure_e3_dr_all_single_scales_average_error.pdf",
         "E3/paper_figures/figure_e3_dr_all_single_scales_max_error.png",
         "E3/paper_figures/figure_e3_dr_all_single_scales_max_error.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 105,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_dr_all_single_scales_average_error.png",
+        "RUN/figures/E3/figure_e3_dr_all_single_scales_average_error.pdf",
+        "RUN/figures/E3/figure_e3_dr_all_single_scales_max_error.png",
+        "RUN/figures/E3/figure_e3_dr_all_single_scales_max_error.pdf"
+      ]
     },
     {
       "figure": "Figure E.9",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 107,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_yy_all_single_scales_average_error.png",
         "E3/paper_figures/figure_e3_yy_all_single_scales_average_error.pdf",
         "E3/paper_figures/figure_e3_yy_all_single_scales_max_error.png",
         "E3/paper_figures/figure_e3_yy_all_single_scales_max_error.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 107,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_yy_all_single_scales_average_error.png",
+        "RUN/figures/E3/figure_e3_yy_all_single_scales_average_error.pdf",
+        "RUN/figures/E3/figure_e3_yy_all_single_scales_max_error.png",
+        "RUN/figures/E3/figure_e3_yy_all_single_scales_max_error.pdf"
+      ]
     },
     {
       "figure": "Figure E.10",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 109,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_stsp_E_reverse_mean.png",
         "E3/paper_figures/figure_e3_stsp_E_reverse_mean.pdf",
         "E3/paper_figures/figure_e3_stsp_E_reverse.png",
         "E3/paper_figures/figure_e3_stsp_E_reverse.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 109,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_stsp_E_reverse_mean.png",
+        "RUN/figures/E3/figure_e3_stsp_E_reverse_mean.pdf",
+        "RUN/figures/E3/figure_e3_stsp_E_reverse.png",
+        "RUN/figures/E3/figure_e3_stsp_E_reverse.pdf"
+      ]
     },
     {
       "figure": "Figure E.11",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 110,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_dr_E_reverse_mean.png",
         "E3/paper_figures/figure_e3_dr_E_reverse_mean.pdf",
         "E3/paper_figures/figure_e3_dr_E_reverse.png",
         "E3/paper_figures/figure_e3_dr_E_reverse.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 110,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_dr_E_reverse_mean.png",
+        "RUN/figures/E3/figure_e3_dr_E_reverse_mean.pdf",
+        "RUN/figures/E3/figure_e3_dr_E_reverse.png",
+        "RUN/figures/E3/figure_e3_dr_E_reverse.pdf"
+      ]
     },
     {
       "figure": "Figure E.12",
-      "experiment": "E3",
-      "files": [
+      "experiment": "Bandwidth Robustness and Reverse Coverage",
+      "pdf_page": 111,
+      "manuscript_include_paths": [
         "E3/paper_figures/figure_e3_yy_E_reverse_mean.png",
         "E3/paper_figures/figure_e3_yy_E_reverse_mean.pdf",
         "E3/paper_figures/figure_e3_yy_E_reverse.png",
         "E3/paper_figures/figure_e3_yy_E_reverse.pdf"
       ],
-      "replay": "python run_paper.py --experiment E3 --output NEW",
-      "pdf_page": 111,
-      "legacy_replay": "python E3/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E3 --output NEW"
+      "experiment_code": "E3",
+      "section": "5.3; E.3",
+      "source_directory": "experiments/bandwidth_robustness",
+      "command": "python -m manifold_experiments --experiment bandwidth --output NEW",
+      "generated_files": [
+        "RUN/figures/E3/figure_e3_yy_E_reverse_mean.png",
+        "RUN/figures/E3/figure_e3_yy_E_reverse_mean.pdf",
+        "RUN/figures/E3/figure_e3_yy_E_reverse.png",
+        "RUN/figures/E3/figure_e3_yy_E_reverse.pdf"
+      ]
     },
     {
       "figure": "Figure E.13",
-      "experiment": "E4 deterministic counterexample",
-      "files": [
+      "experiment": "Correspondence Accuracy and Computational Stability",
+      "pdf_page": 114,
+      "manuscript_include_paths": [
         "E4/correspondence/counterexample/P1_oscillatory_CP_nonuniqueness.png",
         "E4/correspondence/counterexample/P1_oscillatory_CP_nonuniqueness.pdf"
       ],
-      "replay": "python run_paper.py --experiment E4 --output NEW",
-      "pdf_page": 114,
-      "legacy_replay": "python E4/correspondence/replay_counterexample.py --output NEW",
-      "reproduce": "python run_paper.py --experiment E4 --output NEW"
+      "experiment_code": "E4",
+      "section": "5.4; E.3.1; E.6.3",
+      "source_directory": "experiments/correspondence_accuracy",
+      "command": "python -m manifold_experiments --experiment correspondence --output NEW",
+      "generated_files": [
+        "RUN/counterexample/P1_oscillatory_CP_nonuniqueness.png",
+        "RUN/counterexample/P1_oscillatory_CP_nonuniqueness.pdf"
+      ]
     },
     {
       "figure": "Figure E.14",
-      "experiment": "E5",
-      "files": [
+      "experiment": "Directional Ablation of the YY Estimator",
+      "pdf_page": 115,
+      "manuscript_include_paths": [
         "E5/paper_figures/figure_e5_population_directional_ablation.png",
         "E5/paper_figures/e5_population_directional_ablation.pdf"
       ],
-      "replay": "python run_paper.py --experiment E5 --output NEW",
-      "pdf_page": 115,
-      "legacy_replay": "Selected-export replay; see E5/README.md",
-      "reproduce": "python run_paper.py --experiment E5 --output NEW"
+      "experiment_code": "E5",
+      "section": "5.5; E.4; E.6.3",
+      "source_directory": "experiments/yy_directional_ablation",
+      "command": "python -m manifold_experiments --experiment directional-ablation --output NEW",
+      "generated_files": [
+        "RUN/evaluation/E5/figures/figure_e5_population_directional_ablation.png",
+        "RUN/evaluation/E5/figures/figure_e5_population_directional_ablation.pdf"
+      ]
     },
     {
       "figure": "Figure E.15",
-      "experiment": "nonuniform E1",
-      "files": [
+      "experiment": "Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Population",
+      "pdf_page": 116,
+      "manuscript_include_paths": [
         "nonuniform/E1/outputs/nonuniform/e1_stsp_nonuniform_density_infinity.png",
         "nonuniform/E1/outputs/nonuniform/e1_stsp_nonuniform_density_infinity.pdf"
       ],
-      "replay": "python run_paper.py --experiment nonuniform_E1 --output NEW",
-      "pdf_page": 116,
-      "legacy_replay": "python nonuniform/E1/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment nonuniform_E1 --output NEW"
+      "experiment_code": "nonuniform_E1",
+      "section": "E.5",
+      "source_directory": "experiments/nonuniform/population",
+      "command": "python -m manifold_experiments --experiment nonuniform-population --output NEW",
+      "generated_files": [
+        "RUN/figures/nonuniform_E1/e1_stsp_nonuniform_density_infinity.png",
+        "RUN/figures/nonuniform_E1/e1_stsp_nonuniform_density_infinity.pdf"
+      ]
     },
     {
       "figure": "Figure E.16",
-      "experiment": "nonuniform E1",
-      "files": [
+      "experiment": "Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Population",
+      "pdf_page": 116,
+      "manuscript_include_paths": [
         "nonuniform/E1/outputs/nonuniform_average/e1_stsp_nonuniform_density_average.png",
         "nonuniform/E1/outputs/nonuniform_average/e1_stsp_nonuniform_density_average.pdf"
       ],
-      "replay": "python run_paper.py --experiment nonuniform_E1 --output NEW",
-      "pdf_page": 116,
-      "legacy_replay": "python nonuniform/E1/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment nonuniform_E1 --output NEW"
+      "experiment_code": "nonuniform_E1",
+      "section": "E.5",
+      "source_directory": "experiments/nonuniform/population",
+      "command": "python -m manifold_experiments --experiment nonuniform-population --output NEW",
+      "generated_files": [
+        "RUN/figures/nonuniform_E1/e1_stsp_nonuniform_density_average.png",
+        "RUN/figures/nonuniform_E1/e1_stsp_nonuniform_density_average.pdf"
+      ]
     },
     {
       "figure": "Figure E.17",
-      "experiment": "nonuniform E2",
-      "files": [
+      "experiment": "Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Finite Sample",
+      "pdf_page": 117,
+      "manuscript_include_paths": [
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_avg.png",
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_avg.pdf"
       ],
-      "replay": "python run_paper.py --experiment nonuniform_E2 --output NEW",
-      "pdf_page": 117,
-      "legacy_replay": "python nonuniform/E2/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment nonuniform_E2 --output NEW"
+      "experiment_code": "nonuniform_E2",
+      "section": "E.5",
+      "source_directory": "experiments/nonuniform/fixed_scales",
+      "command": "python -m manifold_experiments --experiment nonuniform-fixed-scales --output NEW",
+      "generated_files": [
+        "RUN/figures/nonuniform_E2/E2_nonuniform_STSP_E_avg.png",
+        "RUN/figures/nonuniform_E2/E2_nonuniform_STSP_E_avg.pdf"
+      ]
     },
     {
       "figure": "Figure E.18",
-      "experiment": "nonuniform E2",
-      "files": [
+      "experiment": "Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Finite Sample",
+      "pdf_page": 118,
+      "manuscript_include_paths": [
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_infty.png",
         "nonuniform/E2/figures/E2_nonuniform_STSP_E_infty.pdf"
       ],
-      "replay": "python run_paper.py --experiment nonuniform_E2 --output NEW",
-      "pdf_page": 118,
-      "legacy_replay": "python nonuniform/E2/reproduce.py --output NEW",
-      "reproduce": "python run_paper.py --experiment nonuniform_E2 --output NEW"
+      "experiment_code": "nonuniform_E2",
+      "section": "E.5",
+      "source_directory": "experiments/nonuniform/fixed_scales",
+      "command": "python -m manifold_experiments --experiment nonuniform-fixed-scales --output NEW",
+      "generated_files": [
+        "RUN/figures/nonuniform_E2/E2_nonuniform_STSP_E_infty.png",
+        "RUN/figures/nonuniform_E2/E2_nonuniform_STSP_E_infty.pdf"
+      ]
     }
   ],
-  "manuscript_sha256": "bdc7b87ba20118aaf323bbe25d6b6921235e9f18c1c1d0453604c92f60d561be",
+  "manuscript_sha256": "d0dcc8f6dc30acd72b0be9bd5429049750852448655ff9e3deb8a3b27aa5a275",
   "logical_experimental_plots": 33,
   "experimental_exports": 66,
-  "distribution_note": "Original manuscript filenames are identifiers, not bundled historical exports. Use the fresh calculation entrypoint."
+  "distribution_note": "manuscript_include_paths identify the paper source, not bundled outputs or current code paths. generated_files are outputs of the supported fresh-run entrypoint. No historical exports are required."
 }

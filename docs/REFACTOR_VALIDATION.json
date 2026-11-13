@@ -1,0 +1,107 @@
+{
+  "schema": "PAPER_ALIGNED_ORGANIZATION_QA_20261113_V1",
+  "date": "2026-11-13",
+  "prior_commit": "b554e23c34e25d8c3f469f950f3f23c44354b462",
+  "manuscript_sha256": "d0dcc8f6dc30acd72b0be9bd5429049750852448655ff9e3deb8a3b27aa5a275",
+  "numerical_regression": {
+    "schema": "PAPER_LAYOUT_NUMERICAL_REGRESSION_V1",
+    "status": "PASS",
+    "same_ordered_full_plan_tasks": 1356,
+    "same_ordered_smoke_tasks": 24,
+    "protocol_ast_unchanged": true,
+    "compared_result_numeric_leaves": 15199,
+    "numerical_tolerance": 0,
+    "nan_equal": true,
+    "all_fitted_points_statuses_failures_inputs_compared": true,
+    "excluded_timing_fields": {
+      "pipeline_id": 16,
+      "timing": 16,
+      "runtime_single": 8,
+      "runtime_multi": 8,
+      "runtime_ratio": 8,
+      "setup_seconds": 1,
+      "reference_seconds": 1,
+      "shared_seconds": 5,
+      "correspondence_seconds": 7,
+      "combine_seconds": 5,
+      "total_seconds": 5,
+      "seconds": 8,
+      "cumulative_actual_generation_seconds": 2,
+      "lookup_seconds": 2
+    },
+    "differences": [],
+    "packet_container_source_hashes_and_wall_times_expected_to_differ": true,
+    "baseline_evaluation": "PASS",
+    "refactored_evaluation": "PASS",
+    "scope": "Reduced actual CPU fits on original small-input profile, not a full production rerun or GPU test."
+  },
+  "tests": {
+    "passed": 27,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit_sha256": "eb06f597f463143f0e69006e07a535073f908b671be8dc247f5d85297265bada"
+  },
+  "source_preservation": {
+    "previously_bound_core_scientific_files": 329,
+    "all_core_current_location_hashes_verified": true,
+    "original_tracked_files_retained": 553,
+    "unchanged_after_relocation": 511,
+    "unchanged_experiment_JSON_files": 60,
+    "frozen_source_and_config_bytes_unchanged": true,
+    "original_numerical_solver_parameter_seed_failure_rules_changed": false
+  },
+  "runtime_binding": {
+    "schema": "POST_SMOKE_SOURCE_BINDING_V1",
+    "tested_runtime_manifest_sha256": "a0b4411160049455b5c54cf967f393694e97e47e81ed3ed31f3aa790ac8bff0b",
+    "final_runtime_manifest_sha256": "702ee597ecfcf8a470110c004dfe4e9750fcad19c8b0150789a689de11b9bf2b",
+    "post_run_changes": [
+      "README.md",
+      "README.zh-CN.md"
+    ],
+    "post_run_changes_only_link_display_text": true,
+    "all_executable_configuration_design_bytes_identical": true,
+    "identical_other_runtime_members": 522,
+    "actual_PNG_exports": 32,
+    "actual_PDF_exports": 32,
+    "PDFs_parsed_and_full_pages_rendered": 32,
+    "visual_review_pending": false,
+    "visual_review": "All 32 PNGs and 32 full-page PDF renders inspected in four labelled contact sheets; no change from byte-identical original PNGs and no clipping observed."
+  },
+  "renderer_interfaces": {
+    "logical_plots": 32,
+    "PNG_exact_byte_matches": 32,
+    "PDF_exports": 32,
+    "PDF_full_page_renders": 32,
+    "actual_visual_review_completed": true,
+    "inputs": "Actual existing reference values; not new production fits.",
+    "original_figure_filenames_retained": true
+  },
+  "static_release_audit": {
+    "safe_findings": 0,
+    "identity_findings": 0,
+    "existing_behavior_risk_findings_consciously_retained": 160,
+    "reason": "Original scientific literals, RNG/thread definitions and required fixed design arrays define the experiment. They are not altered to satisfy static heuristics."
+  },
+  "reproducibility_check": {
+    "essentials_ok": [
+      "README",
+      "ENV",
+      "SEED",
+      "ENTRYPOINT",
+      "DATA",
+      "RESULTS_CMD"
+    ],
+    "tests_present": true
+  },
+  "engineering_history": [
+    "Windows denied the first whole-directory rename before any source move; tracked members were subsequently relocated individually from a preserved inventory.",
+    "A restricted multiprocess formatter stalled; single-process formatting succeeded. The exact stalled formatter PID/start time/command were verified before its retirement.",
+    "The first numeric comparison included random invocation UUIDs and wall times. Its report is retained; final comparison explicitly excludes only timing/UUID metadata.",
+    "Private renderer QA path/glob errors and partial exports were retained. A continuation consumed the previously bound strict 7+60 E5 packet set and completed only missing plots. No scientific source, gates or fits were changed."
+  ],
+  "full_production_rerun": false,
+  "new_GPU_validation": false,
+  "artifact_badge_claimed": false,
+  "limitations": "Exact equality applies to the declared reduced CPU inputs. Full-study/GPU numerical replication was not performed during this layout change. Existing paper precision, finite-query and pilot-selection caveats remain."
+}

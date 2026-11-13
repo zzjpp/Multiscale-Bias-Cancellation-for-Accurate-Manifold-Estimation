@@ -84,5 +84,11 @@
     "existing_E2_E5_notices_unchanged": true,
     "scientific_code_configuration_data_changed": false,
     "new_numerical_validation_claimed": false
+  },
+  "record_scope": "Historical 2026-11-10 numerical QA plus 2026-11-12 license update. Current paper-aligned organization validation is linked separately; historical hashes and paths are not relabeled.",
+  "current_organization_validation": {
+    "date": "2026-11-13",
+    "file": "docs/REFACTOR_VALIDATION.json",
+    "sha256": "70e0aa4e5fa39aac3c486a4704ce60adf66a9f624b71609427522d8a0c3adfc7"
   }
 }

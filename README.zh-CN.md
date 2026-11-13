@@ -1,30 +1,44 @@
-# 论文实验复现
+# Beyond Curvature Bias: Higher-Order Manifold Fitting via Multiscale Cancellation
 
-以最终 `arxiv_final.pdf` 为准，提供从**生成输入、拟合、评价到绘图**的新运行入口，不读取历史拟合点或复制旧图作为复现结果。完整说明见 [README.md](README.md)。
+本仓库对应作者提供的 2026-11-12 版论文，文件名及 SHA-256 见 `PAPER_REFERENCE.json`。公开名称、目录说明和图件对应关系按该版论文整理。原 E1–E5 任务编号及图名保留兼容。
+
+## 安装和检查
 
 ```bash
+python -m venv .venv
+# PowerShell：.venv\Scripts\Activate.ps1
+# Linux/macOS：source .venv/bin/activate
 python -m pip install -r requirements.txt
 python validate_release.py
 python verify_paper.py
 python -m pytest -q tests
-python run_paper.py --profile smoke --backend cpu --output ./smoke_run --workers 2
+python -m manifold_experiments --list
+python -m manifold_experiments --profile smoke --backend cpu --output ./smoke_run --workers 2
 ```
 
-最后一条命令实际运行 24 个缩小规模任务，覆盖 E1–E5 和两组非均匀实验，生成诊断图。它只验证计算链路，**不能用于报告论文数值或阶数**。
+缩小检查有 24 个真实拟合任务，包含评估和绘图，但修改了样本、查询和积分预算，**不能作为论文误差、收敛阶数或完整实验复现的证据**。
 
-正式配置：
+## 论文与代码对应
+
+| 选项 / 兼容编号 | 论文标题 | 章节 | 代码 |
+|---|---|---|---|
+| `population` / `E1` | Population Verification | 5.1; E.1; E.7 | [population_verification](experiments/population_verification/) |
+| `fixed-scales` / `E2` | Finite-Sample Behavior at Fixed Scales | 5.2; E.2 | [finite_sample_fixed_scales](experiments/finite_sample_fixed_scales/) |
+| `bandwidth` / `E3` | Bandwidth Robustness and Reverse Coverage | 5.3; E.3 | [bandwidth_robustness](experiments/bandwidth_robustness/) |
+| `correspondence` / `E4` | Correspondence Accuracy and Computational Stability | 5.4; E.3.1; E.6.3 | [correspondence_accuracy](experiments/correspondence_accuracy/) |
+| `directional-ablation` / `E5` | Directional Ablation of the YY Estimator | 5.5; E.4; E.6.3 | [yy_directional_ablation](experiments/yy_directional_ablation/) |
+| `nonuniform-population` / `nonuniform_E1` | Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Population | E.5 | [nonuniform/population](experiments/nonuniform/population/) |
+| `nonuniform-fixed-scales` / `nonuniform_E2` | Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Finite Sample | E.5 | [nonuniform/fixed_scales](experiments/nonuniform/fixed_scales/) |
 
 ```bash
-python run_paper.py --experiment all --backend cpu --output ./paper_run --plan-only
-python run_paper.py --experiment all --backend cpu --output ./paper_run --resume --workers 1
+python -m manifold_experiments --experiment population --output ./population_run --plan-only
+python -m manifold_experiments --experiment population --output ./population_run --resume
 ```
 
-也可只选择 `E1`、`E2`、`E3`、`E4`、`E5`、`nonuniform_E1`、`nonuniform_E2`。全套有 1,356 个任务，计算量很大，本次整理不自动重跑。GPU 使用原 Linux 环境及 CPU/GPU 门禁；E4、E5 保留原 CPU 实现。CPU 正式模式使用相同预算的原 CPU 拟合器，不是静默回退。
+选择 `all` 计算全部 1,356 项正式任务，开销较大。新名称与旧编号生成相同有序任务及任务 ID；`run_paper.py` 仍兼容。论文的 GBC-STSP、GBC-DR、GBC-YY 对应原生 `Multi` 字段。已有图名保留，兼容论文 LaTeX。
 
-`packets/` 保存全部结果与失败，`evaluation/` 保存汇总与精度诊断；图在 `figures/`、`evaluation/E5/figures/`、`counterexample/`。已有目录必须显式 `--resume` 并匹配原计划、源码；工程失败不自动重试，不覆盖论文目录。公共入口统一为 `run_paper.py`；保留的旧模块作为科学计算库使用，历史部署/重放 CLI 不作为本版运行流程。
+每项任务采用独立解释器、单 BLAS/OpenMP 线程。CPU 使用 Python 3.12.9 及 `requirements.txt`；GPU 原环境单列于 `requirements-gpu.txt`，保留原环境和精度检查，不自动切换 CPU。有效任务只在相同来源计划下显式续算，工程失败不自动重试，科学失败、NaN 和空心不可靠点均保留。
 
-E3 保持最新样本量、六流形统一 262144 个反向参考点、全部尺度与可靠性规则。非均匀 E2 仅运行文中 STSP。E2 不加已撤销的 population 参考线；E7 不作为独立实验发布。E4 公共查询的几何辅助、CP 局部分支及计时范围，E5 的 pilot 选择与旧失败门禁，均保留披露。
+无需外部数据。观测由原几何和种子生成，带宽实验的固定查询/参考数组属于实验设计输入。公开流程从头生成、拟合、评估和绘图，不依赖历史拟合输出。旧的大型输出不随本次版本上传，浅克隆可避免下载旧历史。
 
-大型历史输出、重复观测数组和旧图不随新版发布，已保留在本机归档。少量 `reference_values/` 历史对照表**不进入新实验计算**。E3 固定 query/reference 坐标属于设计输入，仍包含在仓库；其余观测由原种子生成。建议 `git clone --depth 1` 避免下载旧提交的大文件历史。
-
-本次验证包括干净安装、不含历史输出的实际小流程；没有声称重跑全部正式实验、获得复现徽章或满足某个尚未指定期刊的全部提交细则。仓库统一采用 MIT 许可证，保留原作者署名；E1 已按仓库所有者于 2026-11-12 的明确授权改为 MIT，详见 `LICENSE` 和 `LICENSES.md`。
+详细设定、图件位置及限制见 [实验说明](docs/EXPERIMENTS.md)、[代码结构](docs/CODE_STRUCTURE.md)、[图件映射](docs/FIGURE_MAP.json) 和 [复现范围](docs/REPRODUCIBILITY.md)。整理检查不代表独立重跑全部生产实验；不宣称 artifact badge。授权为 [MIT](LICENSE)，保留原有版权声明。

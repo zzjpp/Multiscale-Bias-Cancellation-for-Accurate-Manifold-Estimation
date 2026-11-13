@@ -13,4 +13,7 @@ new_raw/
 replay_output/
 paper_run/
 smoke_run/
+population_run/
+fixed_scale_run/
+bandwidth_run/
 tmp/

@@ -1,4 +1,4 @@
-name: Offline CPU checks
+name: Paper protocol and CPU regression
 on: [push, pull_request]
 jobs:
   smoke:
@@ -8,8 +8,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12.9'
-      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m black --check --workers 1 manifold_experiments run_paper.py reproduce_all.py smoke_all.py verify_paper.py release_contract.py validate_release.py tools tests
       - run: python validate_release.py
       - run: python verify_paper.py
       - run: python -m pytest -q tests --basetemp ./tmp/pytest
-      - run: python run_paper.py --profile smoke --backend cpu --output ./smoke_run --workers 2
+      - run: python -m manifold_experiments --list
+      - run: python -m manifold_experiments --profile smoke --backend cpu --output ./smoke_run --workers 2

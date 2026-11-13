@@ -1,8 +1,10 @@
 # Beyond Curvature Bias: Higher-Order Manifold Fitting via Multiscale Cancellation
 
-Source for the experiments in the final **arxiv_final.pdf** (128 pages; SHA-256 in `PAPER_REFERENCE.json`). The supported entry point performs **new input generation, fitting, evaluation and plotting**. It does not copy old figures or load historical fitted points.
+Python implementation of the paper's experiments. The supplied **2026-11-12 manuscript** is identified by filename and SHA-256 in [PAPER_REFERENCE.json](PAPER_REFERENCE.json). Experiment names, sections, and figure numbers follow that version.
 
-## Install and check
+The supported pipeline generates observations, fits estimators, evaluates errors, and draws figures **from scratch**. Historical fits, private servers, and old figure exports are not required.
+
+## Quick start
 
 ```bash
 git clone --depth 1 https://github.com/zzjpp/Multiscale-Bias-Cancellation-for-Accurate-Manifold-Estimation.git
@@ -14,71 +16,67 @@ python -m pip install -r requirements.txt
 python validate_release.py
 python verify_paper.py
 python -m pytest -q tests
+python -m manifold_experiments --list
 ```
 
-The tested CPU environment is Python 3.12.9 with the exact versions in `requirements.txt`. Use a separate environment for the original Linux GPU dependencies in `requirements-gpu.txt`. GPU mode retains the original CPU/GPU equivalence gates and hardware checks; it never silently falls back to CPU. E4 and E5 retain their original CPU implementations even when other experiments use GPU.
-
-## Run from scratch
-
-Start with the reduced **actual fitting → packet → evaluation → figure** check:
+Start with the reduced **real fitting → evaluation → plotting** check:
 
 ```bash
-python run_paper.py --profile smoke --backend cpu --output ./smoke_run --workers 2
+python -m manifold_experiments --profile smoke --backend cpu --output ./smoke_run --workers 2
 ```
 
-It runs 24 tasks covering E1–E5 and both nonuniform studies, generates new observations/roots, preserves failed queries, and produces seven diagnostic PNG/PDF pairs plus the counterexample figure. **It changes sample/query/quadrature budgets and is not evidence for the paper's errors or convergence rates.**
-
-Inspect the full plan without starting expensive computations:
-
-```bash
-python run_paper.py --experiment all --backend cpu --output ./paper_run --plan-only
-```
-
-Then execute that exact plan:
-
-```bash
-python run_paper.py --experiment all --backend cpu --output ./paper_run --resume --workers 1
-```
-
-Or select an experiment into a fresh directory:
-
-```bash
-python run_paper.py --experiment E2 --backend cpu --output ./e2_run --workers 4
-python run_paper.py --experiment E3 --backend gpu --output ./e3_run --workers 2
-```
-
-`--workers` controls separate interpreters with one BLAS/OpenMP thread each. Use it conservatively. The GPU path requires the original visible device/environment; population GPU tasks include fresh same-input CPU equivalence checks, adding substantial CPU cost. CPU mode explicitly runs the original full-size CPU fitters. The full plan has **1,356 tasks**, many containing multiple scales and hundreds of queries; it is expensive and has no promised runtime.
-
-Existing output directories require `--resume` and an identical source-bound plan. Valid completed tasks are reused; recorded engineering failures are **not automatically retried**. Scientific failures remain in packets and summaries. Add `--evaluate-only` to evaluate a complete new run separately. Sources and publication directories are never overwritten.
+It runs 24 tasks across all seven selections and produces seven diagnostic PNG/PDF pairs plus the CP counterexample. **Smoke changes sample, query, and integration budgets; it is not evidence for paper errors or rates.**
 
 ## Paper experiment mapping
 
-| Selection | New calculations and selected figures |
-|---|---|
-| `E1` | STSP/DR/YY population, shared-fit naive/Proposed control, original MS-STSP; Figures 2, 4 and E.1–E.3 |
-| `E2` | Three methods, six geometries, nested sizes, 20 repeats; Figure 5 and E.4–E.6 |
-| `E3` | Three methods, six geometries, main/reverse, 28 scales; twelve plots, Figure 6 and E.7–E.12 |
-| `E4` | Common-query ENF/local CP/Oracle/NN, constructed counterexample; Figure 7 and E.13 |
-| `E5` | Population/finite directional ablation; Figure 8, E.14 and Table 2 |
-| `nonuniform_E1` | Nonuniform population STSP; E.15–E.16 |
-| `nonuniform_E2` | Nonuniform finite-sample STSP only; E.17–E.18. Unreported DR/YY runs are not required. |
+| Selection / compatibility code | Paper heading | Sections | Implementation |
+|---|---|---|---|
+| `population` / `E1` | Population Verification | 5.1; E.1; E.7 | [population_verification](experiments/population_verification/) |
+| `fixed-scales` / `E2` | Finite-Sample Behavior at Fixed Scales | 5.2; E.2 | [finite_sample_fixed_scales](experiments/finite_sample_fixed_scales/) |
+| `bandwidth` / `E3` | Bandwidth Robustness and Reverse Coverage | 5.3; E.3 | [bandwidth_robustness](experiments/bandwidth_robustness/) |
+| `correspondence` / `E4` | Correspondence Accuracy and Computational Stability | 5.4; E.3.1; E.6.3 | [correspondence_accuracy](experiments/correspondence_accuracy/) |
+| `directional-ablation` / `E5` | Directional Ablation of the YY Estimator | 5.5; E.4; E.6.3 | [yy_directional_ablation](experiments/yy_directional_ablation/) |
+| `nonuniform-population` / `nonuniform_E1` | Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Population | E.5 | [nonuniform/population](experiments/nonuniform/population/) |
+| `nonuniform-fixed-scales` / `nonuniform_E2` | Multiscale Bias Cancellation for STSP under Nonuniform Sampling — Finite Sample | E.5 | [nonuniform/fixed_scales](experiments/nonuniform/fixed_scales/) |
 
-Figures 1 and 3 are schematics with editable sources under `illustrations/`. `docs/FIGURE_MAP.json` records original manuscript filenames/pages, not a claim that historical exports are distributed. New figures are under `RUN/figures/`, `RUN/evaluation/E5/figures/`, and `RUN/counterexample/`. Summaries and precision diagnostics are under `RUN/evaluation/`; `EVALUATION.json` records completion or failure. Use `run_paper.py` as the public orchestration interface; original experiment modules are retained as versioned scientific libraries, and their historical deployment/replay CLIs are not the release workflow.
+```bash
+# Inspect the complete selected plan without fitting.
+python -m manifold_experiments --experiment population --output ./population_run --plan-only
+# Execute that source-bound plan.
+python -m manifold_experiments --experiment population --output ./population_run --resume
+# Other examples: use fresh output directories.
+python -m manifold_experiments --experiment fixed-scales --output ./fixed_scale_run --workers 4
+python -m manifold_experiments --experiment bandwidth --backend gpu --output ./bandwidth_run --workers 2
+```
 
-## Scientific contracts
+Select `all` for the complete **1,356-task** study. A task can contain multiple scales and hundreds of queries; full runs are expensive. `--workers` launches separate interpreters with one BLAS/OpenMP thread each. Original scientific libraries have overlapping namespaces, so task-level process isolation is intentional.
 
-- E1 keeps the seven sigma levels, original deterministic integration, smooth STSP kernel, noise-dependent coefficients and PCA-based ENF. Controlled Single/naive/Proposed share the **same** two fitted points. MS-STSP has its separate original hard-ball operator/iteration and is not the naive control. Integration refinement, root and weight checks precede paper rendering.
-- E2 keeps sigma 0.005, bandwidths 0.1/0.2, 144 queries, eight nested prefixes of a 500000-point parent and 20 repeats. The withdrawn population overlay is absent.
-- E3 order is circle, S2/R3, Clifford torus, S3/R4, S2/R10, corrugated torus. Sample sizes: `12000/24000/24000/60000/24000/36000`; reverse queries: `1024/8192/8192/16384/8192/1024`; **262144 references on all six geometries**. YY uses `(0.4,1,1.6) r1`. All scales, independent baselines, failures, NaN breaks and unreliable markers remain; green backgrounds are absent. Reverse distances use each complete fitted cloud, never pooled shard errors.
-- STSP/DR matching uses compact centered reference-scale PCA; true normals are blocked. Original DR internal Gaussian fitting and failure adapters remain. YY's original geometry-assisted preliminary manifold and data-axis construction remain disclosed.
-- E4 regenerates common queries on the empirical fine STSP branch with the original geometry-assisted initialization and seeds. CP searches a continuous **local empirical implicit sheet**, not discrete candidates or a certified global projection over all zero-set components. Fresh timings include common reference construction and target-curve/search costs; they are not a promise to reproduce the historical approximately 26-second timing on other hardware.
-- E5 keeps actual `c0=3`, the pilot-selected finite scale triple, the historical rejected condition-number gate and original evidence class. Cleanup does not upgrade that evidence. Directional errors use the original base point and the projected actual first-stage axis.
-- Nonuniform densities are relative to surface measure, amplitude 0.5 (max/min ratio 3). Clean area-uniform proposals are rejected **before** Gaussian noise with the original separate acceptance stream. Definitions are in `nonuniform/E1/config.json` and `nonuniform/E2/sampling.py`.
+`run_paper.py` remains a compatibility entrypoint. New topic names and E1–E5 aliases resolve to the same ordered task IDs. Native `Multi` fields denote the paper's **GBC-STSP**, **GBC-DR**, or **GBC-YY**. Figure filenames are retained for existing LaTeX sources.
 
-## Inputs, outputs and validation limits
+An existing directory requires `--resume` and an identical source-bound plan. Valid completed packets are reused; engineering failures are not silently retried. Scientific failures, NaNs, and unreliable markers remain. `--evaluate-only` evaluates a complete run without fitting again. A run from an earlier source revision cannot be silently resumed after reorganization.
 
-No external training data or private server path is needed. Observations are generated from distributed geometry/seed definitions. E3's exact registered query/reference NPY coordinates are included as fixed design inputs shared across methods, not fitted outputs. `RUN_SOURCE_MANIFEST.json` binds only source/configuration/design inputs. The runtime was also tested in a separate copy containing **no historical numerical outputs**.
+## Code and results
 
-Large historical packets, duplicate observation arrays, queue logs and old figure exports are excluded from this revision. Small optional tables under `reference_values/` are **never read by the fresh estimator pipeline**. Older Git commits retain their history; use `--depth 1` to avoid downloading it. Private local scientific archives were preserved during cleanup.
+```text
+manifold_experiments/   CLI, paper catalog, job design, workers, evaluation
+experiments/           Experiment-specific solvers, configurations, renderers
+illustrations/         Editable schematic sources for Figures 1 and 3
+docs/                  Figure map, scientific contracts, architecture, QA scope
+tests/                 Protocol, naming, source-binding, failure-path regressions
+tools/                 Source/design export and manifest maintenance
+reference_values/      Optional small comparison tables; never estimator inputs
+```
 
-Release checks cover clean installation, protocol consistency and reduced real end-to-end runs. They do **not** claim an independent rerun of the entire 1,356-task production study during packaging. Numerical diagnostics are not certified bounds; finite query maxima are not continuous suprema; finite-range slopes are not asymptotic proofs. Hardware/library differences may affect floating-point values, classifications near thresholds, and timing. The repository is distributed under the MIT License (see `LICENSE` and `LICENSES.md`); existing contributor notices are retained. E1 was relicensed to MIT with the repository owner's explicit authorization on 2026-11-12. No artifact badge is claimed.
+See [the experiment guide](docs/EXPERIMENTS.md), [code guide](docs/CODE_STRUCTURE.md), and [exact figure map](docs/FIGURE_MAP.json). Full-profile figures are written under `RUN/figures/`, `RUN/evaluation/E5/figures/`, and `RUN/counterexample/`; diagnostics and tables are under `RUN/evaluation/`. `EVALUATION.json` records completion or failure. Figures 1 and 3 have editable TikZ sources under `illustrations/`.
+
+## Environments and scope
+
+The tested CPU environment is **Python 3.12.9** with exact versions in [requirements.txt](requirements.txt). The original Linux GPU dependencies are separate in [requirements-gpu.txt](requirements-gpu.txt). GPU mode retains the original hardware/environment and same-input CPU/GPU checks, without silent CPU fallback. Correspondence and directional-ablation retain their CPU implementations. Numerical paths retain float64 arithmetic.
+
+No external dataset is required. Synthetic observations use the original geometry/seed definitions. [Registered query/reference coordinates](experiments/bandwidth_robustness/assets/) are fixed design inputs, not fitted outputs. `RUN_SOURCE_MANIFEST.json` binds source and design inputs; `SOURCE_MANIFEST.json` binds the distribution. See [reproducibility notes](docs/REPRODUCIBILITY.md) for validation levels.
+
+Release validation does not independently rerun the full production study. Hardware/library differences can affect floating-point results, threshold classifications, and timings. Finite-query maxima are not continuous suprema; finite-range slopes are not asymptotic proofs; refinement diagnostics are not certified bounds. YY's prescribed preliminary manifold and geometry-assisted common queries in the correspondence benchmark remain disclosed. Directional finite-sample results retain pilot-selection and historical conditioning caveats.
+
+Large historical outputs are excluded from this revision. Earlier Git commits retain their history; use `--depth 1` to avoid downloading it. Code is under the [MIT License](LICENSE); existing notices are retained (see [LICENSES.md](LICENSES.md)). No artifact-evaluation badge is claimed.
+
+See [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [中文说明](README.zh-CN.md).
