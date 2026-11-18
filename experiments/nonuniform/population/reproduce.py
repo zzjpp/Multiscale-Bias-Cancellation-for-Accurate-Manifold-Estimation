@@ -1,20 +1,13 @@
-"""The two supplement E1 nonuniform figures from already audited population values."""
-import argparse
-import importlib.util
-import json
-from pathlib import Path
-ROOT=Path(__file__).resolve().parent
+"""Fresh nonuniform_E1 experiment; no historical fitted outputs are required.
 
-def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
-    out=a.output.resolve()
-    if out.exists():raise FileExistsError('Use a fresh output directory')
-    source=ROOT.parent.parent/'population_verification/presentation.py'
-    spec=importlib.util.spec_from_file_location('paper_nonuniform_e1_presentation',source)
-    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-    _,rows=module.read_inputs()
-    module.configure_style()
-    figures=[module.six_panel(rows,'STSP',metric,out,True) for metric in ['average','infinity']]
-    (out/'MANIFEST.json').write_text(json.dumps(dict(figures=figures,new_fits=False,new_integrations=False),indent=2),encoding='utf8')
-    print(json.dumps(dict(figures=2,new_fits=False)))
-if __name__=='__main__':main()
+Run with --help for options or --output NEW to compute the paper profile.
+Use --profile smoke for a reduced actual fitting check, not paper evidence.
+"""
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
+from manifold_experiments.entrypoints import reproduce_experiment
+
+if __name__ == "__main__":
+    reproduce_experiment("nonuniform_E1")

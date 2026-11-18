@@ -13,3 +13,12 @@ Population and finite directional ablation preserve original shared starts, data
 Configuration/source locations: `config/population.json`, `config/finite_sample.json`. Original version-specific `src/` and `frozen/` packages retain numerical behavior and provenance names. Use the public pipeline, not historical deployment/replay scripts, for a complete fresh run.
 
 No external dataset is required; observations are generated from the original geometry and seed definitions. Add `--profile smoke` for a reduced real fit that is not paper evidence. See the root README, `docs/EXPERIMENTS.md`, and `docs/FIGURE_MAP.json` for environments, output paths and validation limits.
+
+## Standalone entrypoint
+
+`python experiments/yy_directional_ablation/reproduce.py --output NEW` invokes the same fresh pipeline.
+With no arguments it displays help and does not start a costly calculation.
+
+`legacy_replay.py` retains the historical archive-dependent interface for
+provenance. It is not the fresh reproduction entrypoint and its historical
+inputs are not distributed with this source-focused release.

@@ -1,16 +1,13 @@
-"""Current-paper E4 local CP/ENF/NN/Oracle figure; no fitting."""
-import argparse
+"""Fresh E4 experiment; no historical fitted outputs are required.
+
+Run with --help for options or --output NEW to compute the paper profile.
+Use --profile smoke for a reduced actual fitting check, not paper evidence.
+"""
 from pathlib import Path
-import subprocess
 import sys
-ROOT=Path(__file__).resolve().parent
-def main():
-    p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--output',type=Path,default=ROOT/'new_figures')
-    p.add_argument('--mode',choices=['plot','verify'],default='plot')
-    a=p.parse_args()
-    if a.mode=='verify':
-        subprocess.run([sys.executable,'-X','utf8','-B',str(ROOT/'legacy_reproduce.py'),'--mode','verify'],check=True)
-    else:
-        subprocess.run([sys.executable,'-X','utf8','-B',str(ROOT/'correspondence/plot_finite.py'),'--main-only','--output',str(a.output.resolve())],check=True)
-if __name__=='__main__':main()
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from manifold_experiments.entrypoints import reproduce_experiment
+
+if __name__ == "__main__":
+    reproduce_experiment("E4")

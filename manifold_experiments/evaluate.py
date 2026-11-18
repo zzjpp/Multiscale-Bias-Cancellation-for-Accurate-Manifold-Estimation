@@ -761,10 +761,12 @@ def main():
                 if not smoke:
                     run(
                         (
-                            Path("experiments/finite_sample_fixed_scales/reproduce.py")
+                            Path(
+                                "experiments/finite_sample_fixed_scales/render_figures.py"
+                            )
                             if exp == "E2"
                             else Path(
-                                "experiments/nonuniform/fixed_scales/reproduce.py"
+                                "experiments/nonuniform/fixed_scales/render_figures.py"
                             )
                         ),
                         "--table",
@@ -778,7 +780,7 @@ def main():
                 csv_write(out / "SUMMARY.csv", rows)
                 if not smoke:
                     run(
-                        Path("experiments/bandwidth_robustness/reproduce.py"),
+                        Path("experiments/bandwidth_robustness/render_figures.py"),
                         "--table",
                         out / "SUMMARY.csv",
                         "--output",

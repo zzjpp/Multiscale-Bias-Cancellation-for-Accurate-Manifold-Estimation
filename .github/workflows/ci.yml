@@ -1,8 +1,19 @@
 name: Paper protocol and CPU regression
 on: [push, pull_request]
+permissions:
+  contents: read
+env:
+  PYTHONUTF8: '1'
+  PYTHONDONTWRITEBYTECODE: '1'
+  MPLBACKEND: Agg
 jobs:
   smoke:
-    runs-on: windows-latest
+    name: CPU regression (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -12,6 +23,16 @@ jobs:
       - run: python -m black --check --workers 1 manifold_experiments run_paper.py reproduce_all.py smoke_all.py verify_paper.py release_contract.py validate_release.py tools tests
       - run: python validate_release.py
       - run: python verify_paper.py
-      - run: python -m pytest -q tests --basetemp ./tmp/pytest
+      - run: python -m pytest -q tests --basetemp ./pytest_tmp --junitxml=pytest-results.xml
       - run: python -m manifold_experiments --list
       - run: python -m manifold_experiments --profile smoke --backend cpu --output ./smoke_run --workers 2
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cpu-checks-${{ matrix.os }}
+          retention-days: 14
+          path: |
+            pytest-results.xml
+            smoke_run/EVALUATION.json
+            smoke_run/logs/
+            smoke_run/errors/

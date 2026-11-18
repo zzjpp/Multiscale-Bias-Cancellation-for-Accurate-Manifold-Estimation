@@ -13,3 +13,12 @@ Space curve γ=(1.5cosθ,sinθ,0.3sin2θ), σ=0.06, h1=0.12, h2=0.24, n=200000, 
 Configuration/source locations: `correspondence/frozen/E4/fitting/original/config.json`; `correspondence/continuous_cp.py`. Original version-specific `src/` and `frozen/` packages retain numerical behavior and provenance names. Use the public pipeline, not historical deployment/replay scripts, for a complete fresh run.
 
 No external dataset is required; observations are generated from the original geometry and seed definitions. Add `--profile smoke` for a reduced real fit that is not paper evidence. See the root README, `docs/EXPERIMENTS.md`, and `docs/FIGURE_MAP.json` for environments, output paths and validation limits.
+
+## Standalone entrypoint
+
+`python experiments/correspondence_accuracy/reproduce.py --output NEW` invokes the same fresh pipeline.
+With no arguments it displays help and does not start a costly calculation.
+
+`legacy_replay.py` retains the historical archive-dependent interface for
+provenance. It is not the fresh reproduction entrypoint and its historical
+inputs are not distributed with this source-focused release.

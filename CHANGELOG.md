@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-19 — CI and fresh standalone entrypoints
+
+- Fixed the confirmed Windows pytest temporary-directory parent error.
+- Connected all seven public `reproduce.py` scripts to the fresh source-bound pipeline; no-argument invocation displays safe help.
+- Renamed plotting-only interfaces to `render_figures.py` with explicit tables, and historical wrappers to `legacy_replay.py`.
+- Added Windows/Ubuntu CI and targeted entrypoint regressions; retained estimators, seeds, numerical gates, task plans and figure filenames.
+- Documented AoS's official code/supplement policy and the distinction between engineering checks and full numerical replication.
+
 ## 2026-11-13 — Paper-aligned public interface
 
 - Bound the repository to the supplied 2026-11-12 manuscript.

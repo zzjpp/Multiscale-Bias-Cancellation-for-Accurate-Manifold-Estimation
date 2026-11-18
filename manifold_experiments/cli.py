@@ -27,7 +27,7 @@ def save(path, value):
         json.dump(value, f, indent=2, ensure_ascii=False)
 
 
-def main():
+def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument(
         "--experiment",
@@ -57,7 +57,7 @@ def main():
         help="Reuse only complete, source-bound packets; failed tasks are NOT retried.",
     )
     p.add_argument("--evaluate-only", action="store_true")
-    a = p.parse_args()
+    a = p.parse_args(argv)
     if a.list:
         print(describe_experiments())
         return

@@ -17,3 +17,6 @@ population_run/
 fixed_scale_run/
 bandwidth_run/
 tmp/
+
+pytest_tmp/
+pytest-results.xml

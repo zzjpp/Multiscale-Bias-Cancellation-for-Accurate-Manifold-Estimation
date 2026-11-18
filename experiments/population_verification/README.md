@@ -13,3 +13,12 @@ Seven noise levels; h1=3σ, h2=6σ for STSP/DR. YY uses (1.25,5,8)σ with r0=3σ
 Configuration/source locations: `theory_path_population_*/config.json`, `ms_stsp/config.json`, `weight_control/PLAN.json`. Original version-specific `src/` and `frozen/` packages retain numerical behavior and provenance names. Use the public pipeline, not historical deployment/replay scripts, for a complete fresh run.
 
 No external dataset is required; observations are generated from the original geometry and seed definitions. Add `--profile smoke` for a reduced real fit that is not paper evidence. See the root README, `docs/EXPERIMENTS.md`, and `docs/FIGURE_MAP.json` for environments, output paths and validation limits.
+
+## Standalone entrypoint
+
+`python experiments/population_verification/reproduce.py --output NEW` invokes the same fresh pipeline.
+With no arguments it displays help and does not start a costly calculation.
+
+`legacy_replay.py` retains the historical archive-dependent interface for
+provenance. It is not the fresh reproduction entrypoint and its historical
+inputs are not distributed with this source-focused release.

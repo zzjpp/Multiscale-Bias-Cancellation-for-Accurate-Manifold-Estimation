@@ -7,6 +7,7 @@
 | Module | Responsibility |
 |---|---|
 | `manifold_experiments/catalog.py` | Paper headings, sections, figures, public names, stable experiment codes |
+| `manifold_experiments/entrypoints.py` | Experiment-local `reproduce.py` delegation to the same fresh CLI |
 | `manifold_experiments/protocol.py` | Ordered scientific grid and canonical task IDs; paper/smoke budgets stay distinct |
 | `manifold_experiments/cli.py` | Source-bound plans, run ownership, isolated processes, resume checks |
 | `manifold_experiments/worker.py` | One task per interpreter; original version-specific fitters |
@@ -49,3 +50,5 @@ RUN/
 `docs/SCIENTIFIC_PRESERVATION.json` retains original source identifiers/hashes and current locations. `docs/REFACTOR_VALIDATION.json` records actual naming/layout regression scope. Neither substitutes for full scientific validation on a new production run.
 
 The formatter targets public orchestration, tests, and maintenance tools. Scientific constants, RNG streams, arithmetic order, tolerances, and failure semantics remain in the original numerical implementations. See [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+Plot-only `render_figures.py` programs require an explicit full table and output directory. The orchestrator supplies these from the current evaluated run. Archive-dependent old wrappers are named `legacy_replay.py`; their historical input dependencies are intentional and are not part of the supported fresh path.

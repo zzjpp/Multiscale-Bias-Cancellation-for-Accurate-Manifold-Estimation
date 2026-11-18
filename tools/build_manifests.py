@@ -11,11 +11,13 @@ EXCLUDE = {
     ".pytest_cache",
     ".paper-memory",
     "tmp",
+    "pytest_tmp",
     "paper_run",
     "smoke_run",
     "new_raw",
     "new_figures",
     "replay_output",
+    "pytest-results.xml",
 }
 ARCHIVED = {
     "data",

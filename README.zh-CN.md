@@ -42,3 +42,7 @@ python -m manifold_experiments --experiment population --output ./population_run
 无需外部数据。观测由原几何和种子生成，带宽实验的固定查询/参考数组属于实验设计输入。公开流程从头生成、拟合、评估和绘图，不依赖历史拟合输出。旧的大型输出不随本次版本上传，浅克隆可避免下载旧历史。
 
 详细设定、图件位置及限制见 [实验说明](docs/EXPERIMENTS.md)、[代码结构](docs/CODE_STRUCTURE.md)、[图件映射](docs/FIGURE_MAP.json) 和 [复现范围](docs/REPRODUCIBILITY.md)。整理检查不代表独立重跑全部生产实验；不宣称 artifact badge。授权为 [MIT](LICENSE)，保留原有版权声明。
+
+各实验目录的 `reproduce.py` 现均接入正式从头计算流程；不带参数显示帮助，带 `--output NEW` 才开始所选实验。只画图请使用 `render_figures.py --table TABLE --output NEW`；依赖旧存档的接口明确命名为 `legacy_replay.py`。CI 使用仓库根目录下的 `pytest_tmp`，并在 Windows 和 Ubuntu 上分别运行测试及真实缩小实验。
+
+AoS 官方政策和投稿代码补充材料准备见 [AoS 复现说明](docs/AOS_REPRODUCIBILITY.md)。测试通过与全量生产实验重新验证属于不同层次；没有真实全量运行记录时，不宣称已独立复现全部论文数值。

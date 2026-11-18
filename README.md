@@ -51,6 +51,15 @@ python -m manifold_experiments --experiment bandwidth --backend gpu --output ./b
 
 Select `all` for the complete **1,356-task** study. A task can contain multiple scales and hundreds of queries; full runs are expensive. `--workers` launches separate interpreters with one BLAS/OpenMP thread each. Original scientific libraries have overlapping namespaces, so task-level process isolation is intentional.
 
+Every experiment-local `reproduce.py` also invokes this fresh pipeline. For example:
+
+```bash
+python experiments/finite_sample_fixed_scales/reproduce.py --output ./fixed_scale_run
+python experiments/yy_directional_ablation/reproduce.py --profile smoke --output ./yy_smoke_run
+```
+
+With no arguments these scripts show help; they do not read removed historical outputs or start an expensive run. Plotting-only `render_figures.py` scripts require explicit `--table` and `--output`. Archive-dependent interfaces are named `legacy_replay.py` and are not the supported reproduction path.
+
 `run_paper.py` remains a compatibility entrypoint. New topic names and E1–E5 aliases resolve to the same ordered task IDs. Native `Multi` fields denote the paper's **GBC-STSP**, **GBC-DR**, or **GBC-YY**. Figure filenames are retained for existing LaTeX sources.
 
 An existing directory requires `--resume` and an identical source-bound plan. Valid completed packets are reused; engineering failures are not silently retried. Scientific failures, NaNs, and unreliable markers remain. `--evaluate-only` evaluates a complete run without fitting again. A run from an earlier source revision cannot be silently resumed after reorganization.
@@ -80,3 +89,5 @@ Release validation does not independently rerun the full production study. Hardw
 Large historical outputs are excluded from this revision. Earlier Git commits retain their history; use `--depth 1` to avoid downloading it. Code is under the [MIT License](LICENSE); existing notices are retained (see [LICENSES.md](LICENSES.md)). No artifact-evaluation badge is claimed.
 
 See [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [中文说明](README.zh-CN.md).
+
+For journal-facing code/supplement preparation, see the [AoS reproducibility checklist](docs/AOS_REPRODUCIBILITY.md). The checklist cites the journal policy and separates it from local testing practice; no journal certification is claimed.
