@@ -94,7 +94,8 @@ def test_workflow_temp_directory_has_existing_checkout_parent():
     workflow = (ROOT / ".github/workflows/ci.yml").read_text("utf8")
     assert "--basetemp ./pytest_tmp" in workflow
     assert "--basetemp ./tmp/pytest" not in workflow
-    assert "windows-latest" in workflow and "ubuntu-latest" in workflow
+    assert "windows-latest" in workflow and "ubuntu-24.04" in workflow
+    assert "ubuntu-latest" not in workflow
 
 
 def test_test_outputs_are_not_distributed_runtime_inputs():

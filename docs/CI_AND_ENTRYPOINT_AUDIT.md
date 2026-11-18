@@ -6,6 +6,8 @@ The [previous main-branch Actions run](https://github.com/zzjpp/Multiscale-Bias-
 
 CI now uses `--basetemp ./pytest_tmp` and checks Windows and Ubuntu. Test outputs are excluded from source/runtime manifests. The workflow retains test XML and smoke summary/log/error artifacts for inspection; it does not put fitted-output archives into the repository. Read the [actual Actions conclusions](https://github.com/zzjpp/Multiscale-Bias-Cancellation-for-Accurate-Manifold-Estimation/actions) for the commit being assessed. This document does not presume a not-yet-executed CI run has passed.
 
+The first repaired [Actions run](https://github.com/zzjpp/Multiscale-Bias-Cancellation-for-Accurate-Manifold-Estimation/actions/runs/44348344579) passed all Windows steps, including installation, 46 tests and real smoke fitting. Its added Linux job failed at `setup-python`: `ubuntu-latest` resolved to Ubuntu 26.04, for which the installer did not provide Python 3.12.9. Linux is therefore explicitly pinned to `ubuntu-24.04`; the Python/dependency versions and scientific procedure are unchanged. The earlier failed run is retained, not relabeled successful.
+
 ## Public interfaces
 
 All seven experiment-level `reproduce.py` scripts now delegate to the same fresh, source-bound orchestrator. No arguments displays help; `--output NEW` performs the selected computation, evaluation and plotting. All original paper tasks, seeds, kernels, solvers, precision gates, failure handling, and figure filenames remain unchanged.

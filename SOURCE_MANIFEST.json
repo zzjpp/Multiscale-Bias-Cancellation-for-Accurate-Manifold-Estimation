@@ -15,8 +15,8 @@
       "sha256": "4532b6ad93baa6ef8c6a74a5bba46f2ef943a0028b1a740679bb89186bd18d5b"
     },
     ".github/workflows/ci.yml": {
-      "size": 1382,
-      "sha256": "a5dfc9fd027d6b3b75b7a8e9d5cd62fe337ed3f3b9e08e2a025e99800e0664e6"
+      "size": 1381,
+      "sha256": "8f5eb9a3f63ed33f77515f398c7d76b75bf91aae13b9b468d1de23a359250c84"
     },
     ".gitignore": {
       "size": 256,
@@ -35,8 +35,8 @@
       "sha256": "572a513093bf761f9c4ce3161afd1e0e488c50c5d6e61f43cb9450e7a61a581d"
     },
     "docs/CI_AND_ENTRYPOINT_AUDIT.md": {
-      "size": 4492,
-      "sha256": "7e70030a0e40756a6f05f448fc4d302a5ee2c250baa05b8c73348f88d516dd4a"
+      "size": 5054,
+      "sha256": "5f228c5e4cb4d003981a96c0104ff0f4512be4bcb0359035f621cde99c885826"
     },
     "docs/CODE_STRUCTURE.md": {
       "size": 4273,
@@ -2291,8 +2291,8 @@
       "sha256": "09abaca93188776419a8fc0743c5d1a55305f36257671b66bb80fdfc1fe49c45"
     },
     "tests/test_standalone_entrypoints.py": {
-      "size": 3318,
-      "sha256": "256a26d2af565589768af9374723a27e39a6767d06c3bf33d8267019e6e09f3b"
+      "size": 3360,
+      "sha256": "ef501246d9ec42c5fd3f1d73f35d4ed03780c0df507268ba2c0d6c41b5766d03"
     },
     "tools/build_manifests.py": {
       "size": 3078,
