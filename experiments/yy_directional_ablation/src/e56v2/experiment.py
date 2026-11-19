@@ -72,6 +72,13 @@ def finite_weight_residual_gate(config: dict, weights: dict) -> dict:
 
 
 def summarize(rows: dict[str, list[dict]], fill_distance: float | None) -> dict:
+    """Keep geometric/component errors and a sampled-coverage diagnostic.
+
+    ``fill_distance`` is estimated on the dense reference grid by the caller.
+    Its maximum with the one-sided geometric error is only a diagnostic: it
+    does not control tangential correspondence displacement and is neither a
+    Hausdorff distance nor an upper bound on the continuous Hausdorff distance.
+    """
     output = {}
     for method in METHODS:
         values = rows[method]
@@ -80,7 +87,7 @@ def summarize(rows: dict[str, list[dict]], fill_distance: float | None) -> dict:
             series = np.asarray([row[metric] for row in values], dtype=float)
             item[f"{metric}_mean"] = float(np.mean(series)) if len(series) else None
             item[f"{metric}_max"] = float(np.max(series)) if len(series) else None
-        item["finite_cloud_hausdorff_upper"] = (
+        item["sampled_fill_geometric_max_diagnostic"] = (
             max(float(fill_distance), item["geometric_max"])
             if values and fill_distance is not None
             else None
@@ -129,7 +136,7 @@ def population_cell(config: dict, sigma: float, query_count: int | None = None,
             query_rows.append(failure)
     fill = retained_fill_distance(np.asarray(retained_truth), 8192) if retained_truth else None
     return {
-        "schema": "E5_RELEASE_POPULATION_CELL_V1",
+        "schema": "E5_RELEASE_POPULATION_CELL_V2",
         "formal_evidence": bool(config["formal_evidence"]),
         "sigma": float(sigma), "query_count": query_count, "numerical": numerical,
         "kappas": list(config["kappas"]), "single_kappa": float(config["single_kappa"]),
@@ -203,7 +210,7 @@ def finite_cell(config: dict, sample_size: int, repeat: int, seed: int,
             query_rows.append(failure)
     fill = retained_fill_distance(np.asarray(retained_truth), 8192) if retained_truth else None
     return {
-        "schema": "E5_RELEASE_FINITE_PAPER_PROTOCOL_CELL_V2",
+        "schema": "E5_RELEASE_FINITE_PAPER_PROTOCOL_CELL_V3",
         "formal_evidence": bool(config["formal_evidence"]),
         "sigma": sigma, "sample_size": int(sample_size), "repeat": int(repeat),
         "seed": int(seed), "query_count": query_count,

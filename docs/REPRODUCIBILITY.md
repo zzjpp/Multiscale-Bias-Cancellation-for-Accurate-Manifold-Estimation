@@ -11,3 +11,5 @@ Release QA includes a clean Python 3.12.9 virtual environment, actual 24-task re
 The current repository is tied to the supplied 2026-11-12 manuscript recorded in `PAPER_REFERENCE.json`. AoS code/supplement requirements are documented in `docs/AOS_REPRODUCIBILITY.md`; no formal artifact-evaluation badge or journal certification is claimed. The repository uses the MIT License; existing contributor notices are retained. E1 was relicensed to MIT with the repository owner's explicit authorization on 2026-11-12.
 
 Standalone `reproduce.py` entrypoints now share the fresh orchestrator. Plot-only programs require explicit input tables; legacy archive replay is not a fresh reproduction path. See `docs/CI_AND_ENTRYPOINT_AUDIT.md` for current checks and limitations.
+
+The YY summary field formerly named `finite_cloud_hausdorff_upper` was a mislabeled diagnostic, not a Hausdorff certificate. New summaries use `sampled_fill_geometric_max_diagnostic`; see [the correction and impact assessment](HAUSDORFF_DIAGNOSTIC_CORRECTION.md). Geometric/normal error definitions and the Figure 8 inputs are unchanged.

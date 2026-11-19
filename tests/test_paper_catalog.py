@@ -86,15 +86,24 @@ def test_list_is_read_only_and_needs_no_numerical_imports():
     assert done.stdout.strip() == describe_experiments()
 
 
-def test_original_scientific_sources_are_bound_at_their_new_locations():
+def test_scientific_sources_match_originals_or_documented_amendments():
     preservation = json.loads((ROOT / "docs/SCIENTIFIC_PRESERVATION.json").read_bytes())
     assert len(preservation["files"]) == 329
+    amendments = {
+        item["current_path"]: item
+        for item in preservation.get("subsequent_amendments", [])
+    }
+    assert preservation["unchanged_scientific_source_files"] == 329 - len(amendments)
     for member in preservation["files"]:
         current = ROOT / member["current_path"]
         assert current.is_file(), member
-        assert (
-            hashlib.sha256(current.read_bytes()).hexdigest() == member["sha256"]
-        ), member
+        expected = member["sha256"]
+        if member["current_path"] in amendments:
+            amendment = amendments[member["current_path"]]
+            assert amendment["original_sha256"] == expected
+            assert amendment["scope"] and (ROOT / amendment["explanation"]).is_file()
+            expected = amendment["revised_sha256"]
+        assert hashlib.sha256(current.read_bytes()).hexdigest() == expected, member
 
 
 def test_figure_map_binds_current_paper_and_separates_include_paths():

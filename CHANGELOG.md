@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-19 — YY coverage diagnostic correction
+
+- Removed the incorrect Hausdorff-upper-bound name from new E5 summaries; retained the value only as an explicitly sampled coverage/geometric-error diagnostic.
+- Advanced native result schemas and recorded one explicit scientific-source amendment, preserving the original hashes and all historical packets.
+- Preserved estimator logic, valid error metrics, failure accounting and Figure 8 inputs; added tangential-drift and sampled-coverage counterexamples.
+
 ## 2026-11-19 — CI and fresh standalone entrypoints
 
 - Fixed the confirmed Windows pytest temporary-directory parent error.

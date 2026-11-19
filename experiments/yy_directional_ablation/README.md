@@ -22,3 +22,7 @@ With no arguments it displays help and does not start a costly calculation.
 `legacy_replay.py` retains the historical archive-dependent interface for
 provenance. It is not the fresh reproduction entrypoint and its historical
 inputs are not distributed with this source-focused release.
+
+## Summary diagnostic correction
+
+`sampled_fill_geometric_max_diagnostic` replaces the incorrectly named `finite_cloud_hausdorff_upper` in new packets. It is not a Hausdorff upper bound. The 8192-reference fill value is a sampled coverage estimate. Native result schemas are now population V2 / finite V3; historical packets are retained unchanged. Figure 8 uses per-query geometric errors, independently of this diagnostic. See `docs/HAUSDORFF_DIAGNOSTIC_CORRECTION.md` at the repository root.

@@ -1,7 +1,7 @@
 {
   "schema": "SOURCE_FOCUSED_SCIENTIFIC_BYTE_PRESERVATION_V1",
   "prior_commit": "7d8b7d231fe4149ac29243f2d82215dc953fd51d",
-  "unchanged_scientific_source_files": 329,
+  "unchanged_scientific_source_files": 328,
   "files": [
     {
       "path": "E3/science_support.py",
@@ -1650,5 +1650,17 @@
     }
   ],
   "interface_changes": "New orchestration/aggregation/input-generation adapters; E5 figure labels only changed in configs; solver kernels, seed generators, failure adapters and fitting function bodies preserved.",
-  "path_note": "path is the original source identifier; current_path is the 2026-11-13 location. Original recorded SHA values are unchanged."
+  "path_note": "Original hashes and paths are retained; current bytes match either that original hash or a separately documented subsequent amendment.",
+  "subsequent_amendments": [
+    {
+      "date": "2026-11-19",
+      "current_path": "experiments/yy_directional_ablation/src/e56v2/experiment.py",
+      "original_sha256": "a5feb46acc7674d7991e39770045aa8dbce17e6eb7789b368e8316c9f4af4deb",
+      "revised_sha256": "1b26d71ef11b00efa8bc183097732dee2fd5cdd2506a5808a1837cf9cacefd20",
+      "scope": "Summary diagnostic label/documentation and native result schema identifiers only; no fitter, metric arithmetic, seeds, gates or query accounting changed.",
+      "explanation": "docs/HAUSDORFF_DIAGNOSTIC_CORRECTION.md",
+      "original_normalized_ast_sha256": "22cee2024e847e5b77bd9ff692c2fadf6fdf027e03778e07b3cc12800ca15cee"
+    }
+  ],
+  "originally_bound_scientific_source_files": 329
 }

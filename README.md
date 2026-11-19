@@ -91,3 +91,5 @@ Large historical outputs are excluded from this revision. Earlier Git commits re
 See [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [中文说明](README.zh-CN.md).
 
 For journal-facing code/supplement preparation, see the [AoS reproducibility checklist](docs/AOS_REPRODUCIBILITY.md). The checklist cites the journal policy and separates it from local testing practice; no journal certification is claimed.
+
+The YY summary field formerly named `finite_cloud_hausdorff_upper` was a mislabeled diagnostic, not a Hausdorff certificate. New summaries use `sampled_fill_geometric_max_diagnostic`; see [the correction and impact assessment](docs/HAUSDORFF_DIAGNOSTIC_CORRECTION.md). Geometric/normal error definitions and the Figure 8 inputs are unchanged.
